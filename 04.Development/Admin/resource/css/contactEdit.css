@@ -95,7 +95,7 @@ hr{
 }
 li:hover{
     width: 12vw;
-    padding: 1vh;
+    padding-bottom: 2vh;
     border-radius: 12px;
     border: 1px solid black;
     background-color: var(--activeColor);
