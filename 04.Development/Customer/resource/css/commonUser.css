@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@100;200;300;400;500&display=swap');
+:root{
+    --red:#FF0000;
+    --yellow:#E8C547;
+    --light-yellow:#F2F175;
+    --light-black:#4D5061;
+    --pruple:#E8C3F1;
+    --bgColor:#f1f1f1;
+    --white:#ffffff;
+    --black:#000000;
+    --border:1.5rem; /* Border Radius*/
+}
+*{  
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Myanmar', sans-serif !important;
+}
