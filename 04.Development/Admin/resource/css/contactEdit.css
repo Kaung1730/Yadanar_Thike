@@ -4,18 +4,15 @@
 }
 .nav_box{
     background-color: var(--boxColor);
-    width: 20%;
-    height: 100%;
-    margin: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    position: sticky;
 }
-.logo{
+/* .logo{
     margin-top: 3vh;
-}
+} */
 hr{
     width: 100%;
     height: 5rem;
@@ -23,7 +20,8 @@ hr{
     margin-left: 0;
 }
 .nav_img{
-    width: 3vw;
+    width: 2.5vw;
+    height: 6vh;
 }
 .nav_details{
     display: flex;
@@ -32,5 +30,81 @@ hr{
     border-radius: 50%;
 }
 .link_details{
-    font-size: var(--navSize);
+    /* font-size: var(--navSize); */
+    color: var(--fontColor);
+}
+.btn-logout{
+    width: 15vw;
+    background-color: var(--logoutBtnColor);
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    border-radius: 12px;
+}
+.title_bar{
+    height: 12vh;
+    padding-left: 2%;
+    background-color: var(--boxColor);
+    
+}
+#adminCl{
+    color: var(--presentColor);
+}
+#adSet{
+    color: var(--secondColor);
+}
+.contact-box{
+    background-color: var(--boxColor);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+}
+.btn-1{
+    background-color: var(--fstbtnColor);
+    width: 10vw;
+}
+.btn-2{
+    background-color: var(--secbtnColor);
+    width: 10vw;
+}
+.btn-3{
+    background-color: var(--thibtnColor);
+    width: 10vw;
+}
+.head_text{
+    text-align: center;
+}
+.input-edit{
+    width: 73vw;
+    padding: 1vh;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: transparent;
+}
+.btn-4{
+    width: 15vw;
+    background-color: var(--submitBtnColor);
+    border-radius: 12px;
+    margin: auto;
+    color: var(--btnfontColor);
+}
+li:hover{
+    width: 12vw;
+    padding: 1vh;
+    border-radius: 12px;
+    border: 1px solid black;
+    background-color: var(--activeColor);
+    margin: auto;
+}
+.a-edit{
+    text-decoration: none;
+    color: var(--btnfontColor);
+}
+.a-edit:hover{
+    color: var(--btnfontColor);
 }

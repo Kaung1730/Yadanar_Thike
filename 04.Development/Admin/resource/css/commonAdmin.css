@@ -12,13 +12,14 @@
     --logoutBtnColor : #FF0000;
     --submitBtnColor : #218080;
     --settingBar : #058D54;
+    --activeColor : #ffff00;
     /* Font Size */
-    --headerSize : 32rem;
-    --normalSize : 24rem;
-    --linkSize : 20rem;
-    --mainHeading : 36rem;
-    --littleSize : 15rem;
+    --headerSize : 3rem;
+    --normalSize : 2rem;
+    --linkSize : 2rem;
+    --mainHeading : 0.1rem;
+    --littleSize : 1rem;
     --navSize : 1.2rem;
-    --btnFont : 24rem;
-    --linkHeader : 32rem;
+    --btnFont : 2rem;
+    --linkHeader : 3rem;
 }
