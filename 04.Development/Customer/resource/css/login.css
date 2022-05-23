@@ -1,0 +1,21 @@
+@import url("./commonUser.css");
+
+body{
+    background-color: var(--bgColor) !important;
+}
+.register-container{
+    background-color: var(--light-black);
+    border-radius: var(--border);
+}
+.img-register{
+    border-radius: var(--border);
+}
+::placeholder, .login-btn, .register-title{
+    color: var(--yellow) !important;
+}
+::placeholder{
+    font-family: 'Poppins', sans-serif !important;
+}
+input{
+    border-radius: .5rem !important;
+}
