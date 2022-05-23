@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,500&display=swap');
+
+/* font-family: 'Poppins', sans-serif !important; can use this poppins in English word when we need */
 :root{
     --red:#FF0000;
     --yellow:#E8C547;
@@ -8,7 +11,7 @@
     --bgColor:#f1f1f1;
     --white:#ffffff;
     --black:#000000;
-    --border:1.5rem; /* Border Radius*/
+    --border:1.5rem;
 }
 *{  
     margin: 0 ;
