@@ -12,7 +12,9 @@
 </head>
 
 <body>
-    
+    <div class="container">
+        <img src="../resource/image/logo.png" alt="">
+    </div>
 </body>
 
 </html>

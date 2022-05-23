@@ -1,0 +1,24 @@
+:root{
+    /* Color */
+    --boxColor : #E8C547;
+    --fstbtnColor : #649B1E;
+    --secbtnColor : #863838;
+    --thibtnColor : #387886;
+    --adminBg : #DBD0D0;
+    --fontColor : #30323D;
+    --btnfontColor : #FFFFFF;
+    --presentColor : #18ABD9;
+    --secondColor : #0324D9;
+    --logoutBtnColor : #FF0000;
+    --submitBtnColor : #218080;
+    --settingBar : #058D54;
+    /* Font Size */
+    --headerSize : 32rem;
+    --normalSize : 24rem;
+    --linkSize : 20rem;
+    --mainHeading : 36rem;
+    --littleSize : 15rem;
+    --navSize : 24rem;
+    --btnFont : 24rem;
+    --linkHeader : 32rem;
+}
