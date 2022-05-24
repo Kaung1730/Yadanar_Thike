@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Myanmar', sans-serif;
+}
+
+:root {
+    --yellow: #E8C547;
+    --main-bg-color: #F8F7F9;
+    --light-yellow: #F2F175;
+    --body-bg-color: #E5E5E5;
+    --boxshadow-bg-color: gray;
+    --light-violet: #E8C3F1;
+
+}
+
+.container-fluid {
+    background-color: var(--main-bg-color);
+    height: 735vh;
+    overflow-x: hidden;
+
+}
+
+.menubarIcon {
+    display: none;
+}
+
+.menubar_top {
+    display: flex;
+
+    margin-top: 30px;
+
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+}
+
+.navItem {
+    margin-right: 30px;
+    width: 80px;
+    height: 60px;
+    border: 0px solid black;
+    background-color: var(--yellow);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 15px;
+
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.useracc {
+    width: 50px;
+    height: 50px;
+    border: 0px solid;
+    border-radius: 50%;
+    /* margin-right: 10px; */
+}
+
+.cart {
+    width: 30px;
+    height: 25px;
+}
+
+/* menubar_bottom */
+.menubar_bottom {
+    display: flex;
+    width: 100vw;
+}
+
+#dropdownMenuLink{
+    background-color: var(--light-yellow);
+    padding-top: 10px;
+}
+
+
+.searchBox {
+    width: 60vw;
+    height: 50px;
+    border: 0px solid;
+    background-color: var(--light-yellow);
+    padding-left: 10px;
+    /* margin-left: 28px; */
+}
+
+.figured {
+    width: 100px;
+    height: 50px;
+    border: 0px solid;
+    background-color: var(--yellow);
+}
+
+/* ShopListBody */
+.shopList {
+    margin-left: 5vw;
+margin-top: 7vh ;
+}
+
+.shopListHeader {
+    width: 70vw;
+    height: 13vh;
+    border: 0px solid;
+    background-color: var(--yellow);
+    text-align: center;
+    padding-top: 28px;
+    font-size: 20px;
+}
+
+.shopListBody {
+    width: 70vw;
+    height: 675vh;
+    border: 0px solid;
+    background-color: var(--body-bg-color);
+}
+
+.bookshopName{
+    position: absolute;
+    width: 23vw;
+    height: 9vh;
+    border: 0px solid;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 5px var(--boxshadow-bg-color);
+    background-color: var(--light-yellow);
+    font-size: 18px;
+    
+}
+
+.shopAddress{
+    position: absolute;
+    font-size: 18px;
+}
+/* SAR PAY LAW KA BOOK SHOP */
+.SPLKBookShop{
+    margin: 7vh 0vw 0vh 6vw;
+}
+.sarpaylawkaPSD{
+    margin: 23vh 0 0 7vw;
+}
+.sarpaylawkaJC{
+    margin: 53vh 0 0 7vw;
+}
+.sarpaylawkaCENTRAL{
+    margin: 83vh 0 0 7vw;
+}
+.sarpaylawkaSOK{
+    margin: 113vh 0 0 7vw;
+}
+.sarpaylawkaHLEDAN{
+    margin: 143vh 0 0 7vw;
+}
+.sarpaylawkaKM{
+    margin: 173vh 0 0 7vw;
+}
+
+.sarpaylawkaINSEIN{
+    margin: 203vh 0 0 7vw;
+}
+
+.sarpaylawkaTC{
+    margin: 233vh 0 0 7vw;
+}
+.sarpaylawkaNOK{
+    margin: 263vh 0 0 7vw;
+}
+
+/* AParDawMyal BOOKS SHOP */
+.APDMBookShop{
+    margin: 295vh 0vw 0vh 6vw;
+}
+
+.AParDawMyal{
+    margin: 310vh 0 0 7vw;
+}
+
+/* စောဦးစာပေ */
+.SawOoBookShop{
+    margin: 330vh 0vw 0vh 6vw;
+}
+.SawOo{
+    margin: 345vh 0 0 7vw;
+}
+
+/* အင်းဝ စာအုပ်တိုက် */
+
+.InnwaBookShop{
+    margin: 365vh 0vw 0vh 6vw;
+}
+.InnwaPSD{
+    margin: 385vh 0 0 7vw;
+}
+.InnwaHLEDAN{
+    margin: 410vh 0 0 7vw;
+}
+.InnwaMMPLAZA{
+    margin: 440vh 0 0 7vw;
+}
+
+.InnwaTIMECITY{
+    margin: 470vh 0 0 7vw;
+}
+
+.InnwaTerminalM{
+    margin: 500vh 0 0 7vw;
+}
+
+
+.InnwaMDY{
+    margin: 530vh 0 0 7vw;
+}
+
+/* ရာပြည့် */
+
+.YarPyaeBookShop{
+    margin: 560vh 0vw 0vh 6vw;
+}
+
+.YarpyaePSD{
+    margin: 580vh 0 0 7vw;
+}
+.YarpyaeHLEDAN{
+    margin: 600vh 0 0 7vw;
+}
+
+/* ကံ့ကော်ဝတ်ရည် စာပေတိုက် */
+
+.KantKawBookShop{
+    margin: 630vh 0vw 0vh 6vw;
+}
+
+.KantKaw{
+    margin: 650vh 0 0 7vw;
+}
+
+
+/* Footer */
+
+.footer {
+    width: 100vw;
+    height: 15vh;
+    border: 0px solid;
+    background-color: var(--yellow);
+    margin-top: 13vh;
+    display: flex;
+    padding: 7vh 0 0 4vw;
+}
+
+.copyright {
+    margin-left: 25vw;
+}
+
+
+/*Mobile View*/
+
+@media screen and (max-width: 720px) {
+
+    *{
+        font-size: 12px;
+    }
+    .bookshopName{
+        font-size: 15px;
+    }
+    .SPLKBookShop , .APDMBookShop ,.KantKawBookShop{
+        width: 50vw;
+    }
+    .menubar_bottom {
+
+        width: 200vw;
+        margin: 10px 0px 0px 40px;
+    }
+
+    .navList {
+        display: none;
+    }
+    /* .navList {
+       flex-direction: row;
+       align-items: flex-start;
+       position: absolute;
+       margin-top: 18vh;
+       
+    } */
+    
+    /* .navItem {
+        margin-right: 60px;
+        width: 120px;
+        height: 60px;
+        border: 0px solid black;
+        background-color: var(--yellow);
+        text-align: center;
+        padding-top: 15px;
+    
+    } */
+
+    .useracc {
+        margin-left: 120px;
+    }
+
+
+    .searchBox {
+        width: 60vw;
+        height: 50px;
+
+        /* padding-left: 10px; */
+        font-size: 12px;
+
+    }
+
+    .figured {
+        width: 25px;
+        height: 50px;
+
+    }
+
+    /* .menubarIcon {
+        display: block;
+        margin: 0px 20px 0 0px;
+
+    } */
+
+    
+
+    .shopList {
+        /* margin-top: 20vh; */
+        margin-left: 2vw;
+    }
+
+    .shopListHeader {
+        width: 90vw;
+    }
+
+    .shopListBody {
+        width: 90vw;
+      
+    }
+
+    
+}
