@@ -96,12 +96,12 @@ hr{
     margin: auto;
     color: var(--btnfontColor);
 }
+.hover-li{
+    padding: 0.5em;
+}
 .hover-li:hover{
-    width: 15vw;
-    padding: 2vh;
-    padding-left: 1vw;
+    padding: 0.5em;
     border-radius: 12px;
-    border: 1px solid black;
     background-color: var(--activeColor);
     margin: auto;
 }
