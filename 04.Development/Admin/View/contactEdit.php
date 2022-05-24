@@ -21,43 +21,43 @@
                     <hr />
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <span class="nav_details mt-3">
+                            <span class="nav_details mt-3 hover-li">
                                 <img src="../resource/image/home icon.png" alt="" class="nav_img" />
                                 <a class="nav-link link_details" aria-current="page" href="#">Dashboard</a>
                             </span>
                         </li>
                         <li class="nav-item">
-                            <span class="nav_details mt-3">
+                            <span class="nav_details mt-3 hover-li">
                                 <img src="../resource/image/author-icon-21.jpg" alt="" class="nav_img circle" />
                                 <a class="nav-link link_details" aria-current="page" href="#">Author Info</a>
                             </span>
                         </li>
                         <li class="nav-item">
-                            <span class="nav_details mt-3">
+                            <span class="nav_details mt-3 hover-li">
                                 <img src="../resource/image/book1.png" alt="" class="nav_img circle" />
                                 <a class="nav-link link_details" aria-current="page" href="#">Book Info</a>
                             </span>
                         </li>
                         <li class="nav-item">
-                            <span class="nav_details mt-3">
+                            <span class="nav_details mt-3 hover-li">
                                 <img src="../resource/image/order.png" alt="" class="nav_img" />
                                 <a class="nav-link link_details" aria-current="page" href="#">Order Info</a>
                             </span>
                         </li>
                         <li class="nav-item">
-                            <span class="nav_details mt-3">
+                            <span class="nav_details mt-3 hover-li">
                                 <img src="../resource/image/person icon.png" alt="" class="nav_img" />
                                 <a class="nav-link link_details" aria-current="page" href="#">User Info</a>
                             </span>
                         </li>
                         <li class="nav-item">
-                            <span class="nav_details mt-3 active">
+                            <span class="nav_details mt-3 hover-li">
                                 <img src="../resource/image/person icon.png" alt="" class="nav_img" />
                                 <a class="nav-link link_details" aria-current="page" href="#">Admin Settings</a>
                             </span>
                         </li>
                         <li class="nav-item">
-                            <span class="nav_details mt-3">
+                            <span class="nav_details mt-3 hover-li">
                                 <img src="../resource/image/community.png" alt="" class="nav_img circle" />
                                 <a class="nav-link link_details" aria-current="page" href="#">Community</a>
                             </span>
