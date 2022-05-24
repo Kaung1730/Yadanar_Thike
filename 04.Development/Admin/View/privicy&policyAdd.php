@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privicy & Policy</title>
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../resource/css/commonAdmin.css">
@@ -83,74 +83,16 @@
                             <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="serviceList.php" class="a-edit">Service</a></button>
                             <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                         </div>
-                        <table class="table table-borderless tb-edit mx-5 mt-3">
-                            <tr class="table-secondary">
-                                <th class="text-start">No.</th>
-                                <th class="text-center">Question</th>
-                                <th class="text-center">Answer</th>
-                                <th class="text-end">Action</th>
-                            </tr>
-                            <tr class="table-light">
-                                <td class="text-start">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-end">1</td>
-                            </tr>
-                            <tr class="table-secondary">
-                                <td class="text-start">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-end">1</td>
-                            </tr>
-                            <tr class="table-light">
-                                <td class="text-start">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-end">1</td>
-                            </tr>
-                            <tr class="table-secondary">
-                                <td class="text-start">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-end">1</td>
-                            </tr>
-                            <tr class="table-light">
-                                <td class="text-start">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-end">1</td>
-                            </tr>
-                            <tr class="table-secondary">
-                                <td class="text-start">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-end">1</td>
-                            </tr>
-                        </table>
-
-                        <nav aria-label="Page navigation example">
-                            <a href="privicy&policyAdd.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-start">Add</button></a>
-                            <ul class="pagination float-end me-5">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&#10094;</span>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&#10095;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-
+                        <div class="input-part ms-5">
+                            <label for="question" class="form-label mt-2">Question</label>
+                            <input type="password" id="question" class="form-control input-edit" aria-describedby="passwordHelpBlock">
+                            <label for="address" class="form-label mt-2">Answer</label>
+                            <textarea type="password" id="address" class="form-control input-edit" aria-describedby="passwordHelpBlock" cols="30" rows="10"></textarea>
+                            <a href="privicy&policyList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-3">Back</button></a>
+                            <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Submit</button>
+                        </div>
                     </div>
-                    <div class="copyright mt-3 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                 </div>
-            </div>
         </form>
     </div>
 </body>

@@ -4,3 +4,6 @@
 .btn-size{
     width: 15vw;
 }
+.btn-5{
+    background-color: var(--logoutBtnColor) !important;
+}
