@@ -66,18 +66,18 @@ hr{
     margin: auto;
 }
 .add_author{
-    height: 78vh;
+    height: 75vh;
     background-color: var(--boxColor);
     margin-top: 4vh;
     border-radius: 12px;
 }
 .title_addauthor{
     padding-left: 2vw;
-    padding-top: 0.6vw;
+    padding-top: 0.6vh;
 }
 .author_name,.author_des,.author_image,.author_life{
     padding-left: 2vw;
-    margin-top: 0.5vh;
+    margin-top: 0.2vh;
 }
 .box1{
     width: 73vw;
@@ -139,6 +139,5 @@ hr{
 }
 .submit,.reset{
     margin-left: 2vw;
-    margin-top: 4vh;
 }
 
