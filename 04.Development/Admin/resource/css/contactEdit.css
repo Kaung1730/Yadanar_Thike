@@ -47,6 +47,7 @@ hr{
     height: 12vh;
     padding-left: 2%;
     background-color: var(--boxColor);
+    display: flex;
     
 }
 #adminCl{
@@ -111,4 +112,15 @@ hr{
 }
 .a-edit:hover{
     color: var(--btnfontColor);
+}
+.search-box{
+    width: 25vw;
+    background-color: transparent;
+    border: 1px solid black;
+}
+.box-search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
