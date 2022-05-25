@@ -17,9 +17,9 @@
 
 </head>
 
-<body class="container container-fluid">
+<body>
 
-    <div >
+    <div  class="container ">
         <div class=" menubar_top ">
             <a href="" class="logo mt-3"><img src="../resource/image/logo.png" alt=""></a>
             <!-- <nav class="navbar"> -->
@@ -74,7 +74,7 @@
             </div>
             <div class="shopListBody">
 
-                <div class="bookshopName SPLKBookShop  ">စာပေလောက စာအုပ်အရောင်းဆိုင်များ</div>
+                <div class="bookshopName SPLKBookShop font-weight-bold ">စာပေလောက စာအုပ်အရောင်းဆိုင်များ</div>
                 <div class="shopAddress sarpaylawkaPSD">
                     <h5 class="text-primary">၁။ စာပေလောက (ပန်းဆိုးတန်း)</h5>
                     <br />

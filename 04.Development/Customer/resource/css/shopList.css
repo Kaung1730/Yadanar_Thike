@@ -1,4 +1,5 @@
 * {
+   
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans Myanmar', sans-serif;
@@ -14,10 +15,10 @@
 
 }
 
-.container-fluid {
+.container{
     background-color: var(--main-bg-color);
     height: 735vh;
-    overflow-x: hidden;
+   
 
 }
 
@@ -27,7 +28,6 @@
 
 .menubar_top {
     display: flex;
-
     margin-top: 30px;
 
 }
@@ -39,7 +39,7 @@
 
 .navItem {
     margin-right: 30px;
-    width: 80px;
+    width: 120px;
     height: 60px;
     border: 0px solid black;
     background-color: var(--yellow);
@@ -73,7 +73,7 @@ a:link {
     width: 100vw;
 }
 
-#dropdownMenuLink{
+#dropdownMenuLink {
     background-color: var(--light-yellow);
     padding-top: 10px;
 }
@@ -98,11 +98,11 @@ a:link {
 /* ShopListBody */
 .shopList {
     margin-left: 5vw;
-margin-top: 7vh ;
+    margin-top: 7vh;
 }
 
 .shopListHeader {
-    width: 70vw;
+    width:70vw;
     height: 13vh;
     border: 0px solid;
     background-color: var(--yellow);
@@ -118,7 +118,7 @@ margin-top: 7vh ;
     background-color: var(--body-bg-color);
 }
 
-.bookshopName{
+.bookshopName {
     position: absolute;
     width: 23vw;
     height: 9vh;
@@ -129,112 +129,125 @@ margin-top: 7vh ;
     box-shadow: 6px 5px var(--boxshadow-bg-color);
     background-color: var(--light-yellow);
     font-size: 18px;
-    
+
 }
 
-.shopAddress{
+.shopAddress {
     position: absolute;
     font-size: 18px;
 }
+
 /* SAR PAY LAW KA BOOK SHOP */
-.SPLKBookShop{
+.SPLKBookShop {
     margin: 7vh 0vw 0vh 6vw;
 }
-.sarpaylawkaPSD{
+
+.sarpaylawkaPSD {
     margin: 23vh 0 0 7vw;
 }
-.sarpaylawkaJC{
+
+.sarpaylawkaJC {
     margin: 53vh 0 0 7vw;
 }
-.sarpaylawkaCENTRAL{
+
+.sarpaylawkaCENTRAL {
     margin: 83vh 0 0 7vw;
 }
-.sarpaylawkaSOK{
+
+.sarpaylawkaSOK {
     margin: 113vh 0 0 7vw;
 }
-.sarpaylawkaHLEDAN{
+
+.sarpaylawkaHLEDAN {
     margin: 143vh 0 0 7vw;
 }
-.sarpaylawkaKM{
+
+.sarpaylawkaKM {
     margin: 173vh 0 0 7vw;
 }
 
-.sarpaylawkaINSEIN{
+.sarpaylawkaINSEIN {
     margin: 203vh 0 0 7vw;
 }
 
-.sarpaylawkaTC{
+.sarpaylawkaTC {
     margin: 233vh 0 0 7vw;
 }
-.sarpaylawkaNOK{
+
+.sarpaylawkaNOK {
     margin: 263vh 0 0 7vw;
 }
 
 /* AParDawMyal BOOKS SHOP */
-.APDMBookShop{
+.APDMBookShop {
     margin: 295vh 0vw 0vh 6vw;
 }
 
-.AParDawMyal{
+.AParDawMyal {
     margin: 310vh 0 0 7vw;
 }
 
 /* စောဦးစာပေ */
-.SawOoBookShop{
+.SawOoBookShop {
     margin: 330vh 0vw 0vh 6vw;
 }
-.SawOo{
+
+.SawOo {
     margin: 345vh 0 0 7vw;
 }
 
 /* အင်းဝ စာအုပ်တိုက် */
 
-.InnwaBookShop{
+.InnwaBookShop {
     margin: 365vh 0vw 0vh 6vw;
 }
-.InnwaPSD{
+
+.InnwaPSD {
     margin: 385vh 0 0 7vw;
 }
-.InnwaHLEDAN{
+
+.InnwaHLEDAN {
     margin: 410vh 0 0 7vw;
 }
-.InnwaMMPLAZA{
+
+.InnwaMMPLAZA {
     margin: 440vh 0 0 7vw;
 }
 
-.InnwaTIMECITY{
+.InnwaTIMECITY {
     margin: 470vh 0 0 7vw;
 }
 
-.InnwaTerminalM{
+.InnwaTerminalM {
     margin: 500vh 0 0 7vw;
 }
 
 
-.InnwaMDY{
+.InnwaMDY {
     margin: 530vh 0 0 7vw;
 }
 
 /* ရာပြည့် */
 
-.YarPyaeBookShop{
+.YarPyaeBookShop {
     margin: 560vh 0vw 0vh 6vw;
 }
 
-.YarpyaePSD{
+.YarpyaePSD {
     margin: 580vh 0 0 7vw;
 }
-.YarpyaeHLEDAN{
+
+.YarpyaeHLEDAN {
     margin: 600vh 0 0 7vw;
 }
 
 /* ကံ့ကော်ဝတ်ရည် စာပေတိုက် */
 
-.KantKawBookShop{
+.KantKawBookShop {
     margin: 630vh 0vw 0vh 6vw;
 }
 
-.KantKaw{
+.KantKaw {
     margin: 650vh 0 0 7vw;
 }
 
@@ -260,53 +273,42 @@ margin-top: 7vh ;
 
 @media screen and (max-width: 720px) {
 
-    *{
+    * {
         font-size: 12px;
     }
-    .bookshopName{
-        font-size: 15px;
+
+    .bookshopName {
+        font-size: 13px;
+        
     }
-    .SPLKBookShop , .APDMBookShop ,.KantKawBookShop{
+
+    .SPLKBookShop,
+    .APDMBookShop,
+    .KantKawBookShop {
         width: 50vw;
     }
+
     .menubar_bottom {
 
-        width: 200vw;
+        /* width: 200vw; */
         margin: 10px 0px 0px 40px;
+    }
+
+    .shopListHeader {
+        font-size: 17px;
     }
 
     .navList {
         display: none;
     }
-    /* .navList {
-       flex-direction: row;
-       align-items: flex-start;
-       position: absolute;
-       margin-top: 18vh;
-       
-    } */
-    
-    /* .navItem {
-        margin-right: 60px;
-        width: 120px;
-        height: 60px;
-        border: 0px solid black;
-        background-color: var(--yellow);
-        text-align: center;
-        padding-top: 15px;
-    
-    } */
-
     .useracc {
-        margin-left: 120px;
+        margin-left: 130px;
     }
 
 
     .searchBox {
         width: 60vw;
         height: 50px;
-
-        /* padding-left: 10px; */
         font-size: 12px;
 
     }
@@ -323,7 +325,7 @@ margin-top: 7vh ;
 
     } */
 
-    
+
 
     .shopList {
         /* margin-top: 20vh; */
@@ -331,13 +333,12 @@ margin-top: 7vh ;
     }
 
     .shopListHeader {
-        width: 90vw;
+        width: 95vw;
     }
 
     .shopListBody {
-        width: 90vw;
-      
+        width: 95vw;
+
     }
 
-    
 }
