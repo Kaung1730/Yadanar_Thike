@@ -47,6 +47,7 @@ hr{
     height: 12vh;
     padding-left: 2%;
     background-color: var(--boxColor);
+    display: flex;
     
 }
 #adminCl{
@@ -111,4 +112,30 @@ hr{
 }
 .a-edit:hover{
     color: var(--btnfontColor);
+}
+.search-box{
+    width: 25vw;
+    background-color: transparent;
+    border: 1px solid black;
+}
+.box-search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.btn-connect{
+    background-color: var(--thibtnColor) !important;
+    border-radius: 0 !important;
+    width: 12vw !important; 
+    margin-right: auto !important;
+}
+.contact_btn{
+    width: 50vw;
+}
+.inputgp{
+    width: 73vw !important;
+}
+.boxH{
+    height: 75vh !important;
 }

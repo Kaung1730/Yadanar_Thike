@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Privacy & Policy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../resource/css/commonAdmin.css">
     <link rel="stylesheet" href="../resource/css/contactEdit.css">
     <link rel="stylesheet" href="../resource/css/privacyPolicyList.css">
     <script src="../resource/js/jquery3.6.0.js"></script>
-    <script src="../resource/js/guideList.js"></script>
+    <script src="../resource/js/privacyPolicyAdd.js"></script>
 </head>
 
 <body>
@@ -24,12 +24,7 @@
                 </div>
                 <div class="col-10">
                     <div class="title_bar">
-                        <div class="title mt-1 mx-3 fs-4">Admin Settings</div>
-                        <span class="title_list ms-3" id="adminCl">Admin</span>
-                        <span class="title_list">></span>
-                        <span class="title_list" id="adSet">admin settings</span>
-                        <span class="title_list">></span>
-                        <span class="title_list">Privacy & Policy</span>
+                        
                     </div>
                     <div class="contact-box mt-4">
                         <div class="btn mt-4">
