@@ -16,12 +16,7 @@
     --red: red;
 }
 
-/* .container-fluid {
-    background-color: var(--body-bg-color);
-    height: 920vh;
-    overflow-x: hidden;
 
-} */
 
 .menubarIcon {
     display: none;
@@ -29,9 +24,9 @@
 
 .menubar_top {
     display: flex;
-    flex-direction: row;
+    
     margin-top: 30px;
-    margin-left:5vw;
+    /* margin-left:5vw; */
 
 }
 
@@ -73,7 +68,6 @@ a:link {
 /* menubar_bottom */
 .menubar_bottom {
     display: flex;
-    width: 100vw;
     margin-top: 2vh;
 }
 
@@ -81,7 +75,7 @@ a:link {
 #dropdownMenuLink {
     background-color: var(--yellow);
     padding-top: 10px;
-    margin-left:6vw;
+    /* margin-left:2vw; */
 }
 
 /* search */
@@ -114,7 +108,7 @@ a:link {
 
 /* က မှ အ အထိ */
 .firstWord {
-    margin-left: 27vw;
+    margin-left: 30vw;
 }
 
 .alphabetLine {
@@ -125,7 +119,7 @@ a:link {
 .alphabet {
     width: 60px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 50%;
     border: solid 1px var(--black);
 
 }
@@ -151,7 +145,6 @@ a:link {
 .authorsList ul {
     list-style: none;
     width: 30vw;
-
     border: solid 0px;
     background-color: var(--light-violet);
     padding-top: 2rem;
@@ -179,8 +172,8 @@ a:link {
 @media screen and (max-width: 720px) {
     .menubar_bottom {
 
-        width: 200vw;
-        margin: 10px 0px 0px 10px;
+       
+        margin: 10px 0px 0px 0px;
     }
 
     .navList {
@@ -188,12 +181,12 @@ a:link {
     }
 
     .useracc {
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
 
     .searchBox {
-        width: 60vw;
+        width: 57vw;
         height: 50px;
 
         /* padding-left: 10px; */
@@ -215,24 +208,28 @@ a:link {
         border: 0px solid;
         background-color: var(--main-bg-color);
         text-align: center;
-        margin: 7vh 0vw 8vh 20vw;
+        margin: 7vh 0vw 8vh 25vw;
         padding-top: 3vh; }
 
     .alphabetLine {
         margin-top: 4px;
+        /* margin-left: 20px; */
     }
 
     .alphabet {
-        width: 50px;
-        height: 50px;
-        margin-left: 13px;}
+        width: 40px;
+        height: 40px;
+        /* margin-left: 20px; */
+    }
 
 
     .box {
         margin-left: 15vw;
         /* margin-top: 12vh; */
     }
-
+.firstWord{
+    margin-left: 20vw;
+}
     .alphabetList {
         width: 60vw;}
 

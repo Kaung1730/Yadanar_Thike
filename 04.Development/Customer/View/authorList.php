@@ -74,63 +74,63 @@
 
         <!-- က မှ င -->
         <div class="alphabetLine mt-4">
-            <a href="#alphabet1"><button class="alphabet firstWord me-5 ">က</button></a>
-            <a href="#alphabet2"><button class="alphabet me-5">ခ</button></a>
-            <a href="#alphabet3"><button class="alphabet me-5">ဂ</button></a>
-            <a href="#"><button class="alphabet me-5 bg-secondary text-light">ဃ</button></a>
-            <a href="#alphabet5"><button class="alphabet me-5">င</button></a>
+            <a href="#alphabet1"><button class="alphabet firstWord me-4 ">က</button></a>
+            <a href="#alphabet2"><button class="alphabet me-4">ခ</button></a>
+            <a href="#alphabet3"><button class="alphabet me-4">ဂ</button></a>
+            <a href="#"><button class="alphabet me-4 bg-secondary text-light">ဃ</button></a>
+            <a href="#alphabet5"><button class="alphabet me-4">င</button></a>
         </div>
         <!-- စ မှ ည -->
         <div class="alphabetLine mt-4">
-            <a href="#alphabet6"><button class="alphabet firstWord me-5 ">စ</button></a>
-            <a href="#alphabet7"><button class="alphabet me-5">ဆ</button></a>
-            <a href="#alphabet8"><button class="alphabet me-5">ဇ</button></a>
-            <a href="#"><button class="alphabet me-5 bg-secondary text-light">ဈ</button></a>
-            <a href="#alphabet10"><button class="alphabet me-5">ည</button></a>
+            <a href="#alphabet6"><button class="alphabet firstWord me-4 ">စ</button></a>
+            <a href="#alphabet7"><button class="alphabet me-4">ဆ</button></a>
+            <a href="#alphabet8"><button class="alphabet me-4">ဇ</button></a>
+            <a href="#"><button class="alphabet me-4 bg-secondary text-light">ဈ</button></a>
+            <a href="#alphabet10"><button class="alphabet me-4">ည</button></a>
         </div>
 
         <!-- ဋ မှ ဏ -->
         <div class="alphabetLine mt-4">
-            <a href="#alphabet11"><button class="alphabet firstWord me-5  bg-secondary text-light">ဋ</button></a>
-            <a href="#alphabet12"><button class="alphabet me-5 bg-secondary text-light">ဌ</button></a>
-            <a href="#alphabet13"><button class="alphabet me-5 bg-secondary text-light">ဍ</button></a>
-            <a href="#alphabet14"><button class="alphabet me-5 bg-secondary text-light">ဎ</button></a>
-            <a href="#alphabet15"><button class="alphabet me-5 bg-secondary text-light">ဏ</button></a>
+            <a href="#alphabet11"><button class="alphabet firstWord me-4  bg-secondary text-light">ဋ</button></a>
+            <a href="#alphabet12"><button class="alphabet me-4 bg-secondary text-light">ဌ</button></a>
+            <a href="#alphabet13"><button class="alphabet me-4 bg-secondary text-light">ဍ</button></a>
+            <a href="#alphabet14"><button class="alphabet me-4 bg-secondary text-light">ဎ</button></a>
+            <a href="#alphabet15"><button class="alphabet me-4 bg-secondary text-light">ဏ</button></a>
         </div>
 
         <!-- တ မှ န -->
         <div class="alphabetLine mt-4">
-            <a href="#alphabet16"><button class="alphabet firstWord me-5 ">တ</button></a>
-            <a href="#alphabet17"><button class="alphabet me-5">ထ</button></a>
-            <a href="#alphabet18"><button class="alphabet me-5">ဒ</button></a>
-            <a href="#alphabet19"><button class="alphabet me-5">ဓ</button></a>
-            <a href="#alphabet20"><button class="alphabet me-5">န</button></a>
+            <a href="#alphabet16"><button class="alphabet firstWord me-4 ">တ</button></a>
+            <a href="#alphabet17"><button class="alphabet me-4">ထ</button></a>
+            <a href="#alphabet18"><button class="alphabet me-4">ဒ</button></a>
+            <a href="#alphabet19"><button class="alphabet me-4">ဓ</button></a>
+            <a href="#alphabet20"><button class="alphabet me-4">န</button></a>
         </div>
 
         <!--ပ  မှ မ -->
         <div class="alphabetLine mt-4">
-            <a href="#alphabet21"><button class="alphabet firstWord me-5 ">ပ</button></a>
-            <a href="#alphabet22"><button class="alphabet me-5">ဖ</button></a>
-            <a href="#alphabet23"><button class="alphabet me-5">ဗ</button></a>
-            <a href="#alphabet24"><button class="alphabet me-5">ဘ</button></a>
-            <a href="#alphabet25"><button class="alphabet me-5">မ</button></a>
+            <a href="#alphabet21"><button class="alphabet firstWord me-4 ">ပ</button></a>
+            <a href="#alphabet22"><button class="alphabet me-4">ဖ</button></a>
+            <a href="#alphabet23"><button class="alphabet me-4">ဗ</button></a>
+            <a href="#alphabet24"><button class="alphabet me-4">ဘ</button></a>
+            <a href="#alphabet25"><button class="alphabet me-4">မ</button></a>
         </div>
 
         <!-- ယ မှ သ -->
         <div class="alphabetLine mt-4">
-            <a href="#alphabet26"><button class="alphabet firstWord me-5 ">ယ</button></a>
-            <a href="#alphabet27"><button class="alphabet me-5">ရ</button></a>
-            <a href="#alphabet28"><button class="alphabet me-5">လ</button></a>
-            <a href="#alphabet29"><button class="alphabet me-5">ဝ</button></a>
-            <a href="#alphabet30"><button class="alphabet me-5">သ</button></a>
+            <a href="#alphabet26"><button class="alphabet firstWord me-4 ">ယ</button></a>
+            <a href="#alphabet27"><button class="alphabet me-4">ရ</button></a>
+            <a href="#alphabet28"><button class="alphabet me-4">လ</button></a>
+            <a href="#alphabet29"><button class="alphabet me-4">ဝ</button></a>
+            <a href="#alphabet30"><button class="alphabet me-4">သ</button></a>
         </div>
 
         <!-- ဟ မှ ဥ -->
         <div class="alphabetLine mt-4">
-            <a href="#alphabet31"><button class="alphabet firstWord me-5 ">ဟ</button></a>
-            <a href="#"><button class="alphabet me-5 bg-secondary text-light">ဠ</button></a>
-            <a href="#alphabet33"><button class="alphabet me-5">အ</button></a>
-            <a href="#alphabet34"><button class="alphabet me-5">ဥ</button></a>
+            <a href="#alphabet31"><button class="alphabet firstWord me-4 ">ဟ</button></a>
+            <a href="#"><button class="alphabet me-4 bg-secondary text-light">ဠ</button></a>
+            <a href="#alphabet33"><button class="alphabet me-4">အ</button></a>
+            <a href="#alphabet34"><button class="alphabet me-4">ဥ</button></a>
 
         </div>
 
