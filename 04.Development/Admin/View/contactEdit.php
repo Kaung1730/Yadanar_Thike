@@ -32,7 +32,7 @@
                         <div class="btn">
                             <button type="button" class="btn btn-secondary mx-5 btn-1"><a href="contactEdit.php" class="a-edit">Contact Edit</a></button>
                             <button type="button" class="btn btn-secondary mx-5 btn-2"><a href="adminAdd.php" class="a-edit">Add Admin</a></button>
-                            <button type="button" class="btn btn-secondary mx-5 btn-3"><a href="slideChange.php" class="a-edit">Slide change</a></button>
+                            <button type="button" class="btn btn-secondary mx-5 btn-3"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
                         </div>
                         <div class="input-part ms-5">
                             <label for="phone" class="form-label mt-2">Phone Number:</label>

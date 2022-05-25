@@ -124,3 +124,18 @@ hr{
     justify-content: center;
     align-items: center;
 }
+.btn-connect{
+    background-color: var(--thibtnColor) !important;
+    border-radius: 0 !important;
+    width: 12vw !important; 
+    margin-right: auto !important;
+}
+.contact_btn{
+    width: 50vw;
+}
+.inputgp{
+    width: 73vw !important;
+}
+.boxH{
+    height: 75vh !important;
+}
