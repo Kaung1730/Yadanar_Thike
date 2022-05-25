@@ -14,7 +14,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../resource/js/jquery3.6.0.js"></script>
-    <script src="../resource/js/contactEdit.js"></script>
+    <script src="../resource/js/privacyPolicyList.js"></script>
 </head>
 
 <body>
@@ -26,12 +26,7 @@
                 </div>
                 <div class="col-10">
                     <div class="title_bar">
-                        <div class="title mt-1 mx-3 fs-4">Admin Settings</div>
-                        <span class="title_list ms-3" id="adminCl">Admin</span>
-                        <span class="title_list">></span>
-                        <span class="title_list" id="adSet">admin settings</span>
-                        <span class="title_list">></span>
-                        <span class="title_list">Privacy & Policy</span>
+                        
                     </div>
                     <div class="contact-box mt-4">
                         <div class="btn mt-4">

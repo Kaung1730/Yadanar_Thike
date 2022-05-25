@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../resource/css/contactEdit.css">
     <link rel="stylesheet" href="../resource/css/privacyPolicyList.css">
     <script src="../resource/js/jquery3.6.0.js"></script>
-    <script src="../resource/js/guideList.js"></script>
+    <script src="../resource/js/serviceAdd.js"></script>
 </head>
 
 <body>
