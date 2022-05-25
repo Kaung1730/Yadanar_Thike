@@ -16,12 +16,12 @@
     --red: red;
 }
 
-.container-fluid {
+/* .container-fluid {
     background-color: var(--body-bg-color);
     height: 920vh;
     overflow-x: hidden;
 
-}
+} */
 
 .menubarIcon {
     display: none;
@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 30px;
-    margin-left:7vw;
+    margin-left:5vw;
 
 }
 
@@ -42,7 +42,7 @@
 }
 
 .navItem {
-    margin-right: 60px;
+    margin-right: 40px;
     width: 120px;
     height: 60px;
     border: 0px solid var(--black);
@@ -74,13 +74,14 @@ a:link {
 .menubar_bottom {
     display: flex;
     width: 100vw;
+    margin-top: 2vh;
 }
 
 
 #dropdownMenuLink {
     background-color: var(--yellow);
     padding-top: 10px;
-    margin-left:10vw;
+    margin-left:6vw;
 }
 
 /* search */

@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Delivery Service</title>
+    <title>Author List</title>
     <link rel="stylesheet" href="../resource/css/authorList.css">
 
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -21,11 +18,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&display=swap" rel="stylesheet">
 </head>
 
-<body class="container-fluid">
-
-    <div class="containerone">
+<body>
+    <div class="container ">
         <div class=" menubar_top ">
-            <a href="" class="logo mt-2 me-3"><img src="../resource/image/logo.png" alt=""></a>
+            <a href="" class="logo mt-2 "><img src="../resource/image/logo.png" alt=""></a>
             <!-- <nav class="navbar"> -->
             <ul class="navList ">
                 <li class="navItem"><a href="">မူလစာမျက်နှာ</a></li>
@@ -51,8 +47,7 @@
             <!-- <div class="dropdown"> -->
 
             <div class="dropdown">
-                <a class="btn  dropdown-toggle h-100" href="#" role="button" id="dropdownMenuLink"
-                    data-bs-toggle="dropdown">
+                <a class="btn  dropdown-toggle h-100" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
                     ရှာဖွေရန်
                 </a>
 
@@ -65,8 +60,7 @@
 
             <!-- search -->
             <div class="search">
-                <input type="text" name="" class="searchBox"
-                    placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ? ဒီကနေ ဝင်ရှာလို့ရပါတယ်">
+                <input type="text" name="" class="searchBox" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ? ဒီကနေ ဝင်ရှာလို့ရပါတယ်">
             </div>
 
             <button class="figured  ">
@@ -74,6 +68,7 @@
             </button>
         </div>
     </div>
+    
     <div class="authorList">
         <div class="title">စာရေးဆရာအမည် (က မှ အ အထိ)</div>
 
@@ -168,7 +163,7 @@
             </div>
             <div class="authorsList">
                 <ul>
-                    <li>၁။  ခက်ဇော်</li>
+                    <li>၁။ ခက်ဇော်</li>
                     <li>၂။ ခင်ခင်ထူး</li>
                     <li>၃။ ခင်စောတင့်</li>
                     <li>၄။ ခင်နှင်းယု</li>
@@ -187,7 +182,7 @@
                 <ul>
                     <li>၁။ ဂျာနယ်ကျော်မမလေး</li>
                     <li>၂။ ဂျာနယ်ကျော်ဦးချစ်မောင် </li>
-                    <li>၃။ ဂျူး  </li>
+                    <li>၃။ ဂျူး </li>
                 </ul>
             </div>
         </div>
@@ -241,7 +236,7 @@
                 <ul>
                     <li>၁။ ဇဏ်ခီ</li>
                     <li>၂။ ဇော်ဂျီ </li>
-                    <li>၃။ ဇော်ဝင်းကြူ(ပျဥ်းမနား)  </li>
+                    <li>၃။ ဇော်ဝင်းကြူ(ပျဥ်းမနား) </li>
                 </ul>
             </div>
         </div>
@@ -270,7 +265,7 @@
                     <li>၁။ တက္ကသိုလ်စိန်တင်</li>
                     <li>၂။ တက္ကသိုလ်ဘုန်းနိုင်</li>
                     <li>၃။ တင်ညွှန့်</li>
-                    <li>၄။  တင်မောင်မြင့်</li>
+                    <li>၄။ တင်မောင်မြင့်</li>
                 </ul>
             </div>
         </div>
@@ -326,7 +321,7 @@
             </div>
             <div class="authorsList">
                 <ul>
-                    <li>၁။  နတ်နွယ်</li>
+                    <li>၁။ နတ်နွယ်</li>
                     <li>၂။ နန္ဒာသိန်းဇံ</li>
                     <li>၃။ နိုင်ဦး</li>
                     <li>၄။ နိုင်းနိုင်းစနေ</li>
@@ -344,10 +339,10 @@
             </div>
             <div class="authorsList">
                 <ul>
-                    <li>၁။  ပါပီယွန်</li>
+                    <li>၁။ ပါပီယွန်</li>
                     <li>၂။ ပါရဂူ</li>
                     <li>၃။ ပီမိုးနင်း</li>
-                    <li>၄။  ပုညခင်</li>
+                    <li>၄။ ပုညခင်</li>
                 </ul>
             </div>
         </div>
@@ -396,7 +391,7 @@
             </div>
             <div class="authorsList">
                 <ul>
-                    <li>၁။  မင်းခိုက်စိုးစန် </li>
+                    <li>၁။ မင်းခိုက်စိုးစန် </li>
                     <li>၂။ မင်းလူ</li>
                     <li>၃။ မစန္ဒာ</li>
                     <li>၄။ မင်းသေ့</li>
@@ -446,7 +441,7 @@
             </div>
             <div class="authorsList">
                 <ul>
-                    <li>၁။ 
+                    <li>၁။
                         လူထုစိန်ဝင်း</li>
                     <li>၂။ လူနေ</li>
                 </ul>
@@ -460,7 +455,7 @@
             </div>
             <div class="authorsList">
                 <ul>
-                    <li>၁။  ဝင်းဦး</li>
+                    <li>၁။ ဝင်းဦး</li>
                 </ul>
             </div>
         </div>
@@ -472,7 +467,7 @@
             </div>
             <div class="authorsList">
                 <ul>
-                    <li>၁။  သိန်းဖေမြင့်                    </li>
+                    <li>၁။ သိန်းဖေမြင့် </li>
                     <li>၂။ သိပ္ပံမောင်ဝ</li>
                     <li>၃။ သိုးဆောင်း</li>
                     <li>၄။ သော်တာဆွေ</li>
@@ -500,11 +495,12 @@
             </div>
             <div class="authorsList">
                 <ul>
-                    <li>၁။  အကြင်နာမွန်</li>
+                    <li>၁။ အကြင်နာမွန်</li>
                     <li>၂။ အောင်မေဃ</li>
                     <li>၃။ အောင်လှိုင်</li>
                     <li>၄။ အောင်သင်း</li>
-                    <li>၅။ အောင်အေး(ရန်ကုန်တက္ကသိုလ်)</ul>
+                    <li>၅။ အောင်အေး(ရန်ကုန်တက္ကသိုလ်)
+                </ul>
             </div>
         </div>
 
