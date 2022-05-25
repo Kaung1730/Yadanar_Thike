@@ -139,3 +139,48 @@ hr{
 .boxH{
     height: 75vh !important;
 }
+.tb-edit{
+    width: 73vw;
+}
+.begin{
+    width: 5vw;
+}
+.last{
+    width: 5vw;
+}
+.btn-size{
+    width: 15vw;
+}
+.btn-5{
+    background-color: var(--logoutBtnColor) !important;
+    width: 10vw !important;
+    color: var(--btnfontColor);
+}
+.aBtn{
+    display: inline;
+}
+.input-width{
+    width: 73vw !important;
+}
+.input-btn{
+    background-color: var(--submitBtnColor);
+    border: 1px solid black;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+@media screen and (max-width:720px){
+    .nav_box{
+        display: none;
+    }
+    .col-10{
+        width: 100%;
+    }
+    .btn{
+        font-size: 0.60rem;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    .table{
+        width: 75vw;
+    }
+}
