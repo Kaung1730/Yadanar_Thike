@@ -1,0 +1,21 @@
+*{
+    color:var(--fontColor);
+}
+.login_box{
+    background-color:var(--boxColor);
+    width: 400px;
+    height: 470px;
+    border-radius: 30px;
+}
+.name_box,.password_box{
+    width: 280px;
+    height: 60px;
+    border-radius: 20px;
+}
+.box{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color:var(--submitBtnColor);
+}

@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--adminBg);
+}
+.nav_box{
+    background-color: var(--boxColor);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: sticky;
+    height: 100vh;
+}
+/* .logo{
+    margin-top: 3vh;
+} */
+hr{
+    width: 100%;
+    height: 5rem;
+    color: black;
+    margin-left: 0;
+}
+.nav_img{
+    width: 2.5vw;
+    height: 6vh;
+}
+.nav_details{
+    display: flex;
+}
+.circle{
+    border-radius: 50%;
+}
+.link_details{
+    /* font-size: var(--navSize); */
+    color: var(--fontColor);
+}
+.logout{
+    width: 15vw;
+    background-color: var(--logoutBtnColor);
+    margin-top: 15vh;
+    border-radius: 12px;
+}
+.title_bar{ 
+    height: 15vh;
+    padding-left: 2%;
+    background-color: var(--boxColor);
+    
+}
+.search_bar{
+    height: 12vh;
+    background-color: var(--boxColor);
+
+}
+#adminCl{
+    color: var(--presentColor);
+}
+#adSet{
+    color: var(--secondColor);
+}
+
+.hover-li:hover{
+    width: 15vw;
+    padding: 2vh;
+    padding-left: 1vw;
+    border-radius: 12px;
+    border: 1px solid black;
+    background-color: var(--activeColor);
+    margin: auto;
+}
+.message_icon{
+    width: 2.5vw;
+}
+.cart_icon{
+    width: 2.5vw;
+}
+.search{    
+    width: 40vw;
+    height: 7vh;
+    background-color: var(--boxColor);
+    margin-left: 3vw;
+    margin-right: 2vw;
+}
+.person_icon{
+    width: 3vw;
+}
+.message_box{
+    padding-left: 6vw;
+    padding-top: 3vh;
+}
+.cart_box{
+    padding-left: 2vw;
+    padding-top: 3vh;
+}
+.admin_box{
+    padding-left: 4vw;
+    padding-top: 2vh;
+}
+.author_bar{
+    height: 30vh;
+    background-color: var(--boxColor);
+    margin-top: 4vh;
+    border-radius: 12px;
+}
+.add_author{
+    width: 10vw;
+    height: 7vh;
+    border-radius: 12px;
+    background-color: var(--submitBtnColor);
+}
+.search_auther{ 
+    background-color: var(--boxColor);
+}
+.white_table{
+    background-color: var(--btnfontColor);
+    padding-left: 10px;
+}
+.author_list{
+    font-size: 20px;
+    padding-left: 10px;
+}
+@media screen and (max-width:1241px)  {
+    .add_author{
+        height: 9vh;
+    }
+}
+@media screen and (max-width:1072px) {
+    .title_bar{ 
+        height: 19vh;
+    }
+    .message_box{
+        padding-left: 3vw;
+    }
+    .cart_box{
+        padding-left: 2vw;
+    }
+}
+@media screen and (max-width:950px) {
+    .message_box{
+        padding-left: 1vw;
+    }
+    .cart_box{
+        padding-left: 1vw;
+    }
+    .admin_box{
+        padding-left: 2vw;
+    }
+
+}
+@media screen and (max-width:875px){
+    .logo{
+        width: 10vw;
+    }
+    .nav_img{
+        display: none;        ;
+    }
+    hr{
+        display: none;
+    }
+    .logout{
+        width: 10vw;
+    }
+} 
+@media screen and (max-width:811px) {
+    .message_box{
+        padding-left: 0;
+    }
+    .cart_box{
+        padding-left: 1vw;
+    }
+    .admin_box{
+        padding-left: 1vw;
+    }
+}
+@media screen and (max-width:700px){
+    .add_author{
+        font-size: 15px;
+    }
+    .link_details{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:695px){
+    .add_author{
+        font-size: 11px;
+    }
+    .logout{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width:625px){
+    .author_bar{
+        font-size: 12px;
+    }
+    .title_bar{
+        font-size: 13px;
+    }
+    .title_author{
+        font-size: 13px;
+    }
+    .author_list{
+        font-size: 16px;
+        padding-left: 10px;
+    }
+}

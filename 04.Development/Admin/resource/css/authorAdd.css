@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--adminBg);
+}
+.nav_box{
+    background-color: var(--boxColor);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: sticky;
+    height: 100vh;
+}
+/* .logo{
+    margin-top: 3vh;
+} */
+hr{
+    width: 100%;
+    height: 5rem;
+    color: black;
+    margin-left: 0;
+}
+.nav_img{
+    width: 2.5vw;
+    height: 6vh;
+}
+.nav_details{
+    display: flex;
+}
+.circle{
+    border-radius: 50%;
+}
+.link_details{
+    /* font-size: var(--navSize); */
+    color: var(--fontColor);
+}
+.logout{
+    width: 15vw;
+    background-color: var(--logoutBtnColor);
+    margin-top: 15vh;
+    border-radius: 12px;
+}
+.title_bar{ 
+    height: 15vh;
+    padding-left: 2%;
+    background-color: var(--boxColor);
+    
+}
+#adminCl{
+    color: var(--presentColor);
+}
+#adSet{
+    color: var(--secondColor);
+}
+
+.hover-li:hover{
+    width: 15vw;
+    padding: 2vh;
+    padding-left: 1vw;
+    border-radius: 12px;
+    border: 1px solid black;
+    background-color: var(--activeColor);
+    margin: auto;
+}
+.add_author{
+    height: 78vh;
+    background-color: var(--boxColor);
+    margin-top: 4vh;
+    border-radius: 12px;
+}
+.title_addauthor{
+    padding-left: 2vw;
+    padding-top: 0.6vw;
+}
+.author_name,.author_des,.author_image,.author_life{
+    padding-left: 2vw;
+    margin-top: 0.5vh;
+}
+.box1{
+    width: 73vw;
+    height: 7vh;
+    margin-left: 2vw;
+    margin-top: 1.5vh;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: transparent;
+    margin-top: 1vw;
+}
+.box2{
+    width: 65vw;
+    height: 7vh;
+    margin-left: 2vw;
+    margin-top: 1.5vh;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: transparent;
+}
+.browse_btn{
+    width: 8vw ;
+    height: 7vh;
+    border-radius: 12px;
+    background-color: var(--presentColor);
+    color:var(--adminBg) ;
+}
+#born_years,#die_years{
+    width: 16vw;    
+    height: 7vh;
+    border-radius: 12px;
+    background-color: var(--boxColor);
+}
+.arrow{
+    width: 6vw;
+    height: 1vh;
+    background-color: black;
+    margin-top: 3.3vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+#born_years{
+    margin-left: 2vw;
+    margin-top: 0.5vh;
+}
+.submit{
+    width: 8vw ;
+    height: 7vh;
+    border-radius: 12px;
+    background-color: var(--settingBar );
+    color:var(--adminBg) ;
+}
+.reset{
+    width: 8vw ;
+    height: 7vh;
+    border-radius: 12px;
+    background-color: var(--logoutBtnColor);
+    color: var(--adminBg);
+}
+.submit,.reset{
+    margin-left: 2vw;
+    margin-top: 4vh;
+}
+
