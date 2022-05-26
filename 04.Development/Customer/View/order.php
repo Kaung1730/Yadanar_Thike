@@ -90,7 +90,7 @@
                                 <div class="row my-3 justify-content-center">
                                     <div class="col-lg-10">
                                     <label for="" class="book-text my-2">တိုင်း​ဒေသကြီး/ပြည်နယ်</label>
-                                    <select name="" id="" class="book-text my-2">
+                                    <select name="" id="" class="book-text my-2 px-lg-3 py-1">
                                         <option value="ဧရာဝတီတိုင်းဒေသကြီး">ဧရာဝတီတိုင်းဒေသကြီး</option>
                                         <option value="ပဲခူးတိုင်းဒေသကြီး">ပဲခူးတိုင်းဒေသကြီး</option>
                                         <option value="ချင်းပြည်နယ်">ချင်းပြည်နယ်</option>
