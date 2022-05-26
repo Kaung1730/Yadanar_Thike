@@ -4,7 +4,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2100,
-        prevArrow:'<div class="arrow"><img src="./arrow_left 11.png" alt=""></div>',
-        nextArrow:'<div class="arrow"><img src="./arrow_right 11.png" alt=""></div>',
+        prevArrow:'<div class="arrow"><img src="../resource/image/arrow_left.png" alt=""></div>',
+        nextArrow:'<div class="arrow"><img src="../resource/image/arrow_right.png" alt=""></div>',
       }); 
  });
