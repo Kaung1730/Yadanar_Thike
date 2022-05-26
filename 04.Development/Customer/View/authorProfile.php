@@ -69,9 +69,6 @@
             </button>
         </div>
 
-
-
-
         <div class="profile mb-5">
             <div class="row mt-5 ms-5 ">
                 <!-- PROFILE -->
