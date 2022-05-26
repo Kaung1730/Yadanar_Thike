@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YadanarThinke Cart</title>
-    <link rel="shortcut icon" href="./logo.png">
+    <link rel="shortcut icon" href="../resource/image/logo.png">
     <!--Customize CSS-->
-    <link rel="stylesheet" href="./orderHistory.css">
-    <link rel="stylesheet" href="../commonUser.css">
+    <link rel="stylesheet" href="../resource/css/orderHistory.css">
+    <link rel="stylesheet" href="../resource/css/commonUser.css">
     <!--Bootstrap CSS & JavaScript-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -21,7 +21,7 @@
     <!-- Button trigger modal -->
     <div class="container">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Nav Cart
+            Order History
         </button>
 
     <!-- Popup order page -->
@@ -48,7 +48,7 @@
                             <div class="my-2 small-text">အိမ်အ​ရောက်​ငွေ​ချေစနစ်</div>
                         </div>
                         <div class="col-4 mt-2"> 
-                            <img src="./The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13.png" class="img-fluid" alt="">
+                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" class="img-fluid" alt="">
                         </div>
                     </div>
 

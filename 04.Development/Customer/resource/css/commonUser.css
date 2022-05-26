@@ -7,6 +7,7 @@
     --yellow:#E8C547;
     --light-yellow:#F2F175;
     --light-black:#4D5061;
+    --medium-black:#30323D;
     --pruple:#E8C3F1;
     --bgColor:#f1f1f1;
     --white:#ffffff;
@@ -19,7 +20,6 @@
     box-sizing: border-box;
     font-family: 'Noto Sans Myanmar', sans-serif !important;
 }
-
 body{
     background-color: var(--bgColor) !important;
 }

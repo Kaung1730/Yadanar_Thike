@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookDescription</title>
-    <link rel="shortcut icon" href="./logo.png">
+    <link rel="shortcut icon" href="../resource/image/logo.png">
     <!--Customize CSS-->
-    <link rel="stylesheet" href="./bookDescription.css">
-    <link rel="stylesheet" href="../commonUser.css">
+    <link rel="stylesheet" href="../resource/css/bookDescription.css">
+    <link rel="stylesheet" href="../resource/css/commonUser.css">
     <!--Bootstrap CSS & JavaScript-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
         <div class="upper-part">
             <div class="row">
                 <div class="col-lg-4 col-12  col-md-4 col-xl-4">
-                    <img src="./Chonechar-Mha-300x300.png" class="ms-5 ms-lg-0 ms-md-0 py-4 py-lg-0 py-md-0"/>
+                    <img src="../resource/image/Chonechar-Mha-300x300.png" class="ms-5 ms-lg-0 ms-md-0 py-4 py-lg-0 py-md-0"/>
                     <!-- book preview -->
                     <div class=" d-flex d-lg-block d-md-block justify-content-center">
                         <a href="" class="ms-lg-5 ms-md-3 my-4  view-more-btn btn  text-dark book-d-text">   
@@ -134,7 +134,7 @@
             </div>
             <div class="text-center book-box d-flex flex-wrap flex-lg-nowrap flex-md-nowrap">
                 <div>
-                    <img src="./Geneous-300x300 (2).png" class="img-fluid"  alt="">
+                    <img src="../resource/image/Geneous-300x300 (2).png" class="img-fluid"  alt="">
                     <div class="book-title book-d-text">ဂျီးနီးယပ်(စ)</div>
                     <div class="ratingEachBook  d-flex justify-content-center">
                             <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
@@ -145,7 +145,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./Heart-Nutrition-300x300.png" class="img-fluid" alt="">
+                    <img src="../resource/image/Heart-Nutrition-300x300.png" class="img-fluid" alt="">
                     <div class="book-title book-d-text">နှလုံးသား အာဟာရ ရသစာများ</div>
                     <div class="ratingEachBook  d-flex justify-content-center">
                     <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
@@ -156,7 +156,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./Pyaw-Tat-Sotat-300x300.png" class="img-fluid" alt="">
+                    <img src="../resource/image/Pyaw-Tat-Sotat-300x300.png" class="img-fluid" alt="">
                     <div class="book-title book-d-text">​ပြောတတ်ဆိုတတ်​ပေါင်းသင်းတတ်တဲ့သူ</div>
                     <div class="ratingEachBook  d-flex justify-content-center">
                     <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
@@ -167,7 +167,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./Standand-Front-CoverMedium-4-300x300.png" class="img-fluid" alt="">
+                    <img src="../resource/image/Standand-Front-CoverMedium-4-300x300.png" class="img-fluid" alt="">
                     <div class="book-title book-d-text">​ဘေ​ဘီလုံမှာ အချမ်းသာဆုံး ပုဂ္ဂိုလ်</div>
                     <div class="ratingEachBook  d-flex justify-content-center">
                     <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
