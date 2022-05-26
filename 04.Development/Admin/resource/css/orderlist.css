@@ -159,9 +159,6 @@ hr{
     .logout{
         width: 10vw;
     }
-    .title_author{
-        font-size: 15px;
-    }
 } 
 @media screen and (max-width:811px) {
     .message_box{
