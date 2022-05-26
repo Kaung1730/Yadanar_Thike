@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../resource/css/commonAdmin.css">
     <link rel="stylesheet" href="../resource/css/contactEdit.css">
     <link rel="stylesheet" href="../resource/css/privacyPolicyList.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/guideAdd.js"></script>
 </head>
@@ -24,7 +26,7 @@
                 </div>
                 <div class="col-10">
                     <div class="title_bar">
-                        
+
                     </div>
                     <div class="contact-box mt-4">
                         <div class="btn mt-4">

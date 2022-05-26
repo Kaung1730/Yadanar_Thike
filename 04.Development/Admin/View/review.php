@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../resource/css/contactEdit.css">
     <link rel="stylesheet" href="../resource/css/privacyPolicyList.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/contact.js"></script>
 </head>
