@@ -180,6 +180,7 @@ hr{
 }
 .tit-me{
     font-size: 2.5rem;
+    display: none;
 }
 @media screen and (max-width:720px){
     .nav_box{
@@ -221,5 +222,8 @@ hr{
     }
     .img-me{
         width: 5vw;
+    }
+    .tit-me{
+        display: block;
     }
 }
