@@ -48,7 +48,7 @@
                                     <div>
                                         <div class="d-flex text-dark  numberContainer text-center align-item-center">
                                             <div class="col-2 me-3  pt-1">
-                                                <i class="bi bi-dash-lg minus fw-bolder"></i>
+                                                <i class="bi bi-dash-lg minus fw-bolder text-warning"></i>
                                             </div>
                                             <div class="col-4 me-3 fw-bold pt-1">1</div>
                                             <div class="col-2 fw-bold pt-1">+</div>
