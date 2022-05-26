@@ -1,0 +1,47 @@
+.view-more-btn, .order-btn{
+    border-radius: var(--border) !important;
+    background-color: var(--yellow) !important;
+}
+.book-des-title{
+    font-weight: 450 !important;
+}
+.book-fee{
+    font-weight: 500 !important;
+}
+.author-name{
+    color: var(--yellow);
+}
+.book-d-text{
+    font-size: 0.8em !important;
+}
+.numberContainer div{
+    background-color: gainsboro !important;
+}
+/* .bi-dash-lg{
+    color: var(--black) !important;
+} */
+
+.bi-star, .bi-star-fill, .author{
+    color: var(--yellow) !important;
+}
+.des-text{
+    max-width: 18rem;
+}
+.review-box{
+    background-color: gainsboro !important;
+    position: relative !important;
+}
+.border-left{
+    border-right: .2rem solid gray;
+}
+.bi-person-circle{
+    font-size: 3em !important;
+}
+.form-border{
+    border: .2em solid gainsboro !important;
+    border-radius: .8rem !important;
+}
+.review-btn{
+    background-color: var(--yellow) !important;
+    border-radius: .8rem !important;
+}

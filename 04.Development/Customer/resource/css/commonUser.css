@@ -19,3 +19,7 @@
     box-sizing: border-box;
     font-family: 'Noto Sans Myanmar', sans-serif !important;
 }
+
+body{
+    background-color: var(--bgColor) !important;
+}

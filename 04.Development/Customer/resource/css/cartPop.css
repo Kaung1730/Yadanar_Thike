@@ -1,0 +1,24 @@
+.modal-parent{
+    border-radius: 1em !important;
+    max-width: 22rem;
+}
+.modal-title{
+    font-size: 1em !important;
+}
+.order-btn{
+    font-size: 0.8rem !important;
+}
+.modal-body{
+    border: 0 solid var(--light-black) !important;
+    background-color: var(--medium-black) !important;
+}
+.book-title{
+    font-size: 0.7em !important;
+}
+.book-text{
+    font-size: 0.8em !important;
+}
+.cart-header, .order-btn{
+    background-color: var(--yellow)  !important;
+    border-color: var(--yellow) !important;
+}
