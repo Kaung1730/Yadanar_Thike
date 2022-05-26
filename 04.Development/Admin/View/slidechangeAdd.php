@@ -30,17 +30,17 @@
                     </div>
                     <div class="contact-box mt-4 boxH">
                         <div class="btn">
-                            <button type="button" class="btn btn-secondary mx-5 btn-1"><a href="contactEdit.php" class="a-edit">Contact Edit</a></button>
-                            <button type="button" class="btn btn-secondary mx-5 btn-2"><a href="adminAdd.php" class="a-edit">Add Admin</a></button>
-                            <button type="button" class="btn btn-secondary mx-5 btn-3"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
+                            <button type="button" class="btn btn-secondary mx-5 btn-1 btn-me"><a href="contactEdit.php" class="a-edit">Contact Edit</a></button>
+                            <button type="button" class="btn btn-secondary mx-5 btn-2 btn-me"><a href="adminAdd.php" class="a-edit">Add Admin</a></button>
+                            <button type="button" class="btn btn-secondary mx-5 btn-3 btn-me"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
                         </div>
-                        <div class="input-part ms-5 mt-5">
+                        <div class="input-part ms-5 mt-5 slide-me">
                             <label for="slide_img" class="form-label mt-2">Slide Image</label>
                             <div class="input-group mt-2 mb-3 input-width">
                                 <input type="file" class="form-control input-edit" id="slide_img">
                                 <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
                             </div>
-                            <button type="submit" class="btn btn-info mt-5 mb-5 btn-4">Submit</button>
+                            <button type="submit" class="btn btn-info mt-5 mb-5 btn-4 btn-cen">Submit</button>
                         </div>
                     </div>
                     <div class="copyright mt-3 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>

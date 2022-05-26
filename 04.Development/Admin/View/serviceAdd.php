@@ -35,7 +35,7 @@
                             <button type="button" class="btn btn-secondary mx-3 btn-2 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                         </div>
                         <div class="input-part ms-5">
-                            <label for="question" class="form-label mt-2">Image</label>
+                            <label for="question" class="form-label mt-2">Icon</label>
                             <div class="input-group mb-3 input-width">
                                 <input type="file" class="form-control input-edit" id="inputGroupFile02">
                                 <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>

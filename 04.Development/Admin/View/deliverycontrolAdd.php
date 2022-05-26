@@ -36,7 +36,7 @@
                         </div>
                         <div class="input-part ms-5">
                             <label for="state" class="form-label mt-5">State</label>
-                            <div class="input-group inputgp mt-3">
+                            <div class="input-group inputgp mt-3 input-width">
                                 <select class="form-select input-edit" id="inputGroupSelect04" aria-label="Example select with button addon">
                                     <option value="1">Yangon</option>
                                     <option value="2">Ayeyarwaday</option>
@@ -44,7 +44,7 @@
                                 </select>
                             </div>
                             <label for="township" class="form-label mt-5">Township</label>
-                            <div class="input-group inputgp mt-3">
+                            <div class="input-group inputgp mt-3 input-width">
                                 <select class="form-select input-edit" id="inputGroupSelect04" aria-label="Example select with button addon">
                                     <option value="1">Lanmataw</option>
                                     <option value="2">Kyimyittime</option>

@@ -29,9 +29,9 @@
                         <div class="head_text fs-3 pt-3 fw-normal">Website Info</div>
                         <hr />
                         <div class="btn">
-                            <button type="button" class="btn btn-secondary mx-5 btn-1"><a href="contactEdit.php" class="a-edit">Contact Edit</a></button>
-                            <button type="button" class="btn btn-secondary mx-5 btn-2"><a href="adminAdd.php" class="a-edit">Add Admin</a></button>
-                            <button type="button" class="btn btn-secondary mx-5 btn-3"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
+                            <button type="button" class="btn btn-secondary mx-5 btn-1 btn-me"><a href="contactEdit.php" class="a-edit">Contact Edit</a></button>
+                            <button type="button" class="btn btn-secondary mx-5 btn-2 btn-me"><a href="adminAdd.php" class="a-edit">Add Admin</a></button>
+                            <button type="button" class="btn btn-secondary mx-5 btn-3 btn-me"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
                         </div>
                         <div class="input-part ms-5">
                             <label for="admin" class="form-label mt-2">Admin Name</label>
@@ -39,13 +39,13 @@
                             <label for="password" class="form-label mt-2">Password</label>
                             <input type="password" id="password" class="form-control input-edit" aria-describedby="passwordHelpBlock">
                             <label for="role" class="form-label mt-2">Role</label>
-                            <div class="input-group inputgp">
+                            <div class="input-group inputgp input-width">
                                 <select class="form-select input-edit" id="inputGroupSelect04" aria-label="Example select with button addon">
                                     <option value="1">Super Admin</option>
                                     <option value="2">Normal Admin</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-info mt-4 mb-3 btn-4">Submit</button>
+                            <button type="submit" class="btn btn-info mt-4 mb-3 btn-4 btn-cen">Submit</button>
                         </div>
                     </div>
                     <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>

@@ -66,6 +66,7 @@ hr{
 .btn{
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 12px;
 }
 .btn-1{
@@ -163,6 +164,7 @@ hr{
     width: 73vw !important;
 }
 .input-btn{
+    color: var(--btnfontColor);
     background-color: var(--submitBtnColor);
     border: 1px solid black;
     border-bottom-right-radius: 12px;
@@ -176,11 +178,31 @@ hr{
         width: 100%;
     }
     .btn{
-        font-size: 0.60rem;
-        /* justify-content: center;
-        align-items: center; */
+        font-size: 0.50rem;
     }
     .table{
-        width: 75vw;
+        width: 82vw;
+    }
+    .page-item{
+        font-size: 0.55rem;
+        width: 4vw;
+    }
+    .input-edit{
+        width: 82vw;
+    }
+    .btn-me{
+        width: 20vw;
+    }
+    .btn-cen{
+        margin-left: 35vw;
+    }
+    .input-width{
+        width: 82vw !important;
+    }
+    .btn-connect{
+        width: 15vw !important;
+    }
+    .com-edit{
+        width: 50vw;
     }
 }
