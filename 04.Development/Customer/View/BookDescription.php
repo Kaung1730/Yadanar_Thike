@@ -60,7 +60,7 @@
                     <div class="mb-3 mt-4">
                         <div class="d-flex mt-2 numberContainer text-center align-item-center">
                             <div class="col-1 me-3  pt-2">
-                                <i class="bi bi-dash-lg minus fw-bolder"></i>
+                                ー
                             </div>
                             <div class="col-2 me-3 fw-bold pt-2">1</div>
                             <div class="col-1 fw-bold pt-2">+</div>
