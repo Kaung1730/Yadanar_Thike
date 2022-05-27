@@ -159,9 +159,10 @@ a:link {
 }
 
 .imgBox .bookTitle {
-    padding: 20px 0px 0px 20px;
-    font-weight: bold;
+    padding: 20px 0px 0px 0px;
     color: brown;
+    font-size: 13px;
+
 }
 
 .bookImg {
@@ -189,6 +190,10 @@ a:link {
 
 }
 
+.card .content .btn{
+    background-color: var(--light-yellow);
+}
+
 /* လတ်တလောလူကြိုက်များသော စာအုပ်များ end  */
 
 /* DISCOUNT */
@@ -204,13 +209,17 @@ a:link {
 
 }
 
-.disItem .disContent h1 {
-    margin-left: 10vw;
+.disItem .disContent h2{
+    margin-left: 11vw;
     padding-bottom: 4px;
 }
+.disItem .disContent p {
+  margin: 2vh 0vw 2vh 4vw;
+}
+
 
 .disItem .disContent .disPrice {
-    margin-left: 7vw;
+    margin-left: 9vw;
 }
 
 .disItem .discountCard {
@@ -221,7 +230,7 @@ a:link {
     border-radius: 50%;
     background-color: #F2F175;
     box-shadow: 0px 0px 0px rgb(0, 0, 1);
-    margin: 7vh 0vw 0vh 4vw;
+    margin: 7vh 0vw 0vh 15vw;
 }
 
 .disItem .discountCard .disImage {
@@ -232,13 +241,13 @@ a:link {
 
 .disTag {
     position: absolute;
-    margin: 30px 0px 0 0;
+    margin: 30px 0px 0px -40px;
 }
 
 .disTag span {
     width: 125px;
     height: 40px;
-    background-color: red;
+    background-color: var(--yellow);
     display: block;
     position: absolute;
     margin-top: 30px;
@@ -341,11 +350,10 @@ a:link {
 /* SERVICES */
 
 .serviceCard{
-    width: 180px;
-    height: 120px;
+    width: 165px;
+    height: 130px;
     border: 0px solid;
-    background-color: var(--light-violet);
-    
+    background-color: var(--light-yellow);
     border:none;
     cursor:pointer;
     margin-top: 50px;
@@ -353,7 +361,7 @@ a:link {
 }
 
 .serviceCard{
-   margin: 40px 0px 0px 25px;
+   margin: 40px 0px 30px 0px;
 }
 .serviceCard:hover{
     background-color:var(--yellow);
@@ -367,4 +375,37 @@ a:link {
     font-size: 13px;
     margin-top: 20px;
     /* margin-left: 1vw; */
+}
+/* homeAddress */
+.homeAddress{
+    background-color: var(--light-yellow);
+    /* margin-left: 4vw; */
+}
+/* homeAddress */
+
+/* Copyright */
+.copyright{
+    background-color: var(--yellow);
+}
+
+/* Copyright */
+.footer {
+    height: 12vh;
+    background-color: var(--yellow);
+    display: flex;
+   padding: 5vh 0vw 0vh 2vw;
+
+}
+
+.copyright {
+    margin-left: 15vw;
+}
+@media screen and (max-width: 720px){
+    .footer {
+        font-size: 14px;
+    }
+
+    .copyright {
+        margin-left: 30px;
+    }
 }
