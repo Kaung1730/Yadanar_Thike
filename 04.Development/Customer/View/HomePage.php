@@ -3,9 +3,9 @@
 
 <head>
     <title>Home Page</title>
-    <link rel="stylesheet" href="../resource/css/homePage.css">
+    <link rel="stylesheet" href="../resource/css/HomePage.css">
     <script src="../resource/js/jquery3.6.0.js"></script>
-
+    <link rel="stylesheet" href="../resource/css/commonUser.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="../resource/css/slick-theme.css">
     <script src="../resource/js/slick.min.js"></script>
     <script src="../resource/js/slicker.js"></script>
+
+    <!-- ionic icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </head>
 
@@ -184,13 +188,13 @@
             <div class="card">
                 <div class="imgBox">
                     <img src="../resource/image/popular1.png" alt="" class="bookImg">
-                    <div class="bookTitle">Sucide Diary</div>
+                    <div class="bookTitle">ချစ်သူရေးတဲ့ကျွန်မရဲ့ညတွေ</div>
                 </div>
                 <div class="content">
 
-                    <p>6500</p>
+                    <p>၅၀၀၀ကျပ်</p>
                     <!-- <p>more info</p> -->
-                    <button type="button" class="btn btn-outline-primary">Add to Basket</button>
+                    <button type="button" class="btn ">Add to Basket</button>
                 </div>
             </div>
 
@@ -200,13 +204,13 @@
 
 
                     <img src="../resource/image/popular2.webp" alt="" class="bookImg">
-                    <div class="bookTitle">Sucide Diary</div>
+                    <div class="bookTitle">အချိန်နဲ့အတူပျောက်ကွယ်သွားတဲ့ဆူး</div>
                 </div>
                 <div class="content">
 
-                    <p>6500</p>
+                    <p>၂၀၀၀ကျပ်</p>
                     <!-- <p>more info</p> -->
-                    <button type="button" class="btn btn-outline-primary">Add to Basket</button>
+                    <button type="button" class="btn ">Add to Basket</button>
                 </div>
             </div>
 
@@ -216,13 +220,13 @@
 
 
                     <img src="../resource/image/popular3.png" alt="" class="bookImg">
-                    <div class="bookTitle">Sucide Diary</div>
+                    <div class="bookTitle">သင်၏ရင်းနှီးကျွမ်းဝင်ရာအရပ်ဒေသမှ</div>
                 </div>
                 <div class="content">
 
-                    <p>6500</p>
+                    <p>၄၀၀၀ကျပ်</p>
                     <!-- <p>more info</p> -->
-                    <button type="button" class="btn btn-outline-primary">Add to Basket</button>
+                    <button type="button" class="btn ">Add to Basket</button>
                 </div>
             </div>
             <!-- cardFour -->
@@ -231,13 +235,13 @@
 
 
                     <img src="../resource/image/popular4.webp" alt="" class="bookImg">
-                    <div class="bookTitle ">Sucide Diary</div>
+                    <div class="bookTitle ">ဧဒင်မြို့ကအပြေးသမား</div>
                 </div>
                 <div class="content">
 
-                    <p>6500</p>
+                    <p>၄၀၀၀ကျပ်</p>
                     <!-- <p>more info</p> -->
-                    <button type="button" class="btn btn-outline-primary">Add to Basket</button>
+                    <button type="button" class="btn ">Add to Basket</button>
                 </div>
             </div>
 
@@ -246,14 +250,14 @@
                 <div class="imgBox">
 
 
-                    <img src="../resource/image/popular5.webp" alt="" class="bookImg">
-                    <div class="bookTitle">Sucide Diary</div>
+                    <img src="../resource/image/popular5.png" alt="" class="bookImg">
+                    <div class="bookTitle">အိပ်နေရင်ညနိုးနေရင်နေ့</div>
                 </div>
                 <div class="content">
 
-                    <p>6500</p>
+                    <p>၄၀၀၀ကျပ်</p>
                     <!-- <p>more info</p> -->
-                    <button type="button" class="btn btn-outline-primary">Add to Basket</button>
+                    <button type="button" class="btn">Add to Basket</button>
                 </div>
             </div>
 
@@ -264,9 +268,9 @@
 
         <div class="disItem">
             <div class="disContent">
-                <h1>ဒဂုန်တာရာ</h1>
-                <p>သူ့ကဗျာနှင့်သူ့ကဗျာစာပေသဘောတရားကျမ်း (20% Off)</p>
-                <p class="disPrice">၃၀၀၀ကျပ် <span class="text-decoration-line-through ms-2">၂၆၀၀ကျပ်</span></p>
+                <h2>မြသန်းတင့်</h2>
+                <p>ရှားလော့ဟုမ်း၏ မှတ်တမ်း (20% Off)</p>
+                <p class="disPrice">၆၀၀၀ကျပ် <span class="text-decoration-line-through ms-2">၄၈၀၀ကျပ်</span></p>
             </div>
 
             <div class="discountCard">
@@ -275,8 +279,7 @@
                 </div>
                 <div>
                     <!-- <span>ribbon</span> -->
-                    <img src="../resource/image/popular4.webp
-                    " alt="" class="disImage">
+                    <img src="../resource/image/Memoirs-of-600x600.webp" alt="" class="disImage">
                 </div>
             </div>
         </div>
@@ -288,46 +291,185 @@
                 <div class="col-sm-3">
                     <div class="thumb-wrapper">
                         <div class="img-box">
-                            <img src="../resource/image/image2.png" class="img-responsive" alt="">
+                            <img src="../resource/image/category1.webp" class="img-responsive" alt="">
                         </div>
                         <div class="thumb-content">
-                            <div class="authorName">poem</div>
+                            <div class="authorName">ဝတ္ထု</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="thumb-wrapper">
-                    <div class="img-box">
-                        <img src="../resource/image/image2.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="thumb-content">
-                        <div class="authorName">poem</div>
-                    </div>
+                        <div class="img-box">
+                            <img src="../resource/image/category2.webp" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                            <div class="authorName">နိုင်ငံရေး</div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="thumb-wrapper">
-                    <div class="img-box">
-                        <img src="../resource/image/image2.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="thumb-content">
-                        <div class="authorName">poem</div>
-                    </div>
+                        <div class="img-box">
+                            <img src="../resource/image/category3.webp" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                            <div class="authorName">အတ္ထုပတ္တိ</div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
-                   <div class="thumb-wrapper">
-                   <div class="img-box">
-                        <img src="../resource/image/image2.png" class="img-responsive" alt="">
+                    <div class="thumb-wrapper">
+                        <div class="img-box">
+                            <img src="../resource/image/category4.webp" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                            <div class="authorName">ကျန်းမာရေး</div>
+                        </div>
                     </div>
-                    <div class="thumb-content">
-                        <div class="authorName">poem</div>
-                    </div>
-                   </div>
                 </div>
             </div>
         </div>
+        <div class="seeMore">ဆက်လက်ကြည့်ရှုရန်</div>
         <!-- end category -->
+
+        <!-- SERVICES -->
+        <div class="services">
+            <div class="row text-center">
+                <div class="col-md-2">
+                    <div class="serviceCard">
+                        <div class="icon">
+                            <img src="../resource/image/serviceLogo.png" alt="">
+                        </div>
+                        <div class="content ">ဝန်ဆောင်မှုများ</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="serviceCard">
+                        <div class="icon"><img src="../resource/image/locationLogo.png" alt=""></div>
+                        <div class="content">စာအုပ်ဆိုင်တည်နေရာများ</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="serviceCard">
+                        <div class="icon"><img src="../resource/image/deliveryLogo.png" alt=""></div>
+                        <div class="content">အိမ်အရောက်ပို့ဆောင်ပေးသော နေရာများ</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="serviceCard">
+                        <div class="icon">
+                            <img src="../resource/image/faqIcon.webp" alt="">
+                        </div>
+                        <div class="content">FAQ</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="serviceCard">
+                        <div class="icon">
+                            <img src="../resource/image/privacyLogo.webp" alt="">
+                        </div>
+                        <div class="content">ကိုယ်ရေးအချက်အလက်ဆိုင်ရာ မူပိုင်ခွင့်များ</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="serviceCard">
+                        <div class="icon">
+                            <img src="../resource/image/contactLogo.png" alt="">
+                        </div>
+                        <div class="content">ဆက်သွယ်ရန်</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SERVICES END -->
+
+        <!-- homeAddress -->
+        <div class="text-center text-lg-start homeAddress">
+            <!-- Grid container -->
+            <div class=" p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                            <!-- <h6 class="text-uppercase mb-4 font-weight-bold">
+                                <a href="">ရတနာသိုက်</a>
+                            </h6> -->
+                            <a href=""><img src="../resource/image/logo.png" alt="" class="w-50" h-50 mt-5 ms-5></a>
+                            <br>
+                            <!-- <p>
+                                Here you can use rows and columns to organize your footer
+                                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                            </p> -->
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                <ion-icon name="location"></ion-icon> ရုံးချုပ်တည်နေရာ
+                            </h6>
+                            <p>အမှတ် (၁၂၃) ၊ ရတနာလမ်း၊တောင်ဥက္ကလာပမြို့နယ်၊ ရန်ကုန်။</p>
+                            <p> yadanarthikebookshop@gmail.com</p>
+                            <p> +၉၅၉ ၁၂၃ ၄၅၆ ၇၈၉</p>
+                            <p> နေ့စဉ် မနက် ၉း၀၀ မှ ညနေ ၆း၀၀ အထိ ဖွင့်ပါသည်။</p>
+                        </div>
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">ကျွန်ုပ်တို့နှင့်ထိတွေ့ဆက်ဆံရန်</h6>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>
+                                        <ion-icon name="logo-facebook"></ion-icon> www.facebook.com/yadanarthike
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <ion-icon name="logo-instagram"></ion-icon> www.instagram.com/yadanarthike
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <ion-icon name="logo-twitter"></ion-icon> www.twitter.com/yadanarthike
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <!-- 
+            <div class="text-center p-3 copyright fw-bold">
+                ⓒ YadanarThike Company. All Rights Reserved.
+            </div> -->
+
+            <!-- Copyright -->
+        </div>
+        <!-- homeAddress -->
+        <div class="footer ">
+            <div class="">@YadanarThike 2022</div>
+            <div class="copyright">&#169;
+                YadanarThike Company2022. All Rights Reserved.</div>
+        </div>
     </div>
 </body>
 

@@ -3,7 +3,7 @@
     max-width: 22rem;
 }
 select{
-    border-radius: 5rem !important;
+    border-radius: 0.3rem !important;
 }
 .modal-title{
     font-size: 1em !important;

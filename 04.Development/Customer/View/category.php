@@ -200,7 +200,7 @@
             <div class="sub my-5">
                 <div class="sub-title ms-lg-5 mb-3 ps-lg-5">အခြား</div>
                 <div class="autoplay book-list d-flex justify-content-between align-items-center">
-                <div class="ms-lg-5">
+                    <div class="ms-lg-5">
                         <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid">
                     </div>
                     <div class="">

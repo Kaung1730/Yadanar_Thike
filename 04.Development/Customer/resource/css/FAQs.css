@@ -1,0 +1,165 @@
+@import url("commonUser.css");
+
+:root{
+    --grayblack: #30323D;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.body{ 
+    
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 50px;
+    
+}
+.main{
+    background-color: var(--bgColor);
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+.parts{
+    width: 105vh;
+    height: 35vw;
+    display: flex;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+.part{
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+background-color: var(--bgColor);
+    padding: 30px 0px ;
+    border-bottom: 0.5px solid var(--yellow);
+}
+.faq{
+    margin-top: 10px;
+    margin-right: 150px;
+    margin-left: 2%;
+}
+
+.question{
+    padding: 20px 130px 20px 50px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: start;
+}
+.a{
+    padding-right: 130px;
+}
+.b{
+    padding-right: 82px;
+}
+.c{ 
+    padding-right: 29px;
+}
+.d{
+    padding-right: 174px;
+}
+.e{
+    padding-right: 53px;
+}
+.f{
+    padding-right: 73px;
+}
+.g{
+    padding-right: 135px;
+}
+.h{
+    padding-right: 128px;
+}
+.i{
+    padding-right: 191px;
+}
+.j{
+    padding-right: 86px;
+}
+.k{
+    padding-right: 20px;
+}
+.l{
+    padding-right: 18px;
+}
+.m{
+    padding-right: 27px;
+}
+.down{
+    display: inline-block;
+    font-size: 1.0rem;
+}
+.up{
+    display: none;
+    font-size: 1.0rem;
+}
+.updown-icon{
+    padding: 5px;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    
+}
+
+.answer {
+    font-size: 1.0rem;
+    line-height: 1.8;
+    padding-left: 50px;
+    padding-right: 120px;
+    display: none;
+    }
+.show-text .answer {
+    display: inline-block;
+    border-top: 0.5px solid var(--yellow);;
+    background-color: rgb(232, 197, 71,0.4);
+}
+.show-text .upper{
+    background-color: rgb(232, 197, 71,0.4);
+}
+.show-text .updown-icon{
+    display: inline-flex;
+}
+.show-text .up {
+    display: block;
+}
+.show-text .down {
+    display: none;
+}
+.parts::-webkit-scrollbar {
+    width: 20px;
+    padding: 50px;
+  }
+  
+  /* Track */
+  .parts::-webkit-scrollbar-track {
+      background: #C4C4C4;
+      width: 5px;
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .parts::-webkit-scrollbar-thumb {
+    background: var(--yellow); 
+    border-radius: 10px;
+  }
+
+
+@media screen and (max-width: 720px) {
+    .question{
+        padding: 10px 10px 10px 30px;
+        font-size: 13px;
+    }
+    .answer {
+        font-size: 12px;
+        padding-left: 32px;
+        padding-right: 5px;
+        display: none;
+        }
+}

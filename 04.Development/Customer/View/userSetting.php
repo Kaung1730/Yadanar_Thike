@@ -35,12 +35,15 @@
                     <div class="modal-body">
                         <div class="imgChange">
                             <div class="text-center">
-                                <i class="bi bi-person-circle fs-1"></i>
+                                    <img src="../resource/image/Vector.png" alt="" class="img-fluid"/>
+                                </div>
+                                <div class="text-center change-img-text mt-2">
+                                    <input type="file" name="photo" id="photo" accept="">
+                                    <label for="photo">
+                                        ပုံ​ပြောင်းမည်
+                                    </label>
+                                </div>
                             </div>
-                            <div class="text-center change-img-text">
-                                    ပုံ​ပြောင်းမည်
-                            </div>
-                        </div>
                         <div class="form">
                             <form action="" class="" method="POST">
                                 <div class="row my-3 justify-content-center">

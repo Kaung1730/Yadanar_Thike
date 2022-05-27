@@ -1,0 +1,157 @@
+@import url("commonUser.css");
+
+:root{
+    --grayblack: #30323D;
+}
+.smalltop{
+    display: none;
+}
+.top{
+    width: 864px;
+    height: 300px;
+    position: absolute;
+    left: 200px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    background-color: var(--yellow);
+    padding: 50px;
+    padding-top: 200px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    background-color: var(--yellow);
+    background-image: linear-gradient(225deg,var(--yellow),var(--yellow),#ffdd6280,var(--bgColor));
+    height: 1015px;
+}
+.left{
+    width: calc(50%);
+    border-right: 2px solid var(--black);
+    padding-bottom: 30px;
+}
+.leftfact1{
+    padding:10px 90px 80px 90px;
+}
+.leftfact2{
+    padding: 80px 90px;
+}
+.leftfact3{
+    padding: 80px 90px;
+}
+.leftfact4{
+    padding: 80px 90px;
+}
+.right{
+    
+    width: calc(50%);
+    border-radius: 10px;
+  
+}
+.body{
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: fit-content;
+    border-radius: 10px;
+    
+}
+.rightfact1{
+    padding: 5px 90px;
+}
+.rightfact2{
+    padding: 60px 90px;
+}
+.rightfact3{
+    padding: 100px 90px;
+}
+.rightfact4{
+    padding: 10px 90px;
+}
+.bot{
+    position: absolute;
+    top: 1100px;
+    bottom: 0px;
+    width: 864px;
+    height: 250px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 720px) {
+    .top{
+        display: none;
+    }
+    .smalltop{
+        display: flex;
+        justify-content: center;
+        background-color: var(--grayblack);
+        color: var(--bgColor);
+        font-size: 20px;
+        padding: 12px;
+    }
+    .title{
+        padding: 20px;
+    }
+    .main{
+        height: 615px;
+    }
+    .body{
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: fit-content;
+        border-radius: 10px;
+        
+    }.left{
+        width: calc(50%);
+        
+    }
+    .leftfact1{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .leftfact2{
+        padding: 100px 20px 70px 20px;
+        font-size: 14px;
+    }
+    .leftfact3{
+        padding: 20px 20px;
+        font-size: 14px;
+    }
+    .leftfact4{
+        padding: 75px 20px;
+        font-size: 14px;
+    }
+    .right{
+        width: calc(50%);
+    }
+    .rightfact1{
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+    .rightfact2{
+        padding: 45px 20px;
+        font-size: 14px;
+    }
+    .rightfact3{
+        padding: 45px 20px;
+        font-size: 14px;
+    }
+    .rightfact4{
+        padding: 30px 20px;
+        font-size: 14px;
+    }
+    .bot{
+        display: none;
+    }
+    .smallbot{
+        display: flex;
+        justify-content: center;
+        background-color: var(--grayblack);
+        color: var(--bgColor);
+        padding: 22px;
+    }
+}
