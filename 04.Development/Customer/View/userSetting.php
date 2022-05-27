@@ -35,7 +35,7 @@
                     <div class="modal-body">
                         <div class="imgChange">
                             <div class="text-center">
-                                    <img src="./Vector.png" alt="" class="img-fluid"/>
+                                    <img src="../resource/image/Vector.png" alt="" class="img-fluid"/>
                                 </div>
                                 <div class="text-center change-img-text mt-2">
                                     <input type="file" name="photo" id="photo" accept="">
