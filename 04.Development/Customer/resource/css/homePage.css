@@ -3,7 +3,7 @@
     padding: 0;
     /* overflow-x: hidden; */
     font-family: 'Noto Sans Myanmar', sans-serif;
-   
+
 
 }
 
@@ -120,27 +120,29 @@ a:link {
 }
 
 /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  */
-.popularBookTitle{
+.popularBookTitle {
     margin: 5vh 0vw 0vh 32vw;
 
 }
-.popularBook{
+
+.popularBook {
     min-width: 85vw;
     min-height: 80vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: var(--light-violet); */
 }
+
 .card {
     position: relative;
     width: 250px;
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
     padding: 30px 30px;
-     cursor: pointer;
+    cursor: pointer;
     margin-right: 20px;
-    
+
 }
 
 .card:hover {
@@ -190,12 +192,14 @@ a:link {
 /* လတ်တလောလူကြိုက်များသော စာအုပ်များ end  */
 
 /* DISCOUNT */
-.disItem{
+.disItem {
     display: flex;
     background-color: var(--light-violet);
+    height: 60vh;
 }
+
 .disItem .disContent {
-    margin:15vh 0vw 0vh 5vw;
+    margin: 15vh 0vw 0vh 5vw;
     font-size: 25px;
 
 }
@@ -210,14 +214,14 @@ a:link {
 }
 
 .disItem .discountCard {
-   
+
     /* display: flex; */
     width: 300px;
     height: 300px;
     border-radius: 50%;
     background-color: #F2F175;
     box-shadow: 0px 0px 0px rgb(0, 0, 1);
-    margin: 4vh 0vw 0vh 4vw;
+    margin: 7vh 0vw 0vh 4vw;
 }
 
 .disItem .discountCard .disImage {
@@ -270,9 +274,11 @@ a:link {
 .carousel {
     margin: 10vh 0 0 0;
 }
+
 .carousel h4{
-    margin: 2vh 0vw 4vh 3vw;
+    margin: 2vh 0vw 4vh 35vw;
 }
+
 .carousel .row {
     /* background-color: var(--body-bg-color); */
     margin-left: 4vw;
@@ -294,7 +300,11 @@ a:link {
     position: relative;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
 }
+.carousel .thumb-wrapper:hover{
 
+    box-shadow: 3px 4px 5px 2px var(--blackr);
+    transform: scale(1.1);
+}
 .carousel .item .img-box {
     height: 200px;
     margin-bottom: 20px;
@@ -317,4 +327,44 @@ a:link {
     font-size: 16px;
     color: var(--dark-blue);
     font-weight: 400;
+}
+.seeMore{
+    width: 170px;
+    height: 55px;
+    border: 0px solid ;
+    background-color: var(--yellow);
+    margin: 2vh 0vw 4vh 37vw;
+  padding: 20px 0px 0px 17px;
+    border-radius: 5px;
+}
+
+/* SERVICES */
+
+.serviceCard{
+    width: 180px;
+    height: 120px;
+    border: 0px solid;
+    background-color: var(--light-violet);
+    
+    border:none;
+    cursor:pointer;
+    margin-top: 50px;
+   
+}
+
+.serviceCard{
+   margin: 40px 0px 0px 25px;
+}
+.serviceCard:hover{
+    background-color:var(--yellow);
+}
+.serviceCard .icon img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+.serviceCard .content{
+    font-size: 13px;
+    margin-top: 20px;
+    /* margin-left: 1vw; */
 }

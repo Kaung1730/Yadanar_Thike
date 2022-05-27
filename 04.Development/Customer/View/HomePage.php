@@ -5,7 +5,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="../resource/css/homePage.css">
     <script src="../resource/js/jquery3.6.0.js"></script>
-
+    <link rel="stylesheet" href="../resource/css/commonUser.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="../resource/css/slick-theme.css">
     <script src="../resource/js/slick.min.js"></script>
     <script src="../resource/js/slicker.js"></script>
+
+    <!-- ionic icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </head>
 
@@ -297,37 +301,89 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="thumb-wrapper">
-                    <div class="img-box">
-                        <img src="../resource/image/image2.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="thumb-content">
-                        <div class="authorName">poem</div>
-                    </div>
+                        <div class="img-box">
+                            <img src="../resource/image/image2.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                            <div class="authorName">poem</div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="thumb-wrapper">
-                    <div class="img-box">
-                        <img src="../resource/image/image2.png" class="img-responsive" alt="">
-                    </div>
-                    <div class="thumb-content">
-                        <div class="authorName">poem</div>
-                    </div>
+                        <div class="img-box">
+                            <img src="../resource/image/image2.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                            <div class="authorName">poem</div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
-                   <div class="thumb-wrapper">
-                   <div class="img-box">
-                        <img src="../resource/image/image2.png" class="img-responsive" alt="">
+                    <div class="thumb-wrapper">
+                        <div class="img-box">
+                            <img src="../resource/image/image2.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="thumb-content">
+                            <div class="authorName">poem</div>
+                        </div>
                     </div>
-                    <div class="thumb-content">
-                        <div class="authorName">poem</div>
-                    </div>
-                   </div>
                 </div>
             </div>
         </div>
+        <div class="seeMore">ဆက်လက်ကြည့်ရှုရန်</div>
         <!-- end category -->
+
+        <!-- SERVICES -->
+        <div class="services">
+            <div class="row text-center">
+                <div class="col-md-2">
+                    <div class="serviceCard">
+                        <div class="icon">
+                            <img src="../resource/image/serviceLogo.png" alt="">
+                        </div>
+                        <div class="content ">ဝန်ဆောင်မှုများ</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="serviceCard">
+                        <div class="icon"><img src="../resource/image/locationLogo.png" alt=""></div>
+                        <div class="content">စာအုပ်ဆိုင်တည်နေရာများ</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="serviceCard">
+                        <div class="icon"><img src="../resource/image/deliveryLogo.png" alt=""></div>
+                        <div class="content">အိမ်အရောက်ပို့ဆောင်ပေးသော နေရာများ</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="serviceCard">
+                        <div class="icon">
+                            <img src="../resource/image/faqIcon.webp" alt="">
+                        </div>
+                        <div class="content">FAQ</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="serviceCard">
+                        <div class="icon">
+                            <img src="../resource/image/privacyLogo.webp" alt="">
+                        </div>
+                        <div class="content">ကိုယ်ရေးအချက်အလက်ဆိုင်ရာ မူပိုင်ခွင့်များ</div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="serviceCard">
+                        <div class="icon">
+                            <img src="../resource/image/contactLogo.png" alt="">
+                        </div>
+                        <div class="content">ဆက်သွယ်ရန်</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SERVICES END -->
     </div>
 </body>
 
