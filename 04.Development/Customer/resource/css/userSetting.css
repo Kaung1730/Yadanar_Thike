@@ -22,6 +22,10 @@
     background-color: var(--yellow)  !important;
     border-color: var(--yellow) !important;
 }
-.bi-person-circle, .change-img-text, ::placeholder, .update-btn, .normal-btn{
+.change-img-text, ::placeholder, .update-btn, .normal-btn{
     color: var(--yellow) !important;
+}
+
+input[type="file"]{
+    display: none !important;
 }
