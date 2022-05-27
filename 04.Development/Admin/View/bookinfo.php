@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Add</title>
+    <title>Admin Add</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../resource/css/commonAdmin.css">
-    <link rel="stylesheet" href="../resource/css/bookadd.css">
+    <link rel="stylesheet" href="../resource/css/bookinfo.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -68,86 +68,54 @@
                     <button type="button" class="btn btn-danger logout">Logout</button>
                 </div>
                 <div class="col-10">
-                    <div class="title_bar">
+                    <div class="d-flex title_bar text-align-center">
                         <div class="ps-1 pt-2">
-                            <div class="title mt-1 mx-3 fs-4 title_author">Book</div>
+                            <div class="title mt-1 mx-3 fs-4 title_author">Book info</div>
                             <span class="title_list ms-3" id="adminCl">Admin</span>
                             <span class="title_list">></span>
                             <span class="title_list" id="adSet">Book Lists</span>
                         </div>
+                        <div class="pt-3"> 
+                            <input type="search" placeholder="Search" class="search" />
+                        </div>
+                        <div class="message_box">
+                            <button><img src="../resource/image/message.png" class="message_icon" alt=""></button>
+                        </div>
+                        <div class="cart_box">
+                            <button><img src="../resource/image/cart.png" class="cart_icon" alt=""></button>
+                        </div>
+                        <div class="admin_box">
+                            <img src="../resource/image/person icon.png" class="person_icon" alt="">
+                            <p>Admin</p>
+                        </div>
                     </div>
-                    <div class="add_author">
-                        <form action="">
-                            <div class="title_addauthor fs-5">Add Books</div>
-                            <hr />
-                            <div>
-                                <label class="book_name fs-5" for="">Book Name:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
-                            <div>
-                                <label class="categories fs-5" for="">Categories:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
-                            <div>
-                                <label for="" class="author fs-5">Author:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
-                            <div>
-                                <label for="" class="book_image fs-5">Book Image:</label>
-                                <br />
-                                <input type="text" class="box2">
-                                <span><button class="browse_btn">Browse</button></span>
-                            </div>
-                            <div>
-                                <label for="" class="book_price fs-5">Book Price:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
-                            <div>
-                                <label for="" class="book_des fs-5">Book Description:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
-                            <div>
-                                <label for="" class="page_no fs-5">Page No:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
-                            <div>
-                                <label for="" class="size fs-5">Size</label>
-                                <div class="d-flex ">
-                                    <div>
-                                        <label for="" class="length fs-5">Length:</label>
-                                        <select id="box_lwh" name="length">
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label for=""  class="width fs-5">Width:</label>
-                                        <select id="box_lwh" name="width">
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label for="" class="height fs-5">Height:</label>
-                                        <select  id="box_lwh" name="height">
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <label for="" class="publisher fs-5">Publisher:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
-                            <div>
-                                <button type="submit" name="submit" class="submit">Submit</button>
-                                <button type="reset" name="reset" class="reset">Reset</button>
-                            </div>
-                        </form>
+                    <div class="book_bar">
+                        <div class="d-flex justify-content-between">
+                            <p class="pt-4 author_list">Book List</p>
+                            <button class="add_book mt-4 me-4">Add New Book</button>
+                        </div>
+                        <hr />
+                        <br>
+                        <div class="d-flex justify-content-end">
+                            <label for="" class="pe-2">Search</label>
+                            <input type="Search" class="search_book me-3">
+                        </div>
+                        <br/>
+                        <table class="table table-borderless-responsive-lg white_table">
+                            <tr>
+                                <th>No</th>
+                                <th>Book Image</th>
+                                <th>Book Name</th>
+                                <th>Book Categories</th>
+                                <th>Book Author</th>
+                                <th>Book Description</th>
+                                <th>Book Price</th>
+                                <th>Book Action</th>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="copyright text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
+                </div>
+                <!-- <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div> -->
         </form>
     </div>
 </body>
