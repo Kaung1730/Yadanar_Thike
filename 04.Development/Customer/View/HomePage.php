@@ -84,13 +84,7 @@
 
         <!-- HeaderSlider -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <!-- <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4" class="active"></li>
-            </ol> -->
+        
 
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -100,19 +94,19 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner mt-5">
-                <div class="carousel-item active">
+                <div class="carousel-item active " data-bs-interval="1000">
                     <img class="d-block w-100" src="../resource/image/slide1.png" alt="First slide">
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item active"  data-bs-interval="1000">
                     <img class="d-block w-100" src="../resource/image/slide2.png" alt="Second slide">
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="1000">
                     <img class="d-block w-100" src="../resource/image/slide3.png" alt="Third slide">
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="1000">
                     <img class="d-block w-100" src="../resource/image/slide4.png" alt="Fourth slide">
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="1000">
                     <img class="d-block w-100" src="../resource/image/slide5.png" alt="Fifth slide">
                 </div>
             </div>
@@ -131,25 +125,25 @@
 
 
         <!-- အသစ်ထွက်ရှိသော စာအုပ်များ -->
-        <div class="centerSlider">
-            <h4 class=" newBookList ">အသစ်ထွက်ရှိသော စာအုပ်များ </h4>
-            <div class="homeslider slicker mt-5 d-flex">
-                <div class="slide ">
+        <div class="centerSlider px-4"> 
+            <h4 class=" newBookList mt-5">အသစ်ထွက်ရှိသော စာအုပ်များ </h4>
+            <div class="homeslider slicker mt-5 d-flex justify-content-center">
+                <div class="slide  d-flex justify-content-center">
                     <img src="../resource/image/arrival.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide d-flex justify-content-center">
                     <img src="../resource/image/arrival2.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide d-flex justify-content-center">
                     <img src="../resource/image/arrival3.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide d-flex justify-content-center">
                     <img src="../resource/image/arrival4.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide d-flex justify-content-center">
                     <img src="../resource/image/arrival5.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide d-flex justify-content-center">
                     <img src="../resource/image/arrival6.png" alt="">
                 </div>
                 <!-- <div class="slide">
@@ -226,7 +220,7 @@
 
             <!-- advertisement end -->
             <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ  -->
-            <p class="popularBookTitle"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
+            <p class="popularBookTitle mt-4"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
             <div class="popularBook">
 
                 <!-- cardOne -->
@@ -239,7 +233,7 @@
 
                         <p>၅၀၀၀ကျပ်</p>
                         <!-- <p>more info</p> -->
-                        <button type="button" class="btn ">Add to Basket</button>
+                        <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
                     </div>
                 </div>
 
@@ -255,7 +249,7 @@
 
                         <p>၂၀၀၀ကျပ်</p>
                         <!-- <p>more info</p> -->
-                        <button type="button" class="btn ">Add to Basket</button>
+                        <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
                     </div>
                 </div>
 
@@ -271,7 +265,7 @@
 
                         <p>၄၀၀၀ကျပ်</p>
                         <!-- <p>more info</p> -->
-                        <button type="button" class="btn ">Add to Basket</button>
+                        <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
                     </div>
                 </div>
                 <!-- cardFour -->
@@ -284,12 +278,12 @@
 
                         <p>၄၀၀၀ကျပ်</p>
                         <!-- <p>more info</p> -->
-                        <button type="button" class="btn ">Add to Basket</button>
+                        <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
                     </div>
                 </div>
 
                 <!-- cardFive -->
-                <div class="card">
+                <!-- <div class="card">
                     <div class="imgBox">
                         <img src="../resource/image/popular5.png" alt="" class="bookImg">
                         <div class="bookTitle">အိပ်နေရင်ညနိုးနေရင်နေ့</div>
@@ -297,10 +291,10 @@
                     <div class="content">
 
                         <p>၄၀၀၀ကျပ်</p>
-                        <!-- <p>more info</p> -->
+                       
                         <button type="button" class="btn">Add to Basket</button>
                     </div>
-                </div>
+                </div> -->
 
             </div>
             <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ end -->
@@ -463,7 +457,7 @@
                                 <p>အမှတ် (၁၂၃) ၊ ရတနာလမ်း၊တောင်ဥက္ကလာပမြို့နယ်၊ ရန်ကုန်။</p>
                                 <p> yadanarthikebookshop@gmail.com</p>
                                 <p> +၉၅၉ ၁၂၃ ၄၅၆ ၇၈၉</p>
-                                <p> နေ့စဉ် မနက် ၉း၀၀ မှ ညနေ ၆း၀၀ အထိ ဖွင့်ပါသည်။</p>
+                                <p> နေ့စဉ် မနက် ၉း၀၀ မှ ညနေ ၆း၀၀ အထိ ဖွင့်လှစ်ပါသည်။</p>
                             </div>
                             <!-- Grid column -->
                             <hr class="w-100 clearfix d-md-none" />
