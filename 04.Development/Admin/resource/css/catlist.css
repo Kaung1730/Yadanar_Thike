@@ -82,5 +82,34 @@ hr{
     background-color: var(--btnfontColor);
     padding-left: 10px;
 }
+.table_group{
+    width: 90%;
+    height: 50vh;
+    margin-left: 5%;
+}
+@media screen and (max-width: 1260px) {
+    .add_ncat{
+        height: 10vh;
+    }
+}
+@media screen and (max-width: 980px) {
+    .logout{    
+        width: 8vw;
+    }
+    .logo{
+        width: 90px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .nav_img{
+        display: none;
+    }
+    .link_detail{
+        font-size: 15px;
+    }
+    .logout{
+        font-size: 12px;
+    }
+}
 
 

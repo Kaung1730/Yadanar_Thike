@@ -14,9 +14,6 @@ body{
     position: sticky;
     height: 100vh;
 }
-/* .logo{
-    margin-top: 3vh;
-} */
 hr{
     width: 100%;
     height: 5rem;
@@ -118,3 +115,9 @@ hr{
     background-color: var(--presentColor);
     color:var(--adminBg) ;
 }
+@media screen and (max-width: 1000px) {
+    .logout{
+        font-size: 12px;
+    }
+}
+

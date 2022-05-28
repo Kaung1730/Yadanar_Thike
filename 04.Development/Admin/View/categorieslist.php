@@ -82,14 +82,16 @@
                         <form action="">
                             <button class="add_ncat mt-4 me-4">Add New Categories</button>
                             <hr />
-                            <table class="table table-borderless-responsive-lg white_table">
-                                <tr>
-                                    <th>No</th>
-                                    <th>Categories Name</th>
-                                    <th>Book Counts</th>
-                                    <th>Action</th>
-                                </tr>
-                            </table>
+                            <div class="table_group">
+                                <table class="table table-borderless-responsive-lg white_table">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Categories Name</th>
+                                        <th>Book Counts</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </table>
+                            </div>
                         </form>
                     </div>
                     <div class="copyright text-center">Copyright@2022YadanarThike All Rights Reserved.</div>

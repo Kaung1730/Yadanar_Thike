@@ -17,7 +17,7 @@
 <body>
     <div class="container-fluid">
         <form action="">
-            <div class="row">
+            <div class="row">   
                 <div class="col-2 nav_box">
                     <img src="../resource/image/logo.png" alt="" class="mt-3 logo" />
                     <hr />
