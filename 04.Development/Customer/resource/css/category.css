@@ -14,11 +14,9 @@ hr{
 .yellow{
     color: var(--yellow) !important;
 }
-@media screen and (min-width:760px) {
-    .arrow{
-    max-width: 8rem !important;
+img:not(.slick-arrow img){
+    max-width: 10rem !important;
 }
-.img-fluid{
-    max-width: 15rem !important;
+.slick-arrow img{
+    max-width: 1.5rem !important;
 }
-    }

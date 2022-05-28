@@ -30,16 +30,16 @@
                 <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ရုပ်ပြ</div>
                 <div class="autoplay book-list d-flex justify-content-between align-items-center">
                     <div class="ms-lg-5">
-                        <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid">
+                        <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="">
                     </div>
                     <div class="">
-                        <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid">
+                        <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="">
                     </div>
                     <div class="">
-                        <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid">
+                        <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="">
                     </div>
                     <div class="">
-                        <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid">
+                        <img src="../resource/image/Subuu-300x300.png" alt="" class="">
                     </div>
                 </div>
                 <hr class="black">
@@ -200,7 +200,7 @@
             <div class="sub my-5">
                 <div class="sub-title ms-lg-5 mb-3 ps-lg-5">အခြား</div>
                 <div class="autoplay book-list d-flex justify-content-between align-items-center">
-                <div class="ms-lg-5">
+                    <div class="ms-lg-5">
                         <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid">
                     </div>
                     <div class="">

@@ -22,7 +22,7 @@
     <div class="container py-5">
         <div class="upper-part">
             <div class="row">
-                <div class="col-lg-4 col-12  col-md-4 col-xl-4">
+                <div class="col-lg-4 col-12  col-md-4 col-xl-4 ps-5 ps-lg-0 ps-md-0">
                     <img src="../resource/image/Chonechar-Mha-300x300.png" class="ms-5 ms-lg-0 ms-md-0 py-4 py-lg-0 py-md-0"/>
                     <!-- book preview -->
                     <div class=" d-flex d-lg-block d-md-block justify-content-center">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="col-4 d-none d-md-block d-lg-block d-xl-block"></div>
-                <div class="col-lg-4 col-md-4 col-xl-4 col-12 pt-5 pt-md-0 pt-lg-0">
+                <div class="col-lg-4 col-md-4 col-xl-4 col-12 pt-5 pt-md-0 pt-lg-0 ps-5 ps-lg-0 ps-md-0">
                     <div class="book-des-title fs-5">ချုံကြားမှဘုံဖျားသို့</div>
                     <div class="author-name my-3">ဖေမြင့်</div>
                     <div class="book-fee fs-5">5000 (ကျပ်)</div>
@@ -59,11 +59,11 @@
                     <!-- To increase book number or decrecase -->
                     <div class="mb-3 mt-4">
                         <div class="d-flex mt-2 numberContainer text-center align-item-center">
-                            <div class="col-1 me-3  pt-2">
+                            <div class="col-1 me-3 fw-bold pt-2 btn text-center px-1">
                                 ー
                             </div>
-                            <div class="col-2 me-3 fw-bold pt-2">1</div>
-                            <div class="col-1 fw-bold pt-2">+</div>
+                            <div class="col-2 me-3 fw-bold pt-2 btn">1</div>
+                            <div class="col-1 fw-bold pt-2 btn px-1">+</div>
                         </div>
                     </div>
                     <div class="btn order-btn my-3 book-d-text">ဝယ်ယူမည့်စာရင်းထဲကိုထည့်မယ်</div>
@@ -132,7 +132,7 @@
                 <span class="author">​ဖေမြင့်</span>
                 <span class="book">စာအုပ်များ</span>
             </div>
-            <div class="text-center book-box d-flex flex-wrap flex-lg-nowrap flex-md-nowrap">
+            <div class="text-center book-box d-flex flex-wrap flex-lg-nowrap flex-md-nowrap justify-content-center">
                 <div>
                     <img src="../resource/image/Geneous-300x300 (2).png" class="img-fluid"  alt="">
                     <div class="book-title book-d-text">ဂျီးနီးယပ်(စ)</div>

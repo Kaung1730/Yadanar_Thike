@@ -25,7 +25,7 @@
         </button>
 
         <!-- Modal -->
-        <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal ms-3 ms-lg-0 ms-md-0 fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content modal-parent">
                     <div class="modal-header cart-header ps-lg-5">
@@ -35,12 +35,15 @@
                     <div class="modal-body">
                         <div class="imgChange">
                             <div class="text-center">
-                                <i class="bi bi-person-circle fs-1"></i>
+                                    <img src="../resource/image/Vector.png" alt="" class="img-fluid"/>
+                                </div>
+                                <div class="text-center change-img-text mt-2">
+                                    <input type="file" name="photo" id="photo" accept="">
+                                    <label for="photo">
+                                        ပုံ​ပြောင်းမည်
+                                    </label>
+                                </div>
                             </div>
-                            <div class="text-center change-img-text">
-                                    ပုံ​ပြောင်းမည်
-                            </div>
-                        </div>
                         <div class="form">
                             <form action="" class="" method="POST">
                                 <div class="row my-3 justify-content-center">
