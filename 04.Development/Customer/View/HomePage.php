@@ -17,7 +17,7 @@
     <!-- notosan myanmar font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link rel="shortcut icon" href="../resource/image/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&display=swap" rel="stylesheet">
 
     <!-- centerSlick -->
@@ -33,59 +33,11 @@
 </head>
 
 <body>
+    <?php require "./nav.php"; ?>
+
     <div class="container ">
-        <div class=" menubar_top ">
-            <a href="" class="logo mt-2 me-2"><img src="../resource/image/logo.png" alt=""></a>
-            <!-- <nav class="navbar"> -->
-            <ul class="navList ">
-                <li class="navItem"><a href="">မူလစာမျက်နှာ</a></li>
-                <li class="navItem"><a href="">စာအုပ်များ</a></li>
-                <li class="navItem"><a href="">စာရေးဆရာများ</a></li>
-                <li class="navItem"><a href="">အကောင့်သို့ဝင်ရန်</a></li>
-            </ul>
-            <div>
-                <a href=""><img src="../resource/image/useracc.jpg" alt="" class="useracc "></a>
-                <a href=""><span class="me-5">အကောင့်အမည်</span></a>
-                <a href="">
-                    <img src="../resource/image/cart.png" alt="" class="cart">
-                </a>
-                <span class="position-absolute  translate-middle badge bg-danger">2</span>
-
-            </div>
-        </div>
-
-        <div class="menubar_bottom">
-            <div class="menubarIcon">
-                <ion-icon name="menu" class="menubarIcon h-100 w-100"></ion-icon>
-            </div>
-            <!-- <div class="dropdown"> -->
-
-            <div class="dropdown">
-                <a class="btn  dropdown-toggle h-100" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
-                    ရှာဖွေရန်
-                </a>
-
-                <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item dpd" href="#">AUTHOR</a></li>
-                    <li><a class="dropdown-item dpd" href="#">BOOK</a></li>
-
-                </ul>
-            </div>
-
-            <!-- search -->
-            <div class="search">
-                <input type="text" name="" class="searchBox" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ? ဒီကနေ ဝင်ရှာလို့ရပါတယ်">
-            </div>
-
-            <button class="figured  ">
-                <ion-icon name="search"></ion-icon>
-            </button>
-        </div>
-
         <!-- HeaderSlider -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        
-
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -97,7 +49,7 @@
                 <div class="carousel-item active " data-bs-interval="1000">
                     <img class="d-block w-100" src="../resource/image/slide1.png" alt="First slide">
                 </div>
-                <div class="carousel-item active"  data-bs-interval="1000">
+                <div class="carousel-item active" data-bs-interval="1000">
                     <img class="d-block w-100" src="../resource/image/slide2.png" alt="Second slide">
                 </div>
                 <div class="carousel-item active" data-bs-interval="1000">
@@ -125,7 +77,7 @@
 
 
         <!-- အသစ်ထွက်ရှိသော စာအုပ်များ -->
-        <div class="centerSlider px-4"> 
+        <div class="centerSlider px-4">
             <h4 class=" newBookList mt-5">အသစ်ထွက်ရှိသော စာအုပ်များ </h4>
             <div class="homeslider slicker mt-5 d-flex justify-content-center">
                 <div class="slide  d-flex justify-content-center">
@@ -271,7 +223,7 @@
                 <!-- cardFour -->
                 <div class="card">
                     <div class="imgBox">
-                                <img src="../resource/image/popular4.webp" alt="" class="bookImg">
+                        <img src="../resource/image/popular4.webp" alt="" class="bookImg">
                         <div class="bookTitle ">ဧဒင်မြို့ကအပြေးသမား</div>
                     </div>
                     <div class="content">

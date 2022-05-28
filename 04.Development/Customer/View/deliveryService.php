@@ -16,58 +16,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../resource/image/logo.png">
+
 </head>
 
 <body>
-    <!-- <h4>ရေတာရှည်</h4> -->
+    <?php require "./nav.php"; ?>
     <div class="container ">
-        <div class=" menubar_top ">
-            <a href="" class="logo mt-3 me-3"><img src="../resource/image/logo.png" alt=""></a>
-            <!-- <nav class="navbar"> -->
-            <ul class="navList ">
-                <li class="navItem"><a href="">မူလစာမျက်နှာ</a></li>
-                <li class="navItem"><a href="">စာအုပ်များ</a></li>
-                <li class="navItem"><a href="">စာရေးဆရာများ</a></li>
-                <li class="navItem"><a href="">အကောင့်သို့ဝင်ရန်</a></li>
-            </ul>
-            <div>
-                <a href=""><img src="../resource/image/useracc.jpg" alt="" class="useracc "></a>
-                <a href=""><span class="me-5">အကောင့်အမည်</span></a>
-                <a href="">
-                    <img src="../resource/image/cart.png" alt="" class="cart">
-                </a>
-                <span class="position-absolute  translate-middle badge bg-danger">2</span>
-
-            </div>
-        </div>
-
-        <div class="menubar_bottom">
-            <div class="menubarIcon">
-                <ion-icon name="menu" class="menubarIcon h-100 w-100"></ion-icon>
-            </div>
-            <!-- <div class="dropdown"> -->
-
-            <div class="dropdown">
-                <a class="btn  dropdown-toggle h-100" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
-                    ရှာဖွေရန်
-                </a>
-
-                <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item dpd" href="#">AUTHOR</a></li>
-                    <li><a class="dropdown-item dpd" href="#">BOOK</a></li>
-
-                </ul>
-            </div>
-
-            <!-- search -->
-            <div class="search">
-                <input type="text" name="" class="searchBox" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ? ဒီကနေ ဝင်ရှာလို့ရပါတယ်">
-            </div>
-
-            <button class="figured  ">
-                <ion-icon name="search"></ion-icon>
-            </button>
-        </div>
+        <div class="nav-bar"></div>
 
         <!-- body -->
         <div class="deliList">
@@ -136,10 +92,10 @@
     </div>
     <!-- FOOTER -->
     <div class="footer mt-3">
-            <div class="ps-2">@YadanarThike 2022</div>
-            <div class="copyright">&#169;
-                YadanarThike Company. All Rights Reserved.</div>
-        </div>
+        <div class="ps-2">@YadanarThike 2022</div>
+        <div class="copyright">&#169;
+            YadanarThike Company. All Rights Reserved.</div>
+    </div>
 </body>
 
 </html>
