@@ -178,12 +178,12 @@ a:link {
 /* <!-- advertisement end --> */
 /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  */
 .popularBookTitle {
-    margin: 5vh 0vw 0vh 32vw;
+    text-align: center;
 
 }
 
 .popularBook {
-    min-width: 85vw;
+    /* min-width: 85vw; */
     min-height: 80vh;
     display: flex;
     justify-content: center;
@@ -198,8 +198,8 @@ a:link {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
     padding: 30px 30px;
     cursor: pointer;
-    margin-right: 20px;
-
+    margin: auto;
+    transition: all 0.8s;
 }
 
 .card:hover {
@@ -230,19 +230,15 @@ a:link {
 
 .card .content {
     position: absolute;
-    padding: 20px 50px;
+    padding-top: 20px;
     text-align: center;
     transform: translateY(-400px);
     opacity: 0;
-    /* transition: 0.3s; */
-    padding: 40px 0px 0px 13px;
 }
 
 .card:hover>.content {
     opacity: 1;
     transform: translateY(120px);
-
-
 }
 
 .card .content .btn {
@@ -473,7 +469,7 @@ a:link {
     }
 /* advertisement */
 .advertise .advertise-wrapper {
-   margin-left: 12vw;
+   margin-left: 10vw;
    margin-top: 5vh;
 }
     /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  */
@@ -487,7 +483,7 @@ a:link {
     }
 
     .popularBookTitle {
-        margin: 10vh 0vw 17vh 17vw;
+        margin: 10vh 0vw 17vh 15vw;
     }
 
     /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  end*/
