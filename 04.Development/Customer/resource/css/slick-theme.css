@@ -70,8 +70,8 @@
     font-size: 30px;
     line-height: 1;
     opacity: 1;
-    /* color: blue; */
-    background-color: black;
+    color: black;
+    /* background-color: black; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
