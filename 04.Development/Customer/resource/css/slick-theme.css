@@ -70,8 +70,8 @@
     font-size: 20px;
     line-height: 1;
 
-    opacity: .75;
-    color: white;
+    opacity: 1;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -203,24 +203,7 @@
     color: black;
 }
 
-.homeslider{
-    width: 1100px;
-}
-/* .headerSlider{
-    width: 1000px;
-} */
+
 .newBookList{
     margin: 9vh 0vw 2vh 29vw;
-}
-.newBookList::after {
-    content: "";
-    width: 200px;
-    position: absolute;
-    margin: 0 auto;
-    height: 4px;
-    border-radius: 1px;
-    background: var(--yellow);
-    left: 0;
-    right: 0;
-    top: 740px;
 }

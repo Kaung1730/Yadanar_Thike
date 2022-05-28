@@ -3,15 +3,12 @@
 <head>
     <title>Delivery Service</title>
     <link rel="stylesheet" href="../resource/css/deliveryService.css">
-
+    <link rel="stylesheet" href="../resource/css/commonUser.css">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -21,9 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&display=swap" rel="stylesheet">
 </head>
 
-<body class="container-fluid container ">
+<body>
     <!-- <h4>ရေတာရှည်</h4> -->
-    <div >
+    <div class="container ">
         <div class=" menubar_top ">
             <a href="" class="logo mt-3 me-3"><img src="../resource/image/logo.png" alt=""></a>
             <!-- <nav class="navbar"> -->
@@ -51,8 +48,7 @@
             <!-- <div class="dropdown"> -->
 
             <div class="dropdown">
-                <a class="btn  dropdown-toggle h-100" href="#" role="button" id="dropdownMenuLink"
-                    data-bs-toggle="dropdown">
+                <a class="btn  dropdown-toggle h-100" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
                     ရှာဖွေရန်
                 </a>
 
@@ -65,8 +61,7 @@
 
             <!-- search -->
             <div class="search">
-                <input type="text" name="" class="searchBox"
-                    placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ? ဒီကနေ ဝင်ရှာလို့ရပါတယ်">
+                <input type="text" name="" class="searchBox" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ? ဒီကနေ ဝင်ရှာလို့ရပါတယ်">
             </div>
 
             <button class="figured  ">
@@ -135,17 +130,15 @@
                     </ul>
                 </div>
                 <!-- <hr class=" line lineYgn"> -->
-
-
             </div>
         </div>
-
-        <!-- FOOTER -->
-        <div class="footer ">
-            <div class="">@YadanarThike 2022</div>
+<!-- FOOTER -->
+        <div class="footer mt-3">
+            <div class="ps-2">@YadanarThike 2022</div>
             <div class="copyright">&#169;
                 YadanarThike Company. All Rights Reserved.</div>
         </div>
+    </div>
 </body>
 
 </html>

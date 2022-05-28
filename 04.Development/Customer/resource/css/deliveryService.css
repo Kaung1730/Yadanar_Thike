@@ -14,12 +14,11 @@
 
 }
 
-.container {
+/* .container {
     background-color: var(--main-bg-color);
-   
     overflow-x: hidden;
 
-}
+} */
 
 .menubarIcon {
     display: none;
@@ -69,7 +68,7 @@ a:link {
 /* menubar_bottom */
 .menubar_bottom {
     display: flex;
-    width: 100vw;
+ margin-left: 2vw;
 }
 
 
@@ -122,46 +121,38 @@ a:link {
 
 /* YangonDivision */
 .yangon {
-    margin: 6vh 0 0 27vw;
+    margin: 1vh 0vw 0vh 27vw;
 }
 
 .yangonTownList {
-    margin: 50px 20px 0 0;
+   margin: 7vh 4vw 0vh 3vw;
     display: flex;
-    position: absolute;
     flex-wrap: wrap;
 }
 
 .yangonTownList ul {
-    margin-right: 40px;
-    margin-top: 80px;
+   margin: 17vh 7vw 0vh 0vw;
     /* list-style: none; */
 }
 
 .yangonTownList ul li {
-    width: 180px;
-    /* padding-bottom: 15px; */
+    width: 220px;
 }
 
 .yagonTown {
-    margin: 40px;
     display: flex;
     flex-wrap: wrap;
 }
 
 
 .footer {
-    width: 100vw;
-    height: 10vh;
+    /* width: 100%; */
+    height: 12vh;
     border: 0px solid;
     background-color: var(--yellow);
-    margin-top: 13vh;
     display: flex;
-    padding: 7vh 0 0 4vw;
-    position: fixed;
-    bottom: 0;
+    padding: 6vh 0 0 4vw;
 }
-
 .copyright {
     margin-left: 25vw;
 }
@@ -170,8 +161,8 @@ a:link {
 @media screen and (max-width: 720px) {
     .menubar_bottom {
 
-        width: 200vw;
-        margin: 10px 0px 0px 10px;
+        /* width: 200vw; */
+        margin: 10px 0px 0px 5px;
     }
 
     .navList {
@@ -179,7 +170,7 @@ a:link {
     }
 
     .useracc {
-        margin-left: 100px;
+        margin-left: 70px;
     }
 
    
@@ -237,4 +228,12 @@ a:link {
 .line{
     width: 80vw;
 } */
+.footer{
+    font-size: 14px;
+    padding: 4vh 0 0 2vw;
+}
+}
+.copyright {
+    margin-left: 2vw;
+    
 }
