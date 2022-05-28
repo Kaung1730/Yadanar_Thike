@@ -19,4 +19,5 @@ img:not(.slick-arrow img){
 }
 .slick-arrow img{
     max-width: 1.5rem !important;
+    cursor: pointer !important;
 }

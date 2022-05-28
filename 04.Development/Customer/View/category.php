@@ -21,6 +21,8 @@
     <script src="../resource/js/Cslik.js" defer></script>
     </head>
 <body>
+    <!--Nav-->
+    <?php  require"./nav.php"; ?>
     <!--Category Start-->
     <div class="container mt-5">
         <div class="title text-center">စာအုပ်အမျိုးအစားများ</div>
@@ -217,7 +219,8 @@
             <hr class="yellow">
     </div>
     </div>
-    
+    <!--Footer-->
+    <?php require "./footer.php" ?>
     <!--Jquery Link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>   

@@ -18,8 +18,10 @@
 </head>
 
 <body>
+    <!--Nav-->
+    <?php  require"./nav.php"; ?>
     <!-- Start of Book Description -->
-    <div class="container py-5">
+    <div class="container py-5 mt-5">
         <div class="upper-part">
             <div class="row">
                 <div class="col-lg-4 col-12  col-md-4 col-xl-4 ps-5 ps-lg-0 ps-md-0">
@@ -180,6 +182,8 @@
             </div>
         </div>
     </div>
+    <!--Footer-->
+    <?php require "./footer.php" ?>
 </body>
 
 </html>

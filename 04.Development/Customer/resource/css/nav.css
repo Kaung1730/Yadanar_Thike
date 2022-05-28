@@ -1,0 +1,26 @@
+.useracc {
+    max-width: 3rem;
+    max-height: 3rem;
+    border-radius: 50%;
+}
+.nav-color,.search select{
+    background-color: var(--yellow) !important;
+}
+nav, .dropdown-item, select, option{
+    font-size: 0.9rem !important;
+}
+.sm-bg{
+    background-color: var(--yellow) !important;
+}
+.input-group button{
+    border-radius: unset !important;
+    background-color: var(--yellow) !important;
+    border: none !important;
+}
+.searchBorder{
+    border-color: var(--yellow) !important;
+}
+.search select{
+    border: none !important;
+    outline: none !important;
+}

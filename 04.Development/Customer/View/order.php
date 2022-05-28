@@ -25,11 +25,11 @@
         </button>
 
     <!-- Modal -->
-    <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal  fade" id="sm-order" tabindex="-1" aria-labelledby="sm-orderLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ms-4 ms-lg-0 ms-md-0">
             <div class="modal-content modal-parent">
                 <div class="modal-header cart-header ps-lg-5">
-                    <h5 class="modal-title ms-lg-5" id="exampleModalLabel">​အော်ဒါနံပါတ် <span><b> 123</b></span></h5>
+                    <h5 class="modal-title ms-lg-5" id="sm-orderLabel">​အော်ဒါနံပါတ် <span><b> 123</b></span></h5>
                     <button type="button" class="btn-close btn-close-dark me-lg-3" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
