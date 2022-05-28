@@ -22,7 +22,7 @@
         <form action="">
             <div class="row">
                 <div class="col-2 nav_box">
-                    
+
                 </div>
                 <div class="col-10">
                     <div class="title_bar">
@@ -52,11 +52,12 @@
                                 <br />
                                 <input type="text" class="box1">
                             </div>
-                            <div>
-                                <label for="" class="book_image fs-5">Book Image:</label>
-                                <br />
-                                <input type="text" class="box2">
-                                <span><button class="browse_btn">Browse</button></span>
+                            <div class="input-part ms-4 mt-2 slide-me">
+                                <label for="slide_img" class="form-label fs-5 text-start">Slide Image</label>
+                                <div class="input-group mt-2 mb-3 input-width">
+                                    <input type="file" class="form-control input-edit" id="slide_img">
+                                    <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
+                                </div>
                             </div>
                             <div>
                                 <label for="" class="book_price fs-5">Book Price:</label>
@@ -104,7 +105,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="copyright text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
+                    <div class="copyright text-center mt-2">Copyright@2022YadanarThike All Rights Reserved.</div>
         </form>
     </div>
 </body>

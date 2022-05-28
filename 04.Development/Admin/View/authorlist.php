@@ -22,11 +22,11 @@
         <form action="">
             <div class="row">
                 <div class="col-2 nav_box">
-                    
+
                 </div>
                 <div class="col-10">
                     <div class="title_bar">
-                        
+
                     </div>
                     <div class="author_bar">
                         <div class="d-flex justify-content-between">
@@ -40,7 +40,7 @@
                             <input type="Search" class="search_auther me-3">
                         </div>
                         <br />
-                        <table class="table table-borderless-responsive-lg white_table">
+                        <table class="table table-borderless-responsive-lg white_table tb-edit mx-5 mt-3">
                             <tr>
                                 <th>No</th>
                                 <th>Image</th>
