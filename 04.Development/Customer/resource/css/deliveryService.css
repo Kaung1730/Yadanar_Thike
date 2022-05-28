@@ -68,11 +68,11 @@ a:link {
 /* menubar_bottom */
 .menubar_bottom {
     display: flex;
- margin-left: 2vw;
+    margin-left: 2vw;
 }
 
 
-#dropdownMenuLink{
+#dropdownMenuLink {
     background-color: var(--light-yellow);
     padding-top: 10px;
 }
@@ -94,7 +94,7 @@ a:link {
     background-color: var(--yellow);
 }
 
-.division{
+.division {
     position: absolute;
     width: 17vw;
     height: 9vh;
@@ -105,11 +105,11 @@ a:link {
     background-color: var(--light-yellow);
 }
 
-.deliList{
+.deliList {
     margin-top: 5vh;
 }
 
-.deliHeader{
+.deliHeader {
     width: 30vw;
     height: 10vh;
     border: 0px solid;
@@ -125,13 +125,13 @@ a:link {
 }
 
 .yangonTownList {
-   margin: 7vh 4vw 0vh 3vw;
+    margin: 7vh 4vw 0vh 3vw;
     display: flex;
     flex-wrap: wrap;
 }
 
 .yangonTownList ul {
-   margin: 17vh 7vw 0vh 0vw;
+    margin: 17vh 7vw 0vh 0vw;
     /* list-style: none; */
 }
 
@@ -146,15 +146,15 @@ a:link {
 
 
 .footer {
-    /* width: 100%; */
     height: 12vh;
     border: 0px solid;
     background-color: var(--yellow);
     display: flex;
     padding: 6vh 0 0 4vw;
 }
+
 .copyright {
-    margin-left: 25vw;
+    margin-left: 20vw !important;
 }
 
 /*Mobile View*/
@@ -173,7 +173,7 @@ a:link {
         margin-left: 70px;
     }
 
-   
+
     .searchBox {
         width: 60vw;
         height: 50px;
@@ -194,14 +194,16 @@ a:link {
         margin: 0px 20px 0 0px;
 
     }
-    .deliHeader{
+
+    .deliHeader {
         width: 60vw;
-       padding: 20px 0px 0px 15px;
+        padding: 20px 0px 0px 15px;
     }
-   
-    .division{
+
+    .division {
         width: 50vw;
     }
+
     /* .deliList{
         margin-top: 15vh;
         
@@ -228,12 +230,13 @@ a:link {
 .line{
     width: 80vw;
 } */
-.footer{
-    font-size: 14px;
-    padding: 4vh 0 0 2vw;
-}
-}
-.copyright {
-    margin-left: 2vw;
-    
+    .footer {
+        font-size: 12px;
+        padding: 4vh 0 0 1vw;
+    }
+
+    .copyright {
+        margin-left: 1vw;
+
+    }
 }

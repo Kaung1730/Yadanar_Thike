@@ -132,13 +132,14 @@
                 <!-- <hr class=" line lineYgn"> -->
             </div>
         </div>
-<!-- FOOTER -->
-        <div class="footer mt-3">
+
+    </div>
+    <!-- FOOTER -->
+    <div class="footer mt-3">
             <div class="ps-2">@YadanarThike 2022</div>
             <div class="copyright">&#169;
                 YadanarThike Company. All Rights Reserved.</div>
         </div>
-    </div>
 </body>
 
 </html>

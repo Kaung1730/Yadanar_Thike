@@ -277,9 +277,7 @@
                 <!-- cardFour -->
                 <div class="card">
                     <div class="imgBox">
-
-
-                        <img src="../resource/image/popular4.webp" alt="" class="bookImg">
+                                <img src="../resource/image/popular4.webp" alt="" class="bookImg">
                         <div class="bookTitle ">ဧဒင်မြို့ကအပြေးသမား</div>
                     </div>
                     <div class="content">
@@ -313,7 +311,7 @@
                 <div class="disContent">
                     <h2>မြသန်းတင့်</h2>
                     <p>ရှားလော့ဟုမ်း၏ မှတ်တမ်း (20% Off)</p>
-                    <p class="disPrice">၆၀၀၀ကျပ် <span class="text-decoration-line-through ms-2">၄၈၀၀ကျပ်</span></p>
+                    <p class="disPrice">၆၀၀၀ကျပ် <span class="text-decoration-line-through pb-5 ms-2">၄၈၀၀ကျပ်</span></p>
                 </div>
 
                 <div class="discountCard">

@@ -17,11 +17,6 @@
     --dark-blue: darkblue;
 }
 
-/* .container {
-     background-color: var(--body-bg-color);
-    
-} */
-
 .menubarIcon {
     display: none;
 }
@@ -221,10 +216,9 @@ a:link {
 }
 
 .imgBox .bookTitle {
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 0px 15px;
     color: brown;
     font-size: 13px;
-
 }
 
 .bookImg {
@@ -241,7 +235,7 @@ a:link {
     transform: translateY(-400px);
     opacity: 0;
     /* transition: 0.3s; */
-    padding: 40px 0px 0px 10px;
+    padding: 40px 0px 0px 13px;
 }
 
 .card:hover>.content {
@@ -319,28 +313,6 @@ a:link {
 }
 
 /* Book Category */
-/* .itemTitle {
-    color: #000;
-    font-size: 22px;
-    font-weight: 300;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    margin: 30px 0 60px;
-}
-
-.itemTitle::after {
-    content: "";
-    width: 300px;
-    position: absolute;
-    margin: 0 auto;
-    height: 4px;
-    border-radius: 1px;
-    background: var(--yellow);
-    left: 0;
-    right: 0;
-    top: 40px;
-} */
 
 .carousels {
     margin: 10vh 0 0 0;
@@ -471,7 +443,13 @@ a:link {
 
 
 @media screen and (max-width: 720px) {
-
+    .useracc{
+        margin-left: 5vw;
+    }
+    .navList {
+       display: none;
+    
+    }
     /* <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် --> */
 
     .BookForToday h4 {
@@ -577,7 +555,7 @@ a:link {
     }
 
     .thumb-wrapper {
-        margin: 0vh 0vw 7vh 7vw;
+        margin: 0vh 0vw 7vh 12vw;
         width: 60vw;
     }
 
@@ -586,13 +564,13 @@ a:link {
     }
 
     .seeMore {
-        margin-left: 22vw;
+        margin-left: 28vw;
     }
 
     /* category end */
     /* SERVICES */
     .serviceCard {
-        margin-left: 21vw;
+        margin-left: 28vw;
     }
 
     /* FOOTER start*/

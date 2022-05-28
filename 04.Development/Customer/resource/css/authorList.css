@@ -24,7 +24,7 @@
 
 .menubar_top {
     display: flex;
-    
+
     margin-top: 30px;
     /* margin-left:5vw; */
 
@@ -33,7 +33,7 @@
 .navList {
     display: flex;
     list-style: none;
-    
+
 }
 
 .navItem {
@@ -157,22 +157,22 @@ a:link {
 
 /* footer */
 .footer {
-    width: 100%;
     height: 12vh;
     border: 0px solid;
     background-color: var(--yellow);
-    margin-top: 13vh;
     display: flex;
-    padding: 5vh 0 0 4vw;
-    margin-left: 0vw;
-    
+    padding: 6vh 0 0 4vw;
+}
+
+.copyright {
+    margin-left: 15vw !important;
 }
 
 /* Mobile View */
 @media screen and (max-width: 720px) {
     .menubar_bottom {
 
-       
+
         margin: 10px 0px 0px 0px;
     }
 
@@ -188,15 +188,18 @@ a:link {
     .searchBox {
         width: 57vw;
         height: 50px;
-        font-size: 12px; }
+        font-size: 12px;
+    }
 
     .figured {
         width: 25px;
-        height: 50px;}
+        height: 50px;
+    }
 
     .menubarIcon {
         display: block;
-        margin: 0px 20px 0 0px;}
+        margin: 0px 20px 0 0px;
+    }
 
     /* က မှ အ အထိ */
 
@@ -207,7 +210,8 @@ a:link {
         background-color: var(--main-bg-color);
         text-align: center;
         margin: 7vh 0vw 8vh 25vw;
-        padding-top: 3vh; }
+        padding-top: 3vh;
+    }
 
     .alphabetLine {
         margin-top: 4px;
@@ -225,22 +229,27 @@ a:link {
         margin-left: 15vw;
         /* margin-top: 12vh; */
     }
-.firstWord{
-    margin-left: 20vw;
-}
+
+    .firstWord {
+        margin-left: 20vw;
+    }
+
     .alphabetList {
-        width: 60vw;}
+        width: 60vw;
+    }
 
     .authorsList ul {
 
-        width: 60vw;}
+        width: 60vw;
+    }
 
     .footer {
-        font-size: 14px;
+        font-size: 12px;
+        padding: 4vh 0 0 0vw;
     }
 
     .copyright {
-        margin-left: 50px;
-    }
+        margin-left: 1vw;
 
+    }
 }

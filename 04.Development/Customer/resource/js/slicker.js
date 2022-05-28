@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.homeslider').slick({
         centerMode: true,
-        centerPadding: '50px',
+        centerPadding: '1.4rem',
         slidesToShow: 3,
         dots:true,
         responsive: [
@@ -10,7 +10,7 @@ $(document).ready(function () {
                 settings: {
                     arrows: true,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '1rem',
                     slidesToShow: 1
                 }
             },
@@ -19,7 +19,7 @@ $(document).ready(function () {
                 settings: {
                     arrows: true,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '1rem',
                     slidesToShow: 1
                 }
             }
