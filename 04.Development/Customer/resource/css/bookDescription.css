@@ -16,11 +16,8 @@
 }
 .numberContainer div{
     background-color: gainsboro !important;
+    border-radius: unset !important;
 }
-/* .bi-dash-lg{
-    color: var(--black) !important;
-} */
-
 .bi-star, .bi-star-fill, .author{
     color: var(--yellow) !important;
 }
@@ -33,7 +30,7 @@
 }
 .border-left{
     border-right: .2rem solid gray;
-}
+} 
 .bi-person-circle{
     font-size: 3em !important;
 }

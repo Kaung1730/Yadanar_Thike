@@ -26,7 +26,7 @@
 
     <!-- Modal -->
     <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ms-4 ms-lg-0 ms-md-0">
             <div class="modal-content modal-parent">
                 <div class="modal-header cart-header ps-lg-5">
                     <h5 class="modal-title ms-lg-5" id="exampleModalLabel">​အော်ဒါနံပါတ် <span><b> 123</b></span></h5>
@@ -47,8 +47,8 @@
                                     <!--Number of book increase or decrease-->
                                     <div>
                                         <div class="d-flex text-dark  numberContainer text-center align-item-center">
-                                            <div class="col-2 me-3  pt-1">
-                                                <i class="bi bi-dash-lg minus fw-bolder text-warning"></i>
+                                            <div class="col-2 me-3 fw-bold pt-1">
+                                                ー
                                             </div>
                                             <div class="col-4 me-3 fw-bold pt-1">1</div>
                                             <div class="col-2 fw-bold pt-1">+</div>

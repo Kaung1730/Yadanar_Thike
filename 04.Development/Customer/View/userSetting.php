@@ -25,7 +25,7 @@
         </button>
 
         <!-- Modal -->
-        <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal ms-3 ms-lg-0 ms-md-0 fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content modal-parent">
                     <div class="modal-header cart-header ps-lg-5">

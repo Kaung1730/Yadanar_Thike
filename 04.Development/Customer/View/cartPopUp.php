@@ -25,7 +25,7 @@
         </button>
 
     <!-- Modal -->
-    <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal  fade ms-3 ms-lg-0 ms-md-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content modal-parent">
                 <div class="modal-header cart-header ps-lg-5">
@@ -60,7 +60,7 @@
                             <!-- <i class="fa-solid fa-trash text-white"></i> -->
                         </div>
                     </div>
-                    <div class="mb-lg-3 mt-lg-5 ps-5">
+                    <div class="mb-lg-3 mt-lg-5 ps-5 ms-5 ms-lg-0 ms-md-0">
                         <div class="row ms-lg-3">
                             <div class="col-lg-8 col-12">
                                 <button type="button" class="btn ms-3 rounded-pill text-dark order-btn">အမှာတင်မည်</button>
