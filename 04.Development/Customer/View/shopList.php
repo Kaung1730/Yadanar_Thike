@@ -18,8 +18,7 @@
 </head>
 
 <body>
-
-    <div  class="container ">
+     <div  class="container ">
         <div class=" menubar_top ">
             <a href="" class="logo mt-3"><img src="../resource/image/logo.png" alt=""></a>
             <!-- <nav class="navbar"> -->
@@ -161,14 +160,14 @@
                 <div class="shopAddress InnwaHLEDAN">
                     <h5 class="text-primary">၂။ အင်းဝစာအုပ်ဆိုင် (လှည်းတန်း)</h5>
                     <br />
-                    <p>ဦးထွန်းလင်းခြံလမ်း၊ လှည်းတန်း၊ ကမာရွတ်မြို့နယ်၊ ရန်ကုန်။</p>
+                    <p>ဦးထွန်းလင်းခြံလမ်း၊ လှည်းတန်း၊ ကမာရွတ်မြို့နယ်</p>
                     <p>ဖုန်းနံပါတ် ၀၉-၉၅၄ ၅၁၄ ၃၈၇</p>
                 </div>
 
                 <div class="shopAddress InnwaMMPLAZA">
                     <h5 class="text-primary">၃။ Innwa Books & Cafe (Myanmar Plaza)</h5>
                     <br />
-                    <p>အခန်း (206 D ) , မြန်မာပလာဇာ ဒုတိယထပ်၊ ကမ္ဘာအေးဘုရားလမ်း၊ရန်ကင်းမြို့နယ်၊ ရန်ကုန်။</p>
+                    <p>အခန်း (206 D ) , မြန်မာပလာဇာ ဒုတိယထပ်၊ ကမ္ဘာအေးဘုရားလမ်း၊ရန်ကင်းမြို့နယ်။</p>
                     <p> ဖုန်းနံပါတ် ၀၉-၂၆၃ ၆၈၄ ၅၅၈</p>
                 </div>
 
@@ -183,8 +182,8 @@
                     <h5 class="text-primary">၅။ Innwa Books & Cafe (Terminal M)</h5>
                     <br />
                     <p> 01-14, 1st floor, Terminal M Shopping Mall.
-                        အမှတ် ၃ လမ်းမကြီးနှင့်ခရေပင်လမ်းဆုံ၊
-                        ၊မင်္ဂလာဒုံမြို့နယ်၊ ရန်ကုန်။ </p>
+                        အမှတ်၃ လမ်းမကြီးနှင့်ခရေပင်လမ်းဆုံ၊
+                        မင်္ဂလာဒုံမြို့နယ်။ </p>
                     <p> ဖုန်းနံပါတ် ၀၉-၇၅၉ ၇၅၄ ၀၉၁၊ ၀၉- ၇၅၉ ၇၅၄ ၀၉၈</p>
                 </div>
 
@@ -221,9 +220,9 @@
         </div>
     </div>
 
-    <!-- FOOTER -->
-    <div class="footer ">
-        <div class="">@YadanarThike 2022</div>
+   <!-- FOOTER -->
+   <div class="footer mt-3">
+        <div class="ps-2">@YadanarThike 2022</div>
         <div class="copyright">&#169;
             YadanarThike Company. All Rights Reserved.</div>
     </div>

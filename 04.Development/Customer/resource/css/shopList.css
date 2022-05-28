@@ -15,12 +15,12 @@
 
 }
 
-.container{
+/* .container{
     background-color: var(--main-bg-color);
     height: 735vh;
    
 
-}
+} */
 
 .menubarIcon {
     display: none;
@@ -28,7 +28,7 @@
 
 .menubar_top {
     display: flex;
-    margin-top: 30px;
+   margin: 2vh 0vw 0vh 5vw;
 
 }
 
@@ -70,7 +70,7 @@ a:link {
 /* menubar_bottom */
 .menubar_bottom {
     display: flex;
-    width: 100vw;
+    margin-left: 3vw;
 }
 
 #dropdownMenuLink {
@@ -98,7 +98,7 @@ a:link {
 /* ShopListBody */
 .shopList {
     margin-left: 5vw;
-    margin-top: 7vh;
+    margin-top: 2vh;
 }
 
 .shopListHeader {
@@ -139,133 +139,132 @@ a:link {
 
 /* SAR PAY LAW KA BOOK SHOP */
 .SPLKBookShop {
-    margin: 7vh 0vw 0vh 6vw;
+    margin: 7vh 0vw 0vh 4vw;
 }
 
 .sarpaylawkaPSD {
-    margin: 23vh 0 0 7vw;
+    margin: 23vh 0 0 5vw;
 }
 
 .sarpaylawkaJC {
-    margin: 53vh 0 0 7vw;
+    margin: 53vh 0 0 5vw;
 }
 
 .sarpaylawkaCENTRAL {
-    margin: 83vh 0 0 7vw;
+    margin: 83vh 0 0 5vw;
 }
 
 .sarpaylawkaSOK {
-    margin: 113vh 0 0 7vw;
+    margin: 113vh 0 0 5vw;
 }
 
 .sarpaylawkaHLEDAN {
-    margin: 143vh 0 0 7vw;
+    margin: 143vh 0 0 5vw;
 }
 
 .sarpaylawkaKM {
-    margin: 173vh 0 0 7vw;
+    margin: 173vh 0 0 5vw;
 }
 
 .sarpaylawkaINSEIN {
-    margin: 203vh 0 0 7vw;
+    margin: 203vh 0 0 5vw;
 }
 
 .sarpaylawkaTC {
-    margin: 233vh 0 0 7vw;
+    margin: 233vh 0 0 5vw;
 }
 
 .sarpaylawkaNOK {
-    margin: 263vh 0 0 7vw;
+    margin: 263vh 0 0 5vw;
 }
 
 /* AParDawMyal BOOKS SHOP */
 .APDMBookShop {
-    margin: 295vh 0vw 0vh 6vw;
+    margin: 295vh 0vw 0vh 4vw;
 }
 
 .AParDawMyal {
-    margin: 310vh 0 0 7vw;
+    margin: 310vh 0 0 5vw;
 }
 
 /* စောဦးစာပေ */
 .SawOoBookShop {
-    margin: 330vh 0vw 0vh 6vw;
+    margin: 330vh 0vw 0vh 4vw;
 }
 
 .SawOo {
-    margin: 345vh 0 0 7vw;
+    margin: 345vh 0 0 5vw;
 }
 
 /* အင်းဝ စာအုပ်တိုက် */
 
 .InnwaBookShop {
-    margin: 365vh 0vw 0vh 6vw;
+    margin: 365vh 0vw 0vh 4vw;
 }
 
 .InnwaPSD {
-    margin: 385vh 0 0 7vw;
+    margin: 385vh 0 0 5vw;
 }
 
 .InnwaHLEDAN {
-    margin: 410vh 0 0 7vw;
+    margin: 410vh 0 0 5vw;
 }
 
 .InnwaMMPLAZA {
-    margin: 440vh 0 0 7vw;
+    margin: 440vh 0 0 5vw;
 }
 
 .InnwaTIMECITY {
-    margin: 470vh 0 0 7vw;
+    margin: 470vh 0 0 5vw;
 }
 
 .InnwaTerminalM {
-    margin: 500vh 0 0 7vw;
+    margin: 500vh 0 0 5vw;
 }
 
 
 .InnwaMDY {
-    margin: 530vh 0 0 7vw;
+    margin: 530vh 0 0 5vw;
 }
 
 /* ရာပြည့် */
 
 .YarPyaeBookShop {
-    margin: 560vh 0vw 0vh 6vw;
+    margin: 560vh 0vw 0vh 4vw;
 }
 
 .YarpyaePSD {
-    margin: 580vh 0 0 7vw;
+    margin: 580vh 0 0 5vw;
 }
 
 .YarpyaeHLEDAN {
-    margin: 600vh 0 0 7vw;
+    margin: 600vh 0 0 5vw;
 }
 
 /* ကံ့ကော်ဝတ်ရည် စာပေတိုက် */
 
 .KantKawBookShop {
-    margin: 630vh 0vw 0vh 6vw;
+    margin: 630vh 0vw 0vh 4vw;
 }
 
 .KantKaw {
-    margin: 650vh 0 0 7vw;
+    margin: 650vh 0 0 5vw;
 }
 
 
 /* Footer */
 
 .footer {
-    width: 100vw;
-    height: 15vh;
+    height: 12vh;
     border: 0px solid;
     background-color: var(--yellow);
     margin-top: 13vh;
     display: flex;
-    padding: 7vh 0 0 4vw;
+    padding: 8vh 0 0 4vw;
 }
 
 .copyright {
-    margin-left: 25vw;
+    margin-left: 20vw;
 }
 
 
@@ -319,26 +318,26 @@ a:link {
 
     }
 
-    /* .menubarIcon {
-        display: block;
-        margin: 0px 20px 0 0px;
-
-    } */
-
-
-
+    
     .shopList {
         /* margin-top: 20vh; */
         margin-left: 2vw;
     }
 
     .shopListHeader {
-        width: 95vw;
+        width: 90vw;
     }
 
     .shopListBody {
-        width: 95vw;
+        width: 90vw;
 
     }
+    .footer {
+        font-size: 12px;
+        padding: 4vh 0 0 0vw;
+    }
 
+    .copyright {
+        margin-left: 20vw !important;
+    }
 }

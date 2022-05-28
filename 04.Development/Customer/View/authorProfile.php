@@ -91,7 +91,7 @@
         <!-- Card -->
 
         <div class="carousel mt-5">
-            <div class="mt-5 itemTitle"> ရတနာသိုက် Book Shopတွင်ရရှိနိုင်သော   <b>ချစ်ဦးညိုစာအုပ်များ</b>အနက်မှ</div>
+            <div class="mt-5 itemTitle"> ရတနာသိုက် Book Shopတွင်ရရှိနိုင်သော <b>ချစ်ဦးညိုစာအုပ်များ</b>အနက်မှ</div>
             <div class="item active row mt-5">
 
                 <div class="col-sm-3">
@@ -103,7 +103,7 @@
                         <div class="thumb-content">
                             <div class="authorName">ချစ်ဦးညို</div>
                             <div class="bookName">
-                            မဟာသေနာပတိ
+                                မဟာသေနာပတိ
                             </div>
                             <p class="item-price">၈၀၀၀ ကျပ်</p>
                             <a href="#" class="btn ">စျေးဝယ်ခြင်းထဲသို့ထည့်ရန်</a>
@@ -120,7 +120,7 @@
                         <div class="thumb-content">
                             <div class="authorName">ချစ်ဦးညို</div>
                             <div class="bookName">
-                            နှင်းကေသရာချစ်တဲ့သူရဲကောင်း
+                                နှင်းကေသရာချစ်တဲ့သူရဲကောင်း
                             </div>
                             <p class="item-price">၈၀၀၀ ကျပ်</p>
                             <a href="#" class="btn ">စျေးဝယ်ခြင်းထဲသို့ထည့်ရန်</a>
@@ -137,7 +137,7 @@
                         <div class="thumb-content">
                             <div class="authorName">ချစ်ဦးညို</div>
                             <div class="bookName">
-                            လင်္ကာဒီပချစ်သူ
+                                လင်္ကာဒီပချစ်သူ
                             </div>
                             <p class="item-price">၈၀၀၀ ကျပ်</p>
                             <a href="#" class="btn ">စျေးဝယ်ခြင်းထဲသို့ထည့်ရန်</a>
@@ -154,7 +154,7 @@
                         <div class="thumb-content">
                             <div class="authorName">ချစ်ဦးညို</div>
                             <div class="bookName">
-                            ချစ်သူသုန္ဒရီ
+                                ချစ်သူသုန္ဒရီ
                             </div>
                             <p class="item-price">၈၀၀၀ ကျပ်</p>
                             <a href="#" class="btn">စျေးဝယ်ခြင်းထဲသို့ထည့်ရန်</a>
@@ -168,11 +168,11 @@
 
     </div>
     <!-- FOOTER -->
-<div class="footer mt-3">
-            <div class="ps-2">@YadanarThike 2022</div>
-            <div class="copyright">&#169;
-                YadanarThike Company. All Rights Reserved.</div>
-        </div>
+    <div class="footer mt-3">
+        <div class="ps-2">@YadanarThike 2022</div>
+        <div class="copyright">&#169;
+            YadanarThike Company. All Rights Reserved.</div>
+    </div>
 </body>
 
 </html>
