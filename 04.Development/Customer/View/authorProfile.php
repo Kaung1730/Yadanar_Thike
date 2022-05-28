@@ -3,6 +3,7 @@
 
 <head>
     <title>Author Profile</title>
+   
     <link rel="stylesheet" href="../resource/css/authorProfile.css">
     <link rel="shortcut icon" href="../resource/image/logo.png">
     <!-- CSS only -->
@@ -10,7 +11,7 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+    <script src="../resource/js/jquery3.6.0.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- notosan myanmar font link -->
@@ -35,8 +36,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <!--Customize JS-->
-    <script src="../resource/js/Cslik.js" defer></script>
-    <script src="../resource/js/jquery3.6.0.js"></script>
+    <!-- <script src="../resource/js/Cslik.js" defer></script> -->
     <script src="../resource/js/nav.js"></script>
 </head>
 
