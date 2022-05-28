@@ -64,19 +64,19 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
             <div class="carousel-inner mt-5">
-                <div class="carousel-item active " data-bs-interval="1000">
+                <div class="carousel-item active " data-bs-interval="1500">
                     <img class="d-block w-100" src="../resource/image/slide1.png" alt="First slide">
                 </div>
-                <div class="carousel-item active" data-bs-interval="1000">
+                <div class="carousel-item active" data-bs-interval="1500">
                     <img class="d-block w-100" src="../resource/image/slide2.png" alt="Second slide">
                 </div>
-                <div class="carousel-item active" data-bs-interval="1000">
+                <div class="carousel-item active" data-bs-interval="1500">
                     <img class="d-block w-100" src="../resource/image/slide3.png" alt="Third slide">
                 </div>
-                <div class="carousel-item active" data-bs-interval="1000">
+                <div class="carousel-item active" data-bs-interval="1500">
                     <img class="d-block w-100" src="../resource/image/slide4.png" alt="Fourth slide">
                 </div>
-                <div class="carousel-item active" data-bs-interval="1000">
+                <div class="carousel-item active" data-bs-interval="1500">
                     <img class="d-block w-100" src="../resource/image/slide5.png" alt="Fifth slide">
                 </div>
             </div>
@@ -291,7 +291,7 @@
             <!-- DISCOUNT end-->
             <!-- category -->
             <div class=" carousels">
-                <h4>စာအုပ်အမျိုးအစားများ</h4>
+                <h4 class="mt-3 mb-4">စာအုပ်အမျိုးအစားများ</h4>
                 <div class="item row">
                     <div class="col-sm-3">
                         <div class="thumb-wrapper">

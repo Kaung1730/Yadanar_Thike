@@ -240,12 +240,7 @@
 }
 
 .carousels h4 {
-    margin: 2vh 0vw 4vh 35vw;
-}
-
-.carousels .row {
-    /* background-color: var(--body-bg-color); */
-    margin-left: 4vw;
+   text-align: center;
 }
 
 .carousels .item {
@@ -300,7 +295,7 @@
     height: 55px;
     border: 0px solid;
     background-color: var(--yellow);
-    margin: 2vh 0vw 4vh 37vw;
+    margin: 2vh 0vw 4vh 32vw;
     padding: 20px 0px 0px 17px;
     border-radius: 5px;
 }
@@ -308,7 +303,7 @@
 /* SERVICES */
 
 .serviceCard {
-    width: 165px;
+    width: 150px;
     height: 130px;
     border: 0px solid;
     background-color: var(--light-yellow);
@@ -470,9 +465,11 @@
     .carousels h4 {
         margin: 2vh 0vw 4vh 25vw;
     }
-
+.carousels .item{
+    margin-right: 7vw;
+}
     .thumb-wrapper {
-        margin: 0vh 0vw 7vh 12vw;
+        margin: 0vh 0vw 7vh 0vw ;
         width: 60vw;
     }
 
