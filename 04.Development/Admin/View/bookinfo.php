@@ -75,7 +75,7 @@
                             <span class="title_list">></span>
                             <span class="title_list" id="adSet">Book Lists</span>
                         </div>
-                        <div class="pt-3"> 
+                        <div class="pt-3">
                             <input type="search" placeholder="Search" class="search" />
                         </div>
                         <div class="message_box">
@@ -100,19 +100,21 @@
                             <label for="" class="pe-2">Search</label>
                             <input type="Search" class="search_book me-3">
                         </div>
-                        <br/>
-                        <table class="table table-borderless-responsive-lg white_table">
-                            <tr>
-                                <th>No</th>
-                                <th>Book Image</th>
-                                <th>Book Name</th>
-                                <th>Book Categories</th>
-                                <th>Book Author</th>
-                                <th>Book Description</th>
-                                <th>Book Price</th>
-                                <th>Book Action</th>
-                            </tr>
-                        </table>
+                        <br />
+                        <div class="table_group">
+                            <table class="table table-borderless-responsive-lg white_table">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Book Image</th>
+                                    <th>Book Name</th>
+                                    <th>Book Categories</th>
+                                    <th>Book Author</th>
+                                    <th>Book Description</th>
+                                    <th>Book Price</th>
+                                    <th>Book Action</th>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <!-- <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div> -->
