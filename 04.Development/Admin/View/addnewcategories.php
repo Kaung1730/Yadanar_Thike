@@ -10,62 +10,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../resource/css/commonAdmin.css">
     <link rel="stylesheet" href="../resource/css/addnewcat.css">
+    <link rel="stylesheet" href="../resource/css/contactEdit.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../resource/js/jquery3.6.0.js"></script>
+    <script src="../resource/js/authorAdd.js"></script>
 </head>
 
 <body>
     <div class="container-fluid">
         <form action="">
-            <div class="row">   
+            <div class="row">
                 <div class="col-2 nav_box">
-                    <img src="../resource/image/logo.png" alt="" class="mt-3 logo" />
-                    <hr />
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/home icon.png" alt="" class="nav_img" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Dashboard</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/author-icon-21.jpg" alt="" class="nav_img circle" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Author Info</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/book1.png" alt="" class="nav_img circle" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Book Info</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/order.png" alt="" class="nav_img" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Order Info</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/person icon.png" alt="" class="nav_img" />
-                                <a class="nav-link link_details" aria-current="page" href="#">User Info</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/person icon.png" alt="" class="nav_img" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Admin Settings</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/community.png" alt="" class="nav_img circle" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Community</a>
-                            </span>
-                        </li>
-                    </ul>
-                    <button type="button" class="btn btn-danger logout">Logout</button>
+                    
                 </div>
                 <div class="col-10">
                     <div class="title_bar">
@@ -78,7 +35,7 @@
                             <span class="title_list" id="adSet">Categories</span>
                         </div>
                     </div>
-                    <div class="add_author">    
+                    <div class="add_author">
                         <form action="">
                             <div class="title_addnewcat fs-5">Add New Categories</div>
                             <hr />

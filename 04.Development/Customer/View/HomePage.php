@@ -4,6 +4,8 @@
 <head>
     <title>Home Page</title>
     <link rel="stylesheet" href="../resource/css/HomePage.css">
+    <!-- <script src="../resource/js/jquery3.6.0.js"></script>
+    <script src="../resource/js/nav.js"></script> -->
     <script src="../resource/js/jquery3.6.0.js"></script>
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <!-- CSS only -->
@@ -17,7 +19,7 @@
     <!-- notosan myanmar font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link rel="shortcut icon" href="../resource/image/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&display=swap" rel="stylesheet">
 
     <!-- centerSlick -->
@@ -29,99 +31,48 @@
     <!-- ionic icon -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Customize CSS-->
+    <link rel="stylesheet" href="../resource/css/commonUser.css">
+    <link rel="stylesheet" href="../resource/css/userSetting.css">
+    <link rel="stylesheet" href="../resource/css/cartPop.css">
+    <link rel="stylesheet" href="../resource/css/orderHistory.css">
+    <link rel="stylesheet" href="../resource/css/nav.css">
+    <link rel="stylesheet" href="../resource/css/order.css">
+    <link rel="stylesheet" href="../resource/css/footer.css ">
+   
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 
+    <script src="../resource/js/nav.js"></script>
 </head>
 
 <body>
+    <div class="nav-bar"></div>
     <div class="container ">
-        <div class=" menubar_top ">
-            <a href="" class="logo mt-2 me-2"><img src="../resource/image/logo.png" alt=""></a>
-            <!-- <nav class="navbar"> -->
-            <ul class="navList ">
-                <li class="navItem"><a href="">မူလစာမျက်နှာ</a></li>
-                <li class="navItem"><a href="">စာအုပ်များ</a></li>
-                <li class="navItem"><a href="">စာရေးဆရာများ</a></li>
-                <li class="navItem"><a href="">အကောင့်သို့ဝင်ရန်</a></li>
-            </ul>
-            <div>
-                <a href=""><img src="../resource/image/useracc.jpg" alt="" class="useracc "></a>
-                <a href=""><span class="me-5">အကောင့်အမည်</span></a>
-                <a href="">
-                    <img src="../resource/image/cart.png" alt="" class="cart">
-                </a>
-                <span class="position-absolute  translate-middle badge bg-danger">2</span>
-
-            </div>
-        </div>
-
-        <div class="menubar_bottom">
-            <div class="menubarIcon">
-                <ion-icon name="menu" class="menubarIcon h-100 w-100"></ion-icon>
-            </div>
-            <!-- <div class="dropdown"> -->
-
-            <div class="dropdown">
-                <a class="btn  dropdown-toggle h-100" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
-                    ရှာဖွေရန်
-                </a>
-
-                <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item dpd" href="#">AUTHOR</a></li>
-                    <li><a class="dropdown-item dpd" href="#">BOOK</a></li>
-
-                </ul>
-            </div>
-
-            <!-- search -->
-            <div class="search">
-                <input type="text" name="" class="searchBox" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ? ဒီကနေ ဝင်ရှာလို့ရပါတယ်">
-            </div>
-
-            <button class="figured  ">
-                <ion-icon name="search"></ion-icon>
-            </button>
-        </div>
-
         <!-- HeaderSlider -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <!-- <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4" class="active"></li>
-            </ol> -->
-
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            </div>
-            <div class="carousel-inner mt-5">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="../resource/image/slide1.png" alt="First slide">
+        <div id="carouselExampleInterval" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="../resource/image/slide1.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="../resource/image/slide2.png" alt="Second slide">
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../resource/image/slide2.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="../resource/image/slide3.png" alt="Third slide">
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../resource/image/slide3.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="../resource/image/slide4.png" alt="Fourth slide">
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../resource/image/slide4.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="../resource/image/slide5.png" alt="Fifth slide">
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../resource/image/slide5.png" class="d-block w-100" alt="...">
                 </div>
             </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -131,33 +82,27 @@
 
 
         <!-- အသစ်ထွက်ရှိသော စာအုပ်များ -->
-        <div class="centerSlider">
-            <h4 class=" newBookList ">အသစ်ထွက်ရှိသော စာအုပ်များ </h4>
-            <div class="homeslider slicker mt-5 d-flex">
-                <div class="slide ">
+        <div class="centerSlider px-4">
+            <h4 class=" newBookList mt-5">အသစ်ထွက်ရှိသော စာအုပ်များ </h4>
+            <div class="homeslider slicker mt-5 d-flex justify-content-center">
+                <div class="slide  d-flex justify-content-center">
                     <img src="../resource/image/arrival.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide d-flex justify-content-center">
                     <img src="../resource/image/arrival2.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide d-flex justify-content-center">
                     <img src="../resource/image/arrival3.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide d-flex justify-content-center">
                     <img src="../resource/image/arrival4.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide d-flex justify-content-center">
                     <img src="../resource/image/arrival5.png" alt="">
                 </div>
-                <div class="slide">
+                <div class="slide d-flex justify-content-center">
                     <img src="../resource/image/arrival6.png" alt="">
                 </div>
-                <!-- <div class="slide">
-                <img src="../resource/image/arrival2.png" alt="">
-            </div> -->
-                <!-- <div class="slide">
-                <img src="../SlickCenter/images/arrival5.png" alt="">
-            </div> -->
             </div>
 
             <!-- အသစ်ထွက်ရှိသော စာအုပ်များ End -->
@@ -226,7 +171,7 @@
 
             <!-- advertisement end -->
             <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ  -->
-            <p class="popularBookTitle"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
+            <p class="popularBookTitle mt-4"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
             <div class="popularBook">
 
                 <!-- cardOne -->
@@ -239,7 +184,7 @@
 
                         <p>၅၀၀၀ကျပ်</p>
                         <!-- <p>more info</p> -->
-                        <button type="button" class="btn ">Add to Basket</button>
+                        <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
                     </div>
                 </div>
 
@@ -255,7 +200,7 @@
 
                         <p>၂၀၀၀ကျပ်</p>
                         <!-- <p>more info</p> -->
-                        <button type="button" class="btn ">Add to Basket</button>
+                        <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
                     </div>
                 </div>
 
@@ -271,25 +216,25 @@
 
                         <p>၄၀၀၀ကျပ်</p>
                         <!-- <p>more info</p> -->
-                        <button type="button" class="btn ">Add to Basket</button>
+                        <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
                     </div>
                 </div>
                 <!-- cardFour -->
                 <div class="card">
                     <div class="imgBox">
-                                <img src="../resource/image/popular4.webp" alt="" class="bookImg">
+                        <img src="../resource/image/popular4.webp" alt="" class="bookImg">
                         <div class="bookTitle ">ဧဒင်မြို့ကအပြေးသမား</div>
                     </div>
                     <div class="content">
 
                         <p>၄၀၀၀ကျပ်</p>
                         <!-- <p>more info</p> -->
-                        <button type="button" class="btn ">Add to Basket</button>
+                        <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
                     </div>
                 </div>
 
                 <!-- cardFive -->
-                <div class="card">
+                <!-- <div class="card">
                     <div class="imgBox">
                         <img src="../resource/image/popular5.png" alt="" class="bookImg">
                         <div class="bookTitle">အိပ်နေရင်ညနိုးနေရင်နေ့</div>
@@ -297,10 +242,10 @@
                     <div class="content">
 
                         <p>၄၀၀၀ကျပ်</p>
-                        <!-- <p>more info</p> -->
+                       
                         <button type="button" class="btn">Add to Basket</button>
                     </div>
-                </div>
+                </div> -->
 
             </div>
             <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ end -->
@@ -327,7 +272,7 @@
             <!-- DISCOUNT end-->
             <!-- category -->
             <div class=" carousels">
-                <h4>စာအုပ်အမျိုးအစားများ</h4>
+                <h4 class="mt-3 mb-4">စာအုပ်အမျိုးအစားများ</h4>
                 <div class="item row">
                     <div class="col-sm-3">
                         <div class="thumb-wrapper">
@@ -463,7 +408,7 @@
                                 <p>အမှတ် (၁၂၃) ၊ ရတနာလမ်း၊တောင်ဥက္ကလာပမြို့နယ်၊ ရန်ကုန်။</p>
                                 <p> yadanarthikebookshop@gmail.com</p>
                                 <p> +၉၅၉ ၁၂၃ ၄၅၆ ၇၈၉</p>
-                                <p> နေ့စဉ် မနက် ၉း၀၀ မှ ညနေ ၆း၀၀ အထိ ဖွင့်ပါသည်။</p>
+                                <p> နေ့စဉ် မနက် ၉း၀၀ မှ ညနေ ၆း၀၀ အထိ ဖွင့်လှစ်ပါသည်။</p>
                             </div>
                             <!-- Grid column -->
                             <hr class="w-100 clearfix d-md-none" />

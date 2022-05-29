@@ -1,5 +1,5 @@
 * {
-   
+
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans Myanmar', sans-serif;
@@ -15,86 +15,6 @@
 
 }
 
-/* .container{
-    background-color: var(--main-bg-color);
-    height: 735vh;
-   
-
-} */
-
-.menubarIcon {
-    display: none;
-}
-
-.menubar_top {
-    display: flex;
-   margin: 2vh 0vw 0vh 5vw;
-
-}
-
-.navList {
-    display: flex;
-    list-style: none;
-}
-
-.navItem {
-    margin-right: 30px;
-    width: 120px;
-    height: 60px;
-    border: 0px solid black;
-    background-color: var(--yellow);
-    text-align: center;
-    padding-top: 15px;
-    font-size: 15px;
-
-}
-
-a:link {
-    text-decoration: none;
-    color: black;
-}
-
-.useracc {
-    width: 50px;
-    height: 50px;
-    border: 0px solid;
-    border-radius: 50%;
-    /* margin-right: 10px; */
-}
-
-.cart {
-    width: 30px;
-    height: 25px;
-}
-
-/* menubar_bottom */
-.menubar_bottom {
-    display: flex;
-    margin-left: 3vw;
-}
-
-#dropdownMenuLink {
-    background-color: var(--light-yellow);
-    padding-top: 10px;
-}
-
-
-.searchBox {
-    width: 60vw;
-    height: 50px;
-    border: 0px solid;
-    background-color: var(--light-yellow);
-    padding-left: 10px;
-    /* margin-left: 28px; */
-}
-
-.figured {
-    width: 100px;
-    height: 50px;
-    border: 0px solid;
-    background-color: var(--yellow);
-}
-
 /* ShopListBody */
 .shopList {
     margin-left: 5vw;
@@ -102,7 +22,7 @@ a:link {
 }
 
 .shopListHeader {
-    width:70vw;
+    width: 70vw;
     height: 13vh;
     border: 0px solid;
     background-color: var(--yellow);
@@ -258,14 +178,11 @@ a:link {
     height: 12vh;
     border: 0px solid;
     background-color: var(--yellow);
-    margin-top: 13vh;
+    /* margin-top: 13vh; */
     display: flex;
-    padding: 8vh 0 0 4vw;
+    padding: 0vh 0 0 4vw;
 }
 
-.copyright {
-    margin-left: 20vw;
-}
 
 
 /*Mobile View*/
@@ -278,7 +195,7 @@ a:link {
 
     .bookshopName {
         font-size: 13px;
-        
+
     }
 
     .SPLKBookShop,
@@ -289,7 +206,6 @@ a:link {
 
     .menubar_bottom {
 
-        /* width: 200vw; */
         margin: 10px 0px 0px 40px;
     }
 
@@ -297,28 +213,8 @@ a:link {
         font-size: 17px;
     }
 
-    .navList {
-        display: none;
-    }
-    .useracc {
-        margin-left: 130px;
-    }
 
 
-    .searchBox {
-        width: 60vw;
-        height: 50px;
-        font-size: 12px;
-
-    }
-
-    .figured {
-        width: 25px;
-        height: 50px;
-
-    }
-
-    
     .shopList {
         /* margin-top: 20vh; */
         margin-left: 2vw;
@@ -332,12 +228,13 @@ a:link {
         width: 90vw;
 
     }
+
     .footer {
-        font-size: 12px;
-        padding: 4vh 0 0 0vw;
+        font-size: 12px !important;
+        padding: 4vh 0 0 2vw;
     }
 
     .copyright {
-        margin-left: 20vw !important;
+        margin-left: 10vw !important;
     }
 }

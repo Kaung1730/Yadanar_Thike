@@ -14,85 +14,6 @@
 
 }
 
-/* .container {
-    background-color: var(--main-bg-color);
-    overflow-x: hidden;
-
-} */
-
-.menubarIcon {
-    display: none;
-}
-
-.menubar_top {
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-
-}
-
-.navList {
-    display: flex;
-    list-style: none;
-}
-
-.navItem {
-    margin-right: 60px;
-    width: 100px;
-    height: 60px;
-    border: 0px solid black;
-    background-color: var(--yellow);
-    text-align: center;
-    padding-top: 15px;
-    font-size: 15px;
-}
-
-a:link {
-    text-decoration: none;
-    color: black;
-}
-
-.useracc {
-    width: 50px;
-    height: 50px;
-    border: 0px solid;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.cart {
-    width: 30px;
-    height: 25px;
-}
-
-/* menubar_bottom */
-.menubar_bottom {
-    display: flex;
-    margin-left: 2vw;
-}
-
-
-#dropdownMenuLink {
-    background-color: var(--light-yellow);
-    padding-top: 10px;
-}
-
-/* search */
-.searchBox {
-    width: 60vw;
-    height: 50px;
-    border: 0px solid;
-    background-color: var(--light-yellow);
-    padding-left: 10px;
-    /* margin-left: 28px; */
-}
-
-.figured {
-    width: 100px;
-    height: 50px;
-    border: 0px solid;
-    background-color: var(--yellow);
-}
 
 .division {
     position: absolute;
@@ -150,50 +71,11 @@ a:link {
     border: 0px solid;
     background-color: var(--yellow);
     display: flex;
-    padding: 6vh 0 0 4vw;
-}
-
-.copyright {
-    margin-left: 20vw !important;
+    padding: 5vh 0vw 0vh 2vw;
 }
 
 /*Mobile View*/
 @media screen and (max-width: 720px) {
-    .menubar_bottom {
-
-        /* width: 200vw; */
-        margin: 10px 0px 0px 5px;
-    }
-
-    .navList {
-        display: none;
-    }
-
-    .useracc {
-        margin-left: 70px;
-    }
-
-
-    .searchBox {
-        width: 60vw;
-        height: 50px;
-
-        /* padding-left: 10px; */
-        font-size: 12px;
-
-    }
-
-    .figured {
-        width: 25px;
-        height: 50px;
-
-    }
-
-    .menubarIcon {
-        display: block;
-        margin: 0px 20px 0 0px;
-
-    }
 
     .deliHeader {
         width: 60vw;
@@ -204,39 +86,13 @@ a:link {
         width: 50vw;
     }
 
-    /* .deliList{
-        margin-top: 15vh;
-        
-    }
-    .deliHeader{
-        width: 80vw;
-    }
-    .deliBody{
-        width: 80vw;
-    }
-.division{
-    width: 150px;
-}
-.yangonTownList{
-    flex-direction: row;
-}
-.yangonTownList ul li {
-    width: 100px;
-    
-}
-.mandalayTownshipList ul li{
-    width: 130px;
-}
-.line{
-    width: 80vw;
-} */
     .footer {
         font-size: 12px;
-        padding: 4vh 0 0 1vw;
+        padding: 1vh 0 0 1vw;
     }
 
     .copyright {
-        margin-left: 1vw;
+        margin-left: 4vw;
 
     }
 }

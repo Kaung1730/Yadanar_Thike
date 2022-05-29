@@ -3,71 +3,46 @@
 
 <head>
     <title>Author Profile</title>
+   
     <link rel="stylesheet" href="../resource/css/authorProfile.css">
-
+    <link rel="shortcut icon" href="../resource/image/logo.png">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+    <script src="../resource/js/jquery3.6.0.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- notosan myanmar font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&display=swap" rel="stylesheet">
+<!--Customize CSS-->
+<link rel="stylesheet" href="../resource/css/bookDescription.css">
+    <link rel="stylesheet" href="../resource/css/commonUser.css">
+    <link rel="stylesheet" href="../resource/css/userSetting.css">
+    <link rel="stylesheet" href="../resource/css/cartPop.css">
+    <link rel="stylesheet" href="../resource/css/orderHistory.css">
+    <link rel="stylesheet" href="../resource/css/nav.css">
+    <link rel="stylesheet" href="../resource/css/order.css">
+    <link rel="stylesheet" href="../resource/css/footer.css ">
+    <!--Bootstrap CSS & JavaScript-->
+   
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!--Slick JS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <!--Customize JS-->
+    <!-- <script src="../resource/js/Cslik.js" defer></script> -->
+    <script src="../resource/js/nav.js"></script>
 </head>
 
 <body>
+<div class="nav-bar"></div>
     <div class="container ">
-        <div class=" menubar_top ">
-            <a href="" class="logo mt-2 me-2"><img src="../resource/image/logo.png" alt=""></a>
-            <!-- <nav class="navbar"> -->
-            <ul class="navList ">
-                <li class="navItem"><a href="">မူလစာမျက်နှာ</a></li>
-                <li class="navItem"><a href="">စာအုပ်များ</a></li>
-                <li class="navItem"><a href="">စာရေးဆရာများ</a></li>
-                <li class="navItem"><a href="">အကောင့်သို့ဝင်ရန်</a></li>
-            </ul>
-            <div>
-                <a href=""><img src="../resource/image/useracc.jpg" alt="" class="useracc "></a>
-                <a href=""><span class="me-5">အကောင့်အမည်</span></a>
-                <a href="">
-                    <img src="../resource/image/cart.png" alt="" class="cart">
-                </a>
-                <span class="position-absolute  translate-middle badge bg-danger">2</span>
 
-            </div>
-        </div>
-
-        <div class="menubar_bottom">
-            <div class="menubarIcon">
-                <ion-icon name="menu" class="menubarIcon h-100 w-100"></ion-icon>
-            </div>
-            <!-- <div class="dropdown"> -->
-
-            <div class="dropdown">
-                <a class="btn  dropdown-toggle h-100" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
-                    ရှာဖွေရန်
-                </a>
-
-                <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item dpd" href="#">AUTHOR</a></li>
-                    <li><a class="dropdown-item dpd" href="#">BOOK</a></li>
-
-                </ul>
-            </div>
-
-            <!-- search -->
-            <div class="search">
-                <input type="text" name="" class="searchBox" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ? ဒီကနေ ဝင်ရှာလို့ရပါတယ်">
-            </div>
-
-            <button class="figured  ">
-                <ion-icon name="search"></ion-icon>
-            </button>
-        </div>
 
         <div class="profile mb-5">
             <div class="row mt-5 ms-5 ">

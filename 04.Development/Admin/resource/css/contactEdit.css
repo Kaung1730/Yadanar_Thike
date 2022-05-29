@@ -6,6 +6,7 @@ body{
     background-color: var(--adminBg);
 }
 .nav_box{
+    height: auto;
     background-color: var(--boxColor);
     display: flex;
     flex-direction: column;
