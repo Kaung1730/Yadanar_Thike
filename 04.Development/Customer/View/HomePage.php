@@ -31,8 +31,8 @@
     <!-- ionic icon -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<!--Customize CSS-->
-<link rel="stylesheet" href="../resource/css/bookDescription.css">
+    <!--Customize CSS-->
+    <link rel="stylesheet" href="../resource/css/bookDescription.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <link rel="stylesheet" href="../resource/css/userSetting.css">
     <link rel="stylesheet" href="../resource/css/cartPop.css">
@@ -49,44 +49,36 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"> -->
     <!--Customize JS-->
-   
+
 </head>
 
 <body>
-<div class="nav-bar"></div>
+    <div class="nav-bar"></div>
     <div class="container ">
         <!-- HeaderSlider -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            </div>
-            <div class="carousel-inner mt-5">
-                <div class="carousel-item active " data-bs-interval="1500">
-                    <img class="d-block w-100" src="../resource/image/slide1.png" alt="First slide">
+        <div id="carouselExampleInterval" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="../resource/image/slide1.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item active" data-bs-interval="1500">
-                    <img class="d-block w-100" src="../resource/image/slide2.png" alt="Second slide">
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../resource/image/slide2.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item active" data-bs-interval="1500">
-                    <img class="d-block w-100" src="../resource/image/slide3.png" alt="Third slide">
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../resource/image/slide3.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item active" data-bs-interval="1500">
-                    <img class="d-block w-100" src="../resource/image/slide4.png" alt="Fourth slide">
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../resource/image/slide4.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item active" data-bs-interval="1500">
-                    <img class="d-block w-100" src="../resource/image/slide5.png" alt="Fifth slide">
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../resource/image/slide5.png" class="d-block w-100" alt="...">
                 </div>
             </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -117,12 +109,12 @@
                 <div class="slide d-flex justify-content-center">
                     <img src="../resource/image/arrival6.png" alt="">
                 </div>
-                <!-- <div class="slide">
-                <img src="../resource/image/arrival2.png" alt="">
-            </div> -->
-                <!-- <div class="slide">
-                <img src="../SlickCenter/images/arrival5.png" alt="">
-            </div> -->
+                <div class="slide">
+                    <img src="../resource/image/arrival2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../SlickCenter/images/arrival5.png" alt="">
+                </div>
             </div>
 
             <!-- အသစ်ထွက်ရှိသော စာအုပ်များ End -->
