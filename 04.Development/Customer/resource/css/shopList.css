@@ -178,9 +178,9 @@
     height: 12vh;
     border: 0px solid;
     background-color: var(--yellow);
-    margin-top: 13vh;
+    /* margin-top: 13vh; */
     display: flex;
-    padding: 8vh 0 0 4vw;
+    padding: 0vh 0 0 4vw;
 }
 
 

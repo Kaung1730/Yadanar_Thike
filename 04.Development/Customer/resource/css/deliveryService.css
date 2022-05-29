@@ -71,7 +71,7 @@
     border: 0px solid;
     background-color: var(--yellow);
     display: flex;
-    padding: 0vh 0vw 0vh 2vw;
+    padding: 5vh 0vw 0vh 2vw;
 }
 
 /*Mobile View*/

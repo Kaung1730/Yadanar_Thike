@@ -3,7 +3,8 @@
 <head>
     <title>Shop List</title>
     <link rel="stylesheet" href="../resource/css/shopList.css">
-
+    <script src="../resource/js/jquery3.6.0.js"></script>
+    <script src="../resource/js/nav.js"></script>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
@@ -34,8 +35,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <!--Customize JS-->
     <script src="../resource/js/Cslik.js" defer></script>
-    <script src="../resource/js/jquery3.6.0.js"></script>
-    <script src="../resource/js/nav.js"></script>
+   
 </head>
 
 <body>

@@ -24,7 +24,7 @@
     border: 0px solid;
     background-color: var(--main-bg-color);
     text-align: center;
-    margin: 7vh 0 10vh 30vw;
+    margin: 7vh 0 10vh 31vw;
     padding-top: 3vh;
 }
 
@@ -35,6 +35,7 @@
 
 .alphabetLine {
     display: flex;
+    margin-left: 3vw;
 
 }
 
@@ -43,7 +44,7 @@
     height: 60px;
     border-radius: 50%;
     border: solid 1px var(--black);
-
+   
 }
 
 .alphabet:hover {
@@ -62,6 +63,7 @@
     background-color: var(--light-yellow);
     padding: 4vh 0vw 0vh 5vw;
     margin-top: 12vh;
+   
 }
 
 .authorsList ul {
@@ -70,7 +72,6 @@
     border: solid 0px;
     background-color: var(--light-violet);
     padding-top: 2rem;
-
 }
 
 .authorsList ul li {
@@ -97,19 +98,19 @@
         border: 0px solid;
         background-color: var(--main-bg-color);
         text-align: center;
-        margin: 7vh 0vw 8vh 25vw;
+        margin: 7vh 0vw 8vh 21vw;
         padding-top: 3vh;
     }
 
     .alphabetLine {
         margin-top: 4px;
-        /* margin-left: 20px; */
+        margin-left: 2px;
     }
 
     .alphabet {
         width: 40px;
         height: 40px;
-        /* margin-left: 20px; */
+        /* margin-left: 7vw; */
     }
 
 
