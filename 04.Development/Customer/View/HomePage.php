@@ -109,12 +109,6 @@
                 <div class="slide d-flex justify-content-center">
                     <img src="../resource/image/arrival6.png" alt="">
                 </div>
-                <div class="slide">
-                    <img src="../resource/image/arrival2.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../SlickCenter/images/arrival5.png" alt="">
-                </div>
             </div>
 
             <!-- အသစ်ထွက်ရှိသော စာအုပ်များ End -->
