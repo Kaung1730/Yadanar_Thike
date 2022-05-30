@@ -15,7 +15,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../resource/js/jquery3.6.0.js"></script>
-    <script src="../resource/js/userinfo.js"></script>
+    <script src="../resource/js/userInfo.js"></script>
 </head>
 
 <body>
