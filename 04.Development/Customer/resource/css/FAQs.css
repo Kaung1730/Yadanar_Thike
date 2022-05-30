@@ -13,7 +13,7 @@ body{
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 50px;
-    
+    box-shadow: 0 0 1px var(--grayblack);
 }
 .main{
     background-color: var(--bgColor);
@@ -24,7 +24,7 @@ body{
 .parts{
     width: 105vh;
     height: 35vw;
-    display: flex;
+    
     overflow: hidden;
     overflow-y: scroll;
     
@@ -83,13 +83,13 @@ background-color: var(--bgColor);
     padding-right: 86px;
 }
 .k{
-    padding-right: 20px;
+    padding-right: 21px;
 }
 .l{
     padding-right: 18px;
 }
 .m{
-    padding-right: 27px;
+    padding-right: 28px;
 }
 .down{
     display: inline-block;
@@ -133,7 +133,7 @@ background-color: var(--bgColor);
 }
 .parts::-webkit-scrollbar {
     width: 20px;
-    padding: 50px;
+    padding: 10px;
   }
   
   /* Track */
@@ -150,16 +150,172 @@ background-color: var(--bgColor);
     border-radius: 10px;
   }
 
-
-@media screen and (max-width: 720px) {
+  @media screen and (max-width: 1020px) {
+    .body{
+        margin: 20px;
+    }
     .question{
         padding: 10px 10px 10px 30px;
-        font-size: 13px;
+        font-size: 10px;
     }
     .answer {
-        font-size: 12px;
+        font-size: 10px;
         padding-left: 32px;
         padding-right: 5px;
         display: none;
         }
+        .a{
+            padding-right: 100px;
+        }
+        .b{
+            padding-right: 65px;
+        }
+        .c{ 
+            padding-right: 29px;
+        }
+        .d{
+            padding-right: 132px;
+        }
+        .e{
+            padding-right: 45px;
+        }
+        .f{
+            padding-right: 60px;
+        }
+        .g{
+            padding-right: 100px;
+        }
+        .h{
+            padding-right: 85px;
+        }
+        .i{
+            padding-right: 145px;
+        }
+        .j{
+            padding-right: 71px;
+        }
+        .k{
+            padding-right: 23px;
+        }
+        .l{
+            padding-right: 20px;
+        }
+        .m{
+            padding-right: 28px;
+        }
+}
+
+
+@media screen and (max-width: 720px) {
+    .body{
+        margin: 40px;
+    }
+    .question{
+        padding: 10px 10px 10px 30px;
+        font-size: 10px;
+    }
+    .answer {
+        font-size: 10px;
+        padding-left: 32px;
+        padding-right: 5px;
+        display: none;
+        }
+        .a{
+            padding-right: 100px;
+        }
+        .b{
+            padding-right: 65px;
+        }
+        .c{ 
+            padding-right: 29px;
+        }
+        .d{
+            padding-right: 132px;
+        }
+        .e{
+            padding-right: 45px;
+        }
+        .f{
+            padding-right: 60px;
+        }
+        .g{
+            padding-right: 105px;
+        }
+        .h{
+            padding-right: 100px;
+        }
+        .i{
+            padding-right: 145px;
+        }
+        .j{
+            padding-right: 71px;
+        }
+        .k{
+            padding-right: 23px;
+        }
+        .l{
+            padding-right: 20px;
+        }
+        .m{
+            padding-right: 28px;
+        }
+        .parts{
+            width: 85vh;
+            height: 35vw;
+            display: flex;
+            overflow: hidden;
+            overflow-y: scroll;
+            
+        }
+        .parts::-webkit-scrollbar {
+            width: 15px;
+            padding: 10px;
+          }
+}
+
+@media screen and (max-width: 620px) {
+
+    .a{
+        padding-right: 100px;
+    }
+    .b{
+        padding-right: 65px;
+    }
+    .c{ 
+        padding-right: 29px;
+    }
+    .d{
+        padding-right: 132px;
+    }
+    .e{
+        padding-right: 45px;
+    }
+    .f{
+        padding-right: 60px;
+    }
+    .g{
+        padding-right: 105px;
+    }
+    .h{
+        padding-right: 100px;
+    }
+    .i{
+        padding-right: 145px;
+    }
+    .j{
+        padding-right: 71px;
+    }
+    .k{
+        padding-right: 22px;
+    }
+    .l{
+        padding-right: 20px;
+    }
+    .m{
+        padding-right: 28px;
+    }
+    .parts::-webkit-scrollbar {
+        width: 12px;
+        padding: 10px;
+      }
 }

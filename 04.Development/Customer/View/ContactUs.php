@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Contact Us</title>
+        <title>ContactUs</title>
         <link rel="stylesheet" href="../resource/css/ContactUs.css">
         <link rel="stylesheet" href="../resource/css/commonUser.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -16,24 +16,24 @@
         <img class="contact" src="../resource/image/contact.png" alt="">
             <div class="main">
             
-            <div class="left">
+            <div class="left ">
             
-            <div class="title">Contact Us</div>
+            <div class="title lh-lg">Contact Us</div>
         
-            <div class="facts">သင်ဖြည့်စွက်ပြောလိုသည့်အကြောင်းကို ကျွန်ုပ်တို့အား ထပ်မံပြောပြပေးပါ မကြာမီ သင့်ထံ အကြောင်းကြားပေးပါမည်။</div>
+            <div class="facts lh-lg">သင်ဖြည့်စွက်ပြောလိုသည့်အကြောင်းကို ကျွန်ုပ်တို့အား ထပ်မံပြောပြပေးပါ မကြာမီ သင့်ထံ အကြောင်းကြားပေးပါမည်။</div>
             <div class="input">
-                <label class="label">User ၏ အမည်</label>
-                <input class="inputbox i1" type="text" placeholder="uffy">
+                <label class="label lh-lg">User ၏ အမည်</label>
+                <input class="inputbox i1 lh-lg" type="text" placeholder="uffy">
             </div>
             <div class="input">
-                <label class="label">ဆက်သွယ်ရမည့်ဖုန်းနံပါတ်</label>
-                <input class="inputbox i2" type="text" placeholder="+959 123 456 789">
+                <label class="label lh-lg">ဆက်သွယ်ရမည့်ဖုန်းနံပါတ်</label>
+                <input class="inputbox i2 lh-lg" type="text" placeholder="+959 123 456 789">
             </div>
             <div class="input">
-                <label class="label">ဖြည့်စွက်ပြောလိုသည့်အကြောင်းအရာ</label>
-                <textarea name="" class="i3" cols="10" rows="2"></textarea>
+                <label class="label lh-lg">ဖြည့်စွက်ပြောလိုသည့်အကြောင်းအရာ</label>
+                <textarea name="" class="i3 lh-lg" cols="10" rows="2"></textarea>
             </div>
-            <input type="submit" class="submit" value="ပေးပို့ရန်">
+            <input type="submit" class="submit lh-lg" value="ပေးပို့ရန်">
             
             </div>
            <div class="right">
