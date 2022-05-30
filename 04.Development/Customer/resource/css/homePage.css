@@ -159,11 +159,13 @@
     text-align: center;
     transform: translateY(-400px);
     opacity: 0;
+    
 }
 
 .card:hover>.content {
     opacity: 1;
     transform: translateY(120px);
+    
 }
 
 .card .content .btn {
@@ -315,6 +317,11 @@
 
 .serviceCard {
     margin: 40px 0px 30px 0px;
+    
+}
+.serviceCard a{
+    text-decoration: none;
+    
 }
 
 .serviceCard:hover {
@@ -330,6 +337,7 @@
 .serviceCard .content {
     font-size: 13px;
     margin-top: 20px;
+    color: black;
 }
 
 /* homeAddress */

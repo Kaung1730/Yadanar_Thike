@@ -327,19 +327,19 @@
                             <div class="icon">
                                 <img src="../resource/image/serviceLogo.png" alt="">
                             </div>
-                            <div class="content ">ဝန်ဆောင်မှုများ</div>
+                            <a href="./Service.php"><div class="content ">ဝန်ဆောင်မှုများ</div></a>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="serviceCard">
                             <div class="icon"><img src="../resource/image/locationLogo.png" alt=""></div>
-                            <div class="content">စာအုပ်ဆိုင်တည်နေရာများ</div>
+                            <a href="./shopList.php"><div class="content">စာအုပ်ဆိုင်တည်နေရာများ</div></a>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="serviceCard">
                             <div class="icon"><img src="../resource/image/deliveryLogo.png" alt=""></div>
-                            <div class="content">အိမ်အရောက်ပို့ဆောင်ပေးသော နေရာများ</div>
+                            <a href="./deliveryService.php"><div class="content">အိမ်အရောက်ပို့ဆောင်ပေးသော နေရာများ</div></a>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -347,7 +347,7 @@
                             <div class="icon">
                                 <img src="../resource/image/faqIcon.webp" alt="">
                             </div>
-                            <div class="content">FAQ</div>
+                            <a href="./FAQs.php"><div class="content">FAQ</div></a>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -355,7 +355,7 @@
                             <div class="icon">
                                 <img src="../resource/image/privacyLogo.webp" alt="">
                             </div>
-                            <div class="content">ကိုယ်ရေးအချက်အလက်ဆိုင်ရာ မူပိုင်ခွင့်များ</div>
+                            <a href="./Privacy.php"><div class="content">ကိုယ်ရေးအချက်အလက်ဆိုင်ရာ မူပိုင်ခွင့်များ</div></a>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -363,7 +363,7 @@
                             <div class="icon">
                                 <img src="../resource/image/contactLogo.png" alt="">
                             </div>
-                            <div class="content">ဆက်သွယ်ရန်</div>
+                            <a href="./ContactUs.php"><div class="content">ဆက်သွယ်ရန်</div></a>
                         </div>
                     </div>
                 </div>
