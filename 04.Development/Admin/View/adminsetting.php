@@ -87,7 +87,7 @@
                     <div class="setting_box">
                         <p class="text fs-3">Setting</p>
                         <div class="d-flex justify-content-around">
-                            <div>
+                            <div class="admin">
                                 <p class="fs-5">Admin</p>
                                 <p class="gmail">admin@gmail.com</p>
                             </div>
@@ -96,45 +96,45 @@
                             </div>
                         </div>
                         <button class="screen_box mt-3">
-                            <div class="d-flex justify-content-around">
-                                <img src="../resource/image/home.png" alt="" class="image mt-3 ">
+                            <div class="d-flex justify-content-around screen_btn">
+                                <img src="../resource/image/home.png" alt="" class="image mt-2 ">
                                 <div class="text_box">
                                     <p class="fs-5 text-light">Home Screen</p> 
-                                    <p class="logo_text text-light">Logo: Icon</p>
+                                    <p class="logo_text1 text-light mt-2">Logo: Icon</p>
                                 </div>
                             </div>
                         </button>
                         <button class="screen_box mt-3">
-                            <div class="d-flex justify-content-around">
-                                <img src="../resource/image/categories.webp" alt="" class="image mt-3">
+                            <div class="d-flex justify-content-around screen_btn">
+                                <img src="../resource/image/categories.webp" alt="" class="image mt-2">
                                 <div class="text_box">
                                     <p class="fs-5 text-light">Categories</p> 
-                                    <p class="logo_text text-light ">Add, Edit, Delete</p>
+                                    <p class="logo_text2 text-light mt-2 ">Add, Edit, Delete</p>
                                 </div>
                             </div>
                         </button>  
                         <button class="screen_box mt-3">
-                            <div class="d-flex justify-content-around">
-                                <img src="../resource/image/webedit.png" alt="" class="image mt-3">
+                            <div class="d-flex justify-content-around screen_btn">
+                                <img src="../resource/image/webedit.png" alt="" class="image mt-2">
                                 <div class="text_box">
                                     <p class="fs-5 text-light">Website Info</p> 
-                                    <p class="logo_text text-light three">Phone,Email,Address,Add Admin</p>
+                                    <p class="logo_text3 text-light mt-2">Phone,Email,Address,Add Admin</p>
+                                </div>
+                            </div>
+                        </button>
+                        <button class="screen_box mt-3">
+                            <div class="d-flex justify-content-around screen_btn">
+                                <img src="../resource/image/delivery.png" alt="" class="image mt-2">
+                                <div class="text_box">
+                                    <p class="fs-5 text-light mt-2">Delivery Control</p> 
                                 </div>
                             </div>
                         </button>
                         <button class="screen_box mt-3">
                             <div class="d-flex justify-content-around">
-                                <img src="../resource/image/delivery.png" alt="" class="image mt-3">
+                                <img src="../resource/image/privicy.png" alt="" class="image mt-2">
                                 <div class="text_box">
-                                    <p class="fs-5 text-light pt-3">Delivery Control</p> 
-                                </div>
-                            </div>
-                        </button>
-                        <button class="screen_box mt-3">
-                            <div class="d-flex justify-content-around">
-                                <img src="../resource/image/privicy.png" alt="" class="image mt-3">
-                                <div class="text_box">
-                                    <p class="fs-5 text-light pt-3">Privicy</p> 
+                                    <p class="fs-5 text-light mt-2">Privicy</p> 
                                 </div>
                             </div>
                         </button>

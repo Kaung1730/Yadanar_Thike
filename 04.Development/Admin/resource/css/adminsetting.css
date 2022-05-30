@@ -79,7 +79,14 @@ hr{
 .person_icon{
     height: 8vh;
 }
-.gmail,.logo_text{
+.admin{
+    position: relative;
+}
+.gmail{
+    position: absolute;
+    top: 50%;
+}
+.gmail,.logo_text1,.logo_text2,.logo_text3{
     font-size: 12px;
 }
 .image{
@@ -92,7 +99,25 @@ hr{
     background-color: var(--settingBar);
     border-radius: 30px;
     margin-left: 15%;
+}
+.screen_btn{
     position: relative;
+}
+.logo_text1,.logo_text2,.logo_text3{
+    position: absolute;
+    top: 50%;
+}
+.logo_text1{
+    left: 60%;
+}   
+.logo_text2{
+    left: 58%;
+}
+.logo_text3{
+    left: 54%;
+}
+.screen_box:hover{
+    background-color: var(--activeColor );
 }
 .text_box{
     height: 6vh;
@@ -100,8 +125,9 @@ hr{
     padding-bottom: 2%;
 }
 @media screen and (max-width:1200px) {
-    .logout{    
+    .logout{
         width: 8vw;
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 980px) {

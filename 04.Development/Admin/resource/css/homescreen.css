@@ -99,15 +99,6 @@ hr{
     margin-top: 4%;
     margin-left: 40% ;
 }
-.submit{
-    width: 14vw ;
-    height: 7vh;
-    border-radius: 12px;
-    background-color: var(--presentColor);
-    color:var(--adminBg) ;
-    margin-top: 4%;
-    margin-left: 40% ;
-}
 .browse_btn{
     width: 8vw ;
     height: 7vh;

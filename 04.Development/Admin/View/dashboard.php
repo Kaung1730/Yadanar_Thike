@@ -101,28 +101,28 @@
                                     <img src="../resource/image/person icon.png" alt="" class="person_icon pt-3">
                                     <div class="pt-3 fs-2 text-success">5000</div>
                                 </div>
-                                <p class="pt-3 ps-5 fs-3 user_text">Total Users</p>
+                                <p class="user_text">Total Users</p>
                             </div>
                             <div class="total_viewers">
                                 <div class="d-flex justify-content-around box">
                                     <img src="../resource/image/person icon.png" alt="" class="person_icon pt-3">
                                     <div class="pt-3 fs-2 text-danger">2000</div>
                                 </div>
-                                <p class="pt-3 ps-3 fs-3 viewer_text">Total Viewers</p>
+                                <p class="viewer_text">Total Viewers</p>
                             </div>
                             <div class="income">
                                 <div class="d-flex justify-content-around box">
                                     <img src="../resource/image/person icon.png" alt="" class="person_icon pt-3">
                                     <div class="pt-3 fs-2 text-primary">1.5k</div>
                                 </div>
-                                <p class="pt-3 ps-5 fs-3 income_text">Income</p>
+                                <p class="income_text">Income</p>
                             </div>
                             <div class="order">
                                 <div class="d-flex justify-content-around box">
                                     <img src="../resource/image/person icon.png" alt="" class="person_icon pt-3">
                                     <div class="pt-3 fs-2 text-info">300</div>
                                 </div>
-                                <p class="pt-3 ps-5 fs-3 order_text">Order</p>
+                                <p class="order_text">Order</p>
                             </div>
                         </div>
                     </div>
