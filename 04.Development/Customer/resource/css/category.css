@@ -14,10 +14,10 @@ hr{
 .yellow{
     color: var(--yellow) !important;
 }
-img:not(.slick-arrow img){
+.sub img:not(.slick-arrow img){
     max-width: 10rem !important;
 }
 .slick-arrow img{
     max-width: 1.5rem !important;
     cursor: pointer !important;
-}
+} 
