@@ -390,7 +390,7 @@
                             <!-- Grid column -->
                             <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
                                 <h6 class="text-uppercase mb-4 font-weight-bold">
-                                    <ion-icon name="location"></ion-icon> ရုံးချုပ်တည်နေရာ
+                                <i class="bi bi-geo-alt-fill fa-lg" ></i>ရုံးချုပ်တည်နေရာ
                                 </h6>
                                 <p>အမှတ် (၁၂၃) ၊ ရတနာလမ်း၊တောင်ဥက္ကလာပမြို့နယ်၊ ရန်ကုန်။</p>
                                 <p> yadanarthikebookshop@gmail.com</p>

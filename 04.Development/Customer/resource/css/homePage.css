@@ -347,7 +347,7 @@
 }
 .serviceCard .homeDeliveryContent {
    
-    margin-top: 10px !important;
+    margin-top: 10px;
     
 }
 
@@ -368,7 +368,7 @@
     height: 12vh;
     background-color: var(--yellow);
     display: flex;
-    padding: 5vh 0vw 0vh 2vw;
+    padding: 3vh 0vw 0vh 2vw;
 
 }
 
