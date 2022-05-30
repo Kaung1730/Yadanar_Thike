@@ -21,7 +21,7 @@
                 <form action="../Controller/insertLoginData.php" class="px-3 px-lg-0 px-md-3" method="POST">
                         <div class="row my-4">
                             <div class="col">
-                                <h3 class="text-center register-title">အ​ကောင့်ဝင်ရန်</h3>
+                                <h2 class="text-center register-title fw-normal">အ​ကောင့်ဝင်ရန်</h2>
                             </div>
                         </div>
                         <div class="row my-4 justify-content-center">
@@ -29,14 +29,14 @@
                                 <input type="text" placeholder="User Name" class="form-control ps-4 pt-3" name="username"/>
                             </div>
                         </div>
-                        <div class="row my-4 justify-content-center mb-lg-5">
+                        <div class="row my-5 justify-content-center">
                             <div class="col-lg-10 mb-lg-5">
                             <input type="password" placeholder="Password" class="form-control ps-4 pt-3" name="password"/>
                             </div>
                         </div>
-                        <div class="row mt-5 mb-3 justify-content-center">
+                        <div class="row justify-content-center">
                             <div class="mt-lg-2 col-lg-10 d-flex justify-content-between">
-                                <a href="./register.php"  class="btn btn-light me-2 me-md-0 me-lg-0 px-4 pt-2 text-center register-btn">အ​ကောင့်ဖွင့်ရန်</a>
+                                <a href="./register.php"  class="btn btn-light  me-2 me-md-0 me-lg-0 px-4 pt-2 text-center register-btn ">အ​ကောင့်ဖွင့်ရန်</a>
                                 <input type="submit" value="အ​ကောင့်ဝင်ရန်" class="btn btn-dark px-4 pt-2 text-center login-btn"/>
                             </div>
                         </div>

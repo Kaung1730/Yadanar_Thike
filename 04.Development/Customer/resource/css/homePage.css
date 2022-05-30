@@ -109,7 +109,7 @@
 
 .popularBook {
     /* min-width: 85vw; */
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,14 +143,12 @@
 .imgBox .bookTitle {
     padding: 20px 0px 0px 15px;
     color: brown;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .bookImg {
     width: 250px;
     padding-right: 70px;
-    /* transform: translateY(-120px); */
-
 }
 
 .card .content {
@@ -161,7 +159,9 @@
     opacity: 0;
     
 }
-
+.card .content p{
+    margin-top: 10px;
+}
 .card:hover>.content {
     opacity: 1;
     transform: translateY(120px);
@@ -179,6 +179,7 @@
     display: flex;
     background-color: var(--light-violet);
     height: 60vh;
+    width: auto;
 }
 
 .disItem .disContent {
@@ -297,7 +298,7 @@
     height: 55px;
     border: 0px solid;
     background-color: var(--yellow);
-    margin: 2vh 0vw 4vh 32vw;
+    margin: 2vh 0vw 4vh 33vw;
     padding: 20px 0px 0px 17px;
     border-radius: 5px;
 }
@@ -305,7 +306,7 @@
 /* SERVICES */
 
 .serviceCard {
-    width: 150px;
+    width: 160px;
     height: 130px;
     border: 0px solid;
     background-color: var(--light-yellow);
@@ -333,11 +334,21 @@
     height: 50px;
     margin-top: 10px;
 }
+.serviceCard .icon .homeDelivery {
+    width: 60px;
+    height: 60px;
+}
+
 
 .serviceCard .content {
     font-size: 13px;
     margin-top: 20px;
     color: black;
+}
+.serviceCard .homeDeliveryContent {
+   
+    margin-top: 10px;
+    
 }
 
 /* homeAddress */
@@ -357,7 +368,7 @@
     height: 12vh;
     background-color: var(--yellow);
     display: flex;
-    padding: 5vh 0vw 0vh 2vw;
+    padding: 3vh 0vw 0vh 2vw;
 
 }
 
@@ -407,7 +418,7 @@
     }
 
     .popularBookTitle {
-        margin: 10vh 0vw 17vh 15vw;
+        margin: 15vh 0vw 17vh 3vw;
     }
 
     /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  end*/
@@ -471,10 +482,10 @@
     /* DISCOUNT end */
     /* category start */
     .carousels h4 {
-        margin: 2vh 0vw 4vh 25vw;
+        margin: 2vh 0vw 4vh 8vw;
     }
 .carousels .item{
-    margin-right: 7vw;
+    margin-left: 10vw;
 }
     .thumb-wrapper {
         margin: 0vh 0vw 7vh 0vw ;

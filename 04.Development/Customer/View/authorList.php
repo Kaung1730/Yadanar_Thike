@@ -100,7 +100,8 @@
 
         <!-- ဟ မှ ဥ -->
         <div class="alphabetLine mt-4">
-            <a href="#alphabet31"><button class="alphabet firstWord me-4 ">ဟ</button></a>
+            <button class="alphabet firstWord me-4 invisible"></button>
+            <a href="#alphabet31"><button class="alphabet me-4 ">ဟ</button></a>
             <a href="#"><button class="alphabet me-4 bg-secondary text-light">ဠ</button></a>
             <a href="#alphabet33"><button class="alphabet me-4">အ</button></a>
             <a href="#alphabet34"><button class="alphabet me-4">ဥ</button></a>

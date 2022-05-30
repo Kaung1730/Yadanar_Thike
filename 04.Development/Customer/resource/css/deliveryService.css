@@ -28,41 +28,47 @@
 
 .deliList {
     margin-top: 5vh;
+    width: 60vw;
+    background-color: var(--body-bg-color);
+    margin-left: 10vw;
 }
 
 .deliHeader {
-    width: 30vw;
-    height: 10vh;
+    width: 60vw;
+    height: 15vh;
     border: 0px solid;
-    margin-left: 20vw;
+    text-align: center;
     background-color: var(--yellow);
-    padding: 25px 0px 0px 70px;
+    padding-top: 6vh;
 }
 
 
 /* YangonDivision */
 .yangon {
-    margin: 1vh 0vw 0vh 27vw;
+text-align: center;
+margin: 6vh 0vw 0vh 20vw;
 }
 
 .yangonTownList {
-    margin: 7vh 4vw 0vh 3vw;
+   margin-left: 5vw;
     display: flex;
     flex-wrap: wrap;
 }
 
 .yangonTownList ul {
-    margin: 17vh 7vw 0vh 0vw;
-    /* list-style: none; */
+    margin: 20vh 7vw 0vh 2vw;
+
 }
 
 .yangonTownList ul li {
-    width: 220px;
+    width: 13vw;
 }
 
 .yagonTown {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 
@@ -71,7 +77,7 @@
     border: 0px solid;
     background-color: var(--yellow);
     display: flex;
-    padding: 5vh 0vw 0vh 2vw;
+    padding: 3vh 0vw 0vh 2vw;
 }
 
 /*Mobile View*/

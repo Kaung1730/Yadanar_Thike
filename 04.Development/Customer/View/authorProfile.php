@@ -3,7 +3,7 @@
 
 <head>
     <title>Author Profile</title>
-   
+
     <link rel="stylesheet" href="../resource/css/authorProfile.css">
     <link rel="shortcut icon" href="../resource/image/logo.png">
     <!-- CSS only -->
@@ -18,8 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&display=swap" rel="stylesheet">
-<!--Customize CSS-->
-<link rel="stylesheet" href="../resource/css/bookDescription.css">
+    <!--Customize CSS-->
+    <link rel="stylesheet" href="../resource/css/bookDescription.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <link rel="stylesheet" href="../resource/css/userSetting.css">
     <link rel="stylesheet" href="../resource/css/cartPop.css">
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="../resource/css/order.css">
     <link rel="stylesheet" href="../resource/css/footer.css ">
     <!--Bootstrap CSS & JavaScript-->
-   
+
     <!--Bootstrap Icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <!--Slick JS-->
@@ -40,22 +40,24 @@
 </head>
 
 <body>
-<div class="nav-bar"></div>
+    <div class="nav-bar"></div>
     <div class="container ">
 
 
         <div class="profile mb-5">
-            <div class="row mt-5 ms-5 ">
+            <div class="row mt-5 ms-5 authorBio">
                 <!-- PROFILE -->
                 <div class="col-md-5">
                     <img src="../resource/image/COoNyo.jpg" alt="" class="image img-responsive">
                 </div>
                 <div class="col-md-7 mt-5 ">
-                    <h2 class="mb-5 ">ချစ်ဦးညို</h2>
+                    <h2 class="mb-3 ">ချစ်ဦးညို</h2>
                     <h5 class="mb-4 fw-bold">(1947 - Present)</h5>
                     <p class="lh-lg   authorBio"> ချစ်ဦးညိုသည် ၃၀ရက် ဒီဇင်ဘာ ၁၉၄၇တွင်မွေးဖွားခဲ့သည်။ သူသည် စာရေးဆရာသာမက ဝတ္ထုရေးဆရာ၊ ဇာတ်ညွှန်းဆရာနှင့် ေကျာင်းဆရာလည်း
-                        ဖြစ်သည်။သူ့ကို၂၀ ရာစု၏ မြန်မာစာပေလောကအတွက် ဘုရားပေးသောစာရေးဆရာဟုပင် သတ်မှတ်၍ရပေသည်။ သူသည် သမိုင်းကြောင်း၊
+                        ဖြစ်သည်။သူ့ကို၂၀ ရာစု၏ မြန်မာစာပေလောကအတွက် ဘုရားပေးသောစာရေးဆရာဟုပင် သတ်မှတ်၍ရပေသည်။
+                        <br> သူသည် သမိုင်းကြောင်း၊
                         ဘုရား၏ဘဝဇာတ်ကြောင်းတို့ကိုအခြေခံ၍ မတူကွဲပြားသောအမြင်ဖြင့်သူ၏ဆန်းသစ်သောစာရေးသည့်အရည်အချင်းကို အသုံးချ၍ များစွာသော သမိုင်းဝတ္ထုကိုရေးသားခဲ့သည်။
+                        <br>
                         'လင်္ကာဒီပချစ်သူ'အမည်ရှိစာအုပ်သည် သူရေးသားခဲ့သော ထင်ရှားကျော်ကြားသောစာအုပ်များအနက်မှ တစ်အုပ်အပါအဝင်ဖြစ်သည်။
                         ၁၉၉၉ခုနှစ်မှစ၍ ယဥ်ကျေးမှူနှင့်အနုပညာတက္ကသိုလ်တွင် အကြံပေးအနေဖြင့် တာဝန်ထမ်းဆောင်ခဲ့သည်။
                     </p>

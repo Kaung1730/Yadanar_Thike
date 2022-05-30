@@ -24,8 +24,9 @@
     border: 0px solid;
     background-color: var(--main-bg-color);
     text-align: center;
-    margin: 7vh 0 10vh 31vw;
+    margin: 7vh 0 10vh 30vw;
     padding-top: 3vh;
+    font-weight: 580;
 }
 
 /* က မှ အ အထိ */
@@ -35,7 +36,8 @@
 
 .alphabetLine {
     display: flex;
-    margin-left: 3vw;
+    margin-left: 1vw;
+    
 
 }
 
@@ -43,12 +45,13 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    font-weight: 580;
     border: solid 1px var(--black);
    
 }
 
 .alphabet:hover {
-    background-color: var(--light-yellow);
+    background-color: var(--yellow);
 }
 
 .box {
@@ -60,9 +63,10 @@
     width: 30vw;
     height: 10vh;
     border: solid 0px;
-    background-color: var(--light-yellow);
+    background-color: var(--yellow);
     padding: 4vh 0vw 0vh 5vw;
     margin-top: 12vh;
+   font-weight: 580;
    
 }
 
@@ -72,6 +76,7 @@
     border: solid 0px;
     background-color: var(--light-violet);
     padding-top: 2rem;
+    font-weight: 580;
 }
 
 .authorsList ul li {

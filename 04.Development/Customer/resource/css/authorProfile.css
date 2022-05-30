@@ -26,6 +26,9 @@
     border: 0px solid;
 
 }
+.authorBio h2, .authorBio h5{
+    text-align: center;
+}
 
 .image {
     width: 200px;
@@ -75,8 +78,6 @@
     color: var(--black);
     min-height: 325px;
     text-align: center;
-    overflow: hidden;
-
 }
 
 .carousel .thumb-wrapper {
@@ -85,7 +86,7 @@
     border-radius: 6px;
     text-align: center;
     position: relative;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.8);
 }
 
 .carousel .item .img-box {
@@ -108,13 +109,14 @@
 
 .carousel .thumb-content .authorName {
     font-size: 16px;
-    color: var(--dark-blue);
+    
     font-weight: 400;
 }
 
 .carousel .thumb-content .bookName {
     font-size: 14px;
     padding: 5px 0 5px 0;
+    color: var(--dark-blue);
 }
 
 .carousel .thumb-content .btn {
@@ -145,7 +147,7 @@
     width: 80px;
     height: 30px;
     border: 0px solid;
-    background-color: var(--light-violet);
+    background-color: var(--light-yellow);
     font-weight: bold;
     padding-top: 4px;
 }
