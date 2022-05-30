@@ -2,7 +2,7 @@ body{
     background-color: var(--bgColor) !important;
 }
 .register-container{
-    background-color: var(--light-black);
+    background-color: var(--medium-black);
     border-radius: var(--border);
 }
 .img-register{
@@ -14,6 +14,9 @@ body{
 }
 ::placeholder, .register-btn{
     color: var(--yellow) !important;
+}
+.register-btn{
+    background-color: var(--black);
 }
 ::placeholder{
     font-family: 'Poppins', sans-serif !important;
