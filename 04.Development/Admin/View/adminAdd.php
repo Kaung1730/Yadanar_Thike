@@ -25,7 +25,6 @@
                 </div>
                 <div class="col-10">
                     <div class="title_bar">
-
                     </div>
                     <div class="contact-box mt-4">
                         <div class="head_text fs-3 pt-3 fw-normal">Website Info</div>

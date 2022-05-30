@@ -26,7 +26,29 @@
                 </div>
                 <div class="col-10">
                     <div class="d-flex title_bar text-align-center">
+<<<<<<< HEAD
+                        <div class="ps-1 pt-2">
+                            <div class="title mt-1 mx-3 fs-4 title_author">Book info</div>
+                            <span class="title_list ms-3" id="adminCl">Admin</span>
+                            <span class="title_list">></span>
+                            <span class="title_list" id="adSet">Book Lists</span>
+                        </div>
+                        <div class="pt-3">
+                            <input type="search" placeholder="Search" class="search" />
+                        </div>
+                        <div class="message_box">
+                            <button><img src="../resource/image/message.png" class="message_icon" alt=""></button>
+                        </div>
+                        <div class="cart_box">
+                            <button><img src="../resource/image/cart.png" class="cart_icon" alt=""></button>
+                        </div>
+                        <div class="admin_box">
+                            <img src="../resource/image/person icon.png" class="person_icon" alt="">
+                            <p>Admin</p>
+                        </div>
+=======
                         
+>>>>>>> origin/main
                     </div>
                     <div class="book_bar">
                         <div class="d-flex justify-content-between">
@@ -40,6 +62,22 @@
                             <input type="Search" class="search_book me-3">
                         </div>
                         <br />
+<<<<<<< HEAD
+                        <div class="table_group">
+                            <table class="table table-borderless-responsive-lg white_table">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Book Image</th>
+                                    <th>Book Name</th>
+                                    <th>Book Categories</th>
+                                    <th>Book Author</th>
+                                    <th>Book Description</th>
+                                    <th>Book Price</th>
+                                    <th>Book Action</th>
+                                </tr>
+                            </table>
+                        </div>
+=======
                         <table class="table table-borderless-responsive-lg white_table tb-edit mx-5 mt-3">
                             <tr>
                                 <th>No</th>
@@ -52,6 +90,7 @@
                                 <th>Book Action</th>
                             </tr>
                         </table>
+>>>>>>> origin/main
                     </div>
                 </div>
                 <!-- <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div> -->

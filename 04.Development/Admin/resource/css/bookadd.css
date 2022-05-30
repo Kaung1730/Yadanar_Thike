@@ -138,4 +138,38 @@ hr{
     margin-left: 2vw;
     margin-top: 1vw;
 }
+@media screen and (max-width:1200px) {
+    .add_book{
+        height: 10vh;
+    }
+    .title_bar{
+        height: 20vh;
+    }
+}
+@media screen and (max-width: 980px) {
+    .logout{    
+        width: 8vw;
+    }
+    .logo{
+        width: 90px;
+    }
+    .search{
+        width: 30vw;
+        height: 5vh;
+    }
+}
+@media screen and (max-width: 860px) {
+    .nav_img{
+        display: none;
+    }
+    .link_detail{
+        font-size: 15px;
+    }
+    .logout{
+        font-size: 12px;
+    }
+    .title_author,.title_list{
+        font-size: 15px;
+    }
+}
 
