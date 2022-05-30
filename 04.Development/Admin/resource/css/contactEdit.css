@@ -123,7 +123,7 @@ hr{
     color: var(--btnfontColor);
 }
 .search-box{
-    width: 25vw;
+    width: 40vw;
     background-color: transparent;
     border: 1px solid black;
 }

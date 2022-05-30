@@ -6,11 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Settings</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../resource/css/commonAdmin.css">
     <link rel="stylesheet" href="../resource/css/adminsetting.css">
     <link rel="stylesheet" href="../resource/css/contactEdit.css">
@@ -18,7 +15,7 @@
     </script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../resource/js/jquery3.6.0.js"></script>
-    <script src="../resource/js/authorAdd.js"></script>
+    <script src="../resource/js/adminSetting.js"></script>
 </head>
 
 <body>
@@ -26,62 +23,11 @@
         <form action="">
             <div class="row">
                 <div class="col-2 nav_box">
-                    <img src="../resource/image/logo.png" alt="" class="mt-3 logo" />
-                    <hr />
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/home icon.png" alt="" class="nav_img" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Dashboard</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/author-icon-21.jpg" alt="" class="nav_img circle" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Author Info</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/book1.png" alt="" class="nav_img circle" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Book Info</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/order.png" alt="" class="nav_img" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Order Info</a>
-                            </span>
-                        </li>   
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/person icon.png" alt="" class="nav_img" />
-                                <a class="nav-link link_details" aria-current="page" href="#">User Info</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/person icon.png" alt="" class="nav_img" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Admin Settings</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/community.png" alt="" class="nav_img circle" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Community</a>
-                            </span>
-                        </li>
-                    </ul>
-                    <button type="button" class="btn btn-danger logout">Logout</button>
+                    
                 </div>
                 <div class="col-10">
                     <div class="d-flex title_bar text-align-center">
-                        <div class="ps-1 pt-2">
-                            <div class="title mt-1 mx-3 fs-4 title_author">Admin Settings</div>
-                            <span class="title_list ms-3" id="adminCl">Admin</span>
-                            <span class="title_list">></span>
-                            <span class="title_list" id="adSet">Settings</span>
-                        </div>
+                        
                     </div>
                     <br />
                     <div class="setting_box">
@@ -95,30 +41,33 @@
                                 <img src="../resource/image/person icon.png" alt="" class="person_icon">
                             </div>
                         </div>
+                        <!-- Home screen -->
                         <button class="screen_box mt-3">
                             <div class="d-flex justify-content-around screen_btn">
                                 <img src="../resource/image/home.png" alt="" class="image mt-2 ">
                                 <div class="text_box">
-                                    <p class="fs-5 text-light">Home Screen</p> 
-                                    <p class="logo_text1 text-light mt-2">Logo: Icon</p>
+                                    <p class="fs-5 text-light"><a href="./homeScreen.php" class="a-edit">Home Screen</a></p>
+                                    <p class="logo_text1 text-light mt-2">Logo . Icon</p>
                                 </div>
                             </div>
                         </button>
+                        <!-- categories -->
                         <button class="screen_box mt-3">
                             <div class="d-flex justify-content-around screen_btn">
                                 <img src="../resource/image/categories.webp" alt="" class="image mt-2">
                                 <div class="text_box">
-                                    <p class="fs-5 text-light">Categories</p> 
-                                    <p class="logo_text2 text-light mt-2 ">Add, Edit, Delete</p>
+                                    <p class="fs-5 text-light"><a href="./categoriesList.php" class="a-edit">Categories</a></p>
+                                    <p class="logo_text2 text-light mt-2 ">Add . Edit . Delete</p>
                                 </div>
                             </div>
-                        </button>  
+                        </button>
+                        <!-- website info -->
                         <button class="screen_box mt-3">
                             <div class="d-flex justify-content-around screen_btn">
                                 <img src="../resource/image/webedit.png" alt="" class="image mt-2">
                                 <div class="text_box">
-                                    <p class="fs-5 text-light">Website Info</p> 
-                                    <p class="logo_text3 text-light mt-2">Phone,Email,Address,Add Admin</p>
+                                    <p class="fs-5 text-light"><a href="./contactEdit.php" class="a-edit">Website Info</a></p>
+                                    <p class="logo_text3 text-light mt-2">Phone . Email . Address . Add Admin</p>
                                 </div>
                             </div>
                         </button>
@@ -126,7 +75,7 @@
                             <div class="d-flex justify-content-around screen_btn">
                                 <img src="../resource/image/delivery.png" alt="" class="image mt-2">
                                 <div class="text_box">
-                                    <p class="fs-5 text-light mt-2">Delivery Control</p> 
+                                    <p class="fs-5 text-light mt-2"><a href="./deliverycontrolList.php" class="a-edit">Delivery Control</a></p>
                                 </div>
                             </div>
                         </button>
@@ -134,7 +83,7 @@
                             <div class="d-flex justify-content-around">
                                 <img src="../resource/image/privicy.png" alt="" class="image mt-2">
                                 <div class="text_box">
-                                    <p class="fs-5 text-light mt-2">Privicy</p> 
+                                    <p class="fs-5 text-light mt-2"><a href="./privacyPolicyList.php" class="a-edit">Privacy</a></p>
                                 </div>
                             </div>
                         </button>

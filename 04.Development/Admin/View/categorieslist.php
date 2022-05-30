@@ -31,7 +31,7 @@
                     </div>
                     <div class="add_cat">
                         <form action="">
-                            <button class="add_ncat mt-4 me-4">Add New Categories</button>
+                            <button class="add_ncat mt-4 me-4"><a href="./addNewCategories.php" class="a-edit">Add New Categories</a></button>
                             <hr />
                             <div class="table_group">
                                 <table class="table table-borderless-responsive-lg white_table tb-edit">
