@@ -52,7 +52,7 @@
                 <!-- YangonDivision -->
                 <div class=" division yangon ">ရန်ကုန်တိုင်းဒေသကြီး</div>
                 <div class="yangonTownList">
-                    <ul class="yagonTown">
+                    <ul class="yagonTown lh-lg">
                         <li>ဗိုလ်တထောင်</li>
                         <li>ဒဂုံဆိပ်ကမ်း</li>
                         <li>ဒေါပုံ</li>
@@ -108,7 +108,7 @@
 
     </div>
     <!-- FOOTER -->
-    <div class="footer mt-3">
+    <div class="footer mt-5">
         <div class="ps-2">@YadanarThike 2022</div>
         <div class="copyright">&#169;
             YadanarThike Company. All Rights Reserved.</div>

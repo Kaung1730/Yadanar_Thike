@@ -48,7 +48,7 @@
 
 <body>
     <div class="nav-bar"></div>
-    <div class="container ">
+    <div class="container container-fluid ">
         <!-- HeaderSlider -->
         <div id="carouselExampleInterval" class="carousel slide mt-5" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -233,19 +233,6 @@
                     </div>
                 </div>
 
-                <!-- cardFive -->
-                <!-- <div class="card">
-                    <div class="imgBox">
-                        <img src="../resource/image/popular5.png" alt="" class="bookImg">
-                        <div class="bookTitle">အိပ်နေရင်ညနိုးနေရင်နေ့</div>
-                    </div>
-                    <div class="content">
-
-                        <p>၄၀၀၀ကျပ်</p>
-                       
-                        <button type="button" class="btn">Add to Basket</button>
-                    </div>
-                </div> -->
 
             </div>
             <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ end -->
@@ -256,7 +243,7 @@
                 <div class="disContent">
                     <h2>မြသန်းတင့်</h2>
                     <p>ရှားလော့ဟုမ်း၏ မှတ်တမ်း (20% Off)</p>
-                    <p class="disPrice">၆၀၀၀ကျပ် <span class="text-decoration-line-through pb-5 ms-2">၄၈၀၀ကျပ်</span></p>
+                    <span class="disPrice text-decoration-line-through">၆၀၀၀ကျပ်</span> <span class=" disPrice pb-5 ms-2 text-danger">၄၈၀၀ကျပ်</span>
                 </div>
 
                 <div class="discountCard">
@@ -333,13 +320,13 @@
                     <div class="col-md-2">
                         <div class="serviceCard">
                             <div class="icon"><img src="../resource/image/locationLogo.png" alt=""></div>
-                            <a href="./shopList.php"><div class="content">စာအုပ်ဆိုင်တည်နေရာများ</div></a>
+                            <a href="./shopList.php"><div class="content ps-2 pe-2">စာအုပ်ဆိုင်တည်နေရာများ</div></a>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="serviceCard">
-                            <div class="icon"><img src="../resource/image/deliveryLogo.png" alt=""></div>
-                            <a href="./deliveryService.php"><div class="content">အိမ်အရောက်ပို့ဆောင်ပေးသော နေရာများ</div></a>
+                            <div class="icon"><img src="../resource/image/deliveryLogo.png" alt="" class="homeDelivery"></div>
+                            <a href="./deliveryService.php"><div class="content homeDeliveryContent ps-2 pe-2 ">အိမ်အရောက်ပို့ဆောင်ပေးသော နေရာများ</div></a>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -355,7 +342,7 @@
                             <div class="icon">
                                 <img src="../resource/image/privacyLogo.webp" alt="">
                             </div>
-                            <a href="./Privacy.php"><div class="content">ကိုယ်ရေးအချက်အလက်ဆိုင်ရာ မူပိုင်ခွင့်များ</div></a>
+                            <a href="./Privacy.php"><div class="content ps-2 pe-2">ကိုယ်ရေးအချက်အလက်ဆိုင်ရာ မူပိုင်ခွင့်များ</div></a>
                         </div>
                     </div>
                     <div class="col-md-2">
