@@ -18,7 +18,7 @@
     <div class="container my-5 d-flex justify-content-center align-item-center">
         <div class="row  g-0 register-container mt-5">
             <div class="col-lg-7">
-                <form action="../Controller/insertLoginData.php" class="px-3 px-lg-0 px-md-0" method="POST">
+                <form action="../Controller/insertLoginData.php" class="px-3 px-lg-0 px-md-3" method="POST">
                         <div class="row my-4">
                             <div class="col">
                                 <h3 class="text-center register-title">အ​ကောင့်ဝင်ရန်</h3>

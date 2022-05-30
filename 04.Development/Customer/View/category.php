@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="shortcut icon" href="../resource/image/logo.png">
     <!--Customize CSS-->
-    <link rel="stylesheet" href="../resource/css/bookDescription.css">
+    <link rel="stylesheet" href="../resource/css/category.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <link rel="stylesheet" href="../resource/css/userSetting.css">
     <link rel="stylesheet" href="../resource/css/cartPop.css">
