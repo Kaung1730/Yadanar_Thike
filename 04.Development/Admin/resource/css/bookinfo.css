@@ -123,11 +123,11 @@ hr{
     height: 50vh;
     margin-left: 5%;
 }
-@media screen and (max-width:1200px) {
+/* @media screen and (max-width:720px) {
     .add_book{
         height: 10vh;
     }
-    .title_bar{
+    /* .title_bar{
         height: 20vh;
-    }
-}
+    } 
+} */

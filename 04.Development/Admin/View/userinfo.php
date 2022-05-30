@@ -22,11 +22,11 @@
         <form action="">
             <div class="row">
                 <div class="col-2 nav_box">
-                    
+
                 </div>
                 <div class="col-10">
                     <div class="d-flex title_bar text-align-center">
-                        
+
                     </div>
                     <div class="author_bar">
                         <br />
@@ -42,8 +42,9 @@
                             </tr>
                         </table>
                     </div>
+                    <div class="copyright mt-4 text-center mt-2">Copyright@2022YadanarThike All Rights Reserved.</div>
                 </div>
-                <div class="copyright mt-4 text-center mt-2">Copyright@2022YadanarThike All Rights Reserved.</div>
+
         </form>
     </div>
 </body>
