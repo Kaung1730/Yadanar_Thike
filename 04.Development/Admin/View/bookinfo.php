@@ -22,12 +22,11 @@
         <form action="">
             <div class="row">
                 <div class="col-2 nav_box">
-                    
+
                 </div>
                 <div class="col-10">
                     <div class="d-flex title_bar text-align-center">
-<<<<<<< HEAD
-                        <div class="ps-1 pt-2">
+                        <!-- <div class="ps-1 pt-2">
                             <div class="title mt-1 mx-3 fs-4 title_author">Book info</div>
                             <span class="title_list ms-3" id="adminCl">Admin</span>
                             <span class="title_list">></span>
@@ -45,15 +44,12 @@
                         <div class="admin_box">
                             <img src="../resource/image/person icon.png" class="person_icon" alt="">
                             <p>Admin</p>
-                        </div>
-=======
-                        
->>>>>>> origin/main
+                        </div> -->
                     </div>
                     <div class="book_bar">
                         <div class="d-flex justify-content-between">
                             <p class="pt-4 author_list">Book List</p>
-                            <button class="add_book mt-4 me-4">Add New Book</button>
+                            <button class="add_book mt-4 me-4"><a href="./bookadd.php" class="a-edit">Add New Book</a></button>
                         </div>
                         <hr />
                         <br>
@@ -62,7 +58,6 @@
                             <input type="Search" class="search_book me-3">
                         </div>
                         <br />
-<<<<<<< HEAD
                         <div class="table_group">
                             <table class="table table-borderless-responsive-lg white_table">
                                 <tr>
@@ -77,23 +72,9 @@
                                 </tr>
                             </table>
                         </div>
-=======
-                        <table class="table table-borderless-responsive-lg white_table tb-edit mx-5 mt-3">
-                            <tr>
-                                <th>No</th>
-                                <th>Book Image</th>
-                                <th>Book Name</th>
-                                <th>Book Categories</th>
-                                <th>Book Author</th>
-                                <th>Book Description</th>
-                                <th>Book Price</th>
-                                <th>Book Action</th>
-                            </tr>
-                        </table>
->>>>>>> origin/main
                     </div>
                 </div>
-                <!-- <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div> -->
+                <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
         </form>
     </div>
 </body>

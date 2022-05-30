@@ -22,66 +22,16 @@
         <form action="">
             <div class="row">
                 <div class="col-2 nav_box">
-<<<<<<< HEAD
-                    <img src="../resource/image/logo.png" alt="" class="mt-3 logo" />
-                    <hr />
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/home icon.png" alt="" class="nav_img" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Dashboard</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/author-icon-21.jpg" alt="" class="nav_img circle" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Author Info</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/book1.png" alt="" class="nav_img circle" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Book Info</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/order.png" alt="" class="nav_img" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Order Info</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/person icon.png" alt="" class="nav_img" />
-                                <a class="nav-link link_details" aria-current="page" href="#">User Info</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/person icon.png" alt="" class="nav_img" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Admin Settings</a>
-                            </span>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav_details mt-3 hover-li">
-                                <img src="../resource/image/community.png" alt="" class="nav_img circle" />
-                                <a class="nav-link link_details" aria-current="page" href="#">Community</a>
-                            </span>
-                        </li>
-                    </ul>
-                    <button type="button" class="btn btn-danger logout">Logout</button>
-=======
 
->>>>>>> origin/main
                 </div>
                 <div class="col-10">
-                    <div class="title_bar">
+                    <div class="d-flex title_bar text-align-center">
 
                     </div>
                     <div class="author_bar">
                         <div class="d-flex justify-content-between">
                             <p class="pt-4 author_list">Author List</p>
-                            <button class="add_author mt-4 me-4">Add New Author</button>
+                            <button class="add_author mt-4 me-4"><a href="./authorAdd.php" class="a-edit">Add New Author</a></button>
                         </div>
                         <hr />
                         <br>

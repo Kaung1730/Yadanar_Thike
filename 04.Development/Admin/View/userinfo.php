@@ -43,7 +43,7 @@
                         </table>
                     </div>
                 </div>
-                <!-- <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div> -->
+                <div class="copyright mt-4 text-center mt-2">Copyright@2022YadanarThike All Rights Reserved.</div>
         </form>
     </div>
 </body>

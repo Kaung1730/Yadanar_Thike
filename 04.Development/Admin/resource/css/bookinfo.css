@@ -96,11 +96,7 @@ hr{
     padding-top: 2vh;
 }
 .book_bar{
-<<<<<<< HEAD
-    height: 76vh;
-=======
     height: auto;
->>>>>>> origin/main
     background-color: var(--boxColor);
     margin-top: 4vh;
     border-radius: 12px;
