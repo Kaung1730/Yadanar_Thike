@@ -71,10 +71,7 @@
 
     <!--searchbar for large screen-->
     <div class="top-0 mt-lg-0 mt-md-3 mt-5 pt-lg-1 pt-md-5 pt-5 input-group text-dark d-none d-md-none d-lg-flex search">
-        <select name="" id="">
-            <option value="author">စာရေးဆရာများ</option>
-            <option value="book">စာအုပ်များ</option>
-        </select>
+        <button class=" text-dark btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">ရှာဖွေရန်</button>
         <input type="text" class="form-control searchInput" aria-label="Text input with dropdown button" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ? ဒီကနေ ဝင်ရှာလို့ရပါတယ်">
         <button class="btn btn-outline-secondary" type="button" id="button-addon2">
             <i class="bi bi-search text-dark  fs-5 search-icon"></i>
