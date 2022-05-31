@@ -27,4 +27,9 @@
 }
 hr{
     color: var(--yellow) !important;
+    width: 100% !important;
+}
+.btn-close{
+    font-weight: bolder !important;
+    opacity: 1 !important;
 }

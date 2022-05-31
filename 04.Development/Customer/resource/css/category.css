@@ -6,7 +6,8 @@
     font-size: 1.2rem !important;
 }
 hr{
-    height: 0.2rem !important;
+    height: 0.1rem !important;
+    width: 100% !important;
 }
 .black{
     color: var(--black) !important;
@@ -21,3 +22,7 @@ hr{
     max-width: 1.5rem !important;
     cursor: pointer !important;
 } 
+.bi-trash3::before {
+    font-size: 1.3rem !important;
+    cursor: pointer;
+}

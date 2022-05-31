@@ -24,3 +24,26 @@ nav, .dropdown-item, select, option{
     border: none !important;
     outline: none !important;
 }
+.modal-open{
+        padding-right: 0 !important;
+        overflow-y: auto !important;
+}
+.searchInput::placeholder{
+    color: gainsboro  !important;
+    font-weight: bold !important;
+    font-size: 0.9rem !important;
+}
+.bi-search::before{
+    font-weight: bolder !important;
+}
+
+@media screen and (max-width:576px) {
+    .color{
+        background-color: var(--yellow) !important;
+    }
+}
+@media screen and (max-width:768px) {
+    .color{
+        background-color: var(--yellow) !important;
+    }
+}

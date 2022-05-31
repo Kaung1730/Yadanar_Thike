@@ -29,6 +29,10 @@
 <body>
     <!--Nav-->
     <div class="nav-bar"></div>
+    <div class="setting"></div>
+    <div class="cart"></div>
+    <div class="order"></div>
+    <div class="orderHistory"></div>
     <!-- Start of Book Description -->
     <div class="container-fluid px-0  mt-5">
         <!--Start of the book des-->
@@ -79,7 +83,7 @@
                                 <div class="col-1 fw-bold pt-2 btn px-1">+</div>
                             </div>
                         </div>
-                        <div class="btn order-btn my-3 book-d-text">ဝယ်ယူမည့်စာရင်းထဲကိုထည့်မယ်</div>
+                        <div class="btn order-btn my-3 book-d-text">ခြင်းတောင်းထဲထည့်ရန်</div>
                     </div>
                 </div>
             </div>
@@ -89,7 +93,7 @@
                 <div class="review-box mx-3 mt-3 pb-1">
                     <div class="row g-0">
                         <div class="col-1 ps-lg-4 ps-md-0 ps-0 pt-lg-2 pt-md-0 pt-0 border-left d-none d-md-block d-lg-block">
-                            <i class="bi bi-person-circle "></i>
+                            <img src="../resource/image/comment.png" class="useracc" />
                         </div>
                         <div class="col-10">
                             <div class="row pt-2">
@@ -140,7 +144,7 @@
                 </form>
             </div>
             <!--Book list related to the author-->
-            <div class="related-book-area mt-5">
+            <div class="related-book-area mt-3">
                 <div class="author-book-title">
                     <span class="author">​ဖေမြင့်</span>
                     <span class="book">စာအုပ်များ</span>

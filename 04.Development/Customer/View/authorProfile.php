@@ -41,9 +41,11 @@
 
 <body>
     <div class="nav-bar"></div>
+    <div class="setting"></div>
+    <div class="cart"></div>
+    <div class="order"></div>
+    <div class="orderHistory"></div>
     <div class="container ">
-
-
         <div class="profile mb-5">
             <div class="row mt-5 ms-5 authorBio">
                 <!-- PROFILE -->

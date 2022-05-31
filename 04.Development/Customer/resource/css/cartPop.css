@@ -22,3 +22,7 @@
     background-color: var(--yellow)  !important;
     border-color: var(--yellow) !important;
 }
+.bi-trash3::before {
+    font-size: 1.3rem !important;
+    cursor: pointer !important;
+}

@@ -23,3 +23,22 @@
 body{
     background-color: var(--bgColor) !important;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 10px !important;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--light-black) !important; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:var(--yellow) !important;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--light-yellow) !important;
+  }

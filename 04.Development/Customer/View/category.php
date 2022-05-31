@@ -32,8 +32,11 @@
 
 <body>
     <!--Nav-->
-    <!--Nav-->
     <div class="nav-bar"></div>
+    <div class="setting"></div>
+    <div class="cart"></div>
+    <div class="order"></div>
+    <div class="orderHistory"></div>
     <!--Category Start-->
     <div class="container-fluid px-0 mt-5">
         <div class="container">

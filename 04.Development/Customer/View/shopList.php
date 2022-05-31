@@ -38,7 +38,11 @@
 </head>
 
 <body>
-<div class="nav-bar"></div>
+    <div class="nav-bar"></div>
+    <div class="setting"></div>
+    <div class="cart"></div>
+    <div class="order"></div>
+    <div class="orderHistory"></div>
     <div class="container ">
 
         <div class="shopList">
