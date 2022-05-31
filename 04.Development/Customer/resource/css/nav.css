@@ -36,7 +36,9 @@ nav, .dropdown-item, select, option{
 .bi-search::before{
     font-weight: bolder !important;
 }
-
+.selectNav{
+    border-radius: unset !important;
+}
 @media screen and (max-width:576px) {
     .color{
         background-color: var(--yellow) !important;

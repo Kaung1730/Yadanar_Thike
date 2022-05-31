@@ -22,7 +22,6 @@
                         <a class="nav-link  mt-lg-2 mt-md-0 mt-0 pt-lg-3 pt-md-0 pt-0 active" href="../View/login.php">အကောင့်သို့ဝင်ရန်</a>
                     </li>
                     <li class="nav-item  d-flex d-md-flex d-lg-none  nav-color me-lg-4 me-md-0 me-0 px-lg-2 px-md-2 ps-0 py-lg-0 py-md-2 py-2">
-                        <!---search bar for md and sm screen-->
                         <button type="button" class="btn searchBorder" data-bs-toggle="modal" data-bs-target="#search-modal">
                             <span class="text-dark">ရှာဖွေရန်</span> <i class="bi bi-search  fw-bold fs-5 text-center "></i>
                         </button>
@@ -31,8 +30,8 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-body">
-                                        <div class="input-group text-dark">
-                                            <select name="" id="">
+                                        <div class="input-group text-dark selectNav">
+                                            <select name="" id=""  >
                                                 <option value="author">စာရေးဆရာများ</option>
                                                 <option value="book">စာအုပ်များ</option>
                                             </select>

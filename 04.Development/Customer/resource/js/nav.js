@@ -4,5 +4,6 @@ $(document).ready(function () {
     $(".cart").load("./commonLayout/cartPopUp.php");
     $(".order").load("./commonLayout/order.php");
     $(".orderHistory").load("./commonLayout/orderHistory.php");
+    $(".pdf").load("./commonLayout/pdfPreview.php");
     $(".footer").load("./commonLayout/footer.php");    
 })

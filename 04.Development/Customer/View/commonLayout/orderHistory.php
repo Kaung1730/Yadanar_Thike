@@ -1,21 +1,21 @@
-<div class="modal  fade " id="orderHistory" tabindex="-1" aria-labelledby="lg-orderHistoryLabel" aria-hidden="true">
+<div class="modal  fade ms-5 ms-lg-5 ms-md-0 " id="orderHistory" tabindex="-1" aria-labelledby="lg-orderHistoryLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content modal-parent">
             <div class="modal-header cart-header ps-lg-5">
                 <h5 class="modal-title ms-lg-5" id="lg-orderHistoryLabel">မှာယူခဲ့သည့်စာရင်းများ</h5>
                 <button type="button" class="btn-close btn-close-dark me-lg-3" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body text-white">
+            <div class="modal-body text-white  fw-light">
 
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-8 ">
                         ​အော်ဒါနံပါတ် - <span>123</span>
                     </div>
                     <div class="col-4 book-text">May 21 2022</div>
                 </div>
 
                 <div class="row">
-                    <div class="col-8 book-text mt-2">
+                    <div class="col-8 book-text mt-2 ">
                         <div class="my-2">ဝယ်ယူခဲ့သည့်စာအုပ်</div>
                         <div class="my-2 small-text">ငြိတွယ်ခြင်းတို့ရဲ့အစခွင့်လွှတ်ရခြင်းတို့ရဲ့အဆုံး</div>
                         <div class="my-2 small-text">အိမ်အ​ရောက်​ငွေ​ချေစနစ်</div>
@@ -25,8 +25,8 @@
                     </div>
                 </div>
 
-                <div class="row mt-3">
-                    <div class="col-10 book-text">
+                <div class="row mt-3 fw-light">
+                    <div class="col-10 book-text muted">
                         <div>ပို့​ဆောင်ခ - <span>1000</span> (ကျပ်)</div>
                         <div>စုစု​ပေါင်း - <span>6000</span> (ကျပ်)</div>
                     </div>
