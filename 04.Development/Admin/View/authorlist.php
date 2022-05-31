@@ -35,12 +35,6 @@
                             <button class="add_author mt-4 me-4"><a href="./authorAdd.php" class="a-edit">Add New Author</a></button>
                         </div>
                         <hr />
-                        <br>
-                        <div class="d-flex justify-content-end">
-                            <label for="" class="pe-2">Search</label>
-                            <input type="Search" class="search_auther me-3">
-                        </div>
-                        <br />
                         <table class="table table-borderless-responsive-lg white_table tb-edit mx-5 mt-3">
                             <tr>
                                 <th>No</th>

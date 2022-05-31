@@ -119,7 +119,7 @@
                                     <td class="text-center">1</td>
                                 </tr>
                             </table>
-                            <a href="./orderInfo.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-end">See more</button></a>
+                            <a href="faqAdd.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-end">See more</button></a>
                         </div>
                     </div>
                     <div class="copyright text-center">Copyright@2022YadanarThike All Rights Reserved.</div>

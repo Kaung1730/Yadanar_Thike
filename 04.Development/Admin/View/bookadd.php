@@ -15,7 +15,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../resource/js/jquery3.6.0.js"></script>
-    <script src="../resource/js/authorAdd.js"></script>
+    <script src="../resource/js/bookAdd.js"></script>
 </head>
 
 <body>
@@ -27,12 +27,7 @@
                 </div>
                 <div class="col-10">
                     <div class="title_bar">
-                        <div class="ps-1 pt-2">
-                            <div class="title mt-1 mx-3 fs-4 title_author">Book</div>
-                            <span class="title_list ms-3" id="adminCl">Admin</span>
-                            <span class="title_list">></span>
-                            <span class="title_list" id="adSet">Book Lists</span>
-                        </div>
+                        
                     </div>
                     <div class="add_author">
                         <form action="">
@@ -54,7 +49,7 @@
                                 <input type="text" class="box1">
                             </div>
                             <div class="input-part ms-4 mt-2 slide-me">
-                                <label for="slide_img" class="form-label fs-5 text-start">Slide Image</label>
+                                <label for="slide_img" class="form-label fs-5 text-start">Book Image:</label>
                                 <div class="input-group mt-2 mb-3 input-width">
                                     <input type="file" class="form-control input-edit" id="slide_img">
                                     <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>

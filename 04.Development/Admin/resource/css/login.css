@@ -3,8 +3,8 @@
 }
 .login_box{
     background-color:var(--boxColor);
-    width: 400px;
-    height: 470px;
+    width: 32vw;
+    height: auto;
     border-radius: 30px;
 }
 .name_box,.password_box{
