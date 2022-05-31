@@ -47,7 +47,7 @@
                                 <img src="../resource/image/home.png" alt="" class="image mt-2 ms-4">
                                 <div class="text_box d-flex justify-content-center">
                                     <p class="fs-4 text-light"><a href="./homeScreen.php" class="a-edit">Home Screen</a></p>
-                                    <p class="logo_text1 text-light mt-2">Logo . Icon</p>
+                                    <p class="logo_text1 text-light mt-2 fs-6">Logo . Icon</p>
                                 </div>
                             </div>
                         </button>
@@ -56,8 +56,8 @@
                             <div class="d-flex justify-content-around screen_btn">
                                 <img src="../resource/image/categories.webp" alt="" class="image mt-2 ms-4">
                                 <div class="text_box">
-                                    <p class="fs-5 text-light"><a href="./categoriesList.php" class="a-edit">Categories</a></p>
-                                    <p class="logo_text2 text-light mt-2 ">Add . Edit . Delete</p>
+                                    <p class="fs-4 text-light"><a href="./categoriesList.php" class="a-edit">Categories</a></p>
+                                    <p class="logo_text2 text-light mt-2 fs-6">Add . Edit . Delete</p>
                                 </div>
                             </div>
                         </button>
@@ -66,8 +66,8 @@
                             <div class="d-flex justify-content-around screen_btn">
                                 <img src="../resource/image/webedit.png" alt="" class="image mt-2 ms-4">
                                 <div class="text_box">
-                                    <p class="fs-5 text-light"><a href="./contactEdit.php" class="a-edit">Website Info</a></p>
-                                    <p class="logo_text3 text-light mt-2">Phone . Email . Address . Add Admin</p>
+                                    <p class="fs-4 text-light"><a href="./contactEdit.php" class="a-edit">Website Info</a></p>
+                                    <p class="logo_text3 text-light mt-2 fs-6">Phone . Email . Address . Add Admin</p>
                                 </div>
                             </div>
                         </button>
@@ -76,7 +76,7 @@
                             <div class="d-flex justify-content-around screen_btn">
                                 <img src="../resource/image/delivery.png" alt="" class="image mt-2 ms-4">
                                 <div class="text_box">
-                                    <p class="fs-5 text-light mt-2"><a href="./deliverycontrolList.php" class="a-edit">Delivery Control</a></p>
+                                    <p class="fs-4 text-light mt-2"><a href="./deliverycontrolList.php" class="a-edit">Delivery Control</a></p>
                                 </div>
                             </div>
                         </button>
@@ -85,12 +85,12 @@
                             <div class="d-flex justify-content-around">
                                 <img src="../resource/image/privicy.png" alt="" class="image mt-2 ms-4">
                                 <div class="text_box">
-                                    <p class="fs-5 text-light mt-2"><a href="./privacyPolicyList.php" class="a-edit">Privacy</a></p>
+                                    <p class="fs-4 text-light mt-2"><a href="./privacyPolicyList.php" class="a-edit">Privacy</a></p>
                                 </div>
                             </div>
                         </button>
                     </div>
-                    <div class="copyright text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
+                    <div class="copyright text-center mt-2">Copyright@2022YadanarThike All Rights Reserved.</div>
                 </div>
         </form>
     </div>

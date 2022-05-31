@@ -87,7 +87,7 @@ hr{
 .screen_box{
     width: 70%;
     height: 12vh;
-    background-color: var(--settingBar);
+    background-color: var(--adminsetColor);
     border-radius: 30px;
     margin-left: 15%;
 }
@@ -99,21 +99,20 @@ hr{
     top: 50%;
 }
 .logo_text1{
-    left: 25rem;
+    left: 22rem;
 }   
 .logo_text2{
-    left: 23rem;
+    left: 21rem;
 }
 .logo_text3{
-    left: 20rem;
+    left: 17rem;
 }
 .screen_box:hover{
     background-color: var(--activeColor );
 }
 .text_box{
-    height: 6vh;
-    width: 50%;
-    padding-bottom: 2rem;
+    width: 70%;
+    /* padding-bottom: 2rem; */
     padding-right: 8rem;
 }
 @media screen and (max-width:1200px) {
