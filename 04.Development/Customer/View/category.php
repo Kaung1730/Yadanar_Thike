@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <!--Customize JS-->
-    <script src="../resource/js/Cslik.js" defer></script>
+    <script src="../resource/js/cSlik.js" defer></script>
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/nav.js"></script>
 </head>
@@ -47,16 +47,16 @@
                 <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ရုပ်ပြ</div>
                     <div class="autoplay book-list d-flex justify-content-between align-items-center">
                         <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid">
+                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
                         </div>
                     </div>
                     <hr class="black">
@@ -66,16 +66,16 @@
                     <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ဝတ္ထု</div>
                     <div class="autoplay book-list d-flex justify-content-between align-items-center">
                         <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid">
+                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
                         </div>
                     </div>
                 </div>
@@ -85,16 +85,16 @@
                     <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ဘာသာစကား</div>
                     <div class="autoplay book-list d-flex justify-content-between align-items-center">
                         <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid">
+                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
                         </div>
                     </div>
                 </div>
@@ -104,16 +104,16 @@
                     <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ကျန်းမာ​​ရေး</div>
                     <div class="autoplay book-list d-flex justify-content-between align-items-center">
                         <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid">
+                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
                         </div>
                     </div>
                 </div>
@@ -123,16 +123,16 @@
                     <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ဘာသာ​ရေး</div>
                     <div class="autoplay book-list d-flex justify-content-between align-items-center">
                         <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid">
+                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
                         </div>
                     </div>
                 </div>
@@ -142,16 +142,16 @@
                     <div class="sub-title ms-lg-5 mb-3 ps-lg-5">နိုင်ငံ​ရေး</div>
                     <div class="autoplay book-list d-flex justify-content-between align-items-center">
                         <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid">
+                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
                         </div>
                     </div>
                 </div>
@@ -161,16 +161,16 @@
                     <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ကဗျာ</div>
                     <div class="autoplay book-list d-flex justify-content-between align-items-center">
                         <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid">
+                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
                         </div>
                     </div>
                 </div>
@@ -180,16 +180,16 @@
                     <div class="sub-title ms-lg-5 mb-3 ps-lg-5">တက်ကျမ်း</div>
                     <div class="autoplay book-list d-flex justify-content-between align-items-center">
                         <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid">
+                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
                         </div>
                     </div>
                 </div>
@@ -199,16 +199,16 @@
                     <div class="sub-title ms-lg-5 mb-3 ps-lg-5">အတ္ထုပတ္တိ</div>
                     <div class="autoplay book-list d-flex justify-content-between align-items-center">
                         <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid">
+                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
                         </div>
                     </div>
                 </div>
@@ -218,16 +218,16 @@
                     <div class="sub-title ms-lg-5 mb-3 ps-lg-5">အခြား</div>
                     <div class="autoplay book-list d-flex justify-content-between align-items-center">
                         <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid">
+                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
                         </div>
                         <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid">
+                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
                         </div>
                     </div>
                 </div>

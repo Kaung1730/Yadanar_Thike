@@ -39,12 +39,14 @@
                             <table class="table table-borderless tb-edit mx-5 mt-3">
                                 <tr class="table-secondary">
                                     <th class="text-center begin">No.</th>
-                                    <th class="text-center">Slide Image</th>
+                                    <th class="text-center">Admin Name</th>
+                                    <th class="text-center">Role</th>
                                     <th class="text-center last" colspan="2">Action</th>
                                 </tr>
                                 <tr class="table-light">
                                     <td class="text-center begin">1</td>
                                     <td class="text-center">1</td>
+                                    <td class="text-center">1</td>
                                     <td class="text-center last">
                                         <a href="">
                                             <button type="button" class="btn btn-outline-info">
@@ -62,6 +64,7 @@
                                 </tr>
                                 <tr class="table-secondary">
                                     <td class="text-center begin">1</td>
+                                    <td class="text-center">1</td>
                                     <td class="text-center">1</td>
                                     <td class="text-center last">
                                         <a href="">
@@ -81,6 +84,7 @@
                                 <tr class="table-light">
                                     <td class="text-center begin">1</td>
                                     <td class="text-center">1</td>
+                                    <td class="text-center">1</td>
                                     <td class="text-center last">
                                         <a href="">
                                             <button type="button" class="btn btn-outline-info">
@@ -98,6 +102,7 @@
                                 </tr>
                                 <tr class="table-secondary">
                                     <td class="text-center begin">1</td>
+                                    <td class="text-center">1</td>
                                     <td class="text-center">1</td>
                                     <td class="text-center last">
                                         <a href="">
@@ -117,6 +122,7 @@
                                 <tr class="table-light">
                                     <td class="text-center begin">1</td>
                                     <td class="text-center">1</td>
+                                    <td class="text-center">1</td>
                                     <td class="text-center last">
                                         <a href="">
                                             <button type="button" class="btn btn-outline-info">
@@ -134,6 +140,7 @@
                                 </tr>
                                 <tr class="table-secondary">
                                     <td class="text-center begin">1</td>
+                                    <td class="text-center">1</td>
                                     <td class="text-center">1</td>
                                     <td class="text-center last">
                                         <a href="">
@@ -152,7 +159,7 @@
                                 </tr>
                             </table>
                             <nav aria-label="Page navigation example">
-                                <a href="slidechangeAdd.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-start">Add</button></a>
+                                <a href="adminAdd.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-start">Add</button></a>
                                 <ul class="pagination float-end me-5">
                                     <li class="page-item">
                                         <a class="page-link" href="#" aria-label="Previous">

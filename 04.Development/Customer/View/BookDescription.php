@@ -33,6 +33,7 @@
     <div class="cart"></div>
     <div class="order"></div>
     <div class="orderHistory"></div>
+    <div class="pdf"></div>
     <!-- Start of Book Description -->
     <div class="container-fluid px-0  mt-5">
         <!--Start of the book des-->
@@ -43,7 +44,7 @@
                         <img src="../resource/image/Chonechar-Mha-300x300.png" class="ms-5 ms-lg-0 ms-md-0 py-4 py-lg-0 py-md-0" />
                         <!-- book preview -->
                         <div class=" d-flex d-lg-block d-md-block justify-content-center">
-                            <a href="" class="ms-lg-5 ms-md-3 my-4 px-3 view-more-btn btn  text-dark book-d-text">
+                            <a href="#pdf" data-bs-toggle="modal" class="ms-lg-5 ms-md-3 my-4 px-3 view-more-btn btn  text-dark book-d-text">
                                 <i class="bi bi-eye-fill fs-6 me-3 book-d-text"></i>ပိုမိုကြည့်ရန်
                             </a>
                         </div>
@@ -51,7 +52,7 @@
                         <div class="my-1 book-d-text"> <span>စာအုပ်အရွယ်အစား -</span> 5.1 x 0.6 x 7.2 inches</div>
                         <div class="my-1 book-d-text"> <span>ပုံနှိပ်မှတ်တမ်း -</span> ​ရေတံခွန်စာ​ပေ၊ 2022 ဧပြီလ(ပထမအကြိမ်)</div>
                         <div class="OrderBtnContainer  d-flex d-lg-block d-md-block justify-content-center">
-                            <a href="" class="ms-lg-5 ms-md-3 me-4  my-3 px-4 py-2 btn book-d-text order-btn" href="#lg-order" data-bs-toggle="modal">အမှာတင်မည်</a>
+                            <a class="ms-lg-5 ms-md-3 me-4  my-3 px-4 py-2 btn book-d-text order-btn" data-bs-toggle="modal" href="#order">အမှာတင်မည်</a>
                         </div>
                     </div>
                     <div class="col-4 d-none d-md-block d-lg-block d-xl-block"></div>
@@ -76,14 +77,18 @@
                         <!-- To increase book number or decrecase -->
                         <div class="mb-3 mt-4">
                             <div class="d-flex mt-2 numberContainer text-center align-item-center">
-                                <div class="col-1 me-3 fw-bold pt-2 btn text-center px-1">
+                                <div class="btn col-1 me-3 fw-bold pt-2 btn text-center px-1">
                                     ー
                                 </div>
-                                <div class="col-2 me-3 fw-bold pt-2 btn">1</div>
-                                <div class="col-1 fw-bold pt-2 btn px-1">+</div>
+                                <div class="btn col-2 me-3 fw-bold pt-2 btn">1</div>
+                                <div class="btn col-1 fw-bold pt-2 btn px-1">+</div>
                             </div>
                         </div>
-                        <div class="btn order-btn my-3 book-d-text">ခြင်းတောင်းထဲထည့်ရန်</div>
+                        <div>
+                            <a href="#cartPopUp" class="text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal">
+                            ခြင်းတောင်းထဲထည့်ရန်
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -17,24 +17,24 @@ $(document).ready(function () {
                 $("#register").css("opacity", "1");
                 if (res == "duplicate") {
                     swal({
-                        title: "Duplicate!",
-                        text: "User Name and Password is duplicate",
+                        title: "အ​ကောင့်ထပ်​နေပါသည်!",
+                        text: "User Name နှင့် Email မှာ အသုံးပြုပြီးသား ဖြစ်​နေပါသည်",
                         icon: "warning",
                         button: {text:'OK',className:'sweet-warning'},
                     });
                 } else if (res == "success") {
                     swal({
-                        title: "Success!",
-                        text: "Your account is created successfully! Press Login",
+                        title: "ဖန်တီးမှု ​အောင်မြင်ပါသည်!",
+                        text: "အ​ကောင့်အသစ် ဖန်တီးမှု ​အောင်မြင်ပါသည်",
                         icon: "success",
-                        button: "Login",
+                        button: "အ​ကောင့်၀င်ရန်",
                     }).then((value) => {
-                        window.location.href = `/FPj/04.Development/Customer/View/login.php`;
+                        window.location.href = `/YanarThike/04.Development/Customer/View/login.php`;
                     });
                 } else if (res == "password") {
                     swal({
-                        title: "Password!",
-                        text: "Confirm Password and Given Password are not same",
+                        title: "လျို့ဝှက် နံပါတ် မတူညီပါ!",
+                        text: "လျို့ဝှက်နံပါတ် နှင့် အတည်ပြု လျို့ဝှက် နံပါတ် မတူညီပါ",
                         icon: "warning",
                         button: {text:'OK',className:'sweet-warning'},
                     });

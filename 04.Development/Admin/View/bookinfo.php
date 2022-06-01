@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../resource/css/commonAdmin.css">
-    <link rel="stylesheet" href="../resource/css/bookinfo.css">
+    <link rel="stylesheet" href="../resource/css/bookInfo.css">
     <link rel="stylesheet" href="../resource/css/contactEdit.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -27,25 +27,7 @@
                 </div>
                 <div class="col-10">
                     <div class="d-flex title_bar text-align-center">
-                        <!-- <div class="ps-1 pt-2">
-                            <div class="title mt-1 mx-3 fs-4 title_author">Book info</div>
-                            <span class="title_list ms-3" id="adminCl">Admin</span>
-                            <span class="title_list">></span>
-                            <span class="title_list" id="adSet">Book Lists</span>
-                        </div>
-                        <div class="pt-3">
-                            <input type="search" placeholder="Search" class="search" />
-                        </div>
-                        <div class="message_box">
-                            <button><img src="../resource/image/message.png" class="message_icon" alt=""></button>
-                        </div>
-                        <div class="cart_box">
-                            <button><img src="../resource/image/cart.png" class="cart_icon" alt=""></button>
-                        </div>
-                        <div class="admin_box">
-                            <img src="../resource/image/person icon.png" class="person_icon" alt="">
-                            <p>Admin</p>
-                        </div> -->
+
                     </div>
                     <div class="book_bar">
                         <div class="d-flex justify-content-between">
@@ -53,12 +35,6 @@
                             <button class="add_book mt-4 me-4"><a href="./bookadd.php" class="a-edit">Add New Book</a></button>
                         </div>
                         <hr />
-                        <br>
-                        <div class="d-flex justify-content-end">
-                            <label for="" class="pe-2">Search</label>
-                            <input type="Search" class="search_book me-3">
-                        </div>
-                        <br />
                         <div class="table_group">
                             <table class="table table-borderless-responsive-lg white_table">
                                 <tr>
@@ -74,8 +50,9 @@
                             </table>
                         </div>
                     </div>
+                    <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                 </div>
-                <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
+
         </form>
     </div>
 </body>

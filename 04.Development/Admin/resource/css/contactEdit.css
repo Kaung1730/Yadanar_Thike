@@ -182,6 +182,12 @@ hr{
     font-size: 2.5rem;
     display: none;
 }
+.title-wd{
+    width: 45vw;
+}
+.btn-mag{
+    width: 13vw !important;
+}
 @media screen and (max-width:720px){
     .nav_box{
         display: none;

@@ -5,7 +5,7 @@
                 <h5 class="modal-title ms-lg-5" id="lg-orderLabel">​အော်ဒါနံပါတ် - <span><b> 123</b></span></h5>
                 <button type="button" class="btn-close btn-close-dark me-lg-3" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body fw-light">
                 <div class="row g-0">
                     <div class="col-lg-4">
                         <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
@@ -19,12 +19,12 @@
                             <div class="col-6   col-md-12 col-lg-12">
                                 <!--Number of book increase or decrease-->
                                 <div>
-                                    <div class="d-flex text-dark  numberContainer text-center align-item-center">
-                                        <div class="col-2 me-3 fw-bold pt-1 minus">
+                                    <div class="d-flex text-dark  numberContainer justify-content-between text-center align-item-center">
+                                        <div class="col-2 fw-bold px-1 minus btn">
                                             ー
                                         </div>
-                                        <div class="col-4 me-3 fw-bold pt-1">1</div>
-                                        <div class="col-2 fw-bold pt-1">+</div>
+                                        <div class="col-4  fw-bold btn">1</div>
+                                        <div class="col-2 fw-bold  px-1 btn">+</div>
                                     </div>
                                 </div>
                             </div>

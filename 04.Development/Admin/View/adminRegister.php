@@ -20,12 +20,15 @@
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                     <div class="login_box text-center">
                         <form action="">
-                            <h2 class="pt-4 pb-5">အကောင့်ဝင်ရန် </h2>
+                            <h2 class="pt-4 pb-5">အကောင့်ဖွင့်ရန်</h2>
                             <div class="form-outline pb-5">
-                                <input type="adminname" placeholder="   Admin Name" class="name_box" name="admin_name" />
+                                <input type="adminname" placeholder="Email" class="name_box" name="admin_email" />
+                            </div>
+                            <div class="form-outline pb-5">
+                                <input type="adminname" placeholder=" Admin Name" class="name_box" name="admin_name" />
                             </div>
                             <div class="form-outline pb-1">
-                                <input type="password" placeholder="   Password" class="password_box" name="admin_password" />
+                                <input type="password" placeholder=" Password" class="password_box" name="admin_password" />
                             </div>
                             <button class="box mb-3" type="submit">အကောင့်ဝင်ရန်</button>
                         </form>

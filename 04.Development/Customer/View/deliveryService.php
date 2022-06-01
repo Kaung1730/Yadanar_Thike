@@ -2,6 +2,7 @@
 
 <head>
     <title>Delivery Service</title>
+    <link rel="shortcut icon" href="../resource/image/logo.png">
     <link rel="stylesheet" href="../resource/css/deliveryService.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <!-- CSS only -->
@@ -33,7 +34,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <!--Customize JS-->
-    <script src="../resource/js/Cslik.js" defer></script>
+    <script src="../resource/js/cSlik.js" defer></script>
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/nav.js"></script>
 </head>

@@ -27,12 +27,7 @@
                 </div>
                 <div class="col-10">
                     <div class="title_bar">
-                        <div class="ps-1 pt-2">
-                            <div class="title mx-3 fs-4 title_author">Author</div>
-                            <span class="title_list ms-3" id="adminCl">Author</span>
-                            <span class="title_list">></span>
-                            <span class="title_list" id="adSet">Author Lists</span>
-                        </div>
+                        
                     </div>
                     <div class="add_author">
                         <form action="">

@@ -32,7 +32,7 @@
                     <div class="contact-box mt-4 boxH">
                         <div class="btn">
                             <button type="button" class="btn btn-secondary mx-5 btn-1 btn-me"><a href="contactEdit.php" class="a-edit">Contact Edit</a></button>
-                            <button type="button" class="btn btn-secondary mx-5 btn-2 btn-me"><a href="adminAdd.php" class="a-edit">Add Admin</a></button>
+                            <button type="button" class="btn btn-secondary mx-5 btn-2 btn-mag btn-me"><a href="adminList.php" class="a-edit">Login Management</a></button>
                             <button type="button" class="btn btn-secondary mx-5 btn-3 btn-me"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
                         </div>
                         <div class="input-part ms-5 mt-5 slide-me">
