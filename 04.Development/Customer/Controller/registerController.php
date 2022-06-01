@@ -25,7 +25,9 @@ require_once("../Model/DBConnection.php");
                 WHERE 
                 customer_name = :username AND
                 customer_email = :email AND
-                del_flg = :del_flg
+                del_flg = :del_flg OR
+                customer_email = :email AND
+                del_flg = :del_flg 
             ");
             $checkDuplicate -> bindValue(":username",$userName);
             $checkDuplicate -> bindValue(":email",$email);

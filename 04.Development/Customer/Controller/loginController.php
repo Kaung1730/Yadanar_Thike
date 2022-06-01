@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 require_once("../Model/DBConnection.php");
 //get data from insert form
     if(isset($_POST)){
@@ -11,22 +11,27 @@ require_once("../Model/DBConnection.php");
     $db = new DBConnect();
     $dbConnect = $db->connect();
     $sql = $dbConnect -> prepare("
-            SELECT * FROM login
-            WHERE username = :name
-            ANG
-            password = :password;
+            SELECT * FROM customer
+            WHERE customer_name = :name
+            AND
+            customer_password = :password
     ");
     $sql -> bindValue(":name",$userName);
-    $sql -> bindValue(":password",$password);
+    $sql -> bindValue(":password",$decPassword);
     
     $sql->execute();
     $result = $sql->fetchAll(PDO::FETCH_ASSOC);
-
+    
+    //to get id bcz want to use for the user setting
+    $id = $result[0]['customer_id'];
     if(count($result) > 0){
-        header("Location: ../View/home.php");
+        $_SESSION['username'] = $userName;
+        $_SESSION['status'] = "login";
+        $_SESSION['customer_id'] = $id;
+        echo "success";
     }
     else{
-        header("Location:../View/loginerror.php");
+        echo "wrong";
     }
 
 ?>

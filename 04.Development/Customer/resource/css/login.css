@@ -20,3 +20,7 @@ body{
 input{
     border-radius: .5rem !important;
 }
+.sweet-warning,
+.sweet-warning:not([disabled]):hover{
+    background-color: red !important;
+}
