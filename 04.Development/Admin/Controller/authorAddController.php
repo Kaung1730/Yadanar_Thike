@@ -12,7 +12,7 @@ if(isset($_POST)){
     $db =new DBConnect();
     $dbconnect = $db->connect();
     $sql = $dbconnect -> prepare(
-        "INSERT INTO Author
+        "INSERT INTO author
         (
             author_image,
             author_name,
