@@ -13,8 +13,7 @@
     <div class="body">
         <div class="main">
             <div class="header">
-                <p class="title">မင်္ဂလာပါ… ဝန်ဆောင်မှုများစွာဖြင့်
-    Yadanar Thikeမှ ကြိုဆိုပါသည်
+                <p class="title">မင်္ဂလာပါ… ဝန်ဆောင်မှုများစွာဖြင့် Yadanar Thikeမှ ကြိုဆိုပါသည်
                 </p>
             </div>
             <div class="logos">

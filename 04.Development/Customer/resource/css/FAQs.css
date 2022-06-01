@@ -3,12 +3,12 @@
 :root{
     --grayblack: #30323D;
 }
+
 body{
     display: flex;
     justify-content: center;
 }
 .body{ 
-    
     margin-top: 20px;
     margin-left: 20%;
     margin-right: 20%;
@@ -18,39 +18,40 @@ body{
 .main{
     background-color: var(--bgColor);
     padding-top: 20px;
-    padding-right: 50px;
+    padding-right: 20px;
     padding-bottom: 50px;
+    width: 105vh;
+    height: 65vw;
+    margin-right: 10px;
 }
 .parts{
-    width: 105vh;
-    height: 35vw;
-    
+    width: 95vh;
+    height: 60vw;
     overflow: hidden;
     overflow-y: scroll;
-    
+    margin-right: 30px;
 }
 .part{
-    width: 100%;
+    width: 90%;
 }
-
 .title{
     display: flex;
     justify-content: center;
-background-color: var(--bgColor);
+    background-color: var(--bgColor);
     padding: 30px 0px ;
     border-bottom: 0.5px solid var(--yellow);
 }
 .faq{
     margin-top: 10px;
-    margin-right: 150px;
+    margin-right: 10px;
     margin-left: 2%;
 }
-
 .question{
     padding: 20px 130px 20px 50px;
     font-size: 14px;
     display: inline-block;
     text-align: start;
+    font-weight: bold;
 }
 .a{
     padding-right: 130px;
@@ -100,19 +101,26 @@ background-color: var(--bgColor);
     font-size: 1.0rem;
 }
 .updown-icon{
-    padding: 5px;
+    padding: 15px;
     background: transparent;
     border-color: transparent;
     cursor: pointer;
     
 }
-
+.upper{
+    width: fit-content;
+}
 .answer {
     font-size: 1.0rem;
     line-height: 1.8;
     padding-left: 50px;
-    padding-right: 120px;
+    padding-right: 10px;
     display: none;
+    width: fit-content;
+    font-weight: bold;
+    }
+    p{
+        width: 407px;
     }
 .show-text .answer {
     display: inline-block;
@@ -154,118 +162,74 @@ background-color: var(--bgColor);
     .body{
         margin: 20px;
     }
-    .question{
-        padding: 10px 10px 10px 30px;
-        font-size: 10px;
-    }
-    .answer {
-        font-size: 10px;
-        padding-left: 32px;
-        padding-right: 5px;
-        display: none;
-        }
-        .a{
-            padding-right: 100px;
-        }
-        .b{
-            padding-right: 65px;
-        }
-        .c{ 
-            padding-right: 29px;
-        }
-        .d{
-            padding-right: 132px;
-        }
-        .e{
-            padding-right: 45px;
-        }
-        .f{
-            padding-right: 60px;
-        }
-        .g{
-            padding-right: 100px;
-        }
-        .h{
-            padding-right: 85px;
-        }
-        .i{
-            padding-right: 145px;
-        }
-        .j{
-            padding-right: 71px;
-        }
-        .k{
-            padding-right: 23px;
-        }
-        .l{
-            padding-right: 20px;
-        }
-        .m{
-            padding-right: 28px;
-        }
 }
-
 
 @media screen and (max-width: 720px) {
     .body{
         margin: 40px;
     }
     .question{
-        padding: 10px 10px 10px 30px;
-        font-size: 10px;
+        padding: 10px 8px 10px 30px;
+        font-size: 9px;
+    }
+    .main{
+        width: 75vh;
+        height: 65vw;
+    }
+    .parts{
+        width: 70vh;
+        height: 60vw;
+    }
+    p{
+        width: 407px;
     }
     .answer {
-        font-size: 10px;
+        font-size: 9px;
         padding-left: 32px;
         padding-right: 5px;
         display: none;
         }
         .a{
-            padding-right: 100px;
+            padding-right: 77px;
         }
         .b{
-            padding-right: 65px;
+            padding-right: 46px;
         }
         .c{ 
-            padding-right: 29px;
+            padding-right: 12px;
         }
         .d{
-            padding-right: 132px;
+            padding-right: 104px;
         }
         .e{
-            padding-right: 45px;
+            padding-right: 26px;
         }
         .f{
-            padding-right: 60px;
+            padding-right: 39px;
         }
         .g{
-            padding-right: 105px;
+            padding-right: 78px;
         }
         .h{
-            padding-right: 100px;
+            padding-right: 73px;
         }
         .i{
-            padding-right: 145px;
+            padding-right: 114px;
         }
         .j{
-            padding-right: 71px;
+            padding-right: 46px;
         }
         .k{
-            padding-right: 23px;
+            padding-right: 4px;
         }
         .l{
-            padding-right: 20px;
+            padding-right: 2px;
         }
         .m{
-            padding-right: 28px;
+            padding-right: 8px;
         }
-        .parts{
-            width: 85vh;
-            height: 35vw;
-            display: flex;
-            overflow: hidden;
-            overflow-y: scroll;
-            
+        p{
+            width: 274px;
         }
         .parts::-webkit-scrollbar {
             width: 15px;

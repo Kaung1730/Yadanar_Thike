@@ -13,7 +13,7 @@
     <body>
         <div class="body">
             <div class="title">
-                <h2>FAQs</h2>
+                <h1>FAQs</h1>
                 </div>
 
             <div class="main">

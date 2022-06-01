@@ -13,7 +13,7 @@
     <body>
         
         <div class="body">
-        <img class="top" src="../resource/image/ptop.png" alt="">
+        <div class="top"><h3>ကိုယ်ရေးအချက်အလက်ဆိုင်ရာမူပိုင်ခွင့်များ</h3></div>
         <div class="smalltop">Privacy & Policy</div>
         <div class="title">Personal Data & Cookie Policy</div>
         
@@ -32,7 +32,7 @@
         </div>
         </div>
         <div class="smallbot"> </div>
-        <img class="bot" src="../resource/image/pbottom.png" alt="">
+        <div class="bot"> </div>
         
     </div>
     </body>

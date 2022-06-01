@@ -2,6 +2,7 @@
 
 :root{
     --grayblack: #30323D;
+    --whitegray: #D9D9D9;
 }
 .body{
     margin-right: 250px;
@@ -25,7 +26,7 @@
 }
 .titles{
    text-align: left;
-   background-color: var(--bgColor);
+   background-color: var(--whitegray);
    width: 680px;
    padding-left: 35px;
    padding-top: 20px;
@@ -56,14 +57,12 @@
     width: "763px" ;
      height: "162.5px";
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1100px) {
     .body{
-        margin-right: 50px;
-        margin-left: 50px;
+        margin-right: 30%;
+        margin-left: 30%;
         margin-top: 10px;
         margin-bottom: 10px;
-        background-color: var(--grayblack);
-        width: fit-content;
     }
     .mainbody{
         margin: 20px;
@@ -74,7 +73,6 @@
     }
     .titles{
         text-align: left;
-        background-color: var(--bgColor);
         width: 400px;
         padding-left: 25px;
         padding-top: 10px;
@@ -89,11 +87,97 @@
         margin-left: 30px;
         margin-bottom: 40px;
         text-align: left;
-       background-color: var(--yellow);
-       width: 320px;
-       padding-left: 25px;
-       padding-top: 5px;
-       padding-bottom: 5px;
+        background-color: var(--yellow);
+        width: 320px;
+        padding-left: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .imgs{
+        display: none;
+    }
+    .smalltop{
+        display: block;
+    }
+}
+@media screen and (max-width: 940px) {
+    .body{
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .mainbody{
+        margin: 20px;
+        margin-bottom: 50px;
+    }
+    .topic{
+        font-size: 12px;
+    }
+    .titles{
+        text-align: left;
+        width: 400px;
+        padding-left: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+     }
+     .des{
+        font-size: 12px;
+    }
+    .facts{
+        margin-top: 0px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+        text-align: left;
+        background-color: var(--yellow);
+        width: 320px;
+        padding-left: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .imgs{
+        display: none;
+    }
+    .smalltop{
+        display: block;
+    }
+}
+@media screen and (max-width: 720px) {
+    .body{
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .mainbody{
+        margin: 20px;
+        margin-bottom: 50px;
+    }
+    .topic{
+        font-size: 12px;
+    }
+    .titles{
+        text-align: left;
+        width: 400px;
+        padding-left: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+     }
+     .des{
+        font-size: 12px;
+    }
+    .facts{
+        margin-top: 0px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+        text-align: left;
+        background-color: var(--yellow);
+        width: 320px;
+        padding-left: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     .imgs{
         display: none;

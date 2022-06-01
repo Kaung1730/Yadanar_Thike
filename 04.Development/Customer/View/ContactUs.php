@@ -23,7 +23,7 @@
             <div class="facts lh-lg">သင်ဖြည့်စွက်ပြောလိုသည့်အကြောင်းကို ကျွန်ုပ်တို့အား ထပ်မံပြောပြပေးပါ မကြာမီ သင့်ထံ အကြောင်းကြားပေးပါမည်။</div>
             <div class="input">
                 <label class="label lh-lg">User ၏ အမည်</label>
-                <input class="inputbox i1 lh-lg" type="text" placeholder="uffy">
+                <input class="inputbox i1 lh-lg" type="text" placeholder="Luffy">
             </div>
             <div class="input">
                 <label class="label lh-lg">ဆက်သွယ်ရမည့်ဖုန်းနံပါတ်</label>

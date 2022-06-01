@@ -89,9 +89,10 @@ textarea{
 .submit{
     color: var(--black);
     background-color: var(--yellow);
-    padding: 10px 40px;
+    padding: 10px 50px;
     margin-left: 60%;
     border-radius: 20px;
+    font-weight: bold;
 }
 .right{
     background-color: var(--bgColor);
@@ -101,23 +102,28 @@ textarea{
     box-shadow: inset 0 0 5px grey;
 }
 .righttitle{
-    padding: 80px 85px 10px 25px;
+    padding: 110px 85px 10px 25px;
    font-size: 19px;
    margin-top: 100px;
+   margin-bottom: 10px;
+   font-weight: bold;
 }
 .rightfact{
-    padding: 0px 22px 2px 20px;
-   
+    margin-top: 0px;
+    padding: 0px 22px 0px 20px;
     font-size: 13px;
     width: 50%;
+    font-weight: bold;
 }
 .contactnum{
-    padding: 22px 22px 2px 20px;
+    padding: 32px 22px 2px 20px;
     font-size: 13px;
+    font-weight: bold;
 }
 .opentime{
     padding: 22px 22px 2px 20px;
     font-size: 13px;
+    font-weight: bold;
 }
 .gmail{
     padding: 22px 22px 2px 20px;
@@ -125,13 +131,13 @@ textarea{
     font-weight: bold;
 }
 .follow{
-    padding: 22px 22px 2px 20px;
+    padding: 82px 22px 2px 20px;
     font-size: 20px;
     font-weight: bold;
 }
 .icons{
     padding-left: 10px;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 .icon{
     width: 40px;
