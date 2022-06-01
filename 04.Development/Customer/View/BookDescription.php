@@ -77,11 +77,11 @@
                         <!-- To increase book number or decrecase -->
                         <div class="mb-3 mt-4">
                             <div class="d-flex mt-2 numberContainer text-center align-item-center">
-                                <div class="col-1 me-3 fw-bold pt-2 btn text-center px-1">
+                                <div class="btn col-1 me-3 fw-bold pt-2 btn text-center px-1">
                                     ー
                                 </div>
-                                <div class="col-2 me-3 fw-bold pt-2 btn">1</div>
-                                <div class="col-1 fw-bold pt-2 btn px-1">+</div>
+                                <div class="btn col-2 me-3 fw-bold pt-2 btn">1</div>
+                                <div class="btn col-1 fw-bold pt-2 btn px-1">+</div>
                             </div>
                         </div>
                         <div>

@@ -26,7 +26,7 @@
                 <img src="../resource/image/register1.jpg" alt="" class="img-fluid  img-register"/>
             </div>
             <div class="col-lg-7 p-4 p-md-3 p-lg-0 p-xl-0">
-                <form action="../Controller/registerController.php" class="" method="POST">
+                <form id="register" enctype="multipart/form-data">
                     <div class="row mt-4">
                             <div class="col">
                                 <h2 class="text-center text-white fw-normal">အ​ကောင့်ဖွင့်ရန်</h2>
@@ -59,7 +59,7 @@
                         </div>
                         <div class="row my-3 justify-content-center">
                             <div class="col-lg-10 d-flex justify-content-between">
-                                <input type="submit" value="အ​ကောင့်ဖွင့်ရန်" class="btn btn-dark px-4 pt-2 text-center register-btn"/>
+                                <input type="submit" value="အ​ကောင့်ဖွင့်ရန်" class="btn btn-dark px-4 pt-2 text-center register-btn" id="register-btn"/>
                                 <a href="./login.php" class="btn btn-light px-4 pt-2 text-center login-btn">အ​ကောင့်ဝင်ရန်</a>
                             </div>
                         </div>

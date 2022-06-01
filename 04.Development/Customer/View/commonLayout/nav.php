@@ -31,10 +31,7 @@
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="input-group text-dark selectNav">
-                                            <select name="" id=""  >
-                                                <option value="author">စာရေးဆရာများ</option>
-                                                <option value="book">စာအုပ်များ</option>
-                                            </select>
+                                            <button class=" text-dark btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">ရှာဖွေရန်</button>
                                             <input type="text" class="form-control searchInput ps-3" aria-label="Text input with dropdown button" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ?">
                                             <button class="btn" type="button" id="button-addon2">
                                                 <i class="bi bi-search fw-bold fs-5"></i>
@@ -54,6 +51,7 @@
                         <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item text-dark" href="#userSetting" data-bs-toggle="modal">ကိုယ်​ရေးအချက်အလက်များပြင်ဆင်မည်</a></li>
                             <li><a class="dropdown-item text-dark" href="#orderHistory" data-bs-toggle="modal">မှာယူခဲ့သည့်စာရင်းများ</a></li>
+                            <li><a class="dropdown-item text-dark" href=""><i class="bi bi-box-arrow-right text-dark fs-5 me-2"></i>အ​ကောင့်မှထွက်ရန်</a></li>
                         </ul>
                     </li>
                     <li class="nav-item color  position-relative mt-lg-3  mt-0 mt-md-0  ms-0 ms-md-0 ms-lg-4 px-md-2 px-2 py-lg-0 py-md-2 py-2">

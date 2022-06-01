@@ -19,12 +19,12 @@
                             <div class="col-6   col-md-12 col-lg-12">
                                 <!--Number of book increase or decrease-->
                                 <div>
-                                    <div class="d-flex text-dark  numberContainer text-center align-item-center">
-                                        <div class="col-2 me-3 fw-bold pt-1 minus">
+                                    <div class="d-flex text-dark  numberContainer justify-content-between text-center align-item-center">
+                                        <div class="col-2 fw-bold px-1 minus btn">
                                             ー
                                         </div>
-                                        <div class="col-4 me-3 fw-bold pt-1">1</div>
-                                        <div class="col-2 fw-bold pt-1">+</div>
+                                        <div class="col-4  fw-bold btn">1</div>
+                                        <div class="col-2 fw-bold  px-1 btn">+</div>
                                     </div>
                                 </div>
                             </div>
