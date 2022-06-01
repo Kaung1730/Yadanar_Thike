@@ -27,31 +27,41 @@
                 </div>
                 <div class="col-10">
                     <div class="title_bar">
-                        
+
                     </div>
                     <div class="add_author">
-                        <form action="">
+                        <form action="../Controller/authorAddController.php" method="POST">
                             <div class="title_addauthor fs-5">Add Author</div>
                             <hr />
                             <div class="input-part ms-5">
                                 <label class="author_name fs-5" for="">Author Name:</label>
-                                <input type="text" class="box1 input-edit">
+                                <input type="text" class="box1 input-edit" name="author_name">
                                 <label class="author_image fs-5" for="">Author Image:</label>
                                 <div class="input-group mt-2 mb-3 ms-4 input-width">
-                                    <input type="file" class="form-control input-edit" id="slide_img">
+                                    <input type="file" class="form-control input-edit" id="slide_img" name="author_img">
                                     <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
                                 </div>
                                 <label for="" class="author_des fs-5">Author Description:</label>
-                                <input type="text" class="box1 input-edit">
+                                <input type="text" class="box1 input-edit" name="author_des">
                                 <label for="" class="author_life fs-5">Author Life:</label>
                                 <div class="d-flex">
                                     <div>
                                         <select name="born_years" id="born_years" name="born_years">
+                                            <option value="1990">1990</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1992">1992</option>
+                                            <option value="1993">1993</option>
+                                            <option value="1994">1994</option>
                                         </select>
                                     </div>
                                     <div class="arrow"></div>
                                     <div>
                                         <select name="die_years" id="die_years" name="die_years">
+                                            <option value="1990">1990</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1992">1992</option>
+                                            <option value="1993">1993</option>
+                                            <option value="1994">1994</option>
                                         </select>
                                     </div>
                                 </div>
