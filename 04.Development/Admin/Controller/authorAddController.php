@@ -25,7 +25,7 @@ if(isset($_POST)){
             :name,
             :description,
             :born,
-            :die,
+            :die
         )"
     );
     $sql->bindValue(":image", $authorImage);
