@@ -12,7 +12,7 @@ if(isset($_POST)){
     $db =new DBConnect();
     $dbconnect = $db->connect();
     $sql = $dbconnect -> prepare(
-        "INSERT INTO Author
+        "INSERT INTO author
         (
             author_image,
             author_name,
@@ -25,7 +25,7 @@ if(isset($_POST)){
             :name,
             :description,
             :born,
-            :die,
+            :die
         )"
     );
     $sql->bindValue(":image", $authorImage);
