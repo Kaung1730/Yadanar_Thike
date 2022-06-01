@@ -25,7 +25,7 @@ require_once("../Model/DBConnection.php");
                 WHERE 
                 customer_name = :username AND
                 customer_email = :email AND
-                del_flg = del_flg
+                del_flg = :del_flg
             ");
             $checkDuplicate -> bindValue(":username",$userName);
             $checkDuplicate -> bindValue(":email",$email);
@@ -42,12 +42,19 @@ require_once("../Model/DBConnection.php");
                 echo "success";
                 $sql = $dbConnect -> prepare("
                 INSERT INTO customer 
-                (customer_name, customer_phno, customer_email, customer_password, valid, del_flg, created_date, careated_by)
+                (customer_name,
+                 customer_phno,
+                  customer_email,
+                   customer_password,
+                    valid,
+                     del_flg,
+                     created_date,
+                      created_by)
                 VALUES (
                 :username,
+                :phone,
                 :email,
                 :realpassword,
-                :phone,
                 :valid,
                 :del_flg,
                 :created_date,
