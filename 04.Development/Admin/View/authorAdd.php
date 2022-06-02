@@ -36,6 +36,8 @@
                             <div class="input-part ms-5">
                                 <label class="author_name fs-5" for="">Author Name:</label>
                                 <input type="text" class="box1 input-edit" name="author_name">
+                                <label class="author_name fs-5 mt-2" for="">Author Category:</label>
+                                <input type="text" class="box1 input-edit" name="author_category">
                                 <label class="author_image fs-5" for="">Author Image:</label>
                                 <div class="input-group mt-2 mb-3 ms-4 input-width">
                                     <input type="file" class="form-control input-edit" id="slide_img" name="author_img">
