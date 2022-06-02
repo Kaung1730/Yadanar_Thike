@@ -44,6 +44,19 @@
                                 <th>Author Life</th>
                                 <th>Action</th>
                             </tr>
+                            <?php
+                            $count = 1;
+                            foreach ($result as $key => $value) {
+                                echo "<tr>";
+                                echo "<td>" . $count . "</td>";
+                                echo "<td>" . $value['author_image'] . "</td>";
+                                echo "<td>" . $value['author_name'] . "</td>";
+                                echo "<td>" . $value['author_about'] . "</td>";
+                                echo "<td>" . $value['author_life'] . "</td>";
+                                echo "</tr>";
+                                $count++;
+                            }
+                            ?>
                         </table>
                     </div>
                     <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
