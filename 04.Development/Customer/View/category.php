@@ -42,7 +42,12 @@
         <div class="container">
             <div class="title text-center">စာအုပ်အမျိုးအစားများ</div>
             <div class="category">
-                <!--Yoke Pya-->
+                <!--Yoke Pya-->   
+                <?php
+                    foreach ($result as $key => $value) {
+                        print_r($value);
+                    }
+                 ?>
                 <div class="sub my-5">
                 <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ရုပ်ပြ</div>
                     <div class="autoplay book-list d-flex justify-content-between align-items-center">
