@@ -3,7 +3,7 @@ require "../Model/dbConnection.php";
     // get data from author add
 if(isset($_POST)){
     $authorName = $_POST['author_name'];
-    $authorImage = $_POST['author_img'];
+    $authorImage = "Hello";
     $authorDescription = $_POST['author_des'];
     $authorCategory = $_POST['author_category'];
     $authorBorn = $_POST['born_years'];
@@ -30,8 +30,7 @@ if(isset($_POST)){
             :image,
             :name,
             :description,
-            :born,
-            :die,
+            :life,
             :category,
             :del_flg,
             :created_date,
@@ -41,13 +40,14 @@ if(isset($_POST)){
     $sql->bindValue(":image", $authorImage);
     $sql->bindValue(":name", $authorName);
     $sql->bindValue(":description", $authorDescription);
-    $sql->bindValue(":born", $authorBorn);
-    $sql->bindValue(":die", $authorDie);
+    $sql->bindValue(":life", $authorBorn ."-".$authorDie);
     $sql->bindValue(":category", $authorCategory);
     $sql->bindValue(":del_flg", $del_flg);
     $sql->bindValue(":created_date", "6/1/2022");
     $sql->bindValue(":created_by", "myat kaung khant");
     $sql->execute();
     
+}else{
+    echo "hello";
 }
 ?>
