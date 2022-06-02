@@ -6,8 +6,11 @@
                 <button type="button" class="btn-close btn-close-dark me-lg-3" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-white  fw-light">
-
-                <div class="row">
+                <?php session_start();
+                    if(!isset($_SESSION['status'])){ ?>
+                        <div class="lead">စာအုပ်မဝယ်ယူရ​သေးပါ</div>
+                    <?php }else{ ?>
+                        <div class="row">
                     <div class="col-8 ">
                         ​အော်ဒါနံပါတ် - <span>123</span>
                     </div>
@@ -35,6 +38,8 @@
                     </div>
                 </div>
                 <hr>
+                    <?php }?>
+                
             </div>
         </div>
     </div>

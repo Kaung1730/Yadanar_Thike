@@ -1,5 +1,4 @@
 <?php
-
  require_once "../Model/DBConnection.php";
 
  //Call DB Connection
@@ -15,4 +14,4 @@ $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 // foreach ($result as $key => $value) {
 //     echo $value['category_name'];
 // }
-require "../View/category.php";
+require_once "../View/category.php";

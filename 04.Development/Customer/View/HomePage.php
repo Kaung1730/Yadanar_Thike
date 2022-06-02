@@ -44,6 +44,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 
     <script src="../resource/js/nav.js"></script>
+    <script src="../resource/js/userSetting.js"></script>
 </head>
 
 <body>
