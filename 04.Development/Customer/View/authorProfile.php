@@ -45,11 +45,25 @@
     <div class="cart"></div>
     <div class="order"></div>
     <div class="orderHistory"></div>
+
     <div class="container ">
         <div class="profile mb-5">
             <div class="row mt-5 ms-5 authorBio">
                 <!-- PROFILE -->
-                <div class="col-md-5">
+
+                <?php
+                
+                require "../Controller/authorProfileController.php";
+                echo "<div class='col-md-5'>. <img src='../resource/image/" . $result[0]['author_image'] . " 'class='image img-responsive'>. </div>";
+                echo " <div class='col-md-7 mt-5 '>";
+                echo " <h2 class='mb-3 '>" . $result[0]['author_name'] . "</h2>";
+                echo "<h5 class='mb-4 fw-bold'> " . $result[0]['author_life'] . "</h5>";
+                echo "<p class='lh-lg  authorBio'>" . $result[0]['author_about'] . "</p>";
+
+                ?>
+
+
+                <!-- <div class="col-md-5">
                     <img src="../resource/image/COoNyo.jpg" alt="" class="image img-responsive">
                 </div>
                 <div class="col-md-7 mt-5 ">
@@ -63,16 +77,18 @@
                         'လင်္ကာဒီပချစ်သူ'အမည်ရှိစာအုပ်သည် သူရေးသားခဲ့သော ထင်ရှားကျော်ကြားသောစာအုပ်များအနက်မှ တစ်အုပ်အပါအဝင်ဖြစ်သည်။
                         ၁၉၉၉ခုနှစ်မှစ၍ ယဥ်ကျေးမှူနှင့်အနုပညာတက္ကသိုလ်တွင် အကြံပေးအနေဖြင့် တာဝန်ထမ်းဆောင်ခဲ့သည်။
                     </p>
-                </div>
+                </div> -->
                 <!-- PROFILE  end-->
             </div>
         </div>
         <!-- Card -->
 
+
+
         <div class="carousel mt-5">
             <div class="mt-5 itemTitle"> ရတနာသိုက် Book Shopတွင်ရရှိနိုင်သော <b>ချစ်ဦးညိုစာအုပ်များ</b>အနက်မှ</div>
             <div class="item active row mt-5">
-
+                <!-- 
                 <div class="col-sm-3">
                     <div class="thumb-wrapper">
 
@@ -88,9 +104,9 @@
                             <a href="#" class="btn ">စျေးဝယ်ခြင်းထဲသို့ထည့်ရန်</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- card2 -->
-                <div class="col-sm-3">
+                <!-- <div class="col-sm-3">
                     <div class="thumb-wrapper">
 
                         <div class="img-box">
@@ -105,9 +121,9 @@
                             <a href="#" class="btn ">စျေးဝယ်ခြင်းထဲသို့ထည့်ရန်</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- card3 -->
-                <div class="col-sm-3">
+                <!-- <div class="col-sm-3">
                     <div class="thumb-wrapper">
 
                         <div class="img-box">
@@ -122,9 +138,9 @@
                             <a href="#" class="btn ">စျေးဝယ်ခြင်းထဲသို့ထည့်ရန်</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- card4 -->
-                <div class="col-sm-3">
+                <!-- <div class="col-sm-3">
                     <div class="thumb-wrapper">
 
                         <div class="img-box">
@@ -139,7 +155,7 @@
                             <a href="#" class="btn">စျေးဝယ်ခြင်းထဲသို့ထည့်ရန်</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -147,11 +163,11 @@
 
     </div>
     <!-- FOOTER -->
-    <div class="footer mt-3">
+    <!-- <div class="footer mt-3">
         <div class="ps-2">@YadanarThike 2022</div>
         <div class="copyright">&#169;
             YadanarThike Company. All Rights Reserved.</div>
-    </div>
+    </div> -->
 </body>
 
 </html>

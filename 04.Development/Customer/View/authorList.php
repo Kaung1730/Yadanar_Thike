@@ -52,6 +52,7 @@
             <div class="title">စာရေးဆရာအမည် (က မှ အ အထိ)</div>
 
             <!-- က မှ င -->
+
             <div class="alphabetLine mt-4">
                 <a href="#alphabet1"><button class="alphabet firstWord me-4 ">က</button></a>
                 <a href="#alphabet2"><button class="alphabet me-4">ခ</button></a>
@@ -115,7 +116,26 @@
             </div>
 
             <!-- က အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+
+            <?php
+            // $count = 1;
+            require "../Controller/authorListController.php";
+            for ($i = 0; $i < count($result); $i++) {
+
+                echo "<div class='box'>";
+                echo " <div class='alphabetList' id='alphabet1'>" . $result[$i]['author_category'] . "</div>";
+                echo " <div class='authorsList'>";
+                echo " <ul class='authorListLength'>";
+               
+                echo  " <li> <a href= '../View/authorProfile.php?id=".$result[$i]['id'] ."'>". $result[$i]['author_name'] .  "</a> </li>";
+                echo "</ul>";
+                echo "</div>";
+                echo "</div>";
+            }
+            // print_r($result);
+            ?>
+
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet1">
                     က အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -133,11 +153,11 @@
                         <li>၁၀။ ကြည်အေး</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ခ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
 
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet2">
                     ခ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -152,9 +172,9 @@
                         <li>၇။ ခွန်းညိုသွေး</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- ဂ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet3">
                     ဂ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -165,9 +185,9 @@
                         <li>၃။ ဂျူး </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- င အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet5">
                     င အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -176,9 +196,9 @@
                         <li>၁။ ငြိမ်းကျော်</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- စ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet6">
                     စ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -191,9 +211,9 @@
 
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- ဆ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet7">
                     ဆ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -206,9 +226,9 @@
 
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- ဇ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet8">
                     ဇ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -219,10 +239,10 @@
                         <li>၃။ ဇော်ဝင်းကြူ(ပျဥ်းမနား) </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ည အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet10">
                     ည အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -233,10 +253,10 @@
 
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- တ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet16">
                     တ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -248,10 +268,10 @@
                         <li>၄။ တင်မောင်မြင့်</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ထ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet17">
                     ထ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -261,10 +281,10 @@
                         <li>၂။ ထူးအိမ်သင် </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ဒ အက္ခရာဖြင့်စသော စာရေးဆရာများ-->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet18">
                     ဒ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -280,10 +300,10 @@
                         <li>၇။ ဒေါက်တာသိန်းထွန်း</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ဓ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet19">
                     ဓ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -292,10 +312,10 @@
                         <li>၁။ ဓမ္မဘေရီ အရှင်ဝီရိယ(တောင်စွန်း)</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- န အက္ခရာဖြင့်စသော စာရေးဆရာများ-->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet20">
                     န အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -310,10 +330,10 @@
                         <li>၇။ နေဝင်းမြင့်</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ပ အက္ခရာဖြင့်စသော စာရေးဆရာများ-->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet21">
                     ပ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -325,10 +345,10 @@
                         <li>၄။ ပုညခင်</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!--ဖ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet22">
                     ဖ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -338,10 +358,10 @@
                         <li>၂။ ဖရော်ဆန် </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ဗ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet23">
                     ဗ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -350,10 +370,10 @@
                         <li>၁။ ဗန်းမော်သိန်းဖေ </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ဘ အက္ခရာဖြင့်စသော စာရေးဆရာများ-->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet24">
                     ဘ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -362,10 +382,10 @@
                         <li>၁။ ဘဝသစ်ဦးအော်ကျော်</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- မ အက္ခရာဖြင့်စသော စာရေးဆရာများ-->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet25">
                     မ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -388,10 +408,10 @@
                         <li>၁၅။ မွန်ဟော်စီ</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ယ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet26">
                     ယ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -400,10 +420,10 @@
                         <li>၁။ ယုဝတီ ခင်စိန်လှိုင</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ရ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet27">
                     ရ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -412,10 +432,10 @@
                         <li>၁။ ရွှေဥဒေါင်း</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- လ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet28">
                     လ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -426,10 +446,10 @@
                         <li>၂။ လူနေ</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ဝ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet29">
                     ဝ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -438,10 +458,10 @@
                         <li>၁။ ဝင်းဦး</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- သ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet30">
                     သ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -453,10 +473,10 @@
                         <li>၄။ သော်တာဆွေ</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ဟ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet31">
                     ဟ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -466,10 +486,10 @@
                         <li>၂။ ဟိန်းလတ် </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- အ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet33">
                     အ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -482,10 +502,10 @@
                         <li>၅။ အောင်အေး(ရန်ကုန်တက္ကသိုလ်)
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ဥ အက္ခရာဖြင့်စသော စာရေးဆရာများ -->
-            <div class="box">
+            <!-- <div class="box">
                 <div class="alphabetList" id="alphabet34">
                     ဥ အက္ခရာဖြင့်စသော စာရေးဆရာများ
                 </div>
@@ -496,15 +516,15 @@
                         <li>၃။ ဦးသော်ဇင်-14(Dhamma)</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- FOOTER -->
-    <div class="footer ">
+    <!-- <div class="footer ">
         <div class="ps-2">@YadanarThike 2022</div>
         <div class="copyright">&#169;
             YadanarThike Company2022. All Rights Reserved.</div>
-    </div>
+    </div> -->
 </body>
 
 </html>
