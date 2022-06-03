@@ -41,198 +41,93 @@
     <div class="container-fluid px-0 mt-5">
         <div class="container">
             <div class="title text-center">စာအုပ်အမျိုးအစားများ</div>
-            <div class="category">
-                <!--Yoke Pya-->   
+            <div class="category">  
                 <?php
                     require "../Controller/bookListController.php";
                     foreach ($result as $key => $value) {
-                        echo '
-                        <div class="sub my-5">
-                            <div class="sub-title ms-lg-5 mb-3 ps-lg-5">'. $value['category_name']  .'</div>';
+                        echo '<div class="sub my-5">
+                        <div class="sub-title ms-lg-5 mb-3 ps-lg-5">'.$value['category_name'].'</div>
+                        <div class="autoplay book-list d-flex justify-content-between align-items-center">';
+                        if($value['category_id'] == 1){
+                            foreach ($yokePyaResult as $key => $value) {
                                 echo '
-                                    <div class="autoplay book-list d-flex justify-content-between align-items-center">
-                                    <div class="ms-lg-5">
+                                <div class="ms-lg-5">
+                                    <a href="../Controller/bookDespController.php?book_id='.$value['book_id'].'">
                                         <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
-                                    </div>
-                                    
-                                </div>
-                                <hr class="black">
-                            </div>
-                                ';
+                                    </a>
+                                </div>';
                             }
+                        }
+                        else if($value['category_id'] == 2){
+                            foreach ($novelResult as $key => $value) {
+                                echo '
+                                <div class="ms-lg-5">
+                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                </div>';
+                            }
+                        }
+                        else if($value['category_id'] == 3){
+                            foreach ($languageResult as $key => $value) {
+                                echo '
+                                <div class="ms-lg-5">
+                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                </div>';
+                            }
+                        }
+                        else if($value['category_id'] == 4){
+
+                            foreach ($healthResult as $key => $value) {
+                                echo '
+                                <div class="ms-lg-5">
+                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                </div>';
+                            }
+                        }
+                        else if($value['category_id'] == 5){
+                            foreach ($politicResult as $key => $value) {
+                                echo '
+                                <div class="ms-lg-5">
+                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                </div>';
+                            }
+                        }
+                        else if($value['category_id'] == 6){
+                            foreach ($poemResult as $key => $value) {
+                                echo '
+                                <div class="ms-lg-5">
+                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                </div>';
+                            }
+                        }
+                        else if($value['category_id'] == 7){
+                            foreach ($successResult as $key => $value) {
+                                echo '
+                                <div class="ms-lg-5">
+                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                </div>';
+                            }
+                        }
+                        else if($value['category_id'] == 8){
+                            foreach ($biographyResult as $key => $value) {
+                                echo '
+                                <div class="ms-lg-5">
+                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                </div>';
+                            }
+                        }
+                        else if($value['category_id'] == 9){
+                            foreach ($otherResult as $key => $value) {
+                                echo '
+                                <div class="ms-lg-5">
+                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                </div>';
+                            }
+                        }
+                        echo '</div> 
+                        </div>
+                <hr class="yellow">';
+                    }
                 ?>
-                
-                <!--Novel-->
-                <div class="sub my-5">
-                    <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ဝတ္ထု</div>
-                    <div class="autoplay book-list d-flex justify-content-between align-items-center">
-                        <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                    </div>
-                </div>
-                <hr class="yellow">
-                <!--Language-->
-                <div class="sub my-5">
-                    <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ဘာသာစကား</div>
-                    <div class="autoplay book-list d-flex justify-content-between align-items-center">
-                        <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                    </div>
-                </div>
-                <hr class="black">
-                <!--Health-->
-                <div class="sub my-5">
-                    <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ကျန်းမာ​​ရေး</div>
-                    <div class="autoplay book-list d-flex justify-content-between align-items-center">
-                        <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                    </div>
-                </div>
-                <hr class="yellow">
-                <!--Religion-->
-                <div class="sub my-5">
-                    <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ဘာသာ​ရေး</div>
-                    <div class="autoplay book-list d-flex justify-content-between align-items-center">
-                        <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                    </div>
-                </div>
-                <hr class="black">
-                <!--Politics-->
-                <div class="sub my-5">
-                    <div class="sub-title ms-lg-5 mb-3 ps-lg-5">နိုင်ငံ​ရေး</div>
-                    <div class="autoplay book-list d-flex justify-content-between align-items-center">
-                        <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                    </div>
-                </div>
-                <hr class="yellow">
-                <!--Poem-->
-                <div class="sub my-5">
-                    <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ကဗျာ</div>
-                    <div class="autoplay book-list d-flex justify-content-between align-items-center">
-                        <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                    </div>
-                </div>
-                <hr class="black">
-                <!--Success-->
-                <div class="sub my-5">
-                    <div class="sub-title ms-lg-5 mb-3 ps-lg-5">တက်ကျမ်း</div>
-                    <div class="autoplay book-list d-flex justify-content-between align-items-center">
-                        <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                    </div>
-                </div>
-                <hr class="yellow">
-                <!--Biography-->
-                <div class="sub my-5">
-                    <div class="sub-title ms-lg-5 mb-3 ps-lg-5">အတ္ထုပတ္တိ</div>
-                    <div class="autoplay book-list d-flex justify-content-between align-items-center">
-                        <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                    </div>
-                </div>
-                <hr class="black">
-                <!--Other-->
-                <div class="sub my-5">
-                    <div class="sub-title ms-lg-5 mb-3 ps-lg-5">အခြား</div>
-                    <div class="autoplay book-list d-flex justify-content-between align-items-center">
-                        <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                    </div>
-                </div>
-                <hr class="yellow">
             </div>
         </div>
         <!--footer-->

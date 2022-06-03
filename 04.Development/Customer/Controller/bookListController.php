@@ -5,14 +5,53 @@
  //call db connection
  $db = new DBConnect();
  $dbConnect = $db->connect();
- $sql = $dbConnect -> prepare("
- SELECT book_m.book_name, book_m.book_img, category.category_name
- FROM book_m LEFT JOIN category
- ON book_m.category_id = category.category_id
- WHERE category.category_id=1
- ORDER BY category.category_name
+ $category_name =  $dbConnect -> prepare("
+ SELECT * FROM category
  ");
-$sql->execute();
- $result = $sql->fetchAll(PDO::FETCH_ASSOC);
- echo "<pre>";
- print_r($result);
+ $yokePya = $dbConnect -> prepare("
+ SELECT * FROM book_m where category_id = 1
+ ");
+ $novel = $dbConnect -> prepare("
+ SELECT * FROM book_m where category_id = 2
+ ");
+ $language = $dbConnect -> prepare("
+ SELECT * FROM book_m where category_id = 3
+ ");
+ $health = $dbConnect -> prepare("
+ SELECT * FROM book_m where category_id = 4
+ ");
+ $politic = $dbConnect -> prepare("
+ SELECT * FROM book_m where category_id = 5
+ ");
+ $poem = $dbConnect -> prepare("
+ SELECT * FROM book_m where category_id = 6
+ ");
+ $success = $dbConnect -> prepare("
+ SELECT * FROM book_m where category_id = 7
+ ");
+ $biography = $dbConnect -> prepare("
+ SELECT * FROM book_m where category_id = 8
+ ");
+ $other = $dbConnect -> prepare("
+ SELECT * FROM book_m where category_id = 9
+ ");
+$category_name->execute();
+$yokePya->execute();
+$novel->execute();
+$language->execute();
+$health->execute();
+$politic->execute();
+$poem->execute();
+$success->execute();
+$biography->execute();
+$other->execute();
+ $result = $category_name->fetchAll(PDO::FETCH_ASSOC);
+ $yokePyaResult = $yokePya->fetchAll(PDO::FETCH_ASSOC);
+ $novelResult = $novel->fetchAll(PDO::FETCH_ASSOC);
+ $languageResult = $language->fetchAll(PDO::FETCH_ASSOC);
+ $healthResult = $health->fetchAll(PDO::FETCH_ASSOC);
+ $politicResult = $politic->fetchAll(PDO::FETCH_ASSOC);
+ $poemResult = $poem->fetchAll(PDO::FETCH_ASSOC);
+ $successResult = $success->fetchAll(PDO::FETCH_ASSOC);
+ $biographyResult = $biography->fetchAll(PDO::FETCH_ASSOC);
+ $otherResult = $other->fetchAll(PDO::FETCH_ASSOC);
