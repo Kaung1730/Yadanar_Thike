@@ -7,7 +7,7 @@ $(document).ready(function(){
             data: new FormData(this),
             contentType: false,
             processData: false,
-            cache: false,
+            cache: true,
             beforeSend: function () {
                 $("#update-btn").attr("disabled", "disabled");
                 $("#userSettingUpdate").css("opacity", "0.5");
@@ -15,6 +15,7 @@ $(document).ready(function(){
             success: function (res) {
                 $("#update-btn").removeAttr("disabled");
                 $("##userSettingUpdate").css("opacity", "1");
+                alert(res);
             },
             error: function (err) {
                 alert("Error");

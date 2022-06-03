@@ -1,7 +1,6 @@
 <?php session_start();
 
 require_once "../Model/DBConnection.php";
-
 // Get Data from Insert Book From
 if(isset($_POST)){
     $customer_name = $_POST['username'];
@@ -12,8 +11,7 @@ if(isset($_POST)){
 
     $file = $_FILES['photo']['name'];
     $location = $_FILES['photo']['tmp_name'];
-
-    if (move_uploaded_file($location, "../resource/bookimg/" . $file)) {
+    if (move_uploaded_file($location, "../resource/customerimg/" . $file)) {
         //Call DB Connection
         $db =  new DBConnect();
         $dbconnect = $db->connect();

@@ -43,8 +43,8 @@
     <!--Bootstrap Icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 
-    <script src="../resource/js/nav.js"></script>
-    <script src="../resource/js/userSetting.js"></script>
+    <script src="../resource/js/nav.js" defer></script>
+    <script src="../resource/js/userSetting.js" defer></script>
 </head>
 
 <body>
@@ -457,6 +457,11 @@
                     YadanarThike Company2022. All Rights Reserved.</div>
             </div>
         </div>
+
+
+    <script>
+        
+    </script>
 </body>
 
 </html>
