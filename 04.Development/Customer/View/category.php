@@ -54,15 +54,7 @@
                                     <div class="ms-lg-5">
                                         <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </div>
-                                    <div class="">
-                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
-                                    </div>
-                                    <div class="">
-                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
-                                    </div>
-                                    <div class="">
-                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
-                                    </div>
+                                    
                                 </div>
                                 <hr class="black">
                             </div>
