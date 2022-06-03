@@ -111,7 +111,6 @@ hr{
 }
 .hover-li:hover{
     padding: 0.5em;
-    border-radius: 12px;
     background-color: var(--activeColor);
     margin: auto;
 }
@@ -149,7 +148,7 @@ hr{
     height: 75vh !important;
 }
 .tb-edit{
-    width: 73vw;
+    width: auto;
 }
 .begin{
     width: 5vw;
@@ -187,6 +186,9 @@ hr{
 }
 .btn-mag{
     width: 13vw !important;
+}
+.upload_img{
+    width: 50%;
 }
 @media screen and (max-width:720px){
     .nav_box{

@@ -49,7 +49,7 @@ hr{
     color: var(--secondColor);
 }
 
-.hover-li:hover{
+/* .hover-li:hover{
     width: 15vw;
     padding: 2vh;
     padding-left: 1vw;
@@ -57,7 +57,7 @@ hr{
     border: 1px solid black;
     background-color: var(--activeColor);
     margin: auto;
-}
+} */
 .setting_box{
     height: 100vh;
     background-color: var(--boxColor);

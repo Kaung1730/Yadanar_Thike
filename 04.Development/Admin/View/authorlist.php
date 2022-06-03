@@ -9,9 +9,9 @@
     <link rel="shortcut icon" href="../resource/image/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../resource/css/contactEdit.css">
     <link rel="stylesheet" href="../resource/css/commonAdmin.css">
     <link rel="stylesheet" href="../resource/css/authorList.css">
-    <link rel="stylesheet" href="../resource/css/contactEdit.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../resource/js/jquery3.6.0.js"></script>
@@ -20,7 +20,7 @@
 
 <body>
     <div class="container-fluid">
-        <form action="">
+        <form action="" method="GET">
             <div class="row">
                 <div class="col-2 nav_box">
 
@@ -35,24 +35,27 @@
                             <button class="add_author mt-4 me-4"><a href="./authorAdd.php" class="a-edit">Add New Author</a></button>
                         </div>
                         <hr />
-                        <table class="table table-borderless-responsive-lg white_table tb-edit mx-5 mt-3">
+                        <table class="table table-striped white_table tb-edit">
                             <tr>
-                                <th>No</th>
-                                <th>Image</th>
-                                <th>Author Name</th>
-                                <th>Author Description</th>
-                                <th>Author Life</th>
-                                <th>Action</th>
+                                <th class="text-start">No</th>
+                                <th class="text-center">Image</th>
+                                <th class="text-center">Author Name</th>
+                                <th class="text-center">Author Description</th>
+                                <th class="text-center">Author Life</th>
+                                <th class="text-center last" colspan="2">Action</th>
                             </tr>
                             <?php
+                            require "../Controller/authorListController.php";
                             $count = 1;
                             foreach ($result as $key => $value) {
                                 echo "<tr>";
-                                echo "<td>" . $count . "</td>";
-                                echo "<td>" . $value['author_image'] . "</td>";
-                                echo "<td>" . $value['author_name'] . "</td>";
-                                echo "<td>" . $value['author_about'] . "</td>";
-                                echo "<td>" . $value['author_life'] . "</td>";
+                                echo "<td class='text-start'>" . $count . "</td>";
+                                echo "<td class='text-center w-25'><img src='../resource/upload_img/" . $value['author_image'] . "'class='upload_img'></td>";
+                                echo "<td class='text-center'>" . $value['author_name'] . "</td>";
+                                echo "<td class='text-center'>" . $value['author_about'] . "</td>";
+                                echo "<td class='text-center'>" . $value['author_life'] . "</td>";
+                                echo "<td class='text-center last'><a href='../Controller/authorEditController.php?id='" . $value['id'] . "><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td class='text-center last'><a href='../Controller/authorEditController.php?id='" . $value['id'] . "><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                                 echo "</tr>";
                                 $count++;
                             }

@@ -49,7 +49,7 @@ if(isset($_POST)){
         $sql->bindValue(":created_by", "myat kaung khant");
         $sql->execute();
 
-        require "./authorListController.php";
+        header("location: ../View/authorList.php");
     }
     
 }
