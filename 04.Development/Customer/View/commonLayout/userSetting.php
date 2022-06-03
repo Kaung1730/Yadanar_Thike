@@ -11,7 +11,7 @@
             </div>
             <div class="modal-body">
                 <div class="">
-                    <form id="userSettingUpdate" enctype="multipart/form-data" action="">
+                    <form id="userSettingForm" enctype="multipart/form-data">
                         <div class="imgChange">
                             <div class="text-center">
                                 <img src="../resource/image/Vector.png" alt="" class="img-fluid" />
@@ -25,17 +25,17 @@
                         </div>
                         <div class="row my-3 justify-content-center">
                             <div class="col-lg-10">
-                                <input type="text" name="username" required placeholder="User Name (English Only)" class="form-control ps-4 pt-2" value ="<?php echo $result[0]['customer_name']?>" />
+                                <input type="text" name="username"  placeholder="User Name (English Only)" class="form-control ps-4 pt-2" value ="<?php echo $result[0]['customer_name']?>" />
                             </div>
                         </div>
                         <div class="row my-3 justify-content-center">
                             <div class="col-lg-10">
-                                <input type="email" name="email" required placeholder="Email Address" class="form-control ps-4 pt-2" value ="<?php echo $result[0]['customer_email']?>"/>
+                                <input type="email" name="email"  placeholder="Email Address" class="form-control ps-4 pt-2" value ="<?php echo $result[0]['customer_email']?>"/>
                             </div>
                         </div>
                         <div class="row my-3 justify-content-center">
                             <div class="col-lg-10">
-                                <input type="password" name="password" required placeholder="Password" class="form-control ps-4 pt-2" value ="<?php echo $result[0]['customer_password']?>"/>
+                                <input type="password" name="password"  placeholder="Password" class="form-control ps-4 pt-2" value ="<?php echo $result[0]['customer_password']?>"/>
                             </div>
                         </div>
                         <div class="row my-3 justify-content-center">

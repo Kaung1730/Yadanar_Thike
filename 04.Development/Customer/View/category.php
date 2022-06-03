@@ -45,28 +45,31 @@
                 <!--Yoke Pya-->   
                 <?php
                     require "../Controller/bookListController.php";
-                    foreach ($categoryTitle as $key => $value) {
-                        print_r($value['category_name']);
-                    }
+                    foreach ($result as $key => $value) {
+                        echo '
+                        <div class="sub my-5">
+                            <div class="sub-title ms-lg-5 mb-3 ps-lg-5">'. $value['category_name']  .'</div>';
+                                echo '
+                                    <div class="autoplay book-list d-flex justify-content-between align-items-center">
+                                    <div class="ms-lg-5">
+                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    </div>
+                                    <div class="">
+                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    </div>
+                                    <div class="">
+                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    </div>
+                                    <div class="">
+                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    </div>
+                                </div>
+                                <hr class="black">
+                            </div>
+                                ';
+                            }
                 ?>
-                <div class="sub my-5">
-                <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ရုပ်ပြ</div>
-                    <div class="autoplay book-list d-flex justify-content-between align-items-center">
-                        <div class="ms-lg-5">
-                            <img src="../resource/image/Standand-Front-CoverMedium-139-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Katwin-Eain-1-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                        <div class="">
-                            <img src="../resource/image/Subuu-300x300.png" alt="" class="img-fluid"/>
-                        </div>
-                    </div>
-                    <hr class="black">
-                </div>
+                
                 <!--Novel-->
                 <div class="sub my-5">
                     <div class="sub-title ms-lg-5 mb-3 ps-lg-5">ဝတ္ထု</div>

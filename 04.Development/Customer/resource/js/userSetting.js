@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#userSettingUpdate").on("submit", function(e){
+    $("#userSettingForm").on("submit", function(e){
         e.preventDefault();
         $.ajax({
             type: "POST",

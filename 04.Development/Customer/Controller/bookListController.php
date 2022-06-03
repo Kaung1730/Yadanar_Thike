@@ -2,12 +2,15 @@
  require_once "../Model/DBConnection.php";
 
  //Call DB Connection
- $db2 =  new DBConnect();
- $dbconnect2 = $db2->connect();
-
-$book = $dbconnect2->prepare("SELECT * From book_m  WHERE del_flg = 0  group by category_id");
-$categoryTitle = $dbconnect2->prepare("SELECT category_name From category  WHERE del_flg = 0");
-$book->execute();
-$categoryTitle->execute();
-$bookResult = $book->fetchAll(PDO::FETCH_ASSOC);
-$categoryTitle = $categoryTitle->fetchAll(PDO::FETCH_ASSOC);
+ //call db connection
+ $db = new DBConnect();
+ $dbConnect = $db->connect();
+ $sql = $dbConnect -> prepare("
+ SELECT book_m.book_name, book_m.book_img, category.category_name
+ FROM book_m LEFT JOIN category
+ ON book_m.category_id = category.category_id
+ GROUP BY category.category_name
+ ");
+ $sql->execute();
+ $result = $sql->fetchAll(PDO::FETCH_ASSOC);
+ 

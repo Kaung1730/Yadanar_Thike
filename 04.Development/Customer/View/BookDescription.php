@@ -24,6 +24,7 @@
     <!--JS-->
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/nav.js"></script>
+    <script src="../resource/js/calc.js"></script>
 </head>
 
 <body>
@@ -77,11 +78,11 @@
                         <!-- To increase book number or decrecase -->
                         <div class="mb-3 mt-4">
                             <div class="d-flex mt-2 numberContainer text-center align-item-center">
-                                <div class="btn col-1 me-3 fw-bold pt-2 btn text-center px-1">
+                                <div class="btn col-1 me-3 fw-bold pt-2 btn text-center px-1 minus">
                                     ー
                                 </div>
-                                <div class="btn col-2 me-3 fw-bold pt-2 btn">1</div>
-                                <div class="btn col-1 fw-bold pt-2 btn px-1">+</div>
+                                <div class="btn col-2 me-3 fw-bold pt-2 btn number">1</div>
+                                <div class="btn col-1 fw-bold pt-2 btn px-1 plus">+</div>
                             </div>
                         </div>
                         <div>
