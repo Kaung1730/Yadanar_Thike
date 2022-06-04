@@ -301,7 +301,6 @@
                         echo "</div>";
                         echo "</div>";
                         echo "</div>";
-                        // print_r("result");
                     }
                     ?>
 
