@@ -48,7 +48,7 @@
 </head>
 
 <body>
-<div class="nav-bar"></div>
+    <div class="nav-bar"></div>
     <div class="setting"></div>
     <div class="cart"></div>
     <div class="order"></div>
@@ -87,9 +87,25 @@
 
 
         <!-- အသစ်ထွက်ရှိသော စာအုပ်များ -->
+
+
         <div class="centerSlider px-4">
             <h4 class=" newBookList mt-5">အသစ်ထွက်ရှိသော စာအုပ်များ </h4>
-            <div class="homeslider slicker mt-5 d-flex justify-content-center">
+
+            <?php
+
+            require "../Controller/homePageController.php";
+            echo "<div class='homeslider slicker mt-5 d-flex justify-content-center'>";
+            for ($i = 0; $i < count($result); $i++) {
+                echo " <div class='slide  d-flex justify-content-center'>";
+                echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt=''>";
+                echo "</div>";
+                // print_r("result");
+            }
+            echo "</div>";
+            ?>
+
+            <!-- <div class="homeslider slicker mt-5 d-flex justify-content-center">
                 <div class="slide  d-flex justify-content-center">
                     <img src="../resource/image/arrival.png" alt="">
                 </div>
@@ -108,7 +124,7 @@
                 <div class="slide d-flex justify-content-center">
                     <img src="../resource/image/arrival6.png" alt="">
                 </div>
-            </div>
+            </div> -->
 
             <!-- အသစ်ထွက်ရှိသော စာအုပ်များ End -->
 
@@ -179,8 +195,28 @@
             <p class="popularBookTitle mt-4"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
             <div class="popularBook">
 
+
+                <?php
+
+                require "../Controller/homePageController.php";
+
+                for ($i = 0; $i < 4; $i++) {
+                    echo "<div class='card'>";
+                    echo " <div class='imgBox'>";
+                    echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
+                    echo "<div class='bookTitle'>" . $result[$i]['book_name'] . "</div>";
+                    echo "</div>";
+                    echo "<div class='content'>";
+                    echo " <p>" . $result[$i]['book_price'] . "</p>";
+                    echo "<button type='button' class='btn '>ခြင်းတောင်းထဲထည့်ရန်</button>";
+                    echo "</div>";
+                    echo "</div>";
+                    // print_r("result");
+                }
+                ?>
+
                 <!-- cardOne -->
-                <div class="card">
+                <!-- <div class="card">
                     <div class="imgBox">
                         <img src="../resource/image/popular1.png" alt="" class="bookImg">
                         <div class="bookTitle">ချစ်သူရေးတဲ့ကျွန်မရဲ့ညတွေ</div>
@@ -188,67 +224,42 @@
                     <div class="content">
 
                         <p>၅၀၀၀ကျပ်</p>
-                        <!-- <p>more info</p> -->
                         <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
                     </div>
-                </div>
-
-                <!-- cardTwo -->
-                <div class="card">
-                    <div class="imgBox">
-
-
-                        <img src="../resource/image/popular2.webp" alt="" class="bookImg">
-                        <div class="bookTitle">အချိန်နဲ့အတူပျောက်ကွယ်သွားတဲ့ဆူး</div>
-                    </div>
-                    <div class="content">
-
-                        <p>၂၀၀၀ကျပ်</p>
-                        <!-- <p>more info</p> -->
-                        <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
-                    </div>
-                </div>
-
-                <!-- cardThree -->
-                <div class="card">
-                    <div class="imgBox">
-
-
-                        <img src="../resource/image/popular3.png" alt="" class="bookImg">
-                        <div class="bookTitle">သင်၏ရင်းနှီးကျွမ်းဝင်ရာအရပ်ဒေသမှ</div>
-                    </div>
-                    <div class="content">
-
-                        <p>၄၀၀၀ကျပ်</p>
-                        <!-- <p>more info</p> -->
-                        <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
-                    </div>
-                </div>
-                <!-- cardFour -->
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="../resource/image/popular4.webp" alt="" class="bookImg">
-                        <div class="bookTitle ">ဧဒင်မြို့ကအပြေးသမား</div>
-                    </div>
-                    <div class="content">
-
-                        <p>၄၀၀၀ကျပ်</p>
-                        <!-- <p>more info</p> -->
-                        <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
-                    </div>
-                </div>
-
+                </div> -->
 
             </div>
             <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ end -->
 
             <!-- DISCOUNT -->
 
-            <div class="disItem">
-                <div class="disContent">
+
+            <?php
+            // $count = 1;
+
+            require "../Controller/discountController.php";
+            echo " <div class='disItem'>";
+            echo "<div class='disContent'>";
+            echo "<h2>" . $result[0]['author_name'] . "</h2>"; //edit or full outer join table
+            echo "<p>" . $result[0]['book_name'] . "</p>";
+            echo "<span class='disPrice text-decoration-line-through'>" . $result[0]['book_price'] . "</span>";
+            echo "<span class='disPrice pb-5 ms-2 text-danger'>" .  $result[0]['book_price'] . "</span>";
+            echo "</div>";
+            echo "<div class='discountCard'>";
+            echo "<div class='disTag'>";
+            echo "<span> 20% OFF </span>";
+            echo "</div>";
+            echo "<div>";
+            echo " <img src='../resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
+            echo "</div>";
+            echo "</div>";
+            echo "</div>";
+            ?>
+            <!-- <div class="disContent">
                     <h2>မြသန်းတင့်</h2>
-                    <p>ရှားလော့ဟုမ်း၏ မှတ်တမ်း (20% Off)</p>
-                    <span class="disPrice text-decoration-line-through">၆၀၀၀ကျပ်</span> <span class=" disPrice pb-5 ms-2 text-danger">၄၈၀၀ကျပ်</span>
+                    <p>ရှားလော့ဟုမ်း၏ မှတ်တမ်း </p>
+                    <span class="disPrice text-decoration-line-through">၆၀၀၀ကျပ်</span> 
+                    <span class=" disPrice pb-5 ms-2 text-danger">၄၈၀၀ကျပ်</span>
                 </div>
 
                 <div class="discountCard">
@@ -256,16 +267,38 @@
                         <span>20% OFF</span>
                     </div>
                     <div>
-                        <!-- <span>ribbon</span> -->
                         <img src="../resource/image/Memoirs-of-600x600.webp" alt="" class="disImage">
                     </div>
-                </div>
-            </div>
+                </div> -->
+            <!-- </div> -->
             <!-- DISCOUNT end-->
+
             <!-- category -->
             <div class=" carousels">
                 <h4 class="mt-3 mb-4">စာအုပ်အမျိုးအစားများ</h4>
                 <div class="item row">
+<<<<<<< HEAD
+
+                    <?php
+
+                    require "../Controller/categoryBookPageController.php";
+
+                    for ($i = 0; $i < 4; $i++) {
+                        echo "<div class='col-sm-3'>";
+                        echo " <div class='thumb-wrapper'>";
+                        echo " <div class='img-box'>";
+                        echo " <img src='../resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
+                        echo "</div>";
+                        echo "<div class='thumb-content'>";
+                        echo "  <div class='authorName pb-2'>" . $result[$i]['category_name'] . "</div>";
+                        echo "</div>";
+                        echo "</div>";
+                        echo "</div>";
+                        // print_r("result");
+                    }
+                    ?>
+
+=======
                     <div class="col-sm-3">
                         <a href="http://localhost:81/YadnarThike/04.Development/Customer/View/category.php#novel" class="text-decoration-none">
                         <div class="thumb-wrapper">
@@ -314,6 +347,7 @@
                             </div>
                         </a>
                     </div>
+>>>>>>> origin/main
                 </div>
             </div>
             <div class="seeMore">ဆက်လက်ကြည့်ရှုရန်</div>
@@ -397,7 +431,7 @@
                             </h6> -->
                                 <a href=""><img src="../resource/image/logo.png" alt="" class="w-50" h-50 mt-5 ms-5></a>
                                 <br>
-                
+
                             </div>
                             <!-- Grid column -->
 
@@ -467,6 +501,11 @@
         </div>
 
 
+<<<<<<< HEAD
+        <script>
+
+        </script>
+=======
     <script>
         $(document).ready(function(){
     $("#userSettingForm").on("submit", function(e){
@@ -494,6 +533,7 @@
     })
 })
     </script>
+>>>>>>> origin/main
 </body>
 
 </html>

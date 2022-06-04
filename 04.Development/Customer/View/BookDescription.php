@@ -42,15 +42,25 @@
     <div class="orderHistory"></div>
     <div class="pdf"></div>
     <!-- Start of Book Description -->
+<<<<<<< HEAD
+    <?php foreach ($result as $key => $value) {  
+        ?>
+        
+=======
     <?php  require "../Controller/bookDespController.php";?>
     <input type="hidden" name="book_id" value ="<?php echo $result[0]['book_id']?>">
+>>>>>>> origin/main
     <div class="container-fluid px-0  mt-5">
         <!--Start of the book des-->
         <div class="container">
             <div class="upper-part">
                 <div class="row">
                     <div class="col-lg-4 col-12  col-md-4 col-xl-4 ps-5 ps-lg-0 ps-md-0">
+<<<<<<< HEAD
+                        <img src= "<?php echo $value['book_img']; ?>"  class="ms-5 ms-lg-0 ms-md-0 py-4 py-lg-0 py-md-0" />
+=======
                         <img src= "<?php echo $result[0]['book_img']; ?>"  class="ms-5 ms-lg-0 ms-md-0 py-4 py-lg-0 py-md-0" />
+>>>>>>> origin/main
                         <!-- book preview -->
                         <div class=" d-flex d-lg-block d-md-block justify-content-center">
                             <a href="#pdf" data-bs-toggle="modal" class="ms-lg-5 ms-md-3 my-4 px-3 view-more-btn btn  text-dark book-d-text">
@@ -193,6 +203,7 @@
     <!--footer-->
     <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
     </div>
+    <?php } ?>
 </body>
 
 </html>
