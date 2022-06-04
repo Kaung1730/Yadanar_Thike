@@ -19,15 +19,6 @@
         <div class="main">
 
             <div class="left ">
-<<<<<<< HEAD
-            
-            <div class="title lh-lg">Contact Us</div>
-        
-            <div class="facts lh-lg">သင်ဖြည့်စွက်ပြောလိုသည့်အကြောင်းကို ကျွန်ုပ်တို့အား ထပ်မံပြောပြပေးပါ မကြာမီ သင့်ထံ အကြောင်းကြားပေးပါမည်။</div>
-            <div class="input">
-                <label class="label lh-lg">User ၏ အမည်</label>
-                <input class="inputbox i1 lh-lg" type="text" placeholder="Luffy">
-=======
 
                 <div class="title lh-lg">Contact Us</div>
 
@@ -46,7 +37,6 @@
                 </div>
                 <input type="submit" class="submit lh-lg" value="ပေးပို့ရန်"/>
 
->>>>>>> 121e05f7ff23a13147ad002b3e1154e2c717982e
             </div>
             <div class="right">
 

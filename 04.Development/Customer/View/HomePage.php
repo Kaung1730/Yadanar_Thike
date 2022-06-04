@@ -450,11 +450,6 @@
         </div>
 
 
-<<<<<<< HEAD
-        <script>
-
-        </script>
-=======
     <script>
         $(document).ready(function(){
     $("#userSettingForm").on("submit", function(e){
@@ -482,7 +477,6 @@
     })
 })
     </script>
->>>>>>> origin/main
 </body>
 
 </html>
