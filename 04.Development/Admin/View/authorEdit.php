@@ -20,11 +20,7 @@
 
 <body>
     <div class="container-fluid">
-<<<<<<< HEAD
         <form action="../Controller/authorUpdateController.php" method="POST" enctype="multipart/form-data">
-=======
-        <form action="../Controller/authorUpadateController.php" method="POST" enctype="multipart/form-data">
->>>>>>> origin/main
 
             <div class="row">
                 <div class="col-2 nav_box">
@@ -38,12 +34,8 @@
                         <div class="title_addauthor fs-5">Update Author</div>
                         <hr />
                         <div class="input-part ms-5">
-<<<<<<< HEAD
-                            
-=======
                             <?php require "../Controller/authorEditController.php"; ?>
->>>>>>> origin/main
-                            <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['id'] ?>">
+                            <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['author_id'] ?>">
                             <label class="author_name fs-5" for="">Author Name:</label>
                             <input type="text" class="box1 input-edit" name="author_name" value="<?php echo $result[0]['author_name'] ?>">
                             <label class="author_name fs-5 mt-2" for="">Author Category:</label>
@@ -58,23 +50,25 @@
                             <label for="" class="author_life fs-5">Author Life:</label>
                             <div class="d-flex">
                                 <div>
-                                    <select name="born_years" id="born_years" name="born_years">
+                                    <!-- <select name="born_years" id="born_years" name="born_years">
                                         <option value="1990">1990</option>
                                         <option value="1991">1991</option>
                                         <option value="1992">1992</option>
                                         <option value="1993">1993</option>
                                         <option value="1994">1994</option>
-                                    </select>
+                                    </select> -->
+                                    <input type="text" class="box_lwh input-edit" id="born_years" name="born_years">
                                 </div>
                                 <div class="arrow"></div>
                                 <div>
-                                    <select name="die_years" id="die_years" name="die_years">
+                                    <!-- <select name="die_years" id="die_years" name="die_years">
                                         <option value="1990">1990</option>
                                         <option value="1991">1991</option>
                                         <option value="1992">1992</option>
                                         <option value="1993">1993</option>
                                         <option value="1994">1994</option>
-                                    </select>
+                                    </select> -->
+                                    <input type="text" class="box_lwh input-edit" id="die_years" name="die_years">
                                 </div>
                             </div>
                         </div>

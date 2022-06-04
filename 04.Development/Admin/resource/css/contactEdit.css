@@ -190,6 +190,13 @@ hr{
 .upload_img{
     width: 15%;
 }
+.des-over{
+  width: 200px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
 @media screen and (max-width:720px){
     .nav_box{
         display: none;

@@ -20,26 +20,23 @@
 
 <body>
     <div class="container-fluid">
-        <form action="">
+        <form action="../Controller/categoryAddController.php" method="POST">
             <div class="row">
                 <div class="col-2 nav_box">
 
                 </div>
                 <div class="col-10">
                     <div class="title_bar">
-                        
+
                     </div>
                     <div class="add_author">
-                        <form action="">
-                            <div class="title_addnewcat fs-5">Add New Categories</div>
-                            <hr />
-                            <div>
-                                <label class="cat_name fs-5" for="">Category Name</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
-                            <button class="submit" name="submit">Submit</button>
-                        </form>
+                        <div class="title_addnewcat fs-5">Add New Categories</div>
+                        <hr />
+                        <div>
+                            <label class="cat_name fs-5" for="">Category Name</label>
+                            <input type="text" class="box1 input-edit" name="cate_name">
+                        </div>
+                        <button class="submit" name="submit">Submit</button>
                     </div>
                     <div class="copyright text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
         </form>

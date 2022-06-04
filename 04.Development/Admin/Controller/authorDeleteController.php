@@ -2,12 +2,12 @@
 
 require_once "../Model/dbConnection.php";
 
-$id = $_GET['id'];
+$id = $_GET['author_id'];
 // call db connection
 $db = new DBConnect();
 $dbconnect = $db -> connect();
 $sql = $dbconnect -> prepare(
-    "UPDATE author SET del_flg=1 WHERE id = :id"
+    "UPDATE author SET del_flg=1 WHERE author_id = :id"
 );
 
 $sql->bindValue(":id",$id);

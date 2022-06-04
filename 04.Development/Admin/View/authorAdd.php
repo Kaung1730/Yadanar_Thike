@@ -44,7 +44,7 @@
                                 <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
                             </div>
                             <label for="" class="author_des fs-5">Author Description:</label>
-                            <input type="text" class="box1 input-edit" name="author_des">
+                            <textarea type="text" class="box1 input-edit" name="author_des"></textarea>
                             <label for="" class="author_life fs-5">Author Life:</label>
                             <div class="d-flex">
                                 <div>
