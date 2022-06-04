@@ -54,8 +54,8 @@
                                 echo "<td class='text-center'>" . $value['author_name'] . "</td>";
                                 echo "<td class='text-center'>" . $value['author_about'] . "</td>";
                                 echo "<td class='text-center'>" . $value['author_life'] . "</td>";
-                                echo "<td class='text-center last'><a href='../Controller/authorEditController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
-                                echo "<td class='text-center last'><a href='../Controller/authorEditController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                                echo "<td class='text-center last'><a href='../View/authorEdit.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td class='text-center last'><a href='../Controller/authorDeleteController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                                 echo "</tr>";
                                 $count++;
                             }

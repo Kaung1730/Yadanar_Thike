@@ -15,4 +15,3 @@ $result = $sql -> fetchAll(PDO::FETCH_ASSOC);
 
 // echo "<pre>";
 // print_r($result);
-require "../View/authorEdit.php";
