@@ -86,9 +86,9 @@
 
 
         <div class="carousel mt-5">
-            <div class="mt-5 itemTitle"> ရတနာသိုက် Book Shopတွင်ရရှိနိုင်သော <b>ချစ်ဦးညိုစာအုပ်များ</b>အနက်မှ</div>
+            <div class="mt-5 itemTitle"> ရတနာသိုက် Book Shopတွင်ရရှိနိုင်သော ဤစာရေးဆရာ၏ စာအုပ်များအနက်မှ</div>
             <div class="item active row mt-5">
-
+ 
                 <?php
                 require "../Controller/authorProfileCardController.php";
                 for ($i = 0; $i < 4; $i++) {
