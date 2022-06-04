@@ -52,7 +52,7 @@
                 <!-- PROFILE -->
 
                 <?php
-                
+
                 require "../Controller/authorProfileController.php";
                 echo "<div class='col-md-5'>. <img src='../resource/image/" . $result[0]['author_image'] . " 'class='image img-responsive'>. </div>";
                 echo " <div class='col-md-7 mt-5 '>";
@@ -86,8 +86,27 @@
 
 
         <div class="carousel mt-5">
-            <div class="mt-5 itemTitle"> ရတနာသိုက် Book Shopတွင်ရရှိနိုင်သော <b>ချစ်ဦးညိုစာအုပ်များ</b>အနက်မှ</div>
+            <div class="mt-5 itemTitle"> ရတနာသိုက် Book Shopတွင်ရရှိနိုင်သော ဤစာရေးဆရာ၏ စာအုပ်များအနက်မှ</div>
             <div class="item active row mt-5">
+ 
+                <?php
+                require "../Controller/authorProfileCardController.php";
+                for ($i = 0; $i < 4; $i++) {
+                    echo "<div class='col-sm-3'>";
+                    echo " <div class='thumb-wrapper'>";
+                    echo " <div class='img-box'>";
+                    echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt=''>";
+                    echo "</div>";
+                    echo "<div class='thumb-content'>";
+                    echo "<div class='authorName'>" . $result[$i]['author_name'] . "</div>";
+                    echo "<div class='bookName'>" . $result[$i]['book_name'] . "</div>";
+                    echo "<p class='item-price'>" . $result[$i]['book_price'] . "</p>";
+                    echo "<a href='#' class='btn '>စျေးဝယ်ခြင်းထဲသို့ထည့်ရန်</a>";
+                    echo "</div>";
+                    echo "</div>";
+                    echo "</div>";
+                }
+                ?>
                 <!-- 
                 <div class="col-sm-3">
                     <div class="thumb-wrapper">

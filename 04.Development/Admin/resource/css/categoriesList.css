@@ -82,12 +82,12 @@ hr{
     background-color: var(--btnfontColor);
     padding-left: 10px;
 }
-.table_group{
+/* .table_group{
     width: 90%;
     height: 50vh;
     margin-left: 5%;
-}
-@media screen and (max-width: 1260px) {
+} */
+/* @media screen and (max-width: 1260px) {
     .add_ncat{
         height: 10vh;
     }
@@ -110,6 +110,6 @@ hr{
     .logout{
         font-size: 12px;
     }
-}
+} */
 
 

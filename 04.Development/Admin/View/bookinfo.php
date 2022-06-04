@@ -32,7 +32,7 @@
                     <div class="book_bar">
                         <div class="d-flex justify-content-between">
                             <p class="pt-4 author_list">Book List</p>
-                            <button class="add_book mt-4 me-4"><a href="./bookadd.php" class="a-edit">Add New Book</a></button>
+                            <button class="add_book mt-4 me-4"><a href="./bookAdd.php" class="a-edit">Add New Book</a></button>
                         </div>
                         <hr />
                         <div class="table_group">
@@ -47,7 +47,7 @@
                                     <th class="text-center">Book Price</th>
                                     <th class="text-center last" colspan="2">Action</th>
                                 </tr>
-                                <?php
+                                <!-- <?php
                                 $count = 1;
                                 foreach($result as $key -> $$value){
                                     echo "<tr>";
@@ -59,7 +59,7 @@
                                     $count++;
                                 }
                                     
-                                ?>
+                                ?> -->
                             </table>
                         </div>
                     </div>

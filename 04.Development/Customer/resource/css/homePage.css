@@ -103,7 +103,7 @@
 /* <!-- advertisement end --> */
 /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  */
 .popularBookTitle {
-    text-align: center;
+    text-align: center !important;
 
 }
 
@@ -141,9 +141,14 @@
 }
 
 .imgBox .bookTitle {
-    padding: 20px 0px 0px 15px;
+    padding: 20px 0px 0px 0px;
     color: brown;
     font-size: 15px;
+
+}
+
+.bookTitle {
+    text-align: center;
 }
 
 .bookImg {
@@ -157,19 +162,23 @@
     text-align: center;
     transform: translateY(-400px);
     opacity: 0;
-    
+
 }
-.card .content p{
+
+.card .content p {
     margin-top: 10px;
+    text-align: center;
 }
+
 .card:hover>.content {
     opacity: 1;
     transform: translateY(120px);
-    
+
 }
 
 .card .content .btn {
     background-color: var(--light-yellow);
+    text-align: center;
 }
 
 /* လတ်တလောလူကြိုက်များသော စာအုပ်များ end  */
@@ -189,17 +198,17 @@
 }
 
 .disItem .disContent h2 {
-    margin-left: 11vw;
+    margin-left: 12vw;
     padding-bottom: 4px;
 }
 
 .disItem .disContent p {
-    margin: 2vh 0vw 2vh 4vw;
+    margin: 2vh 0vw 2vh 8vw;
 }
 
 
 .disItem .disContent .disPrice {
-    margin-left: 9vw;
+    margin-left: 12vw;
 }
 
 .disItem .discountCard {
@@ -243,7 +252,7 @@
 }
 
 .carousels h4 {
-   text-align: center;
+    text-align: center;
 }
 
 .carousels .item {
@@ -255,7 +264,7 @@
 }
 
 .carousels .thumb-wrapper {
-    padding: 25px 15px;
+    /* padding: 25px 15px; */
     background: var(--body-bg-color);
     border-radius: 6px;
     text-align: center;
@@ -318,11 +327,12 @@
 
 .serviceCard {
     margin: 40px 0px 30px 0px;
-    
+
 }
-.serviceCard a{
+
+.serviceCard a {
     text-decoration: none;
-    
+
 }
 
 .serviceCard:hover {
@@ -334,6 +344,7 @@
     height: 50px;
     margin-top: 10px;
 }
+
 .serviceCard .icon .homeDelivery {
     width: 60px;
     height: 60px;
@@ -345,10 +356,11 @@
     margin-top: 20px;
     color: black;
 }
+
 .serviceCard .homeDeliveryContent {
-   
+
     margin-top: 10px;
-    
+
 }
 
 /* homeAddress */
@@ -482,11 +494,13 @@
     .carousels h4 {
         margin: 2vh 0vw 4vh 8vw;
     }
-.carousels .item{
-    margin-left: 10vw;
-}
+
+    .carousels .item {
+        margin-left: 10vw;
+    }
+
     .thumb-wrapper {
-        margin: 0vh 0vw 7vh 0vw ;
+        margin: 0vh 0vw 7vh 0vw;
         width: 60vw;
     }
 

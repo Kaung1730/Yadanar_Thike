@@ -2,13 +2,18 @@
 
 
 require_once "../Model/dbConnection.php";
+// $id = $_GET['id'];
 //call dbConnection
 $db2 = new DBConnect();
 $dbconnect = $db2->connect();
 
 
-$sql = $dbconnect->prepare("SELECT * From book_m ");
 
+$sql = $dbconnect->prepare("SELECT * FROM book_m 
+LEFT JOIN author
+ON book_m.author_id = author.id  ; 
+");
+// $sql->bindValue(":id", $id);
 //go to run
 $sql->execute();
 
@@ -19,5 +24,4 @@ $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 // print_r($result);
 
 //connect with View
-// require "../View/authorList.php";
-// header("Location:../View/authorList.php");
+// require "../View/authorProfile.php";

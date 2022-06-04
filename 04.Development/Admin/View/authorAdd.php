@@ -48,23 +48,25 @@
                             <label for="" class="author_life fs-5">Author Life:</label>
                             <div class="d-flex">
                                 <div>
-                                    <select name="born_years" id="born_years" name="born_years">
+                                    <!-- <select name="born_years" id="born_years" name="born_years">
                                         <option value="1990">1990</option>
                                         <option value="1991">1991</option>
                                         <option value="1992">1992</option>
                                         <option value="1993">1993</option>
                                         <option value="1994">1994</option>
-                                    </select>
+                                    </select> -->
+                                    <input type="text" class="box_lwh input-edit" id="born_years" name="born_years">
                                 </div>
                                 <div class="arrow"></div>
                                 <div>
-                                    <select name="die_years" id="die_years" name="die_years">
+                                    <!-- <select name="die_years" id="die_years" name="die_years">
                                         <option value="1990">1990</option>
                                         <option value="1991">1991</option>
                                         <option value="1992">1992</option>
                                         <option value="1993">1993</option>
                                         <option value="1994">1994</option>
-                                    </select>
+                                    </select> -->
+                                    <input type="text" class="box_lwh input-edit" id="die_years" name="die_years">
                                 </div>
                             </div>
                         </div>
