@@ -14,18 +14,16 @@
 .book-d-text{
     font-size: 0.8em !important;
 }
-.numberContainer div{
+.numberContainer{
+    max-width: 9rem !important;
+}
+.numberContainer span, .numberContainer button{
     background-color: gainsboro !important;
     border-radius: unset !important;
-}
-.minus{
-    font-weight: 100 !important;
+    border: unset !important;
 }
 .bi-star, .bi-star-fill, .author{
     color: var(--yellow) !important;
-}
-.des-text{
-    max-width: 18rem;
 }
 .review-box{
     background-color: gainsboro !important;

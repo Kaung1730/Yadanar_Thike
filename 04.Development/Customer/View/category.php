@@ -62,7 +62,9 @@
                             foreach ($novelResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5">
-                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    </a>
                                 </div>';
                             }
                         }
@@ -70,7 +72,9 @@
                             foreach ($languageResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5">
+                                <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
                                     <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                </a>
                                 </div>';
                             }
                         }
@@ -79,7 +83,9 @@
                             foreach ($healthResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5">
+                                <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
                                     <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                </a>
                                 </div>';
                             }
                         }
@@ -87,7 +93,9 @@
                             foreach ($politicResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5">
-                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    </a>
                                 </div>';
                             }
                         }
@@ -95,7 +103,9 @@
                             foreach ($poemResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5">
-                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    </a>
                                 </div>';
                             }
                         }
@@ -103,7 +113,9 @@
                             foreach ($successResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5">
-                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    </a>
                                 </div>';
                             }
                         }
@@ -111,7 +123,9 @@
                             foreach ($biographyResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5">
-                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    </a>
                                 </div>';
                             }
                         }
@@ -119,7 +133,9 @@
                             foreach ($otherResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5">
-                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    </a>
                                 </div>';
                             }
                         }
