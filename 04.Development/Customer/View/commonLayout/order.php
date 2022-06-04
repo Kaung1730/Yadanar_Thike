@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+    if(isset($_SESSION['status'])){
+?>
+
 <div class="modal position-realtive start-0 fade" id="order" tabindex="-1" aria-labelledby="lg-orderLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
         <div class="modal-content modal-parent">
@@ -112,3 +117,4 @@
         </div>
     </div>
 </div>
+<?php } ?>
