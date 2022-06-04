@@ -38,14 +38,14 @@
                         <div class="table_group">
                             <table class="table table-borderless-responsive-lg white_table">
                                 <tr>
-                                    <th>No</th>
-                                    <th>Book Image</th>
-                                    <th>Book Name</th>
-                                    <th>Book Categories</th>
-                                    <th>Book Author</th>
-                                    <th>Book Description</th>
-                                    <th>Book Price</th>
-                                    <th>Book Action</th>
+                                    <th class="text-start">No</th>
+                                    <th class="text-center">Book Image</th>
+                                    <th class="text-center">Book Name</th>
+                                    <th class="text-center">Book Categories</th>
+                                    <th class="text-center">Book Author</th>
+                                    <th class="text-center">Book Description</th>
+                                    <th class="text-center">Book Price</th>
+                                    <th class="text-center last" colspan="2">Action</th>
                                 </tr>
                             </table>
                         </div>

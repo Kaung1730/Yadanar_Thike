@@ -20,7 +20,7 @@
 
 <body>
     <div class="container-fluid">
-        <form action="../Controller/authorAddController.php" method="POST" enctype="multipart/form-data">
+        <form action="../Controller/authorUpdateController.php" method="POST" enctype="multipart/form-data">
 
             <div class="row">
                 <div class="col-2 nav_box">
@@ -31,20 +31,22 @@
 
                     </div>
                     <div class="add_author">
-                        <div class="title_addauthor fs-5">Add Author</div>
+                        <div class="title_addauthor fs-5">Update Author</div>
                         <hr />
                         <div class="input-part ms-5">
+                            
+                            <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['id'] ?>">
                             <label class="author_name fs-5" for="">Author Name:</label>
-                            <input type="text" class="box1 input-edit" name="author_name">
+                            <input type="text" class="box1 input-edit" name="author_name" value="<?php echo $result[0]['author_name'] ?>">
                             <label class="author_name fs-5 mt-2" for="">Author Category:</label>
-                            <input type="text" class="box1 input-edit" name="author_category">
+                            <input type="text" class="box1 input-edit" name="author_category" value="<?php echo $result[0]['author_category'] ?>">
                             <label class="author_image fs-5" for="">Author Image:</label>
                             <div class="input-group mt-2 mb-3 ms-4 input-width">
-                                <input type="file" class="form-control input-edit" id="slide_img" name="author_img">
+                                <input type="file" class="form-control input-edit" id="slide_img" name="author_img" value="<?php echo $result[0]['author_image'] ?>">
                                 <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
                             </div>
                             <label for="" class="author_des fs-5">Author Description:</label>
-                            <input type="text" class="box1 input-edit" name="author_des">
+                            <input type="text" class="box1 input-edit" name="author_des" value="<?php echo $result[0]['author_about'] ?>">
                             <label for="" class="author_life fs-5">Author Life:</label>
                             <div class="d-flex">
                                 <div>

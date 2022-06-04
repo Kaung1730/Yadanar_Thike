@@ -20,7 +20,7 @@
 
 <body>
     <div class="container-fluid">
-        <form action="" method="GET">
+        <form action="">
             <div class="row">
                 <div class="col-2 nav_box">
 
@@ -54,14 +54,14 @@
                                 echo "<td class='text-center'>" . $value['author_name'] . "</td>";
                                 echo "<td class='text-center'>" . $value['author_about'] . "</td>";
                                 echo "<td class='text-center'>" . $value['author_life'] . "</td>";
-                                echo "<td class='text-center last'><a href='../Controller/authorEditController.php?id='" . $value['id'] . "><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
-                                echo "<td class='text-center last'><a href='../Controller/authorEditController.php?id='" . $value['id'] . "><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                                echo "<td class='text-center last'><a href='../Controller/authorEditController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td class='text-center last'><a href='../Controller/authorEditController.php?id=" . $value['id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                                 echo "</tr>";
                                 $count++;
                             }
                             ?>
                         </table>
-                        <nav aria-label="Page navigation example">
+                        <!-- <nav aria-label="Page navigation example">
                             <ul class="pagination float-end me-5">
                                 <li class="page-item">
                                     <a class="page-link" href="#" aria-label="Previous">
@@ -77,7 +77,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </nav>
+                        </nav> -->
                     </div>
                     <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                 </div>
