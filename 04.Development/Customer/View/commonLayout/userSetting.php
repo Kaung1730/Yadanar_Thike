@@ -11,6 +11,7 @@
             </div>
             <div class="modal-body">
                 <div class="">
+                <input type="hidden" name="customer_id" value ="<?php echo $result[0]['customer_id']?>">
                     <form id="userSettingForm" enctype="multipart/form-data">
                         <div class="imgChange">
                             <div class="text-center">

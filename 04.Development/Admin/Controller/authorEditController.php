@@ -15,4 +15,7 @@ $result = $sql -> fetchAll(PDO::FETCH_ASSOC);
 
 // echo "<pre>";
 // print_r($result);
+<<<<<<< HEAD
 require "../View/authorEdit.php";
+=======
+>>>>>>> origin/main

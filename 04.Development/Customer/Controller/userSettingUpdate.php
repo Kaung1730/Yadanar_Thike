@@ -7,7 +7,7 @@ if(isset($_POST)){
     $customer_email = $_POST['email'];
     $customer_password = $_POST['password'];
     $customer_phone = $_POST['phone'];
-    $id = $_SESSION['customer_id'];
+    $id = $_POST['customer_id'];
     
     $file = $_FILES['photo']['name'];
     $location = $_FILES['photo']['tmp_name'];

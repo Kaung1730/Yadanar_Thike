@@ -8,7 +8,7 @@
     <title>BookDescription</title>
     <link rel="shortcut icon" href="../resource/image/logo.png">
     <!--Customize CSS-->
-    <link rel="stylesheet" href="../resource/css/bookDescription.css">
+    
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <link rel="stylesheet" href="../resource/css/userSetting.css">
     <link rel="stylesheet" href="../resource/css/cartPop.css">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../resource/css/nav.css">
     <link rel="stylesheet" href="../resource/css/order.css">
     <link rel="stylesheet" href="../resource/css/footer.css ">
+    <link rel="stylesheet" href="../resource/css/bookDescription.css">
     <!--Bootstrap CSS & JavaScript-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -25,6 +26,11 @@
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/nav.js"></script>
     <script src="../resource/js/calc.js"></script>
+    <!--star rating-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="jquery.star-rating-svg.js"></script>
+    <link rel="stylesheet" type="text/css" href="star-rating-svg.css">
+
 </head>
 
 <body>
@@ -36,34 +42,43 @@
     <div class="orderHistory"></div>
     <div class="pdf"></div>
     <!-- Start of Book Description -->
+<<<<<<< HEAD
     <?php foreach ($result as $key => $value) {  
         ?>
         
+=======
+    <?php  require "../Controller/bookDespController.php";?>
+    <input type="hidden" name="book_id" value ="<?php echo $result[0]['book_id']?>">
+>>>>>>> origin/main
     <div class="container-fluid px-0  mt-5">
         <!--Start of the book des-->
         <div class="container">
             <div class="upper-part">
                 <div class="row">
                     <div class="col-lg-4 col-12  col-md-4 col-xl-4 ps-5 ps-lg-0 ps-md-0">
+<<<<<<< HEAD
                         <img src= "<?php echo $value['book_img']; ?>"  class="ms-5 ms-lg-0 ms-md-0 py-4 py-lg-0 py-md-0" />
+=======
+                        <img src= "<?php echo $result[0]['book_img']; ?>"  class="ms-5 ms-lg-0 ms-md-0 py-4 py-lg-0 py-md-0" />
+>>>>>>> origin/main
                         <!-- book preview -->
                         <div class=" d-flex d-lg-block d-md-block justify-content-center">
                             <a href="#pdf" data-bs-toggle="modal" class="ms-lg-5 ms-md-3 my-4 px-3 view-more-btn btn  text-dark book-d-text">
                                 <i class="bi bi-eye-fill fs-6 me-3 book-d-text"></i>ပိုမိုကြည့်ရန်
                             </a>
                         </div>
-                        <div class="my-1 book-d-text"> <span>စာမျက်နှာ - </span> 236 (Hand Cover)</div>
-                        <div class="my-1 book-d-text"> <span>စာအုပ်အရွယ်အစား -</span> 5.1 x 0.6 x 7.2 inches</div>
-                        <div class="my-1 book-d-text"> <span>ပုံနှိပ်မှတ်တမ်း -</span> ​ရေတံခွန်စာ​ပေ၊ 2022 ဧပြီလ(ပထမအကြိမ်)</div>
+                        <div class="my-1 book-d-text"> <span>စာမျက်နှာ - </span> <?php echo $result[0]['page_number']; ?></div>
+                        <div class="my-1 book-d-text"> <span>စာအုပ်အရွယ်အစား -</span> <?php echo $result[0]['size']; ?></div>
+                        <div class="my-1 book-d-text"> <span>ပုံနှိပ်မှတ်တမ်း -</span> <?php echo $result[0]['publisher_name']; ?></div>
                         <div class="OrderBtnContainer  d-flex d-lg-block d-md-block justify-content-center">
                             <a class="ms-lg-5 ms-md-3 me-4  my-3 px-4 py-2 btn book-d-text order-btn" data-bs-toggle="modal" href="#order">အမှာတင်မည်</a>
                         </div>
                     </div>
                     <div class="col-4 d-none d-md-block d-lg-block d-xl-block"></div>
                     <div class="col-lg-4 col-md-4 col-xl-4 col-12 pt-5 pt-md-0 pt-lg-0 ps-5 ps-lg-0 ps-md-0">
-                        <div class="book-des-title fs-5">ချုံကြားမှဘုံဖျားသို့</div>
-                        <div class="author-name my-3">ဖေမြင့်</div>
-                        <div class="book-fee fs-5">5000 (ကျပ်)</div>
+                        <div class="book-des-title fs-5"><?php echo $result[0]['book_name']; ?></div>
+                        <div class="author-name my-3"><?php echo $result[0]['author_name']; ?></div>
+                        <div class="book-fee fs-5"><?php echo $result[0]['book_price']; ?>(ကျပ်)</div>
                         <!--rating for the book-->
                         <div class="rating-container d-flex">
                             <div class="ms-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
@@ -73,20 +88,22 @@
                             <div class="ms-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
                         </div>
                         <div class="stock-number fs-6 my-3">
-                            လက်ကျန်စာအုပ်​ရေ -<span> 17 </span> အုပ်</div>
+                            လက်ကျန်စာအုပ်​ရေ -<span> <?php echo $result[0]['stock_number']; ?> </span> အုပ်</div>
                         <div class="des-text book-d-text lh-lg">
-                            အခက်အခဲဆိုတာ နာမ်ဝိဥာဏ်ထဲက​နေ လွှင့်ပစ်နိုင်တဲ့အရာ.......။
-                            ဒုက္ခဆိုတာ ရုပ်ဘဝထဲက မောင်းထုတ်နိုင်တဲ့အရာ.….။ ဘာတွေပဲဖြစ်ဖြစ် ဘာတွေပဲကြုံကြုံ ယုံကြည်ချက် ဓားတစ်လက်နဲ့ ဒုက္ခနေ့ရက်တွေကိုခုတ်ဖြတ်ရင်း ဘဝအလင်းတန်းဆုပ်ကိုင်အနိုင်ရခဲ့သူဆယ်ကျော်သက် လူငယ်လေးတစ်ယောက်အကြောင်း...။
+                            <?php echo $result[0]['book_desp']; ?>
                         </div>
                         <!-- To increase book number or decrecase -->
                         <div class="mb-3 mt-4">
-                            <div class="d-flex mt-2 numberContainer text-center align-item-center">
-                                <div class="btn col-1 me-3 fw-bold pt-2 btn text-center px-1 minus">
+                                <!-- <div class="btn col-1 me-3 fw-bold pt-2 btn text-center px-1 minus">
                                     ー
                                 </div>
-                                <div class="btn col-2 me-3 fw-bold pt-2 btn number">1</div>
-                                <div class="btn col-1 fw-bold pt-2 btn px-1 plus">+</div>
-                            </div>
+                                <div class="btn col-2 me-3 fw-bold pt-2 btn number"></div>
+                                <div class="btn col-1 fw-bold pt-2 btn px-1 plus">+</div> -->
+                                <div class="input-group mb-3 d-flex mt-2 numberContainer text-center align-item-center">
+                                    <button class="input-group-text fw-bold text-dark decrease-btn">ー</button>
+                                    <input type="text" class="form-control fw-bold text-dark text-center qty" disabled value="1">
+                                    <button class="input-group-text fw-bold text-dark increase-btn">+</button>
+                                </div>
                         </div>
                         <div>
                             <a href="#cartPopUp" class="text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal">
@@ -135,14 +152,16 @@
                 <div class="review-give-title mt-3">လူကြီးမင်း၏​ဝေဖန်သုံးသပ်ချက်ကို မျှ​ဝေ​ပေးပါ</div>
                 <form>
                     <div class="form-group mt-4">
-                        <label for="rating" class="book-d-text">တန်ဖိုးရှိမှုနှုန်း</label>
+                        <label for="" class="book-d-text">တန်ဖိုးရှိမှုနှုန်း</label>
                         <div class="mt-3">
                             <div class="rating-container d-flex flex-end ">
+                                <!-- <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
                                 <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
                                 <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
                                 <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
                                 <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                                <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
+                                 -->
+                                 
                             </div>
                         </div>
                         <div class="form-group mt-4">
@@ -155,53 +174,26 @@
             <!--Book list related to the author-->
             <div class="related-book-area mt-3">
                 <div class="author-book-title">
-                    <span class="author">​ဖေမြင့်</span>
+                    <span class="author">​<?php echo $result[0]['author_name']; ?></span>
                     <span class="book">စာအုပ်များ</span>
                 </div>
                 <div class="text-center book-box d-flex flex-wrap flex-lg-nowrap flex-md-nowrap justify-content-center">
-                    <div>
-                        <img src="../resource/image/Geneous-300x300 (2).png" class="img-fluid" alt="">
-                        <div class="book-title book-d-text">ဂျီးနီးယပ်(စ)</div>
-                        <div class="ratingEachBook  d-flex justify-content-center">
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
+                    <?php for ($i=0; $i < 4; $i++) { 
+                        if(isset($relatedResult[$i]['book_img'])) { ?>
+                        <div>
+                            <a href='../View/bookDescription.php?book_id=<?php echo $relatedResult[$i]['book_id'] ?>'>
+                                <img src="<?php echo $relatedResult[$i]['book_img']; ?>" class="img-fluid" alt=""/>
+                            </a>
+                            <div class="book-title book-d-text"><?php echo $relatedResult[$i]['book_name']; ?></div>
+                            <div class="ratingEachBook  d-flex justify-content-center">
+                                <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
+                                <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
+                                <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
+                                <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
+                                <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <img src="../resource/image/Heart-Nutrition-300x300.png" class="img-fluid" alt="">
-                        <div class="book-title book-d-text">နှလုံးသား အာဟာရ ရသစာများ</div>
-                        <div class="ratingEachBook  d-flex justify-content-center">
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../resource/image/Pyaw-Tat-Sotat-300x300.png" class="img-fluid" alt="">
-                        <div class="book-title book-d-text">​ပြောတတ်ဆိုတတ်​ပေါင်းသင်းတတ်တဲ့သူ</div>
-                        <div class="ratingEachBook  d-flex justify-content-center">
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="../resource/image/Standand-Front-CoverMedium-4-300x300.png" class="img-fluid" alt="">
-                        <div class="book-title book-d-text">​ဘေ​ဘီလုံမှာ အချမ်းသာဆုံး ပုဂ္ဂိုလ်</div>
-                        <div class="ratingEachBook  d-flex justify-content-center">
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                        </div>
+                    <?php } } ?>
                     </div>
                 </div>
             </div>

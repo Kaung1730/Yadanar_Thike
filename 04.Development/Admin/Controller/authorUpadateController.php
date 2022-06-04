@@ -10,6 +10,7 @@ if (isset($_POST)) {
     $del_flg = 0;
     $authorImage = $_FILES['author_img']['name'];
     $location = $_FILES['author_img']['tmp_name'];
+<<<<<<< HEAD
     $id = $_GET['id'];
 
     if (move_uploaded_file($location, "../resource/upload_img/" . $authorImage)) {
@@ -18,21 +19,63 @@ if (isset($_POST)) {
         $dbconnect = $db->connect();
         $sql = $dbconnect->prepare(
             "UPDATE author SET
+=======
+    $id = $_POST['id'];
+    // call db connection
+    $db = new DBConnect();
+    $dbconnect = $db->connect();
+    if (file_exists($_FILES['author_img']['tmp_name'])) {
+        if (move_uploaded_file($location, "../resource/upload_img/" . $authorImage)) {
+            
+            $sql = $dbconnect->prepare(
+                "UPDATE author SET
+>>>>>>> origin/main
             author_image = :img,
             author_name = :name,
             author_about = :description,
             author_life = :life,
             author_category = :category WHERE id = :id"
+<<<<<<< HEAD
         );
         $sql->bindValue(":image", $authorImage);
+=======
+            );
+            $sql->bindValue(":img", $authorImage);
+            $sql->bindValue(":name", $authorName);
+            $sql->bindValue(":description", $authorDescription);
+            $sql->bindValue(":life", $authorBorn . "-" . $authorDie);
+            $sql->bindValue(":category", $authorCategory);
+            $sql->bindValue(":id", $id);
+
+            $sql->execute();
+
+            // require "./authorEditController.php";
+
+        }
+    } else {
+        $sql = $dbconnect->prepare(
+            "UPDATE author SET
+            author_name = :name,
+            author_about = :description,
+            author_life = :life,
+            author_category = :category WHERE id = :id"
+        );
+        
+>>>>>>> origin/main
         $sql->bindValue(":name", $authorName);
         $sql->bindValue(":description", $authorDescription);
         $sql->bindValue(":life", $authorBorn . "-" . $authorDie);
         $sql->bindValue(":category", $authorCategory);
         $sql->bindValue(":id", $id);
 
+<<<<<<< HEAD
         $sql -> execute();
         
         require "../View/authorList.php";
     }
+=======
+        $sql->execute();
+    }
+    header("Location: ../View/authorList.php");
+>>>>>>> origin/main
 }

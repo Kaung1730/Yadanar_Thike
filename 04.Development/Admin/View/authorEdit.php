@@ -20,7 +20,11 @@
 
 <body>
     <div class="container-fluid">
+<<<<<<< HEAD
         <form action="../Controller/authorUpdateController.php" method="POST" enctype="multipart/form-data">
+=======
+        <form action="../Controller/authorUpadateController.php" method="POST" enctype="multipart/form-data">
+>>>>>>> origin/main
 
             <div class="row">
                 <div class="col-2 nav_box">
@@ -34,7 +38,11 @@
                         <div class="title_addauthor fs-5">Update Author</div>
                         <hr />
                         <div class="input-part ms-5">
+<<<<<<< HEAD
                             
+=======
+                            <?php require "../Controller/authorEditController.php"; ?>
+>>>>>>> origin/main
                             <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['id'] ?>">
                             <label class="author_name fs-5" for="">Author Name:</label>
                             <input type="text" class="box1 input-edit" name="author_name" value="<?php echo $result[0]['author_name'] ?>">
