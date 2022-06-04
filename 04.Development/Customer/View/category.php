@@ -51,7 +51,7 @@
                         if($value['category_id'] == 1){
                             foreach ($yokePyaResult as $key => $value) {
                                 echo '
-                                <div class="ms-lg-5">
+                                <div class="ms-lg-5 id="yokepya">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
                                         <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
@@ -61,7 +61,7 @@
                         else if($value['category_id'] == 2){
                             foreach ($novelResult as $key => $value) {
                                 echo '
-                                <div class="ms-lg-5">
+                                <div class="ms-lg-5" id="novel">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
                                         <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
@@ -71,7 +71,7 @@
                         else if($value['category_id'] == 3){
                             foreach ($languageResult as $key => $value) {
                                 echo '
-                                <div class="ms-lg-5">
+                                <div class="ms-lg-5" id="language">
                                 <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
                                     <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
                                 </a>
@@ -82,7 +82,7 @@
 
                             foreach ($healthResult as $key => $value) {
                                 echo '
-                                <div class="ms-lg-5">
+                                <div class="ms-lg-5" id="health">
                                 <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
                                     <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
                                 </a>
@@ -92,7 +92,7 @@
                         else if($value['category_id'] == 5){
                             foreach ($politicResult as $key => $value) {
                                 echo '
-                                <div class="ms-lg-5">
+                                <div class="ms-lg-5" id="politics">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
                                         <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
@@ -102,7 +102,7 @@
                         else if($value['category_id'] == 6){
                             foreach ($poemResult as $key => $value) {
                                 echo '
-                                <div class="ms-lg-5">
+                                <div class="ms-lg-5" id="poem">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
                                         <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
@@ -112,7 +112,7 @@
                         else if($value['category_id'] == 7){
                             foreach ($successResult as $key => $value) {
                                 echo '
-                                <div class="ms-lg-5">
+                                <div class="ms-lg-5" id="success">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
                                         <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
@@ -122,7 +122,7 @@
                         else if($value['category_id'] == 8){
                             foreach ($biographyResult as $key => $value) {
                                 echo '
-                                <div class="ms-lg-5">
+                                <div class="ms-lg-5" id="biography">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
                                         <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
@@ -132,7 +132,7 @@
                         else if($value['category_id'] == 9){
                             foreach ($otherResult as $key => $value) {
                                 echo '
-                                <div class="ms-lg-5">
+                                <div class="ms-lg-5" id="other">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
                                         <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>

@@ -267,6 +267,7 @@
                 <h4 class="mt-3 mb-4">စာအုပ်အမျိုးအစားများ</h4>
                 <div class="item row">
                     <div class="col-sm-3">
+                        <a href="http://localhost:81/YadnarThike/04.Development/Customer/View/category.php#novel" class="text-decoration-none">
                         <div class="thumb-wrapper">
                             <div class="img-box">
                                 <img src="../resource/image/category1.webp" class="img-responsive" alt="">
@@ -275,36 +276,43 @@
                                 <div class="authorName">ဝတ္ထု</div>
                             </div>
                         </div>
+                        </a>
                     </div>
                     <div class="col-sm-3">
-                        <div class="thumb-wrapper">
-                            <div class="img-box">
-                                <img src="../resource/image/category2.webp" class="img-responsive" alt="">
+                        <a href="http://localhost:81/YadnarThike/04.Development/Customer/View/category.php#politics" class="text-decoration-none">
+                            <div class="thumb-wrapper">
+                                <div class="img-box">
+                                    <img src="../resource/image/category2.webp" class="img-responsive" alt="">
+                                </div>
+                                <div class="thumb-content">
+                                    <div class="authorName">နိုင်ငံရေး</div>
+                                </div>
                             </div>
-                            <div class="thumb-content">
-                                <div class="authorName">နိုင်ငံရေး</div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-sm-3">
-                        <div class="thumb-wrapper">
-                            <div class="img-box">
-                                <img src="../resource/image/category3.webp" class="img-responsive" alt="">
+                        <a href="http://localhost:81/YadnarThike/04.Development/Customer/View/category.php#biography" class="text-decoration-none">
+                            <div class="thumb-wrapper">
+                                <div class="img-box">
+                                    <img src="../resource/image/category3.webp" class="img-responsive" alt="">
+                                </div>
+                                <div class="thumb-content">
+                                    <div class="authorName">အတ္ထုပတ္တိ</div>
+                                </div>
                             </div>
-                            <div class="thumb-content">
-                                <div class="authorName">အတ္ထုပတ္တိ</div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-sm-3">
-                        <div class="thumb-wrapper">
-                            <div class="img-box">
-                                <img src="../resource/image/category4.webp" class="img-responsive" alt="">
+                        <a href="http://localhost:81/YadnarThike/04.Development/Customer/View/category.php#health" class="text-decoration-none">
+                            <div class="thumb-wrapper">
+                                <div class="img-box">
+                                    <img src="../resource/image/category4.webp" class="img-responsive" alt="">
+                                </div>
+                                <div class="thumb-content">
+                                    <div class="authorName">ကျန်းမာရေး</div>
+                                </div>
                             </div>
-                            <div class="thumb-content">
-                                <div class="authorName">ကျန်းမာရေး</div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
