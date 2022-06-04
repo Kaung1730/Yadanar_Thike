@@ -95,23 +95,15 @@
             <?php
 
             require "../Controller/homePageController.php";
-
+            echo "<div class='homeslider slicker mt-5 d-flex justify-content-center'>";
             for ($i = 0; $i < count($result); $i++) {
-                echo "<div class='homeslider slicker mt-5 d-flex justify-content-center'>";
                 echo " <div class='slide  d-flex justify-content-center'>";
                 echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt=''>";
                 echo "</div>";
-                // echo " <div class='slide  d-flex justify-content-center'> .  <img src='../resource/image/ ". $result[$i]['book_img'] ." >.</div>";
-                // echo " <div class='slide  d-flex justify-content-center'> .  <img src='../resource/image/ ". $result[$i]['book_img'] ." >.</div>";
-                // echo " <div class='slide  d-flex justify-content-center'> .  <img src='../resource/image/ ". $result[$i]['book_img'] ." >.</div>";
-                // echo " <div class='slide  d-flex justify-content-center'> .  <img src='../resource/image/ ". $result[$i]['book_img'] ." >.</div>";
-                // echo " <div class='slide  d-flex justify-content-center'> .  <img src='../resource/image/ ". $result[$i]['book_img'] ." >.</div>";
-                echo "</div>";
                 // print_r("result");
             }
+            echo "</div>";
             ?>
-
-
 
             <!-- <div class="homeslider slicker mt-5 d-flex justify-content-center">
                 <div class="slide  d-flex justify-content-center">
@@ -216,7 +208,7 @@
                     echo "</div>";
                     echo "<div class='content'>";
                     echo " <p>" . $result[$i]['book_price'] . "</p>";
-                    echo "<button type='button' class='btn '>" .  $result[$i]['book_basket'] . "</button>";
+                    echo "<button type='button' class='btn '>ခြင်းတောင်းထဲထည့်ရန်</button>";
                     echo "</div>";
                     echo "</div>";
                     // print_r("result");
@@ -241,30 +233,29 @@
 
             <!-- DISCOUNT -->
 
-            <div class="disItem">
 
             <?php
-             foreach ($result as $key => $value) {
+            // $count = 1;
+
+            require "../Controller/discountController.php";
+            echo " <div class='disItem'>";
             echo "<div class='disContent'>";
-            echo "<h2>" .$value['author_id'] ."</h2>"; //edit or full outer join table
-            echo "<p>" .$value['book_name'] ."</p>";
-            echo "<span class='disPrice text-decoration-line-through'>" . $value['book_price'] . "</span>";
-            echo "<span class='disPrice pb-5 ms-2 text-danger'>" . $value['book_price'] . "</span>";
+            echo "<h2>" . $result[0]['author_name'] . "</h2>"; //edit or full outer join table
+            echo "<p>" . $result[0]['book_name'] . "</p>";
+            echo "<span class='disPrice text-decoration-line-through'>" . $result[0]['book_price'] . "</span>";
+            echo "<span class='disPrice pb-5 ms-2 text-danger'>" .  $result[0]['book_price'] . "</span>";
             echo "</div>";
             echo "<div class='discountCard'>";
-            // echo "<div class='disTag'>";
-            // echo "<span>" . $value['book_price'] . "</span>";
-            // echo "</div>";
+            echo "<div class='disTag'>";
+            echo "<span> 20% OFF </span>";
+            echo "</div>";
             echo "<div>";
-            echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='disImage'>";
+            echo " <img src='../resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
             echo "</div>";
             echo "</div>";
-            // echo "<td> <img src = '../Resource/bookImg/". $value ['file_path'] ." ' > </td>";  
-        }
-
-        ?>
-
-                <!-- <div class="disContent">
+            echo "</div>";
+            ?>
+            <!-- <div class="disContent">
                     <h2>မြသန်းတင့်</h2>
                     <p>ရှားလော့ဟုမ်း၏ မှတ်တမ်း </p>
                     <span class="disPrice text-decoration-line-through">၆၀၀၀ကျပ်</span> 
@@ -279,8 +270,9 @@
                         <img src="../resource/image/Memoirs-of-600x600.webp" alt="" class="disImage">
                     </div>
                 </div> -->
-            </div>
+            <!-- </div> -->
             <!-- DISCOUNT end-->
+
             <!-- category -->
             <div class=" carousels">
                 <h4 class="mt-3 mb-4">စာအုပ်အမျိုးအစားများ</h4>
@@ -288,19 +280,20 @@
 
                     <?php
 
-                    require "../Controller/homePageController.php";
+                    require "../Controller/categoryBookPageController.php";
 
                     for ($i = 0; $i < 4; $i++) {
                         echo "<div class='col-sm-3'>";
                         echo " <div class='thumb-wrapper'>";
                         echo " <div class='img-box'>";
-                        // echo " <img src='../resource/image/" . $result[$i]['book_categoryImage'] . "' alt='' class='img-responsive'>";
+                        echo " <img src='../resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
                         echo "</div>";
                         echo "<div class='thumb-content'>";
-                        // echo "  <div class='authorName'>" . $result[$i]['book_categoryName'] . "</div>";
+                        echo "  <div class='authorName pb-2'>" . $result[$i]['category_name'] . "</div>";
                         echo "</div>";
                         echo "</div>";
                         echo "</div>";
+                        // print_r("result");
                     }
                     ?>
 

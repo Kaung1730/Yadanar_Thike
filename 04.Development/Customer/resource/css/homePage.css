@@ -202,13 +202,13 @@
     padding-bottom: 4px;
 }
 
-/* .disItem .disContent p {
+.disItem .disContent p {
     margin: 2vh 0vw 2vh 8vw;
-} */
+}
 
 
 .disItem .disContent .disPrice {
-    margin-left: 9vw;
+    margin-left: 12vw;
 }
 
 .disItem .discountCard {
@@ -264,7 +264,7 @@
 }
 
 .carousels .thumb-wrapper {
-    padding: 25px 15px;
+    /* padding: 25px 15px; */
     background: var(--body-bg-color);
     border-radius: 6px;
     text-align: center;
