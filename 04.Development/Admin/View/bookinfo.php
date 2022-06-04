@@ -36,7 +36,7 @@
                         </div>
                         <hr />
                         <div class="table_group">
-                            <table class="table table-borderless-responsive-lg white_table">
+                            <table class="table table-striped white_table tb-edit">
                                 <tr>
                                     <th class="text-start">No</th>
                                     <th class="text-center">Book Image</th>
@@ -47,6 +47,19 @@
                                     <th class="text-center">Book Price</th>
                                     <th class="text-center last" colspan="2">Action</th>
                                 </tr>
+                                <?php
+                                $count = 1;
+                                foreach($result as $key -> $$value){
+                                    echo "<tr>";
+                                    echo "<td class='text-start'>".$count."</td>";
+                                    echo "<td class='text-center w-25'><img src='../resource/upload_img/".$value['book_img']."'/></td>";
+                                    echo "<td class='text-center'>".$value['book_name']."</td>";
+                                    echo "<td class='text-center'>".$value['category_id']."</td>";
+                                    echo "</tr>";
+                                    $count++;
+                                }
+                                    
+                                ?>
                             </table>
                         </div>
                     </div>
