@@ -15,8 +15,8 @@ $sql->execute();
 
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
-echo "<pre>";
-print_r($result);
+// echo "<pre>";
+// print_r($result);
 
 //connect with View
 // require "../View/authorList.php";
