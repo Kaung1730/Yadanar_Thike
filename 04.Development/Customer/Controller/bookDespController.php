@@ -19,4 +19,4 @@ $sql->execute();
 
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
-require "../View/bookDescription.php";
+

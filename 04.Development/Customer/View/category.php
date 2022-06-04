@@ -52,7 +52,7 @@
                             foreach ($yokePyaResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5">
-                                    <a href="../Controller/bookDespController.php?book_id='.$value['book_id'].'">
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
                                         <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
                                 </div>';
