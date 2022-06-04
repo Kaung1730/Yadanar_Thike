@@ -115,7 +115,7 @@ hr{
     /* padding-bottom: 2rem; */
     padding-right: 8rem;
 }
-@media screen and (max-width:1200px) {
+/* @media screen and (max-width:1200px) {
     .logout{
         width: 8vw;
         font-size: 12px;
@@ -143,4 +143,4 @@ hr{
     .title_author,.title_list{
         font-size: 15px;
     }
-}
+} */

@@ -122,7 +122,7 @@ hr{
 .white_table{
     background-color: var(--btnfontColor);
 }
-@media screen and (max-width:1200px) {
+/* @media screen and (max-width:1200px) {
     .title_bar{
         height: 20vh;
     }
@@ -182,4 +182,4 @@ hr{
     .admin_box{
         padding-left: 3vw;
     }
-}
+} */

@@ -44,9 +44,9 @@
                                 <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
                             </div>
                             <label for="question" class="form-label mt-2">Question</label>
-                            <input type="password" id="question" class="form-control input-edit" aria-describedby="passwordHelpBlock">
+                            <input type="text" id="question" class="form-control input-edit" aria-describedby="passwordHelpBlock">
                             <label for="address" class="form-label mt-2">Answer</label>
-                            <textarea type="password" id="address" class="form-control input-edit" aria-describedby="passwordHelpBlock" cols="30" rows="10"></textarea>
+                            <textarea type="text" id="address" class="form-control input-edit" aria-describedby="passwordHelpBlock" cols="30" rows="10"></textarea>
                             <div class="buttonGp">
                                 <a href="privacyPolicyList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
                                 <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Submit</button>

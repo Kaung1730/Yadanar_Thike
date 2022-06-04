@@ -118,7 +118,7 @@ hr{
     font-size: 20px;
     padding-left: 10px;
 }
-@media screen and (max-width:1241px)  {
+/* @media screen and (max-width:1241px)  {
     .add_author{
         height: 9vh;
     }
@@ -204,4 +204,4 @@ hr{
         font-size: 16px;
         padding-left: 10px;
     }
-}
+} */

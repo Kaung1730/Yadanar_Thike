@@ -118,11 +118,11 @@ hr{
     font-size: 20px;
     padding-left: 10px;
 }
-.table_group{
+/* .table_group{
     width: 90%;
     height: 50vh;
     margin-left: 5%;
-}
+} */
 /* @media screen and (max-width:720px) {
     .add_book{
         height: 10vh;

@@ -20,34 +20,25 @@
 
 <body>
     <div class="container-fluid">
-        <form action="">
+        <form action="../Controller/bookAddController.php">
             <div class="row">
                 <div class="col-2 nav_box">
 
                 </div>
                 <div class="col-10">
                     <div class="title_bar">
-                        
+
                     </div>
                     <div class="add_author">
                         <form action="">
                             <div class="title_addauthor fs-5">Add Books</div>
                             <hr />
-                            <div>
-                                <label class="book_name fs-5" for="">Book Name:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
-                            <div>
-                                <label class="categories fs-5" for="">Categories:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
-                            <div>
-                                <label for="" class="author fs-5">Author:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
+                            <label class="book_name fs-5" for="">Book Name:</label>
+                            <input type="text" class="box1 input-edit">
+                            <label class="categories fs-5" for="">Categories:</label>
+                            <input type="text" class="box1 input-edit">
+                            <label for="" class="author fs-5">Author:</label>
+                            <input type="text" class="box1 input-edit">
                             <div class="input-part ms-4 mt-2 slide-me">
                                 <label for="slide_img" class="form-label fs-5 text-start">Book Image:</label>
                                 <div class="input-group mt-2 mb-3 input-width">
@@ -55,46 +46,38 @@
                                     <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
                                 </div>
                             </div>
-                            <div>
-                                <label for="" class="book_price fs-5">Book Price:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
-                            <div>
-                                <label for="" class="book_des fs-5">Book Description:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
-                            <div>
-                                <label for="" class="page_no fs-5">Page No:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
+                            <label for="" class="book_price fs-5">Book Price:</label>
+                            <input type="text" class="box1 input-edit">
+                            <label for="" class="book_des fs-5">Book Description:</label>
+                            <input type="text" class="box1 input-edit">
+                            <label for="" class="page_no fs-5">Page No:</label>
+                            <input type="text" class="box1 input-edit">
                             <div>
                                 <label for="" class="size fs-5">Size</label>
                                 <div class="d-flex ">
                                     <div>
                                         <label for="" class="length fs-5">Length:</label>
-                                        <select id="box_lwh" name="length">
-                                        </select>
+                                        <!-- <select id="box_lwh" name="length" class="input-edit">
+                                            <option value=""></option>
+                                        </select> -->
+                                        <input type="text" class="box_lwh input-edit">
                                     </div>
                                     <div>
                                         <label for="" class="width fs-5">Width:</label>
-                                        <select id="box_lwh" name="width">
-                                        </select>
+                                        <!-- <select id="box_lwh" name="width" class="input-edit">
+                                        </select> -->
+                                        <input type="text" class="box_lwh input-edit">
                                     </div>
                                     <div>
                                         <label for="" class="height fs-5">Height:</label>
-                                        <select id="box_lwh" name="height">
-                                        </select>
+                                        <!-- <select id="box_lwh" name="height" class="input-edit">
+                                        </select> -->
+                                        <input type="text" class="box_lwh input-edit">
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <label for="" class="publisher fs-5">Publisher:</label>
-                                <br />
-                                <input type="text" class="box1">
-                            </div>
+                            <label for="" class="publisher fs-5">Publisher:</label>
+                            <input type="text" class="box1 input-edit">
                             <div>
                                 <button type="submit" name="submit" class="submit">Submit</button>
                                 <button type="reset" name="reset" class="reset">Reset</button>

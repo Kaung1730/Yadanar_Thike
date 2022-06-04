@@ -106,9 +106,9 @@ hr{
     background-color: var(--presentColor);
     color:var(--adminBg) ;
 }
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
     .logout{
         font-size: 12px;
     }
-}
+} */
 
