@@ -87,6 +87,7 @@
     text-align: center;
     position: relative;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.8);
+    margin-top: 12vh;
 }
 
 .carousel .item .img-box {
@@ -114,7 +115,7 @@
 }
 
 .carousel .thumb-content .bookName {
-    font-size: 14px;
+    font-size: 13px;
     padding: 5px 0 5px 0;
     color: var(--dark-blue);
 }
