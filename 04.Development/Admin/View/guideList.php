@@ -37,126 +37,12 @@
                             <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="serviceList.php" class="a-edit">Service</a></button>
                             <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                         </div>
-                        <table class="table table-borderless tb-edit mx-5 mt-3">
+                        <table class="table table-striped white_table tb-edit mt-3">
                             <tr class="table-secondary">
                                 <th class="text-start">No.</th>
                                 <th class="text-center">Question</th>
                                 <th class="text-center">Answer</th>
                                 <th class="text-center last" colspan="2">Action</th>
-                            </tr>
-                            <tr class="table-light">
-                                <td class="text-start">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center last">
-                                    <a href="">
-                                        <button type="button" class="btn btn-outline-info">
-                                            <ion-icon name="create-outline"></ion-icon>
-                                        </button>
-                                    </a>
-                                </td>
-                                <td class="text-center last">
-                                    <a href="">
-                                        <button type="button" class="btn btn-outline-danger">
-                                            <ion-icon name="trash-outline"></ion-icon>
-                                        </button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="table-secondary">
-                                <td class="text-start">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center last">
-                                    <a href="">
-                                        <button type="button" class="btn btn-outline-info">
-                                            <ion-icon name="create-outline"></ion-icon>
-                                        </button>
-                                    </a>
-                                </td>
-                                <td class="text-center last">
-                                    <a href="">
-                                        <button type="button" class="btn btn-outline-danger">
-                                            <ion-icon name="trash-outline"></ion-icon>
-                                        </button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="table-light">
-                                <td class="text-start">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center last">
-                                    <a href="">
-                                        <button type="button" class="btn btn-outline-info">
-                                            <ion-icon name="create-outline"></ion-icon>
-                                        </button>
-                                    </a>
-                                </td>
-                                <td class="text-center last">
-                                    <a href="">
-                                        <button type="button" class="btn btn-outline-danger">
-                                            <ion-icon name="trash-outline"></ion-icon>
-                                        </button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="table-secondary">
-                                <td class="text-start">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center last">
-                                    <a href="">
-                                        <button type="button" class="btn btn-outline-info">
-                                            <ion-icon name="create-outline"></ion-icon>
-                                        </button>
-                                    </a>
-                                </td>
-                                <td class="text-center last">
-                                    <a href="">
-                                        <button type="button" class="btn btn-outline-danger">
-                                            <ion-icon name="trash-outline"></ion-icon>
-                                        </button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="table-light">
-                                <td class="text-start">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center last">
-                                    <a href="">
-                                        <button type="button" class="btn btn-outline-info">
-                                            <ion-icon name="create-outline"></ion-icon>
-                                        </button>
-                                    </a>
-                                </td>
-                                <td class="text-center last">
-                                    <a href="">
-                                        <button type="button" class="btn btn-outline-danger">
-                                            <ion-icon name="trash-outline"></ion-icon>
-                                        </button>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="table-secondary">
-                                <td class="text-start">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center">1</td>
-                                <td class="text-center last">
-                                    <a href="">
-                                        <button type="button" class="btn btn-outline-info">
-                                            <ion-icon name="create-outline"></ion-icon>
-                                        </button>
-                                    </a>
-                                </td>
-                                <td class="text-center last">
-                                    <a href="">
-                                        <button type="button" class="btn btn-outline-danger">
-                                            <ion-icon name="trash-outline"></ion-icon>
-                                        </button>
-                                    </a>
-                                </td>
                             </tr>
                         </table>
 

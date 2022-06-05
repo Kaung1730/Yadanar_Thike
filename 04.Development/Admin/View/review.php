@@ -38,48 +38,12 @@
                             <button type="button" class="btn btn-secondary me-5 btn-connect"><a href="contact.php" class="a-edit">Contact</a></button>
                         </div>
                         <div class="input-part">
-                            <table class="table table-borderless tb-edit mx-5 mt-3 tb-contact">
+                            <table class="table table-striped white_table tb-edit mt-3">
                                 <tr class="table-secondary">
-                                    <th class="text-start">No.</th>
+                                    <th class="text-center">No.</th>
                                     <th class="text-center">Book Name</th>
                                     <th class="text-center">Book Review</th>
                                     <th class="text-center">Book Rating</th>
-                                </tr>
-                                <tr class="table-light">
-                                    <td class="text-start">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-secondary">
-                                    <td class="text-start">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-light">
-                                    <td class="text-start">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-secondary">
-                                    <td class="text-start">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-light">
-                                    <td class="text-start">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-secondary">
-                                    <td class="text-start">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
                                 </tr>
                             </table>
                             <nav aria-label="Page navigation example">
