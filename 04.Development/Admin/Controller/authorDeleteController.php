@@ -2,7 +2,7 @@
 
 require_once "../Model/dbConnection.php";
 
-$id = $_GET['author_id'];
+$id = $_GET['id'];
 // call db connection
 $db = new DBConnect();
 $dbconnect = $db -> connect();

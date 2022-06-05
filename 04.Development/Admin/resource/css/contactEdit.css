@@ -149,6 +149,7 @@ hr{
 }
 .tb-edit{
     width: 100%;
+    margin-bottom: 10px !important;
 }
 .begin{
     width: 5vw;

@@ -37,7 +37,7 @@
                         <hr />
                         <table class="table table-striped white_table tb-edit">
                             <tr>
-                                <th class="text-start">No</th>
+                                <th class="text-center">No</th>
                                 <th class="text-center">Image</th>
                                 <th class="text-center">Author Name</th>
                                 <th class="text-center">Author Description</th>
@@ -49,7 +49,7 @@
                             $count = 1;
                             foreach ($result as $key => $value) {
                                 echo "<tr>";
-                                echo "<td class='text-start'>" . $count . "</td>";
+                                echo "<td class='text-center'>" . $count . ".</td>";
                                 echo "<td class='text-center w-25'><img src='../resource/upload_img/" . $value['author_image'] . "'class='upload_img'></td>";
                                 echo "<td class='text-center'>" . $value['author_name'] . "</td>";
                                 echo "<td class='text-center overflow-hidden w-10'>" . $value['author_about'] . "</td>";
@@ -61,7 +61,8 @@
                             }
                             ?>
                         </table>
-                        <!-- <nav aria-label="Page navigation example">
+
+                        <nav aria-label="Page navigation example">
                             <ul class="pagination float-end me-5">
                                 <li class="page-item">
                                     <a class="page-link" href="#" aria-label="Previous">
@@ -77,7 +78,9 @@
                                     </a>
                                 </li>
                             </ul>
-                        </nav> -->
+                        </nav>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
                     </div>
                     <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                 </div>
