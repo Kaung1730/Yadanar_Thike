@@ -26,9 +26,12 @@
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/nav.js"></script>
     <script src="../resource/js/calc.js"></script>
+    <script src="../resource/js/comment.js"></script>
     <!--star rating-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <!--Sweet Alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -42,7 +45,8 @@
     <!-- Start of Book Description -->
 
     <?php  session_start();
-    require "../Controller/bookDespController.php";?>
+    require "../Controller/bookDespController.php";
+    $_SESSION['book_id'] = $result[0]['book_id'];?>
         
     <input type="hidden" name="book_id" value ="<?php echo $result[0]['book_id']?>">
     <div class="container-fluid px-0  mt-5">
@@ -136,7 +140,8 @@
             <!-- To give some review -->
             <div class="review-give mt-5">
                 <div class="review-give-title mt-3">လူကြီးမင်း၏​ဝေဖန်သုံးသပ်ချက်ကို မျှ​ဝေ​ပေးပါ</div>
-                <!-- <form id="commentForm"> -->
+                <form id="commentForm">
+                    
                     <div class="form-group mt-4">
                         <label for="star" class="book-d-text">တန်ဖိုးရှိမှုနှုန်း</label>
                         <div class="mt-3">
@@ -147,10 +152,10 @@
                         </div>
                         <div class="form-group mt-4">
                             <label for="review-text" class="book-d-text">ဝေဖန်သုံးသပ်လို​သောစာကို​ရေးပါ</label>
-                            <textarea name="comment" required class="form-control mt-3 bg-transparent form-border" id="review-text" cols="30" rows="5"></textarea>
+                            <textarea name="comment" class="form-control mt-3 bg-transparent form-border" id="review-text" cols="30" rows="5"></textarea>
                         </div>
                         <button type="submit" class="btn review-btn my-4 book-d-text" id="comment-btn">​ပေးပို့ရန်</button>
-                <!-- </form> -->
+                </form>
             </div>
             <!--Book list related to the author-->
             <div class="related-book-area mt-3">
@@ -184,18 +189,6 @@
     <!--footer-->
     <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
     </div>
-    <script>
-        //for star rating
-        $(function () {
-            $("#rateYo").rateYo({
-                fullStar: true,
-                spacing   : "5px",
-                onSet:function(rating,rateYoInstance){
-                    $("#rating").val(rating);
-                },
-            });
-        });
-    </script>
 </body>
 
 </html>

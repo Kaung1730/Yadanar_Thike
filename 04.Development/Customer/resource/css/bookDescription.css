@@ -1,4 +1,4 @@
-.view-more-btn, .order-btn{
+.view-more-btn, .order-btn, .commentBtn{
     border-radius: var(--border) !important;
     background-color: var(--yellow) !important;
 }

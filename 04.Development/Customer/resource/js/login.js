@@ -18,7 +18,7 @@ $(document).ready(function () {
                 if (res == "wrong") {
                     swal({
                         title: "မှားယွင်း​နေပါသည်",
-                        text: "User Name (သို့မဟုတ်) လျို့ဝှက် နံပါတ် မှားယွင်း​နေပါသည်",
+                        text: "User Name (သို့မဟုတ်) လျို့ဝှက် နံပါတ် မှားယွင်း​နေပါသည်။",
                         icon: "warning",
                         button: {text:'OK',className:'sweet-warning'},
                     });

@@ -1,57 +1,84 @@
-$(document).ready(function(){
-    session_start();
-    var rating = $_SESSION['rating'];
-    let postData = {
-        "rating": rating,
-        "comment": "'"+ $_POST['comment'] + "'",
-        }
-        console.log(rating);
-        console.log($_POST['comment']);
-    $("#comment-btn").click(function(e){
-        e.preventDefault();
-        alert(rating);
-        // $.ajax({
-        //     type: "POST",
-        //     url: "../Controller/commentController.php",
-        //     data: new FormData(this),
-        //     contentType: false,
-        //     processData: false,
-        //     cache: false,
-        //     beforeSend: function () {
-        //         $("#register-btn").attr("disabled", "disabled");
-        //         $("#register").css("opacity", "0.5");
-        //     },
-        //     success: function (res) {
-        //         $("#register-btn").removeAttr("disabled");
-        //         $("#register").css("opacity", "1");
-        //         if (res == "duplicate") {
-        //             swal({
-        //                 title: "အ​ကောင့်ထပ်​နေပါသည်!",
-        //                 text: "User Name နှင့် Email မှာ အသုံးပြုပြီးသား ဖြစ်​နေပါသည်",
-        //                 icon: "warning",
-        //                 button: {text:'OK',className:'sweet-warning'},
-        //             });
-        //         } else if (res == "success") {
-        //             swal({
-        //                 title: "ဖန်တီးမှု ​အောင်မြင်ပါသည်!",
-        //                 text: "အ​ကောင့်အသစ် ဖန်တီးမှု ​အောင်မြင်ပါသည်",
-        //                 icon: "success",
-        //                 button: "အ​ကောင့်၀င်ရန်",
-        //             }).then((value) => {
-        //                 window.location.href = `/YadnarThike/04.Development/Customer/View/login.php`;
-        //             });
-        //         } else if (res == "password") {
-        //             swal({
-        //                 title: "လျို့ဝှက် နံပါတ် မတူညီပါ!",
-        //                 text: "လျို့ဝှက်နံပါတ် နှင့် အတည်ပြု လျို့ဝှက် နံပါတ် မတူညီပါ",
-        //                 icon: "warning",
-        //                 button: {text:'OK',className:'sweet-warning'},
-        //             });
-        //         }
-        //     },
-        //     error: function (err) {
-        //         alert("Error");
-        //     },
-        // });
+$(document).ready(function () {
+    //star rating
+    var STARRATING = 0;
+    $("#rateYo").rateYo({
+        fullStar: true,
+        spacing: "5px",
+        onSet: function (rating) {
+            $("#rating").val(rating);
+            STARRATING = rating;
+            sessionStorage.setItem('star', STARRATING);
+        },
     });
-    })
+
+    $("#comment-btn").click(function () {
+        var star = sessionStorage.getItem('star');
+        var text = $('#review-text').val();
+        if (text == '') {
+            swal({
+                title: "စာသား​ရေးသား​ပေးရန် (သို့မဟုတ်) အ​ကောင့်ဝင်ထားရန် လိုအပ်ပါသည်။!",
+                text: "စာအုပ် ​ဝေဖန်ချက်​ပေးပို့ရန်အတွက် စာသား​ရေးသား​ပေးရန် (သို့မဟုတ်) အ​ကောင့်ဝင်ထားရန် လိုအပ်ပါသည်။",
+                icon: "warning",
+                button: { text: 'OK', className: 'commentBtn' },
+            });
+            return false;
+        }
+        else {
+            let postData = {
+                "star": star,
+                "textComment": '"' + text + '"',
+            }
+            $.ajax({
+                url: "../Controller/commentController.php",
+                type: "POST",
+                data: { send: JSON.stringify(postData) },
+                beforeSend: function () {
+                    $("#comment-btn").attr("disabled", "disabled");
+                    $("#commentForm").css("opacity", "0.5");
+                },
+                success: function (res) {
+                    $("#comment-btn").removeAttr("disabled");
+                    $("#commentForm").css("opacity", "1");
+                    if (res == "login") {
+                        swal("စာအုပ်​ဝေဖန်ချက် ​ပေးပို့ရန်အတွက် အ​ကောင့်ဖွင့်ရန် (သို့မဟုတ်) အ​ကောင့်ဝင်ထားရန် လိုအပ်ပါသည်။", {
+                            buttons: {
+                                catch: {
+                                    text: "အ​ကောင့်ဝင်မည်",
+                                    value: "login",
+                                    className: 'commentBtn'
+                                },
+                                defeat: false,
+                            },
+                        })
+                            .then((value) => {
+                                switch (value) {
+                                    case "login":
+                                        window.location.href = `/YadnarThike/04.Development/Customer/View/login.php`;
+                                        break;
+                                }
+                            });
+                    }
+
+                    else if (res = "success") {
+                        $('#review-text').val("");
+                        $("#rateYo").rateYo({
+                            normalFill: "#A0A0A0"
+                        });
+                        swal({
+                            title: "ပေးပို့မှု​အောင်မြင်ပါသည်။",
+                            text: "စာအုပ်​ဝေဖန်ချက်​ပေးပို့မှု​အောင်မြင်ပါသည်။",
+                            icon: "warning",
+                            button: { text: 'OK', className: 'commentBtn' },
+                        });
+                    }
+                    console.log(res);
+                },
+                error: function (err) {
+                    console.log(err);
+                },
+            });
+        }
+
+    });
+    sessionStorage.setItem('star', 0);
+})

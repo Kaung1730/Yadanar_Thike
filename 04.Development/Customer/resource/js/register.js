@@ -17,15 +17,15 @@ $(document).ready(function () {
                 $("#register").css("opacity", "1");
                 if (res == "duplicate") {
                     swal({
-                        title: "အ​ကောင့်ထပ်​နေပါသည်!",
-                        text: "User Name နှင့် Email မှာ အသုံးပြုပြီးသား ဖြစ်​နေပါသည်",
+                        title: "အ​ကောင့်ထပ်​နေပါသည်။!",
+                        text: "User Name နှင့် Email မှာ အသုံးပြုပြီးသား ဖြစ်​နေပါသည်။",
                         icon: "warning",
                         button: {text:'OK',className:'sweet-warning'},
                     });
                 } else if (res == "success") {
                     swal({
-                        title: "ဖန်တီးမှု ​အောင်မြင်ပါသည်!",
-                        text: "အ​ကောင့်အသစ် ဖန်တီးမှု ​အောင်မြင်ပါသည်",
+                        title: "ဖန်တီးမှု ​အောင်မြင်ပါသည်။!",
+                        text: "အ​ကောင့်အသစ် ဖန်တီးမှု ​အောင်မြင်ပါသည်။",
                         icon: "success",
                         button: "အ​ကောင့်၀င်ရန်",
                     }).then((value) => {
@@ -33,8 +33,8 @@ $(document).ready(function () {
                     });
                 } else if (res == "password") {
                     swal({
-                        title: "လျို့ဝှက် နံပါတ် မတူညီပါ!",
-                        text: "လျို့ဝှက်နံပါတ် နှင့် အတည်ပြု လျို့ဝှက် နံပါတ် မတူညီပါ",
+                        title: "လျို့ဝှက် နံပါတ် မတူညီပါ။!",
+                        text: "လျို့ဝှက်နံပါတ် နှင့် အတည်ပြု လျို့ဝှက် နံပါတ် မတူညီပါ။",
                         icon: "warning",
                         button: {text:'OK',className:'sweet-warning'},
                     });

@@ -45,13 +45,13 @@ require_once("../Model/DBConnection.php");
                 $sql = $dbConnect -> prepare("
                 INSERT INTO customer 
                 (customer_name,
-                 customer_phno,
-                  customer_email,
-                   customer_password,
-                    valid,
-                     del_flg,
-                     created_date,
-                      created_by)
+                customer_phno,
+                customer_email,
+                customer_password,
+                valid,
+                del_flg,
+                created_date,
+                created_by)
                 VALUES (
                 :username,
                 :phone,
