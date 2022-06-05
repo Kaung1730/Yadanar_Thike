@@ -50,7 +50,7 @@
                                 </tr>
                                 <?php
                                 $count = 1;
-                                foreach ($bookResult as $key=>$value) {
+                                foreach ($bookResult as $key => $value) {
                                     echo "<tr>";
                                     echo "<td class='text-start'>" . $count . "</td>";
                                     echo "<td class='text-center w-25'><img src='../resource/upload_img/" . $value['book_img'] . "'class='upload_img'/></td>";
@@ -66,6 +66,25 @@
                                 }
                                 ?>
                             </table>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination float-end me-5">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&#10094;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&#10095;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
                         </div>
                     </div>
                     <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>

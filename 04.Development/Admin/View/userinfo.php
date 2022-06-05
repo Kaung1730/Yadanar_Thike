@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <?php require "../Controller/userInfoController.php" ?>
     <div class="container-fluid">
         <form action="">
             <div class="row">
@@ -30,18 +31,50 @@
 
                     </div>
                     <div class="author_bar">
-                        <br />
-                        <br />
-                        <table class="table table-borderless-responsive-lg white_table tb-edit mx-5 mt-3">
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <table class="table table-striped white_table tb-edit">
                             <tr>
-                                <th>No</th>
-                                <th>User's Name</th>
-                                <th>Email</th>
-                                <th>Address</th>
-                                <th>Ph.No</th>
-                                <th>Valid</th>
+                                <th class="text-center">No</th>
+                                <th class="text-center">User's Name</th>
+                                <th class="text-center">Email</th>
+                                <!-- <th class="text-center">Address</th> -->
+                                <th class="text-center">Ph.No</th>
+                                <th class="text-center">Valid</th>
                             </tr>
+                            <?php
+                            $count = 1;
+                            foreach ($result as $key => $value) {
+                                echo "<tr>";
+                                echo "<td class='text-center'>" . $count . ".</td>";
+                                echo "<td class='text-center'>" . $value['customer_name'] . ".</td>";
+                                echo "<td class='text-center'>" . $value['customer_email'] . ".</td>";
+                                echo "<td class='text-center'>" . $value['customer_phno'] . ".</td>";
+                                echo "<td class='text-center'><input type='checkbox' name='' id=''></td>";
+                                echo "</tr>";
+                                $count++;
+                            }
+                            ?>
                         </table>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination float-end me-5">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&#10094;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&#10095;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
                     </div>
                     <div class="copyright mt-4 text-center mt-2">Copyright@2022YadanarThike All Rights Reserved.</div>
                 </div>
@@ -51,3 +84,4 @@
 </body>
 
 </html>
+
