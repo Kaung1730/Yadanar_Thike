@@ -19,9 +19,9 @@
 </head>
 
 <body>
-    <?php require "../Controller/bookListController.php" ?>
+    <?php require "../Controller/bookEditController.php" ?>
     <div class="container-fluid">
-        <form action="../Controller/bookAddController.php" method="POST" enctype="multipart/form-data">
+        <form action="../Controller/bookUpdateController.php" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-2 nav_box">
 
@@ -31,10 +31,11 @@
 
                     </div>
                     <div class="add_author">
-                        <div class="title_addauthor fs-5">Add Books</div>
+                        <div class="title_addauthor fs-5">Update Books</div>
                         <hr />
+                        <input type="hidden" class="box1 input-edit" name="book_id" value="<?php echo $result[0]['book_id']; ?>">
                         <label class="book_name fs-5" for="">Book Name:</label>
-                        <input type="text" class="box1 input-edit" name="book_name">
+                        <input type="text" class="box1 input-edit" name="book_name" value="<?php echo $result[0]['book_name']; ?>">
                         <label class="categories fs-5" for="">Categories:</label>
                         <!-- <input type="text" class="box1 input-edit" name="book_cate"> -->
                         <select name="book_cate" id="" class="box1 input-edit">
@@ -56,16 +57,16 @@
                         <div class="input-part ms-4 mt-2 slide-me">
                             <label for="book_img" class="form-label fs-5 text-start">Book Image:</label>
                             <div class="input-group mt-2 mb-3 input-width">
-                                <input type="file" class="form-control input-edit" id="book_img" name="book_img">
+                                <input type="file" class="form-control input-edit" id="book_img" name="book_img" value="<?php echo $result[0]['book_img']; ?>">
                                 <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
                             </div>
                         </div>
                         <label for="" class="book_price fs-5">Book Price:</label>
-                        <input type="text" class="box1 input-edit" name="book_price">
+                        <input type="text" class="box1 input-edit" name="book_price" value="<?php echo $result[0]['book_price']; ?>">
                         <label for="" class="book_des fs-5">Book Description:</label>
-                        <textarea type="text" class="box1 input-edit" name="book_desc"></textarea>
+                        <textarea type="text" class="box1 input-edit" name="book_desc" value="<?php echo $result[0]['book_desp']; ?>"></textarea>
                         <label for="" class="page_no fs-5">Page No:</label>
-                        <input type="text" class="box1 input-edit" name="book_pg">
+                        <input type="text" class="box1 input-edit" name="book_pg" value="<?php echo $result[0]['page_number']; ?>">
                         <div>
                             <label for="" class="size fs-5">Size</label>
                             <div class="d-flex ">
@@ -83,26 +84,26 @@
                                     <input type="text" class="box_lwh input-edit" name="width">
                                 </div>
                                 <div>
-                                    <label for="" class="height fs-5">Height:</label>
+                                    <label for="" class=" height fs-5">Height:</label>
                                     <!-- <select id="box_lwh" name="height" class="input-edit">
                                         </select> -->
                                     <input type="text" class="box_lwh input-edit" name="height">
                                 </div>
                             </div>
                         </div>
-                        <label for="" class="publisher fs-5">Publisher:</label>
-                        <!-- <input type="text" class="box1 input-edit" name="book_pub"> -->
-                        <select name="book_pub" id="" class="box1 input-edit">
-                            <?php
-                            echo "<option value=''></option>";
-                            ?>
-                        </select>
-                        <div>
-                            <button type="submit" name="submit" class="submit">Submit</button>
-                            <button type="reset" name="reset" class="reset">Reset</button>
-                        </div>
-                    </div>
-                    <div class="copyright text-center mt-2">Copyright@2022YadanarThike All Rights Reserved.</div>
+                        <label for="" class=" publisher fs-5">Publisher:</label>
+                                    <!-- <input type="text" class="box1 input-edit" name="book_pub"> -->
+                                    <select name="book_pub" id="" class="box1 input-edit">
+                                        <?php
+                                        echo "<option value=''></option>";
+                                        ?>
+                                    </select>
+                                    <div>
+                                        <button type="submit" name="submit" class="submit">Submit</button>
+                                        <button type="reset" name="reset" class="reset">Reset</button>
+                                    </div>
+                                </div>
+                                <div class="copyright text-center mt-2">Copyright@2022YadanarThike All Rights Reserved.</div>
         </form>
     </div>
 </body>

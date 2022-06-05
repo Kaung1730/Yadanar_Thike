@@ -1,4 +1,3 @@
-
 <?php
 require_once "../Model/dbConnection.php";
 // get data from author add
@@ -26,7 +25,7 @@ if (isset($_POST)) {
             author_life = :life,
             author_category = :category WHERE author_id = :id"
             );
-            $sql->bindValue(":image", $authorImage);
+            $sql->bindValue(":img", $authorImage);
             $sql->bindValue(":name", $authorName);
             $sql->bindValue(":description", $authorDescription);
             $sql->bindValue(":life", $authorBorn . "-" . $authorDie);
@@ -35,7 +34,25 @@ if (isset($_POST)) {
 
             $sql->execute();
 
-            require "../Controller/authorEditController.php";
+            // require "./authorEditController.php";
+
         }
+    } else {
+        $sql = $dbconnect->prepare(
+            "UPDATE author SET
+            author_name = :name,
+            author_about = :description,
+            author_life = :life,
+            author_category = :category WHERE author_id = :id"
+        );
+
+        $sql->bindValue(":name", $authorName);
+        $sql->bindValue(":description", $authorDescription);
+        $sql->bindValue(":life", $authorBorn . "-" . $authorDie);
+        $sql->bindValue(":category", $authorCategory);
+        $sql->bindValue(":id", $id);
+
+        $sql->execute();
     }
+    header("Location: ../View/authorList.php");
 }
