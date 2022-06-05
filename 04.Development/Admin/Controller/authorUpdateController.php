@@ -35,7 +35,7 @@ if (isset($_POST)) {
 
             $sql->execute();
 
-            require "../Controller/authorListController.php";
+            require "../Controller/authorEditController.php";
         }
     }
 }
