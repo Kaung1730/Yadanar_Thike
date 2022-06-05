@@ -35,9 +35,23 @@
                         <label class="book_name fs-5" for="">Book Name:</label>
                         <input type="text" class="box1 input-edit" name="book_name">
                         <label class="categories fs-5" for="">Categories:</label>
-                        <input type="text" class="box1 input-edit" name="book_cate">
+                        <!-- <input type="text" class="box1 input-edit" name="book_cate"> -->
+                        <select name="book_cate" id="" class="box1 input-edit">
+                            <?php
+                            foreach ($result as $key => $value) {
+                                echo "<option value='" . $value['book_id'] . "'>" . $value['category_id'] . "</option>";
+                            }
+                            ?>
+                        </select>
                         <label for="" class="author fs-5">Author:</label>
-                        <input type="text" class="box1 input-edit" name="book_author">
+                        <!-- <input type="text" class="box1 input-edit" name="book_author"> -->
+                        <select name="book_author" id="" class="box1 input-edit">
+                            <?php
+                            foreach ($result as $key => $value) {
+                                echo "<option value='" . $value['author_id'] . "'>" . $value['author_name'] . "</option>";
+                            }
+                            ?>
+                        </select>
                         <div class="input-part ms-4 mt-2 slide-me">
                             <label for="book_img" class="form-label fs-5 text-start">Book Image:</label>
                             <div class="input-group mt-2 mb-3 input-width">
@@ -76,7 +90,12 @@
                             </div>
                         </div>
                         <label for="" class="publisher fs-5">Publisher:</label>
-                        <input type="text" class="box1 input-edit" name="book_pub">
+                        <!-- <input type="text" class="box1 input-edit" name="book_pub"> -->
+                        <select name="book_pub" id="" class="box1 input-edit">
+                            <?php
+                            echo "<option value=''></option>";
+                            ?>
+                        </select>
                         <div>
                             <button type="submit" name="submit" class="submit">Submit</button>
                             <button type="reset" name="reset" class="reset">Reset</button>
