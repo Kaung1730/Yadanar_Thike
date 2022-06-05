@@ -1,3 +1,4 @@
+
 <?php
 require_once "../Model/dbConnection.php";
 // get data from author add
@@ -10,7 +11,7 @@ if (isset($_POST)) {
     $del_flg = 0;
     $authorImage = $_FILES['author_img']['name'];
     $location = $_FILES['author_img']['tmp_name'];
-    $id = $_POST['author_id'];
+    $id = $_POST['id'];
     // call db connection
     $db = new DBConnect();
     $dbconnect = $db->connect();
@@ -34,7 +35,7 @@ if (isset($_POST)) {
 
             $sql->execute();
 
-            require "../View/authorList.php";
+            require "../Controller/authorListController.php";
         }
     }
 }

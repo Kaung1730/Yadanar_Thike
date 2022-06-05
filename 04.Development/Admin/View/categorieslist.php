@@ -33,13 +33,27 @@
                         <button class="add_ncat mt-4 me-4"><a href="./addNewCategories.php" class="a-edit">Add New Categories</a></button>
                         <hr />
                         <div class="table_group">
-                            <table class="table table-borderless-responsive-lg white_table tb-edit">
+                            <table class="table table-striped white_table tb-edit">
                                 <tr>
-                                    <th>No</th>
-                                    <th>Categories Name</th>
-                                    <th>Book Counts</th>
-                                    <th>Action</th>
+                                    <th class="text-center">No</th>
+                                    <th class="text-center">Categories Name</th>
+                                    <th class="text-center">Book Counts</th>
+                                    <th class="text-center last" colspan="2">Action</th>
                                 </tr>
+                                <?php
+                                require "../Controller/categoryListController.php";
+                                $count = 1;
+                                foreach ($result as $key => $value) {
+                                    echo "<tr>";
+                                    echo "<td class='text-center'>" . $count . ".</td>";
+                                    echo "<td class='text-center'>" . $value['category_name']."</td>";
+                                    echo "<td class='text-center'></td>";
+                                    echo "<td class='text-center last'><a href='../View/categoryEdit.php?id=" . $value['category_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                    echo "<td class='text-center last'><a href='../Controller/categoryDeleteController.php?id=" . $value['category_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                                    echo "</tr>";
+                                    $count++;
+                                }
+                                ?>
                             </table>
                         </div>
                     </div>
