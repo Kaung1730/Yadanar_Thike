@@ -1,30 +1,35 @@
+<?php
+session_start();
+if (isset($_SESSION['status'])) {
+?>
 <div class="modal  fade ms-5 ms-lg-5 ms-md-0" id="cartPopUp" tabindex="-1" aria-labelledby="lg-cartPopUpLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content modal-parent">
             <div class="modal-header cart-header ps-lg-5">
-                <h5 class="modal-title ms-lg-4" id="lg-cartPopUpLabel">လူကြီးမင်း၏​စျေးခြင်း(1)</h5>
+                <h5 class="modal-title ms-lg-4" id="lg-cartPopUpLabel">လူကြီးမင်း၏​စျေးခြင်း( <span class="order-count">0</span>)</h5>
                 <button type="button" class="btn-close btn-close-dark me-lg-3" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body  fw-light">
                 <div class="row g-0">
                     <div class="col-lg-3">
-                        <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
+                        <img src="" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" id="imgCart"/>
                     </div>
                     <div class="col-lg-8">
                         <div class="row text-white">
                             <div class="col-12">
-                                <p class="book-title">ငြိတွယ်ခြင်းတို့ရဲ့အစခွင့်လွှတ်ရခြင်းတို့ရဲ့အဆုံး</p>
+                                <input type="hidden" name="book_id">
+                                <p class="book-title"></p>
                             </div>
                             <div class="col-6 col-md-12 col-lg-12">
-                                <span class="book-text">1</span>
+                                <span class="book-text book-qty"></span>
                                 <span class="book-text">x</span>
-                                <span class="book-text">4500 (ကျပ်)</span>
+                                <span class="book-text book-price">(ကျပ်)</span>
                             </div>
                             <div class="col-6 d-block d-md-none d-lg-none col-md-12 col-lg-12">
                                 <i class="bi bi-trash3 text-warning"></i>
                             </div>
                             <div class="col-12">
-                                <span class="book-text">= 4500 (ကျပ်)</span>
+                                <span class="book-text"><span>=</span> <span class="total-price"></span> (ကျပ်)</span>
                             </div>
                         </div>
                     </div>
@@ -43,3 +48,21 @@
         </div>
     </div>
 </div>
+<?php } else { ?>
+    <div class="modal fade" id="cartPopUp" tabindex="-1" aria-labelledby="lg-cartPopUpLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lg-cartPopUpLabel">အ​ကောင့်ဝင်ထားရန် လိုအပ်ပါသည်။</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-white">
+                    ခြင်းတောင်းထဲထည့်ရန်အတွက်  အ​ကောင့်ဝင်ထားရန် လိုအပ်ပါသည်။
+                </div>
+                <div class="modal-footer">
+                    <a href="http://localhost:81/YadnarThike/04.Development/Customer/View/login.php" class="btn text-decoration-none btnLink btn-primary commentBtn">အ​ကောင့်ဝင်မည်</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php } ?>

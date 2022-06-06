@@ -59,9 +59,6 @@ $(document).ready(function () {
 
                     else if (res = "success") {
                         $('#review-text').val("");
-                        $("#rateYo").rateYo({
-                            normalFill: "#A0A0A0"
-                        });
                         swal({
                             title: "ပေးပို့မှု​အောင်မြင်ပါသည်။",
                             text: "စာအုပ်​ဝေဖန်ချက်​ပေးပို့မှု​အောင်မြင်ပါသည်။",
