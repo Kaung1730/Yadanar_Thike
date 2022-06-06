@@ -98,20 +98,20 @@
 
             <!-- ယ မှ သ -->
             <div class="alphabetLine mt-4">
-                <a href="#alphabet26"><button class="alphabet firstWord me-4 ">ယ</button></a>
-                <a href="#alphabet27"><button class="alphabet me-4">ရ</button></a>
-                <a href="#alphabet28"><button class="alphabet me-4">လ</button></a>
-                <a href="#alphabet29"><button class="alphabet me-4">ဝ</button></a>
-                <a href="#alphabet30"><button class="alphabet me-4">သ</button></a>
+                <a href="#ယ"><button class="alphabet firstWord me-4 ">ယ</button></a>
+                <a href="#ရ"><button class="alphabet me-4">ရ</button></a>
+                <a href="#လ"><button class="alphabet me-4">လ</button></a>
+                <a href="#ဝ"><button class="alphabet me-4">ဝ</button></a>
+                <a href="#သ"><button class="alphabet me-4">သ</button></a>
             </div>
 
             <!-- ဟ မှ ဥ -->
             <div class="alphabetLine mt-4">
                 <button class="alphabet firstWord me-4 invisible"></button>
-                <a href="#alphabet31"><button class="alphabet me-4 ">ဟ</button></a>
+                <a href="#ဟ"><button class="alphabet me-4 ">ဟ</button></a>
                 <a href="#"><button class="alphabet me-4 bg-secondary text-light">ဠ</button></a>
-                <a href="#alphabet33"><button class="alphabet me-4">အ</button></a>
-                <a href="#alphabet34"><button class="alphabet me-4">ဥ</button></a>
+                <a href="#အ"><button class="alphabet me-4">အ</button></a>
+                <a href="#ဥ"><button class="alphabet me-4">ဥ</button></a>
 
             </div>
 
