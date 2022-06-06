@@ -43,7 +43,7 @@
                             <label for="question" class="form-label mt-2">Question</label>
                             <input type="text" id="question" class="form-control input-edit" name="question" value="<?php echo $result[0]['userguide_title'] ?>">
                             <label for="address" class="form-label mt-2">Answer</label>
-                            <textarea type="text" id="address" class="form-control input-edit" cols="30" rows="10" name="answer" value="<?php echo $result[0]['userguide_text'] ?>"></textarea>
+                            <textarea type="text" id="address" class="form-control input-edit" cols="30" rows="10" name="answer"><?php echo $result[0]['userguide_text'] ?></textarea>
                             <div class="buttonGp">
                                 <a href="guideList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
                                 <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Update</button>

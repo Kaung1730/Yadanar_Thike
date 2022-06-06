@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <?php require "../Controller/serviceListController.php" ?>
     <div class="container-fluid">
         <form action="">
             <div class="row">
@@ -38,13 +39,27 @@
                             <button type="button" class="btn btn-secondary mx-3 btn-2 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                         </div>
                         <table class="table table-striped white_table tb-edit mt-3">
-                            <tr class="table-secondary">
-                                <th class="text-start">No.</th>
+                            <tr>
+                                <th class="text-center">No.</th>
                                 <th class="text-center">Image</th>
                                 <th class="text-center">Question</th>
                                 <th class="text-center">Answer</th>
                                 <th class="text-center last" colspan="2">Action</th>
                             </tr>
+                            <?php 
+                                $count=1;
+                                foreach($result as $key=>$value){
+                                echo "<tr>";
+                                echo "<td class='text-center'>".$count.".</td>";
+                                echo "<td class='text-center w-25'><img src='../resource/upload_img/" . $value['icon'] . "'class='upload_img'></td>";
+                                echo "<td class='text-center'>" . $value['question'] . "</td>";
+                                echo "<td class='text-center'>" . $value['answer'] . "</td>";
+                                echo "<td class='text-center last'><a href='../View/serviceEdit.php?id=" . $value['service_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td class='text-center last'><a href='../Controller/serviceDeleteController.php?id=" . $value['service_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                                echo "</tr>";
+                                $count++;
+                                }
+                            ?>
                         </table>
                         <nav aria-label="Page navigation example">
                             <a href="serviceAdd.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-start">Add</button></a>

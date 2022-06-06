@@ -20,7 +20,7 @@
 
 <body>
     <div class="container-fluid">
-        <form action="../Controller/serviceAddController.php" method="POST" enctype="multipart/form-data">
+        <form action="../Controller/serviceUpdateController.php" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-2 nav_box">
 
@@ -38,18 +38,20 @@
                             <button type="button" class="btn btn-secondary mx-3 btn-2 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                         </div>
                         <div class="input-part ms-5">
+                            <?php require "../Controller/serviceEditController.php" ?>
+                            <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['service_id'] ?>">
                             <label for="question" class="form-label mt-2">Icon</label>
                             <div class="input-group mb-3 input-width">
-                                <input type="file" class="form-control input-edit" id="inputGroupFile02" name="icon">
+                                <input type="file" class="form-control input-edit" id="inputGroupFile02" name="icon" value="<?php echo $result[0]['icon'] ?>">
                                 <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
                             </div>
                             <label for="question" class="form-label mt-2">Question</label>
-                            <input type="text" id="question" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="question">
+                            <input type="text" id="question" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="question" value="<?php echo $result[0]['question'] ?>">
                             <label for="address" class="form-label mt-2">Answer</label>
-                            <textarea type="text" id="address" class="form-control input-edit" aria-describedby="passwordHelpBlock" cols="30" rows="10" name="answer"></textarea>
+                            <textarea type="text" id="address" class="form-control input-edit" aria-describedby="passwordHelpBlock" cols="30" rows="10" name="answer"><?php echo $result[0]['answer'] ?></textarea>
                             <div class="buttonGp">
                                 <a href="serviceList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
-                                <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Submit</button>
+                                <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Update</button>
                             </div>
                         </div>
                     </div>
