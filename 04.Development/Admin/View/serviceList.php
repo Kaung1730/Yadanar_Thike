@@ -46,11 +46,11 @@
                                 <th class="text-center">Answer</th>
                                 <th class="text-center last" colspan="2">Action</th>
                             </tr>
-                            <?php 
-                                $count=1;
-                                foreach($result as $key=>$value){
+                            <?php
+                            $count = 1;
+                            foreach ($result as $key => $value) {
                                 echo "<tr>";
-                                echo "<td class='text-center'>".$count.".</td>";
+                                echo "<td class='text-center'>" . $count . ".</td>";
                                 echo "<td class='text-center w-25'><img src='../resource/upload_img/" . $value['icon'] . "'class='upload_img'></td>";
                                 echo "<td class='text-center'>" . $value['question'] . "</td>";
                                 echo "<td class='text-center'>" . $value['answer'] . "</td>";
@@ -58,7 +58,7 @@
                                 echo "<td class='text-center last'><a href='../Controller/serviceDeleteController.php?id=" . $value['service_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                                 echo "</tr>";
                                 $count++;
-                                }
+                            }
                             ?>
                         </table>
                         <nav aria-label="Page navigation example">
@@ -79,6 +79,8 @@
                                 </li>
                             </ul>
                         </nav>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
                     </div>
                     <div class="copyright mt-2 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                 </div>

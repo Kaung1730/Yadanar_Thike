@@ -36,126 +36,12 @@
                             <button type="button" class="btn btn-secondary mx-5 btn-3 btn-me"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
                         </div>
                         <div class="input-part">
-                            <table class="table table-borderless tb-edit mx-5 mt-3">
-                                <tr class="table-secondary">
-                                    <th class="text-center begin">No.</th>
+                            <table class="table table-striped white_table tb-edit mt-3">
+                                <tr>
+                                    <th class="text-center">No.</th>
                                     <th class="text-center">Admin Name</th>
                                     <th class="text-center">Role</th>
                                     <th class="text-center last" colspan="2">Action</th>
-                                </tr>
-                                <tr class="table-light">
-                                    <td class="text-center begin">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center last">
-                                        <a href="">
-                                            <button type="button" class="btn btn-outline-info">
-                                                <ion-icon name="create-outline"></ion-icon>
-                                            </button>
-                                        </a>
-                                    </td>
-                                    <td class="text-center last">
-                                        <a href="">
-                                            <button type="button" class="btn btn-outline-danger">
-                                                <ion-icon name="trash-outline"></ion-icon>
-                                            </button>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr class="table-secondary">
-                                    <td class="text-center begin">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center last">
-                                        <a href="">
-                                            <button type="button" class="btn btn-outline-info">
-                                                <ion-icon name="create-outline"></ion-icon>
-                                            </button>
-                                        </a>
-                                    </td>
-                                    <td class="text-center last">
-                                        <a href="">
-                                            <button type="button" class="btn btn-outline-danger">
-                                                <ion-icon name="trash-outline"></ion-icon>
-                                            </button>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr class="table-light">
-                                    <td class="text-center begin">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center last">
-                                        <a href="">
-                                            <button type="button" class="btn btn-outline-info">
-                                                <ion-icon name="create-outline"></ion-icon>
-                                            </button>
-                                        </a>
-                                    </td>
-                                    <td class="text-center last">
-                                        <a href="">
-                                            <button type="button" class="btn btn-outline-danger">
-                                                <ion-icon name="trash-outline"></ion-icon>
-                                            </button>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr class="table-secondary">
-                                    <td class="text-center begin">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center last">
-                                        <a href="">
-                                            <button type="button" class="btn btn-outline-info">
-                                                <ion-icon name="create-outline"></ion-icon>
-                                            </button>
-                                        </a>
-                                    </td>
-                                    <td class="text-center last">
-                                        <a href="">
-                                            <button type="button" class="btn btn-outline-danger">
-                                                <ion-icon name="trash-outline"></ion-icon>
-                                            </button>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr class="table-light">
-                                    <td class="text-center begin">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center last">
-                                        <a href="">
-                                            <button type="button" class="btn btn-outline-info">
-                                                <ion-icon name="create-outline"></ion-icon>
-                                            </button>
-                                        </a>
-                                    </td>
-                                    <td class="text-center last">
-                                        <a href="">
-                                            <button type="button" class="btn btn-outline-danger">
-                                                <ion-icon name="trash-outline"></ion-icon>
-                                            </button>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr class="table-secondary">
-                                    <td class="text-center begin">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center last">
-                                        <a href="">
-                                            <button type="button" class="btn btn-outline-info">
-                                                <ion-icon name="create-outline"></ion-icon>
-                                            </button>
-                                        </a>
-                                    </td>
-                                    <td class="text-center last">
-                                        <a href="">
-                                            <button type="button" class="btn btn-outline-danger">
-                                                <ion-icon name="trash-outline"></ion-icon>
-                                            </button>
-                                        </a>
-                                    </td>
                                 </tr>
                             </table>
                             <nav aria-label="Page navigation example">
@@ -176,6 +62,8 @@
                                     </li>
                                 </ul>
                             </nav>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
                         </div>
                     </div>
                     <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>

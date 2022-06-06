@@ -35,14 +35,14 @@
                         </div>
                         <hr />
                         <br>
-                        <table class="table table-borderless-responsive-lg white_table tb-edit mx-5 mt-3">
+                        <table class="table table-striped white_table tb-edit mt-3">
                             <tr>
-                                <th>No</th>
-                                <th>Date</th>
-                                <th>Book Name</th>
-                                <th>Book Author</th>
-                                <th>Location</th>
-                                <th>Book Price</th>
+                                <th class="text-center">No</th>
+                                <th class="text-center">Date</th>
+                                <th class="text-center">Book Name</th>
+                                <th class="text-center">Book Author</th>
+                                <th class="text-center">Location</th>
+                                <th class="text-center">Book Price</th>
                             </tr>
                         </table>
                     </div>

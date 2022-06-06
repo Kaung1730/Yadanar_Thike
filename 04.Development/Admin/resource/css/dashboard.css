@@ -100,8 +100,7 @@ hr{
     background-color: var(--boxColor);
 }
 .order_box{
-    height: 70vh;
-    padding-left: 2%;
+    height: auto;
     border-radius: 12px;
     background-color: var(--boxColor);
 }

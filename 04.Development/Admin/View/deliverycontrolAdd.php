@@ -39,21 +39,25 @@
                         </div>
                         <div class="input-part ms-5">
                             <label for="state" class="form-label mt-5">State</label>
-                            <div class="input-group inputgp mt-3 input-width">
+                            <input type="text" id="state" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="state">
+                            <!-- <div class="input-group inputgp mt-3 input-width">
                                 <select class="form-select input-edit" id="inputGroupSelect04" aria-label="Example select with button addon">
                                     <option value="1">Yangon</option>
                                     <option value="2">Ayeyarwaday</option>
                                     <option value="3">Mandalay</option>
                                 </select>
-                            </div>
+                            </div> -->
                             <label for="township" class="form-label mt-5">Township</label>
-                            <div class="input-group inputgp mt-3 input-width">
+                            <input type="text" id="township" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="township">
+                            <!-- <div class="input-group inputgp mt-3 input-width">
                                 <select class="form-select input-edit" id="inputGroupSelect04" aria-label="Example select with button addon">
                                     <option value="1">Lanmataw</option>
                                     <option value="2">Kyimyittime</option>
                                     <option value="3">South Okalar</option>
                                 </select>
-                            </div>
+                            </div> -->
+                            <label for="fee" class="form-label mt-5">Delivery Fee</label>
+                            <input type="text" id="fee" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="fee">
                             <div class="buttonGp mt-5">
                                 <a href="deliverycontrolList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
                                 <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Submit</button>

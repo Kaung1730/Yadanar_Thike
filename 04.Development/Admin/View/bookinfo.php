@@ -55,8 +55,8 @@
                                     echo "<td class='text-start'>" . $count . "</td>";
                                     echo "<td class='text-center w-25'><img src='../resource/upload_img/" . $value['book_img'] . "'class='upload_img'/></td>";
                                     echo "<td class='text-center'>" . $value['book_name'] . "</td>";
-                                    echo "<td class='text-center'>" . $value['category_id'] . "</td>";
-                                    echo "<td class='text-center'>" . $value['author_id'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['category_name'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['author_name'] . "</td>";
                                     echo "<td class='text-center'>" . $value['book_desp'] . "</td>";
                                     echo "<td class='text-center'>" . $value['book_price'] . "</td>";
                                     echo "<td class='text-center last'><a href='../View/bookEdit.php?id=" . $value['book_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";

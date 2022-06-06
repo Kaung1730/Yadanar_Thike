@@ -39,9 +39,10 @@
                         </div>
                         <table class="table table-striped white_table tb-edit mt-3">
                             <tr>
-                                <th class="text-start">No.</th>
+                                <th class="text-center">No.</th>
                                 <th class="text-center">State</th>
                                 <th class="text-center">Township</th>
+                                <th class="text-center">Delivery Fee</th>
                                 <th class="text-center last" colspan="2">Action</th>
                             </tr>
                         </table>
@@ -63,6 +64,8 @@
                                 </li>
                             </ul>
                         </nav>
+                        <p>&nbsp;</p>
+                        <!-- <p>&nbsp;</p> -->
                     </div>
                     <div class="copyright mt-2 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                 </div>

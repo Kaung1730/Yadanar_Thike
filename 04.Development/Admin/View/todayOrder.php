@@ -68,7 +68,7 @@
                             <a href="./todayOrder.php" class="m-3 fs-4">Today Order</a>
                         </div>
                         <div>
-                            <table class="table table-borderless-responsive-lg white_table tb-edit mx-5 mt-3">
+                            <table class="table table-striped white_table tb-edit mt-3">
                                 <tr>
                                     <th class="text-center">Username</th>
                                     <th class="text-center">Date</th>
@@ -76,53 +76,15 @@
                                     <th class="text-center">Price</th>
                                     <th class="text-center">Status</th>
                                 </tr>
-                                <tr class="table-light">
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-secondary">
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-light">
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-secondary">
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-light">
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-secondary">
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
                             </table>
                             <a href="faqAdd.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-end">See more</button></a>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
                         </div>
                     </div>
                     <div class="copyright text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
+                </div>
+            </div>
         </form>
     </div>
 </body>
