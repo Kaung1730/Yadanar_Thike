@@ -47,9 +47,9 @@
                             foreach ($result as $key => $value) {
                                 echo "<tr>";
                                 echo "<td class='text-center'>" . $count . ".</td>";
-                                echo "<td class='text-center'>" . $value['customer_name'] . ".</td>";
-                                echo "<td class='text-center'>" . $value['customer_email'] . ".</td>";
-                                echo "<td class='text-center'>" . $value['customer_phno'] . ".</td>";
+                                echo "<td class='text-center'>" . $value['customer_name'] . "</td>";
+                                echo "<td class='text-center'>" . $value['customer_email'] . "</td>";
+                                echo "<td class='text-center'>" . $value['customer_phno'] . "</td>";
                                 echo "<td class='text-center'><input type='checkbox' name='' id=''></td>";
                                 echo "</tr>";
                                 $count++;

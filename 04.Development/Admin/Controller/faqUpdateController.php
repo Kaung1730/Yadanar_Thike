@@ -1,7 +1,7 @@
 <?php
 require_once "../Model/dbConnection.php";
 
-if (isset($_POST)){
+if (isset($_POST)) {
     $question = $_POST['question'];
     $answer = $_POST['answer'];
     $id = $_POST['id'];
@@ -10,15 +10,15 @@ if (isset($_POST)){
     $db = new DBConnect();
     $dbconnect = $db->connect();
     $sql = $dbconnect->prepare(
-        "UPDATE user_guide SET 
-        userguide_title = :ques,
-        userguide_text = :ans
-        WHERE userguide_id = :id"
+        "UPDATE faq SET 
+        question = :ques,
+        answer = :ans
+        WHERE faq_id = :id"
     );
     $sql->bindValue(":ques", $question);
     $sql->bindValue(":ans", $answer);
     $sql->bindValue(":id", $id);
     $sql->execute();
 
-    require "../Controller/guideEditController.php";
+    require "../Controller/faqEditController.php";
 }

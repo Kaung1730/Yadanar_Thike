@@ -157,6 +157,7 @@ hr{
 .tb-edit{
     width: 100%;
     margin-bottom: 10px !important;
+    background-color: white !important;
 }
 .begin{
     width: 5vw;

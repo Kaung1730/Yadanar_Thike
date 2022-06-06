@@ -34,5 +34,5 @@ if (isset($_POST)) {
     $sql->bindValue(":created_by", "myat kaung khant");
     $sql->execute();
 
-    // header("Location: ../View/categoriesList.php");
+    header("Location: ../View/faqList.php");
 }
