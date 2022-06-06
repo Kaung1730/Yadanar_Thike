@@ -55,7 +55,7 @@
                                 </select>
                             </div>
                             <div class="buttonGp mt-5">
-                                <a href="privacyPolicyList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
+                                <a href="deliverycontrolList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
                                 <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Submit</button>
                             </div>
                         </div>

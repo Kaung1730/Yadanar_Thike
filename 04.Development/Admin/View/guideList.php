@@ -20,6 +20,7 @@
 
 <body>
     <div class="container-fluid">
+        <?php require "../Controller/guideListController.php" ?>
         <form action="">
             <div class="row">
                 <div class="col-2 nav_box">
@@ -38,12 +39,25 @@
                             <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                         </div>
                         <table class="table table-striped white_table tb-edit mt-3">
-                            <tr class="table-secondary">
-                                <th class="text-start">No.</th>
+                            <tr>
+                                <th class="text-center">No.</th>
                                 <th class="text-center">Question</th>
                                 <th class="text-center">Answer</th>
                                 <th class="text-center last" colspan="2">Action</th>
                             </tr>
+                            <?php
+                            $count = 1;
+                            foreach ($result as $key => $value) {
+                                echo "<tr>";
+                                echo "<td class='text-center'>" . $count . ".</td>";
+                                echo "<td class='text-center'>" . $value['userguide_title'] . "</td>";
+                                echo "<td class='text-center'>" . $value['userguide_text'] . "</td>";
+                                echo "<td class='text-center last'><a href='../View/guideEdit.php?id=" . $value['userguide_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td class='text-center last'><a href='../Controller/guideDeleteController.php?id=" . $value['userguide_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                                echo "</tr>";
+                                $count++;
+                            }
+                            ?>
                         </table>
 
                         <nav aria-label="Page navigation example">

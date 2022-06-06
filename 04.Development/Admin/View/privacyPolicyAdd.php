@@ -20,7 +20,7 @@
 
 <body>
     <div class="container-fluid">
-        <form action="../Controller/privacyAddController.php">
+        <form action="../Controller/privacyAddController.php" method="POST">
             <div class="row">
                 <div class="col-2 nav_box">
 

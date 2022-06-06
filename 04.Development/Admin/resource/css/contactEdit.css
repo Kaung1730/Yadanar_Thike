@@ -70,7 +70,14 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: auto;
 }
+/* .author_bar{
+    height: auto;
+    background-color: var(--boxColor);
+    margin-top: 4vh;
+    border-radius: 12px;
+} */
 .btn{
     display: flex;
     justify-content: center;

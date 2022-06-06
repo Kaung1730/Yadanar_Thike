@@ -20,7 +20,7 @@
 
 <body>
     <div class="container-fluid">
-        <form action="">
+        <form action="../Controller//faqAddController.php" method="POST">
             <div class="row">
                 <div class="col-2 nav_box">
 
@@ -43,7 +43,7 @@
                             <label for="address" class="form-label mt-2">Answer</label>
                             <textarea type="text" id="address" class="form-control input-edit" aria-describedby="passwordHelpBlock" cols="30" rows="10" name="answer"></textarea>
                             <div class="buttonGp">
-                                <a href="privacyPolicyList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
+                                <a href="faqList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
                                 <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Submit</button>
                             </div>
                         </div>

@@ -10,10 +10,10 @@ if (isset($_POST)) {
     $db = new DBConnect();
     $dbconnect = $db->connect();
     $sql = $dbconnect->prepare(
-        "INSERT INTO user_guide
+        "INSERT INTO faq
             (
-                userguide_title,
-                userguide_text,
+                question,
+                answer,
                 del_flg,
                 created_date,
                 created_by
@@ -34,5 +34,5 @@ if (isset($_POST)) {
     $sql->bindValue(":created_by", "myat kaung khant");
     $sql->execute();
 
-    header("Location: ../View/guideList.php");
+    // header("Location: ../View/categoriesList.php");
 }
