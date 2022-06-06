@@ -19,28 +19,12 @@
 
 
 /* <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် --> */
-.BookForToday {
-    background-color: var(--light-yellow);
+.BookForToday  {
+    margin-top: 5vh;
+    /* margin-left: 10vw; */
+    width: 100vw;
 }
 
-.BookForToday h4 {
-    padding-top: 5vh;
-    margin: 10vh 0vw 7vh 32vw;
-
-}
-
-.forToday .forTodayRightSide p {
-    width: 13vw;
-
-}
-
-.forToday .forTodayLeftSide img {
-    margin-left: 7vw;
-}
-
-.forToday .forTodayLeftSide p {
-    margin: 0vh 0vw 4vh 10vw;
-}
 
 /* <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ်  end--> */
 
@@ -393,12 +377,12 @@
 
     /* <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် --> */
 
-    .BookForToday h4 {
-        margin-left: 17vw;
-    }
+    /* .BookForToday  {
+        margin-top: 4vh;
+    } */
 
 
-    .forToday .forTodayLeftSide img {
+    /* .forToday .forTodayLeftSide img {
         margin-left: 14vw;
     }
 
@@ -411,7 +395,7 @@
         width: 30vw;
         margin-left: 25vw;
 
-    }
+    } */
 
     /* advertisement */
     .advertise .advertise-wrapper {

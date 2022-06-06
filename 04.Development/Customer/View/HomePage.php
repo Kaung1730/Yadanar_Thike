@@ -129,9 +129,9 @@
             <!-- အသစ်ထွက်ရှိသော စာအုပ်များ End -->
 
             <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် -->
-            <div class="BookForToday">
-
-                <h4 class=""> ယနေ့အတွက် ရည်ညွှန်းစာအုပ်</h4>
+            <div class="">
+            <img src="../resource/image/BookForToday1.png" alt="" class="BookForToday img-fluid ">
+                <!-- <h4 class=""> ယနေ့အတွက် ရည်ညွှန်းစာအုပ်</h4>
 
 
                 <div class="forToday row">
@@ -150,7 +150,7 @@
                             သစ္စာကြွင်းစေ ။
                             မြတ်နိုးခြင်း ကြွင်းစေ။ </p>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် end -->
 
