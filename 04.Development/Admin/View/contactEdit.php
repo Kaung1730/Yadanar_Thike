@@ -20,7 +20,7 @@
 
 <body>
     <div class="container-fluid">
-        <form action="">
+        <form action="../Controller/contactEditAddController.php" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-2 nav_box">
 
@@ -39,23 +39,23 @@
                         </div>
                         <div class="input-part ms-5">
                             <label for="phone" class="form-label mt-2">Phone Number:</label>
-                            <input type="password" id="phone" class="form-control input-edit" aria-describedby="passwordHelpBlock">
+                            <input type="password" id="phone" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="phone">
                             <label for="address" class="form-label mt-2">Address</label>
-                            <input type="password" id="address" class="form-control input-edit" aria-describedby="passwordHelpBlock">
+                            <input type="password" id="address" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="address">
                             <label for="email" class="form-label mt-2">Email</label>
-                            <input type="password" id="email" class="form-control input-edit" aria-describedby="passwordHelpBlock">
+                            <input type="password" id="email" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="email">
                             <label for="welcome" class="form-label mt-2">Welcome Text</label>
-                            <input type="password" id="welcome" class="form-control input-edit" aria-describedby="passwordHelpBlock">
+                            <input type="password" id="welcome" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="weltxt">
                             <label for="available" class="form-label mt-2">Available Time</label>
-                            <input type="password" id="available" class="form-control input-edit" aria-describedby="passwordHelpBlock">
+                            <input type="password" id="available" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="avaTime">
                             <label for="slide_1" class="form-label mt-2">Slide 1</label>
                             <div class="input-group mb-3 input-width">
-                                <input type="file" class="form-control input-edit" id="slide_1">
+                                <input type="file" class="form-control input-edit" id="slide_1" name="sl_1">
                                 <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
                             </div>
                             <label for="slide_2" class="form-label mt-2">Slide 2</label>
                             <div class="input-group mb-3 input-width">
-                                <input type="file" class="form-control input-edit" id="inputGroupFile02">
+                                <input type="file" class="form-control input-edit" id="inputGroupFile02" name="sl_2">
                                 <label class="input-group-text input-btn" for="slide_2">Browse</label>
                             </div>
                             <button type="submit" class="btn btn-info mt-2 mb-2 btn-4 btn-cen">Submit</button>
