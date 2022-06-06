@@ -28,6 +28,7 @@
 }
 .authorBio h2, .authorBio h5{
     text-align: center;
+    /* margin-left: 12vw; */
 }
 
 .image {

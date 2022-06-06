@@ -54,46 +54,46 @@
             <!-- က မှ င -->
 
             <div class="alphabetLine mt-4">
-                <a href="#alphabet1"><button class="alphabet firstWord me-4 ">က</button></a>
-                <a href="#alphabet2"><button class="alphabet me-4">ခ</button></a>
-                <a href="#alphabet3"><button class="alphabet me-4">ဂ</button></a>
+                <a href="#က"><button class="alphabet firstWord me-4 ">က</button></a>
+                <a href="#ခ"><button class="alphabet me-4">ခ</button></a>
+                <a href="#ဂ"><button class="alphabet me-4">ဂ</button></a>
                 <a href="#"><button class="alphabet me-4 bg-secondary text-light">ဃ</button></a>
-                <a href="#alphabet5"><button class="alphabet me-4">င</button></a>
+                <a href="#င"><button class="alphabet me-4">င</button></a>
             </div>
             <!-- စ မှ ည -->
             <div class="alphabetLine mt-4">
-                <a href="#alphabet6"><button class="alphabet firstWord me-4 ">စ</button></a>
-                <a href="#alphabet7"><button class="alphabet me-4">ဆ</button></a>
+                <a href="#စ"><button class="alphabet firstWord me-4 ">စ</button></a>
+                <a href="#ဆ"><button class="alphabet me-4">ဆ</button></a>
                 <a href="#alphabet8"><button class="alphabet me-4">ဇ</button></a>
                 <a href="#"><button class="alphabet me-4 bg-secondary text-light">ဈ</button></a>
-                <a href="#alphabet10"><button class="alphabet me-4">ည</button></a>
+                <a href="#ည"><button class="alphabet me-4">ည</button></a>
             </div>
 
             <!-- ဋ မှ ဏ -->
             <div class="alphabetLine mt-4">
-                <a href="#alphabet11"><button class="alphabet firstWord me-4  bg-secondary text-light">ဋ</button></a>
-                <a href="#alphabet12"><button class="alphabet me-4 bg-secondary text-light">ဌ</button></a>
-                <a href="#alphabet13"><button class="alphabet me-4 bg-secondary text-light">ဍ</button></a>
-                <a href="#alphabet14"><button class="alphabet me-4 bg-secondary text-light">ဎ</button></a>
-                <a href="#alphabet15"><button class="alphabet me-4 bg-secondary text-light">ဏ</button></a>
+                <a href="#"><button class="alphabet firstWord me-4  bg-secondary text-light">ဋ</button></a>
+                <a href="#"><button class="alphabet me-4 bg-secondary text-light">ဌ</button></a>
+                <a href="#"><button class="alphabet me-4 bg-secondary text-light">ဍ</button></a>
+                <a href="#"><button class="alphabet me-4 bg-secondary text-light">ဎ</button></a>
+                <a href="#"><button class="alphabet me-4 bg-secondary text-light">ဏ</button></a>
             </div>
 
             <!-- တ မှ န -->
             <div class="alphabetLine mt-4">
-                <a href="#alphabet16"><button class="alphabet firstWord me-4 ">တ</button></a>
-                <a href="#alphabet17"><button class="alphabet me-4">ထ</button></a>
-                <a href="#alphabet18"><button class="alphabet me-4">ဒ</button></a>
-                <a href="#alphabet19"><button class="alphabet me-4">ဓ</button></a>
-                <a href="#alphabet20"><button class="alphabet me-4">န</button></a>
+                <a href="#တ"><button class="alphabet firstWord me-4 ">တ</button></a>
+                <a href="#ထ"><button class="alphabet me-4">ထ</button></a>
+                <a href="#ဒ"><button class="alphabet me-4">ဒ</button></a>
+                <a href="#ဓ"><button class="alphabet me-4">ဓ</button></a>
+                <a href="#န"><button class="alphabet me-4">န</button></a>
             </div>
 
             <!--ပ  မှ မ -->
             <div class="alphabetLine mt-4">
-                <a href="#alphabet21"><button class="alphabet firstWord me-4 ">ပ</button></a>
-                <a href="#alphabet22"><button class="alphabet me-4">ဖ</button></a>
-                <a href="#alphabet23"><button class="alphabet me-4">ဗ</button></a>
-                <a href="#alphabet24"><button class="alphabet me-4">ဘ</button></a>
-                <a href="#alphabet25"><button class="alphabet me-4">မ</button></a>
+                <a href="#ပ"><button class="alphabet firstWord me-4 ">ပ</button></a>
+                <a href="#ဖ"><button class="alphabet me-4">ဖ</button></a>
+                <a href="#ဗ"><button class="alphabet me-4">ဗ</button></a>
+                <a href="#ဘ"><button class="alphabet me-4">ဘ</button></a>
+                <a href="#မ"><button class="alphabet me-4">မ</button></a>
             </div>
 
             <!-- ယ မှ သ -->
@@ -121,16 +121,17 @@
             // $count = 1;
             require "../Controller/authorListController.php";
             for ($i = 0; $i < count($result); $i++) {
-
+                
                 echo "<div class='box'>";
-                echo " <div class='alphabetList' id='alphabet1'>" . $result[$i]['author_category'] . "</div>";
+                echo " <a name='". $result[$i]['author_category']."'> <div class='alphabetList' id='alphabet1'>" . $result[$i]['author_category'] . "</div> </a>";
                 echo " <div class='authorsList'>";
                 echo " <ul class='authorListLength'>";
                
-                echo  " <li> <a href= '../View/authorProfile.php?id=".$result[$i]['id'] ."'>". $result[$i]['author_name'] .  "</a> </li>";
+                echo  " <li > <a href= '../View/authorProfile.php?id=".$result[$i]['id'] ."' class='authorListLink' >". $result[$i]['author_name'] .  "</a> </li>";
                 echo "</ul>";
                 echo "</div>";
                 echo "</div>";
+
             }
             // print_r($result);
             ?>
@@ -520,11 +521,11 @@
         </div>
     </div>
     <!-- FOOTER -->
-    <!-- <div class="footer ">
+    <div class="footer ">
         <div class="ps-2">@YadanarThike 2022</div>
         <div class="copyright">&#169;
             YadanarThike Company2022. All Rights Reserved.</div>
-    </div> -->
+    </div>
 </body>
 
 </html>
