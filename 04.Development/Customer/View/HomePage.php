@@ -105,52 +105,12 @@
             echo "</div>";
             ?>
 
-            <!-- <div class="homeslider slicker mt-5 d-flex justify-content-center">
-                <div class="slide  d-flex justify-content-center">
-                    <img src="../resource/image/arrival.png" alt="">
-                </div>
-                <div class="slide d-flex justify-content-center">
-                    <img src="../resource/image/arrival2.png" alt="">
-                </div>
-                <div class="slide d-flex justify-content-center">
-                    <img src="../resource/image/arrival3.png" alt="">
-                </div>
-                <div class="slide d-flex justify-content-center">
-                    <img src="../resource/image/arrival4.png" alt="">
-                </div>
-                <div class="slide d-flex justify-content-center">
-                    <img src="../resource/image/arrival5.png" alt="">
-                </div>
-                <div class="slide d-flex justify-content-center">
-                    <img src="../resource/image/arrival6.png" alt="">
-                </div>
-            </div> -->
-
             <!-- အသစ်ထွက်ရှိသော စာအုပ်များ End -->
 
             <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် -->
             <div class="">
-            <img src="../resource/image/BookForToday1.png" alt="" class="BookForToday img-fluid ">
-                <!-- <h4 class=""> ယနေ့အတွက် ရည်ညွှန်းစာအုပ်</h4>
-
-
-                <div class="forToday row">
-                    <div class="forTodayLeftSide col-md-7">
-                        <img src="../resource/image/forToday.webp" alt="" class="">
-                        <p class="">ချစ်ခြင်းအားဖြင့် ကဗျာနှင့်စာ</p>
-                    </div>
-                    <div class="forTodayRightSide col-md-3">
-                        <p class="lh-lg">
-                            အသက်သည် အိပ်မက်
-                            အိပ်မက်သည် သူ
-                            သူသည် အသက်ဖြစ်စေ
-                            ဆောင်းနှောင်းလျှင် နွေဦး၏
-                            နွေဦး၌ နှင်းကြွင်းသည် ။
-                            နှင်းကြွင်းပြယ်သော်လည်း
-                            သစ္စာကြွင်းစေ ။
-                            မြတ်နိုးခြင်း ကြွင်းစေ။ </p>
-                    </div>
-                </div> -->
+            <img src="../resource/image/bookForToday1.png" alt="" class="BookForToday img-fluid ">
+               
             </div>
             <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် end -->
 
