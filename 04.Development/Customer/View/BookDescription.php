@@ -22,16 +22,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!--Bootstrap Icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!--Sweet Alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--JS-->
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/nav.js"></script>
-    <script src="../resource/js/calc.js"></script>
     <script src="../resource/js/comment.js"></script>
+    <script src="../resource/js/addToCart.js"></script>
+    <script src="../resource/js/calc.js"></script>
     <!--star rating-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
-    <!--Sweet Alert-->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -49,7 +50,7 @@
     require "../Controller/showCommentController.php";
     $_SESSION['book_id'] = $result[0]['book_id'];?>
         
-    <input type="hidden" name="book_id" value ="<?php echo $result[0]['book_id']?>">
+    <input type="hidden" name="book_id" value ="<?php echo $result[0]['book_id']?>" id="bookDespValue">
     <div class="container-fluid px-0  mt-5">
         <!--Start of the book des-->
         <div class="container">
@@ -67,7 +68,7 @@
                         <div class="my-1 book-d-text"> <span>စာအုပ်အရွယ်အစား -</span> <?php echo $result[0]['size']; ?></div>
                         <div class="my-1 book-d-text"> <span>ပုံနှိပ်မှတ်တမ်း -</span> <?php echo $result[0]['publisher_name']; ?></div>
                         <div class="OrderBtnContainer  d-flex d-lg-block d-md-block justify-content-center">
-                            <a class="ms-lg-5 ms-md-3 me-4  my-3 px-4 py-2 btn book-d-text order-btn" data-bs-toggle="modal" href="#order">အမှာတင်မည်</a>
+                            <a class="ms-lg-5 ms-md-3 me-4  my-3 px-4 py-2 btn book-d-text order-btn" data-bs-toggle="modal" href="#order" id="order-btn">အမှာတင်မည်</a>
                         </div>
                     </div>
                     <div class="col-4 d-none d-md-block d-lg-block d-xl-block"></div>
@@ -123,7 +124,7 @@
                             }?>
                         </div>
                         <div class="stock-number fs-6 my-3">
-                            လက်ကျန်စာအုပ်​ရေ -<span> <?php echo $result[0]['stock_number']; ?> </span> အုပ်</div>
+                            လက်ကျန်စာအုပ်​ရေ -<span id="stockNumber"> <?php echo $result[0]['stock_number']; ?> </span> အုပ်</div>
                         <div class="des-text book-d-text lh-lg">
                             <?php echo $result[0]['book_desp']; ?>
                         </div>
@@ -136,7 +137,7 @@
                                 </div>
                         </div>
                         <div>
-                            <a href="#cartPopUp" class="text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal">
+                            <a href="#cartPopUp" class="text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal" id="addToCart">
                             ခြင်းတောင်းထဲထည့်ရန်
                             </a>
                         </div>
@@ -236,58 +237,27 @@
                     <span class="book">စာအုပ်များ</span>
                 </div>
                 <div class="text-center book-box d-flex flex-wrap flex-lg-nowrap flex-md-nowrap justify-content-center">
-                    <?php for ($i=0; $i < 4; $i++) { 
+                    <?php for ($i=0; $i < count($relatedResult); $i++) { 
                         if(isset($relatedResult[$i]['book_img'])) { ?>
                         <div>
-                            <a href='../View/bookDescription.php?book_id=<?php echo $relatedResult[$i]['book_id'] ?>;'>
+                            <?php  $_SESSION['each_book_id'] = $relatedResult[$i]['book_id'] ?>
+                            <a href='../View/bookDescription.php?book_id=<?php echo $relatedResult[$i]['book_id'] ?>'>
                                 <img src="<?php echo $relatedResult[$i]['book_img']; ?>" class="img-fluid" alt=""/>
                             </a>
                             <div class="book-title book-d-text"><?php echo $relatedResult[$i]['book_name']; ?></div>
                             <div class="ratingEachBook  d-flex justify-content-center">
-                            <?php if(count($bookRatingResult)> 0) {
-                                if(ceil($bookRatingResult[0]['avg(rating)']) == 1 ){
+                            
+                            <?php if(count($ratingEachResult[$i])> 0) {
+                                for ($j=0; $j < ceil($ratingEachResult[$i][0]['avg(rating)']); $j++)
                                     echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                for ($j=0; $j < (5 - ceil($ratingEachResult[$i][0]['avg(rating)'])); $j++)
                                     echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                            }
+                            else{
+                                for ($k=0; $k < 5; $k++)
                                     echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>'; 
-                                }
-                                else if(ceil($bookRatingResult[0]['avg(rating)'])== 2 ){
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>'; 
-                                }
-                                else if(ceil($bookRatingResult[0]['avg(rating)']) == 3 ){
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>'; 
-                                }
-                                else if(ceil($bookRatingResult[0]['avg(rating)']) == 4 ){
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>'; 
-                                }
-                                else if(ceil($bookRatingResult[0]['avg(rating)']) == 5 ){
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>'; 
-                                }
-                                else{
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
-                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
-                                }
-                            }?>
+                            }
+                            ?>
                             </div>
                         </div>
                     <?php } } ?>
@@ -302,6 +272,7 @@
     </div>
 
     <script>
+
     </script>
 </body>
 
