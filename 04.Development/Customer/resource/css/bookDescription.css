@@ -43,3 +43,8 @@
     background-color: var(--yellow) !important;
     border-radius: .8rem !important;
 }
+.img-circle{
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    padding: 0.2rem !important;
+}

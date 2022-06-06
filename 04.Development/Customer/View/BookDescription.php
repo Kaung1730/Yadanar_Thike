@@ -46,6 +46,7 @@
 
     <?php  session_start();
     require "../Controller/bookDespController.php";
+    require "../Controller/showCommentController.php";
     $_SESSION['book_id'] = $result[0]['book_id'];?>
         
     <input type="hidden" name="book_id" value ="<?php echo $result[0]['book_id']?>">
@@ -76,11 +77,50 @@
                         <div class="book-fee fs-5"><?php echo $result[0]['book_price']; ?>(ကျပ်)</div>
                         <!--rating for the book-->
                         <div class="rating-container d-flex">
-                            <div class="ms-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                            <div class="ms-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ms-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ms-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
-                            <div class="ms-1 fw-bold fs-5"><i class="bi bi-star"></i></div>
+                            <?php if(count($bookRatingResult)> 0) {
+                                if(ceil($bookRatingResult[0]['avg(rating)']) == 1 ){
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>'; 
+                                }
+                                else if(ceil($bookRatingResult[0]['avg(rating)']) == 2 ){
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>'; 
+                                }
+                                else if(ceil($bookRatingResult[0]['avg(rating)']) == 3 ){
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>'; 
+                                }
+                                else if(ceil($bookRatingResult[0]['avg(rating)']) == 4 ){
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>'; 
+                                }
+                                else if(ceil($bookRatingResult[0]['avg(rating)']) == 5 ){
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>'; 
+                                }
+                                else{
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                }
+                            }?>
                         </div>
                         <div class="stock-number fs-6 my-3">
                             လက်ကျန်စာအုပ်​ရေ -<span> <?php echo $result[0]['stock_number']; ?> </span> အုပ်</div>
@@ -104,38 +144,70 @@
                 </div>
             </div>
             <!--To show feedback about book-->
+            <?php require "../Controller/showCommentController.php";?>
             <div class="feedback-shown-area mt-5">
-                <div class="review-title">​ဝေဖန်သုံးသပ်မှုများ <span>(1)</span></div>
-                <div class="review-box mx-3 mt-3 pb-1">
-                    <div class="row g-0">
-                        <div class="col-1 ps-lg-4 ps-md-0 ps-0 pt-lg-2 pt-md-0 pt-0 border-left d-none d-md-block d-lg-block">
-                            <img src="../resource/image/comment.png" class="useracc" />
-                        </div>
-                        <div class="col-10">
-                            <div class="row pt-2">
-                                <div class="col-9 col-lg-4 reviewer">
-                                    <span class="reviewer px-lg-3 px-1 px-md-3">Aye Aye</span>
-                                    <span class="review-date">March 3,2022</span>
+                <div class="review-title">​ဝေဖန်သုံးသပ်မှုများ <span><?php echo "(".$commentResult[0]['count(comment)']. ")"?></span></div>
+                <?php if(count($reviewrResult) >0) {?>
+                    <div class="review-box mx-3 mt-3 pb-1">
+                        <?php foreach ($reviewrResult as $key => $value) {?>
+                        <div class="row g-0 border-bottom border-light">
+                            <div class="col-1 ps-lg-4 ps-md-0 ps-0 pt-lg-2 pt-md-0 pt-0 border-left d-none d-md-block d-lg-block">
+                                <img src="<?php echo $value['customer_profileImg']; ?>" class="rounded-circle img-circle img-fluid" />
+                            </div>
+                            <div class="col-10">
+                                <div class="row pt-2">
+                                    <div class="col-9 col-lg-4 reviewer">
+                                        <span class="reviewer px-lg-3 px-1 px-md-3 fw-bold"><?php echo $value['customer_name']; ?></span>
+                                        <span class="review-date"><?php echo $value['review_date']; ?></span>
+                                    </div>
+                                    <div class="col-6 d-none d-lg-block d-md-done"></div>
+                                    <div class="col-2 float-end ps-lg-5 ps-md-0 ps-0">
+                                        <div class="rating-container d-flex flex-end ps-lg-5 ps-md-0 ps-0">
+                                            <?php 
+                                                if(($value['rating']) == 1) {
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                }
+                                                else if(($value['rating']) == 2) {
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                }
+                                                else if(($value['rating']) == 3) {
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                }
+                                                else if(($value['rating']) == 4) {
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                }
+                                                else if(($value['rating']) == 5){
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                                }
+                                                else{
+                                                    echo '<div>No Rating Stars</div>';
+                                                }
+                                            ?>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-6 d-none d-lg-block d-md-done"></div>
-                                <div class="col-2 float-end ps-lg-5 ps-md-0 ps-0">
-                                    <div class="rating-container d-flex flex-end ps-lg-5 ps-md-0 ps-0">
-                                        <div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                                        <div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                                        <div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                                        <div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                                        <div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
+                                <div class="row">
+                                    <div class="col-12 ps-lg-4 px-4 book-d-text">
+                                        <?php echo $value['comment']; ?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-12 ps-lg-4 px-4 book-d-text">
-                                    တစ်နေ့ချင်းတစ်ရက်ချင်းကို ဘာသာရပ်လေးတွေကိုအောင်မှတ်ရအောင် ဘဝကိုဟန်ချက်ညီအောင်ကြိုးစား ရှင်သန်နေပါတယ်
-                                </div>
-                            </div>
                         </div>
+                        <?php } ?>
                     </div>
-                </div>
+                    <?php } else {?>
+                    <div class="fw-bold lead">No review</div>
+                <?php } ?>
             </div>
             <!-- To give some review -->
             <div class="review-give mt-5">
@@ -167,16 +239,55 @@
                     <?php for ($i=0; $i < 4; $i++) { 
                         if(isset($relatedResult[$i]['book_img'])) { ?>
                         <div>
-                            <a href='../View/bookDescription.php?book_id=<?php echo $relatedResult[$i]['book_id'] ?>'>
+                            <a href='../View/bookDescription.php?book_id=<?php echo $relatedResult[$i]['book_id'] ?>;'>
                                 <img src="<?php echo $relatedResult[$i]['book_img']; ?>" class="img-fluid" alt=""/>
                             </a>
                             <div class="book-title book-d-text"><?php echo $relatedResult[$i]['book_name']; ?></div>
                             <div class="ratingEachBook  d-flex justify-content-center">
-                                <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                                <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                                <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                                <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
-                                <div class="ps-lg-1 ps-md-1 ps-1 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>
+                            <?php if(count($bookRatingResult)> 0) {
+                                if(ceil($bookRatingResult[0]['avg(rating)']) == 1 ){
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>'; 
+                                }
+                                else if(ceil($bookRatingResult[0]['avg(rating)'])== 2 ){
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>'; 
+                                }
+                                else if(ceil($bookRatingResult[0]['avg(rating)']) == 3 ){
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>'; 
+                                }
+                                else if(ceil($bookRatingResult[0]['avg(rating)']) == 4 ){
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>'; 
+                                }
+                                else if(ceil($bookRatingResult[0]['avg(rating)']) == 5 ){
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star-fill"></i></div>'; 
+                                }
+                                else{
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                    echo '<div class="ps-lg-1 ps-md-1 ps-0 fw-bold fs-5"><i class="bi bi-star"></i></div>';
+                                }
+                            }?>
                             </div>
                         </div>
                     <?php } } ?>
@@ -189,6 +300,9 @@
     <!--footer-->
     <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
     </div>
+
+    <script>
+    </script>
 </body>
 
 </html>
