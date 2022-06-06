@@ -16,9 +16,7 @@ $(document).ready(function () {
         var text = $('#review-text').val();
         if (text == '') {
             swal({
-                title: "စာသား​ရေးသား​ပေးရန် (သို့မဟုတ်) အ​ကောင့်ဝင်ထားရန် လိုအပ်ပါသည်။!",
                 text: "စာအုပ် ​ဝေဖန်ချက်​ပေးပို့ရန်အတွက် စာသား​ရေးသား​ပေးရန် (သို့မဟုတ်) အ​ကောင့်ဝင်ထားရန် လိုအပ်ပါသည်။",
-                icon: "warning",
                 button: { text: 'OK', className: 'commentBtn' },
             });
             return false;
@@ -67,7 +65,7 @@ $(document).ready(function () {
                         swal({
                             title: "ပေးပို့မှု​အောင်မြင်ပါသည်။",
                             text: "စာအုပ်​ဝေဖန်ချက်​ပေးပို့မှု​အောင်မြင်ပါသည်။",
-                            icon: "warning",
+                            icon: "success",
                             button: { text: 'OK', className: 'commentBtn' },
                         });
                     }
