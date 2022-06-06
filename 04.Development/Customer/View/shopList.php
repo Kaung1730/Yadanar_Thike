@@ -50,9 +50,161 @@
                 စာအုပ်ဆိုင်တည်နေရာများ ကြည့်ရှုရန်
             </div>
             <div class="shopListBody">
+            <?php
+                require"../Controller/shopListController.php";
+                    echo "<div class='bookshopName SPLKBookShop font-weight-bold
+                    '>". $result[0]['shop_Cate'] ."</div>"; 
+                    echo "<div class='shopAddress sarpaylawkaPSD'>";
+                    echo "<h5 class='text-primary'>". $result[0]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[0]['address'] ."</p>";
+                    echo "<p>". $result[0]['phone no']."</p>";
+                    echo "</div>";
 
-                <div class="bookshopName SPLKBookShop font-weight-bold ">စာပေလောက စာအုပ်အရောင်းဆိုင်များ</div>
-                <div class="shopAddress sarpaylawkaPSD">
+                    echo "<div class='shopAddress sarpaylawkaJC'>";
+                    echo "<h5 class='text-primary'>". $result[1]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[1]['address'] ."</p>";
+                    echo "<p>". $result[1]['phone no']."</p>";
+                    echo "</div>";
+
+                    echo "<div class='shopAddress sarpaylawkaCENTRAL'>";
+                    echo "<h5 class='text-primary'>". $result[2]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[2]['address'] ."</p>";
+                    echo "<p>". $result[2]['phone no']."</p>";
+                    echo "</div>";
+
+                    echo "<div class='shopAddress sarpaylawkaSOK '>";
+                    echo "<h5 class='text-primary'>". $result[3]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[3]['address'] ."</p>";
+                    echo "<p>". $result[3]['phone no']."</p>";
+                    echo "</div>";
+
+                    echo "<div class='shopAddress sarpaylawkaHLEDAN '>";
+                    echo "<h5 class='text-primary'>". $result[4]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[4]['address'] ."</p>";
+                    echo "<p>". $result[4]['phone no']."</p>";
+                    echo "</div>";
+
+                    echo "<div class='shopAddress sarpaylawkaKM '>";
+                    echo "<h5 class='text-primary'>". $result[5]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[5]['address'] ."</p>";
+                    echo "<p>". $result[5]['phone no']."</p>";
+                    echo "</div>";
+
+                    echo "<div class='shopAddress sarpaylawkaINSEIN '>";
+                    echo "<h5 class='text-primary'>". $result[6]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[6]['address'] ."</p>";
+                    echo "<p>". $result[6]['phone no']."</p>";
+                    echo "</div>";
+
+                    echo "<div class='shopAddress sarpaylawkaTC '>";
+                    echo "<h5 class='text-primary'>". $result[7]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[7]['address'] ."</p>";
+                    echo "<p>". $result[7]['phone no']."</p>";
+                    echo "</div>";
+
+                    echo "<div class='shopAddress sarpaylawkaNOK '>";
+                    echo "<h5 class='text-primary'>". $result[8]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[8]['address'] ."</p>";
+                    echo "<p>". $result[8]['phone no']."</p>";
+                    echo "</div>";
+
+                     //AParDawMyal BOOK SHOP  //
+                    echo "<div class='bookshopName APDMBookShop
+                    '>". $result[9]['shop_Cate'] ."</div>"; 
+                    echo "<div class='shopAddress AParDawMyal'>";
+                    echo "<p>" . $result[9]['address'] ."</p>";
+                    echo "<p>". $result[9]['phone no']."</p>";
+                    echo "</div>";
+
+                    //စောဦးစာပေ//
+                    echo "<div class='bookshopName SawOoBookShop
+                    '>". $result[10]['shop_Cate'] ."</div>"; 
+                    echo "<div class='shopAddress SawOo'>";
+                    echo "<p>" . $result[10]['address'] ."</p>";
+                    echo "<p>". $result[10]['phone no']."</p>";
+                    echo "</div>";
+
+                    //အင်းဝ စာအုပ်တိုက်//
+                    echo "<div class='bookshopName InnwaBookShop
+                    '>". $result[11]['shop_Cate'] ."</div>"; 
+                    echo "<div class='shopAddress InnwaPSD'>";
+                    echo "<h5 class='text-primary'>". $result[11]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>". $result[11]['phone no']."</p>";
+                    echo "</div>";
+
+                    echo "<div class='shopAddress InnwaHLEDAN'>";
+                    echo "<h5 class='text-primary'>". $result[12]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[12]['address'] ."</p>";
+                    echo "<p>". $result[12]['phone no']."</p>";
+                    echo "</div>";
+
+                    echo "<div class='shopAddress InnwaMMPLAZA'>";
+                    echo "<h5 class='text-primary'>". $result[13]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[13]['address'] ."</p>";
+                    echo "<p>". $result[13]['phone no']."</p>";
+                    echo "</div>";
+
+                    echo "<div class='shopAddress InnwaTIMECITY'>";
+                    echo "<h5 class='text-primary'>". $result[14]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[14]['address'] ."</p>";
+                    echo "<p>". $result[14]['phone no']."</p>";
+                    echo "</div>";
+
+                    echo "<div class='shopAddress InnwaTerminalM'>";
+                    echo "<h5 class='text-primary'>". $result[15]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[15]['address'] ."</p>";
+                    echo "<p>". $result[15]['phone no']."</p>";
+                    echo "</div>";
+
+                    echo "<div class='shopAddress InnwaMDY'>";
+                    echo "<h5 class='text-primary'>". $result[16]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[16]['address'] ."</p>";
+                    echo "<p>". $result[16]['phone no']."</p>";
+                    echo "</div>";
+
+                    //ရာပြည့်//
+                    echo "<div class='bookshopName YarPyaeBookShop
+                    '>". $result[17]['shop_Cate'] ."</div>"; 
+                    echo "<div class='shopAddress YarpyaePSD'>";
+                    echo "<h5 class='text-primary'>". $result[17]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>". $result[17]['phone no']."</p>";
+                    echo "</div>";
+
+                    echo "<div class='shopAddress YarpyaeHLEDAN'>";
+                    echo "<h5 class='text-primary'>". $result[18]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[18]['address'] ."</p>";
+                    echo "<p>". $result[18]['phone no']."</p>";
+                    echo "</div>";
+
+                    //ကံ့ကော်ဝတ်ရည် စာပေတိုက်//
+                    echo "<div class='bookshopName KantKawBookShop 
+                    '>". $result[19]['shop_Cate'] ."</div>"; 
+                    echo "<div class='shopAddress KantKaw'>";
+                    echo "<h5 class='text-primary'>". $result[19]['shop_name'] ."</h5>";
+                    echo "<br/>";
+                    echo "<p>" . $result[19]['address'] ."</p>";
+                    echo "<p>". $result[19]['phone no']."</p>";
+                    echo "</div>";
+                ?>   
+                <!-- <div class="bookshopName SPLKBookShop font-weight-bold ">စာပေလောက စာအုပ်အရောင်းဆိုင်များ</div> -->
+                <!-- <div class="shopAddress sarpaylawkaPSD">
                     <h5 class="text-primary">၁။ စာပေလောက (ပန်းဆိုးတန်း)</h5>
                     <br />
                     <p> အမှတ် ၂၆၂-၂၆၄၊ ပန်းဆိုးတန်းလမ်း၊ပန်းဆိုးတန်း တံတား၊ ရန်ကုန်ဘူတာကြီးအနီး၊ ရန်ကုန်။</p>
@@ -113,23 +265,23 @@
                     <p>ဖုန်းနံပါတ် ၀၉-၂၅၀ ၁၃၇ ၄၄၉ ၊ ၀၉-၂၆၇ ၁၇၂ ၉၄၆</p>
                 </div>
                 <!-- AParDawMyal BOOK SHOP -->
-                <div class="bookshopName APDMBookShop  ">အပါးတော်မြဲ စာပေတိုက်နှင့်စာအုပ်ဆိုင်</div>
+                <!-- <div class="bookshopName APDMBookShop  ">အပါးတော်မြဲ စာပေတိုက်နှင့်စာအုပ်ဆိုင်</div>
                 <div class="shopAddress AParDawMyal">
                     <p>ရေကျော်လမ်းမ (သံလမ်းအနီး)၊ ပုဇွန်တောင်မြို့နယ်။</p>
                     <p>ဖုန်းနံပါတ် ၀၉ -၂၆၈ ၆၉၀ ၀၀၁</p>
-                </div>
+                </div> -->
 
                 <!-- စောဦးစာပေ -->
-                <div class="bookshopName SawOoBookShop  ">စောဦးစာပေ</div>
+                <!-- <div class="bookshopName SawOoBookShop  ">စောဦးစာပေ</div>
                 <div class="shopAddress SawOo">
                     <p>အမှတ် (၁၆၉)၊ ၃၁လမ်း (အထက်)၊ ပန်းဘဲတန်းမြို့နယ်၊ ရန်ကုန်။</p>
                     <p>ဖုန်းနံပါတ် ၀၁-၈၃၈ ၈၀၂၄ ၊ ၀၉-၇၇၉ ၉၂၇ ၉၆၉၊ ၀၉-၂၅၀ ၀၁၁ ၅၂၁</p>
-                </div>
+                </div> -->
 
                 <!-- အင်းဝ စာအုပ်တိုက် -->
-                <div class="bookshopName InnwaBookShop  ">အင်းဝ စာအုပ်တိုက်</div>
+                <!-- <div class="bookshopName InnwaBookShop  ">အင်းဝ စာအုပ်တိုက်</div> -->
 
-                <div class="shopAddress InnwaPSD">
+                <!-- <div class="shopAddress InnwaPSD">
                     <h5 class="text-primary">၁။ အင်းဝစာအုပ်ဆိုင် (ပန်းဆိုးတန်း)</h5>
                     <br />
                     <p>ဖုန်းနံပါတ် ၀၁-၈၂၄ ၃၂၁၆၊ ၀၁-၈၃၉ ၈၁၀၆</p>
@@ -170,10 +322,10 @@
                     <br />
                     <p>Mingalar Mandalay, 4th Floor.</p>
                     <p>ဖုန်းနံပါတ် ၀၉-၂၆၃ ၆၈၄ ၅၅၇</p>
-                </div>
+                </div> -->
 
                 <!-- ရာပြည့် -->
-                <div class="bookshopName YarPyaeBookShop  ">ရာပြည့် စာအုပ်ဆိုင်</div>
+                <!-- <div class="bookshopName YarPyaeBookShop  ">ရာပြည့် စာအုပ်ဆိုင်</div>
                 <div class="shopAddress YarpyaePSD">
                     <h5 class="text-primary">၁။ ရာပြည့် စာအုပ်ဆိုင် (ပန်းဆိုးတန်း)</h5>
                     <br />
@@ -186,13 +338,13 @@
                     <br />
                     <p>ဦးထွန်းလင်းခြံလမ်း၊ လှည်းတန်း၊ ကမာရွတ်မြို့နယ်၊ ရန်ကုန်။</p>
                     <p>ဖုန်းနံပါတ် ၀၉-၂၅၁ ၅၆၇ ၁၄၀ ၊ ၀၉-၇၈၂ ၇၁၄ ၅၀၄</p>
-                </div>
+                </div> -->
                 <!-- ကံ့ကော်ဝတ်ရည် စာပေတိုက် -->
-                <div class="bookshopName KantKawBookShop  ">ကံ့ကော်ဝတ်ရည် စာပေတိုက်</div>
+                <!-- <div class="bookshopName KantKawBookShop  ">ကံ့ကော်ဝတ်ရည် စာပေတိုက်</div>
                 <div class="shopAddress KantKaw">
                     <p>အမှတ် ၅၁၊ ရေကျော်လမ်းမကြီး၊ ပုဇွန်တောင်မြို့နယ်၊ ရန်ကုန်။</p>
                     <p>ဖုန်းနံပါတ် ၀၉-၂၅၀ ၀၁၂ ၃၄၈၊ ၀၉ ၄၄၃ ၀၄၁ ၁၃၇</p>
-                </div>
+                </div> -->
 
             </div>
         </div>
