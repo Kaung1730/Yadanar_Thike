@@ -10,7 +10,7 @@ if (isset($_POST)) {
     $db = new DBConnect();
     $dbconnect = $db->connect();
     $sql = $dbconnect->prepare(
-        "INSERT INTO privacy&policy
+        "INSERT INTO privacy_policy
             (
                 question,
                 answer,
@@ -34,5 +34,5 @@ if (isset($_POST)) {
     $sql->bindValue(":created_by", "myat kaung khant");
     $sql->execute();
 
-    // header("Location: ../View/categoriesList.php");
+    header("Location: ../View/privacyPolicyList.php");
 }

@@ -38,7 +38,7 @@
                             <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                         </div>
                         <table class="table table-striped white_table tb-edit mt-3">
-                            <tr class="table-secondary">
+                            <tr>
                                 <th class="text-start">No.</th>
                                 <th class="text-center">State</th>
                                 <th class="text-center">Township</th>
