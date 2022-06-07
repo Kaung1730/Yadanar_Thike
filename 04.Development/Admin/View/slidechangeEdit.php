@@ -20,7 +20,7 @@
 
 <body>
     <div class="container-fluid">
-        <form action="../Controller/slidechangeAddController.php" method="POST" enctype="multipart/form-data">
+        <form action="../Controller/slidechangeUpdateController.php" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-2 nav_box">
 
@@ -36,12 +36,14 @@
                             <button type="button" class="btn btn-secondary mx-5 btn-3 btn-me"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
                         </div>
                         <div class="input-part ms-5 mt-5 slide-me">
+                            <?php require "../Controller/slidechangeEditController.php" ?>
+                            <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['slider_id'] ?>">
                             <label for="slide_img" class="form-label mt-2">Slide Image</label>
                             <div class="input-group mt-2 mb-3 input-width">
-                                <input type="file" class="form-control input-edit" id="slide_img" name="slide">
+                                <input type="file" class="form-control input-edit" id="slide_img" name="slide" value="<?php echo $result[0]['slider_image'] ?>">
                                 <label class="input-group-text input-btn" for="slide_img">Browse</label>
                             </div>
-                            <button type="submit" class="btn btn-info mt-5 mb-5 btn-4 btn-cen">Submit</button>
+                            <button type="submit" class="btn btn-info mt-5 mb-5 btn-4 btn-cen">Update</button>
                         </div>
                     </div>
                     <div class="copyright mt-3 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>

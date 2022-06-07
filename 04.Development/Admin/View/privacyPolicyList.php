@@ -40,7 +40,7 @@
                         <table class="table table-striped white_table tb-edit mt-3">
                             <?php require "../Controller/privacyListController.php" ?>
                             <tr>
-                                <th class="text-start">No.</th>
+                                <th class="text-center">No.</th>
                                 <th class="text-center">Question</th>
                                 <th class="text-center">Answer</th>
                                 <th class="text-center last" colspan="2">Action</th>
