@@ -199,6 +199,9 @@ hr{
 .upload_img{
     width: 15%;
 }
+.upload_img_sl{
+    width: 5%;
+}
 .des-over{
   width: 200px;
   display: -webkit-box;

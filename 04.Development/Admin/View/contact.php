@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <?php require "../Controller/contactController.php" ?>
     <div class="container-fluid">
         <form action="">
             <div class="row">
@@ -38,49 +39,25 @@
                             <button type="button" class="btn btn-secondary me-5 btn-connect"><a href="contact.php" class="a-edit">Contact</a></button>
                         </div>
                         <div class="input-part">
-                            <table class="table table-borderless tb-edit mx-5 mt-3 tb-contact">
-                                <tr class="table-secondary">
-                                    <th class="text-start">No.</th>
+                            <table class="table table-striped white_table tb-edit mt-3">
+                                <tr>
+                                    <th class="text-center">No.</th>
                                     <th class="text-center">Username</th>
                                     <th class="text-center">Phone No.</th>
                                     <th class="text-center">Contact</th>
                                 </tr>
-                                <tr class="table-light">
-                                    <td class="text-start">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-secondary">
-                                    <td class="text-start">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-light">
-                                    <td class="text-start">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-secondary">
-                                    <td class="text-start">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-light">
-                                    <td class="text-start">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
-                                <tr class="table-secondary">
-                                    <td class="text-start">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">1</td>
-                                </tr>
+                                <?php
+                                $count = 1;
+                                foreach ($result as $key => $value) {
+                                    echo "<tr>";
+                                    echo "<td class='text-center'>" . $count . ".</td>";
+                                    echo "<td class='text-center'>" . $value['username'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['phone'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['contact'] . "</td>";
+                                    echo "</tr>";
+                                    $count++;
+                                }
+                                ?>
                             </table>
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination float-end me-5">

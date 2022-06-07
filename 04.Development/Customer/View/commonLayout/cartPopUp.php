@@ -6,7 +6,7 @@ if (isset($_SESSION['status'])) {
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content modal-parent">
             <div class="modal-header cart-header ps-lg-5">
-                <h5 class="modal-title ms-lg-4" id="lg-cartPopUpLabel">လူကြီးမင်း၏​စျေးခြင်း( <span class="order-count">0</span>)</h5>
+                <h5 class="modal-title ms-lg-4" id="lg-cartPopUpLabel">လူကြီးမင်း၏​စျေးခြင်း( <span class="order-count"></span>)</h5>
                 <button type="button" class="btn-close btn-close-dark me-lg-3" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body  fw-light">
@@ -37,6 +37,7 @@ if (isset($_SESSION['status'])) {
                         <i class="bi bi-trash3 text-warning"></i>
                     </div>
                 </div>
+                <hr>
                 <div class="mb-lg-3 mt-lg-5 ps-5 ms-5 ms-lg-0 ms-md-0">
                     <div class="row ms-lg-4">
                         <div class="col-lg-8 col-12">

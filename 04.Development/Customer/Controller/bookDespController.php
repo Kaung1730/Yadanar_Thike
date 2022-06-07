@@ -33,12 +33,6 @@ $relatedResult = $related->fetchAll(PDO::FETCH_ASSOC);
 
 //rating for realted each book
 
-// $ratingEachBook = $dbconnect-> prepare("
-//     SELECT avg(review_rating.rating) 
-//     FROM book_m, review_rating
-//     WHERE book_m.del_flg = 0 AND
-//     book_m.author_id = :author_id;
-// ");
 $ratingEachResult = [];
 foreach ($relatedResult as $key => $value) {
     $ratingEachBook = $dbconnect-> prepare("

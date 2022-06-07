@@ -21,6 +21,7 @@
 
 <body>
     <div class="container-fluid">
+        <?php require "../Controller/reviewController.php" ?>
         <form action="">
             <div class="row">
                 <div class="col-2 nav_box">
@@ -39,12 +40,24 @@
                         </div>
                         <div class="input-part">
                             <table class="table table-striped white_table tb-edit mt-3">
-                                <tr class="table-secondary">
+                                <tr>
                                     <th class="text-center">No.</th>
                                     <th class="text-center">Book Name</th>
                                     <th class="text-center">Book Review</th>
                                     <th class="text-center">Book Rating</th>
                                 </tr>
+                                <?php
+                                $count = 1;
+                                foreach ($result as $key => $value) {
+                                    echo "<tr>";
+                                    echo "<td class='text-center'>" . $count . ".</td>";
+                                    echo "<td class='text-center'>" . $value['book_name'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['comment'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['rating'] . "</td>";
+                                    echo "</tr>";
+                                    $count++;
+                                }
+                                ?>
                             </table>
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination float-end me-5">

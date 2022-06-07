@@ -39,7 +39,7 @@
                         <!-- <input type="text" class="box1 input-edit" name="book_cate"> -->
                         <select name="book_cate" id="" class="box1 input-edit">
                             <?php
-                            foreach ($categoryList as $key => $value) {
+                            foreach ($bookResult as $key => $value) {
                                 echo "<option value='" . $value['category_id'] . "'>" . $value['category_name'] . "</option>";
                             }
                             ?>
@@ -48,7 +48,7 @@
                         <!-- <input type="text" class="box1 input-edit" name="book_author"> -->
                         <select name="book_author" id="" class="box1 input-edit">
                             <?php
-                            foreach ($authorList as $key => $value) {
+                            foreach ($bookResult as $key => $value) {
                                 echo "<option value='" . $value['author_id'] . "'>" . $value['author_name'] . "</option>";
                             }
                             ?>
@@ -57,7 +57,7 @@
                             <label for="book_img" class="form-label fs-5 text-start">Book Image:</label>
                             <div class="input-group mt-2 mb-3 input-width">
                                 <input type="file" class="form-control input-edit" id="book_img" name="book_img">
-                                <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
+                                <label class="input-group-text input-btn" for="book_img">Browse</label>
                             </div>
                         </div>
                         <label for="" class="book_price fs-5">Book Price:</label>
