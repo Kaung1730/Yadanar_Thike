@@ -38,8 +38,8 @@
                         <div class="input-part ms-5 mt-5 slide-me">
                             <label for="slide_img" class="form-label mt-2">Slide Image</label>
                             <div class="input-group mt-2 mb-3 input-width">
-                                <input type="file" class="form-control input-edit" id="slide_img">
-                                <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
+                                <input type="file" class="form-control input-edit" id="slide_img" name="slide">
+                                <label class="input-group-text input-btn" for="slide_img">Browse</label>
                             </div>
                             <button type="submit" class="btn btn-info mt-5 mb-5 btn-4 btn-cen">Submit</button>
                         </div>

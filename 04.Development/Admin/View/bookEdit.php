@@ -58,7 +58,7 @@
                             <label for="book_img" class="form-label fs-5 text-start">Book Image:</label>
                             <div class="input-group mt-2 mb-3 input-width">
                                 <input type="file" class="form-control input-edit" id="book_img" name="book_img" value="<?php echo $result[0]['book_img']; ?>">
-                                <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
+                                <label class="input-group-text input-btn" for="book_img">Browse</label>
                             </div>
                         </div>
                         <label for="" class="book_price fs-5">Book Price:</label>
@@ -92,18 +92,18 @@
                             </div>
                         </div>
                         <label for="" class=" publisher fs-5">Publisher:</label>
-                                    <!-- <input type="text" class="box1 input-edit" name="book_pub"> -->
-                                    <select name="book_pub" id="" class="box1 input-edit">
-                                        <?php
-                                        echo "<option value=''></option>";
-                                        ?>
-                                    </select>
-                                    <div>
-                                        <button type="submit" name="submit" class="submit">Submit</button>
-                                        <button type="reset" name="reset" class="reset">Reset</button>
-                                    </div>
-                                </div>
-                                <div class="copyright text-center mt-2">Copyright@2022YadanarThike All Rights Reserved.</div>
+                        <!-- <input type="text" class="box1 input-edit" name="book_pub"> -->
+                        <select name="book_pub" id="" class="box1 input-edit">
+                            <?php
+                            echo "<option value=''></option>";
+                            ?>
+                        </select>
+                        <div>
+                            <button type="submit" name="submit" class="submit">Submit</button>
+                            <button type="reset" name="reset" class="reset">Reset</button>
+                        </div>
+                    </div>
+                    <div class="copyright text-center mt-2">Copyright@2022YadanarThike All Rights Reserved.</div>
         </form>
     </div>
 </body>
