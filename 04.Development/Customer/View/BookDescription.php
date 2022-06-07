@@ -137,9 +137,9 @@
                                 </div>
                         </div>
                         <div>
-                            <a href="#cartPopUp" class="text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal" id="addToCart" value="<?php echo $result[0]['book_id'] ?>">
+                            <button href="#cartPopUp" class="text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal" id="addToCart" value="<?php echo $result[0]['book_id']; ?>">
                             ခြင်းတောင်းထဲထည့်ရန်
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>

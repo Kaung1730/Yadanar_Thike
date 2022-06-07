@@ -37,10 +37,11 @@ if (isset($_SESSION['status'])) {
                         <i class="bi bi-trash3 text-warning"></i>
                     </div>
                 </div>
+                <hr>
                 <div class="mb-lg-3 mt-lg-5 ps-5 ms-5 ms-lg-0 ms-md-0">
                     <div class="row ms-lg-4">
                         <div class="col-lg-8 col-12">
-                            <button type="button" class="btn ms-3 rounded-pill text-dark order-btn" data-bs-toggle="modal" data-bs-target="#order" value="<?php echo $_SESSION['book_id'] ?>">အမှာတင်မည်</button>
+                            <button type="button" class="btn ms-3 rounded-pill text-dark order-btn" data-bs-toggle="modal" data-bs-target="#order">အမှာတင်မည်</button>
                         </div>
                     </div>
                 </div>
