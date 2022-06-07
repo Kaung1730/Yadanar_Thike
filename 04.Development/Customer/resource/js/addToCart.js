@@ -13,6 +13,13 @@ $(document).ready(function(){
             type: "POST",
             data:{send: JSON.stringify(postData)},
             success: function (res){
+                var data = $.parseJSON(res);
+                // var test = data[0]
+                // for (const key in test) {
+                //         const element = test[key];
+                //         console.log(element);
+                        
+                // }
                 console.log(res);
             },
             error:function(err){
