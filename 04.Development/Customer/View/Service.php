@@ -22,7 +22,24 @@
             </div>
         <div class="service">
             <div class="service-a">
-                <div class="tab">
+                <?php   
+                require("../Controller/serviceController.php");
+                    foreach($result as $key => $value){
+                        echo "<div class='tab'>";
+                        echo "<div class='up'>";
+                        echo "<div class='png'>"; 
+                        echo  "<img src='../resource/image/".$value['icon']."' alt='' class='img'>";
+                        echo "</div>";
+                        echo "<p class='detail a'>". $value['question']. "</p>";
+                        echo "</div>";
+                        echo "<div class='down'>";
+                        echo "<p class='back'>".$value['answer']."</p>";
+                        echo "</div>";
+                        echo "</div>";
+                    }
+
+                ?>
+                <!-- <div class="tab">
                     <div class="up">
                     <div class="png"> <img src="../resource/image/Servicebookmark.png" alt="" class="img"></div>
                     <p class="detail a">စာမှတ်ကဒ် အခမဲ့</p></div>
@@ -45,28 +62,11 @@
                     <div class="down">
                     <p class="back">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                </div>
-            </div>
-            <div class="service-b">
-                <div class="tab">
-                <div class="up">
-                    <div class="png"> <img src="../resource/image/Servicetime.png" alt="" class="img"></div>
-                    <p class="detail d">ပို့ဆောင်မှုကြာမြင့်ချိန်</p></div>
-                    <div class="down">
-                    <p class="back">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="tab">
-                <div class="up">
-                    <div class="png"> <img src="../resource/image/Serviceverify.png" alt="" class="img"></div>
-                    <p class="detail e">တာဝန်ယူမှုများ</p></div>
-                    <div class="down">
-                    <p class="back">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
-        <div class="footer"> </div>
+        <div class="footer">
+        </div>
         </div>
     </div>
     </body>
