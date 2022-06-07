@@ -1,12 +1,17 @@
 $(document).ready(function(){
+    $("#basket").text(localStorage.getItem('cardNumber'));
+    $(".order-count").text(localStorage.getItem('cardNumber'));
+    var data = [];
     $("#addToCart").click(function(){
+        alert($("#addToCart").val());
         var book_id = $("#bookDespValue").val();
         var qtyValue = $(".qty").val();
         var stockNumber = parseInt($("#stockNumber").text());
         var currentCartNumber = parseInt($("#basket").text());
         currentCartNumber++;
-        $("#basket").text(currentCartNumber);
-        $(".order-count").text(currentCartNumber);
+        localStorage.setItem('cardNumber', currentCartNumber);
+        $("#basket").text(localStorage.getItem('cardNumber'));
+        $(".order-count").text(localStorage.getItem('cardNumber'));
         let postData = {"book_id": book_id};
 
         $.ajax({
