@@ -2,14 +2,13 @@
 
 
 require_once "../Model/dbConnection.php";
-$id = $_GET['id'];
 //call dbConnection
 $db2 = new DBConnect();
 $dbconnect = $db2->connect();
 
 
-$sql = $dbconnect->prepare("SELECT * From author WHERE id=:id");
-$sql->bindValue(":id", $id);
+$sql = $dbconnect->prepare("SELECT * From faq");
+
 //go to run
 $sql->execute();
 

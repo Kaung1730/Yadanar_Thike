@@ -195,8 +195,7 @@
 
 
             <?php
-            // $count = 1;
-
+            
             require "../Controller/discountController.php";
             echo " <div class='disItem'>";
             echo "<div class='disContent'>";

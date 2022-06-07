@@ -237,7 +237,8 @@
                     <span class="book">စာအုပ်များ</span>
                 </div>
                 <div class="text-center book-box d-flex flex-wrap flex-lg-nowrap flex-md-nowrap justify-content-center">
-                    <?php for ($i=0; $i < count($relatedResult); $i++) { 
+                    <?php 
+                    for ($i=0; $i < count($relatedResult); $i++) { 
                         if(isset($relatedResult[$i]['book_img'])) { ?>
                         <div>
                             <?php  $_SESSION['each_book_id'] = $relatedResult[$i]['book_id'] ?>
