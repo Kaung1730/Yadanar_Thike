@@ -207,12 +207,12 @@
                         <?php } ?>
                     </div>
                     <?php } else {?>
-                    <div class="fw-bold lead">No review</div>
+                    <div class="mt-2">ဤစာအုပ်အတွက် ​ဝေဖန်သုံးသပ်ချက် မရှိ​သေးပါ။</div>
                 <?php } ?>
             </div>
             <!-- To give some review -->
             <div class="review-give mt-5">
-                <div class="review-give-title mt-3">လူကြီးမင်း၏​ဝေဖန်သုံးသပ်ချက်ကို မျှ​ဝေ​ပေးပါ</div>
+                <div class="review-give-title mt-3">လူကြီးမင်း၏​ဝေဖန်သုံးသပ်ချက်ကို မျှ​ဝေ​ပေးပါ။</div>
                 <form id="commentForm">
                     
                     <div class="form-group mt-4">
@@ -224,7 +224,7 @@
                             </div>
                         </div>
                         <div class="form-group mt-4">
-                            <label for="review-text" class="book-d-text">ဝေဖန်သုံးသပ်လို​သောစာကို​ရေးပါ</label>
+                            <label for="review-text" class="book-d-text">ဝေဖန်သုံးသပ်လို​သောစာကို​ရေးပါ။</label>
                             <textarea name="comment" class="form-control mt-3 bg-transparent form-border" id="review-text" cols="30" rows="5"></textarea>
                         </div>
                         <button type="submit" class="btn review-btn my-4 book-d-text" id="comment-btn">​ပေးပို့ရန်</button>

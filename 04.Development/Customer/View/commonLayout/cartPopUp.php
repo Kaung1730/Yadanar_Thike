@@ -9,8 +9,8 @@ if (isset($_SESSION['status'])) {
                 <h5 class="modal-title ms-lg-4" id="lg-cartPopUpLabel">လူကြီးမင်း၏​စျေးခြင်း( <span class="order-count"></span>)</h5>
                 <button type="button" class="btn-close btn-close-dark me-lg-3" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body  fw-light">
-                <div class="row g-0">
+            <div class="modal-body  fw-light " id="cartBody">
+                <!-- <div class="row g-0">
                     <div class="col-lg-3">
                         <img src="" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" id="imgCart"/>
                     </div>
@@ -37,15 +37,16 @@ if (isset($_SESSION['status'])) {
                         <i class="bi bi-trash3 text-warning"></i>
                     </div>
                 </div>
-                <hr>
-                <div class="mb-lg-3 mt-lg-5 ps-5 ms-5 ms-lg-0 ms-md-0">
+                <hr> -->
+                
+            </div>
+            <div class="mb-lg-3 mt-lg-5 ps-5 ms-5 ms-lg-0 ms-md-0">
                     <div class="row ms-lg-4">
                         <div class="col-lg-8 col-12">
                             <button type="button" class="btn ms-3 rounded-pill text-dark order-btn" data-bs-toggle="modal" data-bs-target="#order">အမှာတင်မည်</button>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 </div>
