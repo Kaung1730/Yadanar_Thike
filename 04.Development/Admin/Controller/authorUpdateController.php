@@ -24,7 +24,7 @@ if (isset($_POST)) {
             author_about = :description,
             author_life = :life,
             author_category = :category,
-            updated_date = :update_date,
+            updated_date = :updated_date,
             updated_by = :updated_by WHERE author_id = :id"
             );
             $sql->bindValue(":img", $authorImage);
@@ -47,13 +47,17 @@ if (isset($_POST)) {
             author_name = :name,
             author_about = :description,
             author_life = :life,
-            author_category = :category WHERE author_id = :id"
+            author_category = :category,
+            updated_date = :updated_date,
+            updated_by = :updated_by WHERE author_id = :id"
         );
 
         $sql->bindValue(":name", $authorName);
         $sql->bindValue(":description", $authorDescription);
         $sql->bindValue(":life", $authorBorn . "-" . $authorDie);
         $sql->bindValue(":category", $authorCategory);
+        $sql->bindValue(":updated_date", date("d/m/Y"));
+        $sql->bindValue(":updated_by", "Myat Kaung Khant");
         $sql->bindValue(":id", $id);
 
         $sql->execute();

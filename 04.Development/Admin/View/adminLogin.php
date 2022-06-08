@@ -20,7 +20,7 @@
 
 <body>
     <section class="vh-100">
-        <div class="container py-5">
+        <div class="container-fluid py-5">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                     <div class="login_box text-center">
