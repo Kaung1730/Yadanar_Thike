@@ -39,7 +39,7 @@
 }
 
 .bookshopName {
-    position: absolute;
+    /* position: absolute; */
     width: 23vw;
     height: 9vh;
     border: 0px solid;
@@ -53,7 +53,7 @@
 }
 
 .shopAddress {
-    position: absolute;
+    /* position: absolute; */
     font-size: 18px;
 }
 
