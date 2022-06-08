@@ -2,18 +2,12 @@
 require_once("../Model/DBConnection.php");
 //get data from insert form
     if(isset($_POST)){
-        $userName = $_POST['username'];
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-        $c_password = $_POST['c_password'];
-        $phone = $_POST['phone'];
-        $valid = 0;
+        $email = $_POST['admin_email'];
+        $admin_name = $_POST['admin_name'];
+        $password = $_POST['admin_password'];
+        $role = 0;
         $del_flg = 0;
-        $decO_Password = md5($password);
-        $decC_Password = md5($c_password);
-        //check confirm password
-        if($decO_Password == $decC_Password){
-            $password = $decC_Password;
+        $dec_password = md5($password);
 
             //call db connection
             $db = new DBConnect();
@@ -21,16 +15,16 @@ require_once("../Model/DBConnection.php");
 
             //To check duplicate account
             $checkDuplicate = $dbConnect -> prepare("
-                SELECT * FROM customer
+                SELECT * FROM admin
                 WHERE 
-                customer_name = :username AND
-                customer_email = :email AND
+                admin_email = :email AND
+                admin_name = :username AND
                 del_flg = :del_flg OR
-                customer_email = :email AND
+                admin_email = :email AND
                 del_flg = :del_flg 
             ");
-            $checkDuplicate -> bindValue(":username",$userName);
             $checkDuplicate -> bindValue(":email",$email);
+            $checkDuplicate -> bindValue(":username",$admin_name);
             $checkDuplicate -> bindValue(":del_flg",$del_flg);
             $checkDuplicate->execute();
             $duplicateResult = $checkDuplicate->fetchAll(PDO::FETCH_ASSOC);
@@ -43,40 +37,31 @@ require_once("../Model/DBConnection.php");
                 //To insert new account data after checking where there is duplicate acc
                 echo "success";
                 $sql = $dbConnect -> prepare("
-                INSERT INTO customer 
-                (customer_name,
-                customer_phno,
-                customer_email,
-                customer_password,
-                valid,
+                INSERT INTO admin 
+                (admin_email,
+                admin_name,
+                admin_password,
+                role,
                 del_flg,
                 created_date,
                 created_by)
                 VALUES (
-                :username,
-                :phone,
                 :email,
-                :realpassword,
-                :valid,
+                :name,
+                :password,
+                :role,
                 :del_flg,
                 :created_date,
                 :created_by)");
-                $sql -> bindValue(":username",$userName);
                 $sql -> bindValue(":email",$email);
-                $sql -> bindValue(":realpassword",$password);
-                $sql -> bindValue(":phone",$phone);
-                $sql -> bindValue(":valid",$valid);
+                $sql -> bindValue(":name",$admin_name);
+                $sql -> bindValue(":password",$dec_password);
+                $sql -> bindValue(":role",$role);
                 $sql -> bindValue(":del_flg",$del_flg);
-                $sql -> bindValue(":created_date",date("m/d/Y"));
+                $sql -> bindValue(":created_date",date("d/m/Y"));
                 $sql -> bindValue(":created_by","KaungKaung");
                 $sql->execute();
             }
-        }
-        //if password and confirm password are not equal
-        else{
-            //will go back to register agian with the text of Password and Confirm password are not equal
-            echo "password";
-        }
         }
     
 ?>

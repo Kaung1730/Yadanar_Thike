@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <?php session_start();?>
     <div class="container-fluid">
         <form action="">
             <div class="row">
@@ -34,8 +35,8 @@
                         <p class="text fs-3">Setting</p>
                         <div class="d-flex justify-content-around">
                             <div class="admin">
-                                <p class="fs-4">Admin</p>
-                                <p class="gmail fs-6">admin@gmail.com</p>
+                                <p class="fs-4"><?php echo $_SESSION['admin_name'];?></p>
+                                <p class="gmail fs-6"><?php echo $_SESSION['admin_email'];?></p>
                             </div>
                             <div>
                                 <img src="../resource/image/person icon.png" alt="" class="person_icon">

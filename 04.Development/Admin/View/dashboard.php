@@ -19,6 +19,8 @@
 </head>
 
 <body>
+    <?php session_start();
+    if(isset($_SESSION['status'])){?>
     <div class="container-fluid">
         <form action="">
             <div class="row">
@@ -87,6 +89,9 @@
             </div>
         </form>
     </div>
+    <?php } else{
+        require "../View/adminLogin.php";
+    } ?>
 </body>
 
 </html>

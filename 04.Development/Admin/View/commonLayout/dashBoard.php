@@ -1,3 +1,4 @@
+<?php session_start();?>
 <span class="com-edit">
     <span class="title mt-1 mx-3 fs-4">Dashboard</span>
     <br />
@@ -19,5 +20,5 @@
 <span class="mx-4 i-edit">
     <img src="../resource/image/person icon.png" alt="" class="nav_img mt-2 ms-2 img-me float-end">
     <br />
-    <span class="">Admin</span>
+    <span class=""><?php echo $_SESSION['admin_name'] ?></span>
 </span>
