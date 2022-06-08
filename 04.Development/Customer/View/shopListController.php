@@ -6,7 +6,7 @@
   $db2= new DBConnect();
    $dbconnect = $db2->connect();
 
-   //write query // he want all data from database table (//insert book controller's data )
+   //write query 
 $sql = $dbconnect->prepare("SELECT * From m_book WHERE del_flg = 0");
 
 //go to run

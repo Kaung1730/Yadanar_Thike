@@ -1,6 +1,5 @@
 <?php
 
-
 require_once "../Model/dbConnection.php";
 $id = $_GET['id'];
 //call dbConnection
@@ -15,3 +14,4 @@ $sql->execute();
 
 
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
+?>

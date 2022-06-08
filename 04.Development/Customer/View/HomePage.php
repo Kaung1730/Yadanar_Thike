@@ -4,8 +4,7 @@
 <head>
     <title>Home Page</title>
     <link rel="stylesheet" href="../resource/css/HomePage.css">
-    <!-- <script src="../resource/js/jquery3.6.0.js"></script>
-    <script src="../resource/js/nav.js"></script> -->
+    
     <script src="../resource/js/jquery3.6.0.js"></script>
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <!-- CSS only -->

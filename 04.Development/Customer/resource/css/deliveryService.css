@@ -72,13 +72,13 @@ margin: 6vh 0vw 0vh 20vw;
 }
 
 
-.footer {
+/* .footer {
     height: 12vh;
     border: 0px solid;
     background-color: var(--yellow);
     display: flex;
     padding: 3vh 0vw 0vh 2vw;
-}
+} */
 
 /*Mobile View*/
 @media screen and (max-width: 720px) {
@@ -94,11 +94,11 @@ margin: 6vh 0vw 0vh 20vw;
 
     .footer {
         font-size: 12px;
-        padding: 1vh 0 0 1vw;
+        /* padding: 1vh 0 0 1vw; */
     }
 
-    .copyright {
+    /* .copyright {
         margin-left: 4vw;
 
-    }
+    } */
 }
