@@ -33,7 +33,7 @@
                         <div class="title_addauthor fs-5">Update Books</div>
                         <?php require "../Controller/bookEditController.php" ?>
                         <hr />
-                        <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['book_id']; ?>">
+                        <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['book_id'] ?>">
                         <label class="book_name fs-5" for="">Book Name:</label>
                         <input type="text" class="box1 input-edit" name="book_name" value="<?php echo $result[0]['book_name']; ?>">
                         <label class="categories fs-5" for="">Categories:</label>
@@ -64,7 +64,7 @@
                         <label for="" class="book_price fs-5">Book Price:</label>
                         <input type="text" class="box1 input-edit" name="book_price" value="<?php echo $result[0]['book_price']; ?>">
                         <label for="" class="book_des fs-5">Book Description:</label>
-                        <textarea type="text" class="box1 input-edit" name="book_desc" value="<?php echo $result[0]['book_desp']; ?>"></textarea>
+                        <textarea type="text" class="box1 input-edit" name="book_desc"><?php echo $result[0]['book_desp'] ?></textarea>
                         <label for="" class="page_no fs-5">Page No:</label>
                         <input type="text" class="box1 input-edit" name="book_pg" value="<?php echo $result[0]['page_number']; ?>">
                         <div>

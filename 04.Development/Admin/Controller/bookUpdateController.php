@@ -33,7 +33,7 @@ if (isset($_POST)) {
             page_number = :bPg,
             size = :bSize,
             book_img = :bImg,
-            updated_date = :update_date,
+            updated_date = :updated_date,
             updated_by = :updated_by 
             WHERE book_id = :id"
             );
@@ -65,7 +65,7 @@ if (isset($_POST)) {
             publisher_id = :publisher,
             page_number = :bPg,
             size = :bSize,
-            updated_date = :update_date,
+            updated_date = :updated_date,
             updated_by = :updated_by 
             WHERE book_id = :id"
         );
