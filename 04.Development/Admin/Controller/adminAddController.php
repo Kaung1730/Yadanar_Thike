@@ -3,36 +3,45 @@
 require_once "../Model/dbConnection.php";
 
 if (isset($_POST)) {
-    $question = $_POST['question'];
-    $answer = $_POST['answer'];
+    $name = $_POST['ad_name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $decPassword = md5($password);
+    $role = $_POST['role'];
     $del_flg = 0;
 
     $db = new DBConnect();
     $dbconnect = $db->connect();
     $sql = $dbconnect->prepare(
-        "INSERT INTO user_guide
+        "INSERT INTO admin
             (
-                userguide_title,
-                userguide_text,
+                admin_email,
+                admin_name,
+                admin_password,
+                role,
                 del_flg,
                 created_date,
                 created_by
             )
             VALUES
             (
-                :ques,
-                :ans,
+                :email,
+                :name,
+                :password,
+                :role,
                 :del_flg,
                 :created_date,
                 :created_by
             )"
     );
-    $sql->bindValue(":ques", $question);
-    $sql->bindValue(":ans", $answer);
+    $sql->bindValue(":email", $email);
+    $sql->bindValue(":name", $name);
+    $sql->bindValue(":password", $decPassword);
+    $sql->bindValue(":role", $role);
     $sql->bindValue(":del_flg", $del_flg);
     $sql->bindValue(":created_date", date("d/m/Y"));
     $sql->bindValue(":created_by", "myat kaung khant");
     $sql->execute();
 
-    header("Location: ../View/guideList.php");
+    header("Location: ../View/adminList.php");
 }

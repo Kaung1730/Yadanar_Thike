@@ -36,6 +36,7 @@
                             <button type="button" class="btn btn-secondary mx-5 btn-3 btn-me"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
                         </div>
                         <div class="input-part">
+                            <?php require "../Controller/adminListController.php" ?>
                             <table class="table table-striped white_table tb-edit mt-3">
                                 <tr>
                                     <th class="text-center">No.</th>
@@ -43,6 +44,19 @@
                                     <th class="text-center">Role</th>
                                     <th class="text-center last" colspan="2">Action</th>
                                 </tr>
+                                <?php
+                                $count = 1;
+                                foreach ($result as $key => $value) {
+                                    echo "<tr>";
+                                    echo "<td class='text-center'>" . $count . ".</td>";
+                                    echo "<td class='text-center'>" . $value['admin_name'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['role'] . "</td>";
+                                    echo "<td class='text-center last'><a href='../View/adminEdit.php?id=" . $value['admin_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                    echo "<td class='text-center last'><a href='../Controller/adminDeleteController.php?id=" . $value['admin_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                                    echo "</tr>";
+                                    $count++;
+                                }
+                                ?>
                             </table>
                             <nav aria-label="Page navigation example">
                                 <a href="adminAdd.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-start">Add</button></a>
