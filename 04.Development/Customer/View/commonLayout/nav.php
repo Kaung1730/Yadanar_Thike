@@ -79,7 +79,7 @@
                         <a href="#cartPopUp" class="text-dark text-decoration-none" data-bs-toggle="modal">
                             <span class="d-inline d-lg-none d-md-inline">လူကြီးမင်း၏​စျေးခြင်း</span>
                             <i class="bi bi-basket2-fill fs-2 mt-lg-5 mt-md-5 mt-0  ms-0 ms-lg-1"></i>
-                            <span class="position-absolute top-0  badge bg-danger" id="basket">0</span>
+                            <span class="position-absolute top-0  badge bg-danger" id="basket"></span>
                         </a>
 
                     </li>

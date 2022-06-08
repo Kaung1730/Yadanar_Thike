@@ -24,15 +24,15 @@ if (isset($_SESSION['status'])) {
                                     <!--Number of book increase or decrease-->
                                     <div>
                                         <div class="input-group mb-3 d-flex mt-2 numberContainer text-center align-item-center">
-                                            <button class="input-group-text fw-bold text-dark decrease-btn">ー</button>
-                                            <input type="text" class="form-control fw-bold text-dark text-center qty" disabled value="1">
-                                            <button class="input-group-text fw-bold text-dark increase-btn">+</button>
+                                            <button class="input-group-text fw-bold text-dark decrease">ー</button>
+                                            <input type="text" class="form-control fw-bold text-dark text-center qty-text" disabled value="1">
+                                            <button class="input-group-text fw-bold text-dark increase">+</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-1  d-none d-md-block d-lg-block">
+                        <div class="col-lg-1 ">
                             <i class="bi bi-trash3 text-warning"></i>
                             <!-- <i class="fa-solid fa-trash text-white"></i> -->
                         </div>
@@ -133,4 +133,28 @@ if (isset($_SESSION['status'])) {
     </div>
 <?php } ?>
 <script>
+    $(document).ready(function(){
+    $(".increase").click(function(e){
+        e.preventDefault();
+        var qty = $(".qty-text").val();
+        var value = parseInt(qty, 10);
+        value = isNaN(value) ? 1 : value;
+        //to set maximun 10 for each book
+        if(value < 10){
+            value++;
+            $(".qty-text").val(value);
+        }
+    })
+    $(".decrease").click(function(e){
+        e.preventDefault();
+        var qty = $(".qty-text").val();
+        var value = parseInt(qty, 10);
+        value = isNaN(value) ? 1 : value;
+        //to set maximun 10 for each book
+        if(value > 1){
+            value--;
+            $(".qty-text").val(value);
+        }
+    })
+})
 </script>

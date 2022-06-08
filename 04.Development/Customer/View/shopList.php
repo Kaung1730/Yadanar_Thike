@@ -52,156 +52,158 @@
             <div class="shopListBody">
             <?php
                 require"../Controller/shopListController.php";
-                    echo "<div class='bookshopName SPLKBookShop font-weight-bold
-                    '>". $result[0]['shop_Cate'] ."</div>"; 
+                foreach($result as $key => $value){
+                    // echo "<div class='bookshopName SPLKBookShop font-weight-bold
+                    // '>". $value['shop_Cate'] ."</div>"; 
                     echo "<div class='shopAddress sarpaylawkaPSD'>";
-                    echo "<h5 class='text-primary'>". $result[0]['shop_name'] ."</h5>";
+                    echo "<h5 class='text-primary'>". $value['shop_name'] ."</h5>";
                     echo "<br/>";
-                    echo "<p>" . $result[0]['address'] ."</p>";
-                    echo "<p>". $result[0]['phone no']."</p>";
+                    echo "<p>" . $value['address'] ."</p>";
+                    echo "<p>". $value['phone no']."</p>";
                     echo "</div>";
+                }
 
-                    echo "<div class='shopAddress sarpaylawkaJC'>";
-                    echo "<h5 class='text-primary'>". $result[1]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[1]['address'] ."</p>";
-                    echo "<p>". $result[1]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress sarpaylawkaJC'>";
+                    // echo "<h5 class='text-primary'>". $result[1]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[1]['address'] ."</p>";
+                    // echo "<p>". $result[1]['phone no']."</p>";
+                    // echo "</div>";
 
-                    echo "<div class='shopAddress sarpaylawkaCENTRAL'>";
-                    echo "<h5 class='text-primary'>". $result[2]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[2]['address'] ."</p>";
-                    echo "<p>". $result[2]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress sarpaylawkaCENTRAL'>";
+                    // echo "<h5 class='text-primary'>". $result[2]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[2]['address'] ."</p>";
+                    // echo "<p>". $result[2]['phone no']."</p>";
+                    // echo "</div>";
 
-                    echo "<div class='shopAddress sarpaylawkaSOK '>";
-                    echo "<h5 class='text-primary'>". $result[3]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[3]['address'] ."</p>";
-                    echo "<p>". $result[3]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress sarpaylawkaSOK '>";
+                    // echo "<h5 class='text-primary'>". $result[3]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[3]['address'] ."</p>";
+                    // echo "<p>". $result[3]['phone no']."</p>";
+                    // echo "</div>";
 
-                    echo "<div class='shopAddress sarpaylawkaHLEDAN '>";
-                    echo "<h5 class='text-primary'>". $result[4]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[4]['address'] ."</p>";
-                    echo "<p>". $result[4]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress sarpaylawkaHLEDAN '>";
+                    // echo "<h5 class='text-primary'>". $result[4]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[4]['address'] ."</p>";
+                    // echo "<p>". $result[4]['phone no']."</p>";
+                    // echo "</div>";
 
-                    echo "<div class='shopAddress sarpaylawkaKM '>";
-                    echo "<h5 class='text-primary'>". $result[5]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[5]['address'] ."</p>";
-                    echo "<p>". $result[5]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress sarpaylawkaKM '>";
+                    // echo "<h5 class='text-primary'>". $result[5]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[5]['address'] ."</p>";
+                    // echo "<p>". $result[5]['phone no']."</p>";
+                    // echo "</div>";
 
-                    echo "<div class='shopAddress sarpaylawkaINSEIN '>";
-                    echo "<h5 class='text-primary'>". $result[6]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[6]['address'] ."</p>";
-                    echo "<p>". $result[6]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress sarpaylawkaINSEIN '>";
+                    // echo "<h5 class='text-primary'>". $result[6]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[6]['address'] ."</p>";
+                    // echo "<p>". $result[6]['phone no']."</p>";
+                    // echo "</div>";
 
-                    echo "<div class='shopAddress sarpaylawkaTC '>";
-                    echo "<h5 class='text-primary'>". $result[7]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[7]['address'] ."</p>";
-                    echo "<p>". $result[7]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress sarpaylawkaTC '>";
+                    // echo "<h5 class='text-primary'>". $result[7]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[7]['address'] ."</p>";
+                    // echo "<p>". $result[7]['phone no']."</p>";
+                    // echo "</div>";
 
-                    echo "<div class='shopAddress sarpaylawkaNOK '>";
-                    echo "<h5 class='text-primary'>". $result[8]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[8]['address'] ."</p>";
-                    echo "<p>". $result[8]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress sarpaylawkaNOK '>";
+                    // echo "<h5 class='text-primary'>". $result[8]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[8]['address'] ."</p>";
+                    // echo "<p>". $result[8]['phone no']."</p>";
+                    // echo "</div>";
 
-                     //AParDawMyal BOOK SHOP  //
-                    echo "<div class='bookshopName APDMBookShop
-                    '>". $result[9]['shop_Cate'] ."</div>"; 
-                    echo "<div class='shopAddress AParDawMyal'>";
-                    echo "<p>" . $result[9]['address'] ."</p>";
-                    echo "<p>". $result[9]['phone no']."</p>";
-                    echo "</div>";
+                    //  //AParDawMyal BOOK SHOP  //
+                    // echo "<div class='bookshopName APDMBookShop
+                    // '>". $result[9]['shop_Cate'] ."</div>"; 
+                    // echo "<div class='shopAddress AParDawMyal'>";
+                    // echo "<p>" . $result[9]['address'] ."</p>";
+                    // echo "<p>". $result[9]['phone no']."</p>";
+                    // echo "</div>";
 
-                    //စောဦးစာပေ//
-                    echo "<div class='bookshopName SawOoBookShop
-                    '>". $result[10]['shop_Cate'] ."</div>"; 
-                    echo "<div class='shopAddress SawOo'>";
-                    echo "<p>" . $result[10]['address'] ."</p>";
-                    echo "<p>". $result[10]['phone no']."</p>";
-                    echo "</div>";
+                    // //စောဦးစာပေ//
+                    // echo "<div class='bookshopName SawOoBookShop
+                    // '>". $result[10]['shop_Cate'] ."</div>"; 
+                    // echo "<div class='shopAddress SawOo'>";
+                    // echo "<p>" . $result[10]['address'] ."</p>";
+                    // echo "<p>". $result[10]['phone no']."</p>";
+                    // echo "</div>";
 
-                    //အင်းဝ စာအုပ်တိုက်//
-                    echo "<div class='bookshopName InnwaBookShop
-                    '>". $result[11]['shop_Cate'] ."</div>"; 
-                    echo "<div class='shopAddress InnwaPSD'>";
-                    echo "<h5 class='text-primary'>". $result[11]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>". $result[11]['phone no']."</p>";
-                    echo "</div>";
+                    // //အင်းဝ စာအုပ်တိုက်//
+                    // echo "<div class='bookshopName InnwaBookShop
+                    // '>". $result[11]['shop_Cate'] ."</div>"; 
+                    // echo "<div class='shopAddress InnwaPSD'>";
+                    // echo "<h5 class='text-primary'>". $result[11]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>". $result[11]['phone no']."</p>";
+                    // echo "</div>";
 
-                    echo "<div class='shopAddress InnwaHLEDAN'>";
-                    echo "<h5 class='text-primary'>". $result[12]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[12]['address'] ."</p>";
-                    echo "<p>". $result[12]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress InnwaHLEDAN'>";
+                    // echo "<h5 class='text-primary'>". $result[12]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[12]['address'] ."</p>";
+                    // echo "<p>". $result[12]['phone no']."</p>";
+                    // echo "</div>";
 
-                    echo "<div class='shopAddress InnwaMMPLAZA'>";
-                    echo "<h5 class='text-primary'>". $result[13]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[13]['address'] ."</p>";
-                    echo "<p>". $result[13]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress InnwaMMPLAZA'>";
+                    // echo "<h5 class='text-primary'>". $result[13]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[13]['address'] ."</p>";
+                    // echo "<p>". $result[13]['phone no']."</p>";
+                    // echo "</div>";
 
-                    echo "<div class='shopAddress InnwaTIMECITY'>";
-                    echo "<h5 class='text-primary'>". $result[14]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[14]['address'] ."</p>";
-                    echo "<p>". $result[14]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress InnwaTIMECITY'>";
+                    // echo "<h5 class='text-primary'>". $result[14]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[14]['address'] ."</p>";
+                    // echo "<p>". $result[14]['phone no']."</p>";
+                    // echo "</div>";
 
-                    echo "<div class='shopAddress InnwaTerminalM'>";
-                    echo "<h5 class='text-primary'>". $result[15]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[15]['address'] ."</p>";
-                    echo "<p>". $result[15]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress InnwaTerminalM'>";
+                    // echo "<h5 class='text-primary'>". $result[15]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[15]['address'] ."</p>";
+                    // echo "<p>". $result[15]['phone no']."</p>";
+                    // echo "</div>";
 
-                    echo "<div class='shopAddress InnwaMDY'>";
-                    echo "<h5 class='text-primary'>". $result[16]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[16]['address'] ."</p>";
-                    echo "<p>". $result[16]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress InnwaMDY'>";
+                    // echo "<h5 class='text-primary'>". $result[16]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[16]['address'] ."</p>";
+                    // echo "<p>". $result[16]['phone no']."</p>";
+                    // echo "</div>";
 
-                    //ရာပြည့်//
-                    echo "<div class='bookshopName YarPyaeBookShop
-                    '>". $result[17]['shop_Cate'] ."</div>"; 
-                    echo "<div class='shopAddress YarpyaePSD'>";
-                    echo "<h5 class='text-primary'>". $result[17]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>". $result[17]['phone no']."</p>";
-                    echo "</div>";
+                    // //ရာပြည့်//
+                    // echo "<div class='bookshopName YarPyaeBookShop
+                    // '>". $result[17]['shop_Cate'] ."</div>"; 
+                    // echo "<div class='shopAddress YarpyaePSD'>";
+                    // echo "<h5 class='text-primary'>". $result[17]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>". $result[17]['phone no']."</p>";
+                    // echo "</div>";
 
-                    echo "<div class='shopAddress YarpyaeHLEDAN'>";
-                    echo "<h5 class='text-primary'>". $result[18]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[18]['address'] ."</p>";
-                    echo "<p>". $result[18]['phone no']."</p>";
-                    echo "</div>";
+                    // echo "<div class='shopAddress YarpyaeHLEDAN'>";
+                    // echo "<h5 class='text-primary'>". $result[18]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[18]['address'] ."</p>";
+                    // echo "<p>". $result[18]['phone no']."</p>";
+                    // echo "</div>";
 
-                    //ကံ့ကော်ဝတ်ရည် စာပေတိုက်//
-                    echo "<div class='bookshopName KantKawBookShop 
-                    '>". $result[19]['shop_Cate'] ."</div>"; 
-                    echo "<div class='shopAddress KantKaw'>";
-                    echo "<h5 class='text-primary'>". $result[19]['shop_name'] ."</h5>";
-                    echo "<br/>";
-                    echo "<p>" . $result[19]['address'] ."</p>";
-                    echo "<p>". $result[19]['phone no']."</p>";
-                    echo "</div>";
+                    // //ကံ့ကော်ဝတ်ရည် စာပေတိုက်//
+                    // echo "<div class='bookshopName KantKawBookShop 
+                    // '>". $result[19]['shop_Cate'] ."</div>"; 
+                    // echo "<div class='shopAddress KantKaw'>";
+                    // echo "<h5 class='text-primary'>". $result[19]['shop_name'] ."</h5>";
+                    // echo "<br/>";
+                    // echo "<p>" . $result[19]['address'] ."</p>";
+                    // echo "<p>". $result[19]['phone no']."</p>";
+                    // echo "</div>";
                 ?>   
                 <!-- <div class="bookshopName SPLKBookShop font-weight-bold ">စာပေလောက စာအုပ်အရောင်းဆိုင်များ</div> -->
                 <!-- <div class="shopAddress sarpaylawkaPSD">
