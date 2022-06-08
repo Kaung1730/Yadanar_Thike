@@ -16,8 +16,12 @@ $sql = $dbconnect->prepare("
 $sql->bindValue(":id", $data['book_id']);
 $sql->execute();
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
+$data = array();
+array_push($_SESSION['status'],$data);
 if(isset($_SESSION['status'])){
+    if(empty($_SESSION['cart'])){
         $_SESSION['cart'] = array();
+    }
         array_push($_SESSION['cart'],$result);
 }
 

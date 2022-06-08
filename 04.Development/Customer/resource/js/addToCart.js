@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+    var data;
     $("#addToCart").click(function(){
         var book_id = $(this).val();
         var quantity = $(".qty").val();
@@ -13,14 +13,15 @@ $(document).ready(function(){
             type: "POST",
             data:{send: JSON.stringify(postData)},
             success: function (res){
-                var data = $.parseJSON(res);
+                data = $.parseJSON(res);
+                // var data = ;
                 // var test = data[0]
                 // for (const key in test) {
                 //         const element = test[key];
                 //         console.log(element);
                         
                 // }
-                console.log(res);
+                console.log(data);
             },
             error:function(err){
                 console.log(err);

@@ -4,7 +4,6 @@ require_once "../Model/DBConnection.php";
 
 $id = $_GET['book_id'];
 $_SESSION['book_id'] = $id;
-$eachId = $_SESSION['each_book_id'];
 //Call DB Connection
 $db =  new DBConnect();
 $dbconnect = $db->connect();
