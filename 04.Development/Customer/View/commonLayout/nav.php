@@ -13,7 +13,7 @@
                         <a class="nav-link mt-lg-2 mt-md-0 mt-0 pt-lg-3 pt-md-0 pt-0 active" aria-current="page" href="../View/homePage.php">မူလစာမျက်နှာ</a>
                     </li>
                     <li class="nav-item nav-color me-lg-4 me-md-0 me-0 px-lg-4 px-md-2 px-2 py-lg-0 py-md-2 py-2">
-                        <a class="nav-link mt-lg-2 mt-md-0 mt-0 pt-lg-3 pt-md-0 pt-0 active" href="../View/category.php">စာအုပ်များ</a>
+                        <a class="nav-link mt-lg-2 mt-md-0 mt-0 pt-lg-3 pt-md-0 pt-0 active" href="../View/category.php">စာအုပ်အမျိုးအစားများ</a>
                     </li>
                     <li class="nav-item nav-color me-lg-4 me-md-0 me-0 px-lg-2 px-md-2 px-2 py-lg-0 py-md-2 py-2">
                         <a class="nav-link  mt-lg-2 mt-md-0 mt-0 pt-lg-3 pt-md-0 pt-0 active" href="../View/authorList.php">စာရေးဆရာများ</a>
