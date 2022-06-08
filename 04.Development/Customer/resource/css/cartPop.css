@@ -1,6 +1,11 @@
+#cardPopUp{
+    background-color: var(--medium-black) !important;
+}
+
 .modal-parent{
     border-radius: 1em !important;
     max-width: 22rem;
+    background-color: var(--medium-black) !important;
 }
 .modal-title{
     font-size: 1em !important;
