@@ -22,3 +22,13 @@ $sql = $dbconnect->prepare(
 $sql->execute();
 
 $bookResult = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+$sql = $dbconnect->prepare("SELECT author_id,author_name FROM author WHERE del_flg=0");
+$sql->execute();
+
+$authorList = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+$sql = $dbconnect->prepare("SELECT category_id,category_name FROM category WHERE del_flg=0");
+$sql->execute();
+
+$categoryList = $sql->fetchAll(PDO::FETCH_ASSOC);

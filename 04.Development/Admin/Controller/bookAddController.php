@@ -60,13 +60,13 @@ if (isset($_POST)) {
         $sql->bindValue(":category", $bookCategory);
         $sql->bindValue(":publisher", $bookPublisher);
         $sql->bindValue(":bPg", $bookPg);
-        $sql->bindValue(":bSize", $bookLen . "X" . $bookWid . "X" . $bookHig);
+        $sql->bindValue(":bSize", $bookLen . "x" . $bookWid . "x" . $bookHig);
         $sql->bindValue(":bImg", $bookImage);
         $sql->bindValue(":del_flg", $del_flg);
-        $sql->bindValue(":created_date", "6/1/2022");
+        $sql->bindValue(":created_date", date("d/m/Y"));
         $sql->bindValue(":created_by", "myat kaung khant");
         $sql->execute();
 
-        // header("Location: ../View/bookInfo.php");
+        header("Location: ../View/bookInfo.php");
     }
 }

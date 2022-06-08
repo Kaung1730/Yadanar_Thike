@@ -19,7 +19,6 @@
 </head>
 
 <body>
-    <?php require "../Controller/bookEditController.php" ?>
     <div class="container-fluid">
         <form action="../Controller/bookUpdateController.php" method="POST" enctype="multipart/form-data">
             <div class="row">
@@ -32,8 +31,9 @@
                     </div>
                     <div class="add_author">
                         <div class="title_addauthor fs-5">Update Books</div>
+                        <?php require "../Controller/bookEditController.php" ?>
                         <hr />
-                        <input type="hidden" class="box1 input-edit" name="book_id" value="<?php echo $result[0]['book_id']; ?>">
+                        <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['book_id']; ?>">
                         <label class="book_name fs-5" for="">Book Name:</label>
                         <input type="text" class="box1 input-edit" name="book_name" value="<?php echo $result[0]['book_name']; ?>">
                         <label class="categories fs-5" for="">Categories:</label>

@@ -45,7 +45,7 @@ if(isset($_POST)){
         $sql->bindValue(":life", $authorBorn . "-" . $authorDie);
         $sql->bindValue(":category", $authorCategory);
         $sql->bindValue(":del_flg", $del_flg);
-        $sql->bindValue(":created_date", "6/1/2022");
+        $sql->bindValue(":created_date", date("d/m/Y"));
         $sql->bindValue(":created_by", "myat kaung khant");
         $sql->execute();
 

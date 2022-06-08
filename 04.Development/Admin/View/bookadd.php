@@ -39,7 +39,7 @@
                         <!-- <input type="text" class="box1 input-edit" name="book_cate"> -->
                         <select name="book_cate" id="" class="box1 input-edit">
                             <?php
-                            foreach ($bookResult as $key => $value) {
+                            foreach ($categoryList as $key => $value) {
                                 echo "<option value='" . $value['category_id'] . "'>" . $value['category_name'] . "</option>";
                             }
                             ?>
@@ -48,7 +48,7 @@
                         <!-- <input type="text" class="box1 input-edit" name="book_author"> -->
                         <select name="book_author" id="" class="box1 input-edit">
                             <?php
-                            foreach ($bookResult as $key => $value) {
+                            foreach ($authorList as $key => $value) {
                                 echo "<option value='" . $value['author_id'] . "'>" . $value['author_name'] . "</option>";
                             }
                             ?>
