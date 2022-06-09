@@ -9,7 +9,7 @@
                 <h5 class="modal-title fw-bold" id="userSettingLabel">ကိုယ်​ရေးအချက်အလက်များ ပြင်ဆင်မည်</h5>
                 <button type="button" class="btn-close btn-close-dark me-lg-3" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body modal-setting">
                 <div class="">
                 <input type="hidden" name="customer_id" value ="<?php echo $result[0]['customer_id']?>">
                     <form  enctype="multipart/form-data">

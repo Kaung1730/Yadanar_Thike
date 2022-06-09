@@ -11,7 +11,7 @@ select{
 .order-btn{
     font-size: 0.8rem !important;
 }
-.modal-body{
+.order-body{
     border: 0 solid var(--light-black) !important;
     background-color: var(--medium-black) !important;
 }

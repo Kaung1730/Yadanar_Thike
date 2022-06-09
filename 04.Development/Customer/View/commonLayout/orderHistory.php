@@ -5,7 +5,7 @@
                 <h5 class="modal-title ms-lg-5" id="lg-orderHistoryLabel">မှာယူခဲ့သည့်စာရင်းများ</h5>
                 <button type="button" class="btn-close btn-close-dark me-lg-3" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body text-white  fw-light">
+            <div class="modal-body modal-history text-white  fw-light">
                 <?php session_start();
                     if(!isset($_SESSION['status'])){ ?>
                         <div class="lead">စာအုပ်မဝယ်ယူရ​သေးပါ</div>

@@ -9,7 +9,7 @@ if (isset($_SESSION['status'])) {
                     <h5 class="modal-title ms-lg-5" id="lg-orderLabel">​အော်ဒါနံပါတ် - <span><b> 123</b></span></h5>
                     <button type="button" class="btn-close btn-close-dark me-lg-3" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body fw-light">
+                <div class="modal-body fw-light order-body">
                     <div class="row g-0">
                         <div class="col-lg-4">
                             <img src="../resource/image/The-beginning-of-attachment-and-the-end-of-forgiveness-1-300x300 13 copy 2.png" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />

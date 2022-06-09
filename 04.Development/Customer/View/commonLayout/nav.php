@@ -65,10 +65,10 @@
                         <!--end of searchbar-->
                     </li>
                     <li class="nav-item color  position-relative mt-lg-3  mt-0 mt-md-0  ms-0 ms-md-0 ms-lg-2 px-md-2 px-2 py-lg-0 py-md-2 py-2">
-                        <a href="#cartPopUp" class="text-dark text-decoration-none" data-bs-toggle="modal">
-                            <span class="d-inline d-lg-none d-md-inline">လူကြီးမင်း၏​စျေးခြင်း</span>
-                            <i class="bi bi-basket2-fill fs-2 mt-lg-5 mt-md-5 mt-0  ms-0 ms-lg-1"></i>
-                            <span class="position-absolute top-0  badge bg-danger" id="basket"></span>
+                        <a href="#cartPopUp"class="text-dark text-decoration-none cart" data-bs-toggle="modal">
+                            <span class="d-inline d-lg-none d-md-inline cart">လူကြီးမင်း၏​စျေးခြင်း</span>
+                            <i class="bi bi-basket2-fill fs-2 mt-lg-5 mt-md-5 mt-0  ms-0 ms-lg-1 cart"></i>
+                            <span class="position-absolute cart top-0  badge bg-danger" id="basket"></span>
                         </a>
 
                     </li>
@@ -87,7 +87,9 @@
     </div>
     <!--end of searchbar-->
     <script>
+        
         $(document).ready(function(){
+            $("#basket").text(localStorage.getItem('cartCount'));
             $(".search-btn").click(function(){
                 var text = $("#search-text").val();
                 console.log(text);

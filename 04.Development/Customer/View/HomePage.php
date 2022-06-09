@@ -33,17 +33,18 @@
     <!--Customize CSS-->
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <link rel="stylesheet" href="../resource/css/userSetting.css">
-    <link rel="stylesheet" href="../resource/css/cartPop.css">
     <link rel="stylesheet" href="../resource/css/orderHistory.css">
     <link rel="stylesheet" href="../resource/css/nav.css">
     <link rel="stylesheet" href="../resource/css/order.css">
     <link rel="stylesheet" href="../resource/css/footer.css ">
-
+    <link rel="stylesheet" href="../resource/css/cartPop.css">
     <!--Bootstrap Icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 
     <script src="../resource/js/nav.js" defer></script>
     <script src="../resource/js/userSetting.js" defer></script>
+    <script src="../resource/js/cartShow.js"></script>
+    <script src="../resource/js/cart.js"></script>
 </head>
 
 <body>

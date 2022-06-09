@@ -8,7 +8,7 @@
 .order-btn{
     font-size: 0.8rem !important;
 }
-.modal-body{
+.modal-setting{
     border: 0 solid var(--light-black) !important;
     background-color: var(--medium-black) !important;
 }

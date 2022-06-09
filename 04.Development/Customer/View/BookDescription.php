@@ -28,7 +28,8 @@
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/nav.js"></script>
     <script src="../resource/js/comment.js"></script>
-    <script src="../resource/js/addToCart.js"></script>
+    <script src="../resource/js/cart.js"></script>
+    <script src="../resource/js/cartShow.js"></script>
     <script src="../resource/js/calc.js"></script>
     <!--star rating-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
@@ -136,8 +137,11 @@
                                     <button class="input-group-text fw-bold text-dark increase-btn">+</button>
                                 </div>
                         </div>
+                        <?php  if(isset($_SESSION['status'])) { ?>
+                            <input type="hidden" id="customer_id" value="<?php echo $_SESSION['customer_id']?>">;
+                        <?php }?>
                         <div>
-                            <button href="#cartPopUp" class="text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal" id="addToCart" value="<?php echo $result[0]['book_id']; ?>">
+                            <button href="#cartPopUp" id="cart-btn" class="text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal" id="addToCart" value="<?php echo $result[0]['book_id']; ?>">
                             ခြင်းတောင်းထဲထည့်ရန်
                             </button>
                         </div>
@@ -272,9 +276,6 @@
     <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
     </div>
 
-    <script>
-
-    </script>
 </body>
 
 </html>

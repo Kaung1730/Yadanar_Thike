@@ -13,7 +13,7 @@
 .order-btn{
     font-size: 0.8rem !important;
 }
-.modal-body{
+.cart-body{
     border: 0 solid var(--light-black) !important;
     background-color: var(--medium-black) !important;
 }
@@ -30,4 +30,8 @@
 .bi-trash3::before {
     font-size: 1.3rem !important;
     cursor: pointer !important;
+}
+.delete-btn{
+    background-color: transparent !important;
+    border: none !important;
 }
