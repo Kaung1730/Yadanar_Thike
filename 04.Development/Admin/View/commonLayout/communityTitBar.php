@@ -1,9 +1,10 @@
+<?php session_start(); ?>
 <span class="com-edit">
-    <span class="title mt-1 mx-3 fs-4">Author</span>
+    <span class="title mt-1 mx-3 fs-4">Community</span>
     <br />
-    <span class="title_list ms-3 com-editC" id="adminCl">Author</span>
+    <span class="title_list ms-3 com-editC" id="adminCl">Community</span>
     <span class="title_list com-editC">></span>
-    <span class="title_list com-editC">Author Lists</span>
+    <span class="title_list com-editC">Review & Rating</span>
 </span>
 <!-- <span class="box-search title-list ms-5 mb-3">
     <input class="form-control me-2 search-box mt-2" type="search" placeholder="Search" aria-label="Search">
@@ -16,8 +17,8 @@
     <a href=""><img src="../resource/image/cart.png" alt="" class="nav_img mx-4 float-end"></a>
     <!-- <i class="bi bi-cart4 ms-5 fs-4 fw-bold i-edit"></i> -->
 </span>
-<span class="mx-4 i-edit">
-    <img src="../resource/image/person icon.png" alt="" class="nav_img mt-2 ms-2 img-me float-end">
+<span class="mx-1 i-edit">
+    <img src="../resource/image/person icon.png" alt="" class="nav_img mt-2 ms-2 img-me float-end ">
     <br />
-    <span class="">Admin</span>
+    <span class="admin_name text-center"><?php echo $_SESSION['admin_name'] ?></span>
 </span>

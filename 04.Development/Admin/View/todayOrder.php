@@ -78,7 +78,7 @@
                                     <th class="text-center">Status</th>
                                 </tr>
                             </table>
-                            <a href="faqAdd.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-end">See more</button></a>
+                            <a href="orderinfo.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-end">See more</button></a>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                         </div>

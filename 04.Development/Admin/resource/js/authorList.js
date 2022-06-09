@@ -1,4 +1,4 @@
 $(document).ready(function () {
     $(".nav_box").load("./commonLayout/navbar.html");
-    $(".title_bar").load("./commonLayout/authorTitBar.html");
+    $(".title_bar").load("./commonLayout/authorTitBar.php");
 })

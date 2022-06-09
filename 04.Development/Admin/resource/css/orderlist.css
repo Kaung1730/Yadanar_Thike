@@ -96,7 +96,7 @@ hr{
     padding-top: 2vh;
 }
 .author_bar{
-    height: 30vh;
+    height: auto;
     background-color: var(--boxColor);
     margin-top: 4vh;
     border-radius: 12px;
