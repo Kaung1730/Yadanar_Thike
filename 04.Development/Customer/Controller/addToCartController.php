@@ -18,12 +18,13 @@ $sql->bindValue(":id", $data['book_id']);
 $sql->bindValue(":q", $quantity);
 $sql->execute();
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
-
+$duplicate = [];
 if(isset($_SESSION['status'])){
     if(empty($_SESSION['cart'])){
         $_SESSION['cart'] = array();
-    }
+    } 
         array_push($_SESSION['cart'],$result);
-}
+        }
+
 
 print_r(json_encode($_SESSION['cart']));

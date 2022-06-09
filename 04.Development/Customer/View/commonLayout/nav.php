@@ -53,8 +53,8 @@
                                     <div class="modal-body">
                                         <div class="input-group text-dark selectNav">
                                             <button class=" text-dark btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">ရှာဖွေရန်</button>
-                                            <input type="text" class="form-control searchInput ps-3" aria-label="Text input with dropdown button" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ?">
-                                            <button class="btn" type="button" id="button-addon2">
+                                            <input type="text" class="form-control searchInput ps-3 search-text" id =" search-text" aria-label="Text input with dropdown button" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ?">
+                                            <button class="btn search-btn" type="button" id="button-addon2">
                                                 <i class="bi bi-search fw-bold fs-5"></i>
                                             </button>
                                         </div>
@@ -64,17 +64,6 @@
                         </div>
                         <!--end of searchbar-->
                     </li>
-                    <!-- <li class="nav-item dropdown color me-lg-4 me-md-0 me-0 px-lg-2 px-md-2 px-2 py-lg-0 py-md-2 py-2">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="../resource/image/Vector.png" alt="" class="useracc "/>
-                            <span class="acc-name ps-3 ps-md-1 ps-2">အကောင့်အမည်</span>
-                        </a>
-                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item text-dark" href="#userSetting" data-bs-toggle="modal">ကိုယ်​ရေးအချက်အလက်များပြင်ဆင်မည်</a></li>
-                            <li><a class="dropdown-item text-dark" href="#orderHistory" data-bs-toggle="modal">မှာယူခဲ့သည့်စာရင်းများ</a></li>
-                            <li><a class="dropdown-item text-dark" href=""><i class="bi bi-box-arrow-right text-dark fs-5 me-2"></i>အ​ကောင့်မှထွက်ရန်</a></li>
-                        </ul>
-                    </li> -->
                     <li class="nav-item color  position-relative mt-lg-3  mt-0 mt-md-0  ms-0 ms-md-0 ms-lg-2 px-md-2 px-2 py-lg-0 py-md-2 py-2">
                         <a href="#cartPopUp" class="text-dark text-decoration-none" data-bs-toggle="modal">
                             <span class="d-inline d-lg-none d-md-inline">လူကြီးမင်း၏​စျေးခြင်း</span>
@@ -91,9 +80,33 @@
     <!--searchbar for large screen-->
     <div class="top-0 mt-lg-0 mt-md-3 mt-5 pt-lg-1 pt-md-5 pt-5 input-group text-dark d-none d-md-none d-lg-flex search">
         <button class=" text-dark btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">ရှာဖွေရန်</button>
-        <input type="text" class="form-control searchInput" aria-label="Text input with dropdown button" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ? ဒီကနေ ဝင်ရှာလို့ရပါတယ်">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+        <input type="text" class="form-control searchInput" id ="search-text" aria-label="Text input with dropdown button" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ? ဒီကနေ ဝင်ရှာလို့ရပါတယ်">
+        <button class="btn btn-outline-secondary search-btn" type="button" id="button-addon2">
             <i class="bi bi-search text-dark  fs-5 search-icon"></i>
         </button>
     </div>
     <!--end of searchbar-->
+    <script>
+        $(document).ready(function(){
+            $(".search-btn").click(function(){
+                var text = $("#search-text").val();
+                console.log(text);
+                let postData = {
+                    "text": text,
+                }
+                $.ajax({
+                url: "../Controller/searchDataSendController.php",
+                type: "POST",
+                data: { send: JSON.stringify(postData) },
+                success: function (res) {
+                    console.log(res);
+                    location.href = $.parseJSON(res);
+                },
+                error: function (err) {
+                    console.log(err)
+                }
+            
+        })
+            })
+        })
+    </script>
