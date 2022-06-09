@@ -1,12 +1,15 @@
 $(document).ready(function(){
-    $("#check").change(function(){
+    
+    $(".check").change(function(){
+        // console.log($(this).next(".user_id").val());
+        let postData = {
+            "check": ($(this).prop("checked")) ? 1:0,
+            "user_id": $(this).next(".user_id").val()
+        }
         $.ajax({
-            URL: "../Controller/userListController.php",
+            url: "../Controller/userListController.php",
             type: "POST",
-            data: new FormData(this),
-            contentType: false,
-            processData: false,
-            cache: false,
+            data: { send: JSON.stringify(postData) },
             success:function(result){
                 console.log("check");
             },

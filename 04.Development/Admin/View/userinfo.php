@@ -51,7 +51,9 @@
                                 echo "<td class='text-center'>" . $value['customer_name'] . "</td>";
                                 echo "<td class='text-center'>" . $value['customer_email'] . "</td>";
                                 echo "<td class='text-center'>" . $value['customer_phno'] . "</td>";
-                                echo "<td class='text-center'><input type='checkbox' name='' id='check'></td>";
+                                echo "<td class='text-center'><input type='checkbox' name='' id='check' class='check'>";
+                                echo '<input type="hidden" class="user_id" value="'. $value["customer_id"] .'">';
+                                echo "</td>";
                                 echo "</tr>";
                                 $count++;
                             }
