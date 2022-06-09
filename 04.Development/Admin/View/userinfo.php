@@ -16,6 +16,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/userInfo.js"></script>
+    <script src="../resource/js/userInfoController.js"></script>
 </head>
 
 <body>
@@ -50,7 +51,7 @@
                                 echo "<td class='text-center'>" . $value['customer_name'] . "</td>";
                                 echo "<td class='text-center'>" . $value['customer_email'] . "</td>";
                                 echo "<td class='text-center'>" . $value['customer_phno'] . "</td>";
-                                echo "<td class='text-center'><input type='checkbox' name='' id=''></td>";
+                                echo "<td class='text-center'><input type='checkbox' name='' id='check'></td>";
                                 echo "</tr>";
                                 $count++;
                             }
