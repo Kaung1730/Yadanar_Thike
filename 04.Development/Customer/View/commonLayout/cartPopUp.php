@@ -2,18 +2,6 @@
 session_start();
 require "../../Controller/cartItemShow.php";
 if (isset($_SESSION['status'])) {
-    if (isset($_SESSION['cart'])) {
-    
-    }
-    else{
-        $item_array = array(
-            'item_id' => $cartDataResult[0]['book_id'],
-            'customer_id' => $cartDataResult[0]['customer_id'],
-            'item_name' => $cartDataResult[0]['book_name'],
-            'item_qty' => $cartDataResult[0]['quantity'],
-        );
-        $_SESSION['cart'][0] = $item_array;
-    }
 ?>
 <div class="modal  fade ms-5 ms-lg-5 ms-md-0" id="cartPopUp" tabindex="-1" aria-labelledby="lg-cartPopUpLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -85,5 +73,26 @@ if (isset($_SESSION['status'])) {
 <?php } ?>
 
 <script>
-    $(".order-count").text(localStorage.getItem('cartCount'));
+    $(document).ready(function(){
+        $(".order-count").text(localStorage.getItem('cartCount'));
+                $(".delete-btn").click(function(){
+                var item_id = $(this).val();
+                alert(item_id);
+                let postdata = {
+                    "item_id":item_id,
+                }
+                $.ajax({
+                    url: "../Controller/deleteCartItem.php",
+                    type: "POST",
+                    data:{senddata: JSON.stringify(postdata)},
+                    success: function (res){
+                        alert(res);
+                    },
+                    error:function(err){
+                        alert(err);
+                    }
+                });
+            
+            })
+    })
 </script>

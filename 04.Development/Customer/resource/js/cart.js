@@ -2,6 +2,8 @@ $(document).ready(function(){
     $("#basket").text(localStorage.getItem('cartCount'));
     $(".order-count").text(localStorage.getItem('cartCount'));
     $("#cart-btn").click(function(){
+        var cartNumber = 0;
+        cartNumber++;
         var book_id = $(this).val();
         var quantity = $(".qty").val();
         var customer_id = $("#customer_id").val();
@@ -20,6 +22,7 @@ $(document).ready(function(){
                 var cartCount = res;
                 localStorage.setItem('cartCount', cartCount);
                 $(".order-count").text(cartCount);
+                $("#basket").text(localStorage.getItem('cartCount'));
             },
             error: function (err) {
                 console.log(err);

@@ -8,7 +8,7 @@ if(isset($_SESSION['status'])){
 
     //to check duplicate cart item
     $cartData = $dbconnect -> prepare("
-                    SELECT cart.quantity,book_m.book_id, book_m.book_name, book_m.book_img, book_m.book_price
+                    SELECT  cart.quantity,book_m.book_id, book_m.book_name, book_m.book_img, book_m.book_price
                     FROM cart, book_m
                     WHERE 
                     cart.book_id = book_m.book_id AND
