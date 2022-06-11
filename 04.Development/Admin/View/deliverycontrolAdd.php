@@ -63,7 +63,7 @@
                             <label for="township" class="form-label mt-5">Township</label>
                             <!-- <input type="text" id="township" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="township"> -->
                             <div class="input-group inputgp mt-3 input-width">
-                                <select class="form-select input-edit" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                <select class="form-select input-edit township" id="township" aria-label="Example select with button addon">
                                     <?php
                                     foreach ($result as $key => $value) {
                                         echo "<option value='" . $value['state_id'] . "'>" . $value['township_name'] . "</option>";
