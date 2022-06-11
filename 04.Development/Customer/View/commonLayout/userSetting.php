@@ -1,5 +1,5 @@
 <?php
-  require "../../Controller/userSettingShowController.php"
+  require "../../Controller/userSettingShowController.php";
 ?>
 
 <div class="modal ms-5 ms-lg-5 ms-md-0 fade" id="userSetting" tabindex="-1" aria-labelledby="userSettingLabel" aria-hidden="true">
@@ -123,6 +123,18 @@ $("#update-btn").click(function(){
             success: function (res){
                 console.log(res);
                 if(res == 'success'){
+                    //to update data
+                    $.ajax({
+                        url:"../Controller/userSettingUpdateShow.php",
+                        type:"POST",
+                        success:function(res){
+                            console.log(res);
+                        },
+                        error:function(err){
+                            console.log(err);
+                        }
+
+                    })
                     swal("ကိုယ်​ရေးအချက်အလက်များ ပြင်ဆင်မှု ​အောင်မြင်ပါသည်။", {
                         buttons: {
                         catch: {
@@ -139,18 +151,6 @@ $("#update-btn").click(function(){
                                         }
                         });
 
-                //to update data
-                $.ajax({
-                    url:"../Controller/userSettingUpdateShow.php",
-                    type:"POST",
-                    success:function(res){
-                        console.log(res);
-                    },
-                    error:function(err){
-                        console.log(err);
-                    }
-
-                })
                 }
             },
             error:function(err){
