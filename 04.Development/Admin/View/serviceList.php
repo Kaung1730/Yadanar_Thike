@@ -64,19 +64,43 @@
                         <nav aria-label="Page navigation example">
                             <a href="serviceAdd.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-start">Add</button></a>
                             <ul class="pagination float-end me-5">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&#10094;</span>
+                                <li class="page-item"><a class="page-link" href="?pageno=1">First</a></li>
+                                <li class="page-item 
+                                <?php
+                                if ($pageno <= 1) {
+                                    echo 'disabled';
+                                }
+                                ?>">
+                                    <a class="page-link" href="
+                                    <?php
+                                    if ($pageno <= 1) {
+                                        echo '#';
+                                    } else {
+                                        echo "?pageno=" . ($pageno - 1);
+                                    }
+                                    ?>
+                                    ">
+                                        <span aria-hidden="true">Pre</span>
                                     </a>
                                 </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&#10095;</span>
-                                    </a>
+                                <li class="page-item"><a class="page-link" href="#"><?php echo $pageno; ?></a></li>
+                                <li class="page-item
+                                <?php
+                                if ($pageno >= $total) {
+                                    echo 'disabled';
+                                }
+                                ?>">
+                                    <a class="page-link" href="
+                                    <?php
+                                    if ($pageno >= $total) {
+                                        echo '#';
+                                    } else {
+                                        echo "?pageno=" . ($pageno + 1);
+                                    }
+                                    ?>
+                                    ">Next</a>
                                 </li>
+                                <li class="page-item"><a class="page-link" href="?pageno=<?php echo $total; ?>" aria-label="Next"><span aria-hidden="true">Last</span></a></li>
                             </ul>
                         </nav>
                         <p>&nbsp;</p>
