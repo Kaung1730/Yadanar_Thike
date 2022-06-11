@@ -39,6 +39,14 @@ nav, .dropdown-item, select, option{
 .selectNav{
     border-radius: unset !important;
 }
+.delete{
+    background-color: transparent !important;
+    border: none !important;
+}
+.commentBtn{
+    background-color: var(--yellow) !important;
+    border-radius: 1.5rem !important;
+}
 @media screen and (max-width:576px) {
     .color{
         background-color: var(--yellow) !important;

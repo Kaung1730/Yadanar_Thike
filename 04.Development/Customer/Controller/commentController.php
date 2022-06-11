@@ -38,7 +38,7 @@ session_start();
                 $sql -> bindValue(":review_date",$today);
                 $sql -> bindValue(":rating",$data['star']);
                 $sql -> bindValue(":del_flg",$del_flg);
-                $sql -> bindValue(":created_date","6/5/2022");
+                $sql -> bindValue(":created_date",date("d/m/Y"));
                 $sql -> bindValue(":created_by","KaungKaung");
                 $sql->execute();
             $result = $sql->fetchAll(PDO::FETCH_ASSOC);

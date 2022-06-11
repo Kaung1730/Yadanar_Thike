@@ -24,7 +24,7 @@ $(document).ready(function () {
         else {
             let postData = {
                 "star": star,
-                "textComment": '"' + text + '"',
+                "textComment":text,
             }
             $.ajax({
                 url: "../Controller/commentController.php",
@@ -59,12 +59,23 @@ $(document).ready(function () {
 
                     else if (res = "success") {
                         $('#review-text').val("");
-                        swal({
-                            title: "ပေးပို့မှု​အောင်မြင်ပါသည်။",
-                            text: "စာအုပ်​ဝေဖန်ချက်​ပေးပို့မှု​အောင်မြင်ပါသည်။",
-                            icon: "success",
-                            button: { text: 'OK', className: 'commentBtn' },
-                        });
+                        swal("စာအုပ်​ဝေဖန်ချက်​ပေးပို့မှု​အောင်မြင်ပါသည်။", {
+                            buttons: {
+                                catch: {
+                                    text: "OK",
+                                    value: "send",
+                                    className: 'commentBtn'
+                                },
+                                defeat: false,
+                            },
+                        })
+                            .then((value) => {
+                                switch (value) {
+                                    case "send":
+                                    location.reload();
+                                    break;
+                                }
+                            });
                     }
                     console.log(res);
                 },

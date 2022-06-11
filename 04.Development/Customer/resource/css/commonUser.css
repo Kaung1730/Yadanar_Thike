@@ -42,3 +42,8 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: var(--light-yellow) !important;
   }
+
+.commentBtn{
+    background-color: var(--yellow) !important;
+    border-radius: 1.5rem !important;
+}

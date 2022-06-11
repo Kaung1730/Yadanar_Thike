@@ -31,6 +31,7 @@
     <script src="../resource/js/cart.js"></script>
     <script src="../resource/js/cartShow.js"></script>
     <script src="../resource/js/calc.js"></script>
+    <script src="../resource/js/order.js"></script>
     <!--star rating-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
@@ -69,8 +70,11 @@
                         <div class="my-1 book-d-text"> <span>စာအုပ်အရွယ်အစား -</span> <?php echo $result[0]['size']; ?></div>
                         <div class="my-1 book-d-text"> <span>ပုံနှိပ်မှတ်တမ်း -</span> <?php echo $result[0]['publisher_name']; ?></div>
                         <div class="OrderBtnContainer  d-flex d-lg-block d-md-block justify-content-center">
-                            <a class="ms-lg-5 ms-md-3 me-4  my-3 px-4 py-2 btn book-d-text order-btn" data-bs-toggle="modal" href="#order" id="order-btn">အမှာတင်မည်</a>
+                            <button  id="cart-btn" class="cart-btn ms-lg-5 ms-md-3 me-4  my-3 px-4 py-2 text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal" id="addToCart" value="<?php echo $result[0]['book_id']; ?>">
+                                အမှာတင်မည်
+                            </button>
                         </div>
+                        
                     </div>
                     <div class="col-4 d-none d-md-block d-lg-block d-xl-block"></div>
                     <div class="col-lg-4 col-md-4 col-xl-4 col-12 pt-5 pt-md-0 pt-lg-0 ps-5 ps-lg-0 ps-md-0">
@@ -141,7 +145,7 @@
                             <input type="hidden" id="customer_id" value="<?php echo $_SESSION['customer_id']?>">;
                         <?php }?>
                         <div>
-                            <button href="#cartPopUp" id="cart-btn" class="text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal" id="addToCart" value="<?php echo $result[0]['book_id']; ?>">
+                            <button  id="cart-btn" class=" cart-btn text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal" id="addToCart" value="<?php echo $result[0]['book_id']; ?>">
                             ခြင်းတောင်းထဲထည့်ရန်
                             </button>
                         </div>
