@@ -52,7 +52,7 @@
                                 echo "<td class='text-center'>" . $count . ".</td>";
                                 echo "<td class='text-center w-25'><img src='../resource/upload_img/" . $value['author_image'] . "'class='upload_img'></td>";
                                 echo "<td class='text-center'>" . $value['author_name'] . "</td>";
-                                echo "<td class='text-center overflow-hidden w-10'>" . $value['author_about'] . "</td>";
+                                echo "<td class='text-center'>" . substr($value['author_about'], 0, 50) . "</td>";
                                 echo "<td class='text-center'>" . $value['author_life'] . "</td>";
                                 echo "<td class='text-center last'><a href='../View/authorEdit.php?id=" . $value['author_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                 echo "<td class='text-center last'><a href='../Controller/authorDeleteController.php?id=" . $value['author_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
@@ -64,19 +64,43 @@
 
                         <nav aria-label="Page navigation example">
                             <ul class="pagination float-end me-5">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&#10094;</span>
+                                <li class="page-item"><a class="page-link" href="?pageno=1">First</a></li>
+                                <li class="page-item 
+                                <?php
+                                if ($pageno <= 1) {
+                                    echo 'disabled';
+                                }
+                                ?>">
+                                    <a class="page-link" href="
+                                    <?php
+                                    if ($pageno <= 1) {
+                                        echo '#';
+                                    } else {
+                                        echo "?pageno=" . ($pageno - 1);
+                                    }
+                                    ?>
+                                    ">
+                                        <span aria-hidden="true">Pre</span>
                                     </a>
                                 </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&#10095;</span>
-                                    </a>
+                                <li class="page-item"><a class="page-link" href="#"><?php echo $pageno; ?></a></li>
+                                <li class="page-item
+                                <?php
+                                if ($pageno >= $total) {
+                                    echo 'disabled';
+                                }
+                                ?>">
+                                    <a class="page-link" href="
+                                    <?php
+                                    if ($pageno >= $total) {
+                                        echo '#';
+                                    } else {
+                                        echo "?pageno=" . ($pageno + 1);
+                                    }
+                                    ?>
+                                    ">Next</a>
                                 </li>
+                                <li class="page-item"><a class="page-link" href="?pageno=<?php echo $total; ?>" aria-label="Next"><span aria-hidden="true">Last</span></a></li>
                             </ul>
                         </nav>
                         <p>&nbsp;</p>

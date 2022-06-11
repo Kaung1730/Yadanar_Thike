@@ -66,7 +66,7 @@
                                 <select class="form-select input-edit township" id="township" aria-label="Example select with button addon">
                                     <?php
                                     foreach ($result as $key => $value) {
-                                        echo "<option value='" . $value['state_id'] . "'>" . $value['township_name'] . "</option>";
+                                        echo "<option value='" . $value['township_id'] . "'>" . $value['township_name'] . "</option>";
                                     }
                                     ?>
                                 </select>

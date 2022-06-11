@@ -5,19 +5,21 @@ $(document).ready(function(){
         
         let postData = {
             "state_id": $(this).children("option:selected").val(),
-            "township":JSON.parse($_township)
         }
         console.log(postData);
-        for (const key in postData) {
-            $("select.township").append(
-                `<option value="${postData[key].state_id}">${postData[key].township_name}</option>`
-            );
-        }
         $.ajax({
             url: "../Controller/deliverycontrolAddController.php",
             type: "POST",
             data: { send: JSON.stringify(postData) },
             success: function (result) {
+                // let township = $_township.parseJSON(result);
+                let township = JSON.parse(result);
+                township.forEach(element => {
+                    $(".township").append(
+                        `<option value="${element.township_id}">${element.township_name}</option>`
+                    );
+                });
+
                 console.log("check");
             },
             error: function (error) {
