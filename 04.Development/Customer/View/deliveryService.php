@@ -55,59 +55,129 @@
 
             <div class="deliBody">
                 <!-- YangonDivision -->
-                <div class=" division yangon ">ရန်ကုန်တိုင်းဒေသကြီး</div>
-                <div class="yangonTownList">
-                    <ul class="yagonTown lh-lg">
-                        <li>ဗိုလ်တထောင်</li>
-                        <li>ဒဂုံဆိပ်ကမ်း</li>
-                        <li>ဒေါပုံ</li>
-                        <li>အရှေ့ဒဂုံ</li>
-                        <li>မင်္ဂလာတောင်ညွှန့်</li>
-                        <li>မြောက်ဒဂုံ</li>
-                        <li>မြောက်ဥက္ကလာပ</li>
-                        <li>ပုဇွန်တောင်</li>
-                        <li>တောင်ဒဂုံ</li>
-                        <li>တောင်ဥက္ကလာပ</li>
-                        <li>တာမွေ</li>
-                        <li>သာကေတ</li>
-                        <li>သင်္ကန်းကျွန်း</li>
-                        <li>ရန်ကင်း</li>
-
-                        <li>အလုံ</li>
-                        <li>ဗဟန်း</li>
-                        <li>ဒဂုံ</li>
-                        <li>လှိုင်</li>
-                        <li>ကမာရွတ်</li>
-                        <li>ကျောက်တံတား</li>
-                        <li>ကြည့်မြင်တိုင်</li>
-                        <li>လမ်းမတော်</li>
-                        <li>လသာ</li>
-                        <li>မရမ်းကုန်း</li>
-                        <li>ပန်းဘဲတန်း</li>
-                        <li>စမ်းချောင်း</li>
-<!-- 
-                        <li>ကိုကိုးကျွန်း</li> -->
-                        <li>ဒလ</li>
-                        <li>ကော့မှူး</li>
-                        <li>ခရမ်း</li>
-                        <li>ကွမ်းခြံကုန်း</li>
-                        <li>ကျောက်တန်း</li>
-                        <li>ဆိပ်ကြီးခနောင်တို</li>
-                        <li>သန်လျင်</li>
-                        <li>သုံးခွ</li>
-                        <li>တွံတေး</li>
-
-                        <li>လှိုင်သာယာ</li>
-                        <li>လှည်းကူး</li>
-                        <li>မှော်ဘီ</li>
-                        <li>ထန်းတပင်</li>
-                        <li>အင်းစိန်</li>
-                        <li>မင်္ဂလာဒုံ</li>
-                        <li>ရွှေပြည်သာ</li>
-                        <li>တိုက်ကြီး</li>
-                    </ul>
-                </div>
-                <!-- <hr class=" line lineYgn"> -->
+                <?php
+                require"../Controller/stateController.php"; 
+                require"../Controller/townshipController.php";
+                echo "<div class ='division yangon'>" .$result1[0]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 0; $i < 43; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //MandalayDivision//
+                echo "<div class ='division yangon'>" .$result1[1]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 43; $i < 71; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //BagoDivision//
+                echo "<div class ='division yangon'>" .$result1[2]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 71; $i < 96; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //AyeYarWaDiDivision//
+                echo "<div class ='division yangon'>" .$result1[3]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 96; $i < 124; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //MaWayDivision
+                echo "<div class ='division yangon'>" .$result1[4]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 124; $i < 149; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //SaGaingDivision
+                echo "<div class ='division yangon'>" .$result1[5]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 149; $i < 186; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //TaNninTharYeDivision
+                echo "<div class ='division yangon'>" .$result1[6]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 186; $i < 190; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //NayPyiTaw
+                echo "<div class ='division yangon'>" .$result1[7]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 190; $i < 199; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //KaChin
+                echo "<div class ='division yangon'>" .$result1[8]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 199; $i < 206; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //KaYar
+                echo "<div class ='division yangon'>" .$result1[9]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 206; $i < 207; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //KaYin
+                echo "<div class ='division yangon'>" .$result1[10]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 207; $i < 211; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //Chin
+                echo "<div class ='division yangon'>" .$result1[11]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 211; $i < 212; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //Mon
+                echo "<div class ='division yangon'>" .$result1[12]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 212; $i <223 ; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //YaKaing
+                echo "<div class ='division yangon'>" .$result1[13]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 223; $i < 236; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                //Shan
+                echo "<div class ='division yangon'>" .$result1[14]['state_name']."</div>";
+                echo "<div class='yangonTownList'>";
+                echo "<ul class='yagonTown lh-lg'>";
+                for($i = 236; $i < 251; $i++){
+                    echo "<li>" .$result[$i]['township_name'] ."</li>";
+                }
+                echo "</div>";
+                ?>
             </div>
         </div>
 
