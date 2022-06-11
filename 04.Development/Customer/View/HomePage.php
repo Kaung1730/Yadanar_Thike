@@ -68,9 +68,6 @@
             echo "</div>";
             echo "</div>";
 
-          
-
-            // print_r("result");
         }
         echo " <button class='carousel-control-prev' type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='prev'>";
         echo "<span class='carousel-control-prev-icon' aria-hidden='true'>";
@@ -236,7 +233,7 @@
             echo "<h2>" . $result[0]['author_name'] . "</h2>"; 
             echo "<p>" . $result[0]['book_name'] . "</p>";
             echo "<span class='disPrice text-decoration-line-through'>" . $result[0]['book_price'] . "</span>";
-            echo "<span class='disPrice pb-5 ms-2 text-danger'>" .  $result[0]['book_price'] . "</span>";
+            echo "<span class='disPrice pb-5 ms-2 text-danger'>" .  $result[0]['discount_price'] . "</span>";
             echo "</div>";
             echo "<div class='discountCard'>";
             echo "<div class='disTag'>";
