@@ -11,19 +11,25 @@
             </div>
             <div class="modal-body modal-setting">
                 <div class="">
-                <input type="hidden" name="customer_id" value ="<?php echo $result[0]['customer_id']?>">
-                    <form  enctype="multipart/form-data">
-                        <div class="imgChange">
-                            <div class="text-center">
-                                <img src="../resource/image/Vector.png" alt="" class="img-fluid" />
+                <input type="hidden" id="customer_id" value ="<?php echo $result[0]['customer_id']?>">
+                        <!-- upload img and change img auto -->
+                        <form method="post" action="" enctype="multipart/form-data" id="myform">
+                            <div class="text-center preview">
+                                <?php
+                                    $_SESSION['customer_profileImg'] = $result[0]['customer_profileImg'];
+                                ?>
+                                <img src="<?php echo $result[0]['customer_profileImg']?>" class="" alt="" id="img" />
                             </div>
                             <div class="text-center change-img-text mt-2">
-                                <input type="file" name="photo" id="photo" accept="" class="form-control">
-                                <label for="photo">
-                                    ပုံ​ပြောင်းမည်
+                                <input type="file" name="file" id="file" accept="" class="form-control">
+                                <label for="file">
+                                ပုံ​ရွေးချယ်ရန်
                                 </label>
+                                <span class="btn border-none change-img-text" id="but_upload">
+                                    ရွေးချယ်ထား​​သောပုံ​ပြောင်းမည်။
+                                </span>
                             </div>
-                        </div>
+                        </form>
                         <div class="row my-3 justify-content-center">
                             <div class="col-lg-10">
                                 <input type="text" name="username"  placeholder="User Name (English Only)" class="form-control ps-4 pt-2 username" value ="<?php echo $result[0]['customer_name']?>" />
@@ -50,7 +56,6 @@
                                 <button type="button" class="btn btn-dark pt-2 text-center normal-btn" data-bs-dismiss="modal" aria-label="Close">မပြင်ဆင်ပါ</button>
                             </div>
                         </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -62,35 +67,96 @@
     <script src="../resource/js/jquery3.6.0.js"></script>
 <script>
 
+$("#but_upload").click(function(){
+    var fd = new FormData();
+    var files = $('#file')[0].files;
+// Check file selected or not
+    if(files.length > 0 ){
+    fd.append('file',files[0]);
+
+    $.ajax({
+        url: '../Controller/uploadImg.php',
+        type: 'post',
+        data: fd,
+        contentType: false,
+        processData: false,
+        success: function(response){
+            console.log(response);
+        if(response != 0){
+            $("#img").attr("src",response); 
+            $(".preview img").show(); // Display image element
+        }else{
+            swal({
+                text: "ပုံ မ​ရွေးချယ်ရ​သေးပါ။ 11",
+                button: { text: 'OK', className: 'commentBtn' },
+            });
+        }
+    },
+});
+}else{
+    swal({
+        text: "ပုံ မ​ရွေးချယ်ရ​သေးပါ။",
+        button: { text: 'OK', className: 'commentBtn' },
+    });
+}
+});
+
 $("#update-btn").click(function(){
         var userName = $(".username").val();
         var email = $('.email').val();
         var password = $('.password').val();
         var phone = $(".phone").val();
+        var img =  $('#img').attr('src');
+        var customer_id = $("#customer_id").val();
         let postData = {
             "userName": userName,
             "email" : email,
             "password" : password,
             "phone" : phone,
+            "img" : img,
+            "customer_id" :customer_id
         }
         $.ajax({
             url: "../Controller/userSettingUpdate.php",
             type: "POST",
             data:{send: JSON.stringify(postData)},
             success: function (res){
-                if(res == "success"){
-                    swal({
-                            title: "ပေးပို့မှု​အောင်မြင်ပါသည်။",
-                            text: "စာအုပ်​ဝေဖန်ချက်​ပေးပို့မှု​အောင်မြင်ပါသည်။",
-                            icon: "success",
-                            button: { text: 'OK', className: 'commentBtn' },
+                console.log(res);
+                if(res == 'success'){
+                    swal("ကိုယ်​ရေးအချက်အလက်များ ပြင်ဆင်မှု ​အောင်မြင်ပါသည်။", {
+                        buttons: {
+                        catch: {
+                                text: "OK",
+                                value: "success",
+                                className: 'commentBtn'
+                                },
+                                defeat: false,
+                        },
+                    }).then((value) => {
+                                        switch (value){
+                                            case "success":
+                                                location.reload();
+                                        }
                         });
+
+                //to update data
+                $.ajax({
+                    url:"../Controller/userSettingUpdateShow.php",
+                    type:"POST",
+                    success:function(res){
+                        console.log(res);
+                    },
+                    error:function(err){
+                        console.log(err);
+                    }
+
+                })
                 }
-                alert(res);
             },
             error:function(err){
                 alert(err);
             }
         });
     })
+
 </script>

@@ -23,11 +23,10 @@ require_once("../Model/DBConnection.php");
         $result = $sql->fetchAll(PDO::FETCH_ASSOC);
         
         //to get id bcz want to use for the user setting
-        $id = $result[0]['customer_id'];
         if(count($result) > 0){
             $_SESSION['username'] = $userName;
             $_SESSION['status'] = "login";
-            $_SESSION['customer_id'] = $id;
+            $_SESSION['customer_id'] = $result[0]['customer_id'];
             echo "success";
             
         }

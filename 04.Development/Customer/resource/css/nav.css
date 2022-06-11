@@ -1,7 +1,8 @@
 .useracc {
-    max-width: 3rem;
-    max-height: 3rem;
-    border-radius: 50%;
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    border-radius: 50% !important;
+    border: 0.3rem var(--yellow) !important;
 }
 .nav-color,.search select{
     background-color: var(--yellow) !important;
@@ -46,6 +47,12 @@ nav, .dropdown-item, select, option{
 .commentBtn{
     background-color: var(--yellow) !important;
     border-radius: 1.5rem !important;
+}
+.preview img{
+    width: 5rem !important;
+    height: 5rem !important;
+    border-radius: 50%;
+    border: 0.3rem var(--yellow) !important;
 }
 @media screen and (max-width:576px) {
     .color{

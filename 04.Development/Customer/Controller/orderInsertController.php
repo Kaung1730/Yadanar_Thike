@@ -10,6 +10,7 @@
     $delivery_id = $data['delivery_id'];
     $total_price = $data['total_price'];
     $del_flg = 0;
+    $today = date("F j, Y");
     require_once("../Model/DBConnection.php");
     $db = new DBConnect();
     $dbConnect = $db->connect();
@@ -36,7 +37,7 @@
         $sql -> bindValue(":total_price",$price);
         $sql -> bindValue(":delivery_id",$delivery_id);
         $sql -> bindValue(":order_status",0);
-        $sql -> bindValue(":order_date",date("F j, Y"));
+        $sql -> bindValue(":order_date",$today);
         $sql -> bindValue(":del_flg",$del_flg);
         $sql -> bindValue(":created_date",date("d/m/Y"));   
         $sql -> bindValue(":created_by","KaungKaung");

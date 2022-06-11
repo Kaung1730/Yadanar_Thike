@@ -1,51 +1,37 @@
 <?php
 session_start();
+$img = $_SESSION['customer_img'];
 $data = json_decode($_POST["send"],true);
-$user_id = $_SESSION['customer_id'];
-$userName = $data['userName'];
-$email = $data['email'];
-$password = $data['password'];
-$phone = $data['phone'];
-$file = $_FILES['photo']['name'];
-$location = $_FILES['photo']['tmp_name'];
-print_r($file);
-// Get Data from Insert Book From
-// if(isset($_POST)){
-//     $customer_name = $_POST['username'];
-//     $customer_email = $_POST['email'];
-//     $customer_password = $_POST['password'];
-//     $customer_phone = $_POST['phone'];
-//     $id = $_POST['customer_id'];
-    
-//     $file = $_FILES['photo']['name'];
-//     $location = $_FILES['photo']['tmp_name'];
-//     if (move_uploaded_file($location, "../resource/customerimg/" . $file)) {
-//         //Call DB Connection
-//         $db =  new DBConnect();
-//         $dbconnect = $db->connect();
+$customer_id = $_SESSION['customer_id'];
+$customer_name = $data['userName'];
+$customer_email = $data['email'];
+$customer_password = md5($data['password']);
+$customer_phone = $data['phone'];
+$imgNew = $data['img'];
+require_once "../Model/DBConnection.php";
+     //Call DB Connection
+        $db =  new DBConnect();
+        $dbconnect = $db->connect();
+        $sql = $dbconnect->prepare(
+            "UPDATE customer SET
+            customer_name = :name,
+            customer_phno = :phno,
+            customer_email =  :email,
+            customer_password = :password,
+            customer_profileImg = :img,
+            updated_date = :updated_date,
+            updated_by = :updated_by
+            WHERE customer_id = :id"
+        );
 
-//         $sql = $dbconnect->prepare(
-//             "UPDATE customer SET
-//             customer_name = :name,
-//             customer_phno = :phno,
-//             customer_email =  :email,
-//             customer_password = :password,
-//             customer_profileImg = :img,
-//             WHERE customer_id = :id"
-//         );
+        $sql->bindValue(":name", $customer_name);
+        $sql->bindValue(":phno", $customer_phone);
+        $sql->bindValue(":email", $customer_email);
+        $sql->bindValue(":password", $customer_password);
+        $sql->bindValue(":img", $imgNew);
+        $sql->bindValue(":id", $customer_id);
+        $sql->bindValue(":updated_date", date("d/m/Y"));
+        $sql->bindValue(":updated_by", "KaungKaung");
+        $sql->execute();
 
-//         $sql->bindValue(":name", $customer_name);
-//         $sql->bindValue(":phno", $customer_phone);
-//         $sql->bindValue(":email", $customer_email);
-//         $sql->bindValue(":password", $customer_password);
-//         $sql->bindValue(":img", $file);
-//         $sql->bindValue(":id", $customer_id);
-//         $sql->execute();
-
-//         echo "Success";
-
-//     } else {
-//         echo "Error";
-//     }
-
-//}
+        echo "success";

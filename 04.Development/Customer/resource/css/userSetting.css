@@ -32,3 +32,9 @@ input[type="file"]{
 label{
     cursor: pointer !important;
 }
+.preview img{
+    width: 5rem !important;
+    height: 5rem !important;
+    border-radius: 50%;
+    border: 0.3rem var(--yellow) !important;
+}
