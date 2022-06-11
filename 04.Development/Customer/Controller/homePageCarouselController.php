@@ -7,11 +7,16 @@ $db2 = new DBConnect();
 $dbconnect = $db2->connect();
 
 
-$sql = $dbconnect->prepare("SELECT * FROM book_m ORDER BY created_date DESC LIMIT 6");
+$sql = $dbconnect->prepare("SELECT * FROM slider");
 
 //go to run
 $sql->execute();
 
 
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+// print_r(
+
+//     $result
+// );
 

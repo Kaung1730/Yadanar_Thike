@@ -4,7 +4,7 @@
 <head>
     <title>Home Page</title>
     <link rel="stylesheet" href="../resource/css/HomePage.css">
-    
+
     <script src="../resource/js/jquery3.6.0.js"></script>
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <!-- CSS only -->
@@ -56,7 +56,38 @@
     <div class="orderHistory"></div>
     <div class="container container-fluid ">
         <!-- HeaderSlider -->
-        <div id="carouselExampleInterval" class="carousel slide mt-5" data-bs-ride="carousel">
+
+        <?php
+
+        require "../Controller/homePageCarouselController.php";
+        echo "<div  id='carouselExampleInterval' class='carousel slide mt-5' data-bs-ride='carousel'>";
+        for ($i = 0; $i < count($result); $i++) {
+            echo " <div class='carousel-inner'>";
+            echo " <div class='carousel-item active' data-bs-interval='2000'>";
+            echo " <img src='../resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
+            echo "</div>";
+            echo "</div>";
+
+          
+
+            // print_r("result");
+        }
+        echo " <button class='carousel-control-prev' type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='prev'>";
+        echo "<span class='carousel-control-prev-icon' aria-hidden='true'>";
+        echo "</span>";
+        echo " <span class='visually-hidden'>Previous</span>";
+        echo "</button>";
+
+        echo " <button class='carousel-control-next' type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='next'>";
+        echo "<span class='carousel-control-next-icon' aria-hidden='true'>";
+        echo "</span>";
+        echo " <span class='visually-hidden'>Next</span>";
+        echo "</button>";
+        echo "</div>";
+        ?>
+
+        <!-- <div id="carouselExampleInterval" class="carousel slide mt-5" data-bs-ride="carousel">
+
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2000">
                     <img src="../resource/image/slide1.png" class="d-block w-100" alt="...">
@@ -82,7 +113,8 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
+
+        </div> -->
 
         <!-- HeaderSlider End -->
 
@@ -110,8 +142,9 @@
 
             <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် -->
             <div class="">
-            <img src="../resource/image/bookForToday1.png" alt="" class="BookForToday img-fluid ">
-               
+                <h4 class="mt-5 text-center ">ယနေ့အတွက် ရည်ညွှန်းစာအုပ် </h4>
+                <img src="../resource/image/bookForToday1.png" alt="" class="BookForToday img-fluid ">
+
             </div>
             <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် end -->
 
@@ -196,11 +229,11 @@
 
 
             <?php
-            
+
             require "../Controller/discountController.php";
             echo " <div class='disItem'>";
             echo "<div class='disContent'>";
-            echo "<h2>" . $result[0]['author_name'] . "</h2>"; //edit or full outer join table
+            echo "<h2>" . $result[0]['author_name'] . "</h2>"; 
             echo "<p>" . $result[0]['book_name'] . "</p>";
             echo "<span class='disPrice text-decoration-line-through'>" . $result[0]['book_price'] . "</span>";
             echo "<span class='disPrice pb-5 ms-2 text-danger'>" .  $result[0]['book_price'] . "</span>";
@@ -410,33 +443,33 @@
         </div>
 
 
-    <script>
-        $(document).ready(function(){
-    $("#userSettingForm").on("submit", function(e){
-        e.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: "../Controller/userSettingUpdate.php",
-            data: new FormData(this),
-            contentType: false,
-            processData: false,
-            cache: true,
-            beforeSend: function () {
-                $("#update-btn").attr("disabled", "disabled");
-                $("#userSettingUpdate").css("opacity", "0.5");
-            },
-            success: function (res) {
-                $("#update-btn").removeAttr("disabled");
-                $("##userSettingUpdate").css("opacity", "1");
-                alert(res);
-            },
-            error: function (err) {
-                alert("Error");
-            }
-        })
-    })
-})
-    </script>
+        <script>
+            $(document).ready(function() {
+                $("#userSettingForm").on("submit", function(e) {
+                    e.preventDefault();
+                    $.ajax({
+                        type: "POST",
+                        url: "../Controller/userSettingUpdate.php",
+                        data: new FormData(this),
+                        contentType: false,
+                        processData: false,
+                        cache: true,
+                        beforeSend: function() {
+                            $("#update-btn").attr("disabled", "disabled");
+                            $("#userSettingUpdate").css("opacity", "0.5");
+                        },
+                        success: function(res) {
+                            $("#update-btn").removeAttr("disabled");
+                            $("##userSettingUpdate").css("opacity", "1");
+                            alert(res);
+                        },
+                        error: function(err) {
+                            alert("Error");
+                        }
+                    })
+                })
+            })
+        </script>
 </body>
 
 </html>
