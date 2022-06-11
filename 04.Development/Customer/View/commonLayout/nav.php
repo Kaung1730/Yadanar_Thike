@@ -28,7 +28,7 @@
                         </a>
                         <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item text-dark" href="#userSetting" data-bs-toggle="modal">ကိုယ်​ရေးအချက်အလက်များပြင်ဆင်မည်</a></li>
-                            <li><a class="dropdown-item text-dark" href="#orderHistory" data-bs-toggle="modal">မှာယူခဲ့သည့်စာရင်းများ</a></li>
+                            <li><a class="dropdown-item text-dark order-history" href="#orderHistory" data-bs-toggle="modal">မှာယူခဲ့သည့်စာရင်းများ</a></li>
                             <li><a class="dropdown-item text-dark" href="../View/logout.php"><i class="bi bi-box-arrow-right text-dark fs-5 me-2"></i>အ​ကောင့်မှထွက်ရန်</a></li>
                         </ul>
                     </li>';
@@ -111,7 +111,7 @@
         })
             });
 
-            $(".order-count").text(localStorage.getItem('cartCount'));
+    $(".order-count").text(localStorage.getItem('cartCount'));
     $("#basket").text(localStorage.getItem('cartCount'));
         $.ajax({
             url: "../Controller/cartNumberController.php",
@@ -126,5 +126,119 @@
                 console.log(err);
             }
         });
+
+
+
+        //when user click order history button
+        $(".order-history").click(function(){
+            $(".delete").css("background-color",'transparent');
+            $(".delete").css("border",'none');
+            $.ajax({
+            url: "../Controller/orderHistoryShow.php",
+            type: "POST",
+            success: function (res){
+                var data = $.parseJSON(res);
+                data.forEach(element => {
+                    if(element.order_status== 0){
+                        var status = "ပို့​ဆောင်​နေဆဲ ";
+                    }
+                    else{
+                        status = "ပို့​ဆောင်ပြီးပါပြီ။";
+                    }
+                    $(".delete").css("background-color",'transparent');
+                    $(".delete").css("border",'none');
+                    $(".order_history").append(`
+                    <div class="row">
+                        <div class="col-8 ">
+                            ​အော်ဒါနံပါတ် - <span>${element.order_number}</span>
+                        </div>
+                        <div class="col-4 book-text">${element.order_date}</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-8 book-text mt-2 ">
+                            <div class="my-2">ဝယ်ယူခဲ့သည့်စာအုပ်</div>
+                            <div class="my-2 small-text">${element.book_name}</div>
+                            <div class="my-2 small-text">အိမ်အ​ရောက်​ငွေ​ချေစနစ်</div>
+                        </div>
+                        <div class="col-4 mt-2">
+                            <img src="${element.book_img}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+
+                    <div class="row mt-3 fw-light">
+                        <div class="col-10 book-text muted">
+                            
+                            <div>အမှာအ​ခြေအ​​နေ - <span>${status}</span></div>
+                            <div>စုစု​ပေါင်း - <span>${element.total_price}</span> (ကျပ်)</div>
+                        </div>
+                        <button class="col-2 delete" value="${element.order_number}">
+                            <i class="bi bi-trash3 text-warning "></i>
+                        </button>
+                    </div>
+                    <hr>
+                    `);
+                    $(".delete").css("background-color",'transparent');
+                    $(".delete").css("border",'none');
+                });
+                $(".delete").click(function(){
+                    $(".commentBtn").css("background-color",'var(--yellow)');
+                    $(".commentBtn").css("border-radius",'1.5rem');
+                    swal("ခြင်း​တောင်းထဲက စာအုပ်ကို ဖျက်မှာ ​သေချာ ပါသလား။", {
+                            buttons: {
+                                catch: {
+                                    text: "ဖျက်မည်။",
+                                    value: "send",
+                                    className: 'commentBtn'
+                                },
+                                defeat: false,
+                            },
+                        })
+                            .then((value) => {
+                                switch (value) {
+                                    case "send":
+                                        var order_number = $(this).val();
+                                        let postdata = {
+                                        "order_number":order_number,
+                                        }
+                                    console.log(order_number);
+                                    $.ajax({
+                                        url: "../Controller/deleteOrderHistory.php",
+                                        type: "POST",
+                                        data:{senddata: JSON.stringify(postdata)},
+                                        success: function (res){
+                                            swal("ခြင်း​တောင်းထဲက စာအုပ်ကို ဖျက်ပြီးပါပြီ။", {
+                                            buttons: {
+                                                catch: {
+                                                    text: "OK",
+                                                    value: "remove",
+                                                    className: 'commentBtn'
+                                                },
+                                                defeat: false,
+                                            },
+                                            }).then((value) => {
+                                                switch (value){
+                                                    case "remove":
+                                                    location.reload();
+                                                }
+                                            })
+                                    
+                                        },
+                                        error:function(err){
+                                            alert(err);
+                                        }
+                                    });
+                                    break;
+                                }
+                                $(".commentBtn").css("background-color",'var(--yellow)');
+                                $(".commentBtn").css("border-radius",'1.5rem');
+                            });
+                })
+            },
+            error:function(err){
+                console.log(err);
+            }
+        });
+        })
         })
     </script>

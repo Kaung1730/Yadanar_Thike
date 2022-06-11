@@ -45,6 +45,7 @@
     <script src="../resource/js/userSetting.js" defer></script>
     <script src="../resource/js/cartShow.js"></script>
     <script src="../resource/js/cart.js"></script>
+    <script src="../resource/js/order.js"></script>
 </head>
 
 <body>
