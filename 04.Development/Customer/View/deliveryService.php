@@ -183,11 +183,12 @@
 
     </div>
     <!-- FOOTER -->
-    <div class="footer mt-5">
+    <!-- <div class="footer mt-5">
         <div class="ps-2">@YadanarThike 2022</div>
         <div class="copyright">&#169;
             YadanarThike Company. All Rights Reserved.</div>
-    </div>
+    </div> -->
+    <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
 </body>
 
 </html>

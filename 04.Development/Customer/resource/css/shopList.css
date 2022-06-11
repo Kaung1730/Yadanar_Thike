@@ -178,7 +178,6 @@
     height: 12vh;
     border: 0px solid;
     background-color: var(--yellow);
-    /* margin-top: 13vh; */
     display: flex;
     padding: 0vh 0 0 4vw;
 }
@@ -229,12 +228,12 @@
 
     }
 
-    .footer {
+    /* .footer {
         font-size: 12px !important;
-        padding: 4vh 0 0 2vw;
-    }
-
+      
+    } */
+/* 
     .copyright {
         margin-left: 10vw !important;
-    }
+    } */
 }

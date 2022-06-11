@@ -36,15 +36,47 @@
                         <hr />
                         <br>
                         <table class="table table-striped white_table tb-edit mt-3">
+                            <?php require "../Controller/orderInfoController.php" ?>
                             <tr>
                                 <th class="text-center">No</th>
                                 <th class="text-center">Date</th>
                                 <th class="text-center">Book Name</th>
-                                <th class="text-center">Book Author</th>
                                 <th class="text-center">Location</th>
                                 <th class="text-center">Book Price</th>
                             </tr>
+                            <?php
+                            $count = 1;
+                            foreach ($result as $key => $value) {
+                                echo "<tr>";
+                                echo "<td class='text-center'>" . $count . ".</td>";
+                                echo "<td class='text-center'>" . $value['order_date'] . "</td>";
+                                echo "<td class='text-center'>" . $value['book_name'] . "</td>";
+                                echo "<td class='text-center'>" . $value['customer_address'] . "</td>";
+                                echo "<td class='text-center'>" . $value['total_price'] . "</td>";
+                                echo "</tr>";
+                                $count++;
+                            }
+                            ?>
                         </table>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination float-end me-5">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&#10094;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&#10095;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
                     </div>
                     <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                 </div>

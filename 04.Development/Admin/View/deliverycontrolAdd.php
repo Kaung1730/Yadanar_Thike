@@ -16,11 +16,12 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/deliverycontrolAdd.js"></script>
+    <script src="../resource/js/deliverycontrolAddControl.js"></script>
 </head>
 
 <body>
     <div class="container-fluid">
-        <form action="">
+        <form action="" id="delivery">
             <div class="row">
                 <div class="col-2 nav_box">
 
@@ -38,24 +39,38 @@
                             <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                         </div>
                         <div class="input-part ms-5">
+                            <?php require "../Controller/deliverycontrolAddController.php" ?>
                             <label for="state" class="form-label mt-5">State</label>
-                            <input type="text" id="state" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="state">
-                            <!-- <div class="input-group inputgp mt-3 input-width">
-                                <select class="form-select input-edit" id="inputGroupSelect04" aria-label="Example select with button addon">
-                                    <option value="1">Yangon</option>
-                                    <option value="2">Ayeyarwaday</option>
-                                    <option value="3">Mandalay</option>
+                            <!-- <input type="text" id="state" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="state"> -->
+                            <div class="input-group inputgp mt-3 input-width">
+                                <select class="form-select input-edit state" id="state" aria-label="Example select with button addon">
+                                    <option value="1">ကချင်ပြည်နယ်</option>
+                                    <option value="2">ကယားပြည်နယ်</option>
+                                    <option value="3">ကရင်ပြည်နယ်</option>
+                                    <option value="4">ချင်းပြည်နယ်</option>
+                                    <option value="5">စစ်ကိုင်းတိုင်းဒေသကြီး</option>
+                                    <option value="6">တနင်္သာရီတိုင်းဒေသကြီး</option>
+                                    <option value="7">ပဲခူးတိုင်းဒေသကြီး</option>
+                                    <option value="8">မကွေးတိုင်းဒေသကြီး</option>
+                                    <option value="9">မန္တလေးတိုင်း‌ဒေသကြီး</option>
+                                    <option value="10">မွန်ပြည်နယ်</option>
+                                    <option value="11">ရခိုင်ပြည်နယ်</option>
+                                    <option value="12">ရန်ကုန်တိုင်းဒေသကြီး</option>
+                                    <option value="13">ရှမ်းပြည်နယ်</option>
+                                    <option value="14">ဧရာဝတီတိုင်းဒေသကြီး</option>
                                 </select>
-                            </div> -->
+                            </div>
                             <label for="township" class="form-label mt-5">Township</label>
-                            <input type="text" id="township" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="township">
-                            <!-- <div class="input-group inputgp mt-3 input-width">
-                                <select class="form-select input-edit" id="inputGroupSelect04" aria-label="Example select with button addon">
-                                    <option value="1">Lanmataw</option>
-                                    <option value="2">Kyimyittime</option>
-                                    <option value="3">South Okalar</option>
+                            <!-- <input type="text" id="township" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="township"> -->
+                            <div class="input-group inputgp mt-3 input-width">
+                                <select class="form-select input-edit township" id="township" aria-label="Example select with button addon">
+                                    <?php
+                                    foreach ($result as $key => $value) {
+                                        echo "<option value='" . $value['state_id'] . "'>" . $value['township_name'] . "</option>";
+                                    }
+                                    ?>
                                 </select>
-                            </div> -->
+                            </div>
                             <label for="fee" class="form-label mt-5">Delivery Fee</label>
                             <input type="text" id="fee" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="fee">
                             <div class="buttonGp mt-5">
