@@ -53,7 +53,7 @@
                                 echo '
                                 <div class="ms-lg-5 id="yokepya">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        <img src="../resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
                                 </div>';
                             }
@@ -63,7 +63,7 @@
                                 echo '
                                 <div class="ms-lg-5" id="novel">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        <img src="../resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
                                 </div>';
                             }
@@ -73,7 +73,7 @@
                                 echo '
                                 <div class="ms-lg-5" id="language">
                                 <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <img src="../resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
                                 </a>
                                 </div>';
                             }
@@ -84,7 +84,7 @@
                                 echo '
                                 <div class="ms-lg-5" id="health">
                                 <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                    <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <img src="../resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
                                 </a>
                                 </div>';
                             }
@@ -94,7 +94,7 @@
                                 echo '
                                 <div class="ms-lg-5" id="politics">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        <img src="../resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
                                 </div>';
                             }
@@ -104,7 +104,7 @@
                                 echo '
                                 <div class="ms-lg-5" id="poem">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        <img src="../resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
                                 </div>';
                             }
@@ -114,7 +114,7 @@
                                 echo '
                                 <div class="ms-lg-5" id="success">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        <img src="../resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
                                 </div>';
                             }
@@ -124,7 +124,7 @@
                                 echo '
                                 <div class="ms-lg-5" id="biography">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        <img src="../resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
                                 </div>';
                             }
@@ -134,7 +134,7 @@
                                 echo '
                                 <div class="ms-lg-5" id="other">
                                     <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <img src="'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        <img src="../resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
                                     </a>
                                 </div>';
                             }
