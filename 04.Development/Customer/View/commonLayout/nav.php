@@ -57,23 +57,24 @@
                         <button type="button" class="btn searchBorder" data-bs-toggle="modal" data-bs-target="#search-modal">
                             <span class="text-dark">ရှာဖွေရန်</span> <i class="bi bi-search  fw-bold fs-5 text-center "></i>
                         </button>
-
-                        <div class="modal fade search" id="search-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <div class="input-group text-dark selectNav">
-                                            <button class=" text-dark btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">ရှာဖွေရန်</button>
-                                            <input type="text" class="form-control searchInput ps-3 search-text" id =" search-text" aria-label="Text input with dropdown button" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ?">
-                                            <button class="btn search-btn" type="button" id="button-addon2">
-                                                <i class="bi bi-search fw-bold fs-5"></i>
-                                            </button>
+                        <form action="../Controller/searchDataSendController.php" method="GET">
+                            <div class="modal fade search" id="search-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="input-group text-dark selectNav">
+                                                <button class=" text-dark btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">ရှာဖွေရန်</button>
+                                                <input type="text" name="search" value="<?php if(isset($_GET['search'])){echo $_GET['search'];}?>"  class="form-control searchInput ps-3 search-text" id =" search-text" aria-label="Text input with dropdown button" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ?">
+                                                <button class="btn search-btn" type="submit" id="button-addon2">
+                                                    <i class="bi bi-search fw-bold fs-5"></i>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         <!--end of searchbar-->
+                        </form>
                     </li>
                     <li class="nav-item color  position-relative mt-lg-3  mt-0 mt-md-0  ms-0 ms-md-0 ms-lg-2 px-md-2 px-2 py-lg-0 py-md-2 py-2">
                         <a href="#cartPopUp"class="text-dark text-decoration-none cart" data-bs-toggle="modal">
@@ -89,36 +90,24 @@
     </nav>
 
     <!--searchbar for large screen-->
-    <div class="top-0 mt-lg-0 mt-md-3 mt-5 pt-lg-1 pt-md-5 pt-5 input-group text-dark d-none d-md-none d-lg-flex search">
-        <button class=" text-dark btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">ရှာဖွေရန်</button>
-        <input type="text" class="form-control searchInput" id ="search-text" aria-label="Text input with dropdown button" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ? ဒီကနေ ဝင်ရှာလို့ရပါတယ်">
-        <button class="btn btn-outline-secondary search-btn" type="button" id="button-addon2">
-            <i class="bi bi-search text-dark  fs-5 search-icon"></i>
-        </button>
-    </div>
+    <form action="../Controller/searchDataSendController.php" method="GET">
+        <div class="top-0 mt-lg-0 mt-md-3 mt-5 pt-lg-1 pt-md-5 pt-5 input-group text-dark d-none d-md-none d-lg-flex search">
+            <button class=" text-dark btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">ရှာဖွေရန်</button>
+            <input type="text" name="search" value="<?php if(isset($_GET['search'])){echo $_GET['search'];}?>"  class="form-control searchInput ps-3 search-text" id =" search-text" aria-label="Text input with dropdown button" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ?">
+            <button class="btn btn-outline-secondary search-btn" type="submit" id="button-addon2">
+                <i class="bi bi-search text-dark  fs-5 search-icon"></i>
+            </button>
+        </div>
+    </form>
     <!--end of searchbar-->
     <script>
         
         $(document).ready(function(){
             $("#basket").text(localStorage.getItem('cartCount'));
+
+            //for search bar
             $(".search-btn").click(function(){
-                var text = $("#search-text").val();
-                console.log(text);
-                let postData = {
-                    "text": text,
-                }
-                $.ajax({
-                url: "../Controller/searchDataSendController.php",
-                type: "POST",
-                data: { send: JSON.stringify(postData) },
-                success: function (res) {
-                    console.log(res);
-                },
-                error: function (err) {
-                    console.log(err)
-                }
-            
-        })
+                window.location.href = `http://localhost:81/YadnarThike/04.Development/Customer/View/searchResult.php`;
             });
 
     $(".order-count").text(localStorage.getItem('cartCount'));
@@ -136,9 +125,7 @@
                 console.log(err);
             }
         });
-
-
-
+        var orderArray = [], order_num =0, order_number_title, bookTotal, bookPrice = 0, deli_fee;
         //when user click order history button
         $(".order-history").click(function(){
             $(".delete").css("background-color",'transparent');
@@ -149,6 +136,18 @@
             success: function (res){
                 var data = $.parseJSON(res);
                 data.forEach(element => {
+                    // order_number_title = element.order_number;
+                    // orderArray.push(element.order_number);
+                    // orderArray.forEach(order => {
+                    //     if(order == order_number_title){
+                    //         bookPrice +=  element.book_price;
+                    //         deli_fee = element.delivery_fee;
+                    //         $("$.order_history").append(`
+                            
+                            
+                    //         `);
+                    //     }
+                    // });
                     if(element.order_status== 0){
                         var status = "ပို့​ဆောင်​နေဆဲ ";
                     }
@@ -178,9 +177,8 @@
 
                     <div class="row mt-3 fw-light">
                         <div class="col-10 book-text muted">
-                            
-                            <div>အမှာအ​ခြေအ​​နေ - <span>${status}</span></div>
-                            <div>စုစု​ပေါင်း - <span>${element.total_price}</span> (ကျပ်)</div>
+                        <div>စုစု​ပေါင်း - <span>${element.total_price + element.delivery_fee}</span> (ကျပ်)</div>
+                        <div>အမှာအ​ခြေအ​​နေ - <span>${status}</span></div>
                         </div>
                         <button class="col-2 delete" value="${element.order_number}">
                             <i class="bi bi-trash3 text-warning "></i>

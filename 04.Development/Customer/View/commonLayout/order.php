@@ -34,30 +34,3 @@ if (isset($_SESSION['status'])) {
         </div>
     </div>
 <?php } ?>
-<script>
-    $(document).ready(function(){
-    $(".increase").click(function(e){
-        e.preventDefault();
-        var qty = $(".qty-text").val();
-        var value = parseInt(qty, 10);
-        value = isNaN(value) ? 1 : value;
-        //to set maximun 10 for each book
-        if(value < 10){
-            value++;
-            $(".qty-text").val(value);
-        }
-    })
-    $(".decrease").click(function(e){
-        e.preventDefault();
-        var qty = $(".qty-text").val();
-        var value = parseInt(qty, 10);
-        value = isNaN(value) ? 1 : value;
-        //to set maximun 10 for each book
-        if(value > 1){
-            value--;
-            $(".qty-text").val(value);
-        }
-    });
-})
-
-</script>

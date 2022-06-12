@@ -13,6 +13,10 @@
     <!--JS & Jquery Link-->
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/contactUs.js"></script>
+    <script src="../resource/js/nav.js" defer></script>
+    <script src="../resource/js/userSetting.js" defer></script>
+    <script src="../resource/js/cartShow.js"></script>
+    <script src="../resource/js/cart.js"></script>
     <!--Sweet Alert-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>

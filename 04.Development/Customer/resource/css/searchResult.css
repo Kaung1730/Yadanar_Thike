@@ -22,6 +22,7 @@
 }
 .resultHeader{
     margin: 7vh 0vw 4vh 0vw;
+    color: var(--yellow) !important;
 }
 .resultBody .item {
     color: var(--black);

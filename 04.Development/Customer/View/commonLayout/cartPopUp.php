@@ -320,6 +320,7 @@ if (isset($_SESSION['status'])) {
                                         'address' : address,
                                         'total_price': totalPrice,
                                         'delivery_id': delivery_id,
+                                        'delivery_fee':delivery_fee,
                                     }
                                     console.log(name);
                                     $.ajax({

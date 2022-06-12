@@ -36,6 +36,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <!--Customize JS-->
+    <script src="../resource/js/jquery3.6.0.js"></script>
+    <script src="../resource/js/searchResult.js"></script>
+    <!--Sweet Alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
@@ -47,7 +51,10 @@
     <div class="orderHistory"></div>
 
     <div class="container ">
-        <div class="resultBox">
+        <div class="resultBox pt-4">
+            <a class="h5  text-decoration-none" href="../View/HomePage.php">
+                <span><i class="bi bi-arrow-left fw-bold fs-4"></i></span> မူလစာမျက်နှာ ပြန်သွားမည်။
+            </a>
             <div class="resultHeader">
                 <h5>စာအုပ်များ</h5>
                 <br>
@@ -55,64 +62,29 @@
             </div>
             <div class="resultBody">
                 <div class="item row">
-                    <div class="col-sm-3">
-                        <div class="result-wrapper">
-                            <div class="img-box">
-                                <img src="../resource/image/result1.webp" class="img-responsive" alt="">
-                            </div>
-                            <div class="result-content">
-                                <div class="authorName ">သိုးဆောင်း</div>
-                                <p>ပုံပြင်တွေလွယ်ထားတဲ့ချစ်သူ</p>
+                    <?php session_start();
+                        if(count($result)>0) { foreach ($result as $key => $value) { ?>
+                        <div class="col-sm-3">
+                        <a href="../View/bookDescription.php?book_id=<?php echo $value['book_id'];?>" class="text-decoration_none">       
+                            <div class="result-wrapper">
+                                <div class="img-box">
+                                    <img src="<?php echo $value['book_img'] ?>" class="img-responsive" alt="">
+                                </div>
+                                <div class="result-content">
+                                    <div class="authorName "><?php echo $value['author_name'] ?></div>
+                                    <p><?php echo $value['book_name'] ?></p>
 
-                                <p>၄၀၀၀ကျပ်</p>
-                                <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
+                                    <p><?php echo $value['book_price'] ?></p>
+                                    <?php if(isset($_SESSION['status'])){ ?>
+                                    <button type="button" class="btn search-cart" value="<?php echo $value['book_id'] ?>">ခြင်းတောင်းထဲထည့်ရန်</button>
+                                    <?php } ?>
+                                </div>
                             </div>
-                        </div>
+                        </a> 
                     </div>
-                    <div class="col-sm-3">
-                        <div class="result-wrapper">
-                            <div class="img-box">
-                                <img src="../resource/image/result2.png" class="img-responsive" alt="">
-                            </div>
-                            <div class="result-content">
-                                <div class="authorName">အကြည်တော်</div>
-                                <p>ချစ်လို့စတာ နာတယ်</p>
-                                <p>၄၀၀၀ကျပ်</p>
-
-                                <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="result-wrapper">
-                            <div class="img-box">
-                                <img src="../resource/image/result3.webp" class="img-responsive" alt="">
-                            </div>
-                            <div class="result-content">
-                                <div class="authorName">ထူးအိမ်သင်</div>
-                                <p>ချစ်ခြင်းအားဖြင့် ကဗျာနှင့်စာ</p>
-
-                                <p>၄၀၀၀ကျပ်</p>
-
-                                <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="result-wrapper">
-                            <div class="img-box">
-                                <img src="../resource/image/result4.webp" class="img-responsive" alt="">
-                            </div>
-                            <div class="result-content">
-
-                                <div class="authorName">နီကိုရဲ</div>
-                                <p>ကျွန်တော်ချစ်သော အားကစား</p>
-                                <p>၄၀၀၀ကျပ်</p>
-
-                                <button type="button" class="btn ">ခြင်းတောင်းထဲထည့်ရန်</button>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } } else{?>
+                        <div class="lead">ရှာမ​တွေ့ပါ။</div>
+                    <?php }?>
                 </div>
             </div>
         </div>

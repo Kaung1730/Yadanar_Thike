@@ -6,11 +6,12 @@
     $db = new DBConnect();
     $dbConnect = $db->connect();
     $orderHistory =  $dbConnect->prepare("
-    SELECT `order`.*, cart.*, book_m.*
-    FROM `order` , cart, book_m
+    SELECT `order`.*, cart.*, book_m.*, delivery.*
+    FROM `order` , cart, book_m, delivery
     WHERE `order`.del_flg = :del_flg AND
     `order`.cart_id = cart.cart_id AND
     book_m.book_id = cart.book_id AND
+    `order`.delivery_id = delivery.delivery_id AND
     `order`.customer_id = :customer_id;
     ");
     $orderHistory->bindValue(":customer_id", $customer_id);

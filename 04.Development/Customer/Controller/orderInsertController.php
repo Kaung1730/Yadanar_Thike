@@ -8,6 +8,7 @@
     $address = $data['address'];
     $cart_id;
     $delivery_id = $data['delivery_id'];
+    $delivery_fee = $data['delivery_fee'];
     $total_price = $data['total_price'];
     $del_flg = 0;
     $today = date("F j, Y");
@@ -17,6 +18,7 @@
     foreach ($data['cart_id'] as $key => $value) {
         $cart_id = $value;
         $price = $total_price[$key];
+
         $sql = $dbConnect -> prepare("
         INSERT INTO `order`
         (order_number,cart_id,customer_id,customer_name,customer_division, customer_town,
