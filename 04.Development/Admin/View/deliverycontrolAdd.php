@@ -21,7 +21,7 @@
 
 <body>
     <div class="container-fluid">
-        <form action="" id="delivery">
+        <form action="../Controller/deliveryAddController.php" id="delivery" method="POST">
             <div class="row">
                 <div class="col-2 nav_box">
 
@@ -39,11 +39,10 @@
                             <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                         </div>
                         <div class="input-part ms-5">
-                            <?php require "../Controller/deliverycontrolAddController.php" ?>
                             <label for="state" class="form-label mt-5">State</label>
                             <!-- <input type="text" id="state" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="state"> -->
                             <div class="input-group inputgp mt-3 input-width">
-                                <select class="form-select input-edit state" id="state" aria-label="Example select with button addon">
+                                <select class="form-select input-edit state" id="state" aria-label="Example select with button addon" name="state">
                                     <option value="1">ကချင်ပြည်နယ်</option>
                                     <option value="2">ကယားပြည်နယ်</option>
                                     <option value="3">ကရင်ပြည်နယ်</option>
@@ -55,7 +54,7 @@
                                     <option value="9">မန္တလေးတိုင်း‌ဒေသကြီး</option>
                                     <option value="10">မွန်ပြည်နယ်</option>
                                     <option value="11">ရခိုင်ပြည်နယ်</option>
-                                    <option value="12">ရန်ကုန်တိုင်းဒေသကြီး</option>
+                                    <option value="12" selected>ရန်ကုန်တိုင်းဒေသကြီး</option>
                                     <option value="13">ရှမ်းပြည်နယ်</option>
                                     <option value="14">ဧရာဝတီတိုင်းဒေသကြီး</option>
                                 </select>
@@ -63,12 +62,8 @@
                             <label for="township" class="form-label mt-5">Township</label>
                             <!-- <input type="text" id="township" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="township"> -->
                             <div class="input-group inputgp mt-3 input-width">
-                                <select class="form-select input-edit township" id="township" aria-label="Example select with button addon">
-                                    <!-- <?php
-                                    foreach ($result as $key => $value) {
-                                        echo "<option value='" . $value['township_id'] . "'>" . $value['township_name'] . "</option>";
-                                    }
-                                    ?> -->
+                                <select class="form-select input-edit township" id="township" aria-label="Example select with button addon" name="township">
+                                    
                                 </select>
                             </div>
                             <label for="fee" class="form-label mt-5">Delivery Fee</label>
