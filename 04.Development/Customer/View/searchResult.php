@@ -68,7 +68,7 @@
                         <a href="../View/bookDescription.php?book_id=<?php echo $value['book_id'];?>" class="text-decoration_none">       
                             <div class="result-wrapper">
                                 <div class="img-box">
-                                    <img src="<?php echo $value['book_img'] ?>" class="img-responsive" alt="">
+                                    <img src="../resource/image/<?php echo $value['book_img'] ?>" class="img-responsive" alt="">
                                 </div>
                                 <div class="result-content">
                                     <div class="authorName "><?php echo $value['author_name'] ?></div>

@@ -59,7 +59,7 @@
             <div class="upper-part">
                 <div class="row">
                     <div class="col-lg-4 col-12  col-md-4 col-xl-4 ps-5 ps-lg-0 ps-md-0">
-                        <img src= "<?php echo $result[0]['book_img']; ?>"  class="ms-5 ms-lg-0 ms-md-0 py-4 py-lg-0 py-md-0" />
+                        <img src= "../resource/image/<?php echo $result[0]['book_img']; ?>"  class="ms-5 ms-lg-0 ms-md-0 py-4 py-lg-0 py-md-0" />
                         <!-- book preview -->
                         <div class=" d-flex d-lg-block d-md-block justify-content-center">
                             <a href="#pdf" data-bs-toggle="modal" class="ms-lg-5 ms-md-3 my-4 px-3 view-more-btn btn  text-dark book-d-text">
@@ -161,7 +161,7 @@
                         <?php foreach ($reviewrResult as $key => $value) {?>
                         <div class="row g-0 border-bottom border-light">
                             <div class="col-1 ps-lg-4 ps-md-0 ps-0 pt-lg-2 pt-md-0 pt-0 border-left d-none d-md-block d-lg-block">
-                                <img src="<?php echo $value['customer_profileImg']; ?>" class="rounded-circle img-circle img-fluid" />
+                                <img src="../resource/image/<?php echo $value['customer_profileImg']; ?>" class="rounded-circle img-circle img-fluid" />
                             </div>
                             <div class="col-10">
                                 <div class="row pt-2">
@@ -251,7 +251,7 @@
                         <div>
                             <?php  $_SESSION['each_book_id'] = $relatedResult[$i]['book_id'] ?>
                             <a href='../View/bookDescription.php?book_id=<?php echo $relatedResult[$i]['book_id'] ?>'>
-                                <img src="<?php echo $relatedResult[$i]['book_img']; ?>" class="img-fluid" alt=""/>
+                                <img src="../resource/image/<?php echo $relatedResult[$i]['book_img']; ?>" class="img-fluid" alt=""/>
                             </a>
                             <div class="book-title book-d-text"><?php echo $relatedResult[$i]['book_name']; ?></div>
                             <div class="ratingEachBook  d-flex justify-content-center">
