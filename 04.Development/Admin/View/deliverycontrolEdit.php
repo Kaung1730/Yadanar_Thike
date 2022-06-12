@@ -16,12 +16,12 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/deliverycontrolAdd.js"></script>
-    <script src="../resource/js/deliverycontrolAddControl.js"></script>
+    <!-- <script src="../resource/js/deliverycontrolAddControl.js"></script> -->
 </head>
 
 <body>
     <div class="container-fluid">
-        <form action="../Controller/deliveryAddController.php" id="delivery" method="POST">
+        <form action="../Controller/deliveryEditController.php" id="delivery" method="POST">
             <div class="row">
                 <div class="col-2 nav_box">
 
@@ -39,8 +39,8 @@
                             <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                         </div>
                         <div class="input-part ms-5">
-                            <label for="state" class="form-label mt-5">State</label>
-                            <!-- <input type="text" id="state" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="state"> -->
+                            <!-- <label for="state" class="form-label mt-5">State</label>
+                            <input type="text" id="state" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="state">
                             <div class="input-group inputgp mt-3 input-width">
                                 <select class="form-select input-edit state" id="state" aria-label="Example select with button addon" name="state">
                                     <option value="1">ကချင်ပြည်နယ်</option>
@@ -60,14 +60,16 @@
                                 </select>
                             </div>
                             <label for="township" class="form-label mt-5">Township</label>
-                            <!-- <input type="text" id="township" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="township"> -->
+                            <input type="text" id="township" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="township">
                             <div class="input-group inputgp mt-3 input-width">
                                 <select class="form-select input-edit township" id="township" aria-label="Example select with button addon" name="township">
-                                    
+
                                 </select>
-                            </div>
+                            </div> -->
+                            <?php require "../Controller/deliveryEditController.php"; ?>
+                            <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['delivery_id'] ?>">
                             <label for="fee" class="form-label mt-5">Delivery Fee</label>
-                            <input type="text" id="fee" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="fee">
+                            <input type="text" id="fee" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="fee" value="<?php echo $result[0]['delivery_fee'] ?>">
                             <div class="buttonGp mt-5">
                                 <a href="deliverycontrolList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
                                 <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Submit</button>
