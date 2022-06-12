@@ -16,12 +16,12 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/deliverycontrolAdd.js"></script>
-    <!-- <script src="../resource/js/deliverycontrolAddControl.js"></script> -->
+    <script src="../resource/js/deliverycontrolAddControl.js"></script>
 </head>
 
 <body>
     <div class="container-fluid">
-        <form action="../Controller/deliveryEditController.php" id="delivery" method="POST">
+        <form action="../Controller/deliveryUpdateController.php" id="delivery" method="POST">
             <div class="row">
                 <div class="col-2 nav_box">
 
@@ -66,7 +66,7 @@
 
                                 </select>
                             </div> -->
-                            <?php require "../Controller/deliveryEditController.php"; ?>
+                            <?php require "../Controller/deliveryEditController.php" ?>
                             <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['delivery_id'] ?>">
                             <label for="fee" class="form-label mt-5">Delivery Fee</label>
                             <input type="text" id="fee" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="fee" value="<?php echo $result[0]['delivery_fee'] ?>">
