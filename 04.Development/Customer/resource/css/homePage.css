@@ -292,10 +292,14 @@
     border: 0px solid;
     background-color: var(--yellow);
     margin: 2vh 0vw 4vh 33vw;
-    padding: 20px 0px 0px 17px;
+   text-align: center;
+   padding-top: 2.5vh;
     border-radius: 5px;
 }
-
+.seeMoreTagA{
+    text-decoration: none !important;
+    color:var(--black);
+}
 /* SERVICES */
 
 .serviceCard {
@@ -359,18 +363,6 @@
     background-color: var(--yellow);
 }
 
-/* Copyright */
-.footer {
-    height: 12vh;
-    background-color: var(--yellow);
-    display: flex;
-    padding: 3vh 0vw 0vh 2vw;
-
-}
-
-.copyright {
-    margin-left: 15vw;
-}
 
 
 @media screen and (max-width: 720px) {
@@ -504,15 +496,8 @@
 
     /* FOOTER start*/
     .footer {
-        font-size: 14px;
-
+        font-size: 12px;
     }
-
-    .copyright {
-        margin-left: 30px;
-    }
-
-    /* FOOTER end*/
 }
 .commentBtn{
     background-color: var(--yellow) !important;

@@ -37,7 +37,7 @@
 .alphabetLine {
     display: flex;
     margin-left: 1vw;
-    
+
 
 }
 
@@ -47,7 +47,7 @@
     border-radius: 50%;
     font-weight: 580;
     border: solid 1px var(--black);
-   
+
 }
 
 .alphabet:hover {
@@ -66,13 +66,15 @@
     background-color: var(--yellow);
     padding: 4vh 0vw 0vh 5vw;
     margin-top: 12vh;
-   font-weight: 580;
-   
+    font-weight: 580;
+
 }
-.authorListLink{
+
+.authorListLink {
     text-decoration: none;
     color: var(--black);
 }
+
 .authorsList ul {
     list-style: none;
     width: 30vw;
@@ -135,8 +137,8 @@
 
     .footer {
         font-size: 12px;
-       
+
     }
 
-  
+
 }
