@@ -181,8 +181,6 @@
         <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ end -->
 
         <!-- DISCOUNT -->
-
-
         <?php
 
         require "../Controller/discountController.php";
@@ -239,67 +237,76 @@
         <div class="services">
             <div class="row text-center">
                 <div class="col-md-2">
-                    <div class="serviceCard">
-                        <div class="icon">
-                            <a href="./Service.php"><img src="../resource/image/serviceLogo.png" alt=""></a>
-                        </div>
-                        <a href="./Service.php">
+                    <a href="./Service.php">
+                        <div class="serviceCard">
+                            <div class="icon">
+                                <img src="../resource/image/serviceLogo.png" alt="">
+                            </div>
+
                             <div class="content ">ဝန်ဆောင်မှုများ</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="serviceCard">
-                        <div class="icon">
-                            <a href="./shopList.php"><img src="../resource/image/locationLogo.png" alt=""></a>
+
                         </div>
-                        <a href="./shopList.php">
+                    </a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="./shopList.php">
+                        <div class="serviceCard">
+                            <div class="icon">
+                                <img src="../resource/image/locationLogo.png" alt="">
+                            </div>
                             <div class="content ps-2 pe-2">စာအုပ်ဆိုင်တည်နေရာများ</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="serviceCard">
-                        <div class="icon">
-                            <a href="./deliveryService.php"><img src="../resource/image/deliveryLogo.png" alt="" class="homeDelivery"></a>
                         </div>
-                        <a href="./deliveryService.php">
-                            <div class="content homeDeliveryContent ps-2 pe-2 ">အိမ်အရောက်ပို့ဆောင်ပေးသော နေရာများ</div>
-                        </a>
-                    </div>
+                    </a>
                 </div>
+
                 <div class="col-md-2">
-                    <div class="serviceCard">
-                        <div class="icon">
-                            <a href="./FAQs.php"><img src="../resource/image/faqIcon.webp" alt=""></a>
+                    <a href="./deliveryService.php">
+                        <div class="serviceCard">
+                            <div class="icon">
+                                <img src="../resource/image/deliveryLogo.png" alt="" class="homeDelivery">
+                                <div class="content homeDeliveryContent ps-2 pe-2 ">အိမ်အရောက်ပို့ဆောင်ပေးသော နေရာများ</div>
+                            </div>
                         </div>
-                        <a href="./FAQs.php">
+                    </a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="./FAQs.php">
+                        <div class="serviceCard">
+                            <div class="icon">
+                                <img src="../resource/image/faqIcon.webp" alt="">
+                            </div>
+
                             <div class="content">FAQ</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="serviceCard">
-                        <div class="icon">
-                            <a href="./Privacy.php"><img src="../resource/image/privacyLogo.webp" alt=""></a>
                         </div>
-                        <a href="./Privacy.php">
+                    </a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="./Privacy.php">
+                        <div class="serviceCard">
+                            <div class="icon">
+                                <img src="../resource/image/privacyLogo.webp" alt="">
+                            </div>
                             <div class="content ps-2 pe-2">ကိုယ်ရေးအချက်အလက်ဆိုင်ရာ မူပိုင်ခွင့်များ</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="serviceCard">
-                        <div class="icon">
-                            <a href="./ContactUs.php"><img src="../resource/image/contactLogo.png" alt=""></a>
                         </div>
-                        <a href="./ContactUs.php">
+                    </a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="./ContactUs.php">
+                        <div class="serviceCard">
+                            <div class="icon">
+                                <img src="../resource/image/contactLogo.png" alt="">
+                            </div>
                             <div class="content">ဆက်သွယ်ရန်</div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
+        
         <!-- SERVICES END -->
 
         <!-- homeAddress -->
