@@ -54,7 +54,7 @@
                                 echo "<td class='text-center'>" . $value['state_name'] . "</td>";
                                 echo "<td class='text-center'>" . $value['township_name'] . "</td>";
                                 echo "<td class='text-center'>" . $value['delivery_fee'] . "</td>";
-                                echo "<td class='text-center last'><a href='../View/deliveryEdit.php?id=" . $value['delivery_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                echo "<td class='text-center last'><a href='../View/deliverycontrolEdit.php?id=" . $value['delivery_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                 echo "<td class='text-center last'><a href='../Controller/deliveryDeleteController.php?id=" . $value['delivery_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                                 echo "</tr>";
                                 $count++;
