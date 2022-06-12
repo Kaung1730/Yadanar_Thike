@@ -205,16 +205,6 @@ hr{
 .admin_name{
     font-size: 0.7rem;
 }
-/* .nav-ad{
-    width: 1% !important;
-} */
-/* .des-over{
-  width: 200px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
-  overflow: hidden;
-} */
 @media screen and (max-width:720px){
     .nav_box{
         display: none;
@@ -226,7 +216,7 @@ hr{
         font-size: 0.50rem;
     }
     .table{
-        width: 82vw;
+        width: 100%;
     }
     .page-item{
         font-size: 0.55rem;

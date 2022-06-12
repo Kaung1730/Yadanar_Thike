@@ -20,6 +20,7 @@
 
 <body>
     <div class="container-fluid">
+        <?php require "../Controller/deliveryListController.php" ?>
         <form action="">
             <div class="row">
                 <div class="col-2 nav_box">
@@ -38,7 +39,7 @@
                             <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                         </div>
                         <table class="table table-striped white_table tb-edit mt-3">
-                            <?php require "../Controller/deliveryListController.php" ?>
+
                             <tr>
                                 <th class="text-center">No.</th>
                                 <th class="text-center">State</th>
