@@ -61,14 +61,15 @@
 
         require "../Controller/homePageCarouselController.php";
         echo "<div  id='carouselExampleInterval' class='carousel slide mt-5' data-bs-ride='carousel'>";
+        echo " <div class='carousel-inner'>";
+
         for ($i = 0; $i < count($result); $i++) {
-            echo " <div class='carousel-inner'>";
             echo " <div class='carousel-item active' data-bs-interval='2000'>";
             echo " <img src='../resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
             echo "</div>";
-            echo "</div>";
-
         }
+
+        echo "</div>";
         echo " <button class='carousel-control-prev' type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='prev'>";
         echo "<span class='carousel-control-prev-icon' aria-hidden='true'>";
         echo "</span>";
@@ -230,7 +231,7 @@
             require "../Controller/discountController.php";
             echo " <div class='disItem'>";
             echo "<div class='disContent'>";
-            echo "<h2>" . $result[0]['author_name'] . "</h2>"; 
+            echo "<h2>" . $result[0]['author_name'] . "</h2>";
             echo "<p>" . $result[0]['book_name'] . "</p>";
             echo "<span class='disPrice text-decoration-line-through'>" . $result[0]['book_price'] . "</span>";
             echo "<span class='disPrice pb-5 ms-2 text-danger'>" .  $result[0]['discount_price'] . "</span>";

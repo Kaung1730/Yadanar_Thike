@@ -9,7 +9,7 @@ $dbconnect = $db2->connect();
 
 $sql = $dbconnect->prepare("SELECT * FROM book_m 
 LEFT JOIN category
-ON book_m.category_id = category.id;
+ON book_m.category_id = category.category_id;
 ");
 
 //go to run
