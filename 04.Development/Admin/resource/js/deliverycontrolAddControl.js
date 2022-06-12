@@ -3,23 +3,22 @@ $(document).ready(function(){
         // let selectState = $(this).children("option:selected").val();
         // window.alert("state is" + selectState);
         
-        let postData = {
+        let state = {
             "state_id": $(this).children("option:selected").val(),
         }
-        console.log(postData);
+        console.log(state);
         $.ajax({
             url: "../Controller/deliverycontrolAddController.php",
             type: "POST",
-            data: { send: JSON.stringify(postData) },
+            data: { send: JSON.stringify(state) },
             success: function (result) {
-                // let township = $_township.parseJSON(result);
-                let township = JSON.parse(result);
+                let township = $.parseJSON(result);
+                // let township = JSON.parse(result);
                 township.forEach(element => {
-                    $(".township").append(
+                    $("select.township").append(
                         `<option value="${element.township_id}">${element.township_name}</option>`
                     );
                 });
-
                 console.log("check");
             },
             error: function (error) {

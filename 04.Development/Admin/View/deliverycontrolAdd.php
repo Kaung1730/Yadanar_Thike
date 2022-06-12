@@ -64,11 +64,11 @@
                             <!-- <input type="text" id="township" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="township"> -->
                             <div class="input-group inputgp mt-3 input-width">
                                 <select class="form-select input-edit township" id="township" aria-label="Example select with button addon">
-                                    <?php
+                                    <!-- <?php
                                     foreach ($result as $key => $value) {
                                         echo "<option value='" . $value['township_id'] . "'>" . $value['township_name'] . "</option>";
                                     }
-                                    ?>
+                                    ?> -->
                                 </select>
                             </div>
                             <label for="fee" class="form-label mt-5">Delivery Fee</label>
