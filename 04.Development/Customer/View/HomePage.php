@@ -3,7 +3,7 @@
 
 <head>
     <title>Home Page</title>
-    <link rel="stylesheet" href="../resource/css/HomePage.css">
+    <link rel="stylesheet" href="../resource/css/homePage.css">
 
     <script src="../resource/js/jquery3.6.0.js"></script>
     <link rel="stylesheet" href="../resource/css/commonUser.css">
@@ -64,7 +64,7 @@
         echo " <div class='carousel-inner'>";
 
         for ($i = 0; $i < count($result); $i++) {
-            echo " <div class='carousel-item active' data-bs-interval='2000'>";
+            echo " <div class='carousel-item active' data-bs-interval='3000'>";
             echo " <img src='../resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
             echo "</div>";
         }
@@ -101,7 +101,6 @@
                 echo " <div class='slide  d-flex justify-content-center'>";
                 echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt=''>";
                 echo "</div>";
-                // print_r("result");
             }
             echo "</div>";
             ?>
