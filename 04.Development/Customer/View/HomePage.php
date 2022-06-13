@@ -65,7 +65,7 @@
 
         for ($i = 0; $i < count($result); $i++) {
             echo " <div class='carousel-item active' data-bs-interval='2000'>";
-            echo " <img src='../resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
+            echo " <img src='../../Admin/resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
             echo "</div>";
         }
 
@@ -99,7 +99,7 @@
             echo "<div class='homeslider slicker mt-5 d-flex justify-content-center'>";
             for ($i = 0; $i < count($result); $i++) {
                 echo " <div class='slide  d-flex justify-content-center'>";
-                echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt=''>";
+                echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt=''>";
                 echo "</div>";
                 // print_r("result");
             }
@@ -165,7 +165,7 @@
                 for ($i = 0; $i < 4; $i++) {
                     echo "<div class='card'>";
                     echo " <div class='imgBox'>";
-                    echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
+                    echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
                     echo "<div class='bookTitle'>" . $result[$i]['book_name'] . "</div>";
                     echo "</div>";
                     echo "<div class='content'>";
@@ -196,7 +196,7 @@
         echo "<span> 20% OFF </span>";
         echo "</div>";
         echo "<div>";
-        echo " <img src='../resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
+        echo " <img src='../../Admin/resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
         echo "</div>";
         echo "</div>";
         echo "</div>";
@@ -216,7 +216,7 @@
                     echo "<div class='col-sm-3'>";
                     echo " <div class='thumb-wrapper'>";
                     echo " <div class='img-box'>";
-                    echo " <img src='../resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
+                    echo " <img src='../../Admin/resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
                     echo "</div>";
                     echo "<div class='thumb-content'>";
                     echo "  <div class='authorName pb-2'>" . $result[$i]['category_name'] . "</div>";
