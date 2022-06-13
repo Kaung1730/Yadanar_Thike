@@ -18,13 +18,14 @@
 }
 
 
-.newBookImg{
+.newBookImg {
     width: 25vw;
     height: 52vh;
     /* margin-bottom: 2vh; */
 }
+
 /* <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် --> */
-.BookForToday  {
+.BookForToday {
     margin-top: 5vh;
     /* margin-left: 10vw; */
     /* width: 100vw; */
@@ -141,7 +142,7 @@
 }
 
 .bookImg {
-   width: 20vw;
+    width: 20vw;
     height: 32vh;
     padding-right: 70px;
 }
@@ -298,14 +299,16 @@
     border: 0px solid;
     background-color: var(--yellow);
     margin: 2vh 0vw 4vh 33vw;
-   text-align: center;
-   padding-top: 2.5vh;
+    text-align: center;
+    padding-top: 2.5vh;
     border-radius: 5px;
 }
-.seeMoreTagA{
+
+.seeMoreTagA {
     text-decoration: none !important;
-    color:var(--black);
+    color: var(--black);
 }
+
 /* SERVICES */
 
 .serviceCard {
@@ -324,7 +327,7 @@
 
 }
 
-.serviceATag  {
+.serviceATag {
     text-decoration: none;
 
 }
@@ -372,12 +375,14 @@
 
 
 @media screen and (max-width: 720px) {
+
     /* အသစ်ထွက်ရှိသော စာအုပ်များ*/
-    .newBookImg{
-     width: 55vw;
+    .newBookImg {
+        width: 55vw;
         height: 40vh;
-      
+
     }
+
     /* အသစ်ထွက်ရှိသော စာအုပ်များ End */
 
     /* advertisement */
@@ -395,14 +400,16 @@
         margin-bottom: 20vh !important;
 
     }
-.bookImg{
-    width: 45vw;
-    height: 27vh;
-}
-.card .content p {
-    margin-top: 1vh;
-    
-}
+
+    .bookImg {
+        width: 45vw;
+        height: 27vh;
+    }
+
+    .card .content p {
+        margin-top: 1vh;
+
+    }
 
     .popularBookTitle {
         margin: 15vh 0vw 17vh 3vw;
@@ -450,7 +457,7 @@
 
     .disItem .discountCard .disImage {
         width: 30vw;
-       height: 23vh;
+        height: 23vh;
         margin: 13px 0 0 15px;
     }
 
@@ -498,7 +505,8 @@
         font-size: 12px;
     }
 }
-.commentBtn{
+
+.commentBtn {
     background-color: var(--yellow) !important;
     border-radius: 1.5rem !important;
 }
