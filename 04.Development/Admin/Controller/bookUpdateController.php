@@ -20,7 +20,7 @@ if (isset($_POST)) {
     $db = new DBConnect();
     $dbconnect = $db->connect();
     if (file_exists($_FILES['book_img']['tmp_name'])) {
-        if (move_uploaded_file($location, "../resource/upload_img/" . $bookImage)) {
+        if (move_uploaded_file($location, "../resource/image/" . $bookImage)) {
 
             $sql = $dbconnect->prepare(
                 "UPDATE book_m SET

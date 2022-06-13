@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delivery Control</title>
-    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <link rel="shortcut icon" href="../resource/img/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../resource/css/commonAdmin.css">
@@ -20,7 +20,7 @@
 
 <body>
     <div class="container-fluid">
-        <?php require "../Controller/deliveryListController.php" ?>
+
         <form action="">
             <div class="row">
                 <div class="col-2 nav_box">
@@ -39,7 +39,7 @@
                             <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                         </div>
                         <table class="table table-striped white_table tb-edit mt-3">
-
+                            <?php require "../Controller/deliveryListController.php" ?>
                             <tr>
                                 <th class="text-center">No.</th>
                                 <th class="text-center">State</th>

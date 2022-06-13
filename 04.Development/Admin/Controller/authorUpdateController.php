@@ -15,7 +15,7 @@ if (isset($_POST)) {
     $db = new DBConnect();
     $dbconnect = $db->connect();
     if (file_exists($_FILES['author_img']['tmp_name'])) {
-        if (move_uploaded_file($location, "../resource/upload_img/" . $authorImage)) {
+        if (move_uploaded_file($location, "../resource/image/" . $authorImage)) {
 
             $sql = $dbconnect->prepare(
                 "UPDATE author SET

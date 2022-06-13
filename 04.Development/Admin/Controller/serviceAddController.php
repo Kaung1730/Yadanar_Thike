@@ -8,7 +8,7 @@ if (isset($_POST)) {
     $icon = $_FILES['icon']['name'];
     $location = $_FILES['icon']['tmp_name'];
 
-    if (move_uploaded_file($location, "../resource/upload_img/" . $icon)) {
+    if (move_uploaded_file($location, "../resource/image/" . $icon)) {
         // call db connection
         $db = new DBConnect();
         $dbconnect = $db->connect();

@@ -12,7 +12,7 @@ if (isset($_POST)) {
     $db = new DBConnect();
     $dbconnect = $db->connect();
     if (file_exists($_FILES['icon']['tmp_name'])) {
-        if (move_uploaded_file($location, "../resource/upload_img/" . $icon)) {
+        if (move_uploaded_file($location, "../resource/image/" . $icon)) {
 
             $sql = $dbconnect->prepare(
                 "UPDATE service SET

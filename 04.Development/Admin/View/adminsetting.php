@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Settings</title>
-    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <link rel="shortcut icon" href="../resource/img/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../resource/css/commonAdmin.css">
@@ -40,13 +40,13 @@
                                 <p class="gmail fs-6"><?php echo $_SESSION['admin_email']; ?></p>
                             </div>
                             <div>
-                                <img src="../resource/image/person icon.png" alt="" class="person_icon">
+                                <img src="../resource/img/person icon.png" alt="" class="person_icon">
                             </div>
                         </div>
                         <!-- Home screen -->
                         <button class="screen_box mt-3">
                             <div class="d-flex justify-content-around screen_btn">
-                                <img src="../resource/image/home.png" alt="" class="image mt-2 ms-4">
+                                <img src="../resource/img/home.png" alt="" class="image mt-2 ms-4">
                                 <div class="text_box d-flex justify-content-center">
                                     <p class="fs-4 text-light"><a href="./homeScreen.php" class="a-edit">Home Screen</a></p>
                                     <p class="logo_text1 text-light mt-2 fs-6">Logo . Icon</p>
@@ -56,7 +56,7 @@
                         <!-- categories -->
                         <button class="screen_box mt-3">
                             <div class="d-flex justify-content-around screen_btn">
-                                <img src="../resource/image/categories.webp" alt="" class="image mt-2 ms-4">
+                                <img src="../resource/img/categories.webp" alt="" class="image mt-2 ms-4">
                                 <div class="text_box">
                                     <p class="fs-4 text-light"><a href="./categoriesList.php" class="a-edit">Categories</a></p>
                                     <p class="logo_text2 text-light mt-2 fs-6">Add . Edit . Delete</p>
@@ -66,7 +66,7 @@
                         <!-- website info -->
                         <button class="screen_box mt-3">
                             <div class="d-flex justify-content-around screen_btn">
-                                <img src="../resource/image/webedit.png" alt="" class="image mt-2 ms-4">
+                                <img src="../resource/img/webedit.png" alt="" class="image mt-2 ms-4">
                                 <div class="text_box">
                                     <p class="fs-4 text-light"><a href="./contactEdit.php" class="a-edit">Website Info</a></p>
                                     <p class="logo_text3 text-light mt-2 fs-6">Phone . Email . Address . Add Admin</p>
@@ -76,7 +76,7 @@
                         <!-- Delivery Control -->
                         <button class="screen_box mt-3">
                             <div class="d-flex justify-content-around screen_btn">
-                                <img src="../resource/image/delivery.png" alt="" class="image mt-2 ms-4">
+                                <img src="../resource/img/delivery.png" alt="" class="image mt-2 ms-4">
                                 <div class="text_box">
                                     <p class="fs-4 text-light mt-2"><a href="./deliverycontrolList.php" class="a-edit">Delivery Control</a></p>
                                 </div>
@@ -85,7 +85,7 @@
                         <!-- Privacy -->
                         <button class="screen_box mt-3">
                             <div class="d-flex justify-content-around">
-                                <img src="../resource/image/privicy.png" alt="" class="image mt-2 ms-4">
+                                <img src="../resource/img/privicy.png" alt="" class="image mt-2 ms-4">
                                 <div class="text_box">
                                     <p class="fs-4 text-light mt-2"><a href="./privacyPolicyList.php" class="a-edit">Privacy</a></p>
                                 </div>

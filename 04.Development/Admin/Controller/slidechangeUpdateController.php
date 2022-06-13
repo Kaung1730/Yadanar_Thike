@@ -10,7 +10,7 @@ if (isset($_POST)) {
     $db = new DBConnect();
     $dbconnect = $db->connect();
     if (file_exists($_FILES['slide']['tmp_name'])) {
-        if (move_uploaded_file($location, "../resource/upload_img/" . $slide)) {
+        if (move_uploaded_file($location, "../resource/image/" . $slide)) {
 
             $sql = $dbconnect->prepare(
                 "UPDATE slider SET slider_image = :image WHERE slider_id = :id"
