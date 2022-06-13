@@ -64,13 +64,8 @@
         echo " <div class='carousel-inner'>";
 
         for ($i = 0; $i < count($result); $i++) {
-<<<<<<< HEAD
-            echo " <div class='carousel-item active' data-bs-interval='3000'>";
-            echo " <img src='../resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
-=======
             echo " <div class='carousel-item active' data-bs-interval='2000'>";
             echo " <img src='../../Admin/resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
->>>>>>> origin/main
             echo "</div>";
         }
 
