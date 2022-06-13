@@ -61,20 +61,16 @@
 
         require "../Controller/homePageCarouselController.php";
         echo "<div  id='carouselExampleInterval' class='carousel slide mt-5' data-bs-ride='carousel'>";
-        echo " <div class='carousel-inner'>";
 
+        echo " <div class='carousel-inner'>";
         for ($i = 0; $i < count($result); $i++) {
-<<<<<<< HEAD
-            echo " <div class='carousel-item active' data-bs-interval='3000'>";
-            echo " <img src='../resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
-=======
             echo " <div class='carousel-item active' data-bs-interval='2000'>";
-            echo " <img src='../../Admin/resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
->>>>>>> origin/main
+            // echo " <img src='../../Admin/resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
+            echo " <img src='../resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
             echo "</div>";
         }
-
         echo "</div>";
+
         echo " <button class='carousel-control-prev' type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='prev'>";
         echo "<span class='carousel-control-prev-icon' aria-hidden='true'>";
         echo "</span>";
@@ -86,6 +82,7 @@
         echo "</span>";
         echo " <span class='visually-hidden'>Next</span>";
         echo "</button>";
+        
         echo "</div>";
         ?>
 
@@ -104,7 +101,8 @@
             echo "<div class='homeslider slicker mt-5 d-flex justify-content-center'>";
             for ($i = 0; $i < count($result); $i++) {
                 echo " <div class='slide  d-flex justify-content-center'>";
-                echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt=''>";
+                // echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt=''>";
+                echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
                 echo "</div>";
             }
             echo "</div>";
@@ -158,7 +156,7 @@
 
             <!-- advertisement end -->
             <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ  -->
-            <p class="popularBookTitle mt-4"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
+            <p class="popularBookTitle"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
             <div class="popularBook">
 
 
@@ -169,7 +167,8 @@
                 for ($i = 0; $i < 4; $i++) {
                     echo "<div class='card'>";
                     echo " <div class='imgBox'>";
-                    echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
+                    // echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
+                    echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
                     echo "<div class='bookTitle'>" . $result[$i]['book_name'] . "</div>";
                     echo "</div>";
                     echo "<div class='content'>";
@@ -179,7 +178,7 @@
                     echo "</div>";
                 }
                 ?>
-            </div> -->
+            </div> 
 
         </div>
         <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ end -->
@@ -200,7 +199,8 @@
         echo "<span> 20% OFF </span>";
         echo "</div>";
         echo "<div>";
-        echo " <img src='../../Admin/resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
+        // echo " <img src='../../Admin/resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
+        echo " <img src='../resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
         echo "</div>";
         echo "</div>";
         echo "</div>";
@@ -220,7 +220,8 @@
                     echo "<div class='col-sm-3'>";
                     echo " <div class='thumb-wrapper'>";
                     echo " <div class='img-box'>";
-                    echo " <img src='../../Admin/resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
+                    // echo " <img src='../../Admin/resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
+                    echo " <img src='../resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
                     echo "</div>";
                     echo "<div class='thumb-content'>";
                     echo "  <div class='authorName pb-2'>" . $result[$i]['category_name'] . "</div>";
@@ -241,7 +242,7 @@
         <div class="services">
             <div class="row text-center">
                 <div class="col-md-2">
-                    <a href="./Service.php">
+                    <a href="./Service.php" class="serviceATag">
                         <div class="serviceCard">
                             <div class="icon">
                                 <img src="../resource/image/serviceLogo.png" alt="">
@@ -254,7 +255,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <a href="./shopList.php">
+                    <a href="./shopList.php" class="serviceATag">
                         <div class="serviceCard">
                             <div class="icon">
                                 <img src="../resource/image/locationLogo.png" alt="">
@@ -265,7 +266,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <a href="./deliveryService.php">
+                    <a href="./deliveryService.php" class="serviceATag">
                         <div class="serviceCard">
                             <div class="icon">
                                 <img src="../resource/image/deliveryLogo.png" alt="" class="homeDelivery">
@@ -276,7 +277,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <a href="./FAQs.php">
+                    <a href="./FAQs.php" class="serviceATag">
                         <div class="serviceCard">
                             <div class="icon">
                                 <img src="../resource/image/faqIcon.webp" alt="">
@@ -288,7 +289,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <a href="./Privacy.php">
+                    <a href="./Privacy.php" class="serviceATag">
                         <div class="serviceCard">
                             <div class="icon">
                                 <img src="../resource/image/privacyLogo.webp" alt="">
@@ -299,7 +300,7 @@
                 </div>
 
                 <div class="col-md-2">
-                    <a href="./ContactUs.php">
+                    <a href="./ContactUs.php" class="serviceATag">
                         <div class="serviceCard">
                             <div class="icon">
                                 <img src="../resource/image/contactLogo.png" alt="">
