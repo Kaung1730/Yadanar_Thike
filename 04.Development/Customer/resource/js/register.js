@@ -29,7 +29,7 @@ $(document).ready(function () {
                         icon: "success",
                         button: "အ​ကောင့်၀င်ရန်",
                     }).then((value) => {
-                        window.location.href = `/yadanar_thike/04.Development/Customer/View/login.php`;
+                        window.location.href = `/YadnarThike/04.Development/Customer/View/login.php`;
                     });
                 } else if (res == "password") {
                     swal({

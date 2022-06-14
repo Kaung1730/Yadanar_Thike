@@ -125,7 +125,7 @@
                 console.log(err);
             }
         });
-        var orderArray = [], order_num =0, order_number_title, bookTotal, bookPrice = 0, deli_fee;
+        var orderArray = [], order_num =0, order_number_title, bookTotal = 0, bookPrice = 0, deli_fee;
         //when user click order history button
         $(".order-history").click(function(){
             $(".delete").css("background-color",'transparent');
@@ -145,6 +145,57 @@
                     //         $("$.order_history").append(`
                             
                             
+                    //         `);
+                    //     }
+                    // });
+                    // orderArray.push(element.order_number);
+                    // orderArray.forEach(order => {
+                    //     if(order != element.order_number){
+                    //         bookTotal += element.total_price;
+                    //         deli_fee += element.delivery_fee;
+                    //         $(".order_history").append(`
+                    // <div class="row">
+                    //     <div class="col-8 ">
+                    //         ​အော်ဒါနံပါတ် - <span>${element.order_number}</span>
+                    //     </div>
+                    //     <div class="col-4 book-text">${element.order_date}</div>
+                    // </div>
+
+                    // <div class="row">
+                    //     <div class="col-8 book-text mt-2 ">
+                    //         <div class="my-2">ဝယ်ယူခဲ့သည့်စာအုပ်</div>
+                    //         <div class="my-2 small-text">${element.book_name}</div>
+                    //         <div class="my-2 small-text">အိမ်အ​ရောက်​ငွေ​ချေစနစ်</div>
+                    //     </div>
+                    //     <div class="col-4 mt-2">
+                    //         <img src="../resource/image/${element.book_img}" class="img-fluid" alt="">
+                    //     </div>
+                    // </div>
+                    // <div class="row same_order"></div>
+                    // <div class="row mt-3 fw-light status">
+                    // </div>
+                    // <hr>
+                    // `);
+                    //     }
+                    //     else{
+                    //         $(".same_order").append(`
+                    //         <div class="col-8 book-text mt-2 ">
+                    //             <div class="my-2">ဝယ်ယူခဲ့သည့်စာအုပ်</div>
+                    //             <div class="my-2 small-text">${element.book_name}</div>
+                    //             <div class="my-2 small-text">အိမ်အ​ရောက်​ငွေ​ချေစနစ်</div>
+                    //         </div>
+                    //         <div class="col-4 mt-2">
+                    //             <img src="../resource/image/${element.book_img}" class="img-fluid" alt="">
+                    //         </div>
+                    //         `);
+                    //         $(".status").append(`
+                    //         <div class="col-10 book-text muted">
+                    //             <div>စုစု​ပေါင်း - <span>${element.total_price + bookTotal + deli_fee}</span> (ကျပ်)</div>
+                    //             <div>အမှာအ​ခြေအ​​နေ - <span>${status}</span></div>
+                    //         </div>
+                    //         <button class="col-2 delete" value="${element.order_number}">
+                    //             <i class="bi bi-trash3 text-warning "></i>
+                    //         </button>
                     //         `);
                     //     }
                     // });
@@ -171,7 +222,7 @@
                             <div class="my-2 small-text">အိမ်အ​ရောက်​ငွေ​ချေစနစ်</div>
                         </div>
                         <div class="col-4 mt-2">
-                            <img src="${element.book_img}" class="img-fluid" alt="">
+                            <img src="../resource/image/${element.book_img}" class="img-fluid" alt="">
                         </div>
                     </div>
 

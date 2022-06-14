@@ -45,10 +45,11 @@
     <script src="../resource/js/userSetting.js" defer></script>
     <script src="../resource/js/cartShow.js"></script>
     <script src="../resource/js/cart.js"></script>
-    <script src="../resource/js/order.js"></script>
+    <script src="../resource/js/searchResult.js"></script>
 </head>
 
 <body>
+    <?php session_start();?>
     <div class="nav-bar"></div>
     <div class="setting"></div>
     <div class="cart"></div>
@@ -159,9 +160,7 @@
 
 
                 <?php
-
                 require "../Controller/homePageController.php";
-
                 for ($i = 0; $i < 4; $i++) {
                     echo "<div class='card'>";
                     echo " <div class='imgBox'>";
@@ -169,8 +168,10 @@
                     echo "<div class='bookTitle'>" . $result[$i]['book_name'] . "</div>";
                     echo "</div>";
                     echo "<div class='content'>";
-                    echo " <p>" . $result[$i]['book_price'] . "</p>";
-                    echo "<button type='button' class='btn '>ခြင်းတောင်းထဲထည့်ရန်</button>";
+                    echo " <p class= 'text-center'>" . $result[$i]['book_price'] . "</p>";
+                    if(isset($_SESSION['status'])){
+                        echo "<button type='button' class='btn search-cart' value='". $result[$i]['book_id']."'>ခြင်းတောင်းထဲထည့်ရန်</button>";
+                    }
                     echo "</div>";
                     echo "</div>";
                 }

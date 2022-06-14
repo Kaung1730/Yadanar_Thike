@@ -15,7 +15,7 @@ if (isset($_SESSION['status'])) {
                 <?php foreach ($cartDataResult as $key => $value) {?>
                     <div class="row g-0">
                         <div class="col-lg-3">
-                            <img src="<?php echo $value['book_img']?>" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" id="imgCart"/>
+                            <img src="../resource/image/<?php echo $value['book_img']?>" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" id="imgCart"/>
                         </div>
                         <div class="col-lg-8">
                             <div class="row text-white">
@@ -29,7 +29,12 @@ if (isset($_SESSION['status'])) {
                                 <div class="col-6 col-md-12 col-lg-12">
                                     <span class="book-text book-qty"><?php echo $value['quantity']?></span>
                                     <span class="book-text">x</span>
-                                    <span class="book-text book-price"><?php echo $value['book_price']?>(ကျပ်)</span>
+                                    <!-- Discount -->
+                                    <?php if(isset($value['discount_price'])){ ?>
+                                        <span class="book-text book-price"><?php echo $value['discount_price']?>(ကျပ်)</span>
+                                    <?php } else{?>
+                                        <span class="book-text book-price"><?php echo $value['book_price']?>(ကျပ်)</span>
+                                    <?php } ?>
                                 </div>
                                 <button class="col-6 d-block d-md-none d-lg-none col-md-12 col-lg-12 delete-btn" value="<?php echo $value['book_id']?>">
                                     <i class="bi bi-trash3 bg-trasnparent text-warning" value="<?php echo $value['book_id']?>"></i>
@@ -147,15 +152,37 @@ if (isset($_SESSION['status'])) {
                     qty = element.quantity;
                     qtyArray.push(qty);
                     cart_id = element.cart_id;
-                    book_price = element.book_price;
-                    book_priceArray.push(book_price);
-                    customer_id = element.customer_id;
-                    cartArray.push(cart_id);
-                    totalPrice.push(element.quantity * element.book_price);
-                    $(".first-part").append(`
+                    //discount
+                    if(element.discount_price){
+                        book_price = element.discount_price;
+                        book_priceArray.push(book_price);
+                        totalPrice.push(element.quantity * element.discount_price);
+                        $(".first-part").append(`
                 <div class="row g-0">
                         <div class="col-lg-4">
-                            <img src="${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
+                            <img src="../resource/image/${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row text-white">
+                                <div class="col">
+                                    <p class="book-title">${element.book_name}</p>
+                                    <p class="book-title">${element.quantity} x  ${element.discount_price}</p>
+                                    <p class="book-text">= ${(element.quantity)*(element.discount_price)}(ကျပ်)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                `);
+                    }
+                    else{
+                        book_price = element.book_price;
+                        book_priceArray.push(book_price);
+                        totalPrice.push(element.quantity * element.book_price);
+                        $(".first-part").append(`
+                <div class="row g-0">
+                        <div class="col-lg-4">
+                            <img src="../resource/image/${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
                         </div>
                         <div class="col-lg-7">
                             <div class="row text-white">
@@ -169,9 +196,33 @@ if (isset($_SESSION['status'])) {
                     </div>
                     <hr>
                 `);
+                    }
+                    // book_price = element.book_price;
+                    // book_priceArray.push(book_price);
+                    customer_id = element.customer_id;
+                    cartArray.push(cart_id);
+                    // totalPrice.push(element.quantity * element.book_price);
+                //     $(".first-part").append(`
+                // <div class="row g-0">
+                //         <div class="col-lg-4">
+                //             <img src="../resource/image/${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
+                //         </div>
+                //         <div class="col-lg-7">
+                //             <div class="row text-white">
+                //                 <div class="col">
+                //                     <p class="book-title">${element.book_name}</p>
+                //                     <p class="book-title">${element.quantity} x  ${element.book_price}</p>
+                //                     <p class="book-text">= ${(element.quantity)*(element.book_price)}(ကျပ်)</p>
+                //                 </div>
+                //             </div>
+                //         </div>
+                //     </div>
+                //     <hr>
+                // `);
 
                 
                 });
+                $("#township").css("width","16rem !important");
                 $(".second-part").append(`
                 <div class="lower-form text-white">
                         <div class="form-title order-text">စာအုပ်ကို ပို့​ဆောင်​ပေးနိုင်ရန် ​အောက်ပါ အချက်အလက်များကို မှန်ကန်တိကျစွာ ဖြည့်ပါ</div>
@@ -215,8 +266,11 @@ if (isset($_SESSION['status'])) {
                         </div>
                         <div class="row my-3 justify-content-center">
                             <div class="col-lg-10">
-                                <label for="" class=" book-text my-2">မြို့</label>
-                                <input type="text" name="town" required class="form-control ps-4 pt-2 town" />
+                                <label for="township" class=" book-text my-2">မြို့</label>
+                                <br>
+                                <select name="" id="township" class="book-text my-2 px-lg-5 mx-auto py-1">
+
+                                </select>
                             </div>
                         </div>
                         <div class="row my-3 justify-content-center">
@@ -237,8 +291,7 @@ if (isset($_SESSION['status'])) {
                         </div>
                     </div>
                 `);
-                
-                
+                $("#township").css("width","16rem !important");
                 $("#state").change(function(){
                     selected = $(this).val();
                     let stateData = {
@@ -250,6 +303,33 @@ if (isset($_SESSION['status'])) {
                         data: { send: JSON.stringify(stateData) },
                         success: function (res) {
                             var data = $.parseJSON(res);
+                            data.forEach(element => {
+                                $("#township").append(`
+                                    <option value="${element.township_name}">${element.township_name}</option>
+                                `);
+                            });
+                            console.log(res);
+                        },
+                        error: function (err) {
+                            console.log(err)
+                        }
+                        
+                    });
+                })
+
+                $("#township").change(function(){
+                    town = $(this).val();
+                    console.log(town);
+                    let townData = {
+                        'town': town
+                    }
+                    $.ajax({
+                        url: "../Controller/townSearchController.php",
+                        type: "POST",
+                        data: { send: JSON.stringify(townData) },
+                        success: function (res) {
+                            var data = $.parseJSON(res);
+                            console.log(data);
                             data.forEach(element => {
                                 delivery_id = element.delivery_id;
                                 delivery_fee = element.delivery_fee;
@@ -280,12 +360,53 @@ if (isset($_SESSION['status'])) {
                     });
                 });
 
+                // $("#state").change(function(){
+                //     selected = $(this).val();
+                //     let stateData = {
+                //         'state': selected
+                //     }
+                //     $.ajax({
+                //         url: "../Controller/stateSearchController.php",
+                //         type: "POST",
+                //         data: { send: JSON.stringify(stateData) },
+                //         success: function (res) {
+                //             var data = $.parseJSON(res);
+                //             data.forEach(element => {
+                //                 delivery_id = element.delivery_id;
+                //                 delivery_fee = element.delivery_fee;
+                //                 console.log(delivery_id);
+                //             });
+                //             totalPrice.forEach(element => {
+                //                 newBookPrice += element;
+                //             });
+                //             console.log(newBookPrice);
+                //             $(".total-price").empty();
+                //             $(".total-price").append(`
+                //                 <div class="row mb-1 mt-3 ms-3 book-text">
+                //                     <div class="col text-white">စာအုပ်တန်ဖိုး - ${newBookPrice} (ကျပ်)</div>
+                //                 </div>
+                //                 <div class="row mb-1 mt-3 ms-3 book-text">
+                //                     <div class="col text-white">ပို့​ဆောင်ခ - ${delivery_fee} (ကျပ်)</div>
+                //                 </div>
+                //                 <div class="row ms-lg-3 justify-content-center my-2">
+                //                     <div class="col-6">စုစု​ပေါင်း</div>
+                //                     <div class="col-6">${(newBookPrice)+delivery_fee} (ကျပ်)</div>
+                //                 </div>
+                //                 `);
+                //         },
+                //         error: function (err) {
+                //             console.log(err)
+                //         }
+                        
+                //     });
+                // });
+
 
                 $(".buy-btn").click(function(){
                     var name = $(".name").val();
                     var phno = $(".phno").val();
                     var state = selected;
-                    var town = $(".town").val();
+                    var town = $("#township").val();
                     var address = $(".address").val();
                     if(name == '' || phno == '' ||
                         state == '' || town == '' ||

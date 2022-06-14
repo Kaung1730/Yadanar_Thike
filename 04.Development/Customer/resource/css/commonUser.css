@@ -47,3 +47,6 @@ body{
     background-color: var(--yellow) !important;
     border-radius: 1.5rem !important;
 }
+#township{
+  width: 16rem !important;
+}

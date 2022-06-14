@@ -161,7 +161,7 @@
                         <?php foreach ($reviewrResult as $key => $value) {?>
                         <div class="row g-0 border-bottom border-light">
                             <div class="col-1 ps-lg-4 ps-md-0 ps-0 pt-lg-2 pt-md-0 pt-0 border-left d-none d-md-block d-lg-block">
-                                <img src="../resource/image/<?php echo $value['customer_profileImg']; ?>" class="rounded-circle img-circle img-fluid" />
+                                <img src="<?php echo $value['customer_profileImg']; ?>" class="rounded-circle img-circle img-fluid" />
                             </div>
                             <div class="col-10">
                                 <div class="row pt-2">
