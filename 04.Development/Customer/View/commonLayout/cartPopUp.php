@@ -15,7 +15,7 @@ if (isset($_SESSION['status'])) {
                 <?php foreach ($cartDataResult as $key => $value) {?>
                     <div class="row g-0">
                         <div class="col-lg-3">
-                            <img src="../resource/image/<?php echo $value['book_img']?>" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" id="imgCart"/>
+                            <img src="../../Admin/resource/image/<?php echo $value['book_img']?>" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" id="imgCart"/>
                         </div>
                         <div class="col-lg-8">
                             <div class="row text-white">
@@ -160,14 +160,14 @@ if (isset($_SESSION['status'])) {
                         $(".first-part").append(`
                 <div class="row g-0">
                         <div class="col-lg-4">
-                            <img src="../resource/image/${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
+                            <img src="../../Admin/resource/image/${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
                         </div>
                         <div class="col-lg-7">
                             <div class="row text-white">
                                 <div class="col">
                                     <p class="book-title">${element.book_name}</p>
                                     <p class="book-title">${element.quantity} x  ${element.discount_price}</p>
-                                    <p class="book-text">= ${(element.quantity)*(element.discount_price)}(ကျပ်)</p>
+                                    <p class="book-text">= <span class="book_p">${(parseInt(element.quantity))*(parseInt(element.discount_price))}</span>(ကျပ်)</p>
                                 </div>
                             </div>
                         </div>
@@ -182,14 +182,14 @@ if (isset($_SESSION['status'])) {
                         $(".first-part").append(`
                 <div class="row g-0">
                         <div class="col-lg-4">
-                            <img src="../resource/image/${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
+                            <img src="../../Admin/resource/image/${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
                         </div>
                         <div class="col-lg-7">
                             <div class="row text-white">
                                 <div class="col">
                                     <p class="book-title">${element.book_name}</p>
                                     <p class="book-title">${element.quantity} x  ${element.book_price}</p>
-                                    <p class="book-text">= ${(element.quantity)*(element.book_price)}(ကျပ်)</p>
+                                    <p class="book-text ">= <span class="book_p">${(parseInt(element.quantity))*(parseInt(element.book_price))}</span>(ကျပ်)</p>
                                 </div>
                             </div>
                         </div>
@@ -282,7 +282,11 @@ if (isset($_SESSION['status'])) {
                         <div class="order-text ps-lg-4 ps-md-4 ps-0">
                             အိမ်အ​ရောက်​ငွေ​ချေစနစ်
                         </div>
-                        <div class="total-price"></div>
+                        <div class="total-price">
+                            <div class="book_fee"></div>
+                            <div class="deli_fee"></div>
+                            <div class="total_fee"></div>
+                        </div>
                         <hr>
                         <div class="row mt-4 mb-3 justify-content-center">
                             <div class="col-lg-10 d-flex justify-content-center">
@@ -292,7 +296,7 @@ if (isset($_SESSION['status'])) {
                     </div>
                 `);
                 $("#township").css("width","16rem !important");
-                $("#state").change(function(){
+                $("#state").click(function(){
                     selected = $(this).val();
                     let stateData = {
                         'state': selected
@@ -305,6 +309,7 @@ if (isset($_SESSION['status'])) {
                             var data = $.parseJSON(res);
                             data.forEach(element => {
                                 $("#township").append(`
+                                $("#twonship").empty();
                                     <option value="${element.township_name}">${element.township_name}</option>
                                 `);
                             });
@@ -317,9 +322,9 @@ if (isset($_SESSION['status'])) {
                     });
                 })
 
-                $("#township").change(function(){
+                $("#township").click(function(){
                     town = $(this).val();
-                    console.log(town);
+                    console.log($(".book_p").text());
                     let townData = {
                         'town': town
                     }
@@ -329,29 +334,53 @@ if (isset($_SESSION['status'])) {
                         data: { send: JSON.stringify(townData) },
                         success: function (res) {
                             var data = $.parseJSON(res);
-                            console.log(data);
+                            console.log(data.length);
                             data.forEach(element => {
                                 delivery_id = element.delivery_id;
                                 delivery_fee = element.delivery_fee;
                                 console.log(delivery_id);
+                                    $(".deli_fee").empty();
+                                    $(".deli_fee").append(`
+                                        <div class="row mb-1 mt-3 ms-3 book-text">
+                                            <div class="col text-white deli-fee">ပို့​ဆောင်ခ - ${element.delivery_fee} (ကျပ်)</div>
+                                        </div>
+                                    `);
                             });
-                            totalPrice.forEach(element => {
-                                newBookPrice += element;
+                            /*error to change to number */
+                            var book = 0; bookArray = [];
+                            bookArray.push(Number($(".book_p").text()));
+                            bookArray.forEach(element => {
+                                book+= element;
                             });
-                            console.log(newBookPrice);
-                            $(".total-price").empty();
-                            $(".total-price").append(`
-                                <div class="row mb-1 mt-3 ms-3 book-text">
-                                    <div class="col text-white">စာအုပ်တန်ဖိုး - ${newBookPrice} (ကျပ်)</div>
-                                </div>
-                                <div class="row mb-1 mt-3 ms-3 book-text">
-                                    <div class="col text-white">ပို့​ဆောင်ခ - ${delivery_fee} (ကျပ်)</div>
-                                </div>
-                                <div class="row ms-lg-3 justify-content-center my-2">
-                                    <div class="col-6">စုစု​ပေါင်း</div>
-                                    <div class="col-6">${(newBookPrice)+delivery_fee} (ကျပ်)</div>
-                                </div>
-                                `);
+                            console.log(book);
+                            $(".book_fee").empty();
+                            $(".book_fee").append(`
+                            <div class="row mb-1 mt-3 ms-3 book-text">
+                                <div class="col text-white">စာအုပ်တန်ဖိုး - ${book}(ကျပ်)</div>
+                            </div>
+                            `);
+                            $(".total_fee").empty();
+                            $(".total_fee").append(`
+                                    <div class="row ms-lg-3 justify-content-center my-2">
+                                        <div class="col-6">စုစု​ပေါင်း</div>
+                                        <div class="col-6">${ delivery_fee + book }</div>
+                                    </div>
+                            `);
+                            
+                            // console.log(newBookPrice);
+                            // $(".total-price").empty();
+                            // $(".total-price").append(`
+                            //     <div class="row mb-1 mt-3 ms-3 book-text">
+                            //         <div class="col text-white">စာအုပ်တန်ဖိုး - ${newBookPrice} (ကျပ်)</div>
+                            //     </div>
+                            //     <div class="row mb-1 mt-3 ms-3 book-text">
+                            //         <div class="col text-white">ပို့​ဆောင်ခ - ${delivery_fee} (ကျပ်)</div>
+                            //     </div>
+                            //     <div class="row ms-lg-3 justify-content-center my-2">
+                            //         <div class="col-6">စုစု​ပေါင်း</div>
+                            //         <div class="col-6">${(newBookPrice)+delivery_fee} (ကျပ်)</div>
+                            //     </div>
+                            //     `);
                         },
                         error: function (err) {
                             console.log(err)
