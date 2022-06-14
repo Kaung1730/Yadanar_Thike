@@ -6,7 +6,7 @@ if (isset($_POST)) {
     $slide = $_FILES['slide']['name'];
     $location = $_FILES['slide']['tmp_name'];
 
-    if (move_uploaded_file($location, "../resource/upload_img/" . $slide)) {
+    if (move_uploaded_file($location, "../resource/image/" . $slide)) {
         // call db connection
         $db = new DBConnect();
         $dbconnect = $db->connect();

@@ -11,7 +11,7 @@ if(isset($_POST)){
     $authorImage = $_FILES['author_img']['name'];
     $location = $_FILES['author_img']['tmp_name'];
 
-    if(move_uploaded_file($location , "../resource/upload_img/".$authorImage)){
+    if(move_uploaded_file($location , "../resource/image/".$authorImage)){
         // call db connection
         $db = new DBConnect();
         $dbconnect = $db->connect();

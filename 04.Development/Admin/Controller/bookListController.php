@@ -56,3 +56,8 @@ $sql = $dbconnect->prepare("SELECT category_id,category_name FROM category WHERE
 $sql->execute();
 
 $categoryList = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+$sql = $dbconnect->prepare("SELECT publisher_id,publisher_name FROM publisher WHERE del_flg=0");
+$sql->execute();
+
+$publisherList = $sql->fetchAll(PDO::FETCH_ASSOC);

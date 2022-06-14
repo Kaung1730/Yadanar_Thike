@@ -18,8 +18,14 @@
 }
 
 
+.newBookImg {
+    width: 25vw;
+    height: 52vh;
+    /* margin-bottom: 2vh; */
+}
+
 /* <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် --> */
-.BookForToday  {
+.BookForToday {
     margin-top: 5vh;
     /* margin-left: 10vw; */
     /* width: 100vw; */
@@ -112,13 +118,13 @@
 }
 
 .card:hover {
-    height: 300px;
+    height: 50vh;
     background-color: var(--light-violet);
 }
 
 .imgBox {
     width: 100%;
-    height: 140px;
+    height: 150px;
     position: relative;
     transform: translateY(-100px);
     border-radius: 5px;
@@ -136,8 +142,9 @@
 }
 
 .bookImg {
-    width: 250px;
-    padding-right: 70px;
+    width: 20vw;
+    height: 32vh;
+    padding-right: 81px;
 }
 
 .card .content {
@@ -150,7 +157,7 @@
 }
 
 .card .content p {
-    margin-top: 10px;
+    margin-top: 7vh;
     text-align: center;
 }
 
@@ -292,14 +299,16 @@
     border: 0px solid;
     background-color: var(--yellow);
     margin: 2vh 0vw 4vh 33vw;
-   text-align: center;
-   padding-top: 2.5vh;
+    text-align: center;
+    padding-top: 2.5vh;
     border-radius: 5px;
 }
-.seeMoreTagA{
+
+.seeMoreTagA {
     text-decoration: none !important;
-    color:var(--black);
+    color: var(--black);
 }
+
 /* SERVICES */
 
 .serviceCard {
@@ -318,7 +327,7 @@
 
 }
 
-.serviceCard a {
+.serviceATag {
     text-decoration: none;
 
 }
@@ -367,27 +376,14 @@
 
 @media screen and (max-width: 720px) {
 
-    /* <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် --> */
+    /* အသစ်ထွက်ရှိသော စာအုပ်များ*/
+    .newBookImg {
+        width: 55vw;
+        height: 40vh;
 
-    /* .BookForToday  {
-        margin-top: 4vh;
-    } */
-
-
-    /* .forToday .forTodayLeftSide img {
-        margin-left: 14vw;
     }
 
-    .forToday .forTodayLeftSide p {
-        margin: 4vh 0vw 0vh 22vw;
-        margin-left: 22vw;
-    }
-
-    .forToday .forTodayRightSide p {
-        width: 30vw;
-        margin-left: 25vw;
-
-    } */
+    /* အသစ်ထွက်ရှိသော စာအုပ်များ End */
 
     /* advertisement */
     .advertise .advertise-wrapper {
@@ -402,6 +398,16 @@
 
     .popularBook .card {
         margin-bottom: 20vh !important;
+
+    }
+
+    .bookImg {
+        width: 45vw;
+        height: 27vh;
+    }
+
+    .card .content p {
+        margin-top: 1vh;
 
     }
 
@@ -450,9 +456,9 @@
     }
 
     .disItem .discountCard .disImage {
-        width: 120px;
-        height: 150px;
-        margin: 10px 0 0 20px;
+        width: 30vw;
+        height: 23vh;
+        margin: 13px 0 0 15px;
     }
 
     .disTag {
@@ -499,7 +505,8 @@
         font-size: 12px;
     }
 }
-.commentBtn{
+
+.commentBtn {
     background-color: var(--yellow) !important;
     border-radius: 1.5rem !important;
 }

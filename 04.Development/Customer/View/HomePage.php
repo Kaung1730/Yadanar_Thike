@@ -3,7 +3,7 @@
 
 <head>
     <title>Home Page</title>
-    <link rel="stylesheet" href="../resource/css/HomePage.css">
+    <link rel="stylesheet" href="../resource/css/homePage.css">
 
     <script src="../resource/js/jquery3.6.0.js"></script>
     <link rel="stylesheet" href="../resource/css/commonUser.css">
@@ -62,15 +62,16 @@
 
         require "../Controller/homePageCarouselController.php";
         echo "<div  id='carouselExampleInterval' class='carousel slide mt-5' data-bs-ride='carousel'>";
-        echo " <div class='carousel-inner'>";
 
+        echo " <div class='carousel-inner'>";
         for ($i = 0; $i < count($result); $i++) {
             echo " <div class='carousel-item active' data-bs-interval='2000'>";
+            // echo " <img src='../../Admin/resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
             echo " <img src='../resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
             echo "</div>";
         }
-
         echo "</div>";
+
         echo " <button class='carousel-control-prev' type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='prev'>";
         echo "<span class='carousel-control-prev-icon' aria-hidden='true'>";
         echo "</span>";
@@ -82,6 +83,7 @@
         echo "</span>";
         echo " <span class='visually-hidden'>Next</span>";
         echo "</button>";
+        
         echo "</div>";
         ?>
 
@@ -100,9 +102,9 @@
             echo "<div class='homeslider slicker mt-5 d-flex justify-content-center'>";
             for ($i = 0; $i < count($result); $i++) {
                 echo " <div class='slide  d-flex justify-content-center'>";
-                echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt=''>";
+                // echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt=''>";
+                echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
                 echo "</div>";
-                // print_r("result");
             }
             echo "</div>";
             ?>
@@ -155,7 +157,7 @@
 
             <!-- advertisement end -->
             <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ  -->
-            <p class="popularBookTitle mt-4"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
+            <p class="popularBookTitle"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
             <div class="popularBook">
 
 
@@ -164,6 +166,7 @@
                 for ($i = 0; $i < 4; $i++) {
                     echo "<div class='card'>";
                     echo " <div class='imgBox'>";
+                    // echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
                     echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
                     echo "<div class='bookTitle'>" . $result[$i]['book_name'] . "</div>";
                     echo "</div>";
@@ -176,14 +179,12 @@
                     echo "</div>";
                 }
                 ?>
-            </div> -->
+            </div> 
 
         </div>
         <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ end -->
 
         <!-- DISCOUNT -->
-
-
         <?php
 
         require "../Controller/discountController.php";
@@ -199,6 +200,7 @@
         echo "<span> 20% OFF </span>";
         echo "</div>";
         echo "<div>";
+        // echo " <img src='../../Admin/resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
         echo " <img src='../resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
         echo "</div>";
         echo "</div>";
@@ -219,6 +221,7 @@
                     echo "<div class='col-sm-3'>";
                     echo " <div class='thumb-wrapper'>";
                     echo " <div class='img-box'>";
+                    // echo " <img src='../../Admin/resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
                     echo " <img src='../resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
                     echo "</div>";
                     echo "<div class='thumb-content'>";
@@ -240,67 +243,76 @@
         <div class="services">
             <div class="row text-center">
                 <div class="col-md-2">
-                    <div class="serviceCard">
-                        <div class="icon">
-                            <a href="./Service.php"><img src="../resource/image/serviceLogo.png" alt=""></a>
-                        </div>
-                        <a href="./Service.php">
+                    <a href="./Service.php" class="serviceATag">
+                        <div class="serviceCard">
+                            <div class="icon">
+                                <img src="../resource/image/serviceLogo.png" alt="">
+                            </div>
+
                             <div class="content ">ဝန်ဆောင်မှုများ</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="serviceCard">
-                        <div class="icon">
-                            <a href="./shopList.php"><img src="../resource/image/locationLogo.png" alt=""></a>
+
                         </div>
-                        <a href="./shopList.php">
+                    </a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="./shopList.php" class="serviceATag">
+                        <div class="serviceCard">
+                            <div class="icon">
+                                <img src="../resource/image/locationLogo.png" alt="">
+                            </div>
                             <div class="content ps-2 pe-2">စာအုပ်ဆိုင်တည်နေရာများ</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="serviceCard">
-                        <div class="icon">
-                            <a href="./deliveryService.php"><img src="../resource/image/deliveryLogo.png" alt="" class="homeDelivery"></a>
                         </div>
-                        <a href="./deliveryService.php">
-                            <div class="content homeDeliveryContent ps-2 pe-2 ">အိမ်အရောက်ပို့ဆောင်ပေးသော နေရာများ</div>
-                        </a>
-                    </div>
+                    </a>
                 </div>
+
                 <div class="col-md-2">
-                    <div class="serviceCard">
-                        <div class="icon">
-                            <a href="./FAQs.php"><img src="../resource/image/faqIcon.webp" alt=""></a>
+                    <a href="./deliveryService.php" class="serviceATag">
+                        <div class="serviceCard">
+                            <div class="icon">
+                                <img src="../resource/image/deliveryLogo.png" alt="" class="homeDelivery">
+                                <div class="content homeDeliveryContent ps-2 pe-2 ">အိမ်အရောက်ပို့ဆောင်ပေးသော နေရာများ</div>
+                            </div>
                         </div>
-                        <a href="./FAQs.php">
+                    </a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="./FAQs.php" class="serviceATag">
+                        <div class="serviceCard">
+                            <div class="icon">
+                                <img src="../resource/image/faqIcon.webp" alt="">
+                            </div>
+
                             <div class="content">FAQ</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="serviceCard">
-                        <div class="icon">
-                            <a href="./Privacy.php"><img src="../resource/image/privacyLogo.webp" alt=""></a>
                         </div>
-                        <a href="./Privacy.php">
+                    </a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="./Privacy.php" class="serviceATag">
+                        <div class="serviceCard">
+                            <div class="icon">
+                                <img src="../resource/image/privacyLogo.webp" alt="">
+                            </div>
                             <div class="content ps-2 pe-2">ကိုယ်ရေးအချက်အလက်ဆိုင်ရာ မူပိုင်ခွင့်များ</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="serviceCard">
-                        <div class="icon">
-                            <a href="./ContactUs.php"><img src="../resource/image/contactLogo.png" alt=""></a>
                         </div>
-                        <a href="./ContactUs.php">
+                    </a>
+                </div>
+
+                <div class="col-md-2">
+                    <a href="./ContactUs.php" class="serviceATag">
+                        <div class="serviceCard">
+                            <div class="icon">
+                                <img src="../resource/image/contactLogo.png" alt="">
+                            </div>
                             <div class="content">ဆက်သွယ်ရန်</div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
+        
         <!-- SERVICES END -->
 
         <!-- homeAddress -->

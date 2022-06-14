@@ -1,6 +1,6 @@
     <nav class="navbar navbar-expand-lg navbar-light mt-lg-3 mt-md-0 mt-0">
         <div class="container">
-            <a class="navbar-brand me-lg-5 me-md-0  me-0" href="#">
+            <a class="navbar-brand me-lg-5 me-md-0  me-0" href="../View/homePage.php">
                 <img src="../resource/image/logo.png" alt="" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

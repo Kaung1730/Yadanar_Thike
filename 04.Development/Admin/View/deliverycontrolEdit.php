@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delivery Control</title>
-    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <link rel="shortcut icon" href="../resource/img/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../resource/css/commonAdmin.css">
@@ -21,6 +21,7 @@
 
 <body>
     <div class="container-fluid">
+
         <form action="../Controller/deliveryUpdateController.php" id="delivery" method="POST">
             <div class="row">
                 <div class="col-2 nav_box">
@@ -39,8 +40,9 @@
                             <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                         </div>
                         <div class="input-part ms-5">
-                            <!-- <label for="state" class="form-label mt-5">State</label>
-                            <input type="text" id="state" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="state">
+                            <?php require "../Controller/deliveryEditController.php" ?>
+                            <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['delivery_id'] ?>">
+                            <label for="state" class="form-label mt-5">State</label>
                             <div class="input-group inputgp mt-3 input-width">
                                 <select class="form-select input-edit state" id="state" aria-label="Example select with button addon" name="state">
                                     <option value="1">ကချင်ပြည်နယ်</option>
@@ -60,19 +62,16 @@
                                 </select>
                             </div>
                             <label for="township" class="form-label mt-5">Township</label>
-                            <input type="text" id="township" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="township">
                             <div class="input-group inputgp mt-3 input-width">
                                 <select class="form-select input-edit township" id="township" aria-label="Example select with button addon" name="township">
 
                                 </select>
-                            </div> -->
-                            <?php require "../Controller/deliveryEditController.php" ?>
-                            <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['delivery_id'] ?>">
+                            </div>
                             <label for="fee" class="form-label mt-5">Delivery Fee</label>
                             <input type="text" id="fee" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="fee" value="<?php echo $result[0]['delivery_fee'] ?>">
                             <div class="buttonGp mt-5">
                                 <a href="deliverycontrolList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
-                                <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Submit</button>
+                                <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Update</button>
                             </div>
                         </div>
                     </div>

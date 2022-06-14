@@ -16,7 +16,7 @@ if(isset($_POST)){
     $location = $_FILES['sl_2']['tmp_name'];
     $del_flg = 0;
 
-    if(move_uploaded_file($location , "../resource/upload_img/". $slide_1 || move_uploaded_file($location , "../resource/upload_img/". $slide_2))){
+    if(move_uploaded_file($location , "../resource/image/". $slide_1 || move_uploaded_file($location , "../resource/image/". $slide_2))){
 
         $db = new DBConnect();
         $dbconnect = $db->connect();

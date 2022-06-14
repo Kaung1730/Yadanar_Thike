@@ -17,7 +17,7 @@ if (isset($_POST)) {
     $location = $_FILES['book_img']['tmp_name'];
     $del_flg = 0;
 
-    if (move_uploaded_file($location, "../resource/upload_img/" . $bookImage)) {
+    if (move_uploaded_file($location, "../resource/image/" . $bookImage)) {
 
         $db = new DBConnect();
         $dbconnect = $db->connect();

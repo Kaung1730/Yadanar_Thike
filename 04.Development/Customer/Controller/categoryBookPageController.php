@@ -7,9 +7,7 @@ $db2 = new DBConnect();
 $dbconnect = $db2->connect();
 
 
-$sql = $dbconnect->prepare("SELECT * FROM book_m 
-LEFT JOIN category
-ON book_m.category_id = category.category_id;
+$sql = $dbconnect->prepare("SELECT * FROM category
 ");
 
 //go to run

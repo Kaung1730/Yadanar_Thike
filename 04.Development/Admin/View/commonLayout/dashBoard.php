@@ -10,15 +10,15 @@
     <input class="form-control me-2 search-box mt-2" type="search" placeholder="Search" aria-label="Search">
 </span> -->
 <span class="title-list mt-3 ms-5 i-edit float-end title-wd">
-    <a href=""><img src="../resource/image/message.png" alt="" class="nav_img mx-4 float-end"></a>
+    <a href=""><img src="../resource/img/message.png" alt="" class="nav_img mx-4 float-end"></a>
     <!-- <i class="bi bi-chat-left-text-fill ms-5 fs-4 i-edit"></i> -->
 </span>
 <span class="title-list mt-3 i-edit">
-    <a href=""><img src="../resource/image/cart.png" alt="" class="nav_img mx-4 float-end"></a>
+    <a href=""><img src="../resource/img/cart.png" alt="" class="nav_img mx-4 float-end"></a>
     <!-- <i class="bi bi-cart4 ms-5 fs-4 fw-bold i-edit"></i> -->
 </span>
 <span class="mx-4 i-edit">
-    <img src="../resource/image/person icon.png" alt="" class="nav_img mt-2 ms-2 img-me float-end">
+    <img src="../resource/img/person icon.png" alt="" class="nav_img mt-2 ms-2 img-me float-end">
     <br />
     <span class="admin_name text-center"><?php echo $_SESSION['admin_name'] ?></span>
 </span>
