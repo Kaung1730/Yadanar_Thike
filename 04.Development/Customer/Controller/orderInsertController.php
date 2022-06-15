@@ -65,15 +65,9 @@
                     $clearData -> bindValue(":updated_by","KaungKaung");
                     $clearData -> bindValue(":cart_id",$cart_id);
                     $clearData->execute();
-<<<<<<< HEAD
                     $resultData = $sql->fetchAll(PDO::FETCH_ASSOC);
     
                     
-=======
-                    $resultData = $clearData->fetchAll(PDO::FETCH_ASSOC);
-                    //print_r(json_encode($resultData));
-
->>>>>>> 6b41e21b5cee4110fada1cb90318fa37e392c90c
                     }
             }
     };

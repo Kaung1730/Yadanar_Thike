@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="../resource/css/homePage.css">
 
@@ -49,7 +52,7 @@
 </head>
 
 <body>
-    <?php session_start();?>
+    <?php session_start(); ?>
     <div class="nav-bar"></div>
     <div class="setting"></div>
     <div class="cart"></div>
@@ -65,7 +68,11 @@
 
         echo " <div class='carousel-inner'>";
         for ($i = 0; $i < count($result); $i++) {
-            echo " <div class='carousel-item active' data-bs-interval='2000'>";
+            if ($i == 0) {
+                echo " <div class='carousel-item active' data-bs-interval='2000'>";
+            } else {
+                echo " <div class='carousel-item' data-bs-interval='2000'>";
+            }
             // echo " <img src='../../Admin/resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
             echo " <img src='../resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
             echo "</div>";
@@ -83,7 +90,7 @@
         echo "</span>";
         echo " <span class='visually-hidden'>Next</span>";
         echo "</button>";
-        
+
         echo "</div>";
         ?>
 
@@ -170,14 +177,14 @@
                     echo "</div>";
                     echo "<div class='content'>";
                     echo " <p class= 'text-center'>" . $result[$i]['book_price'] . "</p>";
-                    if(isset($_SESSION['status'])){
-                        echo "<button type='button' class='btn btn-basket' value='". $result[$i]['book_id']."'>ခြင်းတောင်းထဲထည့်ရန်</button>";
+                    if (isset($_SESSION['status'])) {
+                        echo "<button type='button' class='btn btn-basket' value='" . $result[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
                     }
                     echo "</div>";
                     echo "</div>";
                 }
                 ?>
-            </div> 
+            </div>
 
         </div>
         <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ end -->
@@ -310,7 +317,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- SERVICES END -->
 
         <!-- homeAddress -->
