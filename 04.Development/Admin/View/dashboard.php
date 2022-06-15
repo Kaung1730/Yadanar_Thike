@@ -34,36 +34,7 @@
                         </div>
                         <br />
                         <div class="dashboard_box">
-                            <div class="d-flex justify-content-around box_group">
-                                <div class="total_user">
-                                    <div class="d-flex justify-content-around box">
-                                        <img src="../resource/img/person icon.png" alt="" class="person_icon pt-3">
-                                        <div class="pt-3 fs-2 text-success fw-bold">5000</div>
-                                    </div>
-                                    <p class="user_text">Total Users</p>
-                                </div>
-                                <div class="total_viewers">
-                                    <div class="d-flex justify-content-around box">
-                                        <img src="../resource/img/person icon.png" alt="" class="person_icon pt-3">
-                                        <div class="pt-3 fs-2 text-danger fw-bold">2000</div>
-                                    </div>
-                                    <p class="viewer_text">Total Viewers</p>
-                                </div>
-                                <div class="income">
-                                    <div class="d-flex justify-content-around box">
-                                        <img src="../resource/img/person icon.png" alt="" class="person_icon pt-3">
-                                        <div class="pt-3 fs-2 text-primary fw-bold">1.5k</div>
-                                    </div>
-                                    <p class="income_text">Income</p>
-                                </div>
-                                <div class="order">
-                                    <div class="d-flex justify-content-around box">
-                                        <img src="../resource/img/person icon.png" alt="" class="person_icon pt-3">
-                                        <div class="pt-3 fs-2 text-info fw-bold">300</div>
-                                    </div>
-                                    <p class="order_text">Order</p>
-                                </div>
-                            </div>
+                            
                         </div>
                         <div class="order_box">
                             <div class="d-flex ">
