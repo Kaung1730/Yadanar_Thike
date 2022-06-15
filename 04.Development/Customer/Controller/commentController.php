@@ -8,7 +8,7 @@ session_start();
     else{
         $book_id = $_SESSION['book_id'];
         $customer_id = $_SESSION['customer_id'];
-        $today = date("F j, Y");
+        // $today = date("F j, Y");
         $del_flg = 0;
         require_once("../Model/DBConnection.php");
         $db = new DBConnect();
@@ -35,7 +35,7 @@ session_start();
                 $sql -> bindValue(":book_id",$book_id);
                 $sql -> bindValue(":customer_id",$customer_id);
                 $sql -> bindValue(":comment",$data['textComment']);
-                $sql -> bindValue(":review_date",$today);
+                $sql -> bindValue(":review_date", date("d/m/Y"));
                 $sql -> bindValue(":rating",$data['star']);
                 $sql -> bindValue(":del_flg",$del_flg);
                 $sql -> bindValue(":created_date",date("d/m/Y"));

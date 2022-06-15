@@ -7,7 +7,7 @@ $db2 = new DBConnect();
 $dbconnect = $db2->connect();
 
 
-$sql = $dbconnect->prepare("SELECT * From author");
+$sql = $dbconnect->prepare("SELECT * From author ORDER BY author_category");
 
 //go to run
 $sql->execute();

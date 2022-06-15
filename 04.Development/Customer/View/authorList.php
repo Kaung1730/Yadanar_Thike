@@ -126,7 +126,7 @@
                 echo " <a name='". $result[$i]['author_category']."'> <div class='alphabetList' id='alphabet1'>" . $result[$i]['author_category'] . "</div> </a>";
                 echo " <div class='authorsList'>";
                 echo " <ul class='authorListLength'>";
-               
+                
                 echo  " <li > <a href= '../View/authorProfile.php?id=".$result[$i]['author_id'] ."' class='authorListLink' >". $result[$i]['author_name'] .  "</a> </li>";
                 echo "</ul>";
                 echo "</div>";
