@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Author Profile</title>
@@ -93,27 +93,8 @@
                     echo "</div>";
                 }
                 ?>
-                <!-- 
-                <div class="col-sm-3">
-                    <div class="thumb-wrapper">
-
-                        <div class="img-box">
-                            <img src="../resource/image/image1.png" class="" alt="">
-                        </div>
-                        <div class="thumb-content">
-                            <div class="authorName">ချစ်ဦးညို</div>
-                            <div class="bookName">
-                                မဟာသေနာပတိ
-                            </div>
-                            <p class="item-price">၈၀၀၀ ကျပ်</p>
-                            <a href="#" class="btn ">စျေးဝယ်ခြင်းထဲသို့ထည့်ရန်</a>
-                        </div>
-                    </div>
-                </div> -->
-
             </div>
         </div>
-    </div>
     </div>
 
     <!-- FOOTER -->
