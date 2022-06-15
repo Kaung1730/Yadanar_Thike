@@ -480,12 +480,6 @@ if (isset($_SESSION['status'])) {
                                         type: "POST",
                                         data: { send: JSON.stringify(cartData) },
                                         success: function (res) {
-                                            var data = $.parseJSON(res);
-                                            console.log(data);
-                                            // console.log(res);
-   //                  //                       //to continue to do quantity reduce
-                                            var data = $.parseJSON(res);
-                                            console.log(data);
                                             $("#cardBody").empty();
                                             swal("အမှာတင်ပြီးပါပြီ။ မှာယူခဲ့​သည့် စာရင်းများတွင် ကြည့်ရှုနိုင်ပါသည်။", {
                                             buttons: {
@@ -505,7 +499,22 @@ if (isset($_SESSION['status'])) {
                                                 }
                                             });
                                             // location.reload();
-
+                                                let cart = {
+                                                    'cart_id' : cartArray,
+                                                }
+                                        $.ajax({
+                                            url: "../Controller/quantityReduceController.php",
+                                            type: "POST",
+                                            data: { send: JSON.stringify(cart) },
+                                            success: function (res) {
+                                                var data = $.parseJSON(res);
+                                                console.log(data);
+                                            },
+                                            error: function (err) {
+                                                console.log(err)
+                                            }
+                                            
+                                        });
                                         },
                                         error: function (err) {
                                             console.log(err)
