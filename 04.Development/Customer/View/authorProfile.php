@@ -2,6 +2,9 @@
 <html>
 
 <head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Author Profile</title>
 
     <link rel="stylesheet" href="../resource/css/authorProfile.css">
@@ -49,7 +52,7 @@
 
     <div class="container ">
         <div class="profile ">
-            <div class="row mt-5 ms-5 authorBio">
+            <div class="row mt-5  authorBio">
                 <!-- PROFILE -->
 
                 <?php
@@ -78,7 +81,7 @@
                     echo "<div class='col-sm-3'>";
                     echo " <div class='thumb-wrapper'>";
                     echo " <div class='img-box'>";
-                    echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt=''>";
+                    echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='img-fluid'>";
                     echo "</div>";
                     echo "<div class='thumb-content'>";
                     echo "<div class='authorName'>" . $result[$i]['author_name'] . "</div>";
