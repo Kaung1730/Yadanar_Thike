@@ -18,11 +18,10 @@
 }
 
 
-.newBookImg {
+/* .newBookImg {
     width: 25vw;
     height: 52vh;
-    /* margin-bottom: 2vh; */
-}
+} */
 
 /* <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် --> */
 .BookForToday {
@@ -198,11 +197,6 @@
 }
 
 .disItem .discountCard {
-
-    /* display: flex; */
-    /* width:23vw;
-    height: 46vh;
-    border-radius: 100%; */
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -213,8 +207,8 @@
 
 .disItem .discountCard .disImage {
     width: 20vw;
-    height: 40vh;
-    margin: 6vh 0 0 2vw;
+    height: 37vh;
+    margin: 5vh 0 0 2vw;
 }
 
 .disTag {
@@ -296,7 +290,7 @@
     height: 55px;
     border: 0px solid;
     background-color: var(--yellow);
-    margin: 2vh 0vw 4vh 33vw;
+    margin: 1vh 0vw 4vh 35vw;
     text-align: center;
     padding-top: 2.5vh;
     border-radius: 5px;
@@ -382,6 +376,9 @@
         margin-top: 1vh;
         padding-left: 5vw ;
     }
+    .card:hover {
+        height: 55vh;
+    }
 /* 
     .card .content .btn {
         margin-left: 7vw;
@@ -451,8 +448,6 @@
     /* အသစ်ထွက်ရှိသော စာအုပ်များ*/
     .newBookImg {
         width: 40vw;
-        /* height: 40vh; */
-
     }
 
     /* အသစ်ထွက်ရှိသော စာအုပ်များ End */
@@ -487,11 +482,11 @@
         width: 42vw;
         height: 32vh;
         padding-left: 3vw;
+        text-align: center;
     }
 
     .card .content p {
-        margin-top: 5vh;
-        /* padding-left: 5vw !important; */
+        margin-top: 6vh;
     }
 
     .card .content .btn {
@@ -538,8 +533,8 @@
     }
 
     .disItem .discountCard .disImage {
-        width: 29vw;
-        height: 25vh;
+        width: 30vw;
+        height: 27vh;
         margin: 7vh 0vw 0vh 8vw !important;
     }
 
@@ -552,15 +547,15 @@
         height: 4vh;
         font-size: 12px;
     }
-
     /* DISCOUNT end */
+
     /* category start */
     .carousels h4 {
-        margin: 2vh 0vw 4vh 8vw;
+        margin: 2vh 0vw 4vh 6vw;
     }
 
     .carousels .item {
-        margin-left: 10vw;
+        margin-left: 16vw;
     }
 
     .thumb-wrapper {
@@ -573,13 +568,13 @@
     }
 
     .seeMore {
-        margin-left: 28vw;
+        margin-left: 30vw;
     }
-
     /* category end */
+
     /* SERVICES */
     .serviceCard {
-        margin-left: 28vw;
+        margin-left: 31vw;
     }
 
     /* FOOTER start*/

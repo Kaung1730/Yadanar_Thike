@@ -109,8 +109,8 @@
             echo "<div class='homeslider slicker mt-5 d-flex justify-content-center'>";
             for ($i = 0; $i < count($result); $i++) {
                 echo " <div class='slide  d-flex justify-content-center'>";
-                echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
-                // echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
+                // echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
+                echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
                 echo "</div>";
             }
             echo "</div>";
@@ -171,15 +171,15 @@
                 for ($i = 0; $i < 4; $i++) {
                     echo "<div class='card'>";
                     echo " <div class='imgBox'>";
-                    echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
-                    // echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
+                    // echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
+                    echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
                     echo "<div class='bookTitle'>" . $result[$i]['book_name'] . "</div>";
                     echo "</div>";
                     echo "<div class='content'>";
                     echo " <p class= 'text-center'>" . $result[$i]['book_price'] . "</p>";
-                    if (isset($_SESSION['status'])) {
+                    // if (isset($_SESSION['status'])) {
                         echo "<button type='button' class='btn btn-basket' value='" . $result[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
-                    }
+                    // }
                     echo "</div>";
                     echo "</div>";
                 }
@@ -205,8 +205,8 @@
         echo "<span> 20% OFF </span>";
         echo "</div>";
         echo "<div>";
-        echo " <img src='../../Admin/resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
-        // echo " <img src='../resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
+        // echo " <img src='../../Admin/resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
+        echo " <img src='../resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
         echo "</div>";
         echo "</div>";
         echo "</div>";
