@@ -5,10 +5,8 @@
     --darkblue: darkblue;
 }
 
-
 .containerBox {
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin: 7vh 0vw 0vh 2vw;
     box-shadow: 0 0 1px var(--grayblack);
     width: 80vw;
 }
@@ -70,7 +68,7 @@
     font-size: 1.0rem;
     line-height: 1.8;
     display: none;
-    color:var(--darkblue);
+    color: var(--darkblue);
     font-weight: bold;
     /* margin-top: 3vh; */
     text-align: start;
@@ -102,10 +100,11 @@
 
 
 @media screen and (max-width: 720px) {
-   .containerBox{
-    margin-left: 7vw;
-   }
-.footer{
-    font-size: 12px;
-}
+    .containerBox {
+        margin-left: 7vw;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
 }
