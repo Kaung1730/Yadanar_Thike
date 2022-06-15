@@ -70,6 +70,7 @@
                         </div>
                         <div>
                             <table class="table table-striped white_table tb-edit mt-3">
+                                <?php require "../Controller/todayOrderController.php" ?>
                                 <tr>
                                     <th class="text-center">Username</th>
                                     <th class="text-center">Date</th>
@@ -77,6 +78,23 @@
                                     <th class="text-center">Price</th>
                                     <th class="text-center">Status</th>
                                 </tr>
+                                <?php
+                                foreach ($result as $key => $value) {
+                                    echo "<tr>";
+                                    echo "<td class='text-center'>" . $value['customer_name'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['order_date'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['customer_address'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['total_price'] . "</td>";
+                                    echo "<td class='text-center'>";
+                                    if ($value['order_status'] == 1) {
+                                        echo "Complete";
+                                    } else {
+                                        echo "Pending";
+                                    }
+                                    echo "</td>";
+                                    echo "</tr>";
+                                }
+                                ?>
                             </table>
                             <a href="orderinfo.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-end">See more</button></a>
                             <p>&nbsp;</p>
