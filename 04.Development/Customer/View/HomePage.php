@@ -45,10 +45,11 @@
     <script src="../resource/js/userSetting.js" defer></script>
     <script src="../resource/js/cartShow.js"></script>
     <script src="../resource/js/cart.js"></script>
-    <script src="../resource/js/order.js"></script>
+    <script src="../resource/js/searchResult.js"></script>
 </head>
 
 <body>
+    <?php session_start();?>
     <div class="nav-bar"></div>
     <div class="setting"></div>
     <div class="cart"></div>
@@ -101,8 +102,8 @@
             echo "<div class='homeslider slicker mt-5 d-flex justify-content-center'>";
             for ($i = 0; $i < count($result); $i++) {
                 echo " <div class='slide  d-flex justify-content-center'>";
-                // echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt=''>";
-                echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
+                echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
+                // echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
                 echo "</div>";
             }
             echo "</div>";
@@ -159,19 +160,19 @@
             <p class="popularBookTitle"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
             <div class="popularBook">
                 <?php
-
                 require "../Controller/homePageController.php";
-
                 for ($i = 0; $i < 4; $i++) {
                     echo "<div class='card'>";
                     echo " <div class='imgBox'>";
-                    // echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
-                    echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg img-responsive'>";
+                    echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
+                    // echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
                     echo "<div class='bookTitle'>" . $result[$i]['book_name'] . "</div>";
                     echo "</div>";
                     echo "<div class='content'>";
-                    echo " <p class='text-center'>" . $result[$i]['book_price'] . "</p>";
-                    echo "<button type='button' class='btn '>ခြင်းတောင်းထဲထည့်ရန်</button>";
+                    echo " <p class= 'text-center'>" . $result[$i]['book_price'] . "</p>";
+                    if(isset($_SESSION['status'])){
+                        echo "<button type='button' class='btn search-cart' value='". $result[$i]['book_id']."'>ခြင်းတောင်းထဲထည့်ရန်</button>";
+                    }
                     echo "</div>";
                     echo "</div>";
                 }
@@ -197,8 +198,8 @@
         echo "<span> 20% OFF </span>";
         echo "</div>";
         echo "<div>";
-        // echo " <img src='../../Admin/resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
-        echo " <img src='../resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
+        echo " <img src='../../Admin/resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
+        // echo " <img src='../resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
         echo "</div>";
         echo "</div>";
         echo "</div>";

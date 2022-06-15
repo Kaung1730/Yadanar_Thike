@@ -161,7 +161,7 @@
                         <?php foreach ($reviewrResult as $key => $value) {?>
                         <div class="row g-0 border-bottom border-light">
                             <div class="col-1 ps-lg-4 ps-md-0 ps-0 pt-lg-2 pt-md-0 pt-0 border-left d-none d-md-block d-lg-block">
-                                <img src="../resource/image/<?php echo $value['customer_profileImg']; ?>" class="rounded-circle img-circle img-fluid" />
+                                <img src="<?php echo $value['customer_profileImg']; ?>" class="rounded-circle img-circle img-fluid" />
                             </div>
                             <div class="col-10">
                                 <div class="row pt-2">
@@ -251,7 +251,7 @@
                         <div>
                             <?php  $_SESSION['each_book_id'] = $relatedResult[$i]['book_id'] ?>
                             <a href='../View/bookDescription.php?book_id=<?php echo $relatedResult[$i]['book_id'] ?>'>
-                                <img src="../resource/image/<?php echo $relatedResult[$i]['book_img']; ?>" class="img-fluid" alt=""/>
+                                <img src="../../Admin/resource/image/<?php echo $relatedResult[$i]['book_img']; ?>" class="img-fluid" alt=""/>
                             </a>
                             <div class="book-title book-d-text"><?php echo $relatedResult[$i]['book_name']; ?></div>
                             <div class="ratingEachBook  d-flex justify-content-center">

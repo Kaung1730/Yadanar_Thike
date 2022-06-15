@@ -1,13 +1,13 @@
 $(document).ready(function(){
     $(".search-cart").click(function(){
-        swal({
-            text: "စာအုပ်အား ​စျေးခြင်း​တောင်းထဲသို့ ထည့်ပြီးပါပြီ။ မူလစာမျက်နှာ၏ ​စျေးခြင်း​တောင်းတွင် ကြည့်နိုင်ပါသည်။",
-            button: {text:'OK',className:'commentBtn'},
-        });
         var book_id = $(".search-cart").val();
         let searchCart = {
             "book_id":book_id
         };
+        swal({
+            text: "စာအုပ်အား ​စျေးခြင်း​တောင်းထဲသို့ ထည့်ပြီးပါပြီ။ မူလစာမျက်နှာ၏ ​စျေးခြင်း​တောင်းတွင် ကြည့်နိုင်ပါသည်။",
+            button: {text:'OK',className:'commentBtn'},
+        });
         $.ajax({
             url: "../Controller/searchCartController.php",
             type: "POST",

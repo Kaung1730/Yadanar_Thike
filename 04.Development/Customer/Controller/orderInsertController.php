@@ -47,26 +47,69 @@
         $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
         print_r(json_encode($result));
-    };
 
-    //to clear item in the cart after order
-        if($result > 0){
-            foreach ($data['cart_id'] as $key => $value) {
-                $cart_id = $value;
-                $clearData = $dbConnect -> prepare("
-                UPDATE cart SET
-                del_flg = :del_flg,
-                updated_date= :updated_date,
-                updated_by= :updated_by
-                WHERE cart_id = :cart_id
-                ");
-                $clearData -> bindValue(":del_flg",1);
-                $clearData -> bindValue(":updated_date",date("d/m/Y"));   
-                $clearData -> bindValue(":updated_by","KaungKaung");
-                $clearData -> bindValue(":cart_id",$cart_id);
-                $clearData->execute();
-                $resultData = $sql->fetchAll(PDO::FETCH_ASSOC);
-            }
-        }
+
+            //to clear item in the cart after order
+            if($result > 0){
+                foreach ($data['cart_id'] as $key => $value) {
+                    $cart_id = $value;
+                    $clearData = $dbConnect -> prepare("
+                    UPDATE cart SET
+                    del_flg = :del_flg,
+                    updated_date= :updated_date,
+                    updated_by= :updated_by
+                    WHERE cart_id = :cart_id
+                    ");
+                    $clearData -> bindValue(":del_flg",1);
+                    $clearData -> bindValue(":updated_date",date("d/m/Y"));   
+                    $clearData -> bindValue(":updated_by","KaungKaung");
+                    $clearData -> bindValue(":cart_id",$cart_id);
+                    $clearData->execute();
+                    $resultData = $sql->fetchAll(PDO::FETCH_ASSOC);
     
+                    //to get book quantity in the cart
+                    $qty_cart = $dbConnect -> prepare("
+                        SELECT quantity, book_id
+                        FROM cart WHERE
+                        del_flg = :del_flg AND
+                        cart_id = :cart_id
+                    ");
+                    $qty_cart -> bindValue(":del_flg",0);
+                    $qty_cart -> bindValue(":cart_id",$cart_id);
+                    $qty_cart->execute();
+                    $qtyData = $qty_cart->fetchAll(PDO::FETCH_ASSOC);
+                    $bookQtyCart = $qtyData[0]['quantity'];
+                    $book_id = $qtyData[0]['book_id'];
+    
+                    //to get book quantity in the book_m
+                    $bookQty = $dbConnect -> prepare("
+                        SELECT stock_number
+                        FROM book_m WHERE
+                        del_flg = :del_flg AND
+                        book_id = :book_id
+                    ");
+                    $bookQty -> bindValue(":del_flg",0);
+                    $bookQty -> bindValue(":book_id", $book_id); 
+                    $bookQty->execute();
+                    $bookQtyData = $bookQty->fetchAll(PDO::FETCH_ASSOC);
+                    $stock_number = $bookQtyData[0]['stock_number'];
+    
+    
+                    //to decrease book_stock number after order 
+                    $reduceBookStock = $dbConnect -> prepare("
+                    UPDATE book_m SET
+                    book_m.stock_number = :stock_number,
+                    updated_date = :updated_date,
+                    updated_by = :updated_by
+                    WHERE book_id = :book_id
+                    ");
+                    $reduceBookStock -> bindValue(":updated_date",date("d/m/Y"));   
+                    $reduceBookStock -> bindValue(":updated_by","KaungKaung");
+                    $reduceBookStock -> bindValue(":stock_number",$stock_number - $bookQtyCart);
+                    $reduceBookStock -> bindValue(":book_id",$book_id);
+                    $reduceBookStock->execute();
+                    $reduceResult = $sql->fetchAll(PDO::FETCH_ASSOC);
+                    }
+            }
+    };
     ?>

@@ -75,12 +75,12 @@
                                     <p><?php echo $value['book_name'] ?></p>
 
                                     <p><?php echo $value['book_price'] ?></p>
+                        </a> 
                                     <?php if(isset($_SESSION['status'])){ ?>
                                     <button type="button" class="btn search-cart" value="<?php echo $value['book_id'] ?>">ခြင်းတောင်းထဲထည့်ရန်</button>
                                     <?php } ?>
                                 </div>
                             </div>
-                        </a> 
                     </div>
                     <?php } } else{?>
                         <div class="lead">ရှာမ​တွေ့ပါ။</div>
