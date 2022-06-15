@@ -31,14 +31,12 @@
 
 /* က မှ အ အထိ */
 .firstWord {
-    margin-left: 25vw;
+    margin-left: 24vw;
 }
 
 .alphabetLine {
     display: flex;
     margin-left: 1vw;
-
-
 }
 
 .alphabet {
@@ -47,7 +45,6 @@
     border-radius: 50%;
     font-weight: 580;
     border: solid 1px var(--black);
-
 }
 
 .alphabet:hover {
@@ -123,7 +120,7 @@
     }
 
     .firstWord {
-        margin-left: 20vw;
+        margin-left: 15vw;
     }
 
     .alphabetList {

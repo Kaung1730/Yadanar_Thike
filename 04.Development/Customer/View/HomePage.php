@@ -158,8 +158,6 @@
             <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ  -->
             <p class="popularBookTitle"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
             <div class="popularBook">
-
-
                 <?php
 
                 require "../Controller/homePageController.php";
@@ -168,11 +166,11 @@
                     echo "<div class='card'>";
                     echo " <div class='imgBox'>";
                     // echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
-                    echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
+                    echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg img-responsive'>";
                     echo "<div class='bookTitle'>" . $result[$i]['book_name'] . "</div>";
                     echo "</div>";
                     echo "<div class='content'>";
-                    echo " <p>" . $result[$i]['book_price'] . "</p>";
+                    echo " <p class='text-center'>" . $result[$i]['book_price'] . "</p>";
                     echo "<button type='button' class='btn '>ခြင်းတောင်းထဲထည့်ရန်</button>";
                     echo "</div>";
                     echo "</div>";
@@ -323,7 +321,7 @@
                     <!--Grid row-->
                     <div class="row">
                         <!-- Grid column -->
-                        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                             <a href=""><img src="../resource/image/logo.png" alt="" class="w-50" h-50 mt-5 ms-5></a>
                             <br>
 
@@ -339,7 +337,7 @@
 
                         <!-- Grid column -->
                         <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                            <h6 class="mb-4 font-weight-bold">
                                 <i class="bi bi-geo-alt-fill fa-lg"></i>ရုံးချုပ်တည်နေရာ
                             </h6>
                             <p>အမှတ် (၁၂၃) ၊ ရတနာလမ်း၊တောင်ဥက္ကလာပမြို့နယ်၊ ရန်ကုန်။</p>
@@ -350,8 +348,8 @@
                         <!-- Grid column -->
                         <hr class="w-100 clearfix d-md-none" />
                         <!-- Grid column -->
-                        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">ကျွန်ုပ်တို့နှင့်ထိတွေ့ဆက်ဆံရန်</h6>
+                        <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+                            <h6 class=" mb-4 font-weight-bold">ကျွန်ုပ်တို့နှင့်ထိတွေ့ဆက်ဆံရန်</h6>
 
                             <ul class="list-unstyled">
                                 <li>
