@@ -32,36 +32,7 @@
                     </div>
                     <br />
                     <div class="dashboard_box">
-                        <div class="d-flex justify-content-around box_group">
-                            <div class="total_user">
-                                <div class="d-flex justify-content-around box">
-                                    <img src="../resource/img/person icon.png" alt="" class="person_icon pt-3">
-                                    <div class="pt-3 fs-2 text-success fw-bold">5000</div>
-                                </div>
-                                <p class="user_text">Total Users</p>
-                            </div>
-                            <div class="total_viewers">
-                                <div class="d-flex justify-content-around box">
-                                    <img src="../resource/img/person icon.png" alt="" class="person_icon pt-3">
-                                    <div class="pt-3 fs-2 text-danger fw-bold">2000</div>
-                                </div>
-                                <p class="viewer_text">Total Viewers</p>
-                            </div>
-                            <div class="income">
-                                <div class="d-flex justify-content-around box">
-                                    <img src="../resource/img/person icon.png" alt="" class="person_icon pt-3">
-                                    <div class="pt-3 fs-2 text-primary fw-bold">1.5k</div>
-                                </div>
-                                <p class="income_text">Income</p>
-                            </div>
-                            <div class="order">
-                                <div class="d-flex justify-content-around box">
-                                    <img src="../resource/img/person icon.png" alt="" class="person_icon pt-3">
-                                    <div class="pt-3 fs-2 text-info fw-bold">300</div>
-                                </div>
-                                <p class="order_text">Order</p>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="order_box">
                         <div class="d-flex ">
@@ -70,6 +41,7 @@
                         </div>
                         <div>
                             <table class="table table-striped white_table tb-edit mt-3">
+                                <?php require "../Controller/todayOrderController.php" ?>
                                 <tr>
                                     <th class="text-center">Username</th>
                                     <th class="text-center">Date</th>
@@ -77,6 +49,23 @@
                                     <th class="text-center">Price</th>
                                     <th class="text-center">Status</th>
                                 </tr>
+                                <?php
+                                foreach ($result as $key => $value) {
+                                    echo "<tr>";
+                                    echo "<td class='text-center'>" . $value['customer_name'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['order_date'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['customer_address'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['total_price'] . "</td>";
+                                    echo "<td class='text-center'>";
+                                    if ($value['order_status'] == 1) {
+                                        echo "Complete";
+                                    } else {
+                                        echo "Pending";
+                                    }
+                                    echo "</td>";
+                                    echo "</tr>";
+                                }
+                                ?>
                             </table>
                             <a href="orderinfo.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-end">See more</button></a>
                             <p>&nbsp;</p>

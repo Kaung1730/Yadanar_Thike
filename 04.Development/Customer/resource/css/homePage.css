@@ -27,10 +27,7 @@
 /* <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် --> */
 .BookForToday {
     margin-top: 5vh;
-    /* margin-left: 10vw; */
-    /* width: 100vw; */
 }
-
 
 /* <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ်  end--> */
 
@@ -41,21 +38,20 @@
 }
 
 .advertise .row {
-    margin-left: 4vw;
+    margin-left: 2vw;
 }
 
 .advertise .advertiseCard {
     color: var(--black);
-    min-height: 325px;
+    min-height: 50vh;
     text-align: center;
     overflow: hidden;
 
 }
 
 .advertise .advertise-wrapper {
-    padding: 25px 15px;
-    width: 250px;
-    height: 180px;
+    width: 20vw;
+    height: 30vh;
     text-align: center;
     position: relative;
     box-shadow: 5px 7px 4px gray;
@@ -65,10 +61,9 @@
 
 
 .advertise .advertiseCard .adver-img {
-    width: 120px;
-    height: 100px;
-    margin-bottom: 20px;
     width: 100%;
+    height: 20vh;
+    margin: 0vh 0vw 2vh 0vw;
     position: relative;
 }
 
@@ -89,16 +84,14 @@
     font-weight: 400;
 }
 
-
 /* <!-- advertisement end --> */
+
 /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  */
 .popularBookTitle {
     text-align: center !important;
-
 }
 
 .popularBook {
-    /* min-width: 85vw; */
     min-height: 70vh;
     display: flex;
     justify-content: center;
@@ -107,11 +100,12 @@
 }
 
 .card {
+    width: 25vw;
     position: relative;
-    width: 250px;
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-    padding: 30px 30px;
+    padding: 5vh 3vw;
+    margin-right: 1vw !important;
     cursor: pointer;
     margin: auto;
     transition: all 0.8s;
@@ -124,7 +118,7 @@
 
 .imgBox {
     width: 100%;
-    height: 150px;
+    height: 25vh;
     position: relative;
     transform: translateY(-100px);
     border-radius: 5px;
@@ -142,14 +136,14 @@
 }
 
 .bookImg {
-    width: 20vw;
-    height: 32vh;
-    padding-right: 81px;
+    width: 15vw;
+    height: 30vh;
+    padding-right: 2vw;
 }
 
 .card .content {
     position: absolute;
-    padding-top: 20px;
+    padding-top: 2vh;
     text-align: center;
     transform: translateY(-400px);
     opacity: 0;
@@ -157,13 +151,14 @@
 }
 
 .card .content p {
-    margin-top: 7vh;
-    text-align: center;
+    margin-top: 9vh;
+    text-align: center !important;
 }
 
 .card:hover>.content {
     opacity: 1;
     transform: translateY(120px);
+    text-align: center !important;
 
 }
 
@@ -205,32 +200,35 @@
 .disItem .discountCard {
 
     /* display: flex; */
+    /* width:23vw;
+    height: 46vh;
+    border-radius: 100%; */
     width: 300px;
     height: 300px;
     border-radius: 50%;
     background-color: #F2F175;
     box-shadow: 0px 0px 0px rgb(0, 0, 1);
-    margin: 7vh 0vw 0vh 15vw;
+    margin: 5vh 0vw 0vh 15vw;
 }
 
 .disItem .discountCard .disImage {
-    width: 270px;
-    height: 240px;
-    margin: 30px 0 0 20px;
+    width: 20vw;
+    height: 40vh;
+    margin: 6vh 0 0 2vw;
 }
 
 .disTag {
     position: absolute;
-    margin: 30px 0px 0px -40px;
+    margin: 5vh 0vw 0vh 0vw;
 }
 
 .disTag span {
-    width: 125px;
-    height: 40px;
+    width: 8vw;
+    height: 6vh;
     background-color: var(--yellow);
     display: block;
     position: absolute;
-    margin-top: 30px;
+    margin-top: 4vh;
     text-align: center;
     padding-top: 5px;
     font-size: 19px;
@@ -372,58 +370,31 @@
     background-color: var(--yellow);
 }
 
-
-
-@media screen and (max-width: 720px) {
-
-    /* အသစ်ထွက်ရှိသော စာအုပ်များ*/
-    .newBookImg {
-        width: 55vw;
-        height: 40vh;
-
-    }
-
-    /* အသစ်ထွက်ရှိသော စာအုပ်များ End */
-
-    /* advertisement */
-    .advertise .advertise-wrapper {
-        margin-left: 10vw;
-        margin-top: 5vh;
-    }
+@media screen and (max-width: 1024px) {
 
     /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  */
-    .popularBook {
-        flex-wrap: wrap;
-    }
-
-    .popularBook .card {
-        margin-bottom: 20vh !important;
-
-    }
-
     .bookImg {
-        width: 45vw;
-        height: 27vh;
+        width: 18vw;
+        height: 22vh;
     }
 
     .card .content p {
         margin-top: 1vh;
+        padding-left: 5vw ;
+    }
+/* 
+    .card .content .btn {
+        margin-left: 7vw;
+    } */
 
+    .imgBox .bookImg {
+        padding-right: 5vw;
     }
 
-    .popularBookTitle {
-        margin: 15vh 0vw 17vh 3vw;
-    }
-
-    /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  end*/
+    /* လတ်တလောလူကြိုက်များသော စာအုပ်များ end */
 
 
     /* DISCOUNT start */
-    .disItem {
-        display: flex;
-        background-color: var(--light-violet);
-        height: 60vh;
-    }
 
     .disItem .disContent {
         margin: 18vh 0vw 0vh 5vw;
@@ -434,8 +405,6 @@
 
     .disItem .disContent h2 {
         margin-left: 7vw;
-
-        font-size: 23px;
     }
 
     .disItem .disContent p {
@@ -445,29 +414,142 @@
 
 
     .disItem .disContent .disPrice {
-        margin-left: 4vw;
+        margin-left: 9vw;
         font-size: 17px;
     }
 
     .disItem .discountCard {
-        width: 170px;
-        height: 170px;
-        margin: 13vh 0vw 0vh 3vw;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 13vh 0vw 0vh 12vw;
     }
 
     .disItem .discountCard .disImage {
-        width: 30vw;
-        height: 23vh;
-        margin: 13px 0 0 15px;
+        width: 18vw;
+        height: 25vh;
+        margin: 4vh 0vw 0vh 1vw !important;
     }
 
     .disTag {
-        margin: 0px 0px 0px -30px;
+        margin: 2vh 0vw 0vh -1vw;
     }
 
     .disTag span {
-        width: 80px;
-        height: 25px;
+        width: 10vw;
+        height: 4vh;
+        font-size: 12px;
+    }
+
+    /* DISCOUNT end */
+}
+
+
+
+@media screen and (max-width: 720px) {
+
+    /* အသစ်ထွက်ရှိသော စာအုပ်များ*/
+    .newBookImg {
+        width: 40vw;
+        /* height: 40vh; */
+
+    }
+
+    /* အသစ်ထွက်ရှိသော စာအုပ်များ End */
+
+    /* advertisement */
+
+    .advertise .advertise-wrapper {
+        height: 35vh;
+        width: 100%;
+    }
+
+    .advertise .advertiseCard img {
+        margin-top: 2vh;
+    }
+
+    .advertise .advertise-content .name {
+        margin-top: 5vh;
+    }
+
+    /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  */
+    .popularBook {
+        flex-wrap: wrap;
+        margin-right: 14vw;
+    }
+
+    .popularBook .card {
+        width: 50vw;
+        margin-bottom: 20vh !important;
+    }
+
+    .bookImg {
+        width: 42vw;
+        height: 32vh;
+        padding-left: 3vw;
+    }
+
+    .card .content p {
+        margin-top: 5vh;
+        /* padding-left: 5vw !important; */
+    }
+
+    .card .content .btn {
+        margin-left: 3vw !important;
+    }
+
+    .popularBookTitle {
+        margin: 15vh 0vw 17vh 3vw;
+    }
+
+
+    /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  end*/
+
+
+    /* DISCOUNT start */
+
+    .disItem .disContent {
+        margin: 18vh 0vw 0vh 5vw;
+        font-size: 25px;
+
+    }
+
+
+    .disItem .disContent h2 {
+        margin-left: 7vw;
+    }
+
+    .disItem .disContent p {
+        margin: 2vh 0vw 2vh 0vw;
+        font-size: 15px;
+    }
+
+
+    .disItem .disContent .disPrice {
+        margin-left: 9vw;
+        font-size: 17px;
+    }
+
+    .disItem .discountCard {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        margin: 13vh 0vw 0vh 6vw;
+    }
+
+    .disItem .discountCard .disImage {
+        width: 29vw;
+        height: 25vh;
+        margin: 7vh 0vw 0vh 8vw !important;
+    }
+
+    .disTag {
+        margin: 3vh 0vw 0vh -1vw;
+    }
+
+    .disTag span {
+        width: 12vw;
+        height: 4vh;
         font-size: 12px;
     }
 
@@ -510,3 +592,4 @@
     background-color: var(--yellow) !important;
     border-radius: 1.5rem !important;
 }
+
