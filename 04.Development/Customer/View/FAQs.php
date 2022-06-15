@@ -41,7 +41,7 @@
     <div class="order"></div>
     <div class="orderHistory"></div>
 
-    <div class="body container">
+    <div class="container">
         <div class="containerBox">
             <div class="title">
                 <h1>FAQs</h1>

@@ -6,11 +6,8 @@
 }
 
 
-
 .containerBox {
     margin-top: 20px;
-    /* margin-left: 20%; */
-    /* margin-right: 20%; */
     margin-bottom: 50px;
     box-shadow: 0 0 1px var(--grayblack);
     width: 80vw;
@@ -103,3 +100,12 @@
     display: none;
 }
 
+
+@media screen and (max-width: 720px) {
+   .containerBox{
+    margin-left: 7vw;
+   }
+.footer{
+    font-size: 12px;
+}
+}
