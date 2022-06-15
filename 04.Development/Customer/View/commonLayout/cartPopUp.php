@@ -403,6 +403,7 @@ if (isset($_SESSION['status'])) {
                                 }
 
                             });
+<<<<<<< HEAD
                         });
 
                         // $("#state").change(function(){
@@ -471,6 +472,51 @@ if (isset($_SESSION['status'])) {
                                                 text: "အမှာတင်မည်။",
                                                 value: "send",
                                                 className: 'commentBtn'
+=======
+                        return false;
+                        }
+                        else{
+                            swal("အမှာတင်မှာ ​သေချာ ပါသလား။", {
+                            buttons: {
+                                catch: {
+                                    text: "အမှာတင်မည်။",
+                                    value: "send",
+                                    className: 'commentBtn'
+                                },
+                                defeat: false,
+                            },
+                        })
+                            .then((value) => {
+                                switch (value) {
+                                    case "send":
+                                        let cartData = {
+                                        'cart_id': cartArray,
+                                        'customer_id': customer_id,
+                                        'customer_name': name,
+                                        'state': selected,
+                                        'phno': phno,
+                                        'town': town,
+                                        'address' : address,
+                                        'total_price': totalPrice,
+                                        'delivery_id': delivery_id,
+                                        'delivery_fee':delivery_fee,
+                                    }
+                                    console.log(name);
+                                    $.ajax({
+                                        url: "../Controller/orderInsertController.php",
+                                        type: "POST",
+                                        data: { send: JSON.stringify(cartData) },
+                                        success: function (res) {
+                                            $("#cardBody").empty();
+                                            swal("အမှာတင်ပြီးပါပြီ။ မှာယူခဲ့​သည့် စာရင်းများတွင် ကြည့်ရှုနိုင်ပါသည်။", {
+                                            buttons: {
+                                                catch: {
+                                                    text: "OK",
+                                                    value: "send",
+                                                    className: 'commentBtn'
+                                                },
+                                                defeat: false,
+>>>>>>> 6b41e21b5cee4110fada1cb90318fa37e392c90c
                                             },
                                             defeat: false,
                                         },
@@ -490,6 +536,7 @@ if (isset($_SESSION['status'])) {
                                                     'delivery_id': delivery_id,
                                                     'delivery_fee': delivery_fee,
                                                 }
+<<<<<<< HEAD
                                                 console.log(name);
                                                 $.ajax({
                                                     url: "../Controller/orderInsertController.php",
@@ -531,6 +578,29 @@ if (isset($_SESSION['status'])) {
 
                                                 });
                                                 break;
+=======
+                                            });
+                                            // location.reload();
+                                                let cart = {
+                                                    'cart_id' : cartArray,
+                                                }
+                                        $.ajax({
+                                            url: "../Controller/quantityReduceController.php",
+                                            type: "POST",
+                                            data: { send: JSON.stringify(cart) },
+                                            success: function (res) {
+                                                var data = $.parseJSON(res);
+                                                console.log(data);
+                                            },
+                                            error: function (err) {
+                                                console.log(err)
+                                            }
+                                            
+                                        });
+                                        },
+                                        error: function (err) {
+                                            console.log(err)
+>>>>>>> 6b41e21b5cee4110fada1cb90318fa37e392c90c
                                         }
                                     });
                             }
