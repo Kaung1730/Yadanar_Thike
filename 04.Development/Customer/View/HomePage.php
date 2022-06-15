@@ -45,7 +45,7 @@
     <script src="../resource/js/userSetting.js" defer></script>
     <script src="../resource/js/cartShow.js"></script>
     <script src="../resource/js/cart.js"></script>
-    <script src="../resource/js/searchResult.js"></script>
+    <script src="../resource/js/homeCart.js"></script>
 </head>
 
 <body>
@@ -173,7 +173,7 @@
                     echo "<div class='content'>";
                     echo " <p class= 'text-center'>" . $result[$i]['book_price'] . "</p>";
                     if(isset($_SESSION['status'])){
-                        echo "<button type='button' class='btn search-cart' value='". $result[$i]['book_id']."'>ခြင်းတောင်းထဲထည့်ရန်</button>";
+                        echo "<button type='button' class='btn btn-basket' value='". $result[$i]['book_id']."'>ခြင်းတောင်းထဲထည့်ရန်</button>";
                     }
                     echo "</div>";
                     echo "</div>";

@@ -1,11 +1,12 @@
 $(document).ready(function(){
-    $(".search-cart").click(function(){
-        var book_id = $(".search-cart").val();
+    $(".btn-basket").click(function(){
+        var book_id = $(this).val();
+        alert(book_id);
         let searchCart = {
             "book_id":book_id
         };
         $.ajax({
-            url: "../Controller/searchCartController.php",
+            url: "../Controller/homeCartController.php",
             type: "POST",
             data: { send: JSON.stringify(searchCart) },
             success: function (res) {

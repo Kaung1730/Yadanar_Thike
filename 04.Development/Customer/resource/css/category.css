@@ -26,3 +26,8 @@ hr{
     font-size: 1.3rem !important;
     cursor: pointer;
 }
+.sub button{
+    border: none !important;
+    background-color: transparent !important;
+    cursor: pointer !important;
+}

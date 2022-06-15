@@ -6,7 +6,7 @@
     $phno = $data['phno'];
     $town = $data['town'];
     $address = $data['address'];
-    $cart_id;
+    // $cart_id;
     $delivery_id = $data['delivery_id'];
     $delivery_fee = $data['delivery_fee'];
     $total_price = $data['total_price'];
@@ -46,7 +46,7 @@
         $sql->execute();
         $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
-        print_r(json_encode($result));
+        // print_r(json_encode($result));
 
 
             //to clear item in the cart after order
@@ -78,37 +78,38 @@
                     $qty_cart -> bindValue(":cart_id",$cart_id);
                     $qty_cart->execute();
                     $qtyData = $qty_cart->fetchAll(PDO::FETCH_ASSOC);
-                    $bookQtyCart = $qtyData[0]['quantity'];
-                    $book_id = $qtyData[0]['book_id'];
-    
+                    // $bookQtyCart = $qtyData[0]['quantity'];
+                    // $book_id = $qtyData[0]['book_id'];
+                    
+                    print_r(json_encode($qtyData));
                     //to get book quantity in the book_m
-                    $bookQty = $dbConnect -> prepare("
-                        SELECT stock_number
-                        FROM book_m WHERE
-                        del_flg = :del_flg AND
-                        book_id = :book_id
-                    ");
-                    $bookQty -> bindValue(":del_flg",0);
-                    $bookQty -> bindValue(":book_id", $book_id); 
-                    $bookQty->execute();
-                    $bookQtyData = $bookQty->fetchAll(PDO::FETCH_ASSOC);
-                    $stock_number = $bookQtyData[0]['stock_number'];
+                    // $bookQty = $dbConnect -> prepare("
+                    //     SELECT stock_number
+                    //     FROM book_m WHERE
+                    //     del_flg = :del_flg AND
+                    //     book_id = :book_id
+                    // ");
+                    // $bookQty -> bindValue(":del_flg",0);
+                    // $bookQty -> bindValue(":book_id", $book_id); 
+                    // $bookQty->execute();
+                    // $bookQtyData = $bookQty->fetchAll(PDO::FETCH_ASSOC);
+                    // $stock_number = $bookQtyData[0]['stock_number'];
     
     
-                    //to decrease book_stock number after order 
-                    $reduceBookStock = $dbConnect -> prepare("
-                    UPDATE book_m SET
-                    book_m.stock_number = :stock_number,
-                    updated_date = :updated_date,
-                    updated_by = :updated_by
-                    WHERE book_id = :book_id
-                    ");
-                    $reduceBookStock -> bindValue(":updated_date",date("d/m/Y"));   
-                    $reduceBookStock -> bindValue(":updated_by","KaungKaung");
-                    $reduceBookStock -> bindValue(":stock_number",$stock_number - $bookQtyCart);
-                    $reduceBookStock -> bindValue(":book_id",$book_id);
-                    $reduceBookStock->execute();
-                    $reduceResult = $sql->fetchAll(PDO::FETCH_ASSOC);
+                    // //to decrease book_stock number after order 
+                    // $reduceBookStock = $dbConnect -> prepare("
+                    // UPDATE book_m SET
+                    // book_m.stock_number = :stock_number,
+                    // updated_date = :updated_date,
+                    // updated_by = :updated_by
+                    // WHERE book_id = :book_id
+                    // ");
+                    // $reduceBookStock -> bindValue(":updated_date",date("d/m/Y"));   
+                    // $reduceBookStock -> bindValue(":updated_by","KaungKaung");
+                    // $reduceBookStock -> bindValue(":stock_number",$stock_number - $bookQtyCart);
+                    // $reduceBookStock -> bindValue(":book_id",$book_id);
+                    // $reduceBookStock->execute();
+                    // $reduceResult = $sql->fetchAll(PDO::FETCH_ASSOC);
                     }
             }
     };

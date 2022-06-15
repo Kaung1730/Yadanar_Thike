@@ -167,7 +167,7 @@ if (isset($_SESSION['status'])) {
                                 <div class="col">
                                     <p class="book-title">${element.book_name}</p>
                                     <p class="book-title">${element.quantity} x  ${element.discount_price}</p>
-                                    <p class="book-text">= <span class="book_p">${(parseInt(element.quantity))*(parseInt(element.discount_price))}</span>(ကျပ်)</p>
+                                    <p class="book-text">= <span class="book_p">${(Number(element.quantity))*(Number(element.discount_price))}</span>(ကျပ်)</p>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +189,7 @@ if (isset($_SESSION['status'])) {
                                 <div class="col">
                                     <p class="book-title">${element.book_name}</p>
                                     <p class="book-title">${element.quantity} x  ${element.book_price}</p>
-                                    <p class="book-text ">= <span class="book_p">${(parseInt(element.quantity))*(parseInt(element.book_price))}</span>(ကျပ်)</p>
+                                    <p class="book-text ">= <span class="book_p">${(Number(element.quantity))*(Number(element.book_price))}</span>(ကျပ်)</p>
                                 </div>
                             </div>
                         </div>
@@ -346,24 +346,26 @@ if (isset($_SESSION['status'])) {
                                         </div>
                                     `);
                             });
-                            /*error to change to number */
+ ////////////////                           /*error to change to number */
                             var book = 0; bookArray = [];
                             bookArray.push(Number($(".book_p").text()));
                             bookArray.forEach(element => {
-                                book+= element;
+                                book += Number(element);
+                                console.log((book));
                             });
                             console.log(book);
+                            console.log(typeof(book));
                             $(".book_fee").empty();
                             $(".book_fee").append(`
                             <div class="row mb-1 mt-3 ms-3 book-text">
-                                <div class="col text-white">စာအုပ်တန်ဖိုး - ${book}(ကျပ်)</div>
+                                <div class="col text-white">စာအုပ်တန်ဖိုး - ${Number(book)}(ကျပ်)</div>
                             </div>
                             `);
                             $(".total_fee").empty();
                             $(".total_fee").append(`
                                     <div class="row ms-lg-3 justify-content-center my-2">
                                         <div class="col-6">စုစု​ပေါင်း</div>
-                                        <div class="col-6">${ delivery_fee + book }</div>
+                                        <div class="col-6">${ Number(delivery_fee) + Number(book)}</div>
                                     </div>
                             `);
                             
@@ -478,7 +480,12 @@ if (isset($_SESSION['status'])) {
                                         type: "POST",
                                         data: { send: JSON.stringify(cartData) },
                                         success: function (res) {
-                                            console.log(res);
+                                            var data = $.parseJSON(res);
+                                            console.log(data);
+                                            // console.log(res);
+   //                  //                       //to continue to do quantity reduce
+                                            var data = $.parseJSON(res);
+                                            console.log(data);
                                             $("#cardBody").empty();
                                             swal("အမှာတင်ပြီးပါပြီ။ မှာယူခဲ့​သည့် စာရင်းများတွင် ကြည့်ရှုနိုင်ပါသည်။", {
                                             buttons: {
@@ -498,6 +505,7 @@ if (isset($_SESSION['status'])) {
                                                 }
                                             });
                                             // location.reload();
+
                                         },
                                         error: function (err) {
                                             console.log(err)

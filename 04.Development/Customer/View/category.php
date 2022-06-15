@@ -53,9 +53,10 @@
                             foreach ($yokePyaResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5 id="yokepya">
-                                    <a class="viewcount" href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <input type="hidden" value="'.$value['book_id'].'" class="view">
-                                        <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <button class="viewcount" value="'.$value['book_id'].'" >
+                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        </button>
                                     </a>
                                 </div>';
                             }
@@ -64,9 +65,10 @@
                             foreach ($novelResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="novel">
-                                    <a class="viewcount" href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                    <input type="hidden" value="'.$value['book_id'].'" class="view">
-                                        <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <button class="viewcount" value="'.$value['book_id'].'" >
+                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        </button>
                                     </a>
                                 </div>';
                             }
@@ -75,10 +77,11 @@
                             foreach ($languageResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="language">
-                                <a class="viewcount" href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                <input type="hidden" value="'.$value['book_id'].'" class="view">
-                                    <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
-                                </a>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <button class="viewcount" value="'.$value['book_id'].'" >
+                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        </button>
+                                    </a>
                                 </div>';
                             }
                         }
@@ -87,10 +90,11 @@
                             foreach ($healthResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="health">
-                                <a class="viewcount" href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                <input type="hidden" value="'.$value['book_id'].'" class="view">
-                                    <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
-                                </a>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <button class="viewcount" value="'.$value['book_id'].'" >
+                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        </button>
+                                    </a>
                                 </div>';
                             }
                         }
@@ -98,9 +102,10 @@
                             foreach ($politicResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="politics">
-                                    <a class="viewcount" href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                    <input type="hidden" value="'.$value['book_id'].'" class="view">
-                                        <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <button class="viewcount" value="'.$value['book_id'].'" >
+                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        </button>
                                     </a>
                                 </div>';
                             }
@@ -109,9 +114,10 @@
                             foreach ($poemResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="poem">
-                                    <a class="viewcount" href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                    <input type="hidden" value="'.$value['book_id'].'" class="view">
-                                        <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <button class="viewcount" value="'.$value['book_id'].'" >
+                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        </button>
                                     </a>
                                 </div>';
                             }
@@ -120,10 +126,11 @@
                             foreach ($successResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="success">
-                                    <a class="viewcount" href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                    <input type="hidden" value="'.$value['book_id'].'" class="view">
-                                        <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
-                                    </a>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <button class="viewcount" value="'.$value['book_id'].'" >
+                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        </button>
+                                    </a>                                  
                                 </div>';
                             }
                         }
@@ -131,9 +138,10 @@
                             foreach ($biographyResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="biography">
-                                    <a class="viewcount"  href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                    <input type="hidden" value="'.$value['book_id'].'" class="view">
-                                        <img src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <button class="viewcount" value="'.$value['book_id'].'" >
+                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        </button>
                                     </a>
                                 </div>';
                             }
@@ -142,9 +150,10 @@
                             foreach ($otherResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="other">
-                                    <a  class="viewcount" href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                    <input type="hidden" value="'.$value['book_id'].'" class="view">
-                                        <img src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
+                                        <button class="viewcount" value="'.$value['book_id'].'" >
+                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                        </button>
                                     </a>
                                 </div>';
                             }
