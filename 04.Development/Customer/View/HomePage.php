@@ -200,8 +200,8 @@
         echo "<div class='disContent'>";
         echo "<h2>" . $result[0]['author_name'] . "</h2>";
         echo "<p>" . $result[0]['book_name'] . "</p>";
-        echo "<span class='disPrice text-decoration-line-through'>" . $result[0]['book_price'] . "</span>";
-        echo "<span class='disPrice pb-5 ms-2 text-danger'>" .  $result[0]['discount_price'] . "</span>";
+        echo "<span class='disPrice text-decoration-line-through'>" . $result[0]['book_price'] . "(ကျပ်)</span>";
+        echo "<span class='disPrice pb-5 ms-2 text-danger'>" .  $result[0]['discount_price'] . "(ကျပ်)</span>";
         echo "</div>";
         echo "<div class='discountCard'>";
         echo "<div class='disTag'>";
@@ -228,7 +228,7 @@
 
                 for ($i = 0; $i < 4; $i++) {
                     echo "<div class='col-sm-3'>";
-                    echo "<a href='../View/BookDescription.php' class='categoryList'>";
+                    echo "<a href='../View/BookDescription.php' class='categoryList text-decoration-none'>";
                     echo " <div class='thumb-wrapper'>";
                     echo " <div class='img-box'>";
                     // echo " <img src='../../Admin/resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
@@ -395,33 +395,6 @@
     </div>
     </div>
     <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
-    <script>
-        $(document).ready(function() {
-            $("#userSettingForm").on("submit", function(e) {
-                e.preventDefault();
-                $.ajax({
-                    type: "POST",
-                    url: "../Controller/userSettingUpdate.php",
-                    data: new FormData(this),
-                    contentType: false,
-                    processData: false,
-                    cache: true,
-                    beforeSend: function() {
-                        $("#update-btn").attr("disabled", "disabled");
-                        $("#userSettingUpdate").css("opacity", "0.5");
-                    },
-                    success: function(res) {
-                        $("#update-btn").removeAttr("disabled");
-                        $("##userSettingUpdate").css("opacity", "1");
-                        alert(res);
-                    },
-                    error: function(err) {
-                        alert("Error");
-                    }
-                })
-            })
-        })
-    </script>
 </body>
 
 </html>
