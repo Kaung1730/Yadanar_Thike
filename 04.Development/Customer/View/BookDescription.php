@@ -31,7 +31,7 @@
     <script src="../resource/js/cart.js"></script>
     <script src="../resource/js/cartShow.js"></script>
     <script src="../resource/js/calc.js"></script>
-    <script src="../resource/js/order.js"></script>
+    <script src="../resource/js/viewCount.js"></script>
     <!--star rating-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
@@ -80,7 +80,12 @@
                     <div class="col-lg-4 col-md-4 col-xl-4 col-12 pt-5 pt-md-0 pt-lg-0 ps-5 ps-lg-0 ps-md-0">
                         <div class="book-des-title fs-5"><?php echo $result[0]['book_name']; ?></div>
                         <div class="author-name my-3"><?php echo $result[0]['author_name']; ?></div>
-                        <div class="book-fee fs-5"><?php echo $result[0]['book_price']; ?>(ကျပ်)</div>
+                        <?php if(isset($result[0]['discount_price'])){?>
+                            <span class='book-fee fs-5 text-decoration-line-through'><?php echo $result[0]['book_price']?>(ကျပ်)</span>
+                            <span class="book-fee fs-5 text-danger"><?php echo $result[0]['discount_price']; ?>(ကျပ်)</span>
+                        <?php } else{ ?>
+                            <div class="book-fee fs-5"><?php echo $result[0]['book_price']; ?>(ကျပ်)</div>
+                        <?php } ?>
                         <!--rating for the book-->
                         <div class="rating-container d-flex">
                             <?php if(count($bookRatingResult)> 0) {
@@ -251,7 +256,9 @@
                         <div>
                             <?php  $_SESSION['each_book_id'] = $relatedResult[$i]['book_id'] ?>
                             <a href='../View/bookDescription.php?book_id=<?php echo $relatedResult[$i]['book_id'] ?>'>
+                                <button class="viewcount" value="<?php echo $relatedResult[$i]['book_id'] ?>" >
                                 <img src="../../Admin/resource/image/<?php echo $relatedResult[$i]['book_img']; ?>" class="img-fluid" alt=""/>
+                                </button>
                             </a>
                             <div class="book-title book-d-text"><?php echo $relatedResult[$i]['book_name']; ?></div>
                             <div class="ratingEachBook  d-flex justify-content-center">

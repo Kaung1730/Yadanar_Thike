@@ -156,6 +156,7 @@ if (isset($_SESSION['status'])) {
                     },
                     success: function(res) {
                         var data = $.parseJSON(res);
+                        $(".first-part").empty();
                         data.forEach(element => {
                             bookId = element.book_id;
                             qty = element.quantity;
@@ -167,70 +168,50 @@ if (isset($_SESSION['status'])) {
                                 book_priceArray.push(book_price);
                                 totalPrice.push(element.quantity * element.discount_price);
                                 $(".first-part").append(`
-                <div class="row g-0">
-                        <div class="col-lg-4">
-                            <img src="../../Admin/resource/image/${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="row text-white">
-                                <div class="col">
-                                    <p class="book-title">${element.book_name}</p>
-                                    <p class="book-title">${element.quantity} x  ${element.discount_price}</p>
-                                    <p class="book-text">= <span class="book_p">${(Number(element.quantity))*(Number(element.discount_price))}</span>(ကျပ်)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                `);
+                                    <div class="row g-0">
+                                            <div class="col-lg-4">
+                                                <img src="../../Admin/resource/image/${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
+                                            </div>
+                                            <div class="col-lg-7">
+                                                <div class="row text-white">
+                                                    <div class="col">
+                                                        <p class="book-title text-warning">အထူး​လျှော့​စျေး စာအုပ်</p>
+                                                        <p class="book-title">${element.book_name}</p>
+                                                        <p class="book-title">${element.quantity} x  ${element.discount_price}</p>
+                                                        <p class="book-text">= <span class="book_p">${(Number(element.quantity))*(Number(element.discount_price))}</span>(ကျပ်)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                `);
                             } else {
                                 book_price = element.book_price;
                                 book_priceArray.push(book_price);
                                 totalPrice.push(element.quantity * element.book_price);
                                 $(".first-part").append(`
-                <div class="row g-0">
-                        <div class="col-lg-4">
-                            <img src="../../Admin/resource/image/${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="row text-white">
-                                <div class="col">
-                                    <p class="book-title">${element.book_name}</p>
-                                    <p class="book-title">${element.quantity} x  ${element.book_price}</p>
-                                    <p class="book-text ">= <span class="book_p">${(Number(element.quantity))*(Number(element.book_price))}</span>(ကျပ်)</p>
+                                    <div class="row g-0">
+                                    <div class="col-lg-4">
+                                        <img src="../../Admin/resource/image/${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="row text-white">
+                                            <div class="col">
+                                                <p class="book-title">${element.book_name}</p>
+                                                <p class="book-title">${element.quantity} x  ${element.book_price}</p>
+                                                <p class="book-text ">= <span class="book_p">${(Number(element.quantity))*(Number(element.book_price))}</span>(ကျပ်)</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                `);
+                                <hr>
+                                `);
                             }
-                            // book_price = element.book_price;
-                            // book_priceArray.push(book_price);
                             customer_id = element.customer_id;
                             cartArray.push(cart_id);
-                            // totalPrice.push(element.quantity * element.book_price);
-                            //     $(".first-part").append(`
-                            // <div class="row g-0">
-                            //         <div class="col-lg-4">
-                            //             <img src="../resource/image/${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
-                            //         </div>
-                            //         <div class="col-lg-7">
-                            //             <div class="row text-white">
-                            //                 <div class="col">
-                            //                     <p class="book-title">${element.book_name}</p>
-                            //                     <p class="book-title">${element.quantity} x  ${element.book_price}</p>
-                            //                     <p class="book-text">= ${(element.quantity)*(element.book_price)}(ကျပ်)</p>
-                            //                 </div>
-                            //             </div>
-                            //         </div>
-                            //     </div>
-                            //     <hr>
-                            // `);
-
-
                         });
                         $("#township").css("width", "16rem !important");
+                        $(".second-part").empty();
                         $(".second-part").append(`
                 <div class="lower-form text-white">
                         <div class="form-title order-text">စာအုပ်ကို ပို့​ဆောင်​ပေးနိုင်ရန် ​အောက်ပါ အချက်အလက်များကို မှန်ကန်တိကျစွာ ဖြည့်ပါ</div>
@@ -320,7 +301,6 @@ if (isset($_SESSION['status'])) {
                                     $("#township").empty();
                                     data.forEach(element => {
                                         $("#township").append(`
-                                
                                     <option value="${element.township_name}">${element.township_name}</option>
                                 `);
                                     });
@@ -358,19 +338,16 @@ if (isset($_SESSION['status'])) {
                                             <div class="col text-white deli-fee">ပို့​ဆောင်ခ - ${element.delivery_fee} (ကျပ်)</div>
                                         </div>
                                     `);
-                                    });
-                                    ////////////////                           /*error to change to number */
-                                    var book = 0;
-                                    bookArray = [];
-                                    bookArray.push(Number($(".book_p").text()));
-                                    book_priceArray.forEach(element => {
-                                        book += Number(element);
-                                        console.log((book));
-                                    });
-                                    console.log(book);
-                                    console.log(typeof(book));
-                                    $(".book_fee").empty();
-                                    $(".book_fee").append(`
+                            });
+                            var book = 0, book_qty = 0;
+                            totalPrice.forEach(element => {
+                                book += Number(element);
+                                console.log((book));
+                            });
+                            console.log(book);
+                            console.log(typeof(book));
+                            $(".book_fee").empty();
+                            $(".book_fee").append(`
                             <div class="row mb-1 mt-3 ms-3 book-text">
                                 <div class="col text-white">စာအုပ်တန်ဖိုး - ${Number(book)}(ကျပ်)</div>
                             </div>
@@ -379,24 +356,9 @@ if (isset($_SESSION['status'])) {
                                     $(".total_fee").append(`
                                     <div class="row ms-lg-3 justify-content-center my-2">
                                         <div class="col-6">စုစု​ပေါင်း</div>
-                                        <div class="col-6">${ Number(delivery_fee) + Number(book)}</div>
+                                        <div class="col-6">${ Number(delivery_fee) + Number(book)} (ကျပ်)</div>
                                     </div>
                             `);
-
-                                    // console.log(newBookPrice);
-                                    // $(".total-price").empty();
-                                    // $(".total-price").append(`
-                                    //     <div class="row mb-1 mt-3 ms-3 book-text">
-                                    //         <div class="col text-white">စာအုပ်တန်ဖိုး - ${newBookPrice} (ကျပ်)</div>
-                                    //     </div>
-                                    //     <div class="row mb-1 mt-3 ms-3 book-text">
-                                    //         <div class="col text-white">ပို့​ဆောင်ခ - ${delivery_fee} (ကျပ်)</div>
-                                    //     </div>
-                                    //     <div class="row ms-lg-3 justify-content-center my-2">
-                                    //         <div class="col-6">စုစု​ပေါင်း</div>
-                                    //         <div class="col-6">${(newBookPrice)+delivery_fee} (ကျပ်)</div>
-                                    //     </div>
-                                    //     `);
                                 },
                                 error: function(err) {
                                     console.log(err)
@@ -404,49 +366,6 @@ if (isset($_SESSION['status'])) {
 
                             });
                         });
-
-                        // $("#state").change(function(){
-                        //     selected = $(this).val();
-                        //     let stateData = {
-                        //         'state': selected
-                        //     }
-                        //     $.ajax({
-                        //         url: "../Controller/stateSearchController.php",
-                        //         type: "POST",
-                        //         data: { send: JSON.stringify(stateData) },
-                        //         success: function (res) {
-                        //             var data = $.parseJSON(res);
-                        //             data.forEach(element => {
-                        //                 delivery_id = element.delivery_id;
-                        //                 delivery_fee = element.delivery_fee;
-                        //                 console.log(delivery_id);
-                        //             });
-                        //             totalPrice.forEach(element => {
-                        //                 newBookPrice += element;
-                        //             });
-                        //             console.log(newBookPrice);
-                        //             $(".total-price").empty();
-                        //             $(".total-price").append(`
-                        //                 <div class="row mb-1 mt-3 ms-3 book-text">
-                        //                     <div class="col text-white">စာအုပ်တန်ဖိုး - ${newBookPrice} (ကျပ်)</div>
-                        //                 </div>
-                        //                 <div class="row mb-1 mt-3 ms-3 book-text">
-                        //                     <div class="col text-white">ပို့​ဆောင်ခ - ${delivery_fee} (ကျပ်)</div>
-                        //                 </div>
-                        //                 <div class="row ms-lg-3 justify-content-center my-2">
-                        //                     <div class="col-6">စုစု​ပေါင်း</div>
-                        //                     <div class="col-6">${(newBookPrice)+delivery_fee} (ကျပ်)</div>
-                        //                 </div>
-                        //                 `);
-                        //         },
-                        //         error: function (err) {
-                        //             console.log(err)
-                        //         }
-
-                        //     });
-                        // });
-
-
                         $(".buy-btn").click(function() {
                             var name = $(".name").val();
                             var phno = $(".phno").val();
@@ -469,15 +388,14 @@ if (isset($_SESSION['status'])) {
                                         buttons: {
                                             catch: {
                                                 text: "အမှာတင်မည်။",
-                                                value: "send",
+                                                value: "order",
                                                 className: 'commentBtn'
                                             },
                                             defeat: false,
                                         },
-                                    })
-                                    .then((value) => {
+                                    }).then((value) => {
                                         switch (value) {
-                                            case "send":
+                                            case "order":
                                                 let cartData = {
                                                     'cart_id': cartArray,
                                                     'customer_id': customer_id,
@@ -498,37 +416,46 @@ if (isset($_SESSION['status'])) {
                                                         send: JSON.stringify(cartData)
                                                     },
                                                     success: function(res) {
-                                                        var data = $.parseJSON(res);
-                                                        console.log(data);
-                                                        // console.log(res);
                                                         //                  //                       //to continue to do quantity reduce
-                                                        
                                                         $("#cardBody").empty();
                                                         swal("အမှာတင်ပြီးပါပြီ။ မှာယူခဲ့​သည့် စာရင်းများတွင် ကြည့်ရှုနိုင်ပါသည်။", {
                                                                 buttons: {
                                                                     catch: {
                                                                         text: "OK",
-                                                                        value: "send",
+                                                                        value: "ordered",
                                                                         className: 'commentBtn'
                                                                     },
                                                                     defeat: false,
                                                                 },
-                                                            })
-                                                            .then((value) => {
+                                                            }).then((value) => {
                                                                 switch (value) {
-                                                                    case "send":
+                                                                    case "ordered":
                                                                         location.reload();
-                                                                        break;
-                                                                }
+                                                                        let cart = {
+                                                                        'cart_id' : cartArray,
+                                                                        }
+                                                                        $.ajax({
+                                                                        url: "../Controller/quantityReduceController.php",
+                                                                        type: "POST",
+                                                                        data: { send: JSON.stringify(cart) },
+                                                                        success: function (res) {
+                                                                            var data = $.parseJSON(res);
+                                                                            console.log(data);
+                                                                        },
+                                                                        error: function (err) {
+                                                                            console.log(err)
+                                                                        }
+                                                                        
+                                                                    });
+                                                                            break;
+                                                                    }
                                                             });
-                                                        // location.reload();
-
                                                     },
                                                     error: function(err) {
                                                         console.log(err)
                                                     }
-
                                                 });
+
                                                 break;
                                         }
                                     });

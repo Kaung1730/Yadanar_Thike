@@ -13,7 +13,6 @@
             $sql -> bindValue(":del_flg",$del_flg);
             $sql->execute();
             $result = $sql->fetchAll(PDO::FETCH_ASSOC);
-            // require("../View/commonLayout/nav.php");
             require("../View/searchResult.php");
 
 ?>

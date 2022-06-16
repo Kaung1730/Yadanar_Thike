@@ -31,14 +31,18 @@
         $stock -> execute();
         $stockResult = $stock -> fetchAll(PDO::FETCH_ASSOC);
         $stock_number = $stockResult[0]['stock_number'];
-        print_r(json_encode($stock_number));
-
+        $current_stock = $stock_number - $qtyCart;
         //to reduce after user ordered
         $reduce = $dbConnect -> prepare("
             UPDATE book_m SET
-            stock_number = :stock_number,
-            WHERE book_id = :book_id
+            stock_number = :stock_number
+            WHERE book_id = :book_id AND
+            del_flg = :del_flg
         ");
-        $reduce->bindValue(":stock_number",$stock_number);
-        
+        $reduce->bindValue(":stock_number",$current_stock);
+        $reduce->bindValue(":book_id", $book_id);
+        $reduce-> bindValue(":del_flg", 0);
+        $reduce -> execute();
+        $reduceResult = $reduce -> fetchAll(PDO::FETCH_ASSOC);
+        print_r(json_encode($reduceResult));
     }
