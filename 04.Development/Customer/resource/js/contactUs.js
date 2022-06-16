@@ -44,7 +44,7 @@ $(document).ready(function () {
                             .then((value) => {
                                 switch (value) {
                                     case "login":
-                                        window.location.href = `/yadanar_thike/04.Development/Customer/View/login.php`;
+                                        window.location.href = `./login.php`;
                                         break;
                                 }
                             });
@@ -67,7 +67,7 @@ $(document).ready(function () {
                         }).then((value) => {
                             switch (value) {
                                 case "home":
-                                    window.location.href = `/yadanar_thike/04.Development/Customer/View/homePage.php`;
+                                    window.location.href = `./homePage.php`;
                                     break;
                             }
                         });

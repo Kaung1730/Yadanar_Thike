@@ -1,4 +1,4 @@
-    <nav class="navbar navbar-expand-lg navbar-light mt-lg-3 mt-md-0 mt-0">
+<nav class="navbar navbar-expand-lg navbar-light mt-lg-3 mt-md-0 mt-0">
         <div class="container">
             <a class="navbar-brand me-lg-5 me-md-0  me-0" href="../View/homePage.php">
                 <img src="../resource/image/logo.png" alt="" />
@@ -109,7 +109,7 @@
 
             //for search bar
             $(".search-btn").click(function() {
-                window.location.href = `http://localhost:81/YadnarThike/04.Development/Customer/View/searchResult.php`;
+                window.location.href = `./searchResult.php`;
             });
 
             $(".order-count").text(localStorage.getItem('cartCount'));
@@ -140,73 +140,11 @@
                     url: "../Controller/orderHistoryShow.php",
                     type: "POST",
                     success: function(res) {
+                        console.log(res);
                         var data = $.parseJSON(res);
+                        $(".order_history").empty();
                         data.forEach(element => {
-                            // order_number_title = element.order_number;
-                            // orderArray.push(element.order_number);
-                            // orderArray.forEach(order => {
-                            //     if(order == order_number_title){
-                            //         bookPrice +=  element.book_price;
-                            //         deli_fee = element.delivery_fee;
-                            //         $("$.order_history").append(`
-
-
-                            //         `);
-                            //     }
-                            // });
-                            // orderArray.push(element.order_number);
-                            // orderArray.forEach(order => {
-                            //     if(order != element.order_number){
-                            //         bookTotal += element.total_price;
-                            //         deli_fee += element.delivery_fee;
-                            //         $(".order_history").append(`
-                            // <div class="row">
-                            //     <div class="col-8 ">
-                            //         ​အော်ဒါနံပါတ် - <span>${element.order_number}</span>
-                            //     </div>
-                            //     <div class="col-4 book-text">${element.order_date}</div>
-                            // </div>
-
-                            // <div class="row">
-                            //     <div class="col-8 book-text mt-2 ">
-                            //         <div class="my-2">ဝယ်ယူခဲ့သည့်စာအုပ်</div>
-                            //         <div class="my-2 small-text">${element.book_name}</div>
-                            //         <div class="my-2 small-text">အိမ်အ​ရောက်​ငွေ​ချေစနစ်</div>
-                            //     </div>
-                            //     <div class="col-4 mt-2">
-                            //         <img src="../resource/image/${element.book_img}" class="img-fluid" alt="">
-                            //     </div>
-                            // </div>
-                            // <div class="row same_order"></div>
-                            // <div class="row mt-3 fw-light status">
-                            // </div>
-                            // <hr>
-                            // `);
-                            //     }
-                            //     else{
-                            //         $(".same_order").append(`
-                            //         <div class="col-8 book-text mt-2 ">
-                            //             <div class="my-2">ဝယ်ယူခဲ့သည့်စာအုပ်</div>
-                            //             <div class="my-2 small-text">${element.book_name}</div>
-                            //             <div class="my-2 small-text">အိမ်အ​ရောက်​ငွေ​ချေစနစ်</div>
-                            //         </div>
-                            //         <div class="col-4 mt-2">
-                            //             <img src="../resource/image/${element.book_img}" class="img-fluid" alt="">
-                            //         </div>
-                            //         `);
-                            //         $(".status").append(`
-                            //         <div class="col-10 book-text muted">
-                            //             <div>စုစု​ပေါင်း - <span>${element.total_price + bookTotal + deli_fee}</span> (ကျပ်)</div>
-                            //             <div>အမှာအ​ခြေအ​​နေ - <span>${status}</span></div>
-                            //         </div>
-                            //         <button class="col-2 delete" value="${element.order_number}">
-                            //             <i class="bi bi-trash3 text-warning "></i>
-                            //         </button>
-                            //         `);
-                            //     }
-                            // });
-                            // Date.parse
-                            // .toString("MMMM dS, yyyy")
+                            console.log("Hello");
                             if (element.order_status == 0) {
                                 var status = "ပို့​ဆောင်​နေဆဲ ";
                             } else {
@@ -219,14 +157,14 @@
                         <div class="col-8 ">
                             ​အော်ဒါနံပါတ် - <span>${element.order_number}</span>
                         </div>
-                        <div class="col-4 book-text">${element.order_date}</div>
+                        <div class="col-4 book-text">${element.orderDate}</div>
                         
                     </div>
 
                     <div class="row">
                         <div class="col-8 book-text mt-2 ">
                             <div class="my-2">ဝယ်ယူခဲ့သည့်စာအုပ်</div>
-                            <div class="my-2 small-text">${element.book_name}</div>
+                            <div class="my-2 small-text">${element.bookName}</div>
                             <div class="my-2 small-text">အိမ်အ​ရောက်​ငွေ​ချေစနစ်</div>
                         </div>
                         <div class="col-4 mt-2">
@@ -236,7 +174,7 @@
 
                     <div class="row mt-3 fw-light">
                         <div class="col-10 book-text muted">
-                        <div>စုစု​ပေါင်း - <span>${element.total_price + element.delivery_fee}</span> (ကျပ်)</div>
+                        <div>စုစု​ပေါင်း - <span>${Number(element.totalPrice) + Number(element.delivery_fee)}</span> (ကျပ်)</div>
                         <div>အမှာအ​ခြေအ​​နေ - <span>${status}</span></div>
                         </div>
                         <button class="col-2 delete" value="${element.order_number}">
@@ -294,7 +232,7 @@
 
                                                 },
                                                 error: function(err) {
-                                                    alert(err);
+                                                    console.log(err);
                                                 }
                                             });
                                             break;

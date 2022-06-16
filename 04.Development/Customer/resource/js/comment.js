@@ -51,7 +51,7 @@ $(document).ready(function () {
                             .then((value) => {
                                 switch (value) {
                                     case "login":
-                                        window.location.href = `/yadanar_thike/04.Development/Customer/View/login.php`;
+                                        window.location.href = `./login.php`;
                                         break;
                                 }
                             });

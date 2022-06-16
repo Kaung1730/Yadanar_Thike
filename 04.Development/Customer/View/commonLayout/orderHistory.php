@@ -13,11 +13,6 @@
                         <div class="order_history">
 
                         </div>
-                        <!-- <div class="order_upper"></div>
-                        <div class="book"></div>
-                        <div class="order_status"></div>
-                        <div class="deli_fee"></div>
-                        <div class="total"></div> -->
                     <?php }?>
                 
             </div>
