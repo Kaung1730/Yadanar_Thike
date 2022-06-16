@@ -35,7 +35,7 @@
         //to reduce after user ordered
         $reduce = $dbConnect -> prepare("
             UPDATE book_m SET
-            stock_number = :stock_number,
+            stock_number = :stock_number
             WHERE book_id = :book_id AND
             del_flg = :del_flg
         ");
@@ -44,5 +44,5 @@
         $reduce-> bindValue(":del_flg", 0);
         $reduce -> execute();
         $reduceResult = $reduce -> fetchAll(PDO::FETCH_ASSOC);
-        // print_r(json_encode($reduceResult));
+        print_r(json_encode($reduceResult));
     }

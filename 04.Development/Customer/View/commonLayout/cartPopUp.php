@@ -207,30 +207,8 @@ if (isset($_SESSION['status'])) {
                                 <hr>
                                 `);
                             }
-                            // book_price = element.book_price;
-                            // book_priceArray.push(book_price);
                             customer_id = element.customer_id;
                             cartArray.push(cart_id);
-                            // totalPrice.push(element.quantity * element.book_price);
-                            //     $(".first-part").append(`
-                            // <div class="row g-0">
-                            //         <div class="col-lg-4">
-                            //             <img src="../resource/image/${element.book_img}" class="img-fluid ps-5 ps-md-0 ps-lg-0" alt="" />
-                            //         </div>
-                            //         <div class="col-lg-7">
-                            //             <div class="row text-white">
-                            //                 <div class="col">
-                            //                     <p class="book-title">${element.book_name}</p>
-                            //                     <p class="book-title">${element.quantity} x  ${element.book_price}</p>
-                            //                     <p class="book-text">= ${(element.quantity)*(element.book_price)}(ကျပ်)</p>
-                            //                 </div>
-                            //             </div>
-                            //         </div>
-                            //     </div>
-                            //     <hr>
-                            // `);
-
-
                         });
                         $("#township").css("width", "16rem !important");
                         $(".second-part").empty();
@@ -381,21 +359,6 @@ if (isset($_SESSION['status'])) {
                                         <div class="col-6">${ Number(delivery_fee) + Number(book)} (ကျပ်)</div>
                                     </div>
                             `);
-
-                                    // console.log(newBookPrice);
-                                    // $(".total-price").empty();
-                                    // $(".total-price").append(`
-                                    //     <div class="row mb-1 mt-3 ms-3 book-text">
-                                    //         <div class="col text-white">စာအုပ်တန်ဖိုး - ${newBookPrice} (ကျပ်)</div>
-                                    //     </div>
-                                    //     <div class="row mb-1 mt-3 ms-3 book-text">
-                                    //         <div class="col text-white">ပို့​ဆောင်ခ - ${delivery_fee} (ကျပ်)</div>
-                                    //     </div>
-                                    //     <div class="row ms-lg-3 justify-content-center my-2">
-                                    //         <div class="col-6">စုစု​ပေါင်း</div>
-                                    //         <div class="col-6">${(newBookPrice)+delivery_fee} (ကျပ်)</div>
-                                    //     </div>
-                                    //     `);
                                 },
                                 error: function(err) {
                                     console.log(err)
@@ -403,49 +366,6 @@ if (isset($_SESSION['status'])) {
 
                             });
                         });
-
-                        // $("#state").change(function(){
-                        //     selected = $(this).val();
-                        //     let stateData = {
-                        //         'state': selected
-                        //     }
-                        //     $.ajax({
-                        //         url: "../Controller/stateSearchController.php",
-                        //         type: "POST",
-                        //         data: { send: JSON.stringify(stateData) },
-                        //         success: function (res) {
-                        //             var data = $.parseJSON(res);
-                        //             data.forEach(element => {
-                        //                 delivery_id = element.delivery_id;
-                        //                 delivery_fee = element.delivery_fee;
-                        //                 console.log(delivery_id);
-                        //             });
-                        //             totalPrice.forEach(element => {
-                        //                 newBookPrice += element;
-                        //             });
-                        //             console.log(newBookPrice);
-                        //             $(".total-price").empty();
-                        //             $(".total-price").append(`
-                        //                 <div class="row mb-1 mt-3 ms-3 book-text">
-                        //                     <div class="col text-white">စာအုပ်တန်ဖိုး - ${newBookPrice} (ကျပ်)</div>
-                        //                 </div>
-                        //                 <div class="row mb-1 mt-3 ms-3 book-text">
-                        //                     <div class="col text-white">ပို့​ဆောင်ခ - ${delivery_fee} (ကျပ်)</div>
-                        //                 </div>
-                        //                 <div class="row ms-lg-3 justify-content-center my-2">
-                        //                     <div class="col-6">စုစု​ပေါင်း</div>
-                        //                     <div class="col-6">${(newBookPrice)+delivery_fee} (ကျပ်)</div>
-                        //                 </div>
-                        //                 `);
-                        //         },
-                        //         error: function (err) {
-                        //             console.log(err)
-                        //         }
-
-                        //     });
-                        // });
-
-
                         $(".buy-btn").click(function() {
                             var name = $(".name").val();
                             var phno = $(".phno").val();
@@ -510,7 +430,7 @@ if (isset($_SESSION['status'])) {
                                                             }).then((value) => {
                                                                 switch (value) {
                                                                     case "ordered":
-                                                                        //location.reload();
+                                                                        location.reload();
                                                                         let cart = {
                                                                         'cart_id' : cartArray,
                                                                         }
@@ -519,7 +439,8 @@ if (isset($_SESSION['status'])) {
                                                                         type: "POST",
                                                                         data: { send: JSON.stringify(cart) },
                                                                         success: function (res) {
-                                                                            
+                                                                            var data = $.parseJSON(res);
+                                                                            console.log(data);
                                                                         },
                                                                         error: function (err) {
                                                                             console.log(err)
