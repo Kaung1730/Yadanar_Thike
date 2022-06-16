@@ -26,7 +26,7 @@
             <!-- <span class="pt-3 fs-2 text-primary fw-bold font-num">1.5k</span> -->
             <span class="pt-3 fs-2 text-primary fw-bold font-num">
                 <?php echo ceil($income[0]['AVG(ord.total_price + del.delivery_fee)']) ?>
-                Kyats
+                K
             </span>
         </div>
         <p class="income_text">Income</p>
