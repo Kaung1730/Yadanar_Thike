@@ -18,7 +18,7 @@
 }
 
 .resultBox{
-    width: 80vw;
+    min-width: 18vh;
 }
 .resultHeader{
     margin: 7vh 0vw 4vh 0vw;
@@ -31,7 +31,6 @@
 }
 
 .resultBody .result-wrapper {
-    padding: 25px 0px 0px 5px;
     background: var(--body-bg-color);
     border-radius: 6px;
     text-align: center;
@@ -60,6 +59,7 @@
     position: absolute;
     bottom: 0;
     margin: 0 auto;
+    padding-top: 1rem;
     left: 0;
     right: 0;
 }
@@ -68,7 +68,6 @@
     margin-bottom: 2vh;
     font-size: 14px;
 }
-
 
 
 /* Footer */

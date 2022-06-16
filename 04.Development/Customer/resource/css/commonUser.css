@@ -50,3 +50,8 @@ body{
 #township{
   width: 16rem !important;
 }
+.viewcount{
+  border: none !important;
+  background-color: transparent !important;
+  cursor: pointer !important;
+}
