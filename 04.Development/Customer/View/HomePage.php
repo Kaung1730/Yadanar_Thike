@@ -362,17 +362,17 @@
                             <ul class="list-unstyled">
                                 <li>
                                     <p>
-                                        <ion-icon name="logo-facebook"></ion-icon> www.facebook.com/yadanarthike
+                                        <ion-icon name="logo-facebook"></ion-icon> www.facebook.com/yadanarthike/
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <ion-icon name="logo-instagram"></ion-icon> www.instagram.com/yadanarthike
+                                        <ion-icon name="logo-instagram"></ion-icon> www.instagram.com/yadanarthike/
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <ion-icon name="logo-twitter"></ion-icon> www.twitter.com/yadanarthike
+                                        <ion-icon name="logo-twitter"></ion-icon> www.twitter.com/yadanarthike/
                                     </p>
                                 </li>
                             </ul>
