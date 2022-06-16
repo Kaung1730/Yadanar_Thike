@@ -13,9 +13,15 @@ if (isset($_POST)) {
         if (move_uploaded_file($location, "../resource/image/" . $slide)) {
 
             $sql = $dbconnect->prepare(
-                "UPDATE slider SET slider_image = :image WHERE slider_id = :id"
+                "UPDATE slider SET 
+                slider_image = :image, 
+                updated_date = :updated_date,
+                updated_by = :updated_by  
+                WHERE slider_id = :id"
             );
             $sql->bindValue(":image", $slide);
+            $sql->bindValue(":updated_date", date("d/m/Y"));
+            $sql->bindValue(":updated_by", "Myat Kaung Khant");
             $sql->bindValue(":id", $id);
 
             $sql->execute();
