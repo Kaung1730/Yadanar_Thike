@@ -32,6 +32,7 @@
                     <div class="add_author">
                         <div class="title_addauthor fs-5">Update Books</div>
                         <?php require "../Controller/bookEditController.php" ?>
+                        <?php require "../Controller/bookListController.php" ?>
                         <hr />
                         <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['book_id'] ?>">
                         <label class="book_name fs-5" for="">Book Name:</label>
@@ -59,6 +60,13 @@
                             <div class="input-group mt-2 mb-3 input-width">
                                 <input type="file" class="form-control input-edit" id="book_img" name="book_img" value="<?php echo $result[0]['book_img']; ?>">
                                 <label class="input-group-text input-btn" for="book_img">Browse</label>
+                            </div>
+                        </div>
+                        <div class="input-part ms-4 mt-2 slide-me">
+                            <label for="book_img" class="form-label fs-5 text-start">Book Pdf:</label>
+                            <div class="input-group mt-2 mb-3 input-width">
+                                <input type="file" class="form-control input-edit" id="book_pdf" name="book_pdf" value="<?php echo $result[0]['book_pdf']; ?>">
+                                <label class="input-group-text input-btn" for="book_pdf">Browse</label>
                             </div>
                         </div>
                         <label for="" class="book_price fs-5">Book Price:</label>
@@ -95,7 +103,9 @@
                         <!-- <input type="text" class="box1 input-edit" name="book_pub"> -->
                         <select name="book_pub" id="" class="box1 input-edit">
                             <?php
-                            echo "<option value=''></option>";
+                            foreach ($publisherList as $key => $value) {
+                                echo "<option value='" . $value['publisher_id'] . "'>" . $value['publisher_name'] . "</option>";
+                            }
                             ?>
                         </select>
                         <div>

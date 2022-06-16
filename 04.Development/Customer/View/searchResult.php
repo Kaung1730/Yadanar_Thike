@@ -102,11 +102,7 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="footer ">
-        <div class="">@YadanarThike 2022</div>
-        <div class="copyright">&#169;
-            YadanarThike Company2022. All Rights Reserved.</div>
-    </div>
+    <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
 </body>
 
 </html>

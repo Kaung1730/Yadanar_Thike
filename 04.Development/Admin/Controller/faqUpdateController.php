@@ -12,11 +12,15 @@ if (isset($_POST)) {
     $sql = $dbconnect->prepare(
         "UPDATE faq SET 
         question = :ques,
-        answer = :ans
+        answer = :ans,
+        updated_date = :updated_date,
+        updated_by = :updated_by  
         WHERE faq_id = :id"
     );
     $sql->bindValue(":ques", $question);
     $sql->bindValue(":ans", $answer);
+    $sql->bindValue(":updated_date", date("d/m/Y"));
+    $sql->bindValue(":updated_by", "Myat Kaung Khant");
     $sql->bindValue(":id", $id);
     $sql->execute();
 

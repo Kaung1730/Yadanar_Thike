@@ -300,7 +300,10 @@
     text-decoration: none !important;
     color: var(--black);
 }
-
+.categoryList{
+    text-decoration: none;
+    
+}
 /* SERVICES */
 
 .serviceCard {

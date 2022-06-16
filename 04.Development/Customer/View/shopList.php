@@ -265,7 +265,7 @@
                     <br />
                     <p> ကန်သာယာလမ်းဆုံ၊သုဓမ္မာလမ်းမ၊ အ.ထ.က(၃)ကျောင်းရှေ့၊မြောက်ဥက္ကလာပ၊ရန်ကုန်။ </p>
                     <p>ဖုန်းနံပါတ် ၀၉-၂၅၀ ၁၃၇ ၄၄၉ ၊ ၀၉-၂၆၇ ၁၇၂ ၉၄၆</p>
-                </div>
+                </div>-->
                 <!-- AParDawMyal BOOK SHOP -->
                 <!-- <div class="bookshopName APDMBookShop  ">အပါးတော်မြဲ စာပေတိုက်နှင့်စာအုပ်ဆိုင်</div>
                 <div class="shopAddress AParDawMyal">

@@ -11,10 +11,14 @@ if (isset($_POST)) {
     $dbconnect = $db->connect();
     $sql = $dbconnect->prepare(
         "UPDATE customer SET 
-        valid = :valid
+        valid = :valid,
+        updated_date = :updated_date,
+        updated_by = :updated_by  
         WHERE customer_id = :id"
     );
     $sql->bindValue(":valid", $check);
+    $sql->bindValue(":updated_date", date("d/m/Y"));
+    $sql->bindValue(":updated_by", "Myat Kaung Khant");
     $sql->bindValue(":id", $user_id);
     $sql->execute();
 
