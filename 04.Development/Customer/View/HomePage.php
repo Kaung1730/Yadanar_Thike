@@ -198,6 +198,7 @@
         <?php
 
         require "../Controller/discountController.php";
+        echo "<a class='text-decoration-none' href='../View/bookDescription.php?book_id=".$result[0]['book_id']."'>";
         echo " <div class='disItem'>";
         echo "<div class='disContent'>";
         echo "<h2>" . $result[0]['author_name'] . "</h2>";
@@ -215,6 +216,7 @@
         echo "</div>";
         echo "</div>";
         echo "</div>";
+        echo "</a>";
         ?>
         <!-- DISCOUNT end-->
 
@@ -367,17 +369,17 @@
                             <ul class="list-unstyled">
                                 <li>
                                     <p>
-                                        <ion-icon name="logo-facebook"></ion-icon> www.facebook.com/yadanarthike
+                                        <ion-icon name="logo-facebook"></ion-icon> www.facebook.com/yadanarthike/
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <ion-icon name="logo-instagram"></ion-icon> www.instagram.com/yadanarthike
+                                        <ion-icon name="logo-instagram"></ion-icon> www.instagram.com/yadanarthike/
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <ion-icon name="logo-twitter"></ion-icon> www.twitter.com/yadanarthike
+                                        <ion-icon name="logo-twitter"></ion-icon> www.twitter.com/yadanarthike/
                                     </p>
                                 </li>
                             </ul>

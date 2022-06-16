@@ -39,9 +39,9 @@
         $sql -> bindValue(":total_price",$price);
         $sql -> bindValue(":delivery_id",$delivery_id);
         $sql -> bindValue(":order_status",0);
-        $sql -> bindValue(":order_date", date("d/m/Y"));
+        $sql -> bindValue(":order_date", date("Y-m-d"));
         $sql -> bindValue(":del_flg",$del_flg);
-        $sql -> bindValue(":created_date",date("d/m/Y"));   
+        $sql -> bindValue(":created_date",date("Y-m-d"));   
         $sql -> bindValue(":created_by","KaungKaung");
         $sql->execute();
         $result = $sql->fetchAll(PDO::FETCH_ASSOC);

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Result</title>
     <link rel="stylesheet" href="../resource/css/searchResult.css">
     <link rel="shortcut icon" href="../resource/image/logo.png">
@@ -60,14 +62,22 @@
                 <br>
                 <div class="result">ရလဒ်: </div>
             </div>
+            <div>
+                <div class="row">
+                    <div class="col-4">
+
+                    </div>
+                </div>
+            </div>
             <div class="resultBody">
                 <div class="item row">
                     <?php session_start();
                         if(count($result)>0) { foreach ($result as $key => $value) { ?>
                         <div class="col-sm-3">
-                        <a href="../View/bookDescription.php?book_id=<?php echo $value['book_id'];?>" class="text-decoration_none">       
+                        <a href="../View/bookDescription.php?book_id=<?php echo $value['book_id'];?>" class="text-decoration-none">       
                             <div class="result-wrapper">
-                                <div class="img-box">
+                            <!-- <button class="viewcount " value="<?php echo $value['book_id'];?>" > -->
+                                <div class="img-box me-2">
                                     <img src="../../Admin/resource/image/<?php echo $value['book_img'] ?>" class="img-responsive" alt="">
                                 </div>
                                 <div class="result-content">
@@ -80,8 +90,9 @@
                                     <button type="button" class="btn search-cart" value="<?php echo $value['book_id'] ?>">ခြင်းတောင်းထဲထည့်ရန်</button>
                                     <?php } ?>
                                 </div>
+                            </button>
                             </div>
-                    </div>
+                        </div>
                     <?php } } else{?>
                         <div class="lead">ရှာမ​တွေ့ပါ။</div>
                     <?php }?>
@@ -89,6 +100,7 @@
             </div>
         </div>
     </div>
+
     <!-- FOOTER -->
     <div class="footer ">
         <div class="">@YadanarThike 2022</div>
