@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $(".btn-basket").click(function(){
         var book_id = $(this).val();
-        alert(book_id);
         let searchCart = {
             "book_id":book_id
         };

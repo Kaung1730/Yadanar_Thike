@@ -44,5 +44,5 @@
         $reduce ->bindValue("book_id", $book_id);
         $reduce -> bindValue(":del_flg", 0);
         $reduceResult = $reduce -> fetchAll(PDO::FETCH_ASSOC);
-        print_r(json_encode($reduceResult));
+        //print_r(json_encode($reduceResult));
     }

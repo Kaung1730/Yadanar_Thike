@@ -109,8 +109,10 @@
             echo "<div class='homeslider slicker mt-5 d-flex justify-content-center'>";
             for ($i = 0; $i < count($result); $i++) {
                 echo " <div class='slide  d-flex justify-content-center'>";
+                echo "<a  href='../View/bookDescription.php?book_id=".$result[$i]['book_id']."'>";
                 // echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
                 echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
+                echo "</a>";
                 echo "</div>";
             }
             echo "</div>";
@@ -170,13 +172,16 @@
                 require "../Controller/homePageController.php";
                 for ($i = 0; $i < 4; $i++) {
                     echo "<div class='card'>";
+                    echo "<a class='text-decoration-none' href='../View/bookDescription.php?book_id=".$result[$i]['book_id']."'>";
                     echo " <div class='imgBox'>";
                     // echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
                     echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
-                    echo "<div class='bookTitle'>" . $result[$i]['book_name'] . "</div>";
+                    echo "<div class='bookTitle text-decoration-none'>" . $result[$i]['book_name'] . "</div>";
                     echo "</div>";
                     echo "<div class='content'>";
-                    echo " <p class= 'text-center'>" . $result[$i]['book_price'] . "</p>";
+                    echo " <p class= 'text-center  text-decoration-none'>" . $result[$i]['book_price'] . "</p>";
+                    
+                    echo "</a>";
                     // if (isset($_SESSION['status'])) {
                         echo "<button type='button' class='btn btn-basket' value='" . $result[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
                     // }

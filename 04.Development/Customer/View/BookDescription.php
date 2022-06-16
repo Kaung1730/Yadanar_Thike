@@ -80,7 +80,12 @@
                     <div class="col-lg-4 col-md-4 col-xl-4 col-12 pt-5 pt-md-0 pt-lg-0 ps-5 ps-lg-0 ps-md-0">
                         <div class="book-des-title fs-5"><?php echo $result[0]['book_name']; ?></div>
                         <div class="author-name my-3"><?php echo $result[0]['author_name']; ?></div>
-                        <div class="book-fee fs-5"><?php echo $result[0]['book_price']; ?>(ကျပ်)</div>
+                        <?php if(isset($result[0]['discount_price'])){?>
+                            <span class='book-fee fs-5 text-decoration-line-through'><?php echo $result[0]['book_price']?>(ကျပ်)</span>
+                            <span class="book-fee fs-5 text-danger"><?php echo $result[0]['discount_price']; ?>(ကျပ်)</span>
+                        <?php } else{ ?>
+                            <div class="book-fee fs-5"><?php echo $result[0]['book_price']; ?>(ကျပ်)</div>
+                        <?php } ?>
                         <!--rating for the book-->
                         <div class="rating-container d-flex">
                             <?php if(count($bookRatingResult)> 0) {
