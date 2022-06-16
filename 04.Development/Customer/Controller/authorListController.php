@@ -8,6 +8,7 @@ $dbconnect = $db2->connect();
 
 
 $sql = $dbconnect->prepare("SELECT * From author ORDER BY author_category");
+// $sql = $dbconnect->prepare("SELECT * From author");
 
 //go to run
 $sql->execute();

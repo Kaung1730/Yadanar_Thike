@@ -123,14 +123,14 @@
             <?php
             // $count = 1;
             require "../Controller/authorListController.php";
-            for ($i = 0; $i < count($result); $i++) {
-                
+            for ($i = 1; $i < count($result); $i++) {
                 echo "<div class='box'>";
                 echo " <a name='". $result[$i]['author_category']."'> <div class='alphabetList' id='alphabet1'>" . $result[$i]['author_category'] . "</div> </a>";
                 echo " <div class='authorsList'>";
                 echo " <ul class='authorListLength'>";
-                
-                echo  " <li > <a href= '../View/authorProfile.php?id=".$result[$i]['author_id'] ."' class='authorListLink' >". $result[$i]['author_name'] .  "</a> </li>";
+                for ($j = 0; $j < count($result); $j++) {
+                    echo  " <li > <a href= '../View/authorProfile.php?id=" . $result[$j]['author_id'] . "' class='authorListLink' >" . $result[$j]['author_name'] .  "</a> </li>";
+                }
                 echo "</ul>";
                 echo "</div>";
                 echo "</div>";

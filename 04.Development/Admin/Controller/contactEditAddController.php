@@ -11,12 +11,12 @@ if(isset($_POST)){
     $instagram = $_POST['insta'];
     $twitter = $_POST['twitter'];
     $slide_1 = $_FILES['sl_1']['name'];
-    $location = $_FILES['sl_1']['tmp_name'];
+    $location1 = $_FILES['sl_1']['tmp_name'];
     $slide_2 = $_FILES['sl_2']['name'];
-    $location = $_FILES['sl_2']['tmp_name'];
+    $location2 = $_FILES['sl_2']['tmp_name'];
     $del_flg = 0;
 
-    if(move_uploaded_file($location , "../resource/image/". $slide_1 || move_uploaded_file($location , "../resource/image/". $slide_2))){
+    if(move_uploaded_file($location1 , "../resource/image/". $slide_1 || move_uploaded_file($location2 , "../resource/image/". $slide_2))){
 
         $db = new DBConnect();
         $dbconnect = $db->connect();

@@ -99,12 +99,10 @@
 
         <!-- အသစ်ထွက်ရှိသော စာအုပ်များ -->
 
-
         <div class="centerSlider px-4">
             <h4 class=" newBookList mt-5">အသစ်ထွက်ရှိသော စာအုပ်များ </h4>
 
             <?php
-
             require "../Controller/homePageController.php";
             echo "<div class='homeslider slicker mt-5 d-flex justify-content-center'>";
             for ($i = 0; $i < count($result); $i++) {
@@ -117,14 +115,12 @@
             }
             echo "</div>";
             ?>
-
             <!-- အသစ်ထွက်ရှိသော စာအုပ်များ End -->
 
             <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် -->
             <div class="">
                 <h4 class="mt-5 text-center ">ယနေ့အတွက် ရည်ညွှန်းစာအုပ် </h4>
                 <img src="../resource/image/bookForToday1.png" alt="" class="BookForToday img-fluid ">
-
             </div>
             <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် end -->
 
@@ -165,6 +161,7 @@
             </div>
 
             <!-- advertisement end -->
+
             <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ  -->
             <p class="popularBookTitle"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
             <div class="popularBook">
@@ -182,9 +179,9 @@
                     echo " <p class= 'text-center  text-decoration-none'>" . $result[$i]['book_price'] . "</p>";
                     
                     echo "</a>";
-                    // if (isset($_SESSION['status'])) {
+                    if (isset($_SESSION['status'])) {
                         echo "<button type='button' class='btn btn-basket' value='" . $result[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
-                    // }
+                    }
                     echo "</div>";
                     echo "</div>";
                 }
@@ -231,6 +228,7 @@
 
                 for ($i = 0; $i < 4; $i++) {
                     echo "<div class='col-sm-3'>";
+                    echo "<a href='../View/BookDescription.php' class='categoryList'>";
                     echo " <div class='thumb-wrapper'>";
                     echo " <div class='img-box'>";
                     // echo " <img src='../../Admin/resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
@@ -240,6 +238,7 @@
                     echo "  <div class='authorName pb-2'>" . $result[$i]['category_name'] . "</div>";
                     echo "</div>";
                     echo "</div>";
+                    echo "</a>";
                     echo "</div>";
                 }
                 ?>

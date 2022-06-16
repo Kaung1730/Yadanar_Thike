@@ -15,9 +15,11 @@ if (isset($_POST)) {
     $bookPublisher = $_POST['book_pub'];
     $bookImage = $_FILES['book_img']['name'];
     $location = $_FILES['book_img']['tmp_name'];
+    $bookPdf = $_FILES['book_pdf']['name'];
+    $pdfLocation = $_FILES['book_pdf']['tmp_name'];
     $del_flg = 0;
 
-    if (move_uploaded_file($location, "../resource/image/" . $bookImage)) {
+    if (move_uploaded_file($location, "../resource/image/" . $bookImage) && move_uploaded_file($pdfLocation, "../resource/pdf/" . $bookPdf)) {
 
         $db = new DBConnect();
         $dbconnect = $db->connect();
@@ -33,6 +35,7 @@ if (isset($_POST)) {
                     page_number,
                     size,
                     book_img,
+                    book_pdf,
                     del_flg,
                     created_date,
                     created_by
@@ -48,6 +51,7 @@ if (isset($_POST)) {
                     :bPg,
                     :bSize,
                     :bImg,
+                    :bPdf,
                     :del_flg,
                     :created_date,
                     :created_by
@@ -62,6 +66,7 @@ if (isset($_POST)) {
         $sql->bindValue(":bPg", $bookPg);
         $sql->bindValue(":bSize", $bookLen . "x" . $bookWid . "x" . $bookHig);
         $sql->bindValue(":bImg", $bookImage);
+        $sql->bindValue(":bPdf", $bookPdf);
         $sql->bindValue(":del_flg", $del_flg);
         $sql->bindValue(":created_date", date("d/m/Y"));
         $sql->bindValue(":created_by", "myat kaung khant");
