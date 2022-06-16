@@ -37,8 +37,12 @@
         $reduce = $dbConnect -> prepare("
             UPDATE book_m SET
             stock_number = :stock_number,
-            WHERE book_id = :book_id
+            WHERE book_id = :book_id AND
+            del_flg = :del_flg
         ");
-        $reduce->bindValue(":stock_number",$stock_number);
-        
+        $reduce->bindValue(":stock_number",$stock_number - $qtyCart);
+        $reduce ->bindValue("book_id", $book_id);
+        $reduce -> bindValue(":del_flg", 0);
+        $reduceResult = $reduce -> fetchAll(PDO::FETCH_ASSOC);
+        print_r(json_encode($reduceResult));
     }

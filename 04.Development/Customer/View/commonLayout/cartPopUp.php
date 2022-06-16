@@ -307,9 +307,9 @@ if (isset($_SESSION['status'])) {
                         data: { send: JSON.stringify(stateData) },
                         success: function (res) {
                             var data = $.parseJSON(res);
+                            $("#township").empty();
                             data.forEach(element => {
                                 $("#township").append(`
-                                $("#twonship").empty();
                                     <option value="${element.township_name}">${element.township_name}</option>
                                 `);
                             });
@@ -346,10 +346,8 @@ if (isset($_SESSION['status'])) {
                                         </div>
                                     `);
                             });
- ////////////////                           /*error to change to number */
-                            var book = 0; bookArray = [];
-                            bookArray.push(Number($(".book_p").text()));
-                            bookArray.forEach(element => {
+                            var book = 0;
+                            book_priceArray.forEach(element => {
                                 book += Number(element);
                                 console.log((book));
                             });
