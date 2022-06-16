@@ -20,64 +20,69 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <form action="../Controller/deliveryAddController.php" id="delivery" method="POST">
-            <div class="row">
-                <div class="col-2 nav_box">
-
-                </div>
-                <div class="col-10">
-                    <div class="title_bar">
+    <?php session_start();
+    if (isset($_SESSION['status'])) { ?>
+        <div class="container-fluid">
+            <form action="../Controller/deliveryAddController.php" id="delivery" method="POST">
+                <div class="row">
+                    <div class="col-2 nav_box">
 
                     </div>
-                    <div class="contact-box mt-4">
-                        <div class="btn mt-4">
-                            <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="privacyPolicyList.php" class="a-edit">Privicy & Policy</a></button>
-                            <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="guideList.php" class="a-edit">Guide</a></button>
-                            <button type="button" class="btn btn-secondary mx-3 btn-1 btn-size"><a href="deliverycontrolList.php" class="a-edit">Delivery Control</a></button>
-                            <button type="button" class="btn btn-secondary mx-3 btn-2 btn-size"><a href="serviceList.php" class="a-edit">Service</a></button>
-                            <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
+                    <div class="col-10">
+                        <div class="title_bar">
+
                         </div>
-                        <div class="input-part ms-5">
-                            <label for="state" class="form-label mt-5">State</label>
-                            <!-- <input type="text" id="state" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="state"> -->
-                            <div class="input-group inputgp mt-3 input-width">
-                                <select class="form-select input-edit state" id="state" aria-label="Example select with button addon" name="state">
-                                    <option value="1">ကချင်ပြည်နယ်</option>
-                                    <option value="2">ကယားပြည်နယ်</option>
-                                    <option value="3">ကရင်ပြည်နယ်</option>
-                                    <option value="4">ချင်းပြည်နယ်</option>
-                                    <option value="5">စစ်ကိုင်းတိုင်းဒေသကြီး</option>
-                                    <option value="6">တနင်္သာရီတိုင်းဒေသကြီး</option>
-                                    <option value="7">ပဲခူးတိုင်းဒေသကြီး</option>
-                                    <option value="8">မကွေးတိုင်းဒေသကြီး</option>
-                                    <option value="9">မန္တလေးတိုင်း‌ဒေသကြီး</option>
-                                    <option value="10">မွန်ပြည်နယ်</option>
-                                    <option value="11">ရခိုင်ပြည်နယ်</option>
-                                    <option value="12" selected>ရန်ကုန်တိုင်းဒေသကြီး</option>
-                                    <option value="13">ရှမ်းပြည်နယ်</option>
-                                    <option value="14">ဧရာဝတီတိုင်းဒေသကြီး</option>
-                                </select>
+                        <div class="contact-box mt-4">
+                            <div class="btn mt-4">
+                                <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="privacyPolicyList.php" class="a-edit">Privicy & Policy</a></button>
+                                <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="guideList.php" class="a-edit">Guide</a></button>
+                                <button type="button" class="btn btn-secondary mx-3 btn-1 btn-size"><a href="deliverycontrolList.php" class="a-edit">Delivery Control</a></button>
+                                <button type="button" class="btn btn-secondary mx-3 btn-2 btn-size"><a href="serviceList.php" class="a-edit">Service</a></button>
+                                <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
                             </div>
-                            <label for="township" class="form-label mt-5">Township</label>
-                            <!-- <input type="text" id="township" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="township"> -->
-                            <div class="input-group inputgp mt-3 input-width">
-                                <select class="form-select input-edit township" id="township" aria-label="Example select with button addon" name="township">
-                                    
-                                </select>
-                            </div>
-                            <label for="fee" class="form-label mt-5">Delivery Fee</label>
-                            <input type="text" id="fee" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="fee">
-                            <div class="buttonGp mt-5">
-                                <a href="deliverycontrolList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
-                                <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Submit</button>
+                            <div class="input-part ms-5">
+                                <label for="state" class="form-label mt-5">State</label>
+                                <!-- <input type="text" id="state" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="state"> -->
+                                <div class="input-group inputgp mt-3 input-width">
+                                    <select class="form-select input-edit state" id="state" aria-label="Example select with button addon" name="state">
+                                        <option value="1">ကချင်ပြည်နယ်</option>
+                                        <option value="2">ကယားပြည်နယ်</option>
+                                        <option value="3">ကရင်ပြည်နယ်</option>
+                                        <option value="4">ချင်းပြည်နယ်</option>
+                                        <option value="5">စစ်ကိုင်းတိုင်းဒေသကြီး</option>
+                                        <option value="6">တနင်္သာရီတိုင်းဒေသကြီး</option>
+                                        <option value="7">ပဲခူးတိုင်းဒေသကြီး</option>
+                                        <option value="8">မကွေးတိုင်းဒေသကြီး</option>
+                                        <option value="9">မန္တလေးတိုင်း‌ဒေသကြီး</option>
+                                        <option value="10">မွန်ပြည်နယ်</option>
+                                        <option value="11">ရခိုင်ပြည်နယ်</option>
+                                        <option value="12" selected>ရန်ကုန်တိုင်းဒေသကြီး</option>
+                                        <option value="13">ရှမ်းပြည်နယ်</option>
+                                        <option value="14">ဧရာဝတီတိုင်းဒေသကြီး</option>
+                                    </select>
+                                </div>
+                                <label for="township" class="form-label mt-5">Township</label>
+                                <!-- <input type="text" id="township" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="township"> -->
+                                <div class="input-group inputgp mt-3 input-width">
+                                    <select class="form-select input-edit township" id="township" aria-label="Example select with button addon" name="township">
+
+                                    </select>
+                                </div>
+                                <label for="fee" class="form-label mt-5">Delivery Fee</label>
+                                <input type="text" id="fee" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="fee">
+                                <div class="buttonGp mt-5">
+                                    <a href="deliverycontrolList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
+                                    <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Submit</button>
+                                </div>
                             </div>
                         </div>
+                        <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                     </div>
-                    <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
-                </div>
-        </form>
-    </div>
+            </form>
+        </div>
+    <?php } else {
+        require "../View/adminLogin.php";
+    } ?>
 </body>
 
 </html>

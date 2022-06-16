@@ -19,41 +19,46 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <form action="../Controller/guideUpdateController.php" method="POST">
-            <div class="row">
-                <div class="col-2 nav_box">
-
-                </div>
-                <div class="col-10">
-                    <div class="title_bar">
+    <?php session_start();
+    if (isset($_SESSION['status'])) { ?>
+        <div class="container-fluid">
+            <form action="../Controller/guideUpdateController.php" method="POST">
+                <div class="row">
+                    <div class="col-2 nav_box">
 
                     </div>
-                    <div class="contact-box mt-4">
-                        <div class="btn mt-4">
-                            <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="privacyPolicyList.php" class="a-edit">Privicy & Policy</a></button>
-                            <button type="button" class="btn btn-secondary mx-3 btn-1 btn-size"><a href="guideList.php" class="a-edit">Guide</a></button>
-                            <button type="button" class="btn btn-secondary mx-3 btn-2 btn-size"><a href="deliverycontrolList.php" class="a-edit">Delivery Control</a></button>
-                            <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="serviceList.php" class="a-edit">Service</a></button>
-                            <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
+                    <div class="col-10">
+                        <div class="title_bar">
+
                         </div>
-                        <div class="input-part ms-5">
-                            <?php require "../Controller/guideEditController.php" ?>
-                            <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['userguide_id'] ?>">
-                            <label for="question" class="form-label mt-2">Question</label>
-                            <input type="text" id="question" class="form-control input-edit" name="question" value="<?php echo $result[0]['userguide_title'] ?>">
-                            <label for="address" class="form-label mt-2">Answer</label>
-                            <textarea type="text" id="address" class="form-control input-edit" cols="30" rows="10" name="answer"><?php echo $result[0]['userguide_text'] ?></textarea>
-                            <div class="buttonGp">
-                                <a href="guideList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
-                                <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Update</button>
+                        <div class="contact-box mt-4">
+                            <div class="btn mt-4">
+                                <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="privacyPolicyList.php" class="a-edit">Privicy & Policy</a></button>
+                                <button type="button" class="btn btn-secondary mx-3 btn-1 btn-size"><a href="guideList.php" class="a-edit">Guide</a></button>
+                                <button type="button" class="btn btn-secondary mx-3 btn-2 btn-size"><a href="deliverycontrolList.php" class="a-edit">Delivery Control</a></button>
+                                <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="serviceList.php" class="a-edit">Service</a></button>
+                                <button type="button" class="btn btn-secondary mx-3 btn-3 btn-size"><a href="faqList.php" class="a-edit">FAQ</a></button>
+                            </div>
+                            <div class="input-part ms-5">
+                                <?php require "../Controller/guideEditController.php" ?>
+                                <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['userguide_id'] ?>">
+                                <label for="question" class="form-label mt-2">Question</label>
+                                <input type="text" id="question" class="form-control input-edit" name="question" value="<?php echo $result[0]['userguide_title'] ?>">
+                                <label for="address" class="form-label mt-2">Answer</label>
+                                <textarea type="text" id="address" class="form-control input-edit" cols="30" rows="10" name="answer"><?php echo $result[0]['userguide_text'] ?></textarea>
+                                <div class="buttonGp">
+                                    <a href="guideList.php" class="a-edit"><button type="button" class="btn mt-2 mb-2 float-start btn-5">Back</button></a>
+                                    <button type="submit" class="btn btn-info mt-2 me-5 float-end btn-4">Update</button>
+                                </div>
                             </div>
                         </div>
+                        <div class="copyright mt-3 mb-2 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                     </div>
-                    <div class="copyright mt-3 mb-2 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
-                </div>
-        </form>
-    </div>
+            </form>
+        </div>
+    <?php } else {
+        require "../View/adminLogin.php";
+    } ?>
 </body>
 
 </html>

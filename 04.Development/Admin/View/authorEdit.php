@@ -19,68 +19,73 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <form action="../Controller/authorUpdateController.php" method="POST" enctype="multipart/form-data">
+    <?php session_start();
+    if (isset($_SESSION['status'])) { ?>
+        <div class="container-fluid">
+            <form action="../Controller/authorUpdateController.php" method="POST" enctype="multipart/form-data">
 
-            <div class="row">
-                <div class="col-2 nav_box">
-
-                </div>
-                <div class="col-10">
-                    <div class="title_bar">
+                <div class="row">
+                    <div class="col-2 nav_box">
 
                     </div>
-                    <div class="add_author">
-                        <div class="title_addauthor fs-5">Update Author</div>
-                        <hr />
-                        <div class="input-part ms-5">
-                            <?php require "../Controller/authorEditController.php"; ?>
-                            <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['author_id'] ?>">
-                            <label class="author_name fs-5" for="">Author Name:</label>
-                            <input type="text" class="box1 input-edit" name="author_name" value="<?php echo $result[0]['author_name'] ?>">
-                            <label class="author_name fs-5 mt-2" for="">Author Category:</label>
-                            <input type="text" class="box1 input-edit" name="author_category" value="<?php echo $result[0]['author_category'] ?>">
-                            <label class="author_image fs-5" for="">Author Image:</label>
-                            <div class="input-group mt-2 mb-3 ms-4 input-width">
-                                <input type="file" class="form-control input-edit" id="slide_img" name="author_img" value="<?php echo $result[0]['author_image'] ?>">
-                                <label class="input-group-text input-btn" for="slide_img">Browse</label>
-                            </div>
-                            <label for="" class="author_des fs-5">Author Description:</label>
-                            <input type="text" class="box1 input-edit" name="author_des" value="<?php echo $result[0]['author_about'] ?>">
-                            <label for="" class="author_life fs-5">Author Life:</label>
-                            <div class="d-flex">
-                                <div>
-                                    <!-- <select name="born_years" id="born_years" name="born_years">
+                    <div class="col-10">
+                        <div class="title_bar">
+
+                        </div>
+                        <div class="add_author">
+                            <div class="title_addauthor fs-5">Update Author</div>
+                            <hr />
+                            <div class="input-part ms-5">
+                                <?php require "../Controller/authorEditController.php"; ?>
+                                <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['author_id'] ?>">
+                                <label class="author_name fs-5" for="">Author Name:</label>
+                                <input type="text" class="box1 input-edit" name="author_name" value="<?php echo $result[0]['author_name'] ?>">
+                                <label class="author_name fs-5 mt-2" for="">Author Category:</label>
+                                <input type="text" class="box1 input-edit" name="author_category" value="<?php echo $result[0]['author_category'] ?>">
+                                <label class="author_image fs-5" for="">Author Image:</label>
+                                <div class="input-group mt-2 mb-3 ms-4 input-width">
+                                    <input type="file" class="form-control input-edit" id="slide_img" name="author_img" value="<?php echo $result[0]['author_image'] ?>">
+                                    <label class="input-group-text input-btn" for="slide_img">Browse</label>
+                                </div>
+                                <label for="" class="author_des fs-5">Author Description:</label>
+                                <input type="text" class="box1 input-edit" name="author_des" value="<?php echo $result[0]['author_about'] ?>">
+                                <label for="" class="author_life fs-5">Author Life:</label>
+                                <div class="d-flex">
+                                    <div>
+                                        <!-- <select name="born_years" id="born_years" name="born_years">
                                         <option value="1990">1990</option>
                                         <option value="1991">1991</option>
                                         <option value="1992">1992</option>
                                         <option value="1993">1993</option>
                                         <option value="1994">1994</option>
                                     </select> -->
-                                    <input type="text" class="box_lwh input-edit" id="born_years" name="born_years">
-                                </div>
-                                <div class="arrow"></div>
-                                <div>
-                                    <!-- <select name="die_years" id="die_years" name="die_years">
+                                        <input type="text" class="box_lwh input-edit" id="born_years" name="born_years">
+                                    </div>
+                                    <div class="arrow"></div>
+                                    <div>
+                                        <!-- <select name="die_years" id="die_years" name="die_years">
                                         <option value="1990">1990</option>
                                         <option value="1991">1991</option>
                                         <option value="1992">1992</option>
                                         <option value="1993">1993</option>
                                         <option value="1994">1994</option>
                                     </select> -->
-                                    <input type="text" class="box_lwh input-edit" id="die_years" name="die_years">
+                                        <input type="text" class="box_lwh input-edit" id="die_years" name="die_years">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="ms-4">
-                            <input type="submit" name="submit" class="submit mx-5 mt-4 mb-3" value="submit">
-                            <button type="reset" name="reset" class="reset">Reset</button>
-                        </div>
+                            <div class="ms-4">
+                                <input type="submit" name="submit" class="submit mx-5 mt-4 mb-3" value="submit">
+                                <button type="reset" name="reset" class="reset">Reset</button>
+                            </div>
 
-                    </div>
-                    <div class="copyright text-center mt-2">Copyright@2022YadanarThike All Rights Reserved.</div>
-        </form>
-    </div>
+                        </div>
+                        <div class="copyright text-center mt-2">Copyright@2022YadanarThike All Rights Reserved.</div>
+            </form>
+        </div>
+    <?php } else {
+        require "../View/adminLogin.php";
+    } ?>
 </body>
 
 </html>

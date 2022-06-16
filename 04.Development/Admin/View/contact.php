@@ -20,55 +20,57 @@
 </head>
 
 <body>
-    <?php require "../Controller/contactController.php" ?>
-    <div class="container-fluid">
-        <form action="">
-            <div class="row">
-                <div class="col-2 nav_box">
-
-                </div>
-                <div class="col-10">
-                    <div class="title_bar">
+    <?php session_start();
+    if (isset($_SESSION['status'])) { ?>
+        <?php require "../Controller/contactController.php" ?>
+        <div class="container-fluid">
+            <form action="">
+                <div class="row">
+                    <div class="col-2 nav_box">
 
                     </div>
-                    <div class="contact-box mt-4">
-                        <div class="head_text fs-3 pt-3 fw-normal text-start ps-3">Review & Rating</div>
-                        <hr />
-                        <div class="btn contact_btn">
-                            <button type="button" class="btn btn-secondary ms-5 btn-connect"><a href="review.php" class="a-edit">Review & Rating</a></button>
-                            <button type="button" class="btn btn-secondary me-5 btn-connect"><a href="contact.php" class="a-edit">Contact</a></button>
+                    <div class="col-10">
+                        <div class="title_bar">
+
                         </div>
-                        <div class="input-part">
-                            <table class="table table-striped white_table tb-edit mt-3">
-                                <tr>
-                                    <th class="text-center">No.</th>
-                                    <th class="text-center">Username</th>
-                                    <th class="text-center">Phone No.</th>
-                                    <th class="text-center">Contact</th>
-                                </tr>
-                                <?php
-                                $count = 1;
-                                foreach ($result as $key => $value) {
-                                    echo "<tr>";
-                                    echo "<td class='text-center'>" . $count . ".</td>";
-                                    echo "<td class='text-center'>" . $value['username'] . "</td>";
-                                    echo "<td class='text-center'>" . $value['phone'] . "</td>";
-                                    echo "<td class='text-center'>" . $value['contact'] . "</td>";
-                                    echo "</tr>";
-                                    $count++;
-                                }
-                                ?>
-                            </table>
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination float-end me-5">
-                                    <li class="page-item"><a class="page-link" href="?pageno=1">First</a></li>
-                                    <li class="page-item 
+                        <div class="contact-box mt-4">
+                            <div class="head_text fs-3 pt-3 fw-normal text-start ps-3">Review & Rating</div>
+                            <hr />
+                            <div class="btn contact_btn">
+                                <button type="button" class="btn btn-secondary ms-5 btn-connect"><a href="review.php" class="a-edit">Review & Rating</a></button>
+                                <button type="button" class="btn btn-secondary me-5 btn-connect"><a href="contact.php" class="a-edit">Contact</a></button>
+                            </div>
+                            <div class="input-part">
+                                <table class="table table-striped white_table tb-edit mt-3">
+                                    <tr>
+                                        <th class="text-center">No.</th>
+                                        <th class="text-center">Username</th>
+                                        <th class="text-center">Phone No.</th>
+                                        <th class="text-center">Contact</th>
+                                    </tr>
+                                    <?php
+                                    $count = 1;
+                                    foreach ($result as $key => $value) {
+                                        echo "<tr>";
+                                        echo "<td class='text-center'>" . $count . ".</td>";
+                                        echo "<td class='text-center'>" . $value['username'] . "</td>";
+                                        echo "<td class='text-center'>" . $value['phone'] . "</td>";
+                                        echo "<td class='text-center'>" . $value['contact'] . "</td>";
+                                        echo "</tr>";
+                                        $count++;
+                                    }
+                                    ?>
+                                </table>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination float-end me-5">
+                                        <li class="page-item"><a class="page-link" href="?pageno=1">First</a></li>
+                                        <li class="page-item 
                                 <?php
                                 if ($pageno <= 1) {
                                     echo 'disabled';
                                 }
                                 ?>">
-                                        <a class="page-link" href="
+                                            <a class="page-link" href="
                                     <?php
                                     if ($pageno <= 1) {
                                         echo '#';
@@ -77,17 +79,17 @@
                                     }
                                     ?>
                                     ">
-                                            <span aria-hidden="true">Pre</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#"><?php echo $pageno; ?></a></li>
-                                    <li class="page-item
+                                                <span aria-hidden="true">Pre</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#"><?php echo $pageno; ?></a></li>
+                                        <li class="page-item
                                 <?php
                                 if ($pageno >= $total) {
                                     echo 'disabled';
                                 }
                                 ?>">
-                                        <a class="page-link" href="
+                                            <a class="page-link" href="
                                     <?php
                                     if ($pageno >= $total) {
                                         echo '#';
@@ -96,16 +98,19 @@
                                     }
                                     ?>
                                     ">Next</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="?pageno=<?php echo $total; ?>" aria-label="Next"><span aria-hidden="true">Last</span></a></li>
-                                </ul>
-                            </nav>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="?pageno=<?php echo $total; ?>" aria-label="Next"><span aria-hidden="true">Last</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>
+                        <div class="copyright mt-3 mb-2 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                     </div>
-                    <div class="copyright mt-3 mb-2 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
-                </div>
-        </form>
-    </div>
+            </form>
+        </div>
+    <?php } else {
+        require "../View/adminLogin.php";
+    } ?>
 </body>
 
 </html>
