@@ -18,11 +18,16 @@ if (isset($_POST)) {
                 "UPDATE service SET
             question = :ques,
             answer = :ans,
-            icon = :icon WHERE service_id = :id"
+            icon = :icon,
+            updated_date = :updated_date,
+            updated_by = :updated_by  
+            WHERE service_id = :id"
             );
             $sql->bindValue(":ques", $question);
             $sql->bindValue(":ans", $answer);
             $sql->bindValue(":icon", $icon);
+            $sql->bindValue(":updated_date", date("d/m/Y"));
+            $sql->bindValue(":updated_by", "Myat Kaung Khant");
             $sql->bindValue(":id", $id);
 
             $sql->execute();
@@ -34,10 +39,15 @@ if (isset($_POST)) {
         $sql = $dbconnect->prepare(
             "UPDATE service SET
             question = :ques,
-            answer = :ans WHERE service_id = :id"
+            answer = :ans,
+            updated_date = :updated_date,
+            updated_by = :updated_by  
+            WHERE service_id = :id"
         );
         $sql->bindValue(":ques", $question);
         $sql->bindValue(":ans", $answer);
+        $sql->bindValue(":updated_date", date("d/m/Y"));
+        $sql->bindValue(":updated_by", "Myat Kaung Khant");
         $sql->bindValue(":id", $id);
 
         $sql->execute();
