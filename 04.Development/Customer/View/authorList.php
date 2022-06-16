@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 
 <head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Author List</title>
     <link rel="stylesheet" href="../resource/css/authorList.css">
     <link rel="shortcut icon" href="../resource/image/logo.png">
@@ -126,7 +129,7 @@
                 echo " <a name='". $result[$i]['author_category']."'> <div class='alphabetList' id='alphabet1'>" . $result[$i]['author_category'] . "</div> </a>";
                 echo " <div class='authorsList'>";
                 echo " <ul class='authorListLength'>";
-               
+                
                 echo  " <li > <a href= '../View/authorProfile.php?id=".$result[$i]['author_id'] ."' class='authorListLink' >". $result[$i]['author_name'] .  "</a> </li>";
                 echo "</ul>";
                 echo "</div>";

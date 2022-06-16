@@ -11,7 +11,7 @@
     $delivery_fee = $data['delivery_fee'];
     $total_price = $data['total_price'];
     $del_flg = 0;
-    $today = date("F j, Y");
+    // $today = date("F j, Y");
     require_once("../Model/DBConnection.php");
     $db = new DBConnect();
     $dbConnect = $db->connect();
@@ -39,7 +39,7 @@
         $sql -> bindValue(":total_price",$price);
         $sql -> bindValue(":delivery_id",$delivery_id);
         $sql -> bindValue(":order_status",0);
-        $sql -> bindValue(":order_date",$today);
+        $sql -> bindValue(":order_date", date("d/m/Y"));
         $sql -> bindValue(":del_flg",$del_flg);
         $sql -> bindValue(":created_date",date("d/m/Y"));   
         $sql -> bindValue(":created_by","KaungKaung");
@@ -65,9 +65,9 @@
                     $clearData -> bindValue(":updated_by","KaungKaung");
                     $clearData -> bindValue(":cart_id",$cart_id);
                     $clearData->execute();
-                    $resultData = $clearData->fetchAll(PDO::FETCH_ASSOC);
-                    //print_r(json_encode($resultData));
-
+                    $resultData = $sql->fetchAll(PDO::FETCH_ASSOC);
+    
+                    
                     }
             }
     };

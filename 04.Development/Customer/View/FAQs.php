@@ -41,7 +41,7 @@
     <div class="order"></div>
     <div class="orderHistory"></div>
 
-    <div class="body container">
+    <div class="container">
         <div class="containerBox">
             <div class="title">
                 <h1>FAQs</h1>
@@ -81,6 +81,5 @@
 
     <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
 </body>
-
 
 </html>

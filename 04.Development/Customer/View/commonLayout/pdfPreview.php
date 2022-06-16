@@ -28,7 +28,7 @@ $result = $sql->fetchAll(PDO::FETCH_ASSOC);
                 <button type="button" class="btn-close btn-close-dark me-lg-3" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <embed src="../resource/pdf/<?php echo $result[0]['book_pdf']; ?>" width="310rem" height="420rem" />
+                <embed src="../../Admin/resource/pdf/<?php echo $result[0]['book_pdf']; ?>" width="310rem" height="420rem" />
             </div>
         </div>
     </div>

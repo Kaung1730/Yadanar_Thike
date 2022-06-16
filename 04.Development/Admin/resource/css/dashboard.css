@@ -94,7 +94,7 @@ hr{
     padding-left: 2%;
 }
 .total_user,.total_viewers,.income,.order{
-    height: 23vh;
+    /* height: 23vh; */
     width: 20%;
     border-radius: 12px;
     background-color: var(--boxColor);
@@ -120,6 +120,14 @@ hr{
 
 .white_table{
     background-color: var(--btnfontColor);
+}
+@media screen and (max-width:720px){
+    .user_text,.viewer_text,.income_text,.order_text{
+        font-size: 0.8rem;
+    }
+    .font-num{
+        font-size: 1rem !important;
+    }
 }
 /* @media screen and (max-width:1200px) {
     .title_bar{
