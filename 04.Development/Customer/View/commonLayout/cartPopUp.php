@@ -519,8 +519,7 @@ if (isset($_SESSION['status'])) {
                                                                         type: "POST",
                                                                         data: { send: JSON.stringify(cart) },
                                                                         success: function (res) {
-                                                                            var data = $.parseJSON(res);
-                                                                            console.log(data);
+                                                                            
                                                                         },
                                                                         error: function (err) {
                                                                             console.log(err)
