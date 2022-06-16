@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Result</title>
     <link rel="stylesheet" href="../resource/css/searchResult.css">
     <link rel="shortcut icon" href="../resource/image/logo.png">
@@ -74,7 +76,7 @@
                         <div class="col-sm-3">
                         <a href="../View/bookDescription.php?book_id=<?php echo $value['book_id'];?>" class="text-decoration-none">       
                             <div class="result-wrapper">
-                            <button class="viewcount " value="<?php echo $value['book_id'];?>" >
+                            <!-- <button class="viewcount " value="<?php echo $value['book_id'];?>" > -->
                                 <div class="img-box me-2">
                                     <img src="../../Admin/resource/image/<?php echo $value['book_img'] ?>" class="img-responsive" alt="">
                                 </div>

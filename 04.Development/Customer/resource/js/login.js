@@ -24,7 +24,7 @@ $(document).ready(function () {
                     });
                 }
                 else if(res == "success"){
-                    window.location.href = `/yadanar_thike/04.Development/Customer/View/homePage.php`;
+                    window.location.href = `./homePage.php`;
                 }
             },
             error: function (err) {

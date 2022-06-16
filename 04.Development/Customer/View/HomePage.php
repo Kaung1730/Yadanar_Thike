@@ -195,6 +195,7 @@
         <?php
 
         require "../Controller/discountController.php";
+        echo "<a class='text-decoration-none' href='../View/bookDescription.php?book_id=".$result[0]['book_id']."'>";
         echo " <div class='disItem'>";
         echo "<div class='disContent'>";
         echo "<h2>" . $result[0]['author_name'] . "</h2>";
@@ -212,6 +213,7 @@
         echo "</div>";
         echo "</div>";
         echo "</div>";
+        echo "</a>";
         ?>
         <!-- DISCOUNT end-->
 

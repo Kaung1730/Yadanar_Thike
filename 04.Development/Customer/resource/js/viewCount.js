@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $(".viewcount").click(function(){
         var bookId = $(this).val();
-        alert(bookId);
         var count = 0;
         count++;
         let view = {
