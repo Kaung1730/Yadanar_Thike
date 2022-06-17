@@ -139,16 +139,17 @@
             // }
             // print_r($result);
             foreach ($result as $key => $value) {
+                $autId = explode(",", $value['authorID']);
+                $autName = explode(",", $value['authorName']);
                 echo "<div class='box'>";
                 echo " <a name='" . $value['author_category'] . "'> <div class='alphabetList' id='alphabet1'>" . $value['author_category'] . "</div> </a>";
                 echo " <div class='authorsList'>";
                 echo " <ul class='authorListLength'>";
-                
-                echo" <li > <a href= '../View/authorProfile.php?id=" . $value['authorID'] . "' class='authorListLink' >";
-                foreach (explode(",", $value['authorName']) as $key => $value) {
-                    echo  $value;
+                for ($i=0; $i < count($autId); $i++) {
+                    echo " <li > <a href= '../View/authorProfile.php?id=" . $autId[$i] . "' class='authorListLink' >";
+                    echo $autName[$i];
+                    echo "</a> </li>";
                 }
-                echo"</a> </li>";
                 echo "</ul>";
                 echo "</div>";
                 echo "</div>";

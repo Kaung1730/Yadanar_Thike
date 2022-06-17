@@ -11,7 +11,7 @@ $dbconnect = $db2->connect();
 
 $sql = $dbconnect->prepare("SELECT * FROM book_m 
 LEFT JOIN author
-ON book_m.author_id = author.author_id  WHERE book_m.book_id=1; 
+ON book_m.author_id = author.author_id  WHERE book_m.book_id=14; 
 ");
 
 //go to run
