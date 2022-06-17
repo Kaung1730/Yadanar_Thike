@@ -59,7 +59,7 @@
 
                 require "../Controller/authorProfileController.php";
 
-                echo "<div class='col-md-5'>. <img src='../resource/image/" . $result[0]['author_image'] . " 'class='image img-responsive'>. </div>";
+                echo "<div class='col-md-5'>. <img src='../../Admin/resource/image/" . $result[0]['author_image'] . " 'class='image img-responsive'>. </div>";
                 echo " <div class='col-md-7 mt-5 '>";
                 echo " <h2 class='mb-3 '>" . $result[0]['author_name'] . "</h2>";
                 echo "<h5 class='mb-4 fw-bold'> " . $result[0]['author_life'] . "</h5>";
@@ -82,7 +82,7 @@
                 echo "<div class='col-sm-3'>";
                 echo " <div class='thumb-wrapper'>";
                 echo " <div class='img-box'>";
-                echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='img-fluid'>";
+                echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='img-fluid'>";
                 echo "</div>";
                 echo "<div class='thumb-content'>";
                 echo "<div class='authorName'>" . $result[$i]['author_name'] . "</div>";

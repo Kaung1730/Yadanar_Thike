@@ -19,37 +19,42 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <form action="../Controller/slidechangeUpdateController.php" method="POST" enctype="multipart/form-data">
-            <div class="row">
-                <div class="col-2 nav_box">
-
-                </div>
-                <div class="col-10">
-                    <div class="title_bar">
+    <?php session_start();
+    if (isset($_SESSION['status'])) { ?>
+        <div class="container-fluid">
+            <form action="../Controller/slidechangeUpdateController.php" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-2 nav_box">
 
                     </div>
-                    <div class="contact-box mt-4 boxH">
-                        <div class="btn">
-                            <button type="button" class="btn btn-secondary mx-5 btn-1 btn-me"><a href="contactEdit.php" class="a-edit">Contact Edit</a></button>
-                            <button type="button" class="btn btn-secondary mx-5 btn-2 btn-mag btn-me"><a href="adminList.php" class="a-edit">Login Management</a></button>
-                            <button type="button" class="btn btn-secondary mx-5 btn-3 btn-me"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
+                    <div class="col-10">
+                        <div class="title_bar">
+
                         </div>
-                        <div class="input-part ms-5 mt-5 slide-me">
-                            <?php require "../Controller/slidechangeEditController.php" ?>
-                            <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['slider_id'] ?>">
-                            <label for="slide_img" class="form-label mt-2">Slide Image</label>
-                            <div class="input-group mt-2 mb-3 input-width">
-                                <input type="file" class="form-control input-edit" id="slide_img" name="slide" value="<?php echo $result[0]['slider_image'] ?>">
-                                <label class="input-group-text input-btn" for="slide_img">Browse</label>
+                        <div class="contact-box mt-4 boxH">
+                            <div class="btn">
+                                <button type="button" class="btn btn-secondary mx-5 btn-1 btn-me"><a href="contactEdit.php" class="a-edit">Contact Edit</a></button>
+                                <button type="button" class="btn btn-secondary mx-5 btn-2 btn-mag btn-me"><a href="adminList.php" class="a-edit">Login Management</a></button>
+                                <button type="button" class="btn btn-secondary mx-5 btn-3 btn-me"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
                             </div>
-                            <button type="submit" class="btn btn-info mt-5 mb-5 btn-4 btn-cen">Update</button>
+                            <div class="input-part ms-5 mt-5 slide-me">
+                                <?php require "../Controller/slidechangeEditController.php" ?>
+                                <input type="hidden" class="box1 input-edit" name="id" value="<?php echo $result[0]['slider_id'] ?>">
+                                <label for="slide_img" class="form-label mt-2">Slide Image</label>
+                                <div class="input-group mt-2 mb-3 input-width">
+                                    <input type="file" class="form-control input-edit" id="slide_img" name="slide" value="<?php echo $result[0]['slider_image'] ?>">
+                                    <label class="input-group-text input-btn" for="slide_img">Browse</label>
+                                </div>
+                                <button type="submit" class="btn btn-info mt-5 mb-5 btn-4 btn-cen">Update</button>
+                            </div>
                         </div>
+                        <div class="copyright mt-3 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                     </div>
-                    <div class="copyright mt-3 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
-                </div>
-        </form>
-    </div>
+            </form>
+        </div>
+    <?php } else {
+        require "../View/adminLogin.php";
+    } ?>
 </body>
 
 </html>

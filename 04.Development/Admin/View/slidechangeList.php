@@ -19,54 +19,56 @@
 </head>
 
 <body>
-    <?php require "../Controller/slidechangeListController.php" ?>
-    <div class="container-fluid">
-        <form action="">
-            <div class="row">
-                <div class="col-2 nav_box">
-
-                </div>
-                <div class="col-10">
-                    <div class="title_bar">
+    <?php session_start();
+    if (isset($_SESSION['status'])) { ?>
+        <?php require "../Controller/slidechangeListController.php" ?>
+        <div class="container-fluid">
+            <form action="">
+                <div class="row">
+                    <div class="col-2 nav_box">
 
                     </div>
-                    <div class="contact-box mt-4">
-                        <div class="btn mt-3">
-                            <button type="button" class="btn btn-secondary mx-5 btn-1 btn-me"><a href="contactEdit.php" class="a-edit">Contact Edit</a></button>
-                            <button type="button" class="btn btn-secondary mx-5 btn-2 btn-mag btn-me"><a href="adminList.php" class="a-edit">Login Management</a></button>
-                            <button type="button" class="btn btn-secondary mx-5 btn-3 btn-me"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
+                    <div class="col-10">
+                        <div class="title_bar">
+
                         </div>
-                        <div class="input-part">
-                            <table class="table table-striped white_table tb-edit mt-3">
-                                <tr>
-                                    <th class="text-center w-25">No.</th>
-                                    <th class="text-center">Slide Image</th>
-                                    <th class="text-center last" colspan="2">Action</th>
-                                </tr>
-                                <?php
-                                $count = 1;
-                                foreach ($result as $key => $value) {
-                                    echo "<tr>";
-                                    echo "<td class='text-center'>" . $count . ".</td>";
-                                    echo "<td class='text-center w-30'><img src='../resource/image/" . $value['slider_image'] . "'class='upload_img_sl'></td>";
-                                    echo "<td class='text-center last'><a href='../View/slidechangeEdit.php?id=" . $value['slider_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
-                                    echo "<td class='text-center last'><a href='../Controller/slidechangeDeleteController.php?id=" . $value['slider_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
-                                    echo "</tr>";
-                                    $count++;
-                                }
-                                ?>
-                            </table>
-                            <nav aria-label="Page navigation example">
-                                <a href="slidechangeAdd.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-start">Add</button></a>
-                                <ul class="pagination float-end me-5">
-                                    <li class="page-item"><a class="page-link" href="?pageno=1">First</a></li>
-                                    <li class="page-item 
+                        <div class="contact-box mt-4">
+                            <div class="btn mt-3">
+                                <button type="button" class="btn btn-secondary mx-5 btn-1 btn-me"><a href="contactEdit.php" class="a-edit">Contact Edit</a></button>
+                                <button type="button" class="btn btn-secondary mx-5 btn-2 btn-mag btn-me"><a href="adminList.php" class="a-edit">Login Management</a></button>
+                                <button type="button" class="btn btn-secondary mx-5 btn-3 btn-me"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
+                            </div>
+                            <div class="input-part">
+                                <table class="table table-striped white_table tb-edit mt-3">
+                                    <tr>
+                                        <th class="text-center w-25">No.</th>
+                                        <th class="text-center">Slide Image</th>
+                                        <th class="text-center last" colspan="2">Action</th>
+                                    </tr>
+                                    <?php
+                                    $count = 1;
+                                    foreach ($result as $key => $value) {
+                                        echo "<tr>";
+                                        echo "<td class='text-center'>" . $count . ".</td>";
+                                        echo "<td class='text-center w-30'><img src='../resource/image/" . $value['slider_image'] . "'class='upload_img_sl'></td>";
+                                        echo "<td class='text-center last'><a href='../View/slidechangeEdit.php?id=" . $value['slider_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                        echo "<td class='text-center last'><a href='../Controller/slidechangeDeleteController.php?id=" . $value['slider_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                                        echo "</tr>";
+                                        $count++;
+                                    }
+                                    ?>
+                                </table>
+                                <nav aria-label="Page navigation example">
+                                    <a href="slidechangeAdd.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-start">Add</button></a>
+                                    <ul class="pagination float-end me-5">
+                                        <li class="page-item"><a class="page-link" href="?pageno=1">First</a></li>
+                                        <li class="page-item 
                                 <?php
                                 if ($pageno <= 1) {
                                     echo 'disabled';
                                 }
                                 ?>">
-                                        <a class="page-link" href="
+                                            <a class="page-link" href="
                                     <?php
                                     if ($pageno <= 1) {
                                         echo '#';
@@ -75,17 +77,17 @@
                                     }
                                     ?>
                                     ">
-                                            <span aria-hidden="true">Pre</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#"><?php echo $pageno; ?></a></li>
-                                    <li class="page-item
+                                                <span aria-hidden="true">Pre</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#"><?php echo $pageno; ?></a></li>
+                                        <li class="page-item
                                 <?php
                                 if ($pageno >= $total) {
                                     echo 'disabled';
                                 }
                                 ?>">
-                                        <a class="page-link" href="
+                                            <a class="page-link" href="
                                     <?php
                                     if ($pageno >= $total) {
                                         echo '#';
@@ -94,16 +96,19 @@
                                     }
                                     ?>
                                     ">Next</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="?pageno=<?php echo $total; ?>" aria-label="Next"><span aria-hidden="true">Last</span></a></li>
-                                </ul>
-                            </nav>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="?pageno=<?php echo $total; ?>" aria-label="Next"><span aria-hidden="true">Last</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>
+                        <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                     </div>
-                    <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
-                </div>
-        </form>
-    </div>
+            </form>
+        </div>
+    <?php } else {
+        require "../View/adminLogin.php";
+    } ?>
 </body>
 
 </html>

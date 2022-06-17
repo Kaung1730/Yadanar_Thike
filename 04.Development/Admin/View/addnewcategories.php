@@ -19,28 +19,33 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <form action="../Controller/categoryAddController.php" method="POST">
-            <div class="row">
-                <div class="col-2 nav_box">
-
-                </div>
-                <div class="col-10">
-                    <div class="title_bar">
+    <?php session_start();
+    if (isset($_SESSION['status'])) { ?>
+        <div class="container-fluid">
+            <form action="../Controller/categoryAddController.php" method="POST">
+                <div class="row">
+                    <div class="col-2 nav_box">
 
                     </div>
-                    <div class="add_author">
-                        <div class="title_addnewcat fs-5">Add New Categories</div>
-                        <hr />
-                        <div>
-                            <label class="cat_name fs-5" for="">Category Name</label>
-                            <input type="text" class="box1 input-edit" name="cate_name">
+                    <div class="col-10">
+                        <div class="title_bar">
+
                         </div>
-                        <button class="submit" name="submit">Submit</button>
-                    </div>
-                    <div class="copyright text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
-        </form>
-    </div>
+                        <div class="add_author">
+                            <div class="title_addnewcat fs-5">Add New Categories</div>
+                            <hr />
+                            <div>
+                                <label class="cat_name fs-5" for="">Category Name</label>
+                                <input type="text" class="box1 input-edit" name="cate_name">
+                            </div>
+                            <button class="submit" name="submit">Submit</button>
+                        </div>
+                        <div class="copyright text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
+            </form>
+        </div>
+    <?php } else {
+        require "../View/adminLogin.php";
+    } ?>
 </body>
 
 </html>

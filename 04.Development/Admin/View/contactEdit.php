@@ -19,59 +19,64 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <form action="../Controller/contactEditAddController.php" method="POST" enctype="multipart/form-data">
-            <div class="row">
-                <div class="col-2 nav_box">
-
-                </div>
-                <div class="col-10">
-                    <div class="title_bar">
+    <?php session_start();
+    if (isset($_SESSION['status'])) { ?>
+        <div class="container-fluid">
+            <form action="../Controller/contactEditAddController.php" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-2 nav_box">
 
                     </div>
-                    <div class="contact-box mt-4">
-                        <div class="head_text fs-3 pt-3 fw-normal">Website Info</div>
-                        <hr />
-                        <div class="btn">
-                            <button type="button" class="btn btn-secondary mx-5 btn-1 btn-me"><a href="contactEdit.php" class="a-edit">Contact Edit</a></button>
-                            <button type="button" class="btn btn-secondary mx-5 btn-2 btn-mag btn-me"><a href="adminList.php" class="a-edit">Login Management</a></button>
-                            <button type="button" class="btn btn-secondary mx-5 btn-3 btn-me"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
+                    <div class="col-10">
+                        <div class="title_bar">
+
                         </div>
-                        <div class="input-part ms-5">
-                            <label for="phone" class="form-label mt-2">Phone Number:</label>
-                            <input type="number" id="phone" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="phone">
-                            <label for="address" class="form-label mt-2">Address</label>
-                            <input type="text" id="address" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="address">
-                            <label for="email" class="form-label mt-2">Email</label>
-                            <input type="email" id="email" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="email">
-                            <label for="welcome" class="form-label mt-2">Welcome Text</label>
-                            <input type="text" id="welcome" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="weltxt">
-                            <label for="available" class="form-label mt-2">Available Time</label>
-                            <input type="text" id="available" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="avaTime">
-                            <label for="available" class="form-label mt-2">Facebook</label>
-                            <input type="text" id="available" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="facebook">
-                            <label for="available" class="form-label mt-2">Instagram</label>
-                            <input type="text" id="available" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="insta">
-                            <label for="available" class="form-label mt-2">Twitter</label>
-                            <input type="text" id="available" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="twitter">
-                            <label for="slide_1" class="form-label mt-2">Slide 1</label>
-                            <div class="input-group mb-3 input-width">
-                                <input type="file" class="form-control input-edit" id="slide_1" name="sl_1">
-                                <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
+                        <div class="contact-box mt-4">
+                            <div class="head_text fs-3 pt-3 fw-normal">Website Info</div>
+                            <hr />
+                            <div class="btn">
+                                <button type="button" class="btn btn-secondary mx-5 btn-1 btn-me"><a href="contactEdit.php" class="a-edit">Contact Edit</a></button>
+                                <button type="button" class="btn btn-secondary mx-5 btn-2 btn-mag btn-me"><a href="adminList.php" class="a-edit">Login Management</a></button>
+                                <button type="button" class="btn btn-secondary mx-5 btn-3 btn-me"><a href="slidechangeList.php" class="a-edit">Slide change</a></button>
                             </div>
-                            <label for="slide_2" class="form-label mt-2">Slide 2</label>
-                            <div class="input-group mb-3 input-width">
-                                <input type="file" class="form-control input-edit" id="inputGroupFile02" name="sl_2">
-                                <label class="input-group-text input-btn" for="slide_2">Browse</label>
+                            <div class="input-part ms-5">
+                                <label for="phone" class="form-label mt-2">Phone Number:</label>
+                                <input type="number" id="phone" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="phone">
+                                <label for="address" class="form-label mt-2">Address</label>
+                                <input type="text" id="address" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="address">
+                                <label for="email" class="form-label mt-2">Email</label>
+                                <input type="email" id="email" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="email">
+                                <label for="welcome" class="form-label mt-2">Welcome Text</label>
+                                <input type="text" id="welcome" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="weltxt">
+                                <label for="available" class="form-label mt-2">Available Time</label>
+                                <input type="text" id="available" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="avaTime">
+                                <label for="available" class="form-label mt-2">Facebook</label>
+                                <input type="text" id="available" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="facebook">
+                                <label for="available" class="form-label mt-2">Instagram</label>
+                                <input type="text" id="available" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="insta">
+                                <label for="available" class="form-label mt-2">Twitter</label>
+                                <input type="text" id="available" class="form-control input-edit" aria-describedby="passwordHelpBlock" name="twitter">
+                                <label for="slide_1" class="form-label mt-2">Slide 1</label>
+                                <div class="input-group mb-3 input-width">
+                                    <input type="file" class="form-control input-edit" id="slide_1" name="sl_1">
+                                    <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
+                                </div>
+                                <label for="slide_2" class="form-label mt-2">Slide 2</label>
+                                <div class="input-group mb-3 input-width">
+                                    <input type="file" class="form-control input-edit" id="inputGroupFile02" name="sl_2">
+                                    <label class="input-group-text input-btn" for="slide_2">Browse</label>
+                                </div>
+                                <button type="submit" class="btn btn-info mt-2 mb-2 btn-4 btn-cen">Submit</button>
                             </div>
-                            <button type="submit" class="btn btn-info mt-2 mb-2 btn-4 btn-cen">Submit</button>
                         </div>
+                        <div class="copyright mt-3 mb-3 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                     </div>
-                    <div class="copyright mt-3 mb-3 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                 </div>
-            </div>
-        </form>
-    </div>
+            </form>
+        </div>
+    <?php } else {
+        require "../View/adminLogin.php";
+    } ?>
 </body>
 
 </html>
