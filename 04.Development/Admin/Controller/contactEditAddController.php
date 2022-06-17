@@ -16,7 +16,7 @@ if(isset($_POST)){
     $location2 = $_FILES['sl_2']['tmp_name'];
     $del_flg = 0;
 
-    if(move_uploaded_file($location1 , "../resource/image/". $slide_1 || move_uploaded_file($location2 , "../resource/image/". $slide_2))){
+    if(move_uploaded_file($location1 , "../resource/image/". $slide_1 && move_uploaded_file($location2 , "../resource/image/". $slide_2))){
 
         $db = new DBConnect();
         $dbconnect = $db->connect();
@@ -65,7 +65,54 @@ if(isset($_POST)){
         $sql->bindValue(":instagram", $instagram);
         $sql->bindValue(":twitter", $twitter);
         $sql->bindValue(":del_flg", $del_flg);
-        $sql->bindValue(":created_date", "6/1/2022");
+        $sql->bindValue(":created_date", date("d/m/Y"));
+        $sql->bindValue(":created_by", "myat kaung khant");
+        $sql->execute();
+
+        header("location: ../View/contactEdit.php");
+    }else{
+        $db = new DBConnect();
+        $dbconnect = $db->connect();
+        $sql = $dbconnect->prepare(
+            "INSERT INTO site_master
+            (
+                phone,
+                address,
+                email,
+                welcome_text,
+                available_time,
+                facebook,
+                instagram,
+                twitter,
+                del_flg,
+                created_date,
+                created_by
+            )
+            VALUES
+            (
+                :phone,
+                :address,
+                :email,
+                :weltxt,
+                :avatime,
+                :facebook,
+                :instagram,
+                :twitter,
+                :del_flg,
+                :created_date,
+                :created_by
+            );"
+        );
+        $sql->bindValue(":phone", $phone);
+        $sql->bindValue(":address", $address);
+        $sql->bindValue(":email", $email);
+        $sql->bindValue(":weltxt", $weltxt);
+        $sql->bindValue(":avatime", $avaTime);
+        $sql->bindValue(":facebook", $facebook);
+        $sql->bindValue(":instagram", $instagram);
+        $sql->bindValue(":twitter", $twitter);
+        $sql->bindValue(":del_flg", $del_flg);
+        $sql->bindValue(":created_date", date("d/m/Y"));
         $sql->bindValue(":created_by", "myat kaung khant");
         $sql->execute();
 
