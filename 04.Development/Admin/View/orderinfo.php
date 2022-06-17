@@ -19,55 +19,57 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <form action="">
-            <div class="row">
-                <div class="col-2 nav_box">
-
-                </div>
-                <div class="col-10">
-                    <div class="d-flex title_bar text-align-center">
+    <?php session_start();
+    if (isset($_SESSION['status'])) { ?>
+        <div class="container-fluid">
+            <form action="">
+                <div class="row">
+                    <div class="col-2 nav_box">
 
                     </div>
-                    <div class="author_bar">
-                        <div class="d-flex justify-content-between">
-                            <p class="pt-4 ps-4 author_list">Order List</p>
+                    <div class="col-10">
+                        <div class="d-flex title_bar text-align-center">
+
                         </div>
-                        <hr />
-                        <br>
-                        <table class="table table-striped white_table tb-edit mt-3">
-                            <?php require "../Controller/orderInfoController.php" ?>
-                            <tr>
-                                <th class="text-center">No</th>
-                                <th class="text-center">Date</th>
-                                <th class="text-center">Book Name</th>
-                                <th class="text-center">Location</th>
-                                <th class="text-center">Book Price</th>
-                            </tr>
-                            <?php
-                            $count = 1;
-                            foreach ($result as $key => $value) {
-                                echo "<tr>";
-                                echo "<td class='text-center'>" . $count . ".</td>";
-                                echo "<td class='text-center'>" . $value['order_date'] . "</td>";
-                                echo "<td class='text-center'>" . $value['book_name'] . "</td>";
-                                echo "<td class='text-center'>" . $value['customer_address'] . "</td>";
-                                echo "<td class='text-center'>" . $value['total_price'] . "</td>";
-                                echo "</tr>";
-                                $count++;
-                            }
-                            ?>
-                        </table>
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination float-end me-5">
-                                <li class="page-item"><a class="page-link" href="?pageno=1">First</a></li>
-                                <li class="page-item 
+                        <div class="author_bar">
+                            <div class="d-flex justify-content-between">
+                                <p class="pt-4 ps-4 author_list">Order List</p>
+                            </div>
+                            <hr />
+                            <br>
+                            <table class="table table-striped white_table tb-edit mt-3">
+                                <?php require "../Controller/orderInfoController.php" ?>
+                                <tr>
+                                    <th class="text-center">No</th>
+                                    <th class="text-center">Date</th>
+                                    <th class="text-center">Book Name</th>
+                                    <th class="text-center">Location</th>
+                                    <th class="text-center">Book Price</th>
+                                </tr>
+                                <?php
+                                $count = 1;
+                                foreach ($result as $key => $value) {
+                                    echo "<tr>";
+                                    echo "<td class='text-center'>" . $count . ".</td>";
+                                    echo "<td class='text-center'>" . $value['order_date'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['book_name'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['customer_address'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['total_price'] . "</td>";
+                                    echo "</tr>";
+                                    $count++;
+                                }
+                                ?>
+                            </table>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination float-end me-5">
+                                    <li class="page-item"><a class="page-link" href="?pageno=1">First</a></li>
+                                    <li class="page-item 
                                 <?php
                                 if ($pageno <= 1) {
                                     echo 'disabled';
                                 }
                                 ?>">
-                                    <a class="page-link" href="
+                                        <a class="page-link" href="
                                     <?php
                                     if ($pageno <= 1) {
                                         echo '#';
@@ -76,17 +78,17 @@
                                     }
                                     ?>
                                     ">
-                                        <span aria-hidden="true">Pre</span>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#"><?php echo $pageno; ?></a></li>
-                                <li class="page-item
+                                            <span aria-hidden="true">Pre</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#"><?php echo $pageno; ?></a></li>
+                                    <li class="page-item
                                 <?php
                                 if ($pageno >= $total) {
                                     echo 'disabled';
                                 }
                                 ?>">
-                                    <a class="page-link" href="
+                                        <a class="page-link" href="
                                     <?php
                                     if ($pageno >= $total) {
                                         echo '#';
@@ -95,18 +97,21 @@
                                     }
                                     ?>
                                     ">Next</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="?pageno=<?php echo $total; ?>" aria-label="Next"><span aria-hidden="true">Last</span></a></li>
-                            </ul>
-                        </nav>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="?pageno=<?php echo $total; ?>" aria-label="Next"><span aria-hidden="true">Last</span></a></li>
+                                </ul>
+                            </nav>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </div>
+                        <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
                     </div>
-                    <div class="copyright mt-4 text-center">Copyright@2022YadanarThike All Rights Reserved.</div>
-                </div>
 
-        </form>
-    </div>
+            </form>
+        </div>
+    <?php } else {
+        require "../View/adminLogin.php";
+    } ?>
 </body>
 
 </html>

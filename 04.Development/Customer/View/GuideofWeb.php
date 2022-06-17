@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>GuideofWeb</title>
-        <link rel="stylesheet" href="../resource/css/guideOfWeb.css">
-        <link rel="stylesheet" href="../resource/css/commonUser.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    </head>
-    <body>
-    <div class="body">
-        <div class="mytop">
-            <img class="imgs" src="../resource/image/GoWtop.png" alt="">
-        </div>
-        <!-- <div class="smalltop">
-        သင်၏စာအုပ်များကိုအွန်လိုင်းမှမှာယူပုံအဆင့်ဆင့်
-        </div> -->
-        <div class="mainbody">
-            <?php
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuideofWeb</title>
+    <link rel="stylesheet" href="../resource/css/guideOfWeb.css">
+    <link rel="stylesheet" href="../resource/css/commonUser.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <!--Customize CSS-->
+    <link rel="stylesheet" href="../resource/css/bookDescription.css">
+    <link rel="stylesheet" href="../resource/css/commonUser.css">
+    <link rel="stylesheet" href="../resource/css/userSetting.css">
+    <link rel="stylesheet" href="../resource/css/cartPop.css">
+    <link rel="stylesheet" href="../resource/css/orderHistory.css">
+    <link rel="stylesheet" href="../resource/css/nav.css">
+    <link rel="stylesheet" href="../resource/css/order.css">
+    <link rel="stylesheet" href="../resource/css/footer.css ">
+    <!--Bootstrap CSS & JavaScript-->
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!--Customize JS-->
+    <script src="../resource/js/cSlik.js" defer></script>
+    <script src="../resource/js/jquery3.6.0.js"></script>
+    <script src="../resource/js/nav.js"></script>
+</head>
+
+<body>
+
+        <div class="nav-bar"></div>
+        <div class="setting"></div>
+        <div class="cart"></div>
+        <div class="order"></div>
+        <div class="orderHistory"></div>
+        </br>
+        <div class="guide">
+            <div class="mytop">
+                <img class="imgs one" src="../resource/image/GoWtop.png" alt="">
+            </div>
+            <div class="mainbody">
+                <?php
                 require("../Controller/guildofWebController.php");
-                for($i = 0; $i <count($result);$i++){
-                    echo "<div class='topic'>"."<p class='titles'>". $result[$i]['userguide_title']."</p>". "</div>";
-                    echo "<div class='des'>"."<p class='facts'>". $result[$i]['userguide_title']."</p>". "</div>";
+                for ($i = 0; $i < count($result); $i++) {
+                    echo "<div class='topic'>" . "<p class='titles'>" . $result[$i]['userguide_title'] . "</p>" . "</div>";
+                    echo "<div class='des'>" . "<p class='facts'>" . $result[$i]['userguide_title'] . "</p>" . "</div>";
                 }
-            ?>
-            <!-- <div class="topic"><p class="titles">စတင်အသုံးပြုပုံ။</p></div>
-            <div class="des"><p class="facts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                ?>
+            </div>
+            <div class="mytop">
+                <img class="imgs two" src="../resource/image/Gowbot.png" alt="">
+            </div>
 
-            <div class="topic"><p class="titles">အမျိုးအစားတစ်ခုကို ရွေးပါ။</p></div>
-            <div class="des"><p class="facts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
-
-            <div class="topic"><p class="titles">သင်နှစ်သက်သောစာအုပ်ကိုရွေးချယ်ပါ။</p></div>
-            <div class="des"><p class="facts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
-
-            <div class="topic"><p class="titles">သင့်အော်ဒါ တင်ရန် သို့မဟုတ် စစ်ဆေးရန်။</p></div>
-            <div class="des"><p class="facts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div> -->
         </div>
-        <div class="mytop">
-            <img class="imgs" src="../resource/image/Gowbot.png" alt="" >
-        </div>
-        <!-- <div class="smalltop">
-        သင် သိလိုသည့်မေးခွန်းများရှိပါက အကူအညီအတွက်  + 959 123 456 789 ကိုဖုန်းခေါ်ဆိုခြင်းဖြင့် ကျွန်ုပ်တို့ကိုဆက်သွယ်ပါ။
-        </div> -->
-        
     </div>
-</div>
-    </body>
+</body>
+
 </html>
