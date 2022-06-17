@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Author Profile</title>
+    <?php require "../Controller/iconController.php"; ?>
+    <title>စာရေးဆရာများ အ​ကြောင်း</title>
 
     <link rel="stylesheet" href="../resource/css/authorProfile.css">
-    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -41,9 +42,12 @@
     <!--Customize JS-->
     <!-- <script src="../resource/js/Cslik.js" defer></script> -->
     <script src="../resource/js/nav.js"></script>
+    <script src="../resource/js/jquery3.6.0.js"></script>
+    <script src="../resource/js/homeCart.js"></script>
 </head>
 
 <body>
+    <?php session_start();?>
     <div class="nav-bar"></div>
     <div class="setting"></div>
     <div class="cart"></div>
@@ -88,7 +92,9 @@
                 echo "<div class='authorName'>" . $result[$i]['author_name'] . "</div>";
                 echo "<div class='bookName'>" . $result[$i]['book_name'] . "</div>";
                 echo "<p class='item-price'>" . $result[$i]['book_price'] . "</p>";
-                echo "<a href='#' class='btn '>စျေးဝယ်ခြင်းထဲသို့ထည့်ရန်</a>";
+                if (isset($_SESSION['status'])) {
+                    echo "<button type='button' class='btn btn-basket' value='" . $result[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
+                }
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";

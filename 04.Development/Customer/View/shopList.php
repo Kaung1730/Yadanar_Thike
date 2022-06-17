@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Shop List</title>
+    <title>စာအုပ်ဆိုင်များစာရင်း</title>
     <link rel="stylesheet" href="../resource/css/shopList.css">
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/nav.js"></script>

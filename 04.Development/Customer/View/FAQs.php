@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQs</title>
+    <title>​မေး​​လေ့ရှိ​သော ​မေးခွန်းများ</title>
     <link rel="shortcut icon" href="../resource/image/logo.png">
     <link rel="stylesheet" href="../resource/css/faq.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">

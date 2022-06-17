@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy</title>
+    <title>ကိုယ်​ရေးအချက်အလက် မူပိုင်ခွင့်များ</title>
     <script src="../resource/js/jquery3.6.0.js"></script>
     <link rel="shortcut icon" href="../resource/image/logo.png">
     <link rel="stylesheet" href="../resource/css/privacy.css">
