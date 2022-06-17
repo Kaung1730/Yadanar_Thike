@@ -56,12 +56,12 @@
                         echo "<div class='tab'>";
                         echo "<div class='up'>";
                         echo "<div class='png'>";
-                        echo  "<img src='../resource/image/" . $value['icon'] . "' alt='' class='img'>";
+                        echo  "<img src='../../Admin/resource/image/" . $value['icon'] . "' alt='' class='img'>";
                         echo "</div>";
-                        echo "<p class='detail a'>" . $value['question'] . "</p>";
+                        echo "<p class='detail a text-center'>" . $value['question'] . "</p>";
                         echo "</div>";
                         echo "<div class='down'>";
-                        echo "<p class='back'>" . $value['answer'] . "</p>";
+                        echo "<p class='back'>" . substr($value['answer'],0,80) . "</p>";
                         echo "</div>";
                         echo "</div>";
                     }
