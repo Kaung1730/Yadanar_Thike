@@ -152,13 +152,14 @@
 .card .content p {
     margin-top: 9vh;
     text-align: center !important;
+    text-align: center;
 }
 
 .card:hover>.content {
     opacity: 1;
     transform: translateY(120px);
     text-align: center !important;
-
+    
 }
 
 .card .content .btn {
@@ -206,8 +207,8 @@
 }
 
 .disItem .discountCard .disImage {
-    width: 20vw;
-    height: 37vh;
+    width: 18vw;
+    height: 34vh;
     margin: 5vh 0 0 2vw;
 }
 
@@ -217,8 +218,8 @@
 }
 
 .disTag span {
-    width: 8vw;
-    height: 6vh;
+    width: 7vw;
+    height: 4vh;
     background-color: var(--yellow);
     display: block;
     position: absolute;
@@ -367,83 +368,6 @@
     background-color: var(--yellow);
 }
 
-@media screen and (max-width: 1024px) {
-
-    /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  */
-    .bookImg {
-        width: 18vw;
-        height: 22vh;
-    }
-
-    .card .content p {
-        margin-top: 1vh;
-        padding-left: 5vw ;
-    }
-    .card:hover {
-        height: 55vh;
-    }
-/* 
-    .card .content .btn {
-        margin-left: 7vw;
-    } */
-
-    .imgBox .bookImg {
-        padding-right: 5vw;
-    }
-
-    /* လတ်တလောလူကြိုက်များသော စာအုပ်များ end */
-
-
-    /* DISCOUNT start */
-
-    .disItem .disContent {
-        margin: 18vh 0vw 0vh 5vw;
-        font-size: 25px;
-
-    }
-
-
-    .disItem .disContent h2 {
-        margin-left: 7vw;
-    }
-
-    .disItem .disContent p {
-        margin: 2vh 0vw 2vh 0vw;
-        font-size: 15px;
-    }
-
-
-    .disItem .disContent .disPrice {
-        margin-left: 9vw;
-        font-size: 17px;
-    }
-
-    .disItem .discountCard {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        margin: 13vh 0vw 0vh 12vw;
-    }
-
-    .disItem .discountCard .disImage {
-        width: 18vw;
-        height: 25vh;
-        margin: 4vh 0vw 0vh 1vw !important;
-    }
-
-    .disTag {
-        margin: 2vh 0vw 0vh -1vw;
-    }
-
-    .disTag span {
-        width: 10vw;
-        height: 4vh;
-        font-size: 12px;
-    }
-
-    /* DISCOUNT end */
-}
-
 
 
 @media screen and (max-width: 720px) {
@@ -537,8 +461,8 @@
 
     .disItem .discountCard .disImage {
         width: 30vw;
-        height: 27vh;
-        margin: 7vh 0vw 0vh 8vw !important;
+        height: 23vh;
+        margin: 3vh 0vw 0vh 6vw !important;
     }
 
     .disTag {

@@ -58,7 +58,7 @@
     <div class="cart"></div>
     <div class="order"></div>
     <div class="orderHistory"></div>
-    <div class="container container-fluid ">
+    <div class="container  ">
         <!-- HeaderSlider -->
 
         <?php
