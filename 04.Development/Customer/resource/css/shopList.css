@@ -59,117 +59,15 @@
 
 /* SAR PAY LAW KA BOOK SHOP */
 .SPLKBookShop {
-    margin: 7vh 0vw 0vh 4vw;
+    margin-top: 7vh;
+    margin-left: 5vw;
 }
 
 .sarpaylawkaPSD {
-    margin: 23vh 0 0 5vw;
-}
-
-.sarpaylawkaJC {
-    margin: 53vh 0 0 5vw;
-}
-
-.sarpaylawkaCENTRAL {
-    margin: 83vh 0 0 5vw;
-}
-
-.sarpaylawkaSOK {
-    margin: 113vh 0 0 5vw;
-}
-
-.sarpaylawkaHLEDAN {
-    margin: 143vh 0 0 5vw;
-}
-
-.sarpaylawkaKM {
-    margin: 173vh 0 0 5vw;
-}
-
-.sarpaylawkaINSEIN {
-    margin: 203vh 0 0 5vw;
-}
-
-.sarpaylawkaTC {
-    margin: 233vh 0 0 5vw;
-}
-
-.sarpaylawkaNOK {
-    margin: 263vh 0 0 5vw;
-}
-
-/* AParDawMyal BOOKS SHOP */
-.APDMBookShop {
-    margin: 295vh 0vw 0vh 4vw;
-}
-
-.AParDawMyal {
-    margin: 310vh 0 0 5vw;
-}
-
-/* စောဦးစာပေ */
-.SawOoBookShop {
-    margin: 330vh 0vw 0vh 4vw;
-}
-
-.SawOo {
-    margin: 345vh 0 0 5vw;
-}
-
-/* အင်းဝ စာအုပ်တိုက် */
-
-.InnwaBookShop {
-    margin: 365vh 0vw 0vh 4vw;
-}
-
-.InnwaPSD {
-    margin: 385vh 0 0 5vw;
-}
-
-.InnwaHLEDAN {
-    margin: 410vh 0 0 5vw;
-}
-
-.InnwaMMPLAZA {
-    margin: 440vh 0 0 5vw;
-}
-
-.InnwaTIMECITY {
-    margin: 470vh 0 0 5vw;
-}
-
-.InnwaTerminalM {
-    margin: 500vh 0 0 5vw;
+    margin: 5vh 0 0 5vw;
 }
 
 
-.InnwaMDY {
-    margin: 530vh 0 0 5vw;
-}
-
-/* ရာပြည့် */
-
-.YarPyaeBookShop {
-    margin: 560vh 0vw 0vh 4vw;
-}
-
-.YarpyaePSD {
-    margin: 580vh 0 0 5vw;
-}
-
-.YarpyaeHLEDAN {
-    margin: 600vh 0 0 5vw;
-}
-
-/* ကံ့ကော်ဝတ်ရည် စာပေတိုက် */
-
-.KantKawBookShop {
-    margin: 630vh 0vw 0vh 4vw;
-}
-
-.KantKaw {
-    margin: 650vh 0 0 5vw;
-} */
 
 
 /* Footer */
@@ -185,7 +83,26 @@
 
 
 /*Mobile View*/
-
+@media screen and (max-width: 1300px){
+    .bookshopName {
+        width: 26vw;
+    }
+}
+@media screen and (max-width: 1150px){
+    .bookshopName {
+        width: 30vw;
+    }
+}
+@media screen and (max-width: 1000px){
+    .bookshopName {
+    font-size: 15px;    
+    }
+}
+@media screen and (max-width: 820px){
+    .bookshopName {
+        width: 35vw;   
+    }
+}
 @media screen and (max-width: 720px) {
 
     * {
@@ -225,7 +142,7 @@
 
     .shopListBody {
         width: 90vw;
-
+        height: 500vh;
     }
 
     /* .footer {
