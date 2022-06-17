@@ -60,13 +60,8 @@
                 <!-- YangonDivision -->
                 <?php
                 require "../Controller/stateController.php";
-<<<<<<< HEAD
-                for ($i = 1; $i <= 15; $i++) {
-                    $id = $i;
-=======
                 for ($i = 1; $i <= 14; $i++) {
                     $id =$i;
->>>>>>> origin/main
                     require "../Controller/townshipController.php";
                     echo "<div class ='division yangon'>" . $result[0]['state_name'] . "</div>";
                     echo "<div class='yangonTownList'>";
