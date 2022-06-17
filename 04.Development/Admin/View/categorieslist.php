@@ -38,7 +38,6 @@
                                 <tr>
                                     <th class="text-center">No</th>
                                     <th class="text-center">Categories Name</th>
-                                    <th class="text-center">Book Counts</th>
                                     <th class="text-center last" colspan="2">Action</th>
                                 </tr>
                                 <?php
@@ -48,7 +47,6 @@
                                     echo "<tr>";
                                     echo "<td class='text-center'>" . $count . ".</td>";
                                     echo "<td class='text-center'>" . $value['category_name'] . "</td>";
-                                    echo "<td class='text-center'></td>";
                                     echo "<td class='text-center last'><a href='../View/categoryEdit.php?id=" . $value['category_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                     echo "<td class='text-center last'><a href='../Controller/categoryDeleteController.php?id=" . $value['category_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                                     echo "</tr>";
