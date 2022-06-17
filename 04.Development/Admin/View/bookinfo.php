@@ -59,8 +59,8 @@
                                         echo "<td class='text-center'>" . $value['book_name'] . "</td>";
                                         echo "<td class='text-center'>" . $value['category_name'] . "</td>";
                                         echo "<td class='text-center'>" . $value['author_name'] . "</td>";
-                                        echo "<td class='text-center'>" . $value['book_desp'] . "</td>";
-                                        echo "<td class='text-center'>" . substr($value['book_price'], 0, 50) . "</td>";
+                                        echo "<td class='text-center'>" . substr($value['book_desp'], 0, 50) . "</td>";
+                                        echo "<td class='text-center'>" . $value['book_price'] . "</td>";
                                         echo "<td class='text-center last'><a href='../View/bookEdit.php?id=" . $value['book_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                         echo "<td class='text-center last'><a href='../Controller/bookDeleteController.php?id=" . $value['book_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                                         echo "</tr>";
