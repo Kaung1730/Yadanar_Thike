@@ -9,12 +9,8 @@
     margin-left: 250px;
     margin-top: 100px;
     margin-bottom: 100px; */
-    margin-top: 5%;
   background-color: var(--grayblack);
   /* width: fit-content; */
-}
-.mytop {
-  background-color: var(--grayblack);
 }
 
 .mainbody {
@@ -47,9 +43,11 @@
   padding-top: 2%;
   margin-bottom: 8%;
 }
-.imgs {
+.imgs{
   width: 100%;
 }
+
+
 @media screen and (max-width: 900px) {
     .titles {
       padding-top: 4%;

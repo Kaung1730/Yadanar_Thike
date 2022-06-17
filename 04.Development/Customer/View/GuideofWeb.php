@@ -34,16 +34,16 @@
 </head>
 
 <body>
-    <div class="container guide">
+
         <div class="nav-bar"></div>
         <div class="setting"></div>
         <div class="cart"></div>
         <div class="order"></div>
         <div class="orderHistory"></div>
         </br>
-        <div class="body">
+        <div class="guide">
             <div class="mytop">
-                <img class="imgs" src="../resource/image/GoWtop.png" alt="">
+                <img class="imgs one" src="../resource/image/GoWtop.png" alt="">
             </div>
             <div class="mainbody">
                 <?php
@@ -55,11 +55,10 @@
                 ?>
             </div>
             <div class="mytop">
-                <img class="imgs" src="../resource/image/Gowbot.png" alt="">
+                <img class="imgs two" src="../resource/image/Gowbot.png" alt="">
             </div>
 
         </div>
-    </div>
     </div>
 </body>
 
