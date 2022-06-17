@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Author List</title>
@@ -123,24 +123,43 @@
             <?php
             // $count = 1;
             require "../Controller/authorListController.php";
-            for ($i = 1; $i < count($result); $i++) {
+            // for ($i = 1; $i < count($result); $i++) {
+            //     echo "<div class='box'>";
+            //     echo " <a name='". $result[$i]['author_category']."'> <div class='alphabetList' id='alphabet1'>" . $result[$i]['author_category'] . "</div> </a>";
+            //     echo " <div class='authorsList'>";
+            //     echo " <ul class='authorListLength'>";
+            //     for ($j = 0; $j < count($result); $j++) {
+            //         echo  " <li > <a href= '../View/authorProfile.php?id=" . $result[$j]['author_id'] . "' class='authorListLink' >" . explode(",", $result[$j]['authorName']) .  "</a> </li>";
+            //     }
+            //     // echo  " <li > <a href= '../View/authorProfile.php?id=" . $result[$i]['author_id'] . "' class='authorListLink' >" . $result[$i]['author_name'] .  "</a> </li>";
+            //     echo "</ul>";
+            //     echo "</div>";
+            //     echo "</div>";
+
+            // }
+            // print_r($result);
+            foreach ($result as $key => $value) {
                 echo "<div class='box'>";
-                echo " <a name='". $result[$i]['author_category']."'> <div class='alphabetList' id='alphabet1'>" . $result[$i]['author_category'] . "</div> </a>";
+                echo " <a name='" . $value['author_category'] . "'> <div class='alphabetList' id='alphabet1'>" . $value['author_category'] . "</div> </a>";
                 echo " <div class='authorsList'>";
                 echo " <ul class='authorListLength'>";
-                // for ($j = 0; $j < count($result); $j++) {
-                //     echo  " <li > <a href= '../View/authorProfile.php?id=" . $result[$j]['author_id'] . "' class='authorListLink' >" . $result[$j]['author_name'] .  "</a> </li>";
-                // }
-                echo  " <li > <a href= '../View/authorProfile.php?id=" . $result[$i]['author_id'] . "' class='authorListLink' >" . $result[$i]['author_name'] .  "</a> </li>";
+                
+                echo" <li > <a href= '../View/authorProfile.php?id=" . $value['authorID'] . "' class='authorListLink' >";
+                foreach (explode(",", $value['authorName']) as $key => $value) {
+                    echo  $value;
+                }
+                echo"</a> </li>";
                 echo "</ul>";
                 echo "</div>";
                 echo "</div>";
-
+                // print_r(explode(",", $value['authorName']));
+                // foreach(explode(",", $value['authorName']) as $key => $value){
+                //     echo "<div>".$value."</div>";
+                // }
             }
-            // print_r($result);
             ?>
 
-           
+
         </div>
     </div>
     <!-- FOOTER -->
