@@ -229,7 +229,7 @@
 
                 for ($i = 0; $i < 4; $i++) {
                     echo "<div class='col-sm-3'>";
-                    echo "<a href='../View/BookDescription.php' class='categoryList text-decoration-none'>";
+                    echo "<a href='../View/category.php' class='categoryList text-decoration-none'>";
                     echo " <div class='thumb-wrapper'>";
                     echo " <div class='img-box'>";
                     echo " <img src='../../Admin/resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";

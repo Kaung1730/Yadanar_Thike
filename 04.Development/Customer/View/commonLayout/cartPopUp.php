@@ -241,8 +241,8 @@ if (isset($_SESSION['status'])) {
                                     <option value="ကချင်ပြည်နယ်">ကချင်ပြည်နယ်</option>
                                     <option value="ကယားပြည်နယ်">ကယားပြည်နယ်</option>
                                     <option value="ကရင်ပြည်နယ်">ကရင်ပြည်နယ်</option>
-                                    <option value="	မကွေးတိုင်းဒေသကြီး">မကွေးတိုင်းဒေသကြီး</option>
-                                    <option value="	မန္တလေးတိုင်းဒေသကြီး">မန္တလေးတိုင်းဒေသကြီး</option>
+                                    <option value="မကွေးတိုင်းဒေသကြီး">မကွေးတိုင်းဒေသကြီး</option>
+                                    <option value="မန္တလေးတိုင်းဒေသကြီး">မန္တလေးတိုင်းဒေသကြီး</option>
                                     <option value="မွန်ပြည်နယ်">မွန်ပြည်နယ်</option>
                                     <option value="နေပြည်တော် ပြည်ထောင်စုနယ်မြေ">နေပြည်တော် ပြည်ထောင်စုနယ်မြေ</option>
                                     <option value="ရခိုင်ပြည်နယ်">ရခိုင်ပြည်နယ်</option>
