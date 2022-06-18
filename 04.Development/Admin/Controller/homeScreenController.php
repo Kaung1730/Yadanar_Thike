@@ -4,12 +4,12 @@ require_once "../Model/dbConnection.php";
 if (isset($_POST)) {
     $shopName = $_POST['shop'];
     $logo = $_FILES['logo']['name'];
-    $location = $_FILES['logo']['tmp_name'];
+    $location1 = $_FILES['logo']['tmp_name'];
     $icon = $_FILES['icon']['name'];
-    $location = $_FILES['icon']['tmp_name'];
+    $location2 = $_FILES['icon']['tmp_name'];
     $del_flg = 0;
 
-    if (move_uploaded_file($location, "../resource/upload_img/" . $logo || move_uploaded_file($location, "../resource/upload_img/" . $icon))) {
+    if (move_uploaded_file($location1, "../resource/upload_img/" . $logo || move_uploaded_file($location2, "../resource/upload_img/" . $icon))) {
 
         $db = new DBConnect();
         $dbconnect = $db->connect();
