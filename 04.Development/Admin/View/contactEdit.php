@@ -59,11 +59,11 @@
                                 <label for="slide_1" class="form-label mt-2">Slide 1</label>
                                 <div class="input-group mb-3 input-width">
                                     <input type="file" class="form-control input-edit" id="slide_1" name="sl_1">
-                                    <label class="input-group-text input-btn" for="inputGroupFile02">Browse</label>
+                                    <label class="input-group-text input-btn" for="slide_1">Browse</label>
                                 </div>
                                 <label for="slide_2" class="form-label mt-2">Slide 2</label>
                                 <div class="input-group mb-3 input-width">
-                                    <input type="file" class="form-control input-edit" id="inputGroupFile02" name="sl_2">
+                                    <input type="file" class="form-control input-edit" id="slide_2" name="sl_2">
                                     <label class="input-group-text input-btn" for="slide_2">Browse</label>
                                 </div>
                                 <button type="submit" class="btn btn-info mt-2 mb-2 btn-4 btn-cen">Submit</button>

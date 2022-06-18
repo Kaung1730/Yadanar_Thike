@@ -3,9 +3,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Result</title>
+    <title>စာအုပ်များရှာဖွေရန်</title>
     <link rel="stylesheet" href="../resource/css/searchResult.css">
-    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <?php require "../Controller/iconController.php"; ?>
+    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -46,12 +47,6 @@
 </head>
 
 <body>
-    <div class="nav-bar"></div>
-    <div class="setting"></div>
-    <div class="cart"></div>
-    <div class="order"></div>
-    <div class="orderHistory"></div>
-
     <div class="container ">
         <div class="resultBox pt-4">
             <a class="h5  text-decoration-none" href="../View/HomePage.php">

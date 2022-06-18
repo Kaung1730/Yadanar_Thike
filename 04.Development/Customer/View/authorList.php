@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Author List</title>
+    <title>စာရေးဆရာများ</title>
     <link rel="stylesheet" href="../resource/css/authorList.css">
-    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <?php require "../Controller/iconController.php"; ?>
+    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -139,16 +140,17 @@
             // }
             // print_r($result);
             foreach ($result as $key => $value) {
+                $autId = explode(",", $value['authorID']);
+                $autName = explode(",", $value['authorName']);
                 echo "<div class='box'>";
                 echo " <a name='" . $value['author_category'] . "'> <div class='alphabetList' id='alphabet1'>" . $value['author_category'] . "</div> </a>";
                 echo " <div class='authorsList'>";
                 echo " <ul class='authorListLength'>";
-                
-                echo" <li > <a href= '../View/authorProfile.php?id=" . $value['authorID'] . "' class='authorListLink' >";
-                foreach (explode(",", $value['authorName']) as $key => $value) {
-                    echo  $value;
+                for ($i=0; $i < count($autId); $i++) {
+                    echo " <li > <a href= '../View/authorProfile.php?id=" . $autId[$i] . "' class='authorListLink' >";
+                    echo $autName[$i];
+                    echo "</a> </li>";
                 }
-                echo"</a> </li>";
                 echo "</ul>";
                 echo "</div>";
                 echo "</div>";

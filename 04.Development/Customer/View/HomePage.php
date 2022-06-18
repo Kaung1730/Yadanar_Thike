@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>မူလစာမျက်နှာ</title>
     <link rel="stylesheet" href="../resource/css/homePage.css">
 
     <script src="../resource/js/jquery3.6.0.js"></script>
@@ -21,7 +21,8 @@
     <!-- notosan myanmar font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <?php require "../Controller/iconController.php"; ?>
+    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&display=swap" rel="stylesheet">
 
     <!-- centerSlick -->
@@ -107,7 +108,7 @@
             echo "<div class='homeslider slicker mt-5 d-flex justify-content-center'>";
             for ($i = 0; $i < count($result); $i++) {
                 echo " <div class='slide  d-flex justify-content-center'>";
-                echo "<a  href='../View/bookDescription.php?book_id=".$result[$i]['book_id']."'>";
+                echo "<a  href='../View/bookDescription.php?book_id=" . $result[$i]['book_id'] . "'>";
                 echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
                 // echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
                 echo "</a>";
@@ -169,7 +170,7 @@
                 require "../Controller/homePageController.php";
                 for ($i = 0; $i < 4; $i++) {
                     echo "<div class='card'>";
-                    echo "<a class='text-decoration-none' href='../View/bookDescription.php?book_id=".$result[$i]['book_id']."'>";
+                    echo "<a class='text-decoration-none' href='../View/bookDescription.php?book_id=" . $result[$i]['book_id'] . "'>";
                     echo " <div class='imgBox'>";
                     echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
                     // echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
@@ -177,7 +178,7 @@
                     echo "</div>";
                     echo "<div class='content'>";
                     echo " <p class= 'text-center  text-decoration-none'>" . $result[$i]['book_price'] . "</p>";
-                    
+
                     echo "</a>";
                     if (isset($_SESSION['status'])) {
                         echo "<button type='button' class='btn btn-basket' value='" . $result[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
@@ -195,7 +196,7 @@
         <?php
 
         require "../Controller/discountController.php";
-        echo "<a class='text-decoration-none' href='../View/bookDescription.php?book_id=".$result[0]['book_id']."'>";
+        echo "<a class='text-decoration-none' href='../View/bookDescription.php?book_id=" . $result[0]['book_id'] . "'>";
         echo " <div class='disItem'>";
         echo "<div class='disContent'>";
         echo "<h2>" . $result[0]['author_name'] . "</h2>";
@@ -228,7 +229,7 @@
 
                 for ($i = 0; $i < 4; $i++) {
                     echo "<div class='col-sm-3'>";
-                    echo "<a href='../View/BookDescription.php' class='categoryList text-decoration-none'>";
+                    echo "<a href='../View/category.php' class='categoryList text-decoration-none'>";
                     echo " <div class='thumb-wrapper'>";
                     echo " <div class='img-box'>";
                     echo " <img src='../../Admin/resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
@@ -354,10 +355,15 @@
                             <h6 class="mb-4 font-weight-bold">
                                 <i class="bi bi-geo-alt-fill fa-lg"></i>ရုံးချုပ်တည်နေရာ
                             </h6>
-                            <p>အမှတ် (၁၂၃) ၊ ရတနာလမ်း၊တောင်ဥက္ကလာပမြို့နယ်၊ ရန်ကုန်။</p>
+                            <?php require "../Controller/sitemasterController.php" ?>
+                            <!-- <p>အမှတ် (၁၂၃) ၊ ရတနာလမ်း၊တောင်ဥက္ကလာပမြို့နယ်၊ ရန်ကုန်။</p>
                             <p> yadanarthikebookshop@gmail.com</p>
                             <p> +၉၅၉ ၁၂၃ ၄၅၆ ၇၈၉</p>
-                            <p> နေ့စဉ် မနက် ၉း၀၀ မှ ညနေ ၆း၀၀ အထိ ဖွင့်လှစ်ပါသည်။</p>
+                            <p> နေ့စဉ် မနက် ၉း၀၀ မှ ညနေ ၆း၀၀ အထိ ဖွင့်လှစ်ပါသည်။</p> -->
+                            <p><?php echo $result[0]['address'] ?></p>
+                            <p><?php echo $result[0]['email'] ?></p>
+                            <p><?php echo $result[0]['phone'] ?></p>
+                            <p> နေ့စဉ် <?php echo $result[0]['available_time'] ?> အထိ ဖွင့်လှစ်ပါသည်။</p>
                         </div>
                         <!-- Grid column -->
                         <hr class="w-100 clearfix d-md-none" />

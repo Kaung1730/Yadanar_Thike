@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Service</title>
+    <title>ဝန်​ဆောင်မှုများ</title>
     <link rel="stylesheet" href="../resource/css/service.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <script src="jquery-3.6.0.min.js"></script>
-    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <?php require "../Controller/iconController.php"; ?>
+    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
     <!--Customize CSS-->
     <link rel="stylesheet" href="../resource/css/bookDescription.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">
@@ -56,12 +57,12 @@
                         echo "<div class='tab'>";
                         echo "<div class='up'>";
                         echo "<div class='png'>";
-                        echo  "<img src='../resource/image/" . $value['icon'] . "' alt='' class='img'>";
+                        echo  "<img src='../../Admin/resource/image/" . $value['icon'] . "' alt='' class='img'>";
                         echo "</div>";
-                        echo "<p class='detail a'>" . $value['question'] . "</p>";
+                        echo "<p class='detail a text-center'>" . $value['question'] . "</p>";
                         echo "</div>";
                         echo "<div class='down'>";
-                        echo "<p class='back'>" . $value['answer'] . "</p>";
+                        echo "<p class='back'>" . substr($value['answer'],0,80) . "</p>";
                         echo "</div>";
                         echo "</div>";
                     }

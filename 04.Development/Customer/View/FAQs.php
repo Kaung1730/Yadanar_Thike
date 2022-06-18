@@ -5,8 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQs</title>
-    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <title>​မေး​​လေ့ရှိ​သော ​မေးခွန်းများ</title>
+    <?php require "../Controller/iconController.php"; ?>
+    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
     <link rel="stylesheet" href="../resource/css/faq.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <script src="../resource/js/jquery3.6.0.js"></script>

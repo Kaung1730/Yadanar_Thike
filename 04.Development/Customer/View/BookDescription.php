@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookDescription</title>
-    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <title>စာအုပ်ဖော်ပြမှု</title>
+    <?php require "../Controller/iconController.php"; ?>
+    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
     <!--Customize CSS-->
     
     <link rel="stylesheet" href="../resource/css/commonUser.css">
@@ -166,7 +167,7 @@
                         <?php foreach ($reviewrResult as $key => $value) {?>
                         <div class="row g-0 border-bottom border-light">
                             <div class="col-1 ps-lg-4 ps-md-0 ps-0 pt-lg-2 pt-md-0 pt-0 border-left d-none d-md-block d-lg-block">
-                                <img src="../resource/customerimg/<?php echo $value['customer_profileImg']; ?>" class="rounded-circle img-circle img-fluid" />
+                                <img src="<?php echo $value['customer_profileImg']; ?>" class="rounded-circle img-circle img-fluid" />
                             </div>
                             <div class="col-10">
                                 <div class="row pt-2">

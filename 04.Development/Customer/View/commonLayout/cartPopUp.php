@@ -233,7 +233,7 @@ if (isset($_SESSION['status'])) {
                         <div class="row my-3 justify-content-center">
                             <div class="col-lg-10">
                                 <label for="" class="book-text my-2">တိုင်း​ဒေသကြီး/ပြည်နယ်</label>
-                                <select name="" id="state" class="book-text my-2 px-lg-4 mx-auto py-1">
+                                <select name="" id="state" class="book-text my-2 px-lg-4 px-sm-5 px-5 px-md-5 mx-auto py-1">
                                     <option value=""></option>
                                     <option value="ဧရာဝတီတိုင်းဒေသကြီး">ဧရာဝတီတိုင်းဒေသကြီး</option>
                                     <option value="ပဲခူးတိုင်းဒေသကြီး">ပဲခူးတိုင်းဒေသကြီး</option>
@@ -241,8 +241,8 @@ if (isset($_SESSION['status'])) {
                                     <option value="ကချင်ပြည်နယ်">ကချင်ပြည်နယ်</option>
                                     <option value="ကယားပြည်နယ်">ကယားပြည်နယ်</option>
                                     <option value="ကရင်ပြည်နယ်">ကရင်ပြည်နယ်</option>
-                                    <option value="	မကွေးတိုင်းဒေသကြီး">မကွေးတိုင်းဒေသကြီး</option>
-                                    <option value="	မန္တလေးတိုင်းဒေသကြီး">မန္တလေးတိုင်းဒေသကြီး</option>
+                                    <option value="မကွေးတိုင်းဒေသကြီး">မကွေးတိုင်းဒေသကြီး</option>
+                                    <option value="မန္တလေးတိုင်းဒေသကြီး">မန္တလေးတိုင်းဒေသကြီး</option>
                                     <option value="မွန်ပြည်နယ်">မွန်ပြည်နယ်</option>
                                     <option value="နေပြည်တော် ပြည်ထောင်စုနယ်မြေ">နေပြည်တော် ပြည်ထောင်စုနယ်မြေ</option>
                                     <option value="ရခိုင်ပြည်နယ်">ရခိုင်ပြည်နယ်</option>
@@ -257,7 +257,7 @@ if (isset($_SESSION['status'])) {
                             <div class="col-lg-10">
                                 <label for="township" class=" book-text my-2">မြို့</label>
                                 <br>
-                                <select name="" id="township" class="book-text my-2 px-lg-5 mx-auto py-1 township">
+                                <select name="" id="township" class="book-text my-2 px-lg-5 px-sm-5 px-5 px-md-5 mx-auto py-1 township">
 
                                 </select>
                             </div>

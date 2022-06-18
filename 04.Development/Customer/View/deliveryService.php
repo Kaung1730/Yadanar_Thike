@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Delivery Service</title>
-    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <title>အိမ်အ​ရောက်ပို့​ဆောင်​ပေးသည့် ဝန်​ဆောင်မှုများ</title>
+    <?php require "../Controller/iconController.php"; ?>
+    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
     <link rel="stylesheet" href="../resource/css/deliveryService.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <!-- CSS only -->
@@ -20,7 +21,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../resource/image/logo.png">
     <!--Customize CSS-->
     <link rel="stylesheet" href="../resource/css/bookDescription.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">

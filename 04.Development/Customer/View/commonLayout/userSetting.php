@@ -150,7 +150,6 @@ $("#update-btn").click(function(){
                                                 location.reload();
                                         }
                         });
-
                 }
             },
             error:function(err){
