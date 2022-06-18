@@ -11,6 +11,7 @@ $sql = $dbconnect->prepare("SELECT GROUP_CONCAT(author.author_id) as authorID, G
 // $sql = $dbconnect->prepare("SELECT * From author");
 
 //go to run
+// $sql->bindValue(":id", $id);
 $sql->execute();
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 $show = json_encode($result);
