@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../resource/css/service.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <script src="jquery-3.6.0.min.js"></script>
-    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <?php require "../Controller/iconController.php"; ?>
+    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
     <!--Customize CSS-->
     <link rel="stylesheet" href="../resource/css/bookDescription.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">

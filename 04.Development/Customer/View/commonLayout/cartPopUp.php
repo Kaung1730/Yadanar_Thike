@@ -233,7 +233,7 @@ if (isset($_SESSION['status'])) {
                         <div class="row my-3 justify-content-center">
                             <div class="col-lg-10">
                                 <label for="" class="book-text my-2">တိုင်း​ဒေသကြီး/ပြည်နယ်</label>
-                                <select name="" id="state" class="book-text my-2 px-lg-4 mx-auto py-1">
+                                <select name="" id="state" class="book-text my-2 px-lg-4 px-sm-5 px-5 px-md-5 mx-auto py-1">
                                     <option value=""></option>
                                     <option value="ဧရာဝတီတိုင်းဒေသကြီး">ဧရာဝတီတိုင်းဒေသကြီး</option>
                                     <option value="ပဲခူးတိုင်းဒေသကြီး">ပဲခူးတိုင်းဒေသကြီး</option>
@@ -257,7 +257,7 @@ if (isset($_SESSION['status'])) {
                             <div class="col-lg-10">
                                 <label for="township" class=" book-text my-2">မြို့</label>
                                 <br>
-                                <select name="" id="township" class="book-text my-2 px-lg-5 mx-auto py-1 township">
+                                <select name="" id="township" class="book-text my-2 px-lg-5 px-sm-5 px-5 px-md-5 mx-auto py-1 township">
 
                                 </select>
                             </div>

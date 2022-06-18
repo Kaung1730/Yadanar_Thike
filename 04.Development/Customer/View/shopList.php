@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 
 <head>
-<<<<<<< HEAD
-    <title>စာအုပ်ဆိုင်များစာရင်း</title>
-=======
-<meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop List</title>
->>>>>>> origin/main
+    <title>စာအုပ်ဆိုင်များစာရင်း</title>
     <link rel="stylesheet" href="../resource/css/shopList.css">
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/nav.js"></script>
@@ -22,7 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../resource/image/logo.png">
+    <?php require "../Controller/iconController.php"; ?>
+    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
 <!--Customize CSS-->
 <link rel="stylesheet" href="../resource/css/bookDescription.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">

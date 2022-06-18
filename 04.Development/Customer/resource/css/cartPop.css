@@ -39,4 +39,10 @@
     width: 16rem !important;
 }
 
+@media screen and (max-width:576px) {
+    #township{
+        width: 19rem !important;
+    }
+}
+
 
