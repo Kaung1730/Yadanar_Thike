@@ -34,7 +34,7 @@ CREATE TABLE `admin` (
   `updated_date` varchar(11) DEFAULT NULL COMMENT 'Date this table was updated',
   `updated_by` varchar(256) DEFAULT NULL COMMENT 'Name this table was updated',
   PRIMARY KEY (`admin_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,7 +43,7 @@ CREATE TABLE `admin` (
 
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-INSERT INTO `admin` VALUES (1,'aung@gmail.com','aung aung','579646aad11fae4dd295812fb4526245',1,0,'08/06/2022','KaungKaung','08/06/2022','myat kaung khant'),(2,'kyaw@gmail.com','kyaw kyaw','1ba4413ca86ad65f676579cdf83d6752',1,1,'08/06/2022','KaungKaung','08/06/2022','myat kaung khant'),(3,'kaung@gmail.com','kaung kaung','25d55ad283aa400af464c76d713c07ad',0,0,'08/06/2022','KaungKaung',NULL,NULL),(4,'kaki@gmail.com','kaki','25d55ad283aa400af464c76d713c07ad',1,0,'08/06/2022','myat kaung khant',NULL,NULL);
+INSERT INTO `admin` VALUES (5,'linn@gmail.com','Linn Ko Ko','12345678',0,0,'6/18/2022','Myat Kaung Khant',NULL,NULL);
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -737,4 +737,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-18 10:45:43
+-- Dump completed on 2022-06-18 10:57:50
