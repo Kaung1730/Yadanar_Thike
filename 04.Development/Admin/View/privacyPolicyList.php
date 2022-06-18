@@ -52,8 +52,8 @@
                                 foreach ($result as $key => $value) {
                                     echo "<tr>";
                                     echo "<td class='text-center'>" . $count . ".</td>";
-                                    echo "<td class='text-center'>" . $value['question'] . "</td>";
-                                    echo "<td class='text-center'>" . $value['answer'] . "</td>";
+                                    echo "<td class='text-center'>" . substr($value['question'], 0, 50) . "</td>";
+                                    echo "<td class='text-center'>" . substr($value['answer'], 0, 50) . "</td>";
                                     echo "<td class='text-center last'><a href='../View/privacyPolicyEdit.php?id=" . $value['pp_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                     echo "<td class='text-center last'><a href='../Controller/privacyDeleteController.php?id=" . $value['pp_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                                     echo "</tr>";

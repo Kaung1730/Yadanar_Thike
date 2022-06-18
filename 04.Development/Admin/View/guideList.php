@@ -52,8 +52,8 @@
                                 foreach ($result as $key => $value) {
                                     echo "<tr>";
                                     echo "<td class='text-center'>" . $count . ".</td>";
-                                    echo "<td class='text-center'>" . $value['userguide_title'] . "</td>";
-                                    echo "<td class='text-center'>" . $value['userguide_text'] . "</td>";
+                                    echo "<td class='text-center'>" . substr($value['userguide_title'],0,50) . "</td>";
+                                    echo "<td class='text-center'>" . substr($value['userguide_text'], 0, 50) . "</td>";
                                     echo "<td class='text-center last'><a href='../View/guideEdit.php?id=" . $value['userguide_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
                                     echo "<td class='text-center last'><a href='../Controller/guideDeleteController.php?id=" . $value['userguide_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
                                     echo "</tr>";

@@ -15,6 +15,6 @@ $sql = $dbconnect->prepare("SELECT
         LEFT JOIN customer AS user
     ON
         cat.customer_id = user.customer_id
-        WHERE ord.del_flg=0 AND date_format(curdate(), '%d/%m/%Y')=ord.order_date ORDER BY ord.order_date DESC LIMIT 5");
+        WHERE ord.del_flg=0 AND date_format(curdate(), '%Y-%m-%d')=ord.order_date ORDER BY ord.order_date DESC LIMIT 5");
 $sql->execute();
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
