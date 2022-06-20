@@ -11,7 +11,6 @@
     border-top-left-radius: 1.5rem !important;
     border-bottom-left-radius: 1.5rem !important;
 }
-
 .title {
     font-family: 'Poppins', sans-serif !important;
     font-weight: bold;
@@ -142,13 +141,34 @@ img {
     background-color: var(--yellow) !important;
     border-radius: 1.5rem !important;
 }
-
-@media screen and (max-width:720px) {
-    .left {
-        border-radius: 1.5rem !important;
+@media screen and (max-width:576px) {
+    .container .container{
+        margin-top: 4rem !important;
     }
+    .left{
+        min-width: 21rem !important;
+        border-radius: 1.2rem !important;
+    }
+    .footer{
+        position: relative;
+        bottom: 0 !important;
+        top: 6rem !important;
+    }
+}
 
-    .footer {
-        font-size: 12px;
+@media  screen and (max-width:768px) {
+    .left{
+        border-radius: 1.2rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .left{
+        border-radius: none !important;
+    }
+}
+@media  screen and (width:820px) {
+    .left{
+        border-radius: 1.2rem;
     }
 }

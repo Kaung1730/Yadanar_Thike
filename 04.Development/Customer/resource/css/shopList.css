@@ -67,20 +67,11 @@
     margin: 5vh 0 0 5vw;
 }
 
-
-
-
-/* Footer */
-
-.footer {
-    height: 12vh;
-    border: 0px solid;
-    background-color: var(--yellow);
-    display: flex;
-    padding: 0vh 0 0 4vw;
+.footer{
+    position: relative !important;
+    bottom: 0 !important;
+    top: 1rem !important;
 }
-
-
 
 /*Mobile View*/
 @media screen and (max-width: 1300px){

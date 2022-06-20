@@ -12,14 +12,14 @@
     $total_price = $data['total_price'];
     $del_flg = 0;
     // $today = date("F j, Y");
-    require_once("../Model/DBConnection.php");
+    require_once("../Model/dbConnection.php");
     $db = new DBConnect();
-    $dbConnect = $db->connect();
+    $dbconnect = $db->connect();
     foreach ($data['cart_id'] as $key => $value) {
         $cart_id = $value;
         $price = $total_price[$key];
 
-        $sql = $dbConnect -> prepare("
+        $sql = $dbconnect -> prepare("
         INSERT INTO `order`
         (order_number,cart_id,customer_id,customer_name,customer_division, customer_town,
         customer_address, total_price, delivery_id,
@@ -53,7 +53,7 @@
             if($result > 0){
                 foreach ($data['cart_id'] as $key => $value) {
                     $cart_id = $value;
-                    $clearData = $dbConnect -> prepare("
+                    $clearData = $dbconnect -> prepare("
                     UPDATE cart SET
                     del_flg = :del_flg,
                     updated_date= :updated_date,

@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>စာအုပ်ဆိုင်များစာရင်း</title>
-    <link rel="stylesheet" href="../resource/css/shopList.css">
     <script src="../resource/js/jquery3.6.0.js"></script>
     <script src="../resource/js/nav.js"></script>
     <!-- CSS only -->
@@ -29,6 +28,7 @@
     <link rel="stylesheet" href="../resource/css/nav.css">
     <link rel="stylesheet" href="../resource/css/order.css">
     <link rel="stylesheet" href="../resource/css/footer.css ">
+    <link rel="stylesheet" href="../resource/css/shopList.css">
     <!--Bootstrap CSS & JavaScript-->
    
     <!--Bootstrap Icon-->
@@ -78,13 +78,7 @@
         </div>
     </div>
 
-    <!-- FOOTER -->
-    <!-- <div class="footer ">
-        <div class="">@YadanarThike 2022</div>
-        <div class="copyright">&#169;
-            YadanarThike Company. All Rights Reserved.</div>
-    </div> -->
-    <!-- <div class="footer d-flex py-3 px-2 text-center mt-4"></div> -->
+    <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
 </body>
 
 </html>

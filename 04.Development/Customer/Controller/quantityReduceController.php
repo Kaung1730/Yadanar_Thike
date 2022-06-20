@@ -1,12 +1,12 @@
 <?php
     $data = json_decode($_POST["send"],true);
-    require_once("../Model/DBConnection.php");
+    require_once("../Model/dbConnection.php");
     $db = new DBConnect();
-    $dbConnect = $db->connect();
+    $dbconnect = $db->connect();
     foreach ($data['cart_id'] as $key => $value) {
         $cart_id = $value;
         //to get the current qty in cart of the book
-        $sql = $dbConnect -> prepare("
+        $sql = $dbconnect -> prepare("
             SELECT quantity, book_id
             FROM cart
             WHERE cart_id = :cart_id AND
@@ -20,7 +20,7 @@
         $book_id = $result[0]['book_id'];
 
         //to get the normal stock number
-        $stock = $dbConnect->prepare("
+        $stock = $dbconnect->prepare("
             SELECT stock_number 
             FROM book_m
             WHERE book_id = :book_id AND
@@ -33,7 +33,7 @@
         $stock_number = $stockResult[0]['stock_number'];
         $current_stock = $stock_number - $qtyCart;
         //to reduce after user ordered
-        $reduce = $dbConnect -> prepare("
+        $reduce = $dbconnect -> prepare("
             UPDATE book_m SET
             stock_number = :stock_number,
             updated_date= :updated_date,
