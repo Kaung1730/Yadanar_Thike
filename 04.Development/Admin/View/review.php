@@ -54,7 +54,7 @@
                                         echo "<tr>";
                                         echo "<td class='text-center'>" . $count . ".</td>";
                                         echo "<td class='text-center'>" . $value['book_name'] . "</td>";
-                                        echo "<td class='text-center'>" . $value['comment'] . "</td>";
+                                        echo "<td class='text-center'>" . substr($value['comment'],0,50) . "</td>";
                                         echo "<td class='text-center'>" . $value['rating'] . "</td>";
                                         echo "</tr>";
                                         $count++;
