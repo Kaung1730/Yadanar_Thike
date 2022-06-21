@@ -184,12 +184,12 @@
 }
 
 .disItem .disContent h2 {
-    margin-left: 12vw;
+    margin-left: 10vw;
     padding-bottom: 4px;
 }
 
 .disItem .disContent p {
-    margin: 2vh 0vw 2vh 8vw;
+    margin: 2vh 0vw 2vh 10vw;
 }
 
 
@@ -413,17 +413,21 @@
     }
 
     .card .content p {
-        margin-top: 6vh;
+        margin-top: 14vh;
+       
     }
 
     .card .content .btn {
-        margin-left: 3vw !important;
+        margin-left: 1vw !important;
     }
 
     .popularBookTitle {
         margin: 15vh 0vw 17vh 3vw;
+        font-size: 12px;
     }
-
+.bookTitle{
+    font-size: 13px !important;
+}
 
     /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  end*/
 
@@ -431,38 +435,38 @@
     /* DISCOUNT start */
 
     .disItem .disContent {
-        margin: 18vh 0vw 0vh 5vw;
-        font-size: 25px;
+        margin: 18vh 0vw 0vh 3vw;
+        font-size: 20px;
 
     }
 
 
     .disItem .disContent h2 {
-        margin-left: 7vw;
+        margin-left: 3vw;
     }
 
     .disItem .disContent p {
         margin: 2vh 0vw 2vh 0vw;
-        font-size: 15px;
+        font-size: 13px;
     }
 
 
     .disItem .disContent .disPrice {
-        margin-left: 9vw;
-        font-size: 17px;
+        margin-left: 1vw;
+        font-size: 14px;
     }
 
     .disItem .discountCard {
-        width: 220px;
-        height: 220px;
+        width: 180px;
+        height: 180px;
         border-radius: 50%;
-        margin: 13vh 0vw 0vh 6vw;
+        margin: 13vh 0vw 0vh 1vw;
     }
 
     .disItem .discountCard .disImage {
         width: 30vw;
-        height: 23vh;
-        margin: 3vh 0vw 0vh 6vw !important;
+        height: 18vh;
+        margin: 2vh 0vw 0vh 4vw !important;
     }
 
     .disTag {
@@ -470,9 +474,9 @@
     }
 
     .disTag span {
-        width: 12vw;
+        width: 14vw;
         height: 4vh;
-        font-size: 12px;
+        font-size: 10px;
     }
     /* DISCOUNT end */
 
@@ -495,13 +499,13 @@
     }
 
     .seeMore {
-        margin-left: 30vw;
+        margin-left: 24vw;
     }
     /* category end */
 
     /* SERVICES */
     .serviceCard {
-        margin-left: 31vw;
+        margin-left: 25vw;
     }
 
     /* FOOTER start*/

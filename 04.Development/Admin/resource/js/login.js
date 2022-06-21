@@ -24,7 +24,7 @@ $(document).ready(function () {
                     });
                 }
                 else if(res == "success"){
-                    window.location.href = `./dashboard.php`;
+                    window.location.href = `./dashBoard.php`;
                 }
             },
             error: function (err) {
