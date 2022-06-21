@@ -159,7 +159,7 @@
     opacity: 1;
     transform: translateY(120px);
     text-align: center !important;
-    
+
 }
 
 .card .content .btn {
@@ -301,10 +301,12 @@
     text-decoration: none !important;
     color: var(--black);
 }
-.categoryList{
+
+.categoryList {
     text-decoration: none;
-    
+
 }
+
 /* SERVICES */
 
 .serviceCard {
@@ -414,7 +416,7 @@
 
     .card .content p {
         margin-top: 14vh;
-       
+
     }
 
     .card .content .btn {
@@ -425,9 +427,10 @@
         margin: 15vh 0vw 17vh 3vw;
         font-size: 12px;
     }
-.bookTitle{
-    font-size: 13px !important;
-}
+
+    .bookTitle {
+        font-size: 13px !important;
+    }
 
     /* လတ်တလောလူကြိုက်များသော စာအုပ်များ  end*/
 
@@ -478,15 +481,16 @@
         height: 4vh;
         font-size: 10px;
     }
+
     /* DISCOUNT end */
 
     /* category start */
     .carousels h4 {
-        margin: 2vh 0vw 4vh 6vw;
+        margin: 2vh 0vw 4vh 5vw;
     }
 
     .carousels .item {
-        margin-left: 16vw;
+        margin-left: 14vw;
     }
 
     .thumb-wrapper {
@@ -501,6 +505,7 @@
     .seeMore {
         margin-left: 24vw;
     }
+
     /* category end */
 
     /* SERVICES */
@@ -518,4 +523,3 @@
     background-color: var(--yellow) !important;
     border-radius: 1.5rem !important;
 }
-
