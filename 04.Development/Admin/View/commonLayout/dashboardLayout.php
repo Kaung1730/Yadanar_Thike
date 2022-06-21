@@ -36,7 +36,7 @@
             <img src="../resource/img/person icon.png" alt="" class="person_icon pt-3">
             <!-- <span class="pt-3 fs-2 text-info fw-bold font-num">300</span> -->
             <span class="pt-3 fs-2 text-info fw-bold font-num">
-                <?php echo $order[0]['COUNT(order_id)'] ?>
+                <?php echo $order[0]['SUM(order_id)'] ?>
             </span>
         </div>
         <p class="order_text">Order</p>

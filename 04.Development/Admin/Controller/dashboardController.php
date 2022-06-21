@@ -22,7 +22,7 @@ $sql->execute();
 $income = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 $sql = $dbconnect->prepare(
-    "SELECT COUNT(order_id) FROM `order` WHERE del_flg=0"
+    "SELECT SUM(order_id) FROM `order` WHERE del_flg=0"
 );
 $sql->execute();
 $order = $sql->fetchAll(PDO::FETCH_ASSOC);
