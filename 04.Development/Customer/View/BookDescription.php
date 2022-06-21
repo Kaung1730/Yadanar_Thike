@@ -148,7 +148,7 @@
                                 </div>
                         </div>
                         <?php  if(isset($_SESSION['status'])) { ?>
-                            <input type="hidden" id="customer_id" value="<?php echo $_SESSION['customer_id']?>">;
+                            <input type="hidden" id="customer_id" value="<?php echo $_SESSION['customer_id']?>">
                         <?php }?>
                         <div>
                             <button  id="cart-btn" class=" cart-btn text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal" id="addToCart" value="<?php echo $result[0]['book_id']; ?>">
@@ -167,13 +167,17 @@
                         <?php foreach ($reviewrResult as $key => $value) {?>
                         <div class="row g-0 border-bottom border-light">
                             <div class="col-1 ps-lg-4 ps-md-0 ps-0 pt-lg-2 pt-md-0 pt-0 border-left d-none d-md-block d-lg-block">
-                                <img src="<?php echo $value['customer_profileImg']; ?>" class="rounded-circle img-circle img-fluid" />
+                                <?php if(isset($value['customer_profileImg'])){  ?>
+                                    <img src="<?php echo $value['customer_profileImg']; ?>" class="rounded-circle img-circle img-fluid" />
+                                <?php }else {?>
+                                    <img src="../resource/image/Vector.png" class="rounded-circle img-circle img-fluid" />
+                                <?php }?>
                             </div>
                             <div class="col-10">
                                 <div class="row pt-2">
                                     <div class="col-9 col-lg-4 reviewer">
                                         <span class="reviewer px-lg-3 px-1 px-md-3 fw-bold"><?php echo $value['customer_name']; ?></span>
-                                        <span class="review-date"><?php echo date("F j, Y", strtotime($value['review_date'])) ; ?></span>
+                                        <span class="review-date"><?php $value['review_date']; ?></span>
                                     </div>
                                     <div class="col-6 d-none d-lg-block d-md-done"></div>
                                     <div class="col-2 float-end ps-lg-5 ps-md-0 ps-0">

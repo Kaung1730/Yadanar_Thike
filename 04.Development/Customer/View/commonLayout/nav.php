@@ -22,10 +22,11 @@
                     <?php session_start();
                     if (isset($_SESSION['status'])) {
                         if (isset($_SESSION['customer_profileImg'])) {
+                            
                             echo ' <li class="nav-item dropdown color ms-lg-5 ms-md-5 ms-0 me-lg-3 me-md-0 me-0 px-lg-2 px-md-2 px-2 py-lg-0 py-md-2 py-2">
                         <a class="nav-link dropdown-toggle text-dark ms-lg-5 ms-md-5 ms-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src= ' . "" . $_SESSION['customer_profileImg'] . "" . ' alt="" class="useracc "/>
-                            <span class="acc-name ps-3 ps-md-1 ps-2">' . $_SESSION['username'] . '</span>
+                            <span class="acc-name ps-3 ps-md-1 ps-2 afterName">' . $_SESSION['username'] . '</span>
                         </a>
                         <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item text-dark" href="#userSetting" data-bs-toggle="modal">ကိုယ်​ရေးအချက်အလက်များပြင်ဆင်မည်</a></li>
