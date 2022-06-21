@@ -408,7 +408,7 @@ if (isset($_SESSION['status'])) {
                                                     'delivery_id': delivery_id,
                                                     'delivery_fee': delivery_fee,
                                                 }
-                                                console.log(name);
+                                                
                                                 $.ajax({
                                                     url: "../Controller/orderInsertController.php",
                                                     type: "POST",
@@ -416,6 +416,8 @@ if (isset($_SESSION['status'])) {
                                                         send: JSON.stringify(cartData)
                                                     },
                                                     success: function(res) {
+                                                        var data = $.parseJSON(res);
+                                                        console.log(data);
                                                         //                  //                       //to continue to do quantity reduce
                                                         $("#cardBody").empty();
                                                         swal("အမှာတင်ပြီးပါပြီ။ မှာယူခဲ့​သည့် စာရင်းများတွင် ကြည့်ရှုနိုင်ပါသည်။", {

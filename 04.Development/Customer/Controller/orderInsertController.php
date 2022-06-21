@@ -12,7 +12,7 @@
     $total_price = $data['total_price'];
     $del_flg = 0;
     // $today = date("F j, Y");
-    require_once("../Model/dbConnection.php");
+    require_once("../Model/DBConnection.php");
     $db = new DBConnect();
     $dbconnect = $db->connect();
     foreach ($data['cart_id'] as $key => $value) {
@@ -46,11 +46,11 @@
         $sql->execute();
         $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
-        // print_r(json_encode($result));
+        print_r(json_encode($data['cart_id']));
 
 
             //to clear item in the cart after order
-            if($result > 0){
+            // if($result > 0){
                 foreach ($data['cart_id'] as $key => $value) {
                     $cart_id = $value;
                     $clearData = $dbconnect -> prepare("
@@ -69,6 +69,6 @@
     
                     
                     }
-            }
+            // }
     };
     ?>
