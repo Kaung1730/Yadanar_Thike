@@ -16,13 +16,13 @@ $sql->execute();
 $totalView = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 $sql = $dbconnect->prepare(
-    "SELECT AVG(ord.total_price + del.delivery_fee) FROM `order` AS ord LEFT JOIN delivery AS del ON ord.delivery_id=del.delivery_id"
+    "SELECT SUM(ord.total_price + del.delivery_fee) FROM `order` AS ord LEFT JOIN delivery AS del ON ord.delivery_id=del.delivery_id"
 );
 $sql->execute();
 $income = $sql->fetchAll(PDO::FETCH_ASSOC);
 
 $sql = $dbconnect->prepare(
-    "SELECT COUNT(order_number) FROM `order` WHERE del_flg=0"
+    "SELECT COUNT(order_id) FROM `order` WHERE del_flg=0"
 );
 $sql->execute();
 $order = $sql->fetchAll(PDO::FETCH_ASSOC);
