@@ -47,6 +47,6 @@
         $reduce->bindValue(":updated_date", date("d/m/Y"));
         $reduce->bindValue(":updated_by", "KaungKaung");
         $reduce -> execute();
-        $reduceResult = $reduce -> fetchAll(PDO::FETCH_ASSOC);
+        // $reduceResult = $reduce -> fetchAll(PDO::FETCH_ASSOC);
         print_r(json_encode($reduceResult));
     }

@@ -44,7 +44,6 @@
         $sql -> bindValue(":created_date",date("Y-m-d"));   
         $sql -> bindValue(":created_by","KaungKaung");
         $sql->execute();
-        $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
         print_r(json_encode($data['cart_id']));
 
@@ -65,7 +64,7 @@
                     $clearData -> bindValue(":updated_by","KaungKaung");
                     $clearData -> bindValue(":cart_id",$cart_id);
                     $clearData->execute();
-                    $resultData = $sql->fetchAll(PDO::FETCH_ASSOC);
+                    // $resultData = $sql->fetchAll(PDO::FETCH_ASSOC);
     
                     
                     }

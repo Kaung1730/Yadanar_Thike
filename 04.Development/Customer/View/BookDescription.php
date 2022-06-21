@@ -177,7 +177,7 @@
                                 <div class="row pt-2">
                                     <div class="col-9 col-lg-4 reviewer">
                                         <span class="reviewer px-lg-3 px-1 px-md-3 fw-bold"><?php echo $value['customer_name']; ?></span>
-                                        <span class="review-date"><?php $value['review_date']; ?></span>
+                                        <span class="review-date"><?php echo $value['review_date']; ?></span>
                                     </div>
                                     <div class="col-6 d-none d-lg-block d-md-done"></div>
                                     <div class="col-2 float-end ps-lg-5 ps-md-0 ps-0">

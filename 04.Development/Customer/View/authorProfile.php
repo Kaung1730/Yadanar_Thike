@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php require "../Controller/iconController.php"; ?>
-    <title>စာရေးဆရာများ အ​ကြောင်း</title>
+    <title>စာရေးဆရာများ</title>
 
     <link rel="stylesheet" href="../resource/css/authorProfile.css">
     <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
