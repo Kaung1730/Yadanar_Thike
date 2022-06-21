@@ -167,7 +167,11 @@
                         <?php foreach ($reviewrResult as $key => $value) {?>
                         <div class="row g-0 border-bottom border-light">
                             <div class="col-1 ps-lg-4 ps-md-0 ps-0 pt-lg-2 pt-md-0 pt-0 border-left d-none d-md-block d-lg-block">
-                                <img src="<?php echo $value['customer_profileImg']; ?>" class="rounded-circle img-circle img-fluid" />
+                                <?php if(isset($value['customer_profileImg'])){  ?>
+                                    <img src="<?php echo $value['customer_profileImg']; ?>" class="rounded-circle img-circle img-fluid" />
+                                <?php }else {?>
+                                    <img src="../resource/image/Vector.png" class="rounded-circle img-circle img-fluid" />
+                                <?php }?>
                             </div>
                             <div class="col-10">
                                 <div class="row pt-2">
