@@ -148,7 +148,7 @@
                                 </div>
                         </div>
                         <?php  if(isset($_SESSION['status'])) { ?>
-                            <input type="hidden" id="customer_id" value="<?php echo $_SESSION['customer_id']?>">;
+                            <input type="hidden" id="customer_id" value="<?php echo $_SESSION['customer_id']?>">
                         <?php }?>
                         <div>
                             <button  id="cart-btn" class=" cart-btn text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal" id="addToCart" value="<?php echo $result[0]['book_id']; ?>">

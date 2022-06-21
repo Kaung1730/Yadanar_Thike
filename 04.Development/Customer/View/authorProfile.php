@@ -47,7 +47,6 @@
 </head>
 
 <body>
-    <?php session_start();?>
     <div class="nav-bar"></div>
     <div class="setting"></div>
     <div class="cart"></div>
@@ -62,7 +61,7 @@
                 <?php
 
                 require "../Controller/authorProfileController.php";
-
+                $_SESSION['author_id'] = $result[0]['author_id'];
                 echo "<div class='col-md-5'>. <img src='../../Admin/resource/image/" . $result[0]['author_image'] . " 'class='image img-responsive'>. </div>";
                 echo " <div class='col-md-7 mt-5 '>";
                 echo " <h2 class='mb-3 '>" . $result[0]['author_name'] . "</h2>";
@@ -82,9 +81,10 @@
 
             <?php
             require "../Controller/authorProfileCardController.php";
-            for ($i = 0; $i < 4; $i++) {
+            for ($i = 0; $i < count($result); $i++) {
                 echo "<div class='col-sm-3'>";
                 echo " <div class='thumb-wrapper'>";
+                echo '<a class="text-decoration-none" href="../View/bookDescription.php?book_id='.$result[$i]['book_id'].'">';
                 echo " <div class='img-box'>";
                 echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='img-fluid'>";
                 echo "</div>";
@@ -97,6 +97,7 @@
                 }
                 echo "</div>";
                 echo "</div>";
+                echo "</a>";
                 echo "</div>";
             }
             ?>
