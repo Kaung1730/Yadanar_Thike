@@ -25,7 +25,7 @@
             <img src="../resource/img/person icon.png" alt="" class="person_icon pt-3">
             <!-- <span class="pt-3 fs-2 text-primary fw-bold font-num">1.5k</span> -->
             <span class="pt-3 fs-2 text-primary fw-bold font-num">
-                <?php echo ceil($income[0]['AVG(ord.total_price + del.delivery_fee)']) ?>
+                <?php echo ceil($income[0]['SUM(ord.total_price + del.delivery_fee)']) ?>
                 K
             </span>
         </div>
@@ -36,7 +36,7 @@
             <img src="../resource/img/person icon.png" alt="" class="person_icon pt-3">
             <!-- <span class="pt-3 fs-2 text-info fw-bold font-num">300</span> -->
             <span class="pt-3 fs-2 text-info fw-bold font-num">
-                <?php echo $order[0]['COUNT(order_number)'] ?>
+                <?php echo $order[0]['COUNT(order_id)'] ?>
             </span>
         </div>
         <p class="order_text">Order</p>
