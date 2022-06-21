@@ -33,7 +33,7 @@
 
 .shopListBody {
     width: 70vw;
-    height: 675vh;
+    height: 590vh;
     border: 0px solid;
     background-color: var(--body-bg-color);
 }
@@ -88,11 +88,16 @@
     .bookshopName {
     font-size: 15px;    
     }
+    .shopListBody {
+        width: 70vw;
+        height: 610vh;
+    }
 }
 @media screen and (max-width: 820px){
     .bookshopName {
         width: 35vw;   
     }
+
 }
 @media screen and (max-width: 720px) {
 
@@ -133,11 +138,10 @@
 
     .shopListBody {
         width: 90vw;
-        height: 150vh;
+        height: 510vh;
     }
-
     /* .footer {
-        font-size: 12px !important;
+        font-size: 12px;
       
     } */
 /* 
