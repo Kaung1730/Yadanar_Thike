@@ -15,9 +15,7 @@
                         <!-- upload img and change img auto -->
                         <form method="post" action="" enctype="multipart/form-data" id="myform">
                             <div class="text-center preview">
-                                <?php
-                                    $_SESSION['customer_profileImg'] = $result[0]['customer_profileImg'];
-                                ?>
+                                
                                 <img src="<?php echo $result[0]['customer_profileImg']?>" class="" alt="" id="img" />
                             </div>
                             <div class="text-center change-img-text mt-2">
@@ -32,6 +30,7 @@
                         </form>
                         <div class="row my-3 justify-content-center">
                             <div class="col-lg-10">
+                                <?php $_SESSION['afterName'] = $result[0]['customer_name']?>
                                 <input type="text" name="username"  placeholder="User Name (English Only)" class="form-control ps-4 pt-2 username" value ="<?php echo $result[0]['customer_name']?>" />
                             </div>
                         </div>
@@ -66,7 +65,7 @@
     <!--JS-->
     <script src="../resource/js/jquery3.6.0.js"></script>
 <script>
-
+console.log($(".password").val());
 $("#but_upload").click(function(){
     var fd = new FormData();
     var files = $('#file')[0].files;
@@ -127,8 +126,10 @@ $("#update-btn").click(function(){
                     $.ajax({
                         url:"../Controller/userSettingUpdateShow.php",
                         type:"POST",
+                        data:{send: JSON.stringify(postData)},
                         success:function(res){
-                            console.log(res);
+                            var data = $.parseJSON(res);
+                            console.log(data);
                         },
                         error:function(err){
                             console.log(err);

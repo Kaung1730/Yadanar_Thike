@@ -9,6 +9,7 @@ require_once("../Model/DBConnection.php");
         $phone = $_POST['phone'];
         $valid = 0;
         $del_flg = 0;
+        
         $decO_Password = md5($password);
         $decC_Password = md5($c_password);
         //check confirm password
