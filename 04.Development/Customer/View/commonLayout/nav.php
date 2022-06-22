@@ -19,7 +19,8 @@
                         <a class="nav-link  mt-lg-2 mt-md-0 mt-0 pt-lg-3 pt-md-0 pt-0 active" href="../View/authorList.php">စာရေးဆရာများ</a>
                     </li>
                     <!---To show and hide acc name before and after login-->
-                    <?php session_start();
+                    <?php
+                    require "../../Controller/userSettingShowController.php";
                     if (isset($_SESSION['status'])) {
                         if (isset($_SESSION['customer_profileImg'])) {
                             
@@ -27,6 +28,18 @@
                         <a class="nav-link dropdown-toggle text-dark ms-lg-5 ms-md-5 ms-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img id="change" src= ' . "" . $_SESSION['customer_profileImg']. "" . ' alt="" class="useracc "/>
                             <span class="acc-name ps-3 ps-md-1 ps-2 afterName">' . $_SESSION['username'] . '</span>
+                        </a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-dark" href="#userSetting" data-bs-toggle="modal">ကိုယ်​ရေးအချက်အလက်များပြင်ဆင်မည်</a></li>
+                            <li><a class="dropdown-item text-dark order-history" href="#orderHistory" data-bs-toggle="modal">မှာယူခဲ့သည့်စာရင်းများ</a></li>
+                            <li><a class="dropdown-item text-dark" href="../View/logout.php"><i class="bi bi-box-arrow-right text-dark fs-5 me-2"></i>အ​ကောင့်မှထွက်ရန်</a></li>
+                        </ul>
+                    </li>';
+                        } elseif(isset($result[0]['customer_profileImg'])){
+                            echo ' <li class="nav-item dropdown color ms-lg-5 ms-md-5 ms-0 me-lg-3 me-md-0 me-0 px-lg-2 px-md-2 px-2 py-lg-0 py-md-2 py-2">
+                        <a class="nav-link dropdown-toggle text-dark ms-lg-5 ms-md-5 ms-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img id="change" src= ' . "" . $result[0]['customer_profileImg']. "" . ' alt="" class="useracc "/>
+                            <span class="acc-name ps-3 ps-md-1 ps-2 afterName">' .$result[0]['customer_name'] . '</span>
                         </a>
                         <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item text-dark" href="#userSetting" data-bs-toggle="modal">ကိုယ်​ရေးအချက်အလက်များပြင်ဆင်မည်</a></li>

@@ -27,6 +27,7 @@ require_once("../Model/DBConnection.php");
             $_SESSION['username'] = $userName;
             $_SESSION['status'] = "login";
             $_SESSION['customer_id'] = $result[0]['customer_id'];
+            $_SESSION['password'] = $_POST['password'];
             echo "success";
             
         }

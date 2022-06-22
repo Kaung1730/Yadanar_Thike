@@ -68,7 +68,7 @@
                             </a>
                         </div>
                         <div class="my-1 book-d-text"> <span>စာမျက်နှာ - </span> <?php echo $result[0]['page_number']; ?></div>
-                        <div class="my-1 book-d-text"> <span>စာအုပ်အရွယ်အစား -</span> <?php echo $result[0]['size']; ?></div>
+                        <div class="my-1 book-d-text"> <span>စာအုပ်အရွယ်အစား -</span> <?php echo $result[0]['size']; ?> inches</div>
                         <div class="my-1 book-d-text"> <span>ပုံနှိပ်မှတ်တမ်း -</span> <?php echo $result[0]['publisher_name']; ?></div>
                         <div class="OrderBtnContainer  d-flex d-lg-block d-md-block justify-content-center">
                             <button  id="cart-btn" class="cart-btn ms-lg-5 ms-md-3 me-4  my-3 px-4 py-2 text-dark text-decoration-none btn order-btn my-3 book-d-text" data-bs-toggle="modal" id="addToCart" value="<?php echo $result[0]['book_id']; ?>">
