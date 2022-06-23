@@ -92,7 +92,10 @@
     font-size: 12px;
     /* padding: 1vh 0 0 1vw; */
   }
-
+  .division {
+    width: 20vw;
+    height: 9vh;
+  }
   /* .copyright {
         margin-left: 4vw;
 
