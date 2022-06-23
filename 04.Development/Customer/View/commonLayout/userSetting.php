@@ -39,11 +39,7 @@
                                 <input type="email" name="email"  placeholder="Email Address" class="form-control ps-4 pt-2 email" value ="<?php echo $result[0]['customer_email']?>"/>
                             </div>
                         </div>
-                        <div class="row my-3 justify-content-center">
-                            <div class="col-lg-10">
-                                <input type="password" name="password"  placeholder="Password" class="form-control ps-4 pt-2 password" value ="<?php echo $result[0]['customer_password']?>"/>
-                            </div>
-                        </div>
+                        
                         <div class="row my-3 justify-content-center">
                             <div class="col-lg-10">
                                 <input type="number" name="phone" placeholder="Phone Number" class="form-control ps-4 pt-2 phone" value ="<?php echo $result[0]['customer_phno']?>"/>
@@ -103,14 +99,12 @@ $("#but_upload").click(function(){
 $("#update-btn").click(function(){
         var userName = $(".username").val();
         var email = $('.email').val();
-        var password = $('.password').val();
         var phone = $(".phone").val();
         var img =  $('#img').attr('src');
         var customer_id = $("#customer_id").val();
         let postData = {
             "userName": userName,
             "email" : email,
-            "password" : password,
             "phone" : phone,
             "img" : img,
             "customer_id" :customer_id

@@ -17,5 +17,4 @@ require_once "../Model/DBConnection.php";
         $sqlResult = $sql->fetchAll(PDO::FETCH_ASSOC);
         $_SESSION['username'] = $sqlResult[0]['customer_name'];
         $_SESSION['customer_profileImg'] = $sqlResult[0]['customer_profileImg'];
-        $_SESSION['password'] = $sqlResult[0]['password'];
         print_r(json_encode($sqlResult[0]['customer_profileImg']));
