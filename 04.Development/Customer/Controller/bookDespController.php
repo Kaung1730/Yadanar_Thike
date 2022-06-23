@@ -23,7 +23,8 @@ $author_id = $result[0]['author_id'];
 $related = $dbconnect-> prepare("
 SELECT *
 FROM book_m
-WHERE author_id = :author_id
+WHERE author_id = :author_id AND
+del_flg = 0
 LIMIT 4;
 ");
 $related->bindValue(":author_id", $author_id);

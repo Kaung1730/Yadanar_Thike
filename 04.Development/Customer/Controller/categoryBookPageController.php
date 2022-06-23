@@ -7,7 +7,7 @@ $db2 = new DBConnect();
 $dbconnect = $db2->connect();
 
 
-$sql = $dbconnect->prepare("SELECT * FROM category
+$sql = $dbconnect->prepare("SELECT * FROM category WHERE del_flg = 0
 ");
 
 //go to run

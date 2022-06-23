@@ -7,7 +7,7 @@ $db2 = new DBConnect();
 $dbconnect = $db2->connect();
 
 
-$sql = $dbconnect->prepare("SELECT * FROM book_m ORDER BY created_date DESC LIMIT 6");
+$sql = $dbconnect->prepare("SELECT * FROM book_m WHERE del_flg = 0 ORDER BY created_date DESC LIMIT 6");
 
 //go to run
 $sql->execute();
