@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans Myanmar", sans-serif;
+}
+
+:root {
+  --yellow: #e8c547;
+  --main-bg-color: #f8f7f9;
+  --light-yellow: #f2f175;
+  --body-bg-color: #e5e5e5;
+  --boxshadow-bg-color: gray;
+  --light-violet: #e8c3f1;
+}
+.division {
+  position: absolute;
+  width: 17vw;
+  height: 9vh;
+  border: 0px solid;
+  text-align: center;
+  padding-top: 15px;
+  box-shadow: 6px 5px var(--boxshadow-bg-color);
+  background-color: var(--light-yellow);
+}
+
+.deliList {
+  width: 60vw;
+  margin-left: 12%;
+  background-color: var(--body-bg-color);
+}
+
+.deliHeader {
+  width: 60vw;
+  height: 15vh;
+  border: 0px solid;
+  text-align: center;
+  background-color: var(--yellow);
+  padding-top: 6vh;
+}
+
+/* YangonDivision */
+.yangon {
+  text-align: center;
+  margin: 6vh 0vw 0vh 20vw;
+}
+
+.yangonTownList {
+  margin-left: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.yangonTownList ul {
+  margin: 20vh 7vw 0vh 2vw;
+}
+
+.yangonTownList ul li {
+  width: 13vw;
+}
+
+.yagonTown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+/* .footer {
+    height: 12vh;
+    border: 0px solid;
+    background-color: var(--yellow);
+    display: flex;
+    padding: 3vh 0vw 0vh 2vw;
+} */
+
+/*Mobile View*/
+@media screen and (max-width: 988px) {
+  .division {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .deliHeader {
+    width: 60vw;
+    padding: 20px 0px 0px 15px;
+  }
+  .yangonTownList ul li {
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 12px;
+    /* padding: 1vh 0 0 1vw; */
+  }
+
+  /* .copyright {
+        margin-left: 4vw;
+
+    } */
+}
+@media screen and (max-width: 680px) {
+    .division {
+        font-size: 11px;
+      }
+}
+@media screen and (max-width: 610px){
+    .yangonTownList ul li {
+        width: 15vw;
+      }
+}
