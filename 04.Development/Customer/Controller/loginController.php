@@ -4,7 +4,6 @@ require_once("../Model/DBConnection.php");
     if(isset($_POST)){
         $userName = $_POST['username'];
         $password = $_POST['password'];
-
         $decPassword = md5($password);
 
         //call db connection
@@ -17,8 +16,11 @@ require_once("../Model/DBConnection.php");
                 customer_password = :password
                 AND
                 del_flg = :del_flg
+                AND
+                valid = :valid
         ");
         $sql -> bindValue(":name",$userName);
+        $sql -> bindValue(":valid",0);
         $sql -> bindValue(":password",$decPassword);
         $sql -> bindValue(":del_flg",0);
         $sql->execute();
@@ -27,10 +29,13 @@ require_once("../Model/DBConnection.php");
         //to get id bcz want to use for the user setting
         if(count($result) > 0){
             $_SESSION['username'] = $userName;
-            $_SESSION['status'] = "login";
+            $_SESSION['status-customer'] = "login";
             $_SESSION['customer_id'] = $result[0]['customer_id'];
             echo "success";
             
+        }
+        elseif (empty($result)) {
+            echo "ban";
         }
         else{
             echo "wrong";

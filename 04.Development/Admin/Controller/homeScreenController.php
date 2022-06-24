@@ -10,7 +10,7 @@ if (isset($_POST)) {
     $del_flg = 0;
     $id = $_POST['id'];
 
-    if (move_uploaded_file($location1, "../resource/image/" . $logo && move_uploaded_file($location2, "../resource/image/" . $icon))) {
+    if (move_uploaded_file($location1, "../resource/image/" . $logo) && move_uploaded_file($location2, "../resource/image/" . $icon)) {
 
         $db = new DBConnect();
         $dbconnect = $db->connect();

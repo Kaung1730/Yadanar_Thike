@@ -1,5 +1,5 @@
 <?php
-if(isset($_SESSION['status'])){
+if(isset($_SESSION['status-customer'])){
     $customer_id = $_SESSION['customer_id'];
     require_once "../../Model/DBConnection.php";
     //Call DB Connection

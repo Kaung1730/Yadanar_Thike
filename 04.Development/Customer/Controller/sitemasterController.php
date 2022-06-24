@@ -11,3 +11,4 @@ $sql -> bindValue(":del_flg",0);
 $sql->execute();
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
+

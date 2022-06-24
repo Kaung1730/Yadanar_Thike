@@ -1,6 +1,6 @@
 <?php
  session_start();
- unset($_SESSION['status']);
+ unset($_SESSION['status-customer']);
  unset($_SESSION['username']);
  unset($_SESSION['customer_id']);
  unset($_SESSION['cart']);

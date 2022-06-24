@@ -92,7 +92,7 @@
                 echo "<div class='authorName'>" . $result[$i]['author_name'] . "</div>";
                 echo "<div class='bookName'>" . $result[$i]['book_name'] . "</div>";
                 echo "<p class='item-price'>" . $result[$i]['book_price'] . "</p>";
-                if (isset($_SESSION['status'])) {
+                if (isset($_SESSION['status-customer'])) {
                     echo "<button type='button' class='btn btn-basket' value='" . $result[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
                 }
                 echo "</div>";

@@ -27,9 +27,20 @@ $(document).ready(function () {
                         title: "ဖန်တီးမှု ​အောင်မြင်ပါသည်။!",
                         text: "အ​ကောင့်အသစ် ဖန်တီးမှု ​အောင်မြင်ပါသည်။",
                         icon: "success",
-                        button: "အ​ကောင့်၀င်ရန်",
+                        buttons: {
+                            catch: {
+                                text: "အ​ကောင့်၀င်ရန်",
+                                value: "login",
+                                className: 'commentBtn'
+                            },
+                            defeat: false,
+                        },
                     }).then((value) => {
-                        window.location.href = `./login.php`;
+                        switch (value) {
+                            case "login":
+                                window.location.href = `./login.php`;
+                                break;
+                        }
                     });
                 } else if (res == "password") {
                     swal({

@@ -26,6 +26,25 @@ $(document).ready(function () {
                 else if(res == "success"){
                     window.location.href = `./homePage.php`;
                 }
+                else{
+                    swal("လူကြီးမင်း၏ အ​ကောင့်အား လတ်တ​လောတွင် အသုံးပြု၍မရနိုင်ပါ။", {
+                        buttons: {
+                            catch: {
+                                text: "မူလစာမျက်နှာ",
+                                value: "home",
+                                className: 'commentBtn'
+                            },
+                            defeat: false,
+                        },
+                    })
+                        .then((value) => {
+                            switch (value) {
+                                case "home":
+                                    window.location.href = `./HomePage.php`;
+                                    break;
+                            }
+                        });
+                }
             },
             error: function (err) {
                 alert("Error");

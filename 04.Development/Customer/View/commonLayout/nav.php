@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light mt-lg-3 mt-md-0 mt-0">
         <div class="container">
+        <?php require "../../Controller/logoShowController.php"; ?>
             <a class="navbar-brand me-lg-5 me-md-0  me-0" href="../View/homePage.php">
-                <img src="../resource/image/logo.png" alt="" />
+                <img src="../../Admin/resource/image/<?php echo $iconResult[0]['logo']?>" alt="" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,7 +22,7 @@
                     <!---To show and hide acc name before and after login-->
                     <?php
                     require "../../Controller/userSettingShowController.php";
-                    if (isset($_SESSION['status'])) {
+                    if (isset($_SESSION['status-customer'])) {
                         if (isset($_SESSION['customer_profileImg'])) {
                             
                             echo ' <li class="nav-item dropdown color ms-lg-5 ms-md-5 ms-0 me-lg-3 me-md-0 me-0 px-lg-2 px-md-2 px-2 py-lg-0 py-md-2 py-2">

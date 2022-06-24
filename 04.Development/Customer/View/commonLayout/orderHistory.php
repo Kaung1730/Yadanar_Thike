@@ -7,7 +7,7 @@
             </div>
             <div class="modal-body modal-history text-white  fw-light">
                 <?php session_start();
-                    if(!isset($_SESSION['status'])){ ?>
+                    if(!isset($_SESSION['status-customer'])){ ?>
                         <div class="lead">စာအုပ်မဝယ်ယူရ​သေးပါ</div>
                     <?php }else{ ?>
                         <div class="order_history">

@@ -147,7 +147,7 @@
                                     <button class="input-group-text fw-bold text-dark increase-btn">+</button>
                                 </div>
                         </div>
-                        <?php  if(isset($_SESSION['status'])) { ?>
+                        <?php  if(isset($_SESSION['status-customer'])) { ?>
                             <input type="hidden" id="customer_id" value="<?php echo $_SESSION['customer_id']?>">
                         <?php }?>
                         <div>

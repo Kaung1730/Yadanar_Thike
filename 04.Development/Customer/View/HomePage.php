@@ -180,7 +180,7 @@
                     echo " <p class= 'text-center  text-decoration-none'>" . $popularBook[$i]['book_price'] . "</p>";
 
                     echo "</a>";
-                    if (isset($_SESSION['status'])) {
+                    if (isset($_SESSION['status-customer'])) {
                         echo "<button type='button' class='btn btn-basket' value='" . $popularBook[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
                     }
                     echo "</div>";

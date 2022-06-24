@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION['status'])) {
+if (isset($_SESSION['status-customer'])) {
 ?>
     <div class="modal position-realtive start-0 fade ms-5 ms-lg-5 ms-md-0" id="order" tabindex="-1" aria-labelledby="lg-orderLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">

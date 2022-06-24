@@ -1,6 +1,6 @@
 <?php session_start();
   require_once "../../Model/DBConnection.php";
- if(isset($_SESSION['status'])){
+ if(isset($_SESSION['status-customer'])){
     $id = $_SESSION['customer_id'];
 
     //Call DB Connection

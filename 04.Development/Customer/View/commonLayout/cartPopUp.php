@@ -1,7 +1,7 @@
 <?php
 session_start();
 require "../../Controller/cartItemShow.php";
-if (isset($_SESSION['status'])) {
+if (isset($_SESSION['status-customer'])) {
 ?>
     <div class="modal  fade ms-5 ms-lg-5 ms-md-0" id="cartPopUp" tabindex="-1" aria-labelledby="lg-cartPopUpLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -20,7 +20,7 @@ if (isset($_SESSION['status'])) {
                             <div class="col-lg-8">
                                 <div class="row text-white">
                                     <div class="col-12">
-                                        <?php if (isset($_SESSION['status'])) {
+                                        <?php if (isset($_SESSION['status-customer'])) {
                                             $customer_id = $_SESSION['customer_id']; ?>
                                             <input type="hidden" id="customer_id" name="customer_id" value="<?php echo $customer_id; ?>">
                                         <?php } ?>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_SESSION['status'])){
+if(isset($_SESSION['status-customer'])){
     
 $data = json_decode($_POST["send"],true);
 $book_id = $data['book_id'];

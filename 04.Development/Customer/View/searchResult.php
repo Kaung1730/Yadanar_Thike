@@ -81,7 +81,7 @@
 
                                     <p><?php echo $value['book_price'] ?></p>
                         </a> 
-                                    <?php if(isset($_SESSION['status'])){ ?>
+                                    <?php if(isset($_SESSION['status-customer'])){ ?>
                                     <button type="button" class="btn search-cart" value="<?php echo $value['book_id'] ?>">ခြင်းတောင်းထဲထည့်ရန်</button>
                                     <?php } ?>
                                 </div>

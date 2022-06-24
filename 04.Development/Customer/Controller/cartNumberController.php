@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_SESSION['status'])){
+if(isset($_SESSION['status-customer'])){
     $customer_id = $_SESSION['customer_id'];
     $del_flg = 0;
     require_once "../Model/DBConnection.php";
