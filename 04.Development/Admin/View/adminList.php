@@ -49,9 +49,7 @@
                                     <?php
                                     $count = 1;
                                     foreach ($result as $key => $value) {
-                                        if($value['admin_id'] == $_SESSION['admin_id']){
-                                            break;
-                                        }else{
+                                        if($value['admin_id'] != $_SESSION['admin_id']){
                                             echo "<tr>";
                                             echo "<td class='text-center'>" . $count . ".</td>";
                                             echo "<td class='text-center'>" . $value['admin_name'] . "</td>";
