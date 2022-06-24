@@ -27,13 +27,12 @@ require_once("../Model/DBConnection.php");
             $_SESSION['admin_name'] = $result[0]['admin_name'];
             $_SESSION['admin_email'] = $result[0]['admin_email'];
             $_SESSION['status'] = "login";
+            $_SESSION['admin_id'] = $result[0]['admin_id'];
             echo "success";
-            
+            // echo $_SESSION['admin_id'];
         }
         else{
             echo "wrong";
         }
     
     }
-
-?>

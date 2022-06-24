@@ -49,14 +49,18 @@
                                     <?php
                                     $count = 1;
                                     foreach ($result as $key => $value) {
-                                        echo "<tr>";
-                                        echo "<td class='text-center'>" . $count . ".</td>";
-                                        echo "<td class='text-center'>" . $value['admin_name'] . "</td>";
-                                        echo "<td class='text-center'>" . $value['role'] . "</td>";
-                                        echo "<td class='text-center last'><a href='../View/adminEdit.php?id=" . $value['admin_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
-                                        echo "<td class='text-center last'><a href='../Controller/adminDeleteController.php?id=" . $value['admin_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
-                                        echo "</tr>";
-                                        $count++;
+                                        if($value['admin_id'] == $_SESSION['admin_id']){
+                                            break;
+                                        }else{
+                                            echo "<tr>";
+                                            echo "<td class='text-center'>" . $count . ".</td>";
+                                            echo "<td class='text-center'>" . $value['admin_name'] . "</td>";
+                                            echo "<td class='text-center'>" . $value['role'] . "</td>";
+                                            echo "<td class='text-center last'><a href='../View/adminEdit.php?id=" . $value['admin_id'] . "'><button type='button' class='btn btn-outline-info'><ion-icon name='create-outline'></ion-icon></button></a></td>";
+                                            echo "<td class='text-center last'><a href='../Controller/adminDeleteController.php?id=" . $value['admin_id'] . "'><button type='button' class='btn btn-outline-danger'><ion-icon name='trash-outline'></ion-icon></button></a></td>";
+                                            echo "</tr>";
+                                            $count++;
+                                        }
                                     }
                                     ?>
                                 </table>
