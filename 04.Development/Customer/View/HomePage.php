@@ -323,8 +323,11 @@
                 </div>
             </div>
         </div>
-        <a href="./GuideofWeb.php" class="seeMoreTag text-decoration-none">
+        <!-- <a href="./GuideofWeb.php" class="seeMoreTag guide text-decoration-none">
             <div class="usage text-dark">စာမျက်နှာအသုံးပြုနည်း ကြည့်ရှုရန်</div>
+        </a> -->
+        <a href="./GuideofWeb.php" class="btn text-decoration-none guide-btn">
+            <div class="text-dark">စာမျက်နှာအသုံးပြုနည်း ကြည့်ရှုရန်</div>
         </a>
         <!-- SERVICES END -->
 

@@ -379,11 +379,33 @@
 .copyright {
     background-color: var(--yellow);
 }
+.guide-btn{
+    background-color: var(--yellow) !important;
+    padding: 1rem !important;
+    margin-bottom: 2.5rem !important;
+    margin-left: 15rem !important;
+}
+.guide-btn:hover{
+    border: none !important;
+}
+@media screen and (max-width:576px) {
+    .guide-btn{
+        margin-left: 3.5rem !important;
+    }
+}
 
+@media screen and (min-width:1200px){
+    .guide-btn{
+        margin-left: 25rem !important;
+    }
+}
 
-
+@media  screen and (width:820px) {
+    .guide-btn{
+        margin-left: 15rem !important;
+    }
+}
 @media screen and (max-width: 720px) {
-
     /* အသစ်ထွက်ရှိသော စာအုပ်များ*/
     .newBookImg {
         width: 40vw;

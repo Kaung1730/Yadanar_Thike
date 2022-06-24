@@ -42,6 +42,7 @@
         <div class="order"></div>
         <div class="orderHistory"></div>
         </br>
+        <div class="container">
         <div class="guide">
             <div class="mytop">
                 <img class="imgs one" src="../resource/image/GoWtop.png" alt="">
@@ -51,16 +52,16 @@
                 require("../Controller/guildofWebController.php");
                 for ($i = 0; $i < count($result); $i++) {
                     echo "<div class='topic'>" . "<p class='titles'>" . $result[$i]['userguide_title'] . "</p>" . "</div>";
-                    echo "<div class='des'>" . "<p class='facts'>" . $result[$i]['userguide_title'] . "</p>" . "</div>";
+                    echo "<div class='des'>" . "<p class='facts'>" . $result[$i]['userguide_text'] . "</p>" . "</div>";
                 }
                 ?>
             </div>
             <div class="mytop">
-                <img class="imgs two" src="../resource/image/Gowbot.png" alt="">
+                <img class="imgs two" src="../resource/image/GoWbot.png" alt="">
             </div>
 
         </div>
-    </div>
+        </div>
 </body>
 
 </html>
