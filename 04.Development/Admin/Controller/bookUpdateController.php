@@ -11,6 +11,7 @@ if (isset($_POST)) {
     $bookLen = $_POST['length'];
     $bookWid = $_POST['width'];
     $bookHig = $_POST['height'];
+    $stock = $_POST['stock'];
     $bookPublisher = $_POST['book_pub'];
     $bookImage = $_FILES['book_img']['name'];
     $location = $_FILES['book_img']['tmp_name'];
@@ -35,6 +36,7 @@ if (isset($_POST)) {
             page_number = :bPg,
             size = :bSize,
             book_img = :bImg,
+            stock_number = :stock,
             book_pdf = :bPdf,
             updated_date = :updated_date,
             updated_by = :updated_by 
@@ -49,6 +51,7 @@ if (isset($_POST)) {
             $sql->bindValue(":bPg", $bookPg);
             $sql->bindValue(":bSize", $bookLen . "x" . $bookWid . "x" . $bookHig);
             $sql->bindValue(":bImg", $bookImage);
+            $sql->bindValue(":stock", $stock);
             $sql->bindValue(":bPdf", $bookPdf);
             $sql->bindValue(":updated_date", date("d/m/Y"));
             $sql->bindValue(":updated_by", "Myat Kaung Khant");
@@ -69,6 +72,7 @@ if (isset($_POST)) {
             publisher_id = :publisher,
             page_number = :bPg,
             size = :bSize,
+            stock_number = :stock,
             updated_date = :updated_date,
             updated_by = :updated_by 
             WHERE book_id = :id"
@@ -82,6 +86,7 @@ if (isset($_POST)) {
         $sql->bindValue(":publisher", $bookPublisher);
         $sql->bindValue(":bPg", $bookPg);
         $sql->bindValue(":bSize", $bookLen . "x" . $bookWid . "x" . $bookHig);
+        $sql->bindValue(":stock", $stock);
         $sql->bindValue(":updated_date", date("d/m/Y"));
         $sql->bindValue(":updated_by", "Myat Kaung Khant");
         $sql->bindValue(":id", $id);

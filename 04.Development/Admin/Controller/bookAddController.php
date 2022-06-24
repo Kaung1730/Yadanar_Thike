@@ -12,6 +12,7 @@ if (isset($_POST)) {
     $bookLen = $_POST['length'];
     $bookWid = $_POST['width'];
     $bookHig = $_POST['height'];
+    $stock = $_POST['stock'];
     $bookPublisher = $_POST['book_pub'];
     $bookImage = $_FILES['book_img']['name'];
     $location = $_FILES['book_img']['tmp_name'];
@@ -35,6 +36,7 @@ if (isset($_POST)) {
                     page_number,
                     size,
                     book_img,
+                    stock_number,
                     book_pdf,
                     del_flg,
                     created_date,
@@ -51,6 +53,7 @@ if (isset($_POST)) {
                     :bPg,
                     :bSize,
                     :bImg,
+                    :stock,
                     :bPdf,
                     :del_flg,
                     :created_date,
@@ -66,6 +69,7 @@ if (isset($_POST)) {
         $sql->bindValue(":bPg", $bookPg);
         $sql->bindValue(":bSize", $bookLen . "x" . $bookWid . "x" . $bookHig);
         $sql->bindValue(":bImg", $bookImage);
+        $sql->bindValue(":stock", $stock);
         $sql->bindValue(":bPdf", $bookPdf);
         $sql->bindValue(":del_flg", $del_flg);
         $sql->bindValue(":created_date", date("d/m/Y"));

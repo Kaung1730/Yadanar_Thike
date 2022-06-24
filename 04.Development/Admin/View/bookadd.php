@@ -75,6 +75,8 @@
                             <textarea type="text" class="box1 input-edit" name="book_desc"></textarea>
                             <label for="" class="page_no fs-5">Page No:</label>
                             <input type="text" class="box1 input-edit" name="book_pg">
+                            <label for="" class="page_no fs-5">Stock No:</label>
+                            <input type="number" class="box1 input-edit" name="stock">
                             <div>
                                 <label for="" class="size fs-5">Size</label>
                                 <div class="d-flex ">

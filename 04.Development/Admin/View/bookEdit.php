@@ -77,6 +77,8 @@
                             <textarea type="text" class="box1 input-edit" name="book_desc"><?php echo $result[0]['book_desp'] ?></textarea>
                             <label for="" class="page_no fs-5">Page No:</label>
                             <input type="text" class="box1 input-edit" name="book_pg" value="<?php echo $result[0]['page_number']; ?>">
+                            <label for="" class="page_no fs-5">Stock No:</label>
+                            <input type="number" class="box1 input-edit" name="stock" value="<?php echo $result[0]['stock_number']; ?>">
                             <div>
                                 <label for="" class="size fs-5">Size</label>
                                 <div class="d-flex ">
