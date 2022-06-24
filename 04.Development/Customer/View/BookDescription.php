@@ -60,7 +60,7 @@
             <div class="upper-part">
                 <div class="row">
                     <div class="col-lg-4 col-12  col-md-4 col-xl-4 ps-5 ps-lg-0 ps-md-0">
-                        <img src= "../../Admin/resource/image/<?php echo $result[0]['book_img']; ?>"  class="ms-5 ms-lg-0 ms-md-0 py-4 py-lg-0 py-md-0" />
+                        <img src= "../../Admin/resource/image/<?php echo $result[0]['book_img']; ?>"  class="ms-5 ms-lg-0 ms-md-0 py-4 py-lg-0 py-md-0 book_img" />
                         <!-- book preview -->
                         <div class=" d-flex d-lg-block d-md-block justify-content-center">
                             <a href="#pdf" data-bs-toggle="modal" class="ms-lg-5 ms-md-3 my-4 px-3 view-more-btn btn  text-dark book-d-text">
