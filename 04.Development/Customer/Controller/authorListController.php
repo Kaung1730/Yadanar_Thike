@@ -7,7 +7,7 @@ $db2 = new DBConnect();
 $dbconnect = $db2->connect();
 
 
-$sql = $dbconnect->prepare("SELECT GROUP_CONCAT(author.author_id) as authorID, GROUP_CONCAT(author.author_name) as authorName ,author_category From author GROUP BY author_category");
+$sql = $dbconnect->prepare("SELECT GROUP_CONCAT(author.author_id) as authorID, GROUP_CONCAT(author.author_name) as authorName ,author_category From author WHERE del_flg=0 GROUP BY author_category");
 // $sql = $dbconnect->prepare("SELECT * From author");
 
 //go to run
