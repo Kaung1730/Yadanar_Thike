@@ -49,7 +49,7 @@
                                         <th class="text-center">Date</th>
                                         <th class="text-center">Location</th>
                                         <th class="text-center">Price</th>
-                                        <th class="text-center">Status</th>
+                                        <!-- <th class="text-center">Status</th> -->
                                     </tr>
                                     <?php
                                     foreach ($result as $key => $value) {
@@ -58,18 +58,18 @@
                                         echo "<td class='text-center'>" . $value['order_date'] . "</td>";
                                         echo "<td class='text-center'>" . $value['customer_address'] . "</td>";
                                         echo "<td class='text-center'>" . $value['total_price'] . "</td>";
-                                        echo "<td class='text-center'>";
-                                        if ($value['order_status'] == 1) {
-                                            echo "Complete";
-                                        } else {
-                                            echo "Pending";
-                                        }
-                                        echo "</td>";
+                                        // echo "<td class='text-center'>";
+                                        // if ($value['order_status'] == 1) {
+                                        //     echo "Complete";
+                                        // } else {
+                                        //     echo "Pending";
+                                        // }
+                                        // echo "</td>";
                                         echo "</tr>";
                                     }
                                     ?>
                                 </table>
-                                <a href="orderinfo.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-end">See more</button></a>
+                                <a href="orderInfo.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-end">See more</button></a>
                                 <p>&nbsp;</p>
                                 <p>&nbsp;</p>
                             </div>
