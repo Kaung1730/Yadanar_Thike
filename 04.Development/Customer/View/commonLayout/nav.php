@@ -76,7 +76,7 @@
                                     <div class="modal-content">
                                         <div class="modal-body">
                                             <div class="input-group text-dark selectNav">
-                                                <button class=" text-dark btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">ရှာဖွေရန်</button>
+                                                <button class=" text-dark btn btn-outline-secondary " type="button" aria-expanded="false">ရှာဖွေရန်</button>
                                                 <input type="text" name="search" value="<?php if (isset($_GET['search'])) {
                                                                                             echo $_GET['search'];
                                                                                         } ?>" class="form-control searchInput ps-3 search-text" id=" search-text" aria-label="Text input with dropdown button" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ?">
@@ -107,7 +107,7 @@
     <!--searchbar for large screen-->
     <form action="../Controller/searchDataSendController.php" method="GET">
         <div class="top-0 mt-lg-0 mt-md-3 mt-5 pt-lg-1 pt-md-5 pt-5 input-group text-dark d-none d-md-none d-lg-flex search">
-            <button class=" text-dark btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">ရှာဖွေရန်</button>
+            <button class=" text-dark btn btn-outline-secondary" type="button" aria-expanded="false">ရှာဖွေရန်</button>
             <input type="text" name="search" value="<?php if (isset($_GET['search'])) {
                                                         echo $_GET['search'];
                                                     } ?>" class="form-control searchInput ps-3 search-text" id=" search-text" aria-label="Text input with dropdown button" placeholder="သင်ဘာကိုရှာဖွေချင်ပါသလဲ?">

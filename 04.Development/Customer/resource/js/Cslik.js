@@ -6,5 +6,5 @@ $(document).ready(function(){
         autoplaySpeed: 2100,
         prevArrow:'<div ><img src="../resource/image/arrow_left.png"  class="arrow" alt=""></div>',
         nextArrow:'<div ><img src="../resource/image/arrow_right.png" class="arrow" alt=""></div>',
-      }); 
+      });
  });
