@@ -1,12 +1,4 @@
 $(document).ready(function(){
-    // $(window).on("load", function(){
-    //     if($("#basket").val() == 0){
-    //         $(".hide-order").hide();
-    //     }
-    //     else{
-    //         $(".hide-order").show();
-    //     }
-    // })
     $(".cart").click(function(){
 
         $.ajax({

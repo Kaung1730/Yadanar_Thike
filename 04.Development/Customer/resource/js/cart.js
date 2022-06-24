@@ -15,12 +15,13 @@ $(document).ready(function(){
             type: "POST",
             data: { send: JSON.stringify(postData) },
             success: function (res) {
+                location.reload();
                 var cartCount = res;
                 localStorage.setItem('cartCount', cartCount);
                 $(".order-count").text(cartCount);
                 $("#basket").text(localStorage.getItem('cartCount'));
-                location.reload();
                 $('.cart').trigger('click');
+                
             },
             error: function (err) {
                 console.log(err);

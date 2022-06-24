@@ -72,5 +72,9 @@
 @media screen and (max-width: 620px) {
   .titles {
     padding-top: 6%;
+    font-size: 0.8rem;
+  }
+  .facts{
+    font-size: 0.7rem !important;
   }
 }

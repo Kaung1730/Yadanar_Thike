@@ -117,11 +117,11 @@
             echo "</div>";
             ?>
             <!-- အသစ်ထွက်ရှိသော စာအုပ်များ End -->
-
+            <?php require "../Controller/sitemasterController.php" ?>
             <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် -->
             <div class="">
                 <h4 class="mt-5 text-center ">ယနေ့အတွက် ရည်ညွှန်းစာအုပ် </h4>
-                <img src="../resource/image/bookForToday1.png" alt="" class="BookForToday img-fluid ">
+                <img src="../../Admin/resource/image/<?php echo $result[0]['slider_1'] ?>" alt="" class="BookForToday img-fluid ">
             </div>
             <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် end -->
 
@@ -359,7 +359,6 @@
                             <h6 class="mb-4 font-weight-bold">
                                 <i class="bi bi-geo-alt-fill fa-lg me-lg-3 me-md-0 me-0"></i>ရုံးချုပ်တည်နေရာ
                             </h6>
-                            <?php require "../Controller/sitemasterController.php" ?>
                             <!-- <p>အမှတ် (၁၂၃) ၊ ရတနာလမ်း၊တောင်ဥက္ကလာပမြို့နယ်၊ ရန်ကုန်။</p>
                             <p> yadanarthikebookshop@gmail.com</p>
                             <p> +၉၅၉ ၁၂၃ ၄၅၆ ၇၈၉</p>
