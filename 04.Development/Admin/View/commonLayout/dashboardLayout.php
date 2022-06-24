@@ -25,8 +25,8 @@
             <img src="../resource/img/person icon.png" alt="" class="person_icon pt-3">
             <!-- <span class="pt-3 fs-2 text-primary fw-bold font-num">1.5k</span> -->
             <span class="pt-3 fs-2 text-primary fw-bold font-num">
-                <?php echo ceil($income[0]['SUM(ord.total_price + del.delivery_fee)']) ?>
-                K
+                <?php echo number_format(ceil($income[0]['SUM(ord.total_price + del.delivery_fee)']))  ?>
+                Ks
             </span>
         </div>
         <p class="income_text">Income</p>
