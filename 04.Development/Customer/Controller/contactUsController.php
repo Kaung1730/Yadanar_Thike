@@ -1,14 +1,10 @@
 <?php
 session_start();
     $data = json_decode($_POST["send"],true);
-    // print_r($data['star']);
     if(!(isset($_SESSION['customer_id']))){
         echo "login";
     }
     else{
-        // $book_id = $_SESSION['book_id'];
-        // $customer_id = $_SESSION['customer_id'];
-        // $today = date("F j, Y");
         $del_flg = 0;
         require_once("../Model/DBConnection.php");
         $db = new DBConnect();

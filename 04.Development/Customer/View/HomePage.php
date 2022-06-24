@@ -170,18 +170,18 @@
                 require "../Controller/homePageController.php";
                 for ($i = 0; $i < 4; $i++) {
                     echo "<div class='card'>";
-                    echo "<a class='text-decoration-none' href='../View/bookDescription.php?book_id=" . $result[$i]['book_id'] . "'>";
+                    echo "<a class='text-decoration-none' href='../View/bookDescription.php?book_id=" . $popularBook[$i]['book_id'] . "'>";
                     echo " <div class='imgBox'>";
-                    echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
+                    echo " <img src='../../Admin/resource/image/" . $popularBook[$i]['book_img'] . "' alt='' class='bookImg'>";
                     // echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
-                    echo "<div class='bookTitle text-decoration-none'>" . $result[$i]['book_name'] . "</div>";
+                    echo "<div class='bookTitle text-decoration-none'>" . $popularBook[$i]['book_name'] . "</div>";
                     echo "</div>";
                     echo "<div class='content'>";
-                    echo " <p class= 'text-center  text-decoration-none'>" . $result[$i]['book_price'] . "</p>";
+                    echo " <p class= 'text-center  text-decoration-none'>" . $popularBook[$i]['book_price'] . "</p>";
 
                     echo "</a>";
                     if (isset($_SESSION['status'])) {
-                        echo "<button type='button' class='btn btn-basket' value='" . $result[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
+                        echo "<button type='button' class='btn btn-basket' value='" . $popularBook[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
                     }
                     echo "</div>";
                     echo "</div>";
@@ -277,7 +277,7 @@
                         </div>
                     </a>
                 </div>
-
+                
                 <div class="col-md-2">
                     <a href="./deliveryService.php" class="serviceATag">
                         <div class="serviceCard">
@@ -324,7 +324,9 @@
                 </div>
             </div>
         </div>
-
+        <a href="./GuideofWeb.php" class="seeMoreTag text-decoration-none">
+            <div class="usage text-dark">စာမျက်နှာအသုံးပြုနည်း ကြည့်ရှုရန်</div>
+        </a>
         <!-- SERVICES END -->
 
         <!-- homeAddress -->
@@ -353,7 +355,7 @@
                         <!-- Grid column -->
                         <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
                             <h6 class="mb-4 font-weight-bold">
-                                <i class="bi bi-geo-alt-fill fa-lg"></i>ရုံးချုပ်တည်နေရာ
+                                <i class="bi bi-geo-alt-fill fa-lg me-lg-3 me-md-0 me-0"></i>ရုံးချုပ်တည်နေရာ
                             </h6>
                             <?php require "../Controller/sitemasterController.php" ?>
                             <!-- <p>အမှတ် (၁၂၃) ၊ ရတနာလမ်း၊တောင်ဥက္ကလာပမြို့နယ်၊ ရန်ကုန်။</p>
@@ -374,17 +376,20 @@
                             <ul class="list-unstyled">
                                 <li>
                                     <p>
-                                        <ion-icon name="logo-facebook"></ion-icon> www.facebook.com/yadanarthike/
+                                        <ion-icon class="fs-4" name="logo-facebook"></ion-icon> 
+                                        <a class="text-decoration-none text-dark ms-lg-5 ms-md-0 ms-0" href="https://www.facebook.com"><?php echo $result[0]['facebook'] ?></a>
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <ion-icon name="logo-instagram"></ion-icon> www.instagram.com/yadanarthike/
+                                        <ion-icon class="fs-4" name="logo-instagram"></ion-icon>
+                                        <a class="text-decoration-none text-dark ms-lg-5 ms-md-0 ms-0" href="https://www.instagram.com"><?php echo $result[0]['instagram'] ?></a>
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <ion-icon name="logo-twitter"></ion-icon> www.twitter.com/yadanarthike/
+                                        <ion-icon class="fs-4" name="logo-twitter"></ion-icon>
+                                        <a class="text-decoration-none text-dark ms-lg-5 ms-md-0 ms-0" href="https://www.twitter.com"><?php echo $result[0]['twitter'] ?></a>
                                     </p>
                                 </li>
                             </ul>

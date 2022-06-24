@@ -11,7 +11,16 @@ $sql = $dbconnect->prepare("SELECT * FROM book_m WHERE del_flg = 0 ORDER BY crea
 
 //go to run
 $sql->execute();
-
-
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
 
+$popular = $dbconnect->prepare("
+    SELECT *
+    FROM book_m
+    WHERE del_flg = :del_flg
+    GROUP BY book_id
+    ORDER BY
+    MIN(stock_number);
+");
+$popular -> bindValue(":del_flg",0);
+$popular->execute();
+$popularBook = $popular->fetchAll(PDO::FETCH_ASSOC);

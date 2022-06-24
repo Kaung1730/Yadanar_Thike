@@ -7,7 +7,7 @@
     $db2 =  new DBConnect();
     $dbconnect2 = $db2->connect();
 
-    $sql = $dbconnect2->prepare("SELECT * From customer WHERE del_flg = 0 AND customer_id = :id");
+    $sql = $dbconnect2->prepare("SELECT * FROM customer WHERE del_flg = 0 AND customer_id = :id");
     $sql -> bindValue(":id",$id);
     $sql->execute();
 

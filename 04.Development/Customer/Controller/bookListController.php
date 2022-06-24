@@ -9,31 +9,31 @@ $category_name =  $dbConnect->prepare("
  SELECT * FROM category
     ");
 $yokePya = $dbConnect->prepare("
- SELECT * FROM book_m where category_id = 1
+ SELECT * FROM book_m WHERE del_flg = 0 AND category_id = 1
     ");
 $novel = $dbConnect->prepare("
- SELECT * FROM book_m where category_id = 2
+ SELECT * FROM book_m WHERE del_flg = 0 AND category_id = 2
     ");
 $language = $dbConnect->prepare("
- SELECT * FROM book_m where category_id = 3
+ SELECT * FROM book_m WHERE del_flg = 0 AND category_id = 3
     ");
 $health = $dbConnect->prepare("
- SELECT * FROM book_m where category_id = 4
+ SELECT * FROM book_m WHERE del_flg = 0 AND category_id = 4
     ");
 $politic = $dbConnect->prepare("
- SELECT * FROM book_m where category_id = 5
+ SELECT * FROM book_m WHERE del_flg = 0 AND category_id = 5
     ");
 $poem = $dbConnect->prepare("
- SELECT * FROM book_m where category_id = 6
+ SELECT * FROM book_m WHERE del_flg = 0 AND category_id = 6
     ");
 $success = $dbConnect->prepare("
- SELECT * FROM book_m where category_id = 7
+ SELECT * FROM book_m WHERE del_flg = 0 AND category_id = 7
     ");
 $biography = $dbConnect->prepare("
- SELECT * FROM book_m where category_id = 8
+ SELECT * FROM book_m WHERE del_flg = 0 AND category_id = 8
     ");
 $other = $dbConnect->prepare("
- SELECT * FROM book_m where category_id = 9
+ SELECT * FROM book_m WHERE del_flg = 0 AND category_id = 9
     ");
 $category_name->execute();
 $yokePya->execute();

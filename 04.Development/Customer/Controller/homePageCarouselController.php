@@ -7,9 +7,10 @@ $db2 = new DBConnect();
 $dbconnect = $db2->connect();
 
 
-$sql = $dbconnect->prepare("SELECT * FROM slider");
+$sql = $dbconnect->prepare("SELECT * FROM slider WHERE del_flg = :del_flg");
 
 //go to run
+$sql -> bindValue(":del_flg",0);
 $sql->execute();
 
 

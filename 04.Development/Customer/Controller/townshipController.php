@@ -6,8 +6,9 @@
 
     $sql = $dbconnect -> prepare("SELECT * FROM township 
     INNER JOIN state ON township.state_id=state.state_id
-    WHERE township.state_id=:id");
+    WHERE township.state_id=:id AND del_flg = :del_flg");
     //go to run
+    $sql -> bindValue(":del_flg",0);
     $sql->bindValue(":id", $id);
     $sql -> execute();
     $result = $sql -> fetchAll(PDO::FETCH_ASSOC);

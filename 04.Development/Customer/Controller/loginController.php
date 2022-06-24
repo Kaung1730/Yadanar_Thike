@@ -15,10 +15,12 @@ require_once("../Model/DBConnection.php");
                 WHERE customer_name = :name
                 AND
                 customer_password = :password
+                AND
+                del_flg = :del_flg
         ");
         $sql -> bindValue(":name",$userName);
         $sql -> bindValue(":password",$decPassword);
-        
+        $sql -> bindValue(":del_flg",0);
         $sql->execute();
         $result = $sql->fetchAll(PDO::FETCH_ASSOC);
         
