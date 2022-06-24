@@ -42,6 +42,7 @@
                                 <tr>
                                     <th class="text-center">No</th>
                                     <th class="text-center">Date</th>
+                                    <th class="text-center">Customer Name</th>
                                     <th class="text-center">Book Name</th>
                                     <th class="text-center">Location</th>
                                     <th class="text-center">Book Price</th>
@@ -52,6 +53,7 @@
                                     echo "<tr>";
                                     echo "<td class='text-center'>" . $count . ".</td>";
                                     echo "<td class='text-center'>" . $value['order_date'] . "</td>";
+                                    echo "<td class='text-center'>" . $value['customer_name'] . "</td>";
                                     echo "<td class='text-center'>" . $value['book_name'] . "</td>";
                                     echo "<td class='text-center'>" . $value['customer_address'] . "</td>";
                                     echo "<td class='text-center'>" . $value['total_price'] . "</td>";
