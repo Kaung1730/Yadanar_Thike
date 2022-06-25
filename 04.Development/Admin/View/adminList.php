@@ -49,6 +49,7 @@
                                     <?php
                                     $count = 1;
                                     foreach ($result as $key => $value) {
+                                        $_SESSION['role']=$value['role'];
                                         if($value['admin_id'] != $_SESSION['admin_id']){
                                             echo "<tr>";
                                             echo "<td class='text-center'>" . $count . ".</td>";
@@ -63,7 +64,13 @@
                                     ?>
                                 </table>
                                 <nav aria-label="Page navigation example">
-                                    <a href="adminAdd.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-start">Add</button></a>
+                                    <?php 
+                                    require "../Controller/adminListController.php";
+                                    if($_SESSION['role'] == 0){?>
+                                        <a href="adminAdd.php" class="a-edit"><button type="button" class="btn btn-secondary btn-3 mx-5 float-start">Add</button></a>
+                                    <?php
+                                    }
+                                    ?>
                                     <ul class="pagination float-end me-5">
                                         <li class="page-item"><a class="page-link" href="?pageno=1">First</a></li>
                                         <li class="page-item 
