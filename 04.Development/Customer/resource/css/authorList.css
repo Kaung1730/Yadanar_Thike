@@ -24,14 +24,14 @@
     border: 0px solid;
     background-color: var(--main-bg-color);
     text-align: center;
-    margin: 7vh 0 10vh 25vw;
+    margin: 7vh 0 10vh 35vw;
     padding-top: 3vh;
     font-weight: 580;
 }
 
 /* က မှ အ အထိ */
 .firstWord {
-    margin-left: 24vw;
+    margin-left: 35vw;
 }
 
 .alphabetLine {
@@ -52,7 +52,7 @@
 }
 
 .box {
-    margin-left: 25vw;
+    margin-left: 35vw;
     /* margin-top: 12vh; */
 }
 
