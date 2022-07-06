@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>အိမ်အ​ရောက်ပို့​ဆောင်​ပေးသည့် ဝန်​ဆောင်မှုများ</title>
     <?php require "../Controller/iconController.php"; ?>
-    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
+    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>">
     <link rel="stylesheet" href="../resource/css/deliveryService.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">
     <!-- CSS only -->
@@ -43,48 +43,52 @@
 </head>
 
 <body>
-    <div class="nav-bar"></div>
-    <div class="setting"></div>
-    <div class="cart"></div>
-    <div class="order"></div>
-    <div class="orderHistory"></div>
-    <div class="container ">
+    <div class="container-fluid">
 
-        <!-- body -->
-        <div class="deliList">
-            <div class="deliHeader mt-5">
-                အိမ်အရောက်ပို့ဆောင်ပေးသောနေရာများ
-            </div>
+        <div class="nav-bar"></div>
+        <div class="setting"></div>
+        <div class="cart"></div>
+        <div class="order"></div>
+        <div class="orderHistory"></div>
+        <div class="container ">
 
-            <div class="deliBody">
-                <!-- YangonDivision -->
-                <?php
-                require "../Controller/stateController.php";
-                for ($i = 1; $i <= 14; $i++) {
-                    $id =$i;
-                    require "../Controller/townshipController.php";
-                    echo "<div class ='division yangon'>" . $result[0]['state_name'] . "</div>";
-                    echo "<div class='yangonTownList'>";
-                    echo "<ul class='yagonTown lh-lg'>";
-                    for ($j = 0; $j < count($result); $j++) {
-                        echo "<li>" . $result[$j]['township_name'] . "</li>";
+            <!-- body -->
+            <div class="deliList">
+                <div class="deliHeader mt-5">
+                    အိမ်အရောက်ပို့ဆောင်ပေးသောနေရာများ
+                </div>
+
+                <div class="deliBody">
+                    <!-- YangonDivision -->
+                    <?php
+                    require "../Controller/stateController.php";
+                    for ($i = 1; $i <= 14; $i++) {
+                        $id = $i;
+                        require "../Controller/townshipController.php";
+                        echo "<div class ='division yangon'>" . $result[0]['state_name'] . "</div>";
+                        echo "<div class='yangonTownList'>";
+                        echo "<ul class='yagonTown lh-lg'>";
+                        for ($j = 0; $j < count($result); $j++) {
+                            echo "<li>" . $result[$j]['township_name'] . "</li>";
+                        }
+                        echo "</ul>";
+                        echo "</div>";
+                        echo "</hr>";
                     }
-                    echo "</ul>";
-                    echo "</div>";
-                    echo "</hr>";
-                }
-                ?>
+                    ?>
+                </div>
             </div>
-        </div>
 
-    </div>
-    <!-- FOOTER -->
-    <!-- <div class="footer mt-5">
+        </div>
+        <!-- FOOTER -->
+        <!-- <div class="footer mt-5">
         <div class="ps-2">@YadanarThike 2022</div>
         <div class="copyright">&#169;
             YadanarThike Company. All Rights Reserved.</div>
     </div> -->
-    <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
+        <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
+
+    </div>
 </body>
 
 </html>

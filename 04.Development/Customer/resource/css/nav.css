@@ -54,9 +54,13 @@ nav, .dropdown-item, select, option{
     border-radius: 50%;
     border: 0.3rem var(--yellow) !important;
 }
+
 @media screen and (max-width:576px) {
     .color{
         background-color: var(--yellow) !important;
+    }
+    .searchIcon{
+        font-size: 14.4px;
     }
 }
 @media screen and (max-width:768px) {

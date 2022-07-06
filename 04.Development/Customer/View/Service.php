@@ -34,12 +34,13 @@
 </head>
 
 <body>
+    <div class="container-fluid">
     <div class="nav-bar"></div>
     <div class="setting"></div>
     <div class="cart"></div>
     <div class="order"></div>
     <div class="orderHistory"></div>
-    <div class="container service">
+    <div class=" service">
         <div class="main">
             <div class="header">
                 <p class="title">မင်္ဂလာပါ… ဝန်ဆောင်မှုများစွာဖြင့် Yadanar Thikeမှ ကြိုဆိုပါသည်
@@ -72,6 +73,7 @@
             <div class="footer">
             </div>
         </div>
+    </div>
     </div>
 </body>
 

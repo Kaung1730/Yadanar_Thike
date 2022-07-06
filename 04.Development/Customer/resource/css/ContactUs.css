@@ -16,6 +16,7 @@
     font-weight: bold;
     font-size: 3rem;
     color: var(--yellow);
+    margin-left: 3.5vw;
 }
 
 .facts,
@@ -29,6 +30,7 @@ input,
 .facts {
     color: var(--yellow);
     max-width: 30rem;
+    margin-left: 3.5vw;
 }
 
 .input {
@@ -153,6 +155,24 @@ img {
         position: relative;
         bottom: 0 !important;
         top: 6rem !important;
+    }
+    .i1, .i2{
+        margin: 15px 50px 20px 50px;
+    }
+    .title, .facts{
+        margin-left: 9vw;
+    }
+    .input , .inputbox{
+        margin-left: 5vw !important;
+    }
+    .label{
+        padding-left: 5vw !important;
+    }
+    #text{
+        margin-left: 5vw;
+    }
+    #send-btn{
+        margin-bottom: 2vh;
     }
 }
 

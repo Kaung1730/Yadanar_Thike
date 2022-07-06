@@ -44,13 +44,14 @@
 </head>
 
 <body>
+    <div class="container-fluid">
     <div class="nav-bar"></div>
     <div class="setting"></div>
     <div class="cart"></div>
     <div class="order"></div>
     <div class="orderHistory"></div>
 
-    <div class="container ">
+    <div class=" ">
 
         <div class="authorList">
             <div class="title">စာရေးဆရာအမည် (က မှ အ အထိ)</div>
@@ -167,6 +168,7 @@
     <!-- FOOTER -->
 
     <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
+    </div>
 </body>
 
 </html>

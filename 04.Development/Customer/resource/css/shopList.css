@@ -27,21 +27,22 @@
     border: 0px solid;
     background-color: var(--yellow);
     text-align: center;
-    padding-top: 28px;
+    padding-top: 11vw;
     font-size: 20px;
 }
 
-.shopListBody {
+/* .shopListBody {
     width: 70vw;
-    height: 590vh;
+    height: 500vh;
     border: 0px solid;
     background-color: var(--body-bg-color);
-}
+
+} */
 
 .bookshopName {
     /* position: absolute; */
     width: 23vw;
-    height: 9vh;
+    height: 7vh;
     border: 0px solid;
     text-align: center;
     padding-top: 20px;
@@ -90,7 +91,7 @@
     }
     .shopListBody {
         width: 70vw;
-        height: 610vh;
+        /* height: 610vh; */
     }
 }
 @media screen and (max-width: 820px){
@@ -138,7 +139,7 @@
 
     .shopListBody {
         width: 90vw;
-        height: 510vh;
+        /* height: 510vh; */
     }
     /* .footer {
         font-size: 12px;

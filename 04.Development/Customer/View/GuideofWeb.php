@@ -36,14 +36,14 @@
 </head>
 
 <body>
-
+<div class="container-fluid">
         <div class="nav-bar"></div>
         <div class="setting"></div>
         <div class="cart"></div>
         <div class="order"></div>
         <div class="orderHistory"></div>
         </br>
-        <div class="container">
+        
         <div class="guide">
             <div class="mytop">
                 <img class="imgs one" src="../resource/image/GoWtop.png" alt="">

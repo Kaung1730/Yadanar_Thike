@@ -30,13 +30,14 @@
 </head>
 
 <body>
+<div class= "container-fluid">
     <div class="nav-bar"></div>
     <div class="setting"></div>
     <div class="cart"></div>
     <div class="order"></div>
     <div class="orderHistory"></div>
     
-    <div class= "container">
+   
        
             <div class="top">
                 <h3>ကိုယ်ရေးအချက်အလက်ဆိုင်ရာမူပိုင်ခွင့်များ</h3>

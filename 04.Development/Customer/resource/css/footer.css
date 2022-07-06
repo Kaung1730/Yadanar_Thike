@@ -9,3 +9,8 @@
     margin-left: 3vw !important;
     padding-top: 0.5vw !important;
 }
+@media screen and (max-width:576px) {
+    .footer{
+        font-size: 12px;
+    }
+}

@@ -36,13 +36,14 @@
 </head>
 
 <body>
+<div class="container-fluid">
     <div class="nav-bar"></div>
     <div class="setting"></div>
     <div class="cart"></div>
     <div class="order"></div>
     <div class="orderHistory"></div>
 
-    <div class="container">
+    
         <div class="containerBox">
             <div class="title">
                 <h1>FAQs</h1>

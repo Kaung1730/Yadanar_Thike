@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>စာအုပ်အမျိုးအစားများ</title>
     <?php require "../Controller/iconController.php"; ?>
-    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
+    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>">
     <!--Customize CSS-->
     <link rel="stylesheet" href="../resource/css/category.css">
     <link rel="stylesheet" href="../resource/css/commonUser.css">
@@ -33,127 +33,122 @@
 </head>
 
 <body>
-    <!--Nav-->
-    <div class="nav-bar"></div>
-    <div class="setting"></div>
-    <div class="cart"></div>
-    <div class="order"></div>
-    <div class="orderHistory"></div>
-    <!--Category Start-->
-    <div class="container-fluid px-0 mt-5">
-        <div class="container">
-            <div class="title text-center">စာအုပ်အမျိုးအစားများ</div>
-            <div class="category">  
-                <?php
+    <div class="container-fluid">
+
+
+        <!--Nav-->
+        <div class="nav-bar"></div>
+        <div class="setting"></div>
+        <div class="cart"></div>
+        <div class="order"></div>
+        <div class="orderHistory"></div>
+        <!--Category Start-->
+        <div class=" px-0 mt-5">
+            <div class="container">
+                <div class="title text-center">စာအုပ်အမျိုးအစားများ</div>
+                <div class="category">
+                    <?php
                     require "../Controller/bookListController.php";
                     foreach ($result as $key => $value) {
                         echo '<div class="sub my-5">
-                        <div class="sub-title ms-lg-5 mb-3 ps-lg-5">'.$value['category_name'].'</div>
+                        <div class="sub-title ms-lg-5 mb-3 ps-lg-5">' . $value['category_name'] . '</div>
                         <div class="autoplay book-list d-flex justify-content-between align-items-center">';
-                        if($value['category_id'] == 1){
+                        if ($value['category_id'] == 1) {
                             foreach ($yokePyaResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5 id="yokepya">
-                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <button class="viewcount" value="'.$value['book_id'].'" >
-                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id=' . $value['book_id'] . '">
+                                        <button class="viewcount" value="' . $value['book_id'] . '" >
+                                            <img  src="../../Admin/resource/image/' . $value['book_img'] . '" alt="" class="img-fluid"/>
                                         </button>
                                     </a>
                                 </div>';
                             }
-                        }
-                        else if($value['category_id'] == 2){
+                        } else if ($value['category_id'] == 2) {
                             foreach ($novelResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="novel">
-                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <button class="viewcount" value="'.$value['book_id'].'" >
-                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id=' . $value['book_id'] . '">
+                                        <button class="viewcount" value="' . $value['book_id'] . '" >
+                                            <img  src="../../Admin/resource/image/' . $value['book_img'] . '" alt="" class="img-fluid"/>
                                         </button>
                                     </a>
                                 </div>';
                             }
-                        }
-                        else if($value['category_id'] == 3){
+                        } else if ($value['category_id'] == 3) {
                             foreach ($languageResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="language">
-                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <button class="viewcount" value="'.$value['book_id'].'" >
-                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id=' . $value['book_id'] . '">
+                                        <button class="viewcount" value="' . $value['book_id'] . '" >
+                                            <img  src="../../Admin/resource/image/' . $value['book_img'] . '" alt="" class="img-fluid"/>
                                         </button>
                                     </a>
                                 </div>';
                             }
-                        }
-                        else if($value['category_id'] == 4){
+                        } else if ($value['category_id'] == 4) {
 
                             foreach ($healthResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="health">
-                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <button class="viewcount" value="'.$value['book_id'].'" >
-                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id=' . $value['book_id'] . '">
+                                        <button class="viewcount" value="' . $value['book_id'] . '" >
+                                            <img  src="../../Admin/resource/image/' . $value['book_img'] . '" alt="" class="img-fluid"/>
                                         </button>
                                     </a>
                                 </div>';
                             }
-                        }
-                        else if($value['category_id'] == 5){
+                        } else if ($value['category_id'] == 5) {
                             foreach ($politicResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="politics">
-                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <button class="viewcount" value="'.$value['book_id'].'" >
-                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id=' . $value['book_id'] . '">
+                                        <button class="viewcount" value="' . $value['book_id'] . '" >
+                                            <img  src="../../Admin/resource/image/' . $value['book_img'] . '" alt="" class="img-fluid"/>
                                         </button>
                                     </a>
                                 </div>';
                             }
-                        }
-                        else if($value['category_id'] == 6){
+                        } else if ($value['category_id'] == 6) {
                             foreach ($poemResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="poem">
-                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <button class="viewcount" value="'.$value['book_id'].'" >
-                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id=' . $value['book_id'] . '">
+                                        <button class="viewcount" value="' . $value['book_id'] . '" >
+                                            <img  src="../../Admin/resource/image/' . $value['book_img'] . '" alt="" class="img-fluid"/>
                                         </button>
                                     </a>
                                 </div>';
                             }
-                        }
-                        else if($value['category_id'] == 7){
+                        } else if ($value['category_id'] == 7) {
                             foreach ($successResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="success">
-                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <button class="viewcount" value="'.$value['book_id'].'" >
-                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id=' . $value['book_id'] . '">
+                                        <button class="viewcount" value="' . $value['book_id'] . '" >
+                                            <img  src="../../Admin/resource/image/' . $value['book_img'] . '" alt="" class="img-fluid"/>
                                         </button>
                                     </a>                                  
                                 </div>';
                             }
-                        }
-                        else if($value['category_id'] == 8){
+                        } else if ($value['category_id'] == 8) {
                             foreach ($biographyResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="biography">
-                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <button class="viewcount" value="'.$value['book_id'].'" >
-                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id=' . $value['book_id'] . '">
+                                        <button class="viewcount" value="' . $value['book_id'] . '" >
+                                            <img  src="../../Admin/resource/image/' . $value['book_img'] . '" alt="" class="img-fluid"/>
                                         </button>
                                     </a>
                                 </div>';
                             }
-                        }
-                        else if($value['category_id'] == 9){
+                        } else if ($value['category_id'] == 9) {
                             foreach ($otherResult as $key => $value) {
                                 echo '
                                 <div class="ms-lg-5" id="other">
-                                    <a href="../View/bookDescription.php?book_id='.$value['book_id'].'">
-                                        <button class="viewcount" value="'.$value['book_id'].'" >
-                                            <img  src="../../Admin/resource/image/'.$value['book_img'].'" alt="" class="img-fluid"/>
+                                    <a href="../View/bookDescription.php?book_id=' . $value['book_id'] . '">
+                                        <button class="viewcount" value="' . $value['book_id'] . '" >
+                                            <img  src="../../Admin/resource/image/' . $value['book_img'] . '" alt="" class="img-fluid"/>
                                         </button>
                                     </a>
                                 </div>';
@@ -163,16 +158,17 @@
                         </div>
                 <hr class="yellow">';
                     }
-                ?>
+                    ?>
+                </div>
             </div>
-        </div>
-        <!--footer-->
-        <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
+            <!--footer-->
+            <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
 
+        </div>
+        <!--Jquery Link-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
     </div>
-    <!--Jquery Link-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 </body>
 
 </html>

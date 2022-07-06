@@ -76,7 +76,7 @@
     list-style: none;
     width: 30vw;
     border: solid 0px;
-    background-color: var(--light-violet);
+    background-color: var(--body-bg-color);
     padding-top: 2rem;
     font-weight: 580;
 }
@@ -93,13 +93,14 @@
     /* က မှ အ အထိ */
 
     .title {
-        width: 50vw;
+        width: 70vw;
         height: 10vh;
         border: 0px solid;
         background-color: var(--main-bg-color);
         text-align: center;
-        margin: 7vh 0vw 8vh 21vw;
-        padding-top: 3vh;
+        margin: 7vh 0vw 8vh 13vw;
+        padding-top: 4vh;
+        font-size: 14px;
     }
 
     .alphabetLine {
@@ -120,11 +121,12 @@
     }
 
     .firstWord {
-        margin-left: 15vw;
+        margin-left: 8vw;
     }
 
     .alphabetList {
         width: 60vw;
+
     }
 
     .authorsList ul {

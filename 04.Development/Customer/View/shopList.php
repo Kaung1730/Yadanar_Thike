@@ -42,12 +42,14 @@
 </head>
 
 <body>
+<div class="container-fluid ">
     <div class="nav-bar"></div>
     <div class="setting"></div>
     <div class="cart"></div>
     <div class="order"></div>
     <div class="orderHistory"></div>
-    <div class="container ">
+
+    
 
         <div class="shopList">
             <div class="shopListHeader">
@@ -57,7 +59,7 @@
             <?php
                 require"../Controller/shopListController.php";
                 foreach($result as $key => $value){ 
-                    echo "<div class='bookshopName SPLKBookShop font-weight-bold
+                    echo "<div class='bookshopName  SPLKBookShop font-weight-bold
                     '>". $value['shop_Cate'] ."</div>";
 
                     $shopname= explode(",",$value['shopName']);

@@ -112,15 +112,16 @@
 
 .card:hover {
     height: 50vh;
-    background-color: var(--light-violet);
+    background-color: whitesmoke;
 }
 
 .imgBox {
     width: 100%;
     height: 25vh;
-    position: relative;
+    /* position: relative; */
     transform: translateY(-100px);
     border-radius: 5px;
+    /* margin-left: 1vw; */
 }
 
 .imgBox .bookTitle {
@@ -136,8 +137,9 @@
 
 .bookImg {
     width: 15vw;
-    height: 30vh;
-    padding-right: 2vw;
+    margin-left: 1vw !important;
+    /* height: 30vh; */
+    /* padding-right: 2vw; */
 }
 
 .card .content {
@@ -165,6 +167,7 @@
 .card .content .btn {
     background-color: var(--light-yellow);
     text-align: center;
+    font-size: 15px;
 }
 
 /* လတ်တလောလူကြိုက်များသော စာအုပ်များ end  */
@@ -208,7 +211,7 @@
 
 .disItem .discountCard .disImage {
     width: 18vw;
-    height: 34vh;
+    /* height: 34vh; */
     margin: 5vh 0 0 2vw;
 }
 
@@ -219,7 +222,7 @@
 
 .disTag span {
     width: 7vw;
-    height: 4vh;
+    /* height: 4vh; */
     background-color: var(--yellow);
     display: block;
     position: absolute;
@@ -249,7 +252,7 @@
 
 .carousels .thumb-wrapper {
     /* padding: 25px 15px; */
-    background: var(--body-bg-color);
+    /* background: var(--body-bg-color); */
     border-radius: 6px;
     text-align: center;
     position: relative;
@@ -290,23 +293,15 @@
     width: 170px;
     height: 55px;
     border: 0px solid;
-    background-color: var(--yellow);
-    margin: 1vh 0vw 4vh 35vw;
+    background-color:var(--light-yellow);
+    margin: 0vh 0vw 4vh 40vw;
     text-align: center;
-    padding-top: 2.5vh;
+    padding-top: 2vh;
     border-radius: 5px;
 }
 
-.usage{
-    max-width: 16rem !important;
-    height: 3rem !important;
-    border: 0px solid !important;
-    background-color: var(--yellow) !important;
-    margin: 1vh 0vw 5vh 32vw;
-    text-align: center;
-    padding-top: 2.5vh;
-    border-radius: 5px;
-}
+
+
 .seeMoreTagA {
     text-decoration: none !important;
     color: var(--black);
@@ -379,33 +374,45 @@
 .copyright {
     background-color: var(--yellow);
 }
-.guide-btn{
-    background-color: var(--yellow) !important;
+
+.guide-btn {
+    background-color: var(--light-yellow) !important;
     padding: 1rem !important;
     margin-bottom: 2.5rem !important;
-    margin-left: 15rem !important;
+    margin-left: 33rem !important;
+    
+    
 }
-.guide-btn:hover{
+
+
+.guide-btn:hover {
     border: none !important;
 }
+#topBtn:active{
+    border: none !important;
+    outline: none !important;
+}
 @media screen and (max-width:576px) {
-    .guide-btn{
-        margin-left: 3.5rem !important;
+    .guide-btn {
+        margin-left: 4rem !important;
+        font-size: 14px !important; 
     }
 }
 
-@media screen and (min-width:1200px){
-    .guide-btn{
+/* @media screen and (min-width:1200px) {
+    .guide-btn {
         margin-left: 25rem !important;
     }
 }
 
-@media  screen and (width:820px) {
-    .guide-btn{
+@media screen and (width:820px) {
+    .guide-btn {
         margin-left: 15rem !important;
     }
-}
+} */
+
 @media screen and (max-width: 720px) {
+
     /* အသစ်ထွက်ရှိသော စာအုပ်များ*/
     .newBookImg {
         width: 40vw;
@@ -441,23 +448,31 @@
 
     .bookImg {
         width: 42vw;
-        height: 32vh;
+        /* height: 32vh; */
         padding-left: 3vw;
         text-align: center;
     }
 
+    .card {
+        height: 25vh !important;
+    }
+
+    .card:hover {
+        height: 35vh !important; 
+    }
+
     .card .content p {
-        margin-top: 14vh;
+        margin-top: 2vh;
 
     }
 
-    .card .content .btn {
+    /* .card .content .btn {
         margin-left: 1vw !important;
-    }
+    } */
 
     .popularBookTitle {
         margin: 15vh 0vw 17vh 3vw;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .bookTitle {
@@ -468,9 +483,12 @@
 
 
     /* DISCOUNT start */
+    .disItem{
+        height: 30vh;
+    }
 
     .disItem .disContent {
-        margin: 18vh 0vw 0vh 3vw;
+        margin: 5vh 0vw 0vh 3vw;
         font-size: 20px;
 
     }
@@ -495,22 +513,22 @@
         width: 180px;
         height: 180px;
         border-radius: 50%;
-        margin: 13vh 0vw 0vh 1vw;
+        margin: 5vh 0vw 0vh 0vw;
     }
 
     .disItem .discountCard .disImage {
         width: 30vw;
-        height: 18vh;
-        margin: 2vh 0vw 0vh 4vw !important;
+        /* height: 18vh; */
+        margin: 4vh 0vw 0vh 4vw !important;
     }
 
     .disTag {
-        margin: 3vh 0vw 0vh -1vw;
+        margin: 1vh 0vw 0vh -2vw;
     }
 
     .disTag span {
         width: 14vw;
-        height: 4vh;
+        /* height: 4vh; */
         font-size: 10px;
     }
 
@@ -540,11 +558,7 @@
 
     /* category end */
 
-    /* SERVICES */
-    .serviceCard {
-        margin-left: 25vw;
-    }
-
+ 
     /* FOOTER start*/
     .footer {
         font-size: 12px;

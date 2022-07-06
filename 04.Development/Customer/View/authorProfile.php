@@ -9,7 +9,7 @@
     <title>စာရေးဆရာများ</title>
 
     <link rel="stylesheet" href="../resource/css/authorProfile.css">
-    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>" >
+    <link rel="shortcut icon" href="../../Admin/resource/image/<?php echo $iconResult[0]['icon']; ?>">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -47,66 +47,68 @@
 </head>
 
 <body>
-    <div class="nav-bar"></div>
-    <div class="setting"></div>
-    <div class="cart"></div>
-    <div class="order"></div>
-    <div class="orderHistory"></div>
+    <div class="container-fluid">
+        <div class="nav-bar"></div>
+        <div class="setting"></div>
+        <div class="cart"></div>
+        <div class="order"></div>
+        <div class="orderHistory"></div>
 
-    <div class="container ">
-        <div class="profile ">
-            <div class="row mt-5  authorBio">
-                <!-- PROFILE -->
+        <div class=" ">
+            <div class="profile ">
+                <div class="row mt-5  authorBio">
+                    <!-- PROFILE -->
 
-                <?php
+                    <?php
 
-                require "../Controller/authorProfileController.php";
-                $_SESSION['author_id'] = $result[0]['author_id'];
-                echo "<div class='col-md-5'>. <img src='../../Admin/resource/image/" . $result[0]['author_image'] . " 'class='image img-responsive'>. </div>";
-                echo " <div class='col-md-7 mt-5 '>";
-                echo " <h2 class='mb-3 '>" . $result[0]['author_name'] . "</h2>";
-                echo "<h5 class='mb-4 fw-bold'> " . $result[0]['author_life'] . "</h5>";
-                echo "<p class='lh-lg  authorBio'>" . $result[0]['author_about'] . "</p>";
+                    require "../Controller/authorProfileController.php";
+                    $_SESSION['author_id'] = $result[0]['author_id'];
+                    echo "<div class='col-md-5'>. <img src='../../Admin/resource/image/" . $result[0]['author_image'] . " 'class='image img-responsive'>. </div>";
+                    echo " <div class='col-md-7 mt-5 '>";
+                    echo " <h2 class='mb-3 '>" . $result[0]['author_name'] . "</h2>";
+                    echo "<h5 class='mb-4 fw-bold'> " . $result[0]['author_life'] . "</h5>";
+                    echo "<p class='lh-lg  authorBio'>" . $result[0]['author_about'] . "</p>";
 
-                ?>
-                <!-- PROFILE  end-->
+                    ?>
+                    <!-- PROFILE  end-->
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Card -->
+        <!-- Card -->
 
-    <div class="carousel mt-5">
-        <div class="mt-5 itemTitle"> ရတနာသိုက် Book Shopတွင်ရရှိနိုင်သော ဤစာရေးဆရာ၏ စာအုပ်များအနက်မှ</div>
-        <div class="item active row mt-5">
+        <div class="carousel mt-5">
+            <div class="mt-5 itemTitle"> ရတနာသိုက် Book Shopတွင်ရရှိနိုင်သော ဤစာရေးဆရာ၏ စာအုပ်များအနက်မှ</div>
+            <div class="item active row mt-5">
 
-            <?php
-            require "../Controller/authorProfileCardController.php";
-            for ($i = 0; $i < count($result); $i++) {
-                echo "<div class='col-sm-3'>";
-                echo " <div class='thumb-wrapper'>";
-                echo '<a class="text-decoration-none" href="../View/bookDescription.php?book_id='.$result[$i]['book_id'].'">';
-                echo " <div class='img-box'>";
-                echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='img-fluid'>";
-                echo "</div>";
-                echo "<div class='thumb-content'>";
-                echo "<div class='authorName'>" . $result[$i]['author_name'] . "</div>";
-                echo "<div class='bookName'>" . $result[$i]['book_name'] . "</div>";
-                echo "<p class='item-price'>" . $result[$i]['book_price'] . "</p>";
-                if (isset($_SESSION['status-customer'])) {
-                    echo "<button type='button' class='btn btn-basket' value='" . $result[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
+                <?php
+                require "../Controller/authorProfileCardController.php";
+                for ($i = 0; $i < count($result); $i++) {
+                    echo "<div class='col-sm-3'>";
+                    echo " <div class='thumb-wrapper'>";
+                    echo '<a class="text-decoration-none" href="../View/bookDescription.php?book_id=' . $result[$i]['book_id'] . '">';
+                    echo " <div class='img-box'>";
+                    echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='img-fluid'>";
+                    echo "</div>";
+                    echo "<div class='thumb-content'>";
+                    echo "<div class='authorName'>" . $result[$i]['author_name'] . "</div>";
+                    echo "<div class='bookName'>" . $result[$i]['book_name'] . "</div>";
+                    echo "<p class='item-price'>" . $result[$i]['book_price'] . "</p>";
+                    if (isset($_SESSION['status-customer'])) {
+                        echo "<button type='button' class='btn btn-basket' value='" . $result[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
+                    }
+                    echo "</div>";
+                    echo "</div>";
+                    echo "</a>";
+                    echo "</div>";
                 }
-                echo "</div>";
-                echo "</div>";
-                echo "</a>";
-                echo "</div>";
-            }
-            ?>
+                ?>
+            </div>
         </div>
-    </div>
     </div>
     <!-- FOOTER -->
 
     <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
+    </div>
 </body>
 
 </html>

@@ -69,7 +69,7 @@
                     ?>
                     <li class="nav-item  d-flex d-md-flex d-lg-none  nav-color me-lg-4 me-md-0 me-0 px-lg-2 px-md-2 ps-0 py-lg-0 py-md-2 py-2">
                         <button type="button" class="btn searchBorder" data-bs-toggle="modal" data-bs-target="#search-modal">
-                            <span class="text-dark">ရှာဖွေရန်</span> <i class="bi bi-search  fw-bold fs-5 text-center "></i>
+                            <span class="text-dark  searchIcon">ရှာဖွေရန်</span> <i class="bi bi-search  fw-bold fs-6 text-center "></i>
                         </button>
                         <form action="../Controller/searchDataSendController.php" method="GET">
                             <div class="modal fade search" id="search-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
