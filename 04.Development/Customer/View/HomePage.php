@@ -303,8 +303,8 @@
                         </a>
                     </div>
 
-                    <div class=">
-                        <a href=" ./Privacy.php" class="serviceATag">
+                    <div class="">
+                        <a href="./Privacy.php" class="serviceATag">
                         <div class="serviceCard">
                             <div class="icon">
                                 <img src="../resource/image/privacyLogo.webp" alt="">
