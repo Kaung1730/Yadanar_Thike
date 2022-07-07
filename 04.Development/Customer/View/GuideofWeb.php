@@ -36,7 +36,7 @@
 </head>
 
 <body>
-<div class="container-fluid">
+<div class="container-fluid p-0">
         <div class="nav-bar"></div>
         <div class="setting"></div>
         <div class="cart"></div>

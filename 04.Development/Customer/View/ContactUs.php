@@ -44,7 +44,7 @@
         <div class="cart"></div>
         <div class="order"></div>
         <div class="orderHistory"></div>
-        <div class="container-fluid ">
+        <div class="container-fluid p-0">
 
 
             <div class="container d-flex justify-content-center align-items-center mb-0 mb-md-0 mb-lg-4">
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
+        <div class="footer d-flex py-3 text-center mt-4"></div>
     </div>
    
 </body>

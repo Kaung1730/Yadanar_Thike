@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <div class="nav-bar"></div>
         <div class="setting"></div>
         <div class="cart"></div>
@@ -64,7 +64,7 @@
 
 
 
-        <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
+        <div class="footer d-flex py-3 text-center mt-4"></div>
     </div>
 </body>
 

@@ -54,7 +54,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <?php session_start(); ?>
         <div class="nav-bar"></div>
         <div class="setting"></div>
@@ -408,7 +408,7 @@
             </div>
         </div>
     </div>
-    <div class="footer d-flex py-3 px-2 text-center mt-4 "></div>
+    <div class="footer d-flex py-3 text-center mt-4 "></div>
     </div>
     <button id="topBtn" class="pt-2 bg-warning border-warning rounded position-fixed bottom-0 end-0 m-5 border-none">
         <i class="bi bi-arrow-up-circle  text-white fw-bolder fs-4 px-2 "></i>

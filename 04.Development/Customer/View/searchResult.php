@@ -47,7 +47,7 @@
 </head>
 
 <body>
-    <div class="container ">
+    <div class="container">
         <div class="resultBox pt-4">
             <a class="h5  text-decoration-none" href="../View/HomePage.php">
                 <span><i class="bi bi-arrow-left fw-bold fs-4"></i></span> မူလစာမျက်နှာ ပြန်သွားမည်။
@@ -97,7 +97,7 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="footer d-flex py-3 px-2 text-center mt-4"></div>
+    <div class="footer d-flex py-3  text-center mt-4"></div>
 </body>
 
 </html>
