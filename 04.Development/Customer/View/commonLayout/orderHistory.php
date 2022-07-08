@@ -1,4 +1,4 @@
-<div class="modal  fade ms-5 ms-lg-5 ms-md-0 " id="orderHistory" tabindex="-1" aria-labelledby="lg-orderHistoryLabel" aria-hidden="true">
+<div class="modal  fade ms-1 ms-lg-5 ms-md-0 " id="orderHistory" tabindex="-1" aria-labelledby="lg-orderHistoryLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content modal-parent">
             <div class="modal-header cart-header ps-lg-5">

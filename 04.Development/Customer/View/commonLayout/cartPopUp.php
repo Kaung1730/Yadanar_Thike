@@ -51,7 +51,7 @@ if (isset($_SESSION['status-customer'])) {
                         <hr>
                     <?php }  ?>
                 </div>
-                <div class="mb-lg-3 mt-lg-5 ps-5 ms-5 ms-lg-0 ms-md-0">
+                <div class="mb-lg-3 mb-3 mt-lg-5 ps-5 ms-5 ms-lg-0 ms-md-0">
                     <div class="row ms-lg-5">
                         <div class="col-lg-8 col-12">
                             <button type="button" class="btn ms-3 rounded-pill text-dark order-btn hide-order" data-bs-toggle="modal" data-bs-target="#order">အမှာတင်မည်</button>
@@ -233,7 +233,7 @@ if (isset($_SESSION['status-customer'])) {
                         <div class="row my-3 justify-content-center">
                             <div class="col-lg-10">
                                 <label for="" class="book-text my-2">တိုင်း​ဒေသကြီး/ပြည်နယ်</label>
-                                <select name="" id="state" class="book-text my-2 px-lg-4 px-sm-3 px-3 px-md-5 mx-auto py-1">
+                                <select name="" id="state" class="book-text my-2 px-lg-4 px-sm-5 px-5 px-md-5 mx-auto py-1">
                                     <option value=""></option>
                                     <option value="ဧရာဝတီတိုင်းဒေသကြီး">ဧရာဝတီတိုင်းဒေသကြီး</option>
                                     <option value="ပဲခူးတိုင်းဒေသကြီး">ပဲခူးတိုင်းဒေသကြီး</option>
@@ -334,7 +334,7 @@ if (isset($_SESSION['status-customer'])) {
                                         console.log(delivery_id);
                                         $(".deli_fee").empty();
                                         $(".deli_fee").append(`
-                                        <div class="row mb-1 mt-3 ms-3 book-text">
+                                        <div class="row mb-1 mt-3 ms-0 ms-lg-3 ms-md-3 book-text">
                                             <div class="col text-white deli-fee">ပို့​ဆောင်ခ - ${element.delivery_fee} (ကျပ်)</div>
                                         </div>
                                     `);
@@ -348,7 +348,7 @@ if (isset($_SESSION['status-customer'])) {
                             console.log(typeof(book));
                             $(".book_fee").empty();
                             $(".book_fee").append(`
-                            <div class="row mb-1 mt-3 ms-3 book-text">
+                            <div class="row mb-1 mt-3 ms-0 ms-lg-3 ms-md-3 book-text">
                                 <div class="col text-white">စာအုပ်တန်ဖိုး - ${Number(book)}(ကျပ်)</div>
                             </div>
                             `);
