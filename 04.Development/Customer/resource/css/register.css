@@ -28,3 +28,6 @@ input{
 .sweet-warning:not([disabled]):hover{
     background-color: red !important;
 }
+.loginFont{
+    font-size: 15px !important;
+}

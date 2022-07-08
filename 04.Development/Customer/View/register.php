@@ -61,7 +61,7 @@
                         <div class="row my-3 justify-content-center">
                             <div class="col-lg-10 d-flex justify-content-between">
                                 <input type="submit" value="အ​ကောင့်ဖွင့်ရန်" class="btn btn-dark px-4 pt-2 text-center register-btn" id="register-btn"/>
-                                <a href="./login.php" class="btn btn-light px-4 pt-2 text-center login-btn">အ​ကောင့်ဝင်ရန်</a>
+                                <a href="./login.php" class="btn btn-light px-4 pt-2 text-center login-btn loginFont">အ​ကောင့်ဝင်ရန်</a>
                             </div>
                         </div>
                 </form>

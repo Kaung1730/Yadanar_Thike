@@ -43,7 +43,7 @@
                         <div class="row justify-content-center">
                             <div class="mt-lg-2 col-lg-10 mb-4 mb-lg-0 mb-md-0 d-flex justify-content-between">
                                 <a href="./register.php"  class="btn btn-light  me-2 me-md-0 me-lg-0 px-4 pt-2 text-center register-btn ">အ​ကောင့်ဖွင့်ရန်</a>
-                                <input type="submit" value="အ​ကောင့်ဝင်ရန်" class="btn btn-dark px-4 pt-2 text-center login-btn" id="login-btn"/>
+                                <input type="submit" value="အ​ကောင့်ဝင်ရန်" class="btn btn-dark px-4 pt-2 pb-2 text-center login-btn loginBtn" id="login-btn"/>
                             </div>
                         </div>
                 </form>

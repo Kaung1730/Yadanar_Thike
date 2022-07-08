@@ -388,6 +388,10 @@
 .guide-btn:hover {
     border: none !important;
 }
+#topBtn{
+    background-color: var(--yellow) !important;
+    border-color: var(--yellow) !important;
+}
 #topBtn:active{
     border: none !important;
     outline: none !important;
@@ -458,7 +462,7 @@
     }
 
     .card:hover {
-        height: 35vh !important; 
+        height: 40vh !important; 
     }
 
     .card .content p {
@@ -568,4 +572,11 @@
 .commentBtn {
     background-color: var(--yellow) !important;
     border-radius: 1.5rem !important;
+}
+.guideBtn{
+    background-color: var(--light-yellow) !important;
+}
+.guideBtn:hover{
+    outline: none !important;
+    border: none !important;
 }

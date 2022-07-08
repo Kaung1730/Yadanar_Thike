@@ -3,7 +3,7 @@ session_start();
 require "../../Controller/cartItemShow.php";
 if (isset($_SESSION['status-customer'])) {
 ?>
-    <div class="modal  fade ms-5 ms-lg-5 ms-md-0" id="cartPopUp" tabindex="-1" aria-labelledby="lg-cartPopUpLabel" aria-hidden="true">
+    <div class="modal  fade ms-1 ms-lg-5 ms-md-0" id="cartPopUp" tabindex="-1" aria-labelledby="lg-cartPopUpLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content modal-parent cardBody">
                 <div class="modal-header cart-header ps-lg-5">
@@ -233,7 +233,7 @@ if (isset($_SESSION['status-customer'])) {
                         <div class="row my-3 justify-content-center">
                             <div class="col-lg-10">
                                 <label for="" class="book-text my-2">တိုင်း​ဒေသကြီး/ပြည်နယ်</label>
-                                <select name="" id="state" class="book-text my-2 px-lg-4 px-sm-5 px-5 px-md-5 mx-auto py-1">
+                                <select name="" id="state" class="book-text my-2 px-lg-4 px-sm-3 px-3 px-md-5 mx-auto py-1">
                                     <option value=""></option>
                                     <option value="ဧရာဝတီတိုင်းဒေသကြီး">ဧရာဝတီတိုင်းဒေသကြီး</option>
                                     <option value="ပဲခူးတိုင်းဒေသကြီး">ပဲခူးတိုင်းဒေသကြီး</option>

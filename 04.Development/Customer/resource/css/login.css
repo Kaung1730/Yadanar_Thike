@@ -24,3 +24,6 @@ input{
 .sweet-warning:not([disabled]):hover{
     background-color: red !important;
 }
+.loginBtn{
+    font-size: 15px  !important;
+}

@@ -54,203 +54,206 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0">
-        <?php session_start(); ?>
-        <div class="nav-bar"></div>
-        <div class="setting"></div>
-        <div class="cart"></div>
-        <div class="order"></div>
-        <div class="orderHistory"></div>
-        <div>
-            <!-- HeaderSlider -->
+<div class="container-fluid p-0">
+    <?php session_start(); ?>
+    <div class="nav-bar"></div>
+    <div class="setting"></div>
+    <div class="cart"></div>
+    <div class="order"></div>
+    <div class="orderHistory"></div>
+    <div class="container  ">
+        <!-- HeaderSlider -->
+
+        <?php
+
+        require "../Controller/homePageCarouselController.php";
+        echo "<div  id='carouselExampleInterval' class='carousel slide mt-5' data-bs-ride='carousel'>";
+
+        echo " <div class='carousel-inner'>";
+        for ($i = 0; $i < count($result); $i++) {
+            if ($i == 0) {
+                echo " <div class='carousel-item active' data-bs-interval='2000'>";
+            } else {
+                echo " <div class='carousel-item' data-bs-interval='2000'>";
+            }
+            echo " <img src='../../Admin/resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
+            // echo " <img src='../resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
+            echo "</div>";
+        }
+        echo "</div>";
+
+        echo " <button class='carousel-control-prev' type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='prev'>";
+        echo "<span class='carousel-control-prev-icon' aria-hidden='true'>";
+        echo "</span>";
+        echo " <span class='visually-hidden'>Previous</span>";
+        echo "</button>";
+
+        echo " <button class='carousel-control-next' type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='next'>";
+        echo "<span class='carousel-control-next-icon' aria-hidden='true'>";
+        echo "</span>";
+        echo " <span class='visually-hidden'>Next</span>";
+        echo "</button>";
+
+        echo "</div>";
+        ?>
+
+        <!-- HeaderSlider End -->
+
+
+        <!-- အသစ်ထွက်ရှိသော စာအုပ်များ -->
+
+        <div class="centerSlider px-4">
+            <h4 class=" newBookList mt-5">အသစ်ထွက်ရှိသော စာအုပ်များ </h4>
 
             <?php
-
-            require "../Controller/homePageCarouselController.php";
-            echo "<div  id='carouselExampleInterval' class='carousel slide mt-5' data-bs-ride='carousel'>";
-
-            echo " <div class='carousel-inner'>";
+            require "../Controller/homePageController.php";
+            echo "<div class='homeslider slicker mt-5 d-flex justify-content-center'>";
             for ($i = 0; $i < count($result); $i++) {
-                if ($i == 0) {
-                    echo " <div class='carousel-item active' data-bs-interval='2000'>";
-                } else {
-                    echo " <div class='carousel-item' data-bs-interval='2000'>";
-                }
-                echo " <img src='../../Admin/resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
-                // echo " <img src='../resource/image/" . $result[$i]['slider_image'] . "' alt='' class='d-block w-100'>";
+                echo " <div class='slide  d-flex justify-content-center'>";
+                echo "<a  href='../View/bookDescription.php?book_id=" . $result[$i]['book_id'] . "'>";
+                echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
+                // echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
+                echo "</a>";
                 echo "</div>";
             }
             echo "</div>";
-
-            echo " <button class='carousel-control-prev' type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='prev'>";
-            echo "<span class='carousel-control-prev-icon' aria-hidden='true'>";
-            echo "</span>";
-            echo " <span class='visually-hidden'>Previous</span>";
-            echo "</button>";
-
-            echo " <button class='carousel-control-next' type='button' data-bs-target='#carouselExampleInterval' data-bs-slide='next'>";
-            echo "<span class='carousel-control-next-icon' aria-hidden='true'>";
-            echo "</span>";
-            echo " <span class='visually-hidden'>Next</span>";
-            echo "</button>";
-
-            echo "</div>";
             ?>
+            <!-- အသစ်ထွက်ရှိသော စာအုပ်များ End -->
 
-            <!-- HeaderSlider End -->
+            <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် -->
+            <?php require "../Controller/sitemasterController.php" ?>
+            <div class="">
+                <h4 class="mt-5 text-center ">ယနေ့အတွက် ရည်ညွှန်းစာအုပ် </h4>
+                <img src="../../Admin/resource/image/<?php echo $result[0]['slider_1'] ?>" alt="" class="BookForToday img-fluid ">
+            </div>
+            <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် end -->
 
-
-            <!-- အသစ်ထွက်ရှိသော စာအုပ်များ -->
-
-            <div class="centerSlider px-4">
-                <h4 class=" newBookList mt-5">အသစ်ထွက်ရှိသော စာအုပ်များ </h4>
-
-                <?php
-                require "../Controller/homePageController.php";
-                echo "<div class='homeslider slicker mt-5 d-flex justify-content-center'>";
-                for ($i = 0; $i < count($result); $i++) {
-                    echo " <div class='slide  d-flex justify-content-center'>";
-                    echo "<a  href='../View/bookDescription.php?book_id=" . $result[$i]['book_id'] . "'>";
-                    echo " <img src='../../Admin/resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
-                    // echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='newBookImg'>";
-                    echo "</a>";
-                    echo "</div>";
-                }
-                echo "</div>";
-                ?>
-                <!-- အသစ်ထွက်ရှိသော စာအုပ်များ End -->
-                <?php require "../Controller/sitemasterController.php" ?>
-                <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် -->
-                <div class="">
-                    <h4 class="mt-5 text-center ">ယနေ့အတွက် ရည်ညွှန်းစာအုပ် </h4>
-                    <img src="../../Admin/resource/image/<?php echo $result[0]['slider_1'] ?>" alt="" class="BookForToday img-fluid ">
-                </div>
-                <!-- ယနေ့အတွက် ရည်ညွှန်းစာအုပ် end -->
-
-                <!-- advertisement start -->
-                <div class=" advertise">
-                    <div class="advertiseCard row">
-                        <div class="col-sm-4">
-                            <div class="advertise-wrapper">
-                                <div class="adver-img">
-                                    <img src="../resource/image/delivery.png" class="img-responsive" alt="">
-                                </div>
-                                <div class="advertise-content">
-                                    <div class="name">လွယ်ကူလျင်မြန်စွာ ပို့ဆောင်ပေးခြင်း</div>
-                                </div>
+            <!-- advertisement start -->
+            <div class=" advertise">
+                <div class="advertiseCard row">
+                    <div class="col-sm-4">
+                        <div class="advertise-wrapper">
+                            <div class="adver-img">
+                                <img src="../resource/image/delivery.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="advertise-content">
+                                <div class="name">လွယ်ကူလျင်မြန်စွာ ပို့ဆောင်ပေးခြင်း</div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="advertise-wrapper">
-                                <div class="adver-img">
-                                    <img src="../resource/image/payment.png" class="img-responsive" alt="">
-                                </div>
-                                <div class="advertise-content">
-                                    <div class="name">ငွေပေးချေရလွယ်ကူခြင်း</div>
-                                </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="advertise-wrapper">
+                            <div class="adver-img">
+                                <img src="../resource/image/payment.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="advertise-content">
+                                <div class="name">ငွေပေးချေရလွယ်ကူခြင်း</div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="advertise-wrapper">
-                                <div class="adver-img">
-                                    <img src="../resource/image/best price.png" class="img-responsive" alt="">
-                                </div>
-                                <div class="advertise-content">
-                                    <div class="name">စျေးနှုန်းသက်သာခြင်း</div>
-                                </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="advertise-wrapper">
+                            <div class="adver-img">
+                                <img src="../resource/image/best price.png" class="img-responsive" alt="">
+                            </div>
+                            <div class="advertise-content">
+                                <div class="name">စျေးနှုန်းသက်သာခြင်း</div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- advertisement end -->
+            <!-- advertisement end -->
 
-                <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ  -->
-                <p class="popularBookTitle"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
-                <div class="popularBook">
-                    <?php
-                    require "../Controller/homePageController.php";
-                    for ($i = 0; $i < 4; $i++) {
-                        echo "<div class='card'>";
-                        echo "<a class='text-decoration-none' href='../View/bookDescription.php?book_id=" . $popularBook[$i]['book_id'] . "'>";
-                        echo " <div class='imgBox'>";
-                        echo " <img src='../../Admin/resource/image/" . $popularBook[$i]['book_img'] . "' alt='' class='bookImg'>";
-                        // echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
-                        echo "<div class='bookTitle text-decoration-none'>" . $popularBook[$i]['book_name'] . "</div>";
-                        echo "</div>";
-                        echo "<div class='content'>";
-                        echo " <p class= 'text-center  text-decoration-none'>" . $popularBook[$i]['book_price'] . "</p>";
+            <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ  -->
+            <p class="popularBookTitle"> <mark>လတ်တလောလူကြိုက်များသော စာအုပ်များ</mark> </p>
+            <div class="popularBook">
+                <?php
+                require "../Controller/homePageController.php";
+                for ($i = 0; $i < 4; $i++) {
+                    echo "<div class='card'>";
+                    echo "<a class='text-decoration-none' href='../View/bookDescription.php?book_id=" . $popularBook[$i]['book_id'] . "'>";
+                    echo " <div class='imgBox'>";
+                    echo " <img src='../../Admin/resource/image/" . $popularBook[$i]['book_img'] . "' alt='' class='bookImg'>";
+                    // echo " <img src='../resource/image/" . $result[$i]['book_img'] . "' alt='' class='bookImg'>";
+                    echo "<div class='bookTitle text-decoration-none'>" . $popularBook[$i]['book_name'] . "</div>";
+                    echo "</div>";
+                    echo "<div class='content'>";
+                    echo " <p class= 'text-center  text-decoration-none'>" . $popularBook[$i]['book_price'] . "</p>";
 
-                        echo "</a>";
-                        if (isset($_SESSION['status-customer'])) {
-                            echo "<button type='button' class='btn btn-basket' value='" . $popularBook[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
-                        }
-                        echo "</div>";
-                        echo "</div>";
+                    echo "</a>";
+                    if (isset($_SESSION['status-customer'])) {
+                        echo "<button type='button' class='btn btn-basket' value='" . $popularBook[$i]['book_id'] . "'>ခြင်းတောင်းထဲထည့်ရန်</button>";
                     }
-                    ?>
-                </div>
+                    echo "</div>";
+                    echo "</div>";
+                }
+                ?>
+            </div>
+
+        </div>
+        <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ end -->
+
+        <!-- DISCOUNT -->
+        <?php
+
+        require "../Controller/discountController.php";
+        echo "<a class='text-decoration-none' href='../View/bookDescription.php?book_id=" . $result[0]['book_id'] . "'>";
+        echo " <div class='disItem'>";
+        echo "<div class='disContent'>";
+        echo "<h2>" . $result[0]['author_name'] . "</h2>";
+        echo "<p>" . $result[0]['book_name'] . "</p>";
+        echo "<span class='disPrice text-decoration-line-through'>" . $result[0]['book_price'] . "(ကျပ်)</span>";
+        echo "<span class='disPrice pb-5 ms-2 text-danger'>" .  $result[0]['discount_price'] . "(ကျပ်)</span>";
+        echo "</div>";
+        echo "<div class='discountCard'>";
+        echo "<div class='disTag'>";
+        echo "<span> 20% OFF </span>";
+        echo "</div>";
+        echo "<div>";
+        echo " <img src='../../Admin/resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
+        // echo " <img src='../resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
+        echo "</div>";
+        echo "</div>";
+        echo "</div>";
+        echo "</a>";
+        ?>
+        <!-- DISCOUNT end-->
+
+        <!-- category -->
+        <div class=" carousels">
+            <h4 class="mt-3 mb-4">စာအုပ်အမျိုးအစားများ</h4>
+            <div class="item row">
+
+                <?php
+
+                require "../Controller/categoryBookPageController.php";
+
+                for ($i = 0; $i < 4; $i++) {
+                    echo "<div class='col-sm-3'>";
+                    echo "<a href='../View/category.php' class='categoryList text-decoration-none'>";
+                    echo " <div class='thumb-wrapper'>";
+                    echo " <div class='img-box'>";
+                    echo " <img src='../../Admin/resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
+                    // echo " <img src='../resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
+                    echo "</div>";
+                    echo "<div class='thumb-content'>";
+                    echo "  <div class='authorName pb-2'>" . $result[$i]['category_name'] . "</div>";
+                    echo "</div>";
+                    echo "</div>";
+                    echo "</a>";
+                    echo "</div>";
+                }
+                ?>
 
             </div>
-            <!-- လတ်တလောလူကြိုက်များသော စာအုပ်များ end -->
-
-            <!-- DISCOUNT -->
-            <?php
-
-            require "../Controller/discountController.php";
-            echo "<a class='text-decoration-none' href='../View/bookDescription.php?book_id=" . $result[0]['book_id'] . "'>";
-            echo " <div class='disItem'>";
-            echo "<div class='disContent'>";
-            echo "<h2>" . $result[0]['author_name'] . "</h2>";
-            echo "<p>" . $result[0]['book_name'] . "</p>";
-            echo "<span class='disPrice text-decoration-line-through'>" . $result[0]['book_price'] . "(ကျပ်)</span>";
-            echo "<span class='disPrice pb-5 ms-2 text-danger'>" .  $result[0]['discount_price'] . "(ကျပ်)</span>";
-            echo "</div>";
-            echo "<div class='discountCard'>";
-            echo "<div class='disTag'>";
-            echo "<span> 20% OFF </span>";
-            echo "</div>";
-            echo "<div>";
-            echo " <img src='../../Admin/resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
-            // echo " <img src='../resource/image/" .  $result[0]['book_img'] . "' alt='' class='disImage'>";
-            echo "</div>";
-            echo "</div>";
-            echo "</div>";
-            echo "</a>";
-            ?>
-            <!-- DISCOUNT end-->
-
-            <!-- category -->
-            <div class=" carousels">
-                <h4 class="mt-3 mb-4">စာအုပ်အမျိုးအစားများ</h4>
-                <div class="item row">
-
-                    <?php
-
-                    require "../Controller/categoryBookPageController.php";
-
-                    for ($i = 0; $i < 4; $i++) {
-                        echo "<div class='col-sm-3'>";
-                        echo "<a href='../View/category.php' class='categoryList text-decoration-none'>";
-                        echo " <div class='thumb-wrapper'>";
-                        echo " <div class='img-box'>";
-                        echo " <img src='../../Admin/resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
-                        // echo " <img src='../resource/image/" . $result[$i]['category_image'] . "' alt='' class='img-responsive'>";
-                        echo "</div>";
-                        echo "<div class='thumb-content'>";
-                        echo "  <div class='authorName pb-2'>" . $result[$i]['category_name'] . "</div>";
-                        echo "</div>";
-                        echo "</div>";
-                        echo "</a>";
-                        echo "</div>";
-                    }
-                    ?>
-
-                </div>
-            </div>
-            <a href="../View/category.php" class="seeMoreTagA">
-                <div class="seeMore">ဆက်လက်ကြည့်ရှုရန်</div>
-            </a>
+        </div>
+        <div class="d-flex justify-content-center mb-4">
+                <a href="../View/category.php" class="btn text-decoration-none px-5 py-3 guideBtn">
+                    <div class="">ဆက်လက်ကြည့်ရှုရန်</div>
+                </a>
+        </div>
             <!-- end category -->
 
             <!-- SERVICES -->
@@ -325,94 +328,94 @@
                     </div>
                 </div>
             </div>
-            <!-- <a href="./GuideofWeb.php" class="seeMoreTag guide text-decoration-none">
-            <div class="usage text-dark">စာမျက်နှာအသုံးပြုနည်း ကြည့်ရှုရန်</div>
-        </a> -->
-            <a href="./GuideofWeb.php" class="btn  text-decoration-none guide-btn">
-                <div class="  text-dark">စာမျက်နှာအသုံးပြုနည်း ကြည့်ရှုရန်</div>
-            </a>
+            <div class="d-flex justify-content-center mb-4">
+                <a href="./GuideofWeb.php" class="btn text-decoration-none px-5 py-3 guideBtn">
+                    <div class="">စာမျက်နှာအသုံးပြုနည်း ကြည့်ရှုရန်</div>
+                </a>
+            </div>
             <!-- SERVICES END -->
 
-            <!-- homeAddress -->
-            <div class="text-center text-lg-start homeAddress">
-                <!-- Grid container -->
-                <div class=" p-4 pb-0">
-                    <!-- Section: Links -->
-                    <section class="">
-                        <!--Grid row-->
-                        <div class="row">
-                            <!-- Grid column -->
-                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <a href=""><img src="../resource/image/logo.png" alt="" class="w-50" h-50 mt-5 ms-5></a>
-                                <br>
+        <!-- homeAddress -->
+        <div class="text-center text-lg-start homeAddress">
+            <!-- Grid container -->
+            <div class=" p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <a href=""><img src="../resource/image/logo.png" alt="" class="w-50" h-50 mt-5 ms-5></a>
+                            <br>
 
-                            </div>
-                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid column -->
 
-                            <!-- Grid column -->
+                        <!-- Grid column -->
 
-                            <hr class="w-100 clearfix d-md-none" />
+                        <hr class="w-100 clearfix d-md-none" />
 
-                            <!-- Grid column -->
-                            <hr class="w-100 clearfix d-md-none" />
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
 
-                            <!-- Grid column -->
-                            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                                <h6 class="mb-4 font-weight-bold">
-                                    <i class="bi bi-geo-alt-fill fa-lg me-lg-3 me-md-0 me-0"></i>ရုံးချုပ်တည်နေရာ
-                                </h6>
-                                <!-- <p>အမှတ် (၁၂၃) ၊ ရတနာလမ်း၊တောင်ဥက္ကလာပမြို့နယ်၊ ရန်ကုန်။</p>
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                            <h6 class="mb-4 font-weight-bold">
+                                <i class="bi bi-geo-alt-fill fa-lg me-lg-3 me-md-0 me-0"></i>ရုံးချုပ်တည်နေရာ
+                            </h6>
+                            <!-- <p>အမှတ် (၁၂၃) ၊ ရတနာလမ်း၊တောင်ဥက္ကလာပမြို့နယ်၊ ရန်ကုန်။</p>
                             <p> yadanarthikebookshop@gmail.com</p>
                             <p> +၉၅၉ ၁၂၃ ၄၅၆ ၇၈၉</p>
                             <p> နေ့စဉ် မနက် ၉း၀၀ မှ ညနေ ၆း၀၀ အထိ ဖွင့်လှစ်ပါသည်။</p> -->
-                                <p><?php echo $result[0]['address'] ?></p>
-                                <p><?php echo $result[0]['email'] ?></p>
-                                <p><?php echo $result[0]['phone'] ?></p>
-                                <p> နေ့စဉ် <?php echo $result[0]['available_time'] ?> အထိ ဖွင့်လှစ်ပါသည်။</p>
-                            </div>
-                            <!-- Grid column -->
-                            <hr class="w-100 clearfix d-md-none" />
-                            <!-- Grid column -->
-                            <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
-                                <h6 class=" mb-4 font-weight-bold">ကျွန်ုပ်တို့နှင့်ထိတွေ့ဆက်ဆံရန်</h6>
-
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>
-                                            <ion-icon class="fs-4" name="logo-facebook"></ion-icon>
-                                            <a class="text-decoration-none text-dark ms-lg-5 ms-md-0 ms-0" href="https://www.facebook.com"><?php echo $result[0]['facebook'] ?></a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <ion-icon class="fs-4" name="logo-instagram"></ion-icon>
-                                            <a class="text-decoration-none text-dark ms-lg-5 ms-md-0 ms-0" href="https://www.instagram.com"><?php echo $result[0]['instagram'] ?></a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <ion-icon class="fs-4" name="logo-twitter"></ion-icon>
-                                            <a class="text-decoration-none text-dark ms-lg-5 ms-md-0 ms-0" href="https://www.twitter.com"><?php echo $result[0]['twitter'] ?></a>
-                                        </p>
-                                    </li>
-                                </ul>
-
-                            </div>
+                            <?php require "../Controller/sitemasterController.php" ?>
+                            <p><?php echo $result[0]['address'] ?></p>
+                            <p><?php echo $result[0]['email'] ?></p>
+                            <p><?php echo $result[0]['phone'] ?></p>
+                            <p> နေ့စဉ် <?php echo $result[0]['available_time'] ?> အထိ ဖွင့်လှစ်ပါသည်။</p>
                         </div>
-                        <!--Grid row-->
-                    </section>
-                    <!-- Section: Links -->
-                </div>
-                <!-- Grid container -->
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+                        <!-- Grid column -->
+                        <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+                            <h6 class=" mb-4 font-weight-bold">ကျွန်ုပ်တို့နှင့်ထိတွေ့ဆက်ဆံရန်</h6>
 
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>
+                                        <ion-icon class="fs-4" name="logo-facebook"></ion-icon> 
+                                        <a class="text-decoration-none text-dark ms-lg-5 ms-md-0 ms-0" href="https://www.facebook.com"><?php echo $result[0]['facebook'] ?></a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <ion-icon class="fs-4" name="logo-instagram"></ion-icon>
+                                        <a class="text-decoration-none text-dark ms-lg-5 ms-md-0 ms-0" href="https://www.instagram.com"><?php echo $result[0]['instagram'] ?></a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <ion-icon class="fs-4" name="logo-twitter"></ion-icon>
+                                        <a class="text-decoration-none text-dark ms-lg-5 ms-md-0 ms-0" href="https://www.twitter.com"><?php echo $result[0]['twitter'] ?></a>
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
             </div>
+            <!-- Grid container -->
+
         </div>
     </div>
-    <div class="footer d-flex py-3 text-center mt-4 "></div>
     </div>
-    <button id="topBtn" class="pt-2 bg-warning border-warning rounded position-fixed bottom-0 end-0 m-5 border-none">
-        <i class="bi bi-arrow-up-circle  text-white fw-bolder fs-4 px-2 "></i>
+    <div class="footer d-flex py-3  text-center mt-4"></div>
+    <button id="topBtn" class="pt-2  rounded position-fixed bottom-0 end-0 m-5 border-none">
+        <i class="bi bi-arrow-up-circle   fw-bolder fs-4 px-2 "></i>
     </button>
+    </div>
 </body>
 
 </html>
