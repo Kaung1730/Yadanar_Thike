@@ -73,7 +73,7 @@ if (isset($_SESSION['status-customer'])) {
                     ခြင်းတောင်းထဲထည့်ရန်အတွက် အ​ကောင့်ဝင်ထားရန် လိုအပ်ပါသည်။
                 </div>
                 <div class="modal-footer">
-                    <a href="http://localhost:81/YadnarThike/04.Development/Customer/View/login.php" class="btn text-decoration-none btnLink btn-primary commentBtn">အ​ကောင့်ဝင်မည်</a>
+                    <a href="./login.php" class="btn text-decoration-none btnLink btn-primary commentBtn">အ​ကောင့်ဝင်မည်</a>
                 </div>
             </div>
         </div>
