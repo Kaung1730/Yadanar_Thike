@@ -53,7 +53,7 @@
     height: 30vh;
     text-align: center;
     position: relative;
-    box-shadow: 5px 7px 4px gray;
+    /* box-shadow: 5px 7px 4px gray; */
     background-color: var(--main-bg-color);
     margin-top: 8vh;
 }
@@ -102,7 +102,7 @@
     width: 25vw;
     position: relative;
     border-radius: 10px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); */
     padding: 5vh 3vw;
     margin-right: 1vw !important;
     cursor: pointer;

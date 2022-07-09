@@ -52,8 +52,7 @@
 }
 
 .box {
-    margin-left: 35vw;
-    /* margin-top: 12vh; */
+    margin: 7vh 0 !important;
 }
 
 .alphabetList {
@@ -64,6 +63,7 @@
     padding: 4vh 0vw 0vh 5vw;
     margin-top: 12vh;
     font-weight: 580;
+    margin: auto !important;
 
 }
 
@@ -73,6 +73,7 @@
 }
 
 .authorsList ul {
+    margin: auto !important;
     list-style: none;
     width: 30vw;
     border: solid 0px;
@@ -115,10 +116,10 @@
     }
 
 
-    .box {
+    /* .box {
         margin-left: 15vw;
-        /* margin-top: 12vh; */
-    }
+        margin-top: 12vh;
+    } */
 
     .firstWord {
         margin-left: 8vw;
@@ -126,11 +127,10 @@
 
     .alphabetList {
         width: 60vw;
-
+        margin: auto !important;
     }
 
     .authorsList ul {
-
         width: 60vw;
     }
 
